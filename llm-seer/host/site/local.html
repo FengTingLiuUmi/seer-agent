@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<title>seer flash host (local page)</title>
+<style>
+html,body{margin:0;padding:0;height:100%;width:100%;background:#000;overflow:hidden}
+#box{width:960px;height:560px;margin:0 auto}
+</style>
+<script>
+function qs(k){
+  var m=new RegExp('[?&]'+k+'=([^&]*)').exec(location.search||'');
+  return m?decodeURIComponent(m[1]):'';
+}
+var UID=qs('uid'), SID=qs('sid'), TM=qs('tmcid')||'76';
+window.getAd=function(){return '0';};
+window.get_uid=function(){return UID;};
+window.get_sid=function(){return SID;};
+window.getSessionID=function(){return SID;};
+window.getSign=function(){return '';};
+window.getHostname=function(){return 'seer.61.com';};
+window.parentUrl=function(){return '';};
+window.getUrlParams=function(){return {tmcid:TM,uid:UID,sid:SID,c:''};};
+window.setAddIconIsShow=function(){return true;};
+window.taomeeLoginCall=function(){return true;};
+window.seerLogin=function(hex){
+  var o=document.getElementById('Client');
+  try{if(o&&o.startWebSessionLogin){o.startWebSessionLogin(hex);return 'ok';}}catch(e){return 'err:'+e.message;}
+  return 'no-callback';
+};
+</script>
+</head>
+<body>
+<div id="box">
+<object id="Client" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+        width="960" height="560" type="application/x-shockwave-flash">
+  <param name="movie" value="https://seer.61.com/Client.swf">
+  <param name="allowScriptAccess" value="always">
+  <param name="quality" value="high">
+  <param name="bgcolor" value="#000000">
+  <param name="wmode" value="opaque">
+  <param name="flashvars" value="tmcid=76">
+</object>
+</div>
+</body>
+</html>

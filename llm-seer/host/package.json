@@ -1,0 +1,7 @@
+{
+  "name": "seer-flash-host",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js",
+  "description": "Electron 11 (32-bit) + Pepper Flash 15 host for the official seer Login.swf"
+}

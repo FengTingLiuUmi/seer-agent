@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>seer client bootstrap</title>
+<style>html,body{margin:0;padding:0;height:100%;width:100%;background:#111;overflow:hidden}</style>
+<script>
+var TM = 76;   // 关键：tmcid=76 才会注册 startWebSessionLogin
+window.__hits = [];
+function hit(n) { try { window.__hits.push(n); } catch (e) { } }
+window.getAd = function () { hit('getAd'); return '0'; };
+window.get_uid = function () { hit('get_uid'); return window.__uid || ''; };
+window.getHostname = function () { hit('getHostname'); return 'h5-seer.61.com'; };
+window.setAddIconIsShow = function () { hit('setAddIconIsShow'); return true; };
+window.taomeeLoginCall = function () { hit('taomeeLoginCall'); return true; };
+window.getTMcid = function () { hit('getTMcid'); return String(TM); };
+window.getUrlParams = function () { hit('getUrlParams'); return { tmcid: String(TM), c: '' }; };
+window.parentUrl = function () { hit('parentUrl'); return ''; };
+
+window.seerLogin = function (hex) {
+  var o = document.getElementById('client');
+  try {
+    if (o && o.startWebSessionLogin) { o.startWebSessionLogin(hex); return 'ok'; }
+  } catch (e) { return 'err:' + e.message; }
+  return 'no-callback';
+};
+window.seerReady = function () {
+  var o = document.getElementById('client');
+  return !!(o && o.startWebSessionLogin);
+};
+</script>
+</head>
+<body>
+<object id="client" type="application/x-shockwave-flash" data="Client.swf?tmcid=76" width="1000" height="650">
+  <param name="movie" value="Client.swf?tmcid=76">
+  <param name="allowScriptAccess" value="always">
+  <param name="flashvars" value="tmcid=76">
+  <param name="quality" value="high">
+  <param name="bgcolor" value="#000000">
+  <param name="wmode" value="opaque">
+</object>
+<div id="dbg" style="color:#9cf;font:11px monospace;padding:3px;white-space:pre-wrap"></div>
+</body>
+</html>

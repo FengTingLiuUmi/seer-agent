@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "seer-rebuild": {
+      "command": "python",
+      "args": ["-m", "seer_rebuild.mcp_server"],
+      "env": {
+        "PYTHONPATH": "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer/seer-rebuild",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}

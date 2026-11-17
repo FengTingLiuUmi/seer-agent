@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>seer flash host (IE)</title>
+<style>html,body{margin:0;padding:0;height:100%;width:100%;background:#111;overflow:hidden}</style>
+<script>
+function qs(k) {
+  var m = new RegExp('[?&]' + k + '=([^&]*)').exec(location.search || '');
+  return m ? decodeURIComponent(m[1]) : '';
+}
+var SID = qs('sid');
+var TM = qs('tmcid') || '76';
+
+window.getAd = function () { return '0'; };
+window.get_sid = function () { return SID; };      // ← 关键：Flash 用它拿会话
+window.get_uid = function () { return qs('uid'); };
+window.getHostname = function () { return 'h5-seer.61.com'; };
+window.getUrlParams = function () { return { tmcid: TM, c: '' }; };
+window.parentUrl = function () { return ''; };
+window.setAddIconIsShow = function () { return true; };
+window.taomeeLoginCall = function () { return true; };
+
+window.seerLogin = function (hex) {
+  var o = document.getElementById('client');
+  try { if (o && o.startWebSessionLogin) { o.startWebSessionLogin(hex); return 'ok'; } } catch (e) { return 'err:' + e.message; }
+  return 'no-callback';
+};
+</script>
+</head>
+<body>
+<object id="client" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+        width="996" height="660" type="application/x-shockwave-flash">
+  <param name="movie" value="Client.swf">
+  <param name="allowScriptAccess" value="always">
+  <param name="quality" value="high">
+  <param name="bgcolor" value="#000000">
+  <param name="wmode" value="opaque">
+</object>
+</body>
+</html>

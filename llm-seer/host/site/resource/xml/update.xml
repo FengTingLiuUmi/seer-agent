@@ -1,0 +1,33 @@
+﻿<!--
+	定期更新内容：
+	包括：Loading文字
+-->
+<root>
+
+	<!-- loading文字 （暂时没有字）-->
+	<loading>
+	
+	</loading>
+
+	<!-- 纽斯换地图功能 -->
+	<newsChangeMap>
+	
+		<list id="476"/>
+		<list id="16"/>
+		<list id="495"/>
+		<list id="498"/>
+		
+	</newsChangeMap>
+
+	<!-- 屏蔽眼保健操 -->
+	<banProtect time="2012.12.1.6.0|2012.12.1.16.0"/> 
+	
+	<!-- 屏蔽服务器广播 -->
+	<banBroadcast time="2012.12.1.6.0|2012.12.1.16.0"/>
+	
+	<!-- 冲在线活动时间的关闭页面提示 -->
+	<webAlert time="2012.12.1.6.0|2012.12.1.14.30">
+		<list time="2012.12.1.13.0|2012.12.1.14.0" name=" "/>		
+	</webAlert> 
+	
+</root>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>seer flash host (object)</title>
+<style>html,body{margin:0;padding:0;height:100%;width:100%;background:#111;overflow:hidden}</style>
+<script>
+window.getAd = function () { return '0'; };
+window.get_uid = function () { return window.__uid || ''; };
+window.getHostname = function () { return 'h5-seer.61.com'; };
+window.setAddIconIsShow = function () { return true; };
+window.seerLogin = function (hex) {
+  var o = document.getElementById('swf');
+  if (!o || !o.startWebSessionLogin) return 'no-callback';
+  o.startWebSessionLogin(hex);
+  return 'ok';
+};
+</script>
+</head>
+<body>
+<!-- Chromium 的 object 写法：type + data（不是 classid） -->
+<object id="swf" type="application/x-shockwave-flash" data="Login.swf"
+        width="1000" height="650">
+  <param name="movie" value="Login.swf">
+  <param name="allowScriptAccess" value="always">
+  <param name="quality" value="high">
+  <param name="bgcolor" value="#000000">
+</object>
+<div id="dbg" style="color:#888;font:12px monospace;padding:4px"></div>
+<script>
+setInterval(function () {
+  var o = document.getElementById('swf');
+  var pct = -1;
+  try { pct = (o && o.PercentLoaded) ? o.PercentLoaded() : -1; } catch (e) { }
+  window.__pct = pct;
+  document.getElementById('dbg').textContent = 'pct=' + pct + ' cb=' + !!(o && o.startWebSessionLogin);
+}, 1000);
+</script>
+</body>
+</html>

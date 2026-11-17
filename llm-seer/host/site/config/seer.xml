@@ -1,0 +1,11 @@
+<root debug="0">
+	<server>config/Server.xml</server>
+<!-- 	<server>config/Server_local.xml</server> -->
+	<dll>config/dll.xml</dll>
+	<word>resource/xml/update.xml</word>
+	<serverName>resource/xml/servername.xml</serverName>
+	<serverNameDebug>resource/xml/servername_debug.xml</serverNameDebug>
+	<login>dll/Login.swf</login>
+	<assets>dll/Assets.swf</assets>
+	<version>version/zzz_config.txt</version>
+</root>

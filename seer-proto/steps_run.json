@@ -1,0 +1,9 @@
+[
+  {"cmd": 42494, "delayMs": 0},
+  {"cmd": 1002, "delayMs": 200},
+  {"cmd": 1016, "bodyHex": "00000002", "delayMs": 400},
+  {"cmd": 2003, "delayMs": 800},
+  {"cmd": 3454, "delayMs": 1100},
+  {"cmd": 3401, "delayMs": 1400},
+  {"cmd": 47334, "delayMs": 1700}
+]

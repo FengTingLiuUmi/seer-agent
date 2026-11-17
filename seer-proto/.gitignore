@@ -1,0 +1,32 @@
+# 生成物（含会话/账号痕迹，勿入库）
+login.json
+session.jsonl
+report.html
+bodies/
+*.log
+.seerproto.lock
+steps_probe.json
+steps_gather.json
+steps_safe.json
+# 构建产物 / 缓存（缓存在 ../llm-seer/cache）
+seerproto.exe
+.gocache/
+.gomod/
+.gopath/
+.idea/
+__pycache__/
+node_modules/
+.npm-cache/
+# 凭据 / 密钥（务必不要提交）
+.secrets-key
+secrets/
+*.local.json
+.envdata/token.json
+data/duid.txt
+seerproto.new.exe
+probe1.*
+batch1.*
+service-proto.*
+retry_login.out
+/tools/__pycache__/
+

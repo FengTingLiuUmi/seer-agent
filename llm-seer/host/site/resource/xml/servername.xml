@@ -1,0 +1,4705 @@
+﻿<root max="5">
+	<list name="天马星"/>
+	<list name="天龙星"/>
+	<list name="仙女星"/>
+	<list name="白鸟星"/>
+	<list name="凤凰星"/>
+	<list name="大熊星"/>
+	<list name="天狼星"/>
+	<list name="水蛇星"/>
+	<list name="白羊星"/>
+	<list name="金牛星"/>
+	<list name="双子星"/>
+	<list name="巨蟹星"/>
+	<list name="狮子星"/>
+	<list name="处女星"/>
+	<list name="天枰星"/>
+	<list name="天蝎星"/>
+	<list name="射手星"/>
+	<list name="山羊星"/>
+	<list name="水瓶星"/>
+	<list name="双鱼星"/>
+	<list name="白鲸星"/>
+	<list name="猎户星"/>
+	<list name="英仙星"/>
+	<list name="天箭星"/>
+	<list name="仙皇星"/>
+	<list name="水晶星"/>
+	<list name="孔雀星"/>
+	<list name="火焰星"/>
+	<list name="天琴星"/>
+	<list name="杜比星"/>
+	<list name="美拉克星"/>
+	<list name="菲库达星"/>
+	<list name="美古拉兹星"/>
+	<list name="艾里奥斯星"/>
+	<list name="米扎鲁星"/>
+	<list name="巴多星"/>
+	<list name="贝尼特纳星"/>
+	<list name="弗瑞雅星"/>
+	<list name="海皇星"/>
+	<list name="南十字星"/>
+	<list name="天盾星"/>
+	<list name="天猛星"/>
+	<list name="天雄星"/>
+	<list name="天贵星"/>
+	<list name="天间星"/>
+	<list name="天英星"/>
+	<list name="天兽星"/>
+	<list name="天魔星"/>
+	<list name="天捷星"/>
+	<list name="天牢星"/>
+	<list name="天角星"/>
+	<list name="天魁星"/>
+	<list name="天罡星"/>
+	<list name="天机星"/>
+	<list name="天闲星"/>
+	<list name="天威星"/>
+	<list name="天富星"/>
+	<list name="天勇星"/>
+	<list name="天满星"/>
+	<list name="天孤星"/>
+	<list name="天伤星"/>
+	<list name="天立星"/>
+	<list name="天暗星"/>
+	<list name="天佑星"/>
+	<list name="天空星"/>
+	<list name="天速星"/>
+	<list name="天异星"/>
+	<list name="天微星"/>
+	<list name="天究星"/>
+	<list name="天退星"/>
+	<list name="天寿星"/>
+	<list name="天剑星"/>
+	<list name="天平星"/>
+	<list name="天彗星"/>
+	<list name="天巧星"/>
+	<list name="冥王星"/>
+	<list name="海王星"/>
+	<list name="天王星"/>
+	<list name="人鱼星"/>
+	<list name="火烈鸟星"/>
+	<list name="地魁星"/>
+	<list name="地煞星"/>
+	<list name="地勇星"/>
+	<list name="地杰星"/>
+	<list name="地雄星"/>
+	<list name="地微星"/>
+	<list name="地英星"/>
+	<list name="地奇星"/>
+	<list name="地猛星"/>
+	<list name="地文星"/>
+	<list name="地正星"/>
+	<list name="地辟星"/>
+	<list name="地强星"/>
+	<list name="地暗星"/>
+	<list name="地轴星"/>
+	<list name="地会星"/>
+	<list name="地佐星"/>
+	<list name="地佑星"/>
+	<list name="地灵星"/>
+	<list name="地微星"/>
+	<list name="地彗星"/>
+	<list name="地爆星"/>
+	<list name="地默星"/>
+	<list name="地狂星"/>
+	<list name="地飞星"/>
+	<list name="地走星"/>
+	<list name="地巧星"/>
+	<list name="地明星"/>
+	<list name="地退星"/>
+	<list name="地进星"/>
+	<list name="地满星"/>
+	<list name="地遂星"/>
+	<list name="地周星"/>
+	<list name="地隐星"/>
+	<list name="地异星"/>
+	<list name="地理星"/>
+	<list name="地俊星"/>
+	<list name="地乐星"/>
+	<list name="地捷星"/>
+	<list name="地速星"/>
+	<list name="地镇星"/>
+	<list name="地魔星"/>
+	<list name="地妖星"/>
+	<list name="地伏星"/>
+	<list name="地空星"/>
+	<list name="地孤星"/>
+	<list name="地全星"/>
+	<list name="地短星"/>
+	<list name="地角星"/>
+	<list name="地囚星"/>
+	<list name="地藏星"/>
+	<list name="地平星"/>
+	<list name="地损星"/>
+	<list name="地察星"/>
+	<list name="地恶星"/>
+	<list name="地数星"/>
+	<list name="地阴星"/>
+	<list name="地刑星"/>
+	<list name="地壮星"/>
+	<list name="地健星"/>
+	<list name="球状星团"/>
+	<list name="礁湖星云"/>
+	<list name="蝴蝶星团"/>
+	<list name="托勒密星团"/>
+	<list name="疏散星团"/>
+	<list name="鹰星云"/>
+	<list name="三叶星云"/>
+	<list name="哑铃星云"/>
+	<list name="向日葵星系"/>
+	<list name="涡状星系"/>
+	<list name="波德星系"/>
+	<list name="棒旋星系"/>
+	<list name="椭圆星系"/>
+	<list name="风车星系"/>
+	<list name="猫头鹰星云"/>
+	<list name="野鸭星团"/>
+	<list name="鬼宿星团"/>
+	<list name="麦哲伦云"/>
+	<list name="螺旋星云"/>
+	<list name="矮星系"/>
+	<list name="暗星系"/>
+	<list name="蝌蚪星系"/>
+	<list name="阿尔法卫星"/>
+	<list name="贝塔卫星"/>
+	<list name="伽马卫星"/>
+	<list name="德尔塔卫星"/>
+	<list name="伊普西龙卫星"/>
+	<list name="截塔卫星"/>
+	<list name="艾塔卫星"/>
+	<list name="西塔卫星"/>
+	<list name="约塔卫星"/>
+	<list name="卡帕卫星"/>
+	<list name="兰布达卫星"/>
+	<list name="缪姆卫星"/>
+	<list name="纽姆卫星"/>
+	<list name="克西卫星"/>
+	<list name="奥米克戎卫星"/>
+	<list name="派卫星"/>
+	<list name="西格玛卫星"/>
+	<list name="佛艾卫星"/>
+	<list name="普西卫星"/>
+	<list name="欧米伽卫星"/>
+	<list name="克罗诺斯 "/>
+	<list name="瑞亚"/>
+	<list name="俄刻阿诺斯 "/>
+	<list name="科俄斯"/>
+	<list name="克利俄斯"/>
+	<list name="伊阿珀托斯"/>
+	<list name="福柏"/>
+	<list name="忒堤斯"/>
+	<list name="忒弥斯"/>
+	<list name="谟涅摩叙涅"/>
+	<list name="许珀里翁"/>
+	<list name="忒亚"/>
+	<list name="宙斯 "/>
+	<list name="赫拉"/>
+	<list name="波塞冬"/>
+	<list name="哈得斯"/>
+	<list name="雅典娜"/>
+	<list name="阿波罗"/>
+	<list name="阿耳忒弥斯"/>
+	<list name="阿佛洛狄忒"/>
+	<list name="赫耳墨斯"/>
+	<list name="阿瑞斯"/>
+	<list name="赫淮斯托斯"/>
+	<list name="狄俄倪索斯"/>
+	<list name="赫斯提亚"/>
+	<list name="得墨忒耳"/>
+	<list name="布布种子"/>
+	<list name="布布草"/>
+	<list name="布布花"/>
+	<list name="伊优"/>
+	<list name="尤里安"/>
+	<list name="巴鲁斯"/>
+	<list name="小火猴"/>
+	<list name="烈火猴"/>
+	<list name="烈焰猩猩"/>
+	<list name="皮皮"/>
+	<list name="比波"/>
+	<list name="波克尔"/>
+	<list name="比比鼠"/>
+	<list name="闪电鼠"/>
+	<list name="天雷鼠"/>
+	<list name="仙人球"/>
+	<list name="仙人掌"/>
+	<list name="巨型仙人掌"/>
+	<list name="利利"/>
+	<list name="绵绵"/>
+	<list name="电击兔"/>
+	<list name="毛毛"/>
+	<list name="卡洛"/>
+	<list name="巴洛卡"/>
+	<list name="幽浮"/>
+	<list name="哈尔浮"/>
+	<list name="小豆芽"/>
+	<list name="叮叮"/>
+	<list name="魔花仙子"/>
+	<list name="贝尔"/>
+	<list name="阿布"/>
+	<list name="巴拉龟"/>
+	<list name="利牙鱼"/>
+	<list name="钢牙鲨"/>
+	<list name="吉尔"/>
+	<list name="里诺"/>
+	<list name="洛吉拉斯"/>
+	<list name="火炎贝"/>
+	<list name="贝拉米"/>
+	<list name="贝尔鲁斯"/>
+	<list name="胡里亚"/>
+	<list name="里奥斯"/>
+	<list name="罗奇"/>
+	<list name="基罗拉"/>
+	<list name="西萨琉拉"/>
+	<list name="小蘑菇"/>
+	<list name="蘑菇怪"/>
+	<list name="索拉"/>
+	<list name="赫拉丝"/>
+	<list name="阿克希亚"/>
+	<list name="玄冰兽"/>
+	<list name="急冻兽"/>
+	<list name="莫比"/>
+	<list name="格格尔"/>
+	<list name="鲁加斯"/>
+	<list name="奇洛"/>
+	<list name="杰拉特"/>
+	<list name="塔奇拉顿"/>
+	<list name="西塔"/>
+	<list name="铁达斯"/>
+	<list name="雷吉欧斯"/>
+	<list name="格林"/>
+	<list name="格力姆"/>
+	<list name="格鲁奇高"/>
+	<list name="林克"/>
+	<list name="林斯奇"/>
+	<list name="布林克斯"/>
+	<list name="米拉美"/>
+	<list name="提亚斯"/>
+	<list name="喀斯特星"/>
+	<list name="巴凯尔哈特星"/>
+	<list name="帕哈尔普尔的星"/>
+	<list name="琅勃拉邦星"/>
+	<list name="占巴塞星　"/>
+	<list name="查姆星"/>
+	<list name="巴米扬星"/>
+	<list name="法隆星"/>
+	<list name="姬路星"/>
+	<list name="占比尔星"/>
+	<list name="波斯波利斯星"/>
+	<list name="伊斯法罕星"/>
+	<list name="塔赫特苏星"/>
+	<list name="帕萨尔加德星"/>
+	<list name="巴姆星"/>
+	<list name="埃洛拉星"/>
+	<list name="亚格拉星"/>
+	<list name="玛哈尔星"/>
+	<list name="科纳拉克星"/>
+	<list name="卡杰拉霍星"/>
+	<list name="埃勒凡塔星"/>
+	<list name="贾特拉帕蒂星"/>
+	<list name="加德满都星"/>
+	<list name="摩亨佐达罗星"/>
+	<list name="塔克希拉星"/>
+	<list name="夏利玛尔星"/>
+	<list name="罗赫达斯星"/>
+	<list name="古梅尔夫星"/>
+	<list name="泰姆格里星"/>
+	<list name="科迪勒拉星"/>
+	<list name="维甘星"/>
+	<list name="阿努拉德普勒星"/>
+	<list name="波隆纳鲁星"/>
+	<list name="锡吉里那星"/>
+	<list name="康提星"/>
+	<list name="丹布勒星"/>
+	<list name="伊特察思星"/>
+	<list name="布哈拉星"/>
+	<list name="沙赫利星"/>
+	<list name="普兰巴星"/>
+	<list name="贝宁星"/>
+	<list name="博茨瓦纳星"/>
+	<list name="古帕玛星"/>
+	<list name="拉利贝拉星"/>
+	<list name="蒂亚星"/>
+	<list name="阿克苏姆星"/>
+	<list name="奥莫星"/>
+	<list name="阿散蒂星"/>
+	<list name="宁巴星"/>
+	<list name="拉穆星"/>
+	<list name="安布希曼星"/>
+	<list name="哈尔星"/>
+	<list name="瓦莱塔星"/>
+	<list name="马里星"/>
+	<list name="杰内星"/>
+	<list name="廷巴克星"/>
+	<list name="阿斯基亚星"/>
+	<list name="宿库卢星"/>
+	<list name="戈雷星"/>
+	<list name="卡米星"/>
+	<list name="马托博星"/>
+	<list name="罗布恩星"/>
+	<list name="斯泰克星"/>
+	<list name="马蓬古星"/>
+	<list name="巴干达星"/>
+	<list name="基尔瓦基斯星"/>
+	<list name="桑给巴尔星"/>
+	<list name="库埃瓦星"/>
+	<list name="科尔多巴星"/>
+	<list name="塔夫拉达星"/>
+	<list name="伊格纳星"/>
+	<list name="西奥米尼星"/>
+	<list name="罗雷托星"/>
+	<list name="米格尔星"/>
+	<list name="波托西星"/>
+	<list name="奇基托斯星"/>
+	<list name="苏克雷星"/>
+	<list name="萨迈帕塔星"/>
+	<list name="蒂瓦纳科星"/>
+	<list name="拉帕努伊星"/>
+	<list name="奇洛埃星"/>
+	<list name="瓦尔帕莱星"/>
+	<list name="欧鲁普雷星"/>
+	<list name="奥林达星"/>
+	<list name="巴伊亚星"/>
+	<list name="孔戈尼亚斯星"/>
+	<list name="卡皮瓦拉星"/>
+	<list name="蒂阿曼星"/>
+	<list name="戈亚斯星"/>
+	<list name="拉安斯欧克斯星"/>
+	<list name="安东尼星"/>
+	<list name="魁北星"/>
+	<list name="卢嫩堡星"/>
+	<list name="卡塔赫纳星"/>
+	<list name="蒙波斯星"/>
+	<list name="铁拉登特罗星"/>
+	<list name="圣奥古斯丁星"/>
+	<list name="科潘星"/>
+	<list name="哈瓦那星"/>
+	<list name="特立尼达星"/>
+	<list name="洛斯因赫星"/>
+	<list name="亚哥的星"/>
+	<list name="佩德罗德星"/>
+	<list name="比尼亚莱斯星"/>
+	<list name="基多星"/>
+	<list name="昆卡星"/>
+	<list name="霍亚星"/>
+	<list name="德赛伦星"/>
+	<list name="安提星"/>
+	<list name="拉米尔星"/>
+	<list name="帕伦克星"/>
+	<list name="奇米尔科星"/>
+	<list name="特奥蒂星"/>
+	<list name="哈卡阿尔星"/>
+	<list name="普埃布拉星"/>
+	<list name="瓜纳托星"/>
+	<list name="奇琴伊星"/>
+	<list name="莫雷利星"/>
+	<list name="埃尔塔星"/>
+	<list name="萨卡特卡星"/>
+	<list name="波波卡星"/>
+	<list name="乌斯马尔星"/>
+	<list name="克雷塔罗星"/>
+	<list name="卡瓦尼亚星"/>
+	<list name="卡萨斯星"/>
+	<list name="塔拉科塔星"/>
+	<list name="霍齐卡尔星"/>
+	<list name="坎佩切星"/>
+	<list name="拉科姆鲁星"/>
+	<list name="克雷塔罗星"/>
+	<list name="巴拉干星"/>
+	<list name="莱昂星"/>
+	<list name="洛伦索星"/>
+	<list name="尼维斯星"/>
+	<list name="桑蒂西莫星"/>
+	<list name="帕拉马里星"/>
+	<list name="梅萨维德星"/>
+	<list name="基亚丘星"/>
+	<list name="波所黎各星"/>
+	<list name="查科星"/>
+	<list name="夏洛茨星"/>
+	<list name="陶斯星"/>
+	<list name="科斯科星"/>
+	<list name="夏文星"/>
+	<list name="利马星"/>
+	<list name="纳斯卡星"/>
+	<list name="阿雷基帕星"/>
+	<list name="哈玛德星"/>
+	<list name="杰米拉星"/>
+	<list name="蒂帕萨星"/>
+	<list name="蒂姆加星"/>
+	<list name="阿尔及尔星"/>
+	<list name="孟菲星"/>
+	<list name="底比斯古星"/>
+	<list name="阿布辛星"/>
+	<list name="阿布米那星"/>
+	<list name="卡特琳娜星"/>
+	<list name="哈特拉星"/>
+	<list name="亚述星"/>
+	<list name="佩特拉星"/>
+	<list name="库塞尔阿姆拉星"/>
+	<list name="乌姆赖萨斯星"/>
+	<list name="安杰尔星"/>
+	<list name="巴勒贝克星"/>
+	<list name="比布鲁斯星"/>
+	<list name="提尔星"/>
+	<list name="莱波蒂斯星"/>
+	<list name="萨布拉塔星"/>
+	<list name="昔兰尼星"/>
+	<list name="塔德拉尔特星"/>
+	<list name="加达梅斯星"/>
+	<list name="萨那星"/>
+	<list name="希巴星"/>
+	<list name="迦太基星"/>
+	<list name="苏塞星"/>
+	<list name="凯鲁星"/>
+	<list name="沙格星"/>
+	<list name="瓦丹星"/>
+	<list name="非斯星"/>
+	<list name="马拉柯什星"/>
+	<list name="阿伊特星"/>
+	<list name="瓦卢比利星"/>
+	<list name="缔头星"/>
+	<list name="索维拉星"/>
+	<list name="马扎星"/>
+	<list name="巴赫莱星"/>
+	<list name="库特姆星"/>
+	<list name="博尔戈星"/>
+	<list name="布基拉星"/>
+	<list name="帕尔米拉星"/>
+	<list name="雷伊"/>
+	<list name="派派"/>
+	<list name="派鲁克"/>
+	<list name="派鲁基达"/>
+	<list name="果冻鸭"/>
+	<list name="波浪鸭"/>
+	<list name="水晶鸭"/>
+	<list name="尼尔"/>
+	<list name="菲斯利"/>
+	<list name="艾斯菲亚"/>
+	<list name="新手装"/>
+	<list name="警备装"/>
+	<list name="卫兵装"/>
+	<list name="机械师"/>
+	<list name="潜水装"/>
+	<list name="训练师"/>
+	<list name="飞行装"/>
+	<list name="喷水装"/>
+	<list name="电击装"/>
+	<list name="黑武士"/>
+	<list name="蓝骑士"/>
+	<list name="科考员"/>
+	<list name="教官装"/>
+	<list name="联络官"/>
+	<list name="红莲战士"/>
+	<list name="公鸡装"/>
+	<list name="防寒装"/>
+	<list name="巨蟹座"/>
+	<list name="闪光勇士"/>
+	<list name="电击兔装"/>
+	<list name="狮子座"/>
+	<list name="加农炮装"/>
+	<list name="绿光队"/>
+	<list name="海啸队"/>
+	<list name="烈焰队"/>
+	<list name="特派队"/>
+	<list name="SPT"/>
+	<list name="精灵胶囊"/>
+	<list name="体力药剂"/>
+	<list name="活力药剂"/>
+	<list name="黄晶矿"/>
+	<list name="甲烷燃气"/>
+	<list name="玄冰"/>
+	<list name="空气结晶"/>
+	<list name="光合能量"/>
+	<list name="水之精华"/>
+	<list name="火焰元素"/>
+	<list name="电容球"/>
+	<list name="藤结晶"/>
+	<list name="黑晶矿"/>
+	<list name="炎晶"/>
+	<list name="精灵仓库"/>
+	<list name="精灵恢复仓"/>
+	<list name="分子转化仪"/>
+	<list name="物品合成台"/>
+	<list name="桌上足球"/>
+	<list name="幻想椅"/>
+	<list name="悬浮桌"/>
+	<list name="战术研究台"/>
+	<list name="凌光灯"/>
+	<list name="记忆晶体"/>
+	<list name="阿克希亚抱枕"/>
+	<list name="急冻兽摇摆椅"/>
+	<list name="索拉电视机"/>
+	<list name="经验分配器"/>
+	<list name="吞吞花灯"/>
+	<list name="电磁秋千"/>
+	<list name="圆木凳"/>
+	<list name="圆木桌"/>
+	<list name="玄冰桌"/>
+	<list name="玄冰凳"/>
+	<list name="浮冰灯"/>
+	<list name="紫晶扭蛋机"/>
+	<list name="重力篮筐"/>
+	<list name="绿光队宝箱"/>
+	<list name="海啸队宝箱"/>
+	<list name="烈焰队宝箱"/>
+	<list name="能量晶体"/>
+	<list name="电子留言板"/>
+	<list name="战绩记录器"/>
+	<list name="船长画像"/>
+	<list name="宇宙烟花"/>
+	<list name="船长室"/>
+	<list name="资料室"/>
+	<list name="实验室"/>
+	<list name="瞭望舱"/>
+	<list name="瞭望露台"/>
+	<list name="动力室"/>
+	<list name="传送舱"/>
+	<list name="机械室"/>
+	<list name="教官办公室"/>
+	<list name="精灵太空站"/>
+	<list name="赫尔卡星"/>
+	<list name="海洋星"/>
+	<list name="克洛斯星"/>
+	<list name="火山星"/>
+	<list name="云霄星"/>
+	<list name="塞西利亚星"/>
+	<list name="勇者之塔"/>
+	<list name="星际擂台"/>
+	<list name="铁头功"/>
+	<list name="电光弹"/>
+	<list name="电光射线"/>
+	<list name="电流撞击"/>
+	<list name="电磁炮"/>
+	<list name="雷光击"/>
+	<list name="电光轮"/>
+	<list name="雷霆万钧"/>
+	<list name="雷神"/>
+	<list name="弹跳踢"/>
+	<list name="毒饱"/>
+	<list name="毒气冲击"/>
+	<list name="泰山压顶"/>
+	<list name="毒雾"/>
+	<list name="四方刀叶"/>
+	<list name="光能射线"/>
+	<list name="光源波"/>
+	<list name="震动打击"/>
+	<list name="地裂"/>
+	<list name="碎裂撞击"/>
+	<list name="尘土飞扬"/>
+	<list name="爆裂拳"/>
+	<list name="泥浆翻滚"/>
+	<list name="沙尘暴"/>
+	<list name="叩击"/>
+	<list name="冲撞"/>
+	<list name="冲锋"/>
+	<list name="大地之拳"/>
+	<list name="超重拳"/>
+	<list name="硬化冲击"/>
+	<list name="冲烈破"/>
+	<list name="合金铁弹"/>
+	<list name="散弹速射"/>
+	<list name="金属爆破"/>
+	<list name="钢铁冲击"/>
+	<list name="全弹发射"/>
+	<list name="加农光波"/>
+	<list name="能量轰击"/>
+	<list name="连打"/>
+	<list name="尘土"/>
+	<list name="沙暴连打"/>
+	<list name="沙暴冲撞"/>
+	<list name="冲烈破"/>
+	<list name="沙尘冲击"/>
+	<list name="沙尘烈冲"/>
+	<list name="天摇地动"/>
+	<list name="冷气泡"/>
+	<list name="冰凌之光"/>
+	<list name="裂空刃"/>
+	<list name="月光闪"/>
+	<list name="宝石光线"/>
+	<list name="凝结之气"/>
+	<list name="聚能光炮"/>
+	<list name="突击"/>
+	<list name="飞翼连击"/>
+	<list name="飓风"/>
+	<list name="羽翼飞散"/>
+	<list name="飞空斩"/>
+	<list name="飞空俯冲"/>
+	<list name="飞翔之光"/>
+	<list name="螺旋烈风"/>
+	<list name="魔能暴风"/>
+	<list name="风驰电掣"/>
+	<list name="闪光击"/>
+	<list name="惊雷切"/>
+	<list name="霹雳斩"/>
+	<list name="白光刃"/>
+	<list name="雷电击"/>
+	<list name="电击光束"/>
+	<list name="电闪雷鸣"/>
+	<list name="万丈光芒"/>
+	<list name="极电千鸟"/>
+	<list name="瞬雷天闪"/>
+	<list name="派派光线"/>
+	<list name="钢铁飞踢"/>
+	<list name="钢铁冲击"/>
+	<list name="究极神力"/>
+	<list name="神风烈踢"/>
+	<list name="导力光波"/>
+	<list name="导力光束"/>
+	<list name="跳跳果冻"/>
+	<list name="追风拳"/>
+	<list name="水之刃"/>
+	<list name="连击破"/>
+	<list name="疾空连斩"/>
+	<list name="水晶烈冲"/>
+	<list name="海啸"/>
+	<list name="龙卷水击"/>
+	<list name="翻江倒海"/>
+	<list name="速攻"/>
+	<list name="念力射线"/>
+	<list name="迅猛击"/>
+	<list name="奇幻光波"/>
+	<list name="重力压制"/>
+	<list name="飞燕斩击"/>
+	<list name="飞空冲撞"/>
+	<list name="冰之刃"/>
+	<list name="甩尾"/>
+	<list name="冷冻光线"/>
+	<list name="破冰尾"/>
+	<list name="寒冰冻气"/>
+	<list name="玄冰箭"/>
+	<list name="碎冰"/>
+	<list name="圣灵闪"/>
+	<list name="冰天雪地"/>
+	<list name="极冰风暴"/>
+	<list name="极度冰点"/>
+	<list name="冰冻击打"/>
+	<list name="玄冰锥"/>
+	<list name="冰之爪"/>
+	<list name="裂冰连击"/>
+	<list name="零度冰破"/>
+	<list name="冻结之风"/>
+	<list name="急冻光波"/>
+	<list name="凝冻冰雹"/>
+	<list name="极速旋转"/>
+	<list name="意念干扰"/>
+	<list name="闪光流星"/>
+	<list name="宇宙幻影"/>
+	<list name="鸣叫"/>
+	<list name="冠军战斗服"/>
+	<list name="亚军战斗服"/>
+	<list name="季军战斗服"/>
+	<list name="经验大礼包"/>
+	<list name="金牌训练师"/>
+	<list name="神奇扭蛋牌"/>
+	<list name="精灵扭蛋机"/>
+	<list name="团队大集合"/>
+	<list name="太空基地"/>
+	<list name="帕诺金杯"/>
+	<list name="帕诺银杯"/>
+	<list name="帕诺铜杯"/>
+	<list name="太空屏风"/>
+	<list name="太空望远镜"/>
+	<list name="太空穿梭门"/>
+	<list name="星际电脑桌"/>
+	<list name="太空桌"/>
+	<list name="太空凳"/>
+	<list name="布布空气净化器"/>
+	<list name="小医生布布"/>
+	<list name="毛毛的吉他"/>
+	<list name="比比鼠电能球"/>
+	<list name="火猴惊奇箱"/>
+	<list name="能量晶体"/>
+	<list name="神秘领奖处"/>
+	<list name="皮皮壁灯"/>
+	<list name="毛毛海报"/>
+	<list name="神秘领奖处"/>
+	<list name="星空的秘密"/>
+	<list name="星座档案管理"/>
+	<list name="帕诺"/>
+	<list name="帕拉斯"/>
+	<list name="帕尔西丝"/>
+	<list name="依依"/>
+	<list name="依丁丝"/>
+	<list name="依卡莱恩"/>
+	<list name="玩水"/>
+	<list name="瞪眼"/>
+	<list name="充电"/>
+	<list name="寄生种子"/>
+	<list name="光合作用"/>
+	<list name="剑舞"/>
+	<list name="虚张声势"/>
+	<list name="白雾"/>
+	<list name="冥想"/>
+	<list name="吹飞"/>
+	<list name="高速移动"/>
+	<list name="鬼脸"/>
+	<list name="催眠粉"/>
+	<list name="毒粉"/>
+	<list name="香甜气息"/>
+	<list name="生长"/>
+	<list name="电磁波"/>
+	<list name="光之壁"/>
+	<list name="扔沙"/>
+	<list name="风之舞"/>
+	<list name="栖息"/>
+	<list name="顺风"/>
+	<list name="模仿术"/>
+	<list name="加速"/>
+	<list name="麻痹粉"/>
+	<list name="胃液"/>
+	<list name="能量储存"/>
+	<list name="能量吸收"/>
+	<list name="摇尾巴"/>
+	<list name="保护"/>
+	<list name="祈雨"/>
+	<list name="铁臂"/>
+	<list name="蓄气"/>
+	<list name="噪音"/>
+	<list name="威慑"/>
+	<list name="烟幕"/>
+	<list name="热量集合"/>
+	<list name="意志集中"/>
+	<list name="坚硬"/>
+	<list name="加温"/>
+	<list name="冒火"/>
+	<list name="鬼火"/>
+	<list name="封印"/>
+	<list name="神秘守护"/>
+	<list name="毒气集中"/>
+	<list name="防护罩"/>
+	<list name="霜甲"/>
+	<list name="冰甲"/>
+	<list name="寒流"/>
+	<list name="寒冰护体"/>
+	<list name="冰封"/>
+	<list name="降温"/>
+	<list name="冷冻气"/>
+	<list name="霜冻"/>
+	<list name="冰凌镜"/>
+	<list name="瞄准"/>
+	<list name="大地之力"/>
+	<list name="大地之墙"/>
+	<list name="灰尘"/>
+	<list name="大地之盾"/>
+	<list name="反击风暴"/>
+	<list name="金属声波"/>
+	<list name="引力磁场"/>
+	<list name="充能"/>
+	<list name="双子星"/>
+	<list name="阿尔法星温泉"/>
+	<list name="阿尔法星岩地"/>
+	<list name="双子阿尔法星"/>
+	<list name="双子贝塔星"/>
+	<list name="纳格"/>
+	<list name="纳齐鲁"/>
+	<list name="纳多雷"/>
+	<list name="迪达"/>
+	<list name="布布装"/>
+	<list name="飞轮勇士"/>
+	<list name="光能骑士"/>
+	<list name="室女装"/>
+	<list name="毛毛装"/>
+	<list name="全副武装"/>
+	<list name="卷土"/>
+	<list name="飞泥"/>
+	<list name="神秘之力"/>
+	<list name="地之守护"/>
+	<list name="冰霜"/>
+	<list name="宝石能量"/>
+	<list name="雷蒙教官的试炼"/>
+	<list name="火之试炼场"/>
+	<list name="宝石原力"/>
+	<list name="精神干涉"/>
+	<list name="精神同步"/>
+	<list name="愤怒意志"/>
+	<list name="雷祭"/>
+	<list name="雷雨天"/>
+	<list name="电闪光"/>
+	<list name="蓄力"/>
+	<list name="导力能量"/>
+	<list name="机能修复"/>
+	<list name="钢铁意志"/>
+	<list name="透明术"/>
+	<list name="水墙"/>
+	<list name="踏浪"/>
+	<list name="水神护体"/>
+	<list name="变化术"/>
+	<list name="空间跳跃"/>
+	<list name="感应"/>
+	<list name="精神控制"/>
+	<list name="灵光反冲"/>
+	<list name="灵感"/>
+	<list name="灵光镜"/>
+	<list name="闪光弹"/>
+	<list name="探知"/>
+	<list name="太阳能"/>
+	<list name="攻击模式"/>
+	<list name="防御模式"/>
+	<list name="协调模式"/>
+	<list name="浓缩精华"/>
+	<list name="凝聚"/>
+	<list name="快攻"/>
+	<list name="磁力波"/>
+	<list name="冲击"/>
+	<list name="激光"/>
+	<list name="能量光波"/>
+	<list name="钢铁冲撞"/>
+	<list name="飞翔之翼"/>
+	<list name="飞空斩击"/>
+	<list name="高能射线"/>
+	<list name="凌光"/>
+	<list name="聚能光线"/>
+	<list name="尖顶"/>
+	<list name="飞叶"/>
+	<list name="突刺"/>
+	<list name="浓缩汁液"/>
+	<list name="千叶斩"/>
+	<list name="风华乱舞"/>
+	<list name="绿光波"/>
+	<list name="绿叶仙子"/>
+	<list name="猛冲"/>
+	<list name="飞尘"/>
+	<list name="突击拳"/>
+	<list name="气绝冲"/>
+	<list name="空掌破"/>
+	<list name="风沙暴击"/>
+	<list name="钢砂"/>
+	<list name="风尘沙暴"/>
+	<list name="无限空零雨"/> <!--冠名  -->
+	<list name="炎王击"/>
+	<list name="喷火"/>
+	<list name="火光弹"/>
+	<list name="空烈闪"/>
+	<list name="炎舞阵"/>
+	<list name="爆炎碎裂"/>
+	<list name="燃烧脉冲"/>
+	<list name="连击"/>
+	<list name="极速俯冲"/>
+	<list name="疾风追击"/>
+	<list name="天翔连闪"/>
+	<list name="风压"/>
+	<list name="回风袭"/>
+	<list name="风切术"/>
+	<list name="流星冲"/>
+	<list name="雷霆闪"/>
+	<list name="落雷"/>
+	<list name="交叉闪电"/>
+	<list name="穿击电流"/>
+	<list name="超能战队"/><!-- 冠名 -->
+	<list name="磁盘解密"/>
+	<list name="雷伊的故事"/>
+	<list name="雷伊海报"/>
+	<list name="佐格"/>
+	<list name="超能晶体"/>
+	<list name="NoNo"/>
+	<list name="肖恩"/>
+	<list name="发明室"/>
+	<list name="赛尔工厂"/>
+	<list name="NoNo手册"/>
+	<list name="精灵恢复芯片"/>
+	<list name="经验分配芯片"/>
+	<list name="分子转化芯片"/>
+	<list name="跟随模式芯片"/>
+	<list name="初级语言芯片"/>
+	<list name="迪尔克"/>
+	<list name="悠悠"/>
+	<list name="蝠迪"/>
+	<list name="希拉"/>
+	<list name="柯蓝"/>
+	<list name="尼布"/>
+	<list name="尼克斯"/>
+	<list name="鲁克"/>
+	<list name="卡鲁加"/>
+	<list name="卡尔加斯"/>
+	<list name="卡西"/>
+	<list name="卡尔特"/>
+	<list name="粉红变色芯片"/>
+	<list name="黄色变色芯片"/>
+	<list name="绿色变色芯片"/>
+	<list name="紫色变色芯片"/>
+	<list name="白色变色芯片"/>
+	<list name="精灵主打星"/>
+	<list name="航行日志"/>
+	<list name="飞船日志"/>
+	<list name="船员日志"/>
+	<list name="勘察日志"/>
+	<list name="精灵课堂"/>
+	<list name="星空教室"/>
+	<list name="星球日志"/>
+	<list name="小型能量芯片"/>
+	<list name="智慧芯片"/>
+	<list name="NoNo弹性球"/>
+	<list name="纽斯"/>
+	<list name="罗杰"/>
+	<list name="派特"/>
+	<list name="爱丽丝"/>
+	<list name="茜茜"/>
+	<list name="贾斯汀"/>
+	<list name="苏克"/>
+	<list name="卫兵"/>
+	<list name="雷蒙"/>
+	<list name="艾里逊"/>
+	<list name="再生"/>
+	<list name="坚强"/>
+	<list name="大地精华"/>
+	<list name="属性反转"/>
+	<list name="凌厉"/>
+	<list name="火焰之力"/>
+	<list name="浴火重生"/>
+	<list name="气力"/>
+	<list name="超声波"/>
+	<list name="干扰音波"/>
+	<list name="静电"/>
+	<list name="电极"/>
+	<list name="电能聚合"/>
+	<list name="冰晶寒甲"/>
+	<list name="寒冰之力"/>
+	<list name="洒水"/>
+	<list name="阻挠"/>
+	<list name="雷电射线"/>
+	<list name="闪电风暴"/>
+	<list name="冻气拳"/>
+	<list name="柔软拳"/>
+	<list name="极冰烈闪"/>
+	<list name="冰之球"/>
+	<list name="暴风雪"/>
+	<list name="天寒地冻"/>
+	<list name="水之牙"/>
+	<list name="水柱"/>
+	<list name="水流冲撞"/>
+	<list name="水流飞溅"/>
+	<list name="海浪"/>
+	<list name="点头"/>
+	<list name="悠悠光线"/>
+	<list name="爱心"/>
+	<list name="五芒星"/>
+	<list name="电网"/>
+	<list name="雷震"/>
+	<list name="打雷"/>
+	<list name="雷暴"/>
+	<list name="护盾"/>
+	<list name="闪光"/>
+	<list name="强化"/>
+	<list name="急转冲顶"/>
+	<list name="连锁闪电"/>
+	<list name="迅雷击"/>
+	<list name="破防击"/>
+	<list name="雷鸣闪"/>
+	<list name="高斯"/>
+	<list name="猎户臂"/>
+	<list name="星图"/>
+	<list name="A型特殊星"/>
+	<list name="哥白尼"/>
+	<list name="猎户座大星云"/>
+	<list name="疏散星系团"/>
+	<list name="星团"/>
+	<list name="阿贝比长仪"/>
+	<list name="哥本哈根问题"/>
+	<list name="猎户座FU型变星"/>
+	<list name="互动中心"/>
+	<list name="萌翻全场"/><!-- 冠名 -->
+	<list name="阿比鲁尼"/>
+	<list name="格雷果里望远镜"/>
+	<list name="猎户座T型变星"/>
+	<list name="双阶段加速"/>
+	<list name="星系"/>
+	<list name="阿波罗月球探测"/>
+	<list name="格林威治平时"/>
+	<list name="林德布拉德"/>
+	<list name="双速月球照相仪"/>
+	<list name="星系成团"/>
+	<list name="阿尔巴塔尼"/>
+	<list name="双天线射电干涉"/>
+	<list name="星系的分布"/>
+	<list name="阿尔文"/>
+	<list name="共生星"/>
+	<list name="临边昏暗"/>
+	<list name="双星"/>
+	<list name="星系的分类"/>
+	<list name="阿尔文波"/>
+	<list name="共振理论"/>
+	<list name="临界等位面"/>
+	<list name="双折射滤光器"/>
+	<list name="星系的起源"/>
+	<list name="阿尔文学说"/>
+	<list name="共振吸收"/>
+	<list name="灵台仪象志"/>
+	<list name="双子座U型星"/>
+	<list name="星系的演化"/>
+	<list name="阿拉伯天文学"/>
+	<list name="古代计时"/>
+	<list name="凌日"/>
+	<list name="水内行星"/>
+	<list name="星系的质光比"/>
+	<list name="阿利斯塔克"/>
+	<list name="谷德带"/>
+	<list name="零压宇宙解"/>
+	<list name="星系动力学"/>
+	<list name="固定球面射电"/>
+	<list name="阿姆巴楚米扬"/>
+	<list name="水星近日点进动"/>
+	<list name="星系核"/>
+	<list name="阿耶波多"/>
+	<list name="水运仪象台"/>
+	<list name="星系核射电"/>
+	<list name="惯性参考系"/>
+	<list name="流体静力学平衡"/>
+	<list name="星系计数"/>
+	<list name="埃费希德效应"/>
+	<list name="光斑"/>
+	<list name="流星"/>
+	<list name="朔望"/>
+	<list name="星系际物质"/>
+	<list name="埃及古代天文学"/>
+	<list name="光电倍增管"/>
+	<list name="流星雷达观测"/>
+	<list name="斯塔克效应"/>
+	<list name="星系冕"/>
+	<list name="矮新星"/>
+	<list name="光电成像器件"/>
+	<list name="流星雨"/>
+	<list name="斯特龙根"/>
+	<list name="星系盘"/>
+	<list name="矮星"/>
+	<list name="光电导星装置"/>
+	<list name="六分仪"/>
+	<list name="斯特龙根半径"/>
+	<list name="星系天文学"/>
+	<list name="光电等高仪"/>
+	<list name="星系团"/>
+	<list name="矮造父变星"/>
+	<list name="光电分光光度计"/>
+	<list name="漏刻"/>
+	<list name="四色测光系统"/>
+	<list name="星协"/>
+	<list name="爱丁顿"/>
+	<list name="光电光度计"/>
+	<list name="漏水转浑天仪"/>
+	<list name="星云"/>
+	<list name="爱因斯坦"/>
+	<list name="光电中星仪"/>
+	<list name="滤光片"/>
+	<list name="苏颂"/>
+	<list name="星云变星"/>
+	<list name="静态宇宙模型"/>
+	<list name="光年"/>
+	<list name="掠射X射线"/>
+	<list name="石刻天文图"/>
+	<list name="要塞前的战斗"/>
+	<list name="蜘蛛雷阵"/>
+	<list name="守护之壁"/>
+	<list name="SC006加农炮"/>
+	<list name="能量填充"/>
+	<list name="超能NoNo"/>
+	<list name="超能晶体"/>
+	<list name="特攻队服"/>
+	<list name="赛尔军团兵力"/>
+	<list name="海盗军团兵力"/>
+	<list name="特攻队战斗纪念"/>
+	<list name="海盗训练牌"/>
+	<list name="集训装"/>
+	<list name="隐藏的防护据点"/>
+	<list name="守卫机器人"/>
+	<list name="海盗防御系统"/>
+	<list name="终极战备库"/>
+	<list name="近距离战斗模式"/>
+	<list name="蓝色变色芯片"/>
+	<list name="超能胶囊"/>
+	<list name="经验接收器"/>
+	<list name="绿色通道"/>
+	<list name="上天入地"/>
+	<list name="召唤超能NoNo"/>
+	<list name="四驱装"/>
+	<list name="红龙装"/>
+	<list name="罗马铠甲"/>
+	<list name="蜘蛛装"/>
+	<list name="战神装"/>
+	<list name="将军铠甲"/>
+	<list name="武士铠甲"/>
+	<list name="RX-78"/>
+	<list name="MS-06A"/>
+	<list name="超能采矿装置"/>
+	<list name="原子能量"/>
+	<list name="守护"/>
+	<list name="原始能量"/>
+	<list name="旋转"/>
+	<list name="精准"/>
+	<list name="大地之护"/>
+	<list name="地之意志"/>
+	<list name="吸水"/>
+	<list name="呐喊"/>
+	<list name="海洋之心"/>
+	<list name="虚弱光线"/>
+	<list name="属性复制"/>
+	<list name="变异生长"/>
+	<list name="玄雷阵"/>
+	<list name="绿色闪电"/>
+	<list name="闪光雷电"/>
+	<list name="跟踪弹"/>
+	<list name="极速冲撞"/>
+	<list name="强击"/>
+	<list name="攻城锤击"/>
+	<list name="岩碎斩"/>
+	<list name="能量射线"/>
+	<list name="原子光波"/>
+	<list name="强攻"/>
+	<list name="狂攻"/>
+	<list name="百裂冲击"/>
+	<list name="高能光波"/>
+	<list name="热能激光"/>
+	<list name="碎裂"/>
+	<list name="碎石击"/>
+	<list name="巨石破"/>
+	<list name="螺旋拳"/>
+	<list name="风沙冲击"/>
+	<list name="飞沙"/>
+	<list name="追风沙尘"/>
+	<list name="旋转沙暴"/>
+	<list name="震动大地"/>
+	<list name="水泡"/>
+	<list name="挥舞"/>
+	<list name="水射线"/>
+	<list name="水流飞溅"/>
+	<list name="波涛碰撞"/>
+	<list name="闪光一击"/>
+	<list name="破浪冲击"/>
+	<list name="贯穿水枪"/>
+	<list name="海浪咆哮"/>
+	<list name="暴风雨"/>
+	<list name="蓝光水泵"/>
+	<list name="光波"/>
+	<list name="重力波"/>
+	<list name="铁臂撞击"/>
+	<list name="激光扫射"/>
+	<list name="野蛮横扫"/>
+	<list name="金刚击"/>
+	<list name="穿透光束"/>
+	<list name="极速射线"/>
+	<list name="激光四射"/>
+	<list name="魔动能量"/>
+	<list name="木叶"/>
+	<list name="践踏"/>
+	<list name="藤蔓乱打"/>
+	<list name="藤鞭"/>
+	<list name="千针叶"/>
+	<list name="飞叶连射"/>
+	<list name="星云摄谱仪"/>
+	<list name="暗条"/>
+	<list name="贝塔星荒原"/>
+	<list name="海盗训练场"/>
+	<list name="海盗要塞"/>
+	<list name="精灵召唤场"/>
+	<list name="奇塔"/>
+	<list name="钢塔斯"/>
+	<list name="雷吉姆斯"/>
+	<list name="丁格"/>
+	<list name="丁加鲁"/>
+	<list name="丁鲁特"/>
+	<list name="布鲁"/>
+	<list name="布鲁布"/>
+	<list name="布鲁克克"/>
+	<list name="雷格"/>
+	<list name="雷顿塔"/>
+	<list name="雷纳多"/>
+	<list name="小树精"/>
+	<list name="巨型树妖"/>
+	<list name="卡卡"/>
+	<list name="利兹"/>
+	<list name="克洛亚"/>
+	<list name="莱尼"/>
+	<list name="特鲁尼"/>
+	<list name="伊卡罗尼"/>
+	<list name="海洋星潜水基地"/>
+	<list name="双子阿尔法基地"/>
+	<list name="精灵晚安蛋"/>
+	<list name="迪达滑滑梯"/>
+	<list name="温泉浴缸"/>
+	<list name="西塔发现纪念"/>
+	<list name="艾里逊跑步机"/>
+	<list name="海盗跳舞机"/>
+	<list name="水下探查机"/>
+	<list name="彩色螺丝钉"/>
+	<list name="植物环保围栏"/>
+	<list name="记号地毯"/>
+	<list name="小火猴发现纪念"/>
+	<list name="超能对讲机"/>
+	<list name="布布发现纪念"/>
+	<list name="伊优发现纪念"/>
+	<list name="NoNo发布纪念"/>
+	<list name="佐格飞镖"/>
+	<list name="格林海报"/>
+	<list name="海洋星海水壁挂"/>
+	<list name="海盗战斗奖章"/>
+	<list name="战队要塞"/>
+	<list name="战队总部"/>
+	<list name="星际堡垒"/>
+	<list name="工程研究所"/>
+	<list name="精炼厂"/>
+	<list name="SC炮防御塔"/>
+	<list name="火箭防御塔"/>
+	<list name="供给站"/>
+	<list name="战队开发中心"/>
+	<list name="赛尔工厂"/>
+	<list name="精灵研究中心"/>
+	<list name="装备研究所"/>
+	<list name="装备修理站"/>
+	<list name="精灵探测站"/>
+	<list name="精灵训练站"/>
+	<list name="防护罩发生器"/>
+	<list name="赛尔雷达"/>
+	<list name="生存中心"/>
+	<list name="光谱变星"/>
+	<list name="洛希极限"/>
+	<list name="岁星纪年"/>
+	<list name="行星环"/>
+	<list name="光学跟踪"/>
+	<list name="缩焦器"/>
+	<list name="行星际磁场"/>
+	<list name="广角望远镜"/>
+	<list name="巴德"/>
+	<list name="巴纳德星"/>
+	<list name="太阳常数"/>
+	<list name="行星射电"/>
+	<list name="拉博"/>
+	<list name="库博"/>
+	<list name="波古"/>
+	<list name="吉拉"/>
+	<list name="吉古拉"/>
+	<list name="影球"/>
+	<list name="尤纳斯"/>
+	<list name="巴多"/>
+	<list name="巴奈特"/>
+	<list name="巴法尔"/>
+	<list name="侦察眼罩"/>
+	<list name="南瓜头盔"/>
+	<list name="南瓜机械臂"/>
+	<list name="南瓜腰带"/>
+	<list name="南瓜战靴"/>
+	<list name="野战头盔"/>
+	<list name="野战抢"/>
+	<list name="野战弹夹"/>
+	<list name="野战履带"/>
+	<list name="天蝎甲壳"/>
+	<list name="天蝎毒针"/>
+	<list name="天蝎腹甲"/>
+	<list name="天蝎毒钳"/>
+	<list name="暗能吸纳仪"/>
+	<list name="幽灵枪"/>
+	<list name="雷达芯片"/>
+	<list name="闇灵枪"/>
+	<list name="赫星精灵胶囊"/>
+	<list name="赫星体力药剂"/>
+	<list name="赫星活力药剂"/>
+	<list name="电能石"/>
+	<list name="双子贝塔星基地"/>
+	<list name="帕诺太空基地"/>
+	<list name="太空星座仪"/>
+	<list name="超能晶体模型"/>
+	<list name="黑洞地毯"/>
+	<list name="NoNo无重力仓"/>
+	<list name="星星植物"/>
+	<list name="螺丝钉旋转桌"/>
+	<list name="纳多雷工具桌"/>
+	<list name="莱尼凳"/>
+	<list name="纳多雷多功能椅"/>
+	<list name="贝塔电能灯"/>
+	<list name="赛尔电极座"/>
+	<list name="皮皮发现纪念"/>
+	<list name="仙人球发现纪念"/>
+	<list name="毛毛发现纪念"/>
+	<list name="小豆芽发现纪念"/>
+	<list name="幽浮发现纪念"/>
+	<list name="贝尔发现纪念"/>
+	<list name="利牙鱼发现纪念"/>
+	<list name="尼尔海报"/>
+	<list name="瞿昙悉达"/>
+	<list name="宇宙线"/>
+	<list name="磁尾"/>
+	<list name="互扰星系"/>
+	<list name="天文摆钟"/>
+	<list name="黄赤交角"/>
+	<list name="元素的丰度"/>
+	<list name="黄道光"/>
+	<list name="大红斑"/>
+	<list name="大陵五蚀双星"/>
+	<list name="日珥"/>
+	<list name="火花室"/>
+	<list name="火星"/>
+	<list name="日晷"/>
+	<list name="火星极冠"/>
+	<list name="日冕"/>
+	<list name="日冕仪"/>
+	<list name="月相"/>
+	<list name="月掩射电源"/>
+	<list name="激扰星系"/>
+	<list name="陨星"/>
+	<list name="极光"/>
+	<list name="地磁场"/>
+	<list name="轨道天文台"/>
+	<list name="脉动变星"/>
+	<list name="休伊什"/>
+	<list name="鬼星团"/>
+	<list name="卯酉圈"/>
+	<list name="昴星团"/>
+	<list name="旋涡星系"/>
+	<list name="蒙气差"/>
+	<list name="米尔斯十字"/>
+	<list name="亚矮星"/>
+	<list name="亚当斯"/>
+	<list name="哈雷"/>
+	<list name="贝琳"/>
+	<list name="海耳"/>
+	<list name="夜天光"/>
+	<list name="比鲁尼"/>
+	<list name="毕宿五"/>
+	<list name="毕星团"/>
+	<list name="银道面"/>
+	<list name="变换理论"/>
+	<list name="赫茨普龙"/>
+	<list name="赫罗图"/>
+	<list name="不规则星系"/>
+	<list name="银冕"/>
+	<list name="银核"/>
+	<list name="银盘"/>
+	<list name="恒星大气"/>
+	<list name="庞加莱体"/>
+	<list name="喷焰"/>
+	<list name="彭齐亚斯"/>
+	<list name="昌德拉塞卡"/>
+	<list name="引力坍缩"/>
+	<list name="天球仪"/>
+	<list name="隐匿质量"/>
+	<list name="超密态物质"/>
+	<list name="谱线轮廓"/>
+	<list name="尘埃宇宙"/>
+	<list name="晨昏蒙影"/>
+	<list name="恒星紫外辐射"/>
+	<list name="恒星自转"/>
+	<list name="磁暴"/>
+	<list name="红外源"/>
+	<list name="磁变星"/>
+	<list name="宇宙年龄"/>
+	<list name="磁层亚暴"/>
+	<list name="磁合并"/>
+	<list name="后发星系团"/>
+	<list name="曲率辐射"/>
+	<list name="天王星环"/>
+	<list name="磁声波"/>
+	<list name="罗巴切夫斯基"/>
+	<list name="星周物质"/>
+	<list name="暗星云"/>
+	<list name="光球"/>
+	<list name="沃尔克度规"/>
+	<list name="速度弥散度"/>
+	<list name="星族"/>
+	<list name="奥本海默极限"/>
+	<list name="光生中微子过程"/>
+	<list name="罗默"/>
+	<list name="速度椭球分布"/>
+	<list name="奥伯斯佯谬"/>
+	<list name="光瞳光度计"/>
+	<list name="罗素"/>
+	<list name="岁差常数"/>
+	<list name="奥尔洛夫"/>
+	<list name="光线偏转"/>
+	<list name="洛韦尔"/>
+	<list name="岁差和章动"/>
+	<list name="行星磁层"/>
+	<list name="奥尔特"/>
+	<list name="光行差"/>
+	<list name="洛希界面"/>
+	<list name="岁实和朔策"/>
+	<list name="行星轨道要素"/>
+	<list name="光行差常数"/>
+	<list name="B型发射星"/>
+	<list name="光学跟踪经纬仪"/>
+	<list name="落下闳"/>
+	<list name="行星际磁场"/>
+	<list name="B2FH理论"/>
+	<list name="光学天文学"/>
+	<list name="行星际飞行器运动"/>
+	<list name="BN天体"/>
+	<list name="M区"/>
+	<list name="行星际监测站"/>
+	<list name="马卡良星系"/>
+	<list name="太尔各特法"/>
+	<list name="行星际空间探测"/>
+	<list name="巴耳末减幅"/>
+	<list name="圭表"/>
+	<list name="马克劳林椭球体"/>
+	<list name="行星际物质"/>
+	<list name="规则星系团"/>
+	<list name="巴塔尼"/>
+	<list name="轨道地球物理台"/>
+	<list name="玛雅天文学"/>
+	<list name="太阳磁场"/>
+	<list name="行星视运动"/>
+	<list name="白矮星"/>
+	<list name="轨道改进"/>
+	<list name="麦哲伦云"/>
+	<list name="太阳磁像仪"/>
+	<list name="行星物理学"/>
+	<list name="轨道计算"/>
+	<list name="脉冲星"/>
+	<list name="太阳大气标高"/>
+	<list name="行星状星云"/>
+	<list name="白洞"/>
+	<list name="轨道太阳观测台"/>
+	<list name="脉冲星自转突快"/>
+	<list name="邢云路"/>
+	<list name="白光耀斑"/>
+	<list name="太阳单色像"/>
+	<list name="半导体探测器"/>
+	<list name="鬼星团"/>
+	<list name="太阳电子事件"/>
+	<list name="半规则变星"/>
+	<list name="昴星团"/>
+	<list name="太阳对流层"/>
+	<list name="宣夜说"/>
+	<list name="半相接双星"/>
+	<list name="太阳风"/>
+	<list name="旋臂"/>
+	<list name="棒旋星系"/>
+	<list name="美索不达米亚"/>
+	<list name="太阳风边界"/>
+	<list name="薄靶模型"/>
+	<list name="蒙德极小期"/>
+	<list name="辐射测量仪器"/>
+	<list name="璇玑玉衡"/>
+	<list name="爆发变星"/>
+	<list name="辐射监测卫星"/>
+	<list name="爆发日珥"/>
+	<list name="太阳γ射线爆发"/>
+	<list name="寻星镜"/>
+	<list name="北斗"/>
+	<list name="米粒组织"/>
+	<list name="太阳观测仪器"/>
+	<list name="北极星"/>
+	<list name="密度波理论"/>
+	<list name="太阳光电磁像仪"/>
+	<list name="雅可比椭球体"/>
+	<list name="哈勃"/>
+	<list name="冕洞"/>
+	<list name="太阳黑子周期"/>
+	<list name="哈勃常数"/>
+	<list name="冕流和极羽"/>
+	<list name="太阳缓变射电"/>
+	<list name="亚巨星"/>
+	<list name="哈勃定律"/>
+	<list name="秒差距"/>
+	<list name="太阳活动预报"/>
+	<list name="衍射光栅"/>
+	<list name="哈勃距离"/>
+	<list name="闵可夫斯基"/>
+	<list name="哈根斯"/>
+	<list name="闵可夫斯基度规"/>
+	<list name="贝塞耳"/>
+	<list name="哈雷彗星"/>
+	<list name="冥外行星"/>
+	<list name="仰仪"/>
+	<list name="海耳"/>
+	<list name="太阳射电"/>
+	<list name="耀斑"/>
+	<list name="贝塞耳岁首"/>
+	<list name="冥王星卫星"/>
+	<list name="太阳射电爆发"/>
+	<list name="耀星"/>
+	<list name="海王星卫星"/>
+	<list name="莫尔顿波"/>
+	<list name="背点"/>
+	<list name="太阳摄谱仪"/>
+	<list name="本超星系团"/>
+	<list name="氦丰度"/>
+	<list name="太阳视差"/>
+	<list name="本初子午线"/>
+	<list name="木星环"/>
+	<list name="太阳视频磁像仪"/>
+	<list name="一氧化碳射电谱"/>
+	<list name="本地静止标准"/>
+	<list name="航海天文学"/>
+	<list name="木星射电爆发"/>
+	<list name="太阳塔"/>
+	<list name="伊斯兰历法"/>
+	<list name="本星系群"/>
+	<list name="木星卫星"/>
+	<list name="太阳物理学"/>
+	<list name="目视双星"/>
+	<list name="移动星团 "/>
+	<list name="银道带"/>
+	<list name="闭合宇宙模型"/>
+	<list name="河外射电"/>
+	<list name="南宫说"/>
+	<list name="太阳系起源"/>
+	<list name="银道坐标系"/>
+	<list name="河外射电展源"/>
+	<list name="太阳系物理学"/>
+	<list name="变星的脉动理论"/>
+	<list name="逆康普顿散射"/>
+	<list name="太阳巡视"/>
+	<list name="银河背景射电"/>
+	<list name="标度因子"/>
+	<list name="银河系次系"/>
+	<list name="太阳照相磁像仪"/>
+	<list name="银河系核球"/>
+	<list name="不规则变星"/>
+	<list name="牛顿望远镜"/>
+	<list name="太阳质子流"/>
+	<list name="银河系结构"/>
+	<list name="轨道天文台"/>
+	<list name="脉动变星"/>
+	<list name="休伊什"/>
+	<list name="鬼星团"/>
+	<list name="卯酉圈"/>
+	<list name="昴星团"/>
+	<list name="旋涡星系"/>
+	<list name="蒙气差"/>
+	<list name="米尔斯十字"/>
+	<list name="亚矮星"/>
+	<list name="亚当斯"/>
+	<list name="哈雷"/>
+	<list name="贝琳"/>
+	<list name="海耳"/>
+	<list name="夜天光"/>
+	<list name="比鲁尼"/>
+	<list name="毕宿五"/>
+	<list name="毕星团"/>
+	<list name="银道面"/>
+	<list name="变换理论"/>
+	<list name="赫茨普龙"/>
+	<list name="赫罗图"/>
+	<list name="不规则星系"/>
+	<list name="银冕"/>
+	<list name="银核"/>
+	<list name="银盘"/>
+	<list name="恒星大气"/>
+	<list name="庞加莱体"/>
+	<list name="喷焰"/>
+	<list name="彭齐亚斯"/>
+	<list name="昌德拉塞卡"/>
+	<list name="引力坍缩"/>
+	<list name="天球仪"/>
+	<list name="隐匿质量"/>
+	<list name="超密态物质"/>
+	<list name="谱线轮廓"/>
+	<list name="尘埃宇宙"/>
+	<list name="晨昏蒙影"/>
+	<list name="恒星紫外辐射"/>
+	<list name="恒星自转"/>
+	<list name="磁暴"/>
+	<list name="红外源"/>
+	<list name="磁变星"/>
+	<list name="宇宙年龄"/>
+	<list name="磁层亚暴"/>
+	<list name="磁合并"/>
+	<list name="后发星系团"/>
+	<list name="曲率辐射"/>
+	<list name="天王星环"/>
+	<list name="磁声波"/>
+	<list name="精灵追踪"/>
+	<list name="血色浪漫"/>
+	<list name="赫金武装"/>
+	<list name="紫荆铠"/>
+	<list name="法澜青衣"/>
+	<list name="翔云甲"/>
+	<list name="冰雪争霸"/>
+	<list name="西撒拉斯"/>
+	<list name="克林卡修"/>
+	<list name="祖拉"/>
+	<list name="亚梅丝"/>
+	<list name="林奇"/>
+	<list name="林修斯"/>
+	<list name="奇达"/>
+	<list name="罗卡尔"/>
+	<list name="摩狮迪露"/>
+	<list name="露露"/>
+	<list name="加格"/>
+	<list name="加格尔"/>
+	<list name="无敌精灵胶囊"/>
+	<list name="基因重组药剂"/>
+	<list name="神经元再生胶囊"/>
+	<list name="降级秘药"/>
+	<list name="双倍加速器"/>
+	<list name="强化合成剂"/>
+	<list name="灵能束腰"/>
+	<list name="金布甲"/>
+	<list name="无敌之气"/>
+	<list name="幽兰"/>
+	<list name="利爪机甲"/>
+	<list name="黑焰使徒"/>
+	<list name="大嘴怪垃圾桶"/>
+	<list name="毛毛的吉他"/>
+	<list name="云霄天候仪"/>
+	<list name="斯诺变色豌豆"/>
+	<list name="提亚斯羽绒毯"/>
+	<list name="小萤蜂飞行风筝"/>
+	<list name="斯诺雪人"/>
+	<list name="问号惊吓箱"/>
+	<list name="莫比推土机"/>
+	<list name="查克"/>
+	<list name="查莫斯"/>
+	<list name="查理几斯"/>
+	<list name="希洛"/>
+	<list name="卡弗"/>
+	<list name="巴弗洛"/>
+	<list name="洛奇"/>
+	<list name="拉杰特"/>
+	<list name="奇拉塔顿"/>
+	<list name="古鲁"/>
+	<list name="梅鲁"/>
+	<list name="超能精炼芯片"/>
+	<list name="反物质能量"/>
+	<list name="绿斯诺豌豆"/>
+	<list name="黄斯诺豌豆"/>
+	<list name="橙斯诺豌豆"/>
+	<list name="暗黑之匙"/>
+	<list name="阳光"/>
+	<list name="凌光"/>
+	<list name="冰晶"/>
+	<list name="托尼"/>
+	<list name="迦玛"/>
+	<list name="迪度"/>
+	<list name="巴尔克"/>
+	<list name="托尼亚"/>
+	<list name="斯托利亚"/>
+	<list name="寒流枪"/>
+	<list name="红宝石"/>
+	<list name="蓝宝石"/>
+	<list name="圣堂武士"/>
+	<list name="尼克"/>
+	<list name="贝特卡恩"/>
+	<list name="讯黄蜂"/>
+	<list name="灵翼蜂"/>
+	<list name="磁力光束枪台"/>
+	<list name="木叶光波"/>
+	<list name="冰刺"/>
+	<list name="寒冰击"/>
+	<list name="流冰"/>
+	<list name="回旋击"/>
+	<list name="冰震"/>
+	<list name="冰霜乱舞"/>
+	<list name="冰凝球"/>
+	<list name="冷旋风"/>
+	<list name="冰雪世界"/>
+	<list name="扔泥"/>
+	<list name="飞旋击"/>
+	<list name="灰色射线"/>
+	<list name="空旋斩"/>
+	<list name="翔星刃"/>
+	<list name="暮光波"/>
+	<list name="波动气"/>
+	<list name="星空闪光"/>
+	<list name="突斩"/>
+	<list name="弧月闪"/>
+	<list name="刃气"/>
+	<list name="翔月双闪"/>
+	<list name="斩光时雨"/>
+	<list name="双刃刀光"/>
+	<list name="真空千烈破"/>
+	<list name="斩空天翔剑"/>
+	<list name="天翔苍破斩"/>
+	<list name="星影连波"/>
+	<list name="破邪十字军"/>
+	<list name="翔破裂闪光"/>
+	<list name="幻魔空牙冲"/>
+	<list name="冥空斩翔剑"/>
+	<list name="牙连絶袭击"/>
+	<list name="爪龙连牙弹"/>
+	<list name="魔王炎击波"/>
+	<list name="利刃魔神波"/>
+	<list name="搏斗"/>
+	<list name="左右互搏"/>
+	<list name="元气波"/>
+	<list name="隔空掌"/>
+	<list name="气绝掌"/>
+	<list name="绝一闪"/>
+	<list name="破釜沉舟"/>
+	<list name="拳气"/>
+	<list name="气功波"/>
+	<list name="爆裂气"/>
+	<list name="连撞"/>
+	<list name="影球"/>
+	<list name="暗流击"/>
+	<list name="暗影箭"/>
+	<list name="暗影爆炸"/>
+	<list name="暗之利刃"/>
+	<list name="黑月极闪"/>
+	<list name="魔影"/>
+	<list name="黑暗之云"/>
+	<list name="献祭"/>
+	<list name="黑色幻影"/>
+	<list name="穿刺"/>
+	<list name="黑射线"/>
+	<list name="毁灭打击"/>
+	<list name="魔网"/>
+	<list name="黑色闪电"/>
+	<list name="夜袭"/>
+	<list name="瞬影烈刃"/>
+	<list name="黑火焰"/>
+	<list name="魔动光波"/>
+	<list name="暗影魔球"/>
+	<list name="黑暗之门"/>
+	<list name="火炎击"/>
+	<list name="火环"/>
+	<list name="炎爆"/>
+	<list name="走火"/>
+	<list name="狂暴攻击"/>
+	<list name="炽热之痛"/>
+	<list name="火焰雨"/>
+	<list name="灼热熔岩"/>
+	<list name="燃烧烈焰"/>
+	<list name="黒之环"/>
+	<list name="邪恶攻击"/>
+	<list name="无影阵"/>
+	<list name="灭魔冲旋"/>
+	<list name="穿影弹"/>
+	<list name="影月刀光"/>
+	<list name="黑洞"/>
+	<list name="念力波"/>
+	<list name="炎火冲"/>
+	<list name="四散光线"/>
+	<list name="超闪光"/>
+	<list name="迅捷突击"/>
+	<list name="真空刃"/>
+	<list name="海浪翻滚"/>
+	<list name="星光"/>
+	<list name="极限光波"/>
+	<list name="流星陨落"/>
+	<list name="飞踢"/>
+	<list name="膝撞"/>
+	<list name="飞燕连脚"/>
+	<list name="脚刃"/>
+	<list name="回旋利刃"/>
+	<list name="瞬踢"/>
+	<list name="旋风脚"/>
+	<list name="空牙烈蹴"/>
+	<list name="袭爪飞龙脚"/>
+	<list name="岚脚"/>
+	<list name="真空烈闪"/>
+	<list name="旋转铁拳"/>
+	<list name="岩铁碎"/>
+	<list name="千斤重锤"/>
+	<list name="炸裂飞弹"/>
+	<list name="螺旋光线"/>
+	<list name="充能光炮"/>
+	<list name="回转"/>
+	<list name="电光圈"/>
+	<list name="雷电突刺"/>
+	<list name="猛烈撞击"/>
+	<list name="奔雷极闪"/>
+	<list name="电磁射线"/>
+	<list name="雷之枪"/>
+	<list name="超电波"/>
+	<list name="邪恶爪击"/>
+	<list name="瞬迅击"/>
+	<list name="撕裂"/>
+	<list name="烈震天冲"/>
+	<list name="猛虎连击破"/>
+	<list name="气功弹"/>
+	<list name="穿击光波"/>
+	<list name="折翼"/>
+	<list name="翼片飞射"/>
+	<list name="飞翼撞击"/>
+	<list name="飞翼猛冲"/>
+	<list name="羽翼齐射"/>
+	<list name="剧毒针刺"/>
+	<list name="龙卷狂风"/>
+	<list name="压顶"/>
+	<list name="缠斗"/>
+	<list name="冻气冲撞"/>
+	<list name="利齿"/>
+	<list name="冰震击打"/>
+	<list name="冻气波"/>
+	<list name="冷冻炮"/>
+	<list name="冷冻旋风"/>
+	<list name="峰回路转"/>
+	<list name="千里追击"/>
+	<list name="挥翼飘舞"/>
+	<list name="快刀"/>
+	<list name="刺身撞击"/>
+	<list name="疾风快刀"/>
+	<list name="毒刺"/>
+	<list name="潮水"/>
+	<list name="巨浪"/>
+	<list name="渗透水线"/>
+	<list name="激流波动"/>
+	<list name="吐火"/>
+	<list name="火焰贝壳"/>
+	<list name="灼热痛击"/>
+	<list name="熔岩爆发"/>
+	<list name="拳击"/>
+	<list name="袭击"/>
+	<list name="风翼连打"/>
+	<list name="风压极闪"/>
+	<list name="奇袭"/>
+	<list name="冰结晶"/>
+	<list name="冰之角"/>
+	<list name="残影"/>
+	<list name="冰凌球"/>
+	<list name="冰霜飓风"/>
+	<list name="极寒之地"/>
+	<list name="利爪"/>
+	<list name="锯齿之爪"/>
+	<list name="三连爪"/>
+	<list name="穿心刺"/>
+	<list name="绝地突击"/>
+	<list name="极连突闪"/>
+	<list name="土龙破"/>
+	<list name="地裂光"/>
+	<list name="地刺"/>
+	<list name="地面突起"/>
+	<list name="雷霆地震"/>
+	<list name="震天动地"/>
+	<list name="眼部光线"/>
+	<list name="刺眼光波"/>
+	<list name="白光"/>
+	<list name="怪力打击"/>
+	<list name="集合炮"/>
+	<list name="回转射线"/>
+	<list name="冷凝之光"/>
+	<list name="吐气"/>
+	<list name="冲击"/>
+	<list name="闪光波"/>
+	<list name="激进猛冲"/>
+	<list name="波动连弹"/>
+	<list name="巨型光弹"/>
+	<list name="抽打"/>
+	<list name="勒紧"/>
+	<list name="角鞭"/>
+	<list name="原力光线"/>
+	<list name="星之光"/>
+	<list name="崩山震"/>
+	<list name="魔翔天駆"/>
+	<list name="粉尘烈破冲"/>
+	<list name="疯狂慧星"/>
+	<list name="流星雨"/>
+	<list name="三连击"/>
+	<list name="组合击"/>
+	<list name="拳光"/>
+	<list name="拳击旋风"/>
+	<list name="刚正之气"/>
+	<list name="交叉拳"/>
+	<list name="重力拳"/>
+	<list name="倒地追打"/>
+	<list name="裂冰刺"/>
+	<list name="一闪"/>
+	<list name="碎冰极突"/>
+	<list name="雷刀"/>
+	<list name="硬体攻击"/>
+	<list name="雷霆霹雳"/>
+	<list name="触角"/>
+	<list name="软体攻击"/>
+	<list name="黑光波"/>
+	<list name="透明光束"/>
+	<list name="雪拳"/>
+	<list name="雪球"/>
+	<list name="冻气飓风"/>
+	<list name="冰冻撞击"/>
+	<list name="飞雪一击"/>
+	<list name="超大雪球"/>
+	<list name="碎冰风暴"/>
+	<list name="冰霜新星"/>
+	<list name="深冬之寒"/>
+	<list name="喷水"/>
+	<list name="双翼夹击"/>
+	<list name="乘风破浪"/>
+	<list name="怒海狂涛"/>
+	<list name="旋转光盘"/>
+	<list name="铁臂夹击"/>
+	<list name="刀轮冲撞"/>
+	<list name="急速飞镖"/>
+	<list name="L射线"/>
+	<list name="W折射波"/>
+	<list name="X光线炮"/>
+	<list name="卷尾"/>
+	<list name="震碎"/>
+	<list name="巨尾之触"/>
+	<list name="旋转突破"/>
+	<list name="晶岩裂震"/>
+	<list name="尘泥飞溅"/>
+	<list name="尘土风暴"/>
+	<list name="灵石碎击"/>
+	<list name="透明光波"/>
+	<list name="灵气强光"/>
+	<list name="晶能之光"/>
+	<list name="喷火"/>
+	<list name="猛火攻击"/>
+	<list name="蒸汽之击"/>
+	<list name="疯狂燃烧"/>
+	<list name="火焰飞弹"/>
+	<list name="烈焰风暴"/>
+	<list name="跳跃踏击"/>
+	<list name="软体冲撞"/>
+	<list name="腐蚀"/>
+	<list name="毒雨"/>
+	<list name="剧毒喷射"/>
+	<list name="疯狂冲撞"/>
+	<list name="体挡"/>
+	<list name="TE超重击"/>
+	<list name="束能光线"/>
+	<list name="TH爆破"/>
+	<list name="TH轰击炮"/>
+	<list name="龙爪"/>
+	<list name="碎石"/>
+	<list name="音速撞击"/>
+	<list name="龙吼"/>
+	<list name="龙磷光"/>
+	<list name="狂龙战吼"/>
+	<list name="龙爪闪空破"/>
+	<list name="龙王灭碎阵"/>
+	<list name="炎火球"/>
+	<list name="水流弹"/>
+	<list name="绿光珠"/>
+	<list name="龙王波"/>
+	<list name="黑暗缠绕"/>
+	<list name="无影追击"/>
+	<list name="心灵震荡"/>
+	<list name="绝影光线"/>
+	<list name="魂飞魄散"/>
+	<list name="光弹"/>
+	<list name="四散光波"/>
+	<list name="光闪击"/>
+	<list name="炫光冲击"/>
+	<list name="金光闪烁"/>
+	<list name="五彩灵光"/>
+	<list name="聚光波"/>
+	<list name="阳光普照"/>
+	<list name="拳风"/>
+	<list name="冲击波"/>
+	<list name="狂暴斗气"/>
+	<list name="火焰击打"/>
+	<list name="钢壳炸弹"/>
+	<list name="追尾激光"/>
+	<list name="大型泥块"/>
+	<list name="气压波"/>
+	<list name="六芒星"/>
+	<list name="爪刃"/>
+	<list name="连刃"/>
+	<list name="防守反击"/>
+	<list name="激进猛击"/>
+	<list name="凶猛冲撞"/>
+	<list name="恐惧战意"/>
+	<list name="战斗气息"/>
+	<list name="钻孔"/>
+	<list name="极地突破"/>
+	<list name="穿刺一击"/>
+	<list name="急转连突刺"/>
+	<list name="刃气波"/>
+	<list name="能量风暴"/>
+	<list name="角刃"/>
+	<list name="冲击钻"/>
+	<list name="念力切割"/>
+	<list name="魔力针刺"/>
+	<list name="六重汲取"/>
+	<list name="烈焰鞭"/>
+	<list name="尾锤"/>
+	<list name="潜伏突刺"/>
+	<list name="沙砾投射"/>
+	<list name="地面爆破"/>
+	<list name="百万震波"/>
+	<list name="必杀头槌"/>
+	<list name="香味炸弹"/>
+	<list name="围攻"/>
+	<list name="荆棘"/>
+	<list name="弹射叶刃"/>
+	<list name="纠缠"/>
+	<list name="伪装孢子"/>
+	<list name="天籁之音"/>
+	<list name="浩瀚苍穹"/>
+	<list name="低沉之音"/>
+	<list name="精神冲击"/>
+	<list name="残念"/>
+	<list name="精神鞭挞"/>
+	<list name="漂浮撞击"/>
+	<list name="疾动压力炮"/>
+	<list name="气泵冲锋"/>
+	<list name="球状闪电"/>
+	<list name="不稳气流"/>
+	<list name="气体喷吐"/>
+	<list name="致命巨镰"/>
+	<list name="究极熔点"/>
+	<list name="火焰威弹"/>
+	<list name="炎杀冲击波"/>
+	<list name="风暴之眼"/>
+	<list name="破元闪"/>
+	<list name="气合斩"/>
+	<list name="擒九域"/>
+	<list name="连环摔投"/>
+	<list name="日月皆伤"/>
+	<list name="石破天惊"/>
+	<list name="渗透劲"/>
+	<list name="碎梦吟"/>
+	<list name="灭生啸"/>
+	<list name="天罗地网"/>
+	<list name="末日宣告"/>
+	<list name="塞壬极乐"/>
+	<list name="痛苦尖叫"/>
+	<list name="寰宇劲乐"/>
+	<list name="临危一击"/>
+	<list name="跳跃践踏"/>
+	<list name="十万分贝"/>
+	<list name="美妙之音"/>
+	<list name="幻影突袭"/>
+	<list name="水晶之柩"/>
+	<list name="极光领域"/>
+	<list name="错咬"/>
+	<list name="舌液"/>
+	<list name="邪恶撕咬"/>
+	<list name="昏暗领域"/>
+	<list name="影击"/>
+	<list name="千影聚合斩"/>
+	<list name="暗影寒冰"/>
+	<list name="暗影烈焰"/>
+	<list name="虚幻魔音"/>
+	<list name="魂之挽歌"/>
+	<list name="聚光贯冲波"/>
+	<list name="逆转喙击"/>
+	<list name="净焰圆舞"/>
+	<list name="居合返"/>
+	<list name="迅喙击"/>
+	<list name="圣炎"/>
+	<list name="弹射光柱"/>
+	<list name="电流摔绊"/>
+	<list name="遍地开花"/>
+	<list name="高压电脉冲"/>
+	<list name="伸缩扳手"/>
+	<list name="推进冲击"/>
+	<list name="千斤扳手"/>
+	<list name="索命绞刑台"/>
+	<list name="微核中子束"/>
+	<list name="双鳍连打"/>
+	<list name="逆流勇进"/>
+	<list name="律动水泡"/>
+	<list name="冷凝波纹枪"/>
+	<list name="速爪"/>
+	<list name="锋利之牙"/>
+	<list name="断裂之击"/>
+	<list name="无限连爪"/>
+	<list name="利爪岩铁碎"/>
+	<list name="虎牙瞬迅击"/>
+	<list name="极光刃"/>
+	<list name="断空破"/>
+	<list name="旋灭裂空阵"/>
+	<list name="神圣之光"/>
+	<list name="灵光之怒"/>
+	<list name="圣堂之门"/>
+	<list name="千烈虚光闪"/>
+	<list name="圣灵魔闪光"/>
+	<list name="叶片"/>
+	<list name="滕鞭"/>
+	<list name="花瓣飞刀"/>
+	<list name="攻破"/>
+	<list name="粉末击打"/>
+	<list name="叶绿光束"/>
+	<list name="金光绿叶"/>
+	<list name="闪击"/>
+	<list name="利爪攻击"/>
+	<list name="海啸旋风"/>
+	<list name="龙之牙"/>
+	<list name="浪打千击"/>
+	<list name="巨龙之击"/>
+	<list name="湍流龙击打"/>
+	<list name="排山倒海"/>
+	<list name="惊涛骇浪"/>
+	<list name="音速火拳"/>
+	<list name="灵绝击"/>
+	<list name="烧尽"/>
+	<list name="绝地反击"/>
+	<list name="魔焰裂空击"/>
+	<list name="绝命火焰"/>
+	<list name="不灭之火"/>
+	<list name="净化冲击"/>
+	<list name="幻光波"/>
+	<list name="无限之光"/>
+	<list name="幻术"/>
+	<list name="晶核术"/>
+	<list name="光影之爪"/>
+	<list name="异界幻象"/>
+	<list name="魔环"/>
+	<list name="驱魔术"/>
+	<list name="超核灵光术"/>
+	<list name="碎心刺"/>
+	<list name="威力重斩"/>
+	<list name="绝地反击"/>
+	<list name="十字切"/>
+	<list name="爆裂极突刺"/>
+	<list name="尖刺飞镖"/>
+	<list name="地爆沙尘"/>
+	<list name="乱撞"/>
+	<list name="风刃"/>
+	<list name="急速燕返"/>
+	<list name="腾空冲撞"/>
+	<list name="飞旋冲击"/>
+	<list name="风之翼"/>
+	<list name="螺旋漩涡"/>
+	<list name="龙卷冲击波"/>
+	<list name="寒冰连击"/>
+	<list name="月光震击"/>
+	<list name="冰霜极突"/>
+	<list name="寒冰凝球"/>
+	<list name="急速冷冻"/>
+	<list name="霜雪聚光炮"/>
+	<list name="猛扑"/>
+	<list name="碎铁之爪"/>
+	<list name="连爪狂攻"/>
+	<list name="能量气"/>
+	<list name="恐怖叫声"/>
+	<list name="震耳欲聋"/>
+	<list name="疾风刺"/>
+	<list name="空旋刺击"/>
+	<list name="三角折射"/>
+	<list name="七彩炫光"/>
+	<list name="啄"/>
+	<list name="跳跃啄击"/>
+	<list name="飞翼追击"/>
+	<list name="正中下怀"/>
+	<list name="震荡波"/>
+	<list name="回旋风暴"/>
+	<list name="究极吸取"/>
+	<list name="再生"/>
+	<list name="坚强"/>
+	<list name="大地精华"/>
+	<list name="属性反转"/>
+	<list name="凌厉"/>
+	<list name="火焰之力"/>
+	<list name="浴火重生"/>
+	<list name="气力"/>
+	<list name="超声波"/>
+	<list name="干扰音波"/>
+	<list name="静电"/>
+	<list name="电极"/>
+	<list name="电能聚合"/>
+	<list name="冰晶寒甲"/>
+	<list name="寒冰之力"/>
+	<list name="洒水"/>
+	<list name="阻挠"/>
+	<list name="电网"/>
+	<list name="打雷"/>
+	<list name="雷震"/>
+	<list name="雷暴"/>
+	<list name="护盾"/>
+	<list name="闪光"/>
+	<list name="强化"/>
+	<list name="原子能量"/>
+	<list name="守护"/>
+	<list name="原始能量"/>
+	<list name="旋转"/>
+	<list name="精准"/>
+	<list name="大地之护"/>
+	<list name="地之意志"/>
+	<list name="吸水"/>
+	<list name="呐喊"/>
+	<list name="海洋之心"/>
+	<list name="虚弱光线"/>
+	<list name="属性复制"/>
+	<list name="变异生长"/>
+	<list name="扎根"/>
+	<list name="提神"/>
+	<list name="寒气流动"/>
+	<list name="冻结"/>
+	<list name="寒冰碎裂"/>
+	<list name="急转"/>
+	<list name="聚合"/>
+	<list name="扰乱"/>
+	<list name="灵光"/>
+	<list name="力量"/>
+	<list name="神速"/>
+	<list name="守护方阵"/>
+	<list name="净化"/>
+	<list name="袭天舞"/>
+	<list name="影舞"/>
+	<list name="阳炎"/>
+	<list name="魔神功"/>
+	<list name="斗志"/>
+	<list name="坚韧"/>
+	<list name="斗气"/>
+	<list name="影分身"/>
+	<list name="念动力"/>
+	<list name="遮蔽之眼"/>
+	<list name="暗影集中"/>
+	<list name="恶梦"/>
+	<list name="战栗"/>
+	<list name="心灵震爆"/>
+	<list name="暗影屏障"/>
+	<list name="灵魂附体"/>
+	<list name="黑暗之核"/>
+	<list name="奋斗"/>
+	<list name="灼烧"/>
+	<list name="防御强化"/>
+	<list name="力量强化"/>
+	<list name="极速"/>
+	<list name="黑雾"/>
+	<list name="恐吓"/>
+	<list name="暗黑加持"/>
+	<list name="清除术"/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name="萌翻全场"/><!-- 冠名 -->
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<list name=""/>
+	<Server max="200">
+		<list name="新船员1"/>
+		<list name="新船员2"/>
+		<list name="新船员3"/>
+		<list name="新船员4"/>
+		<list name="新船员5"/>
+		<list name="新船员6"/>
+		<list name="新船员7"/>
+		<list name="新船员8"/>
+		<list name="新船员9"/>
+		<list name="新船员10"/>
+		<list name="新船员11"/>
+		<list name="新船员12"/>
+		<list name="新船员13"/>
+		<list name="新船员14"/>
+		<list name="新船员15"/>
+		<list name="新船员16"/>
+		<list name="新船员17"/>
+		<list name="新船员18"/>
+		<list name="新船员19"/>
+		<list name="新船员20"/>
+		<list name="新船员21"/>
+		<list name="新船员22"/>
+		<list name="新船员23"/>
+		<list name="新船员24"/>
+		<list name="新船员25"/>
+		<list name="新船员26"/>
+		<list name="新船员27"/>
+		<list name="新船员28"/>
+		<list name="新船员29"/>
+		<list name="新船员30"/>
+		<list name="新船员31"/>
+		<list name="新船员32"/>
+		<list name="新船员33"/>
+		<list name="新船员34"/>
+		<list name="新船员35"/>
+		<list name="新船员36"/>
+		<list name="新船员37"/>
+		<list name="新船员38"/>
+		<list name="新船员39"/>
+		<list name="新船员40"/>
+		<list name="新船员41"/>
+		<list name="新船员42"/>
+		<list name="新船员43"/>
+		<list name="新船员44"/>
+		<list name="新船员45"/>
+		<list name="新船员46"/>
+		<list name="新船员47"/>
+		<list name="新船员48"/>
+		<list name="新船员49"/>
+		<list name="新船员50"/>
+		<list name="新船员51"/>
+		<list name="新船员52"/>
+		<list name="新船员53"/>
+		<list name="新船员54"/>
+		<list name="新船员55"/>
+		<list name="新船员56"/>
+		<list name="新船员57"/>
+		<list name="新船员58"/>
+		<list name="新船员59"/>
+		<list name="新船员60"/>
+		<list name="新船员61"/>
+		<list name="新船员62"/>
+		<list name="新船员63"/>
+		<list name="新船员64"/>
+		<list name="新船员65"/>
+		<list name="新船员66"/>
+		<list name="新船员67"/>
+		<list name="新船员68"/>
+		<list name="新船员69"/>
+		<list name="新船员70"/>
+		<list name="新船员71"/>
+		<list name="新船员72"/>
+		<list name="新船员73"/>
+		<list name="新船员74"/>
+		<list name="新船员75"/>
+		<list name="新船员76"/>
+		<list name="新船员77"/>
+		<list name="新船员78"/>
+		<list name="新船员79"/>
+		<list name="新船员80"/>
+		<list name="新船员81"/>
+		<list name="新船员82"/>
+		<list name="新船员83"/>
+		<list name="新船员84"/>
+		<list name="新船员85"/>
+		<list name="新船员86"/>
+		<list name="新船员87"/>
+		<list name="新船员88"/>
+		<list name="新船员89"/>
+		<list name="新船员90"/>
+		<list name="新船员91"/>
+		<list name="新船员92"/>
+		<list name="新船员93"/>
+		<list name="新船员94"/>
+		<list name="新船员95"/>
+		<list name="新船员96"/>
+		<list name="新船员97"/>
+		<list name="新船员98"/>
+		<list name="新船员99"/>
+		<list name="新船员100"/>
+		<list name="新船员101"/>
+		<list name="新船员102"/>
+		<list name="新船员103"/>
+		<list name="新船员104"/>
+		<list name="新船员105"/>
+		<list name="新船员106"/>
+		<list name="新船员107"/>
+		<list name="新船员108"/>
+		<list name="新船员109"/>
+		<list name="新船员110"/>
+		<list name="新船员111"/>
+		<list name="新船员112"/>
+		<list name="新船员113"/>
+		<list name="新船员114"/>
+		<list name="新船员115"/>
+		<list name="新船员116"/>
+		<list name="新船员117"/>
+		<list name="新船员118"/>
+		<list name="新船员119"/>
+		<list name="新船员120"/>
+		<list name="新船员121"/>
+		<list name="新船员122"/>
+		<list name="新船员123"/>
+		<list name="新船员124"/>
+		<list name="新船员125"/>
+		<list name="新船员126"/>
+		<list name="新船员127"/>
+		<list name="新船员128"/>
+		<list name="新船员129"/>
+		<list name="新船员130"/>
+		<list name="新船员131"/>
+		<list name="新船员132"/>
+		<list name="新船员133"/>
+		<list name="新船员134"/>
+		<list name="新船员135"/>
+		<list name="新船员136"/>
+		<list name="新船员137"/>
+		<list name="新船员138"/>
+		<list name="新船员139"/>
+		<list name="新船员140"/>
+		<list name="新船员141"/>
+		<list name="新船员142"/>
+		<list name="新船员143"/>
+		<list name="新船员144"/>
+		<list name="新船员145"/>
+		<list name="新船员146"/>
+		<list name="新船员147"/>
+		<list name="新船员148"/>
+		<list name="新船员149"/>
+		<list name="新船员150"/>
+		<list name="新船员151"/>
+		<list name="新船员152"/>
+		<list name="新船员153"/>
+		<list name="新船员154"/>
+		<list name="新船员155"/>
+		<list name="新船员156"/>
+		<list name="新船员157"/>
+		<list name="新船员158"/>
+		<list name="新船员159"/>
+		<list name="新船员160"/>
+		<list name="新船员161"/>
+		<list name="新船员162"/>
+		<list name="新船员163"/>
+		<list name="新船员164"/>
+		<list name="新船员165"/>
+		<list name="新船员166"/>
+		<list name="新船员167"/>
+		<list name="新船员168"/>
+		<list name="新船员169"/>
+		<list name="新船员170"/>
+		<list name="新船员171"/>
+		<list name="新船员172"/>
+		<list name="新船员173"/>
+		<list name="新船员174"/>
+		<list name="新船员175"/>
+		<list name="新船员176"/>
+		<list name="新船员177"/>
+		<list name="新船员178"/>
+		<list name="新船员179"/>
+		<list name="新船员180"/>
+		<list name="新船员181"/>
+		<list name="新船员182"/>
+		<list name="新船员183"/>
+		<list name="新船员184"/>
+		<list name="新船员185"/>
+		<list name="新船员186"/>
+		<list name="新船员187"/>
+		<list name="新船员188"/>
+		<list name="新船员189"/>
+		<list name="新船员190"/>
+		<list name="新船员191"/>
+		<list name="新船员192"/>
+		<list name="新船员193"/>
+		<list name="新船员194"/>
+		<list name="新船员195"/>
+		<list name="新船员196"/>
+		<list name="新船员197"/>
+		<list name="新船员198"/>
+		<list name="新船员199"/>
+		<list name="新船员200"/>
+		<list name="新船员201"/>
+		<list name="新船员202"/>
+		<list name="新船员203"/>
+		<list name="新船员204"/>
+		<list name="新船员205"/>
+		<list name="新船员206"/>
+		<list name="新船员207"/>
+		<list name="新船员208"/>
+		<list name="新船员209"/>
+		<list name="新船员210"/>
+		<list name="新船员211"/>
+		<list name="新船员212"/>
+		<list name="新船员213"/>
+		<list name="新船员214"/>
+		<list name="新船员215"/>
+		<list name="新船员216"/>
+		<list name="新船员217"/>
+		<list name="新船员218"/>
+		<list name="新船员219"/>
+		<list name="新船员220"/>
+		<list name="新船员221"/>
+		<list name="新船员222"/>
+		<list name="新船员223"/>
+		<list name="新船员224"/>
+		<list name="新船员225"/>
+		<list name="新船员226"/>
+		<list name="新船员227"/>
+		<list name="新船员228"/>
+		<list name="新船员229"/>
+		<list name="新船员230"/>
+		<list name="新船员231"/>
+		<list name="新船员232"/>
+		<list name="新船员233"/>
+		<list name="新船员234"/>
+		<list name="新船员235"/>
+		<list name="新船员236"/>
+		<list name="新船员237"/>
+		<list name="新船员238"/>
+		<list name="新船员239"/>
+		<list name="新船员240"/>
+		<list name="新船员241"/>
+		<list name="新船员242"/>
+		<list name="新船员243"/>
+		<list name="新船员244"/>
+		<list name="新船员245"/>
+		<list name="新船员246"/>
+		<list name="新船员247"/>
+		<list name="新船员248"/>
+		<list name="新船员249"/>
+		<list name="新船员250"/>
+		<list name="新船员251"/>
+		<list name="新船员252"/>
+		<list name="新船员253"/>
+		<list name="新船员254"/>
+		<list name="新船员255"/>
+		<list name="新船员256"/>
+		<list name="新船员257"/>
+		<list name="新船员258"/>
+		<list name="新船员259"/>
+		<list name="新船员260"/>
+		<list name="新船员261"/>
+		<list name="新船员262"/>
+		<list name="新船员263"/>
+		<list name="新船员264"/>
+		<list name="新船员265"/>
+		<list name="新船员266"/>
+		<list name="新船员267"/>
+		<list name="新船员268"/>
+		<list name="新船员269"/>
+		<list name="新船员270"/>
+		<list name="新船员271"/>
+		<list name="新船员272"/>
+		<list name="新船员273"/>
+		<list name="新船员274"/>
+		<list name="新船员275"/>
+		<list name="新船员276"/>
+		<list name="新船员277"/>
+		<list name="新船员278"/>
+		<list name="新船员279"/>
+		<list name="新船员280"/>
+		<list name="新船员281"/>
+		<list name="新船员282"/>
+		<list name="新船员283"/>
+		<list name="新船员284"/>
+		<list name="新船员285"/>
+		<list name="新船员286"/>
+		<list name="新船员287"/>
+		<list name="新船员288"/>
+		<list name="新船员289"/>
+		<list name="新船员290"/>
+		<list name="新船员291"/>
+		<list name="新船员292"/>
+		<list name="新船员293"/>
+		<list name="新船员294"/>
+		<list name="新船员295"/>
+		<list name="新船员296"/>
+		<list name="新船员297"/>
+		<list name="新船员298"/>
+		<list name="新船员299"/>
+		<list name="新船员300"/>
+		<list name="新船员301"/>
+		<list name="新船员302"/>
+		<list name="新船员303"/>
+		<list name="新船员304"/>
+		<list name="新船员305"/>
+		<list name="新船员306"/>
+		<list name="新船员307"/>
+		<list name="新船员308"/>
+		<list name="新船员309"/>
+		<list name="新船员310"/>
+		<list name="新船员311"/>
+		<list name="新船员312"/>
+		<list name="新船员313"/>
+		<list name="新船员314"/>
+		<list name="新船员315"/>
+		<list name="新船员316"/>
+		<list name="新船员317"/>
+		<list name="新船员318"/>
+		<list name="新船员319"/>
+		<list name="新船员320"/>
+		<list name="新船员321"/>
+		<list name="新船员322"/>
+		<list name="新船员323"/>
+		<list name="新船员324"/>
+		<list name="新船员325"/>
+		<list name="新船员326"/>
+		<list name="新船员327"/>
+		<list name="新船员328"/>
+		<list name="新船员329"/>
+		<list name="新船员330"/>
+		<list name="新船员331"/>
+		<list name="新船员332"/>
+		<list name="新船员333"/>
+		<list name="新船员334"/>
+		<list name="新船员335"/>
+		<list name="新船员336"/>
+		<list name="新船员337"/>
+		<list name="新船员338"/>
+		<list name="新船员339"/>
+		<list name="新船员340"/>
+		<list name="新船员341"/>
+		<list name="新船员342"/>
+		<list name="新船员343"/>
+		<list name="新船员344"/>
+		<list name="新船员345"/>
+		<list name="新船员346"/>
+		<list name="新船员347"/>
+		<list name="新船员348"/>
+		<list name="新船员349"/>
+		<list name="新船员350"/>
+		<list name="新船员351"/>
+		<list name="新船员352"/>
+		<list name="新船员353"/>
+		<list name="新船员354"/>
+		<list name="新船员355"/>
+		<list name="新船员356"/>
+		<list name="新船员357"/>
+		<list name="新船员358"/>
+		<list name="新船员359"/>
+		<list name="新船员360"/>
+		<list name="新船员361"/>
+		<list name="新船员362"/>
+		<list name="新船员363"/>
+		<list name="新船员364"/>
+		<list name="新船员365"/>
+		<list name="新船员366"/>
+		<list name="新船员367"/>
+		<list name="新船员368"/>
+		<list name="新船员369"/>
+		<list name="新船员370"/>
+		<list name="新船员371"/>
+		<list name="新船员372"/>
+		<list name="新船员373"/>
+		<list name="新船员374"/>
+		<list name="新船员375"/>
+		<list name="新船员376"/>
+		<list name="新船员377"/>
+		<list name="新船员378"/>
+		<list name="新船员379"/>
+		<list name="新船员380"/>
+		<list name="新船员381"/>
+		<list name="新船员382"/>
+		<list name="新船员383"/>
+		<list name="新船员384"/>
+		<list name="新船员385"/>
+		<list name="新船员386"/>
+		<list name="新船员387"/>
+		<list name="新船员388"/>
+		<list name="新船员389"/>
+		<list name="新船员390"/>
+		<list name="新船员391"/>
+		<list name="新船员392"/>
+		<list name="新船员393"/>
+		<list name="新船员394"/>
+		<list name="新船员395"/>
+		<list name="新船员396"/>
+		<list name="新船员397"/>
+		<list name="新船员398"/>
+		<list name="新船员399"/>
+		<list name="新船员400"/>
+		<list name="新船员401"/>
+		<list name="新船员402"/>
+		<list name="新船员403"/>
+		<list name="新船员404"/>
+		<list name="新船员405"/>
+		<list name="新船员406"/>
+		<list name="新船员407"/>
+		<list name="新船员408"/>
+		<list name="新船员409"/>
+		<list name="新船员410"/>
+		<list name="新船员411"/>
+		<list name="新船员412"/>
+		<list name="新船员413"/>
+		<list name="新船员414"/>
+		<list name="新船员415"/>
+		<list name="新船员416"/>
+		<list name="新船员417"/>
+		<list name="新船员418"/>
+		<list name="新船员419"/>
+		<list name="新船员420"/>
+		<list name="新船员421"/>
+		<list name="新船员422"/>
+		<list name="新船员423"/>
+		<list name="新船员424"/>
+		<list name="新船员425"/>
+		<list name="新船员426"/>
+		<list name="新船员427"/>
+		<list name="新船员428"/>
+		<list name="新船员429"/>
+		<list name="新船员430"/>
+		<list name="新船员431"/>
+		<list name="新船员432"/>
+		<list name="新船员433"/>
+		<list name="新船员434"/>
+		<list name="新船员435"/>
+		<list name="新船员436"/>
+		<list name="新船员437"/>
+		<list name="新船员438"/>
+		<list name="新船员439"/>
+		<list name="新船员440"/>
+		<list name="新船员441"/>
+		<list name="新船员442"/>
+		<list name="新船员443"/>
+		<list name="新船员444"/>
+		<list name="新船员445"/>
+		<list name="新船员446"/>
+		<list name="新船员447"/>
+		<list name="新船员448"/>
+		<list name="新船员449"/>
+		<list name="新船员450"/>
+		<list name="新船员451"/>
+		<list name="新船员452"/>
+		<list name="新船员453"/>
+		<list name="新船员454"/>
+		<list name="新船员455"/>
+		<list name="新船员456"/>
+		<list name="新船员457"/>
+		<list name="新船员458"/>
+		<list name="新船员459"/>
+		<list name="新船员460"/>
+		<list name="新船员461"/>
+		<list name="新船员462"/>
+		<list name="新船员463"/>
+		<list name="新船员464"/>
+		<list name="新船员465"/>
+		<list name="新船员466"/>
+		<list name="新船员467"/>
+		<list name="新船员468"/>
+		<list name="新船员469"/>
+		<list name="新船员470"/>
+		<list name="新船员471"/>
+		<list name="新船员472"/>
+		<list name="新船员473"/>
+		<list name="新船员474"/>
+		<list name="新船员475"/>
+		<list name="新船员476"/>
+		<list name="新船员477"/>
+		<list name="新船员478"/>
+		<list name="新船员479"/>
+		<list name="新船员480"/>
+		<list name="新船员481"/>
+		<list name="新船员482"/>
+		<list name="新船员483"/>
+		<list name="新船员484"/>
+		<list name="新船员485"/>
+		<list name="新船员486"/>
+		<list name="新船员487"/>
+		<list name="新船员488"/>
+		<list name="新船员489"/>
+		<list name="新船员490"/>
+		<list name="新船员491"/>
+		<list name="新船员492"/>
+		<list name="新船员493"/>
+		<list name="新船员494"/>
+		<list name="新船员495"/>
+		<list name="新船员496"/>
+		<list name="新船员497"/>
+		<list name="新船员498"/>
+		<list name="新船员499"/>
+		<list name="新船员500"/>
+		
+	</Server>
+	<list id="1001" name="露西欧星" />
+		<list id="1002" name="卡酷星" />
+		<list id="1003" name="格朗德星" />
+		<list id="1004" name="古拉尔星" />
+		<list id="1005" name="斯科尔星" />
+		<list id="1006" name="普雷空间站" />
+		<list id="1007" name="米斯特瑞星" />
+		<list id="1008" name="索伦森星" />
+		<list id="1009" name="普罗特星" />
+		<list id="1010" name="天蛇星" />
+		<list id="1011" name="青龙潭" />
+		<list id="1012" name="戴斯星" />
+		<list id="1013" name="墨杜萨星" />
+		<list id="1014" name="麦兹星" />
+		<list id="1015" name="SUN星" />
+		<list id="1016" name="果然星" />
+		<list id="1017" name="Y星" />
+		<list id="1018" name="神火星" />
+		<list id="1019" name="希尔星" />
+		<list id="1020" name="提尔瑞斯星" />
+		<list id="1021" name="巨石星" />
+		<list id="1022" name="艾伦星" />
+		<list id="1023" name="巴斯星" />
+		<list id="1024" name="莱恩那星" />
+		<list id="1025" name="幻影星" />
+		<list id="1026" name="恶魔星" />
+		<list id="1027" name="魔神星" />
+		<list id="1028" name="南瓜星" />
+		<list id="1029" name="帕索尔星" />
+		<list id="1030" name="创世星" />
+		<list id="1031" name="永恒星" />
+		<list id="1032" name="暗婆罗星" />
+		<list id="1033" name="迷幻星云" />
+		<list id="1034" name="魔灵星" />
+		<list id="1035" name="斯欧星" />
+		<list id="1036" name="杜马斯星" />
+		<list id="1037" name="科兹莫星" />
+		<list id="1038" name="卡鲁克星" />
+		<list id="1039" name="卡尔星" />
+		<list id="1040" name="千机星" />
+		<list id="1041" name="挽尘星" />
+		<list id="1042" name="宇宙裂隙" />
+		<list id="1043" name="死灵深谭" />
+		<list id="1044" name="赛米星" />
+		<list id="1045" name="守望者星" />
+		<list id="1046" name="破碎星域" />
+		<list id="1047" name="星流之井" />
+		<list id="1048" name="月牙河谷" />
+		<list id="1049" name="决斗圣地" />
+		<list id="1050" name="天幕宫殿" />
+		<list id="1051" name="植树派对" />
+		<list id="1052" name="海螺浅滩" />
+		<list id="1053" name="神秘通道" />
+		<list id="1054" name="精灵广场" />
+		<list id="1055" name="精灵圣殿" />
+		<list id="1056" name="麦田村" />
+		<list id="1057" name="千藤洞窟" />
+		<list id="1058" name="寒冰溶洞" />
+		<list id="1059" name="冰窖迷宫" />
+		<list id="1060" name="赫尔卡飞船" />
+		<list id="1061" name="圣域之门" />
+		<list id="1062" name="流火之地" />
+		<list id="1063" name="海盗能源站" />
+		<list id="1064" name="斯诺星" />
+		<list id="1065" name="尼古尔星" />
+		<list id="1066" name="塔克星" />
+		<list id="1067" name="光之迷城" />
+		<list id="1068" name="暗之迷城" />
+		<list id="1069" name="月影花园" />
+		<list id="1070" name="沙漠窑洞" />
+		<list id="1071" name="联盟秘境" />
+		<list id="1072" name="拼图草原" />
+		<list id="1073" name="天佛后山" />
+		<list id="1074" name="天佛前山" />
+		<list id="1075" name="暮光之城" />
+		<list id="1076" name="谜度空间" />
+		<list id="1077" name="精灵狂欢乐园" />
+		<list id="1078" name="时空之间" />
+		<list id="1079" name="麒麟空间" />
+		<list id="1080" name="谜域之门" />
+		<list id="1081" name="风暴谷" />
+		<list id="1082" name="浮空山脊" />
+		<list id="1083" name="活动中心" />
+		<list id="1084" name="竹林仙踪" />
+		<list id="1085" name="水竹山脉" />
+		<list id="1086" name="竹林深处" />
+		<list id="1087" name="试炼之域" />
+		<list id="1088" name="崩裂大地" />
+		<list id="1089" name="谜度废墟" />
+		<list id="1090" name="冰火岛" />
+		<list id="1091" name="哀伤之境" />
+		<list id="1092" name="重生之狱" />
+		<list id="1093" name="海盗集团" />
+		<list id="1094" name="天空站" />
+		<list id="1095" name="沙滩乐园" />
+		<list id="1096" name="机械迷城" />
+		<list id="1097" name="暗黑圣堂" />
+		<list id="1098" name="火焰皇地" />
+		<list id="1099" name="天蛇花原" />
+		<list id="1100" name="星际银行" />
+		<list id="1101" name="罗开陈列室" />
+		<list id="1102" name="炫彩神殿" />
+		<list id="1103" name="太空站左翼" />
+		<list id="1104" name="拜伦号" />
+		<list id="1105" name="神秘空间" />
+		<list id="1106" name="水之殿" />
+		<list id="1107" name="朱雀空间" />
+		<list id="1108" name="拉姆神秘世界" />
+		<list id="1109" name="拉姆世界丛林" />
+		<list id="1110" name="艾迪星" />
+		<list id="1111" name="暮色之城" />
+		<list id="1112" name="地下之城" />
+		<list id="1113" name="潘多拉宝盒" />
+		<list id="1114" name="荣誉大厅" />
+		<list id="1115" name="普雷空间" />
+		<list id="1116" name="几米塔" />
+		<list id="1117" name="高空塔" />
+		<list id="1118" name="英佩恩堡垒" />
+		<list id="1119" name="哈莫星" />
+		<list id="1120" name="遗忘领域" />
+		<list id="1121" name="塔西亚地域" />
+		<list id="1122" name="海盗集散地" />
+		<list id="1123" name="白沙罗域" />
+		<list id="1124" name="龙王殿堂" />
+		<list id="1125" name="龙王圣殿" />
+		<list id="1126" name="果然多星" />
+		<list id="1127" name="葡萄庄园" />
+		<list id="1128" name="蜜桃森林" />
+		<list id="1129" name="苹果天堂" />
+		<list id="1130" name="蜜瓜宫殿" />
+		<list id="1131" name="光辉殿堂" />
+		<list id="1132" name="未来星" />
+		<list id="1133" name="邪灵密室" />
+		<list id="1134" name="暗黑迷宫" />
+		<list id="1135" name="时空裂缝" />
+		<list id="1136" name="玄武空间" />
+		<list id="1137" name="青龙空间" />
+		<list id="1138" name="比格星" />
+		<list id="1139" name="黑白森林" />
+		<list id="1140" name="陨石地带" />
+		<list id="1141" name="觅食林" />
+		<list id="1142" name="陨石表面" />
+		<list id="1143" name="犀牛号" />
+		<list id="1144" name="暗影峭壁" />
+		<list id="1145" name="沃尔夫洞穴" />
+		<list id="1146" name="空间补给站" />
+		<list id="1147" name="时空罗盘" />
+		<list id="1148" name="拓梯星" />
+		<list id="1149" name="格雷深湖" />
+		<list id="1150" name="墨杜莎星" />
+		<list id="1151" name="石化城" />
+		<list id="1152" name="海兹尔星" />
+		<list id="1153" name="伪装堡垒" />
+		<list id="1154" name="拉铂尔星" />
+		<list id="1155" name="尼古尔海底" />
+		<list id="1156" name="极冻边缘" />
+		<list id="1157" name="砂之殿" />
+		<list id="1158" name="炫彩山岩" />
+		<list id="1159" name="云水洞" />
+		<list id="1160" name="山神圣殿" />
+		<list id="1161" name="黑色星球" />
+		<list id="1162" name="格雷斯星" />
+		<list id="1163" name="黯夜地穴" />
+		<list id="1164" name="格雷大峡谷" />
+		<list id="1165" name="黯夜广场" />
+		<list id="1166" name="元素之战" />
+		<list id="1167" name="菲尔纳星" />
+		<list id="1168" name="赫鲁尔星球" />
+		<list id="1169" name="赫鲁卡城" />
+		<list id="1170" name="赫鲁卡地穴" />
+		<list id="1171" name="卡酷星丛林" />
+		<list id="1172" name="火之殿" />
+		<list id="1173" name="冰之殿" />
+		<list id="1174" name="星光之殿" />
+		<list id="1175" name="暗流之眼" />
+		<list id="1176" name="黑色洞穴" />
+		<list id="1177" name="魔窟" />
+		<list id="1178" name="忍魂密室" />
+		<list id="1179" name="般若星" />
+		<list id="1180" name="花之殿" />
+		<list id="1181" name="白虎空间" />
+		<list id="1182" name="怀特星" />
+		<list id="1183" name="精灵学院" />
+		<list id="1184" name="怀特矿场" />
+		<list id="1185" name="怀特矿洞" />
+		<list id="1186" name="麦兹星球" />
+		<list id="1187" name="地底古迹" />
+		<list id="1188" name="麦兹迷境" />
+		<list id="1189" name="邪灵圣殿" />
+		<list id="1190" name="光明圣坛" />
+		<list id="1191" name="奇幻领域" />
+		<list id="1192" name="圣光大殿" />
+		<list id="1193" name="精灵欢迎谷" />
+		<list id="1194" name="拉珀尔秘境" />
+		<list id="1195" name="魔法派对" />
+		<list id="1196" name="五彩云泽" />
+		<list id="1197" name="捕猎场" />
+		<list id="1198" name="天空之城" />
+		<list id="1199" name="菲尼克斯神殿" />
+		<list id="1200" name="五行仙境" />
+		<list id="1201" name="菲尼克斯禁地" />
+		<list id="1202" name="牛奶基地" />
+		<list id="1203" name="异能星" />
+		<list id="1204" name="异能冰窟" />
+		<list id="1205" name="能量控制室" />
+		<list id="1206" name="龙族秘境" />
+		<list id="1207" name="机械王国" />
+		<list id="1208" name="守护部落" />
+		<list id="1209" name="封印之境" />
+		<list id="1210" name="梦境之旅" />
+		<list id="1211" name="基因培育室" />
+		<list id="1212" name="摩纳星际港" />
+		<list id="1213" name="泰若星" />
+		<list id="1214" name="丛林之境" />
+		<list id="1215" name="冰封洞窟" />
+		<list id="1216" name="神兽谷" />
+		<list id="1217" name="深海宫殿" />
+		<list id="1218" name="推特星" />
+		<list id="1219" name="睡梦空间" />
+		<list id="1220" name="伯利兹广场" />
+		<list id="1221" name="斯诺秘洞" />
+		<list id="1222" name="暗物质神殿" />
+		<list id="1223" name="拉珀尔仙境" />
+		<list id="1224" name="新泽部落" />
+		<list id="1225" name="冰雪之城" />
+		<list id="1226" name="结晶岩洞" />
+		<list id="1227" name="迷雾森林" />
+		<list id="1228" name="诺可撒斯星" />
+		<list id="1229" name="光明顶" />
+		<list id="1230" name="化石林" />
+		<list id="1231" name="巨石岛" />
+		<list id="1232" name="石塔禁地" />
+		<list id="1233" name="熔岩大地" />
+		<list id="1234" name="熔岩洞穴" />
+		<list id="1235" name="石源密林" />
+		<list id="1236" name="异能空间" />
+		<list id="1237" name="黑风崖" />
+		<list id="1238" name="巨石营地" />
+		<list id="1239" name="珊瑚海礁" />
+		<list id="1240" name="青龙战场" />
+		<list id="1241" name="水月洞壁" />
+		<list id="1242" name="烟水迷阵" />
+		<list id="1243" name="异界空间" />
+		<list id="1244" name="幽暗洞穴" />
+		<list id="1245" name="流沙地洞" />
+		<list id="1246" name="雾气石林" />
+		<list id="1247" name="翡翠山谷" />
+		<list id="1248" name="盘树天堂" />
+		<list id="1249" name="云层之径" />
+		<list id="1250" name="星辰龙境" />
+		<list id="1251" name="上古神殿" />
+		<list id="1252" name="蘑菇洞窟" />
+		<list id="1253" name="莱恩那" />
+		<list id="1254" name="冰火绝命崖" />
+		<list id="1255" name="食草林" />
+		<list id="1256" name="上古遗迹" />
+		<list id="1257" name="米娜村落" />
+		<list id="1258" name="北斗七星殿" />
+		<list id="1259" name="幻梦迷境" />
+		<list id="1260" name="深海禁地" />
+		<list id="1261" name="幻影迷阵" />
+		<list id="1262" name="幻海遗城" />
+		<list id="1263" name="圣灵峰" />
+		<list id="1264" name="幻影秘洞" />
+		<list id="1265" name="梦幻游乐园" />
+		<list id="1266" name="恶魔旋涡" />
+		<list id="1267" name="友谊之树" />
+		<list id="1268" name="守护残殿" />
+		<list id="1269" name="天空之门" />
+		<list id="1270" name="比巴卜秘境" />
+		<list id="1271" name="幽暗迷宫" />
+		<list id="1272" name="裂空赛场" />
+		<list id="1273" name="修炼秘境" />
+		<list id="1274" name="火焰山脊" />
+		<list id="1275" name="地下废墟场" />
+		<list id="1276" name="神圣领域" />
+		<list id="1277" name="天使领域" />
+		<list id="1278" name="恶魔领域" />
+		<list id="1279" name="落日泥沼" />
+		<list id="1280" name="星际奥运会" />
+		<list id="1281" name="镜界迷阵" />
+		<list id="1282" name="兽神瀑布" />
+		<list id="1283" name="北极星守护阵" />
+		<list id="1284" name="雷神秘境" />
+		<list id="1285" name="风暴峭壁" />
+		<list id="1286" name="青龙祭坛" />
+		<list id="1287" name="冰雪领地" />
+		<list id="1288" name="迦曼吉幻境" />
+		<list id="1289" name="鹊神之桥" />
+		<list id="1290" name="恶灵祭坛" />
+		<list id="1291" name="圣战废墟" />
+		<list id="1292" name="魔神陵墓" />
+		<list id="1293" name="魔鬼城" />
+		<list id="1294" name="审判大厅" />
+		<list id="1295" name="广场遗迹" />
+		<list id="1296" name="通天塔" />
+		<list id="1297" name="魔神深渊" />
+		<list id="1298" name="九霄魔神殿" />
+		<list id="1299" name="恶灵深渊" />
+		<list id="1300" name="精灵圣坛" />
+		<list id="1301" name="南瓜山谷" />
+		<list id="1302" name="南瓜墓场" />
+		<list id="1303" name="万圣领地" />
+		<list id="1304" name="藏宝密室" />
+		<list id="1305" name="南瓜角斗场" />
+		<list id="1306" name="蝙蝠洞" />
+		<list id="1307" name="梦幻空间" />
+		<list id="1308" name="枞树雪原" />
+		<list id="1309" name="云霄古桥" />
+		<list id="1310" name="美食工坊" />
+		<list id="1311" name="晶蛇魔窟" />
+		<list id="1312" name="苍云之海" />
+		<list id="1313" name="真武领域" />
+		<list id="1314" name="冰晶奇宫" />
+		<list id="1315" name="暗黑灯海" />
+		<list id="1316" name="暗黑沼泽" />
+		<list id="1317" name="灵蛇地窟" />
+		<list id="1318" name="圣诞宫殿" />
+		<list id="1319" name="冰晶谜道" />
+		<list id="1320" name="神树之巅" />
+		<list id="1321" name="幽冥沙海" />
+		<list id="1322" name="古藤幻境" />
+		<list id="1323" name="圣地角斗场" />
+		<list id="1324" name="神灯秘窟" />
+		<list id="1325" name="闪电祈迹" />
+		<list id="1326" name="远古神殿" />
+		<list id="1327" name="积木城" />
+		<list id="1328" name="魔羽殿堂" />
+		<list id="1329" name="朱雀联盟" />
+		<list id="1330" name="流芳仙洲" />
+		<list id="1331" name="未来之门" />
+		<list id="1332" name="空间裂隙" />
+		<list id="1333" name="幻灭之森" />
+		<list id="1334" name="星空殿堂" />
+		<list id="1335" name="逆界之门" />
+		<list id="1336" name="比巴卜泡泡星" />
+		<list id="1337" name="神灵之巅" />
+		<list id="1338" name="群魔禁地" />
+		<list id="1339" name="反转空间" />
+		<list id="1340" name="失落神庙" />
+		<list id="1341" name="神宠之境" />
+		<list id="1342" name="叹息之境" />
+		<list id="1343" name="灵兽之峰" />
+		<list id="1344" name="祸乱之源" />
+		<list id="1345" name="遗世仙境" />
+		<list id="1346" name="月光广场" />
+		<list id="1347" name="星云边际" />
+		<list id="1348" name="特训基地" />
+		<list id="1349" name="月牙之城" />
+		<list id="1350" name="三师圣殿" />
+		<list id="1351" name="幕夜龙窟" />
+		<list id="1352" name="迷宫入口" />
+		<list id="1353" name="神域之巅" />
+		<list id="1354" name="魔君秘境" />
+		<list id="1355" name="天马祭坛" />
+		<list id="1356" name="五峰山崖" />
+		<list id="1357" name="光影角斗场" />
+		<list id="1358" name="冰封深渊" />
+		<list id="1359" name="创世广场" />
+		<list id="1360" name="魔灵之城" />
+		<list id="1361" name="创世遗迹" />
+		<list id="1362" name="永恒之树" />
+		<list id="1363" name="龙尊仙境" />
+		<list id="1364" name="创世神殿" />
+		<list id="1365" name="魔域之巅" />
+		<list id="1366" name="魔灵广场" />
+		<list id="1367" name="玉石峰" />
+		<list id="1368" name="王者斗场" />
+		<list id="1369" name="风暴山涧" />
+		<list id="1370" name="恐惧之境" />
+		<list id="1371" name="麒麟营地" />
+		<list id="1372" name="元素神殿" />
+		<list id="1373" name="魔窟之门" />
+		<list id="1374" name="永恒树深处" />
+		<list id="1375" name="星辰裂隙" />
+		<list id="1376" name="庞贝古城" />
+		<list id="1377" name="棱石星" />
+		<list id="1378" name="妖石山" />
+		<list id="1379" name="神王宫殿" />
+		<list id="1380" name="妖石山地洞" />
+		<list id="1381" name="暗夜城" />
+		<list id="1382" name="决战之谷" />
+		<list id="1383" name="觉醒之地" />
+		<list id="1384" name="魔界之门" />
+		<list id="1385" name="斗魂领域" />
+		<list id="1386" name="影之殿" />
+		<list id="1387" name="冰封山巅" />
+		<list id="1388" name="魔界之域" />
+		<list id="1389" name="夜魔广场" />
+		<list id="1390" name="雷霆之境" />
+		<list id="1391" name="摩多的梦境" />
+		<list id="1392" name="天蛇禁地" />
+		<list id="1393" name="龙神祭坛" />
+		<list id="1394" name="机械维修间" />
+		<list id="1395" name="禁魔之崖" />
+		<list id="1396" name="绝望魔域" />
+		<list id="1397" name="暗夜古堡" />
+		<list id="1398" name="莲华深渊" />
+		<list id="1399" name="万骨荒冢" />
+		<list id="1400" name="雷鸣岛" />
+		<list id="1401" name="光之绝境" />
+		<list id="1402" name="万恶之井" />
+		<list id="1403" name="赤瞳峡谷" />
+		<list id="1404" name="碧落之海" />
+		<list id="1405" name="永恒神庙" />
+		<list id="1406" name="神之圣殿" />
+		<list id="1407" name="黄泉往生" />
+		<list id="1408" name="苍茫岭" />
+		<list id="1409" name="苍白之瀑" />
+		<list id="1410" name="修罗殿" />
+		<list id="1411" name="翡翠梦境" />
+		<list id="1412" name="天龙殿" />
+		<list id="1413" name="天蛇魔将殿" />
+		<list id="1414" name="龙魂圣地" />
+		<list id="1415" name="飞升之境" />
+		<list id="1416" name="万圣之夜" />
+		<list id="1417" name="飞升龙境" />
+		<list id="1418" name="战魂遗迹" />
+		<list id="1419" name="天劫悬崖" />
+		<list id="1420" name="天尊之境" />
+		<list id="1421" name="云海玉宫苑" />
+		<list id="1422" name="幻灵秘境" />
+		<list id="1423" name="静月岛" />
+		<list id="1424" name="邪影秘境" />
+		<list id="1425" name="元旦殿堂" />
+		<list id="1426" name="烈焰之地" />
+		<list id="1427" name="光火神殿" />
+		<list id="1428" name="虚无异界" />
+		<list id="1429" name="机械国度" />
+		<list id="1430" name="冰雪之地" />
+		<list id="1431" name="新春神殿" />
+		<list id="1432" name="灭天峰" />
+		<list id="1433" name="年兽之地" />
+		<list id="1434" name="降世山巅" />
+		<list id="1435" name="风息之眼" />
+		<list id="1436" name="神火迷阵" />
+		<list id="1437" name="冥界地狱" />
+		<list id="1438" name="太古邪镜" />
+		<list id="1439" name="天蛇圣地" />
+		<list id="1440" name="光暗天堂" />
+		<list id="1441" name="龙脉入口" />
+		<list id="1442" name="四凶极阵" />
+		<list id="1443" name="龙脉一层" />
+		<list id="1444" name="幽焕龙脉" />
+		<list id="1445" name="龙脉深处" />
+		<list id="1446" name="暗黑龙脉" />
+		<list id="1447" name="悲鸣龙脉" />
+		<list id="1448" name="灰之遗迹" />
+		<list id="1449" name="龙脉走廊" />
+		<list id="1450" name="血星龙脉" />
+		<list id="1451" name="龙脉绿道" />
+		<list id="1452" name="妄念龙脉" />
+		<list id="1453" name="龙脉冰道" />
+		<list id="1454" name="妖影深穴" />
+		<list id="1455" name="龙脉尽头" />
+		<list id="1456" name="极寒龙脉" />
+		<list id="1457" name="妖界禁地" />
+		<list id="1458" name="龙尊咏道" />
+		<list id="1459" name="神碑地穴" />
+		<list id="1460" name="圣战之巅" />
+		<list id="1461" name="煞魔绝地" />
+		<list id="1462" name="萌宠乐园" />
+		<list id="1463" name="帝陵" />
+		<list id="1464" name="圣光领域" />
+		<list id="1465" name="虚无圣域" />
+		<list id="1466" name="暴风峡谷" />
+		<list id="1467" name="黑暗神庙" />
+		<list id="1468" name="元素圣殿" />
+		<list id="1469" name="能量圣殿" />
+		<list id="1470" name="幽暗地穴" />
+		<list id="1471" name="炼火魔域" />
+		<list id="1472" name="生命圣殿" />
+		<list id="1473" name="地底废墟" />
+		<list id="1474" name="轮回圣殿" />
+		<list id="1475" name="邪灵魔阵" />
+		<list id="1476" name="永恒圣殿" />
+		<list id="1477" name="接天帝官" />
+		<list id="1478" name="圣洁圣殿" />
+		<list id="1479" name="暗影领地" />
+		<list id="1480" name="迷雾山谷" />
+		<list id="1481" name="绝望深渊" />
+		<list id="1482" name="星际之门" />
+		<list id="1483" name="芒克营地" />
+		<list id="1484" name="天外陨石" />
+		<list id="1485" name="风语森林" />
+		<list id="1486" name="坠雷山崖" />
+		<list id="1487" name="上古雪峰" />
+		<list id="1488" name="风语之森" />
+		<list id="1489" name="痛苦沼泽" />
+		<list id="1490" name="毁灭之海" />
+		<list id="1491" name="太空站废墟" />
+		<list id="1492" name="重生圣殿" />
+		<list id="1493" name="贾斯汀太空站" />
+		<list id="1494" name="梦幻空间废墟" />
+		<list id="1495" name="圣诞天堂" />
+		<list id="1496" name="太空资源区" />
+		<list id="1497" name="极夜魔殿" />
+		<list id="1498" name="万龙之渊" />
+		<list id="1499" name="六界神王殿" />
+		<list id="1500" name="天玄之殿" />
+		<list id="1501" name="瀚海之殿" />
+		<list id="1502" name="地藏之殿" />
+		<list id="1503" name="时空之殿" />
+		<list id="1504" name="混沌之殿" />
+		<list id="1505" name="幻境之殿" />
+		<list id="1506" name="界王王冠" />
+		<list id="1507" name="泰坦遗迹" />
+		<list id="1508" name="洛亚大陆" />
+		<list id="1509" name="悲鸣之地" />
+		<list id="1510" name="末日之泉" />
+		<list id="1511" name="叹息之墙" />
+		<list id="1512" name="神殿之丘" />
+		<list id="1513" name="叹息之地" />
+		<list id="1514" name="寂杀暗野" />
+		<list id="1515" name="天魔古道" />
+		<list id="1516" name="四九圣殿" />
+		<list id="1517" name="妄念厄境" />
+		<list id="1518" name="弑神之地" />
+		<list id="1519" name="不灭尊坛" />
+		<list id="1520" name="伏魔天牢" />
+		<list id="1521" name="伏魔顶峰" />
+		<list id="1522" name="王之圣殿" />
+		<list id="1523" name="阿玛迪斯星" />
+		<list id="1524" name="漆黑花原" />
+		<list id="1525" name="大暗黑天" />
+		<list id="1526" name="原罪王座" />
+		<list id="1527" name="浅滩海岛" />
+		<list id="1528" name="海滨沙滩" />
+		<list id="1529" name="星际训练营" />
+		<list id="1530" name="古王天境" />
+		<list id="1531" name="宇宙之核" />
+		<list id="1532" name="荒芜之境" />
+		<list id="1533" name="堕落深渊" />
+		<list id="1534" name="魔域" />
+		<list id="1535" name="暗烬峡谷" />
+		<list id="1536" name="灵兽宫" />
+		<list id="1537" name="冰雪之原" />
+		<list id="1538" name="生命之树" />
+		<list id="1539" name="英雄圣殿" />
+		<list id="1540" name="失落战场" />
+		<list id="1541" name="王者圣域" />
+		<list id="1542" name="丧钟丘陵" />
+		<list id="1543" name="三魅羁绊" />
+		<list id="1544" name="荣誉殿堂" />
+		<list id="1545" name="魂塔底层" />
+		<list id="1546" name="魂塔上层" />
+		<list id="1547" name="圣灵峰上层" />
+		<list id="1548" name="机甲仓" />
+		<list id="1549" name="碎裂星域" />
+		<list id="1550" name="巨岩星" />
+		<list id="1551" name="星域魂塔" />
+		<list id="1552" name="混沌核心" />
+		<list id="1553" name="巨岩星地宫" />
+		<list id="1554" name="暗月星" />
+		<list id="1555" name="暗月星神殿" />
+		<list id="1556" name="云巅圣域" />
+		<list id="1557" name="守望峡谷" />
+		<list id="1558" name="守望平原" />
+		<list id="1559" name="林中祭坛" />
+		<list id="1560" name="混沌战场" />
+		<list id="1561" name="星空要塞" />
+		<list id="1562" name="决斗神坛" />
+		<list id="1563" name="悲鸣之井" />
+		<list id="1564" name="混沌魔泉" />
+		<list id="1565" name="魂葬丘陵" />
+		<list id="1566" name="千魂要塞" />
+		<list id="1567" name="隔离带" />
+		<list id="1568" name="冥域之门" />
+		<list id="1569" name="死灵深潭" />
+		<list id="1570" name="白骨峰" />
+		<list id="1571" name="影月林" />
+		<list id="1572" name="莫问栈道" />
+		<list id="1573" name="修罗大殿" />
+		<list id="1574" name="冰封雪原" />
+		<list id="1575" name="棱石地牢" />
+		<list id="1576" name="泰坦核心" />
+		<list id="1577" name="魔灵密室" />
+		<list id="1578" name="轮回天境" />
+		<list id="1579" name="灵兽宫之巅" />
+		<list id="1580" name="无光黑洞" />
+		<list id="1581" name="虎啸之林" />
+		<list id="1582" name="灵龟之渊" />
+		<list id="1583" name="火凤之巢" />
+		<list id="1584" name="龙游之潭" />
+		<list id="1585" name="麒麟之峰" />
+		<list id="1586" name="破碎星球" />
+		<list id="1587" name="炫彩山巅" />
+		<list id="1588" name="蕨齿密林" />
+		<list id="1589" name="异变之巢" />
+		<list id="1590" name="碎石荒原" />
+		<list id="1591" name="迷雾之森" />
+		<list id="1592" name="生命核心" />
+		<list id="1593" name="寂灭沼泽" />
+		<list id="1594" name="鬼面祭坛" />
+		<list id="1595" name="虫群之心" />
+		<list id="1596" name="寒风峡湾" />
+		<list id="1597" name="冰冠群山" />
+		<list id="1598" name="镜湖雪原" />
+		<list id="1599" name="蝎子号" />
+		<list id="1600" name="温泉地窟" />
+		<list id="1601" name="镜湖源头" />
+		<list id="1602" name="涟漪洞天" />
+		<list id="1603" name="无常祭坛" />
+		<list id="1604" name="虚妄幻境" />
+		<list id="1605" name="天蛇断桥" />
+		<list id="1606" name="暗夜城圣殿" />
+		<list id="1607" name="螺旋战场" />
+		<list id="1608" name="云端之城" />
+		<list id="1609" name="仲夏火焰" />
+		<list id="1610" name="帕诺战场" />
+		<list id="1611" name="赫尔卡禁地" />
+		<list id="1612" name="荒芜岭" />
+		<list id="1613" name="罗格战场" />
+		<list id="1614" name="悲魂禁地" />
+		<list id="1615" name="龙骨沙域" />
+		<list id="1616" name="卡兰战场" />
+		<list id="1617" name="极夜岛" />
+		<list id="1618" name="逐浪崖" />
+		<list id="1619" name="生命之源" />
+		<list id="1620" name="暴风旋涡" />
+		<list id="1621" name="圣雪山岭" />
+		<list id="1622" name="枯萎荒漠" />
+		<list id="1623" name="亡魂地牢" />
+		<list id="1624" name="千魂旋涡" />
+		<list id="1625" name="无天剑境" />
+		<list id="1626" name="混沌军阵" />
+		<list id="1627" name="翔龙天境" />
+		<list id="1628" name="圣灵军阵" />
+		<list id="1629" name="迷魂音狱" />
+		<list id="1630" name="火山星地核" />
+		<list id="1631" name="神泣尊坛" />
+		<list id="1632" name="封邪古迹" />
+		<list id="1633" name="陵墓回廊" />
+		<list id="1634" name="火焰山岩洞" />
+		<list id="1635" name="圣灵之墓" />
+		<list id="1636" name="陵墓古道" />
+		<list id="1637" name="弑魔龙境" />
+		<list id="1638" name="陵墓入口" />
+		<list id="1639" name="秩序战场" />
+		<list id="1640" name="幻海废墟" />
+		<list id="1641" name="光影之狭" />
+		<list id="1642" name="怪梦空间" />
+		<list id="1643" name="暴风山巅" />
+		<list id="1644" name="巨石密林" />
+		<list id="1645" name="樱花之径" />
+		<list id="1646" name="樱花之溪" />
+		<list id="1647" name="维修中心" />
+		<list id="1648" name="塔特村落" />
+		<list id="1649" name="水瀑山涧" />
+		<list id="1650" name="水瀑之巅" />
+		<list id="1651" name="石菇林" />
+		<list id="1652" name="冰封之门" />
+		<list id="1653" name="凝冰崖" />
+		<list id="1654" name="魔花藤洞" />
+		<list id="1655" name="冰火栈道" />
+		<list id="1656" name="千机塔顶层" />
+		<list id="1657" name="异次元空间" />
+		<list id="1658" name="卡尔一角" />
+		<list id="1659" name="挽尘湾" />
+		<list id="1660" name="九幽之地" />
+		<list id="1661" name="避泉谷" />
+		<list id="1662" name="不忘街" />
+		<list id="1663" name="不忘城" />
+		<list id="1664" name="破败花园" />
+		<list id="1665" name="避泉广场" />
+		<list id="1666" name="冰焱极地" />
+		<list id="1667" name="无恙结界" />
+		<list id="1668" name="光明谷" />
+		<list id="1669" name="光明之溪" />
+		<list id="1670" name="避水窟" />
+		<list id="1671" name="巨岩森林" />
+		<list id="1672" name="樱花湖畔" />
+		<list id="1673" name="冰雪洞窟" />
+		<list id="1674" name="风语丛林" />
+		<list id="1675" name="雨林藤牢" />
+		<list id="1676" name="尘沙星海" />
+		<list id="1677" name="圣域星河" />
+		<list id="1678" name="圣域大道" />
+		<list id="1679" name="雨林篝火" />
+		<list id="1680" name="逝尘谷" />
+		<list id="1681" name="亡命酒馆" />
+		<list id="1682" name="风啸山林" />
+		<list id="1683" name="晨曦圣殿" />
+		<list id="1684" name="神之遗迹" />
+		<list id="1685" name="北吹高地" />
+		<list id="1686" name="枫峡战场" />
+		<list id="1687" name="惊雷怒海" />
+		<list id="1688" name="尘星之弈" />
+		<list id="1689" name="忆絮崖" />
+		<list id="1690" name="月光集市" />
+		<list id="1691" name="午后庭院" />
+		<list id="1692" name="辰印之地" />
+		<list id="1693" name="裂缝边界" />
+		<list id="1694" name="高速星环" />
+		<list id="1695" name="云卷之海" />
+		<list id="1696" name="逆狂湿地" />
+		<list id="1697" name="曙光隧道" />
+		<list id="1698" name="闪晶洞窟" />
+		<list id="1699" name="嶙峋之所" />
+		<list id="1700" name="荒野遗郊" />
+</root>

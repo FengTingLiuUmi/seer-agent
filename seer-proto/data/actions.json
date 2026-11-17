@@ -1,0 +1,16 @@
+[
+  {"group":"基础（已验证安全，空 body）","name":"GET_ACHIEVE_LIST 成就列表","cmd":3401},
+  {"group":"基础（已验证安全，空 body）","name":"GET_ACHIEVE_PROGRESS 成就进度","cmd":3454},
+  {"group":"基础（已验证安全，空 body）","name":"GET_ONLINE_PLAYERS 同图玩家","cmd":2003,"note":"body 已含筛选参数，空 body 也会回"},
+  {"group":"基础（已验证安全，空 body）","name":"GET_ACHIEVE_AWARD 成就奖励面板","cmd":47334},
+  {"group":"基础（已验证安全，空 body）","name":"COMMAND_4178","cmd":4178},
+  {"group":"基础（已验证安全，空 body）","name":"COMMAND_45824","cmd":45824},
+  {"group":"基础（已验证安全，空 body）","name":"COMMAND_40006","cmd":40006},
+  {"group":"引导帧（登录后官方会发）","name":"COMMAND_42494","cmd":42494},
+  {"group":"引导帧（登录后官方会发）","name":"COMMAND_1002","cmd":1002},
+  {"group":"引导帧（登录后官方会发）","name":"COMMAND_1016","cmd":1016,"body":"00000002","note":"固定 body 00000002"},
+  {"group":"需要参数（点开会报错，用于探字段）","name":"GET_PET_LIST 精灵列表","cmd":2303,"note":"需要 body 参数"},
+  {"group":"需要参数（点开会报错，用于探字段）","name":"GET_DAILY_VALUE 每日数值","cmd":2707,"note":"需要 body 参数"},
+  {"group":"查询（空 body 可试）","name":"LASTVALUE 3452","cmd":3452},
+  {"group":"查询（空 body 可试）","name":"SYSTEM_MESSAGE 8002","cmd":8002}
+]

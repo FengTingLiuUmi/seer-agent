@@ -1,0 +1,6 @@
+﻿title=seer flash host
+docLen=1836
+swf=HtmlElement
+callback=no
+url=http://127.0.0.1:8000/page.html
+readyState=Interactive

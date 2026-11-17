@@ -1,0 +1,62 @@
+# ===== 凭据 / 会话（任何位置，决不入库）=====
+.env
+*.env
+.env.*
+secrets/
+cred.enc.json
+*.local.json
+login.json
+session.jsonl
+data/token.json
+data/session.json
+data/duid.txt
+account.ini
+.secrets-key
+
+# ===== 逆向 / 研究资料（不入库）=====
+reverse/
+docs/
+ref/
+patch/
+**/patch/
+HANDOFF.md
+CHANGELOG.md
+
+# ===== 抓包 / 证据（任何位置）=====
+*.pcapng
+*.etl
+*.zip
+*.jsonl
+live_*.bin
+captures-*/
+
+# ===== 运行时二进制 / 产物（不入库）=====
+electron11-32/
+*.exe
+*.dll
+*.pak
+*.dat
+*.swf
+*.png
+
+# ===== 依赖 / 缓存 / 编译产物 =====
+node_modules/
+__pycache__/
+*.pyc
+.cache/
+cache/
+.pytest_cache/
+*.log
+
+# ===== 浏览器配置 / 本地临时 =====
+browser-profile/
+browser-profile2/
+bsp_user/
+bsp3/
+bsp_test2/
+logs/
+
+# ===== IDE / 系统 =====
+.idea/
+.vscode/
+.DS_Store

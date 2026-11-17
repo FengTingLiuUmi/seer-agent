@@ -1,0 +1,154 @@
+<taomee>
+	<Dll>
+		<item name="赛尔号飞船" path="dll/TaomeeLibraryDLL.swf"/>
+		<item name="装备信息" path="dll/RobotCoreDLL.swf"/>
+		<item name="精灵信息" path="dll/RobotAppDLL.swf"/>
+		<item name="人物信息" path="dll/RobotApp_2DLL.swf"/>
+	</Dll>
+	<Bean>
+		<!--=====================core=====================-->
+		<!--系统时间侦听 -->
+		<Bean id="SysTimeCmdListener" class="com.robot.core.cmd.SysTimeCmdListener" />
+		<!--bitBuff设置-->
+		<Bean id="BitBuffSetManager" class="com.robot.core.BitBuffSetManager" />
+		<!-- 动作条 -->
+		<Bean id="LeftToolBarManager" class="com.robot.core.manager.LeftToolBarManager" />
+		<Bean id="ToolBarController" class="com.robot.app.toolBar.ToolBarController" />
+		<!--开通/取消VIP-->
+		<Bean id="VipCmdListener" class="com.robot.core.cmd.VipCmdListener" />
+		<!--获取用户列表-->
+		<Bean id="UserListCmdListener" class="com.robot.core.cmd.UserListCmdListener" />
+		<!--人物走路-->
+		<Bean id="WalkCmdListener" class="com.robot.core.cmd.WalkCmdListener" />
+		<!--改变套装-->
+		<Bean id="ChangeClothCmdListener" class="com.robot.core.cmd.ChangeClothCmdListener" />
+		<!--改变颜色-->
+		<Bean id="ChangeColorCmdListener" class="com.robot.core.cmd.ChangeColorCmdListener" />
+		<!--改变昵称-->
+		<Bean id="ChangeNameCmdListener" class="com.robot.core.cmd.ChangeNameCmdListener" />
+		<!--涂装-->
+		<Bean id="ChangeDoodleCmdListener" class="com.robot.core.cmd.ChangeDoodleCmdListener" />
+		<!--瞄准-->
+		<Bean id="AimatCmdListener" class="com.robot.core.cmd.AimatCmdListener" />
+		<!--精灵相关-->
+		<Bean id="PetCmdListener" class="com.robot.core.cmd.PetCmdListener" />
+		<Bean id="SpecialCmdListener" class="com.robot.core.cmd.SpecialCmdListener" />
+		<Bean id="BefLoad" class="com.robot.core.net.BefLoad" />
+		<!--nono-->
+		<Bean id="FollowCmdListener" class="com.robot.core.cmd.nono.FollowCmdListener" />
+		<Bean id="ChangeNameCmdListener" class="com.robot.core.cmd.nono.ChangeNameCmdListener" />
+		<Bean id="ChangeColorCmdListener" class="com.robot.core.cmd.nono.ChangeColorCmdListener" />
+		<!--邮件相关事件-->
+		<Bean id="MailCmdListener" class="com.robot.core.cmd.MailCmdListener" />
+		<!--精灵简单信息-->
+		<Bean id="PetInfoController" class="com.robot.core.pet.PetInfoController" />
+		<!--春节大礼包-->
+		<Bean id="SpringGiftNoticeCmdListener" class="com.robot.core.cmd.SpringGiftNoticeCmdListener" />
+		<!--吃粽子侦听-->
+		<Bean id="PetEatDumpCmdListener" class="com.robot.core.cmd.PetEatDumpCmdListener" />
+		<!--变形机甲侦听-->
+		<Bean id="TransformCmdListener" class="com.robot.core.cmd.TransformCmdListener" />
+		<!--能量吸收器 -->
+		<Bean id="EnergyXishouCmdListener" class="com.robot.core.cmd.EnergyXishouCmdListener" />
+		<!--经验加倍器-->
+		<Bean id="SpeedupCmdListener" class="com.robot.core.cmd.SpeedupCmdListener" />
+		<!--更换座驾-->
+		<Bean id="ChangeMountCmdListener" class="com.robot.core.cmd.ChangeMountCmdListener" />
+		<!--xml 打包加载-->
+		<Bean id="PreloadZipXMLController" class="com.robot.core.zip.PreloadZipXMLController" />
+		
+		<!--=====================app=====================-->
+		
+		<!-- 成就列表侦听 -->
+		<Bean id="AchieveValueCmdListener" class="com.robot.app.cmd.AchieveValueCmdListener" />
+		<Bean id="AchieveCmdListener" class="com.robot.app.cmd.AchieveCmdListener" />
+		<!--精灵繁殖侦听 -->
+		<Bean id="PetBreedCmdListener" class="com.robot.app.cmd.PetBreedCmdListener" />
+		<!--战队-->
+		<Bean id="TestCmdListener" class="com.robot.app.cmd.TestCmdListener" />
+		<Bean id="TeamChatCmdListener" class="com.robot.app.cmd.TeamChatCmdListener" />
+		<Bean id="AdviceTeamMateCmdListener" class="com.robot.app.cmd.AdviceTeamMateCmdListener"/>
+		<!--任务完成-->
+		<Bean id="TaskCmdListener" class="com.robot.app.cmd.TaskCmdListener" />
+		<!--用户信息面板-->
+		<Bean id="UserInfoController" class="com.robot.app.user.UserInfoController" />
+		<!--战斗相关通知-->
+		<Bean id="FightNoteCmdListener" class="com.robot.app.fightNote.FightNoteCmdListener" />
+		<!--野怪掉物品-->
+		<Bean id="BossCmdListener" class="com.robot.app.cmd.BossCmdListener" />
+		<!--4549奖励通知-->
+		<Bean id="BonusCmdListener" class="com.robot.app.cmd.BonusCmdListener" />
+		<!--道具相关-->
+		<Bean id="ItemCmdListener" class="com.robot.app.buyItem.ItemCmdListener" />
+		<!--道具相关提示-->
+		<Bean id="ItemCmdListener" class="com.robot.app.buyItem.ItemInBagMsgManager" />
+		<!--精灵升级、属性变化-->
+		<Bean id="PetUpdateCmdListener" class="com.robot.app.petUpdate.PetUpdateCmdListener" />
+		<!--野外刷新怪侦听-->
+		<Bean id="OgreCmdListener" class="com.robot.app.ogre.OgreCmdListener" />
+		<!--稀有精灵侦听-->
+		<Bean id="SpecialPetCmdListener" class="com.robot.app.ogre.SpecialPetCmdListener" />
+		<!--野外遇怪侦听-->
+		<Bean id="BossCmdListener" class="com.robot.app.ogre.BossCmdListener" />
+		<!--购买侦听-->
+		<Bean id="BuyCmdListener" class="com.robot.app.cmd.BuyCmdListener" />
+		<!--能源采集-->
+		<Bean id="MessageAlarm" class="com.robot.app.systems.MessageAlarm" />
+		<!--运营，幽灵变身 -->
+		<Bean id="TranUserCmdListener" class="com.robot.app.cmd.TranUserCmdListener" />
+		<!--小游戏输出-->
+		<Bean id="GameOverCmdListener" class="com.robot.app.cmd.GameOverCmdListener" />
+		<!--获得大师杯奖牌-->
+		<Bean id="PlateCmdListener" class="com.robot.app.cmd.PlateCmdListener" />
+		<!--验证精灵侦听-->
+		<Bean id="UserProvPetCmdListener" class="com.robot.app.cmd.UserProvPetCmdListener" />
+		<Bean id="PetBrightNoticeCmdListener" class="com.robot.app.cmd.PetBrightNoticeCmdListener" />
+		<!--获得暗黑之光侦听-->
+		<Bean id="DarkLightCmdListener" class="com.robot.app.cmd.DarkLightCmdListener" />
+		<!--组队和组队对战-->
+		<Bean id="GroupFightCmdListener" class="com.robot.app.group.cmd.GroupFightCmdListener" />
+		<Bean id="GroupChgMapCmdListener" class="com.robot.core.group.cmd.GroupChgMapCmdListener" />
+		<Bean id="GroupNoticeCmdListener" class="com.robot.app.group.cmd.GroupNoticeCmdListener" />
+		<!--雷伊获得新技能侦听-->
+		<Bean id="SpecialSkillCmdListener" class="com.robot.app.cmd.SpecialSkillCmdListener" />
+		<!--获得巅峰荣誉通知-->
+		<Bean id="HonorCmdListener" class="com.robot.app.cmd.HonorCmdListener" />
+		<!--领取宝箱通知-->
+		<!-- <Bean id="GetTreasureCmdListener" class="com.robot.app.cmd.GetTreasureCmdListener"/> -->
+		<!--迷你小地图-->
+		<Bean id="MiniMapController" class="com.robot.app.control.MiniMapController"/>
+		<!--战斗实验室破纪录通知-->
+		<Bean id="BattleLabNewsRecordCmdListener" class="com.robot.app.cmd.BattleLabNewsRecordCmdListener"/>
+		<!--战斗前准备(服务器防G)-->
+		<Bean id="FightReadyCmdListener" class="com.robot.app.fightNote.FightReadyCmdListener"/>
+		<!--玩家火焰开启/关闭-->
+		<Bean id="ChangeFireCmdListener" class="com.robot.app.cmd.ChangeFireCmdListener"/>
+		<!--核心战斗通知-->
+		<!-- 2014新手上线 此推送下掉 francis -->
+<!-- 		<Bean id="CoreFightCmdListener" class="com.robot.app.cmd.CoreFightCmdListener"/> -->
+		<!--场景装置系统-->
+		<Bean id="MapObjectControl" class="com.robot.app2.systems.mapObject.MapObjectControl"/>
+		<!--新spt-->
+		<Bean id="NewSptManager" class="com.robot.app2.control.newSpt.NewSptManager"/>
+		<!--任务状态改变通知-->
+		<Bean id="TaskStatuChangeCmdListener" class="com.robot.app.cmd.TaskStatuChangeCmdListener"/>
+		
+		<!--特性icon-->
+		<Bean id="EffectIconControl" class="com.robot.app2.systems.EffectIconControl"/>
+		<!--boss特效icon-->
+		<Bean id="BossEffectIconControl" class="com.robot.app2.systems.BossEffectIconControl"/>
+		<!--广播-->
+		<Bean id="BroadCastXMLLoadController" class="com.robot.app2.control.BroadCastXMLLoadController"/>
+		<!--开启一些业务功能-->
+		<Bean id="TaskMain" class="com.robot.app.task.TaskMain" />
+		<!--开启一些业务功能分离自taskmain-->
+		<Bean id="SetupsController" class="com.robot.app.control.SetupsController" />
+		<!--ICON图标加载-->
+		<Bean id="IconController" class="com.robot.app2.systems.iconLevel.IconController" />
+		<!--session定时获取-->
+		<Bean id="SessionManager" class="com.robot.app.linkManager.SessionManager" />
+		<!--物品超过每日限制通知-->
+		<Bean id="ItemReachDailyLimitCmdListener" class="com.robot.core.cmd.ItemReachDailyLimitCmdListener" />
+		
+	</Bean>
+</taomee>

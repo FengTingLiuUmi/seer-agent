@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+data/session*.json
+daily_progress.json
+daily.log
+battle.txt

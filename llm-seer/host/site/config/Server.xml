@@ -1,0 +1,29 @@
+﻿<config> 
+<newsversion time="20250425">667</newsversion>
+<newsversion time="20250502">667</newsversion>
+<dailyTask>2</dailyTask>
+	<superNoNo>17</superNoNo>
+	<uiversion>20100225</uiversion>
+	<ipConfig>
+		<http url="http://127.0.0.1:8001/ip.txt" url1="http://127.0.0.1:8001/ip.txt"/>
+		<murl url="https://seerh5login.61.com/seer_yy_notice" />
+		<Deputize ip="123.59.170.236:1282" port="1302"/>
+		<Email ip="127.0.0.1" port="18630"/>
+		<DirSer ip="127.0.0.1" port="18630"/>
+		<Visitor ip="127.0.0.1" port="18630"/>
+		<!-- 拉服务器列表、创建人物形象-->
+		<SubServer ip="127.0.0.1" port="18630"/>
+		<!--cdn请求地址-->
+		<cdn url="https://seer.61.com/ip"/>
+	</ipConfig>
+	<RegisterUrl url="https://account-co.61.com/gameRegister/registerReal" />
+	<RegisterGetCodeUrl url="https://account-co.61.com/vericode/generate" />
+	<Res url="resource/" />
+	<Npc url="resource/npc/" />
+	<Module url="module/com/robot/module/" />
+	<TaskItemIconURL url="resource/item/task/icon/" />
+	<MailTemplateURL url="resource/mail/" />
+	<ClothLight url="resource/eff/clothLight/" />
+	<Transform url="resource/transform/movie/" />
+	<UI url="resource/ui/" />
+</config>

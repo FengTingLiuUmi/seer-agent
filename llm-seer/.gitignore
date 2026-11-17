@@ -1,0 +1,13 @@
+# 体积大 / 可再生 / 临时数据
+swf/
+dec/
+node_modules/
+logs/
+cache/
+.npm-cache/
+__pycache__/
+*.log
+# 兜底
+.env
+secrets/
+*.local.json

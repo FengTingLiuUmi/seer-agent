@@ -1,0 +1,11 @@
+﻿import { authenticate, UA, cookieString } from '../../seer-auto/src/login.js';
+import { duid } from '../../seer-auto/src/auth.js';
+const a = await authenticate('ACCOUNT', process.env.SEER_PASSWORD);
+const h={'User-Agent':UA, Referer:'https://seerh5.61.com/','Origin':'https://seerh5.61.com','X-Requested-With':'XMLHttpRequest'};
+const u='https://account-co.61.com/v3/?r=authorization/authorize&appid=20210906002&scope=userinfo&state=xyz123';
+const r=await fetch(u,{headers:{...h,Cookie:cookieString()},redirect:'manual'});
+console.log('status',r.status);
+for (const [k,v] of r.headers) if (/loc|code|set-cookie/i.test(k)) console.log(' ',k,'=',v.slice(0,160));
+const t=await r.text();
+console.log('body:', t.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim().slice(0,200));
+process.exit(0);

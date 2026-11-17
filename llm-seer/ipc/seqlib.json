@@ -1,0 +1,26 @@
+[
+ {
+  "name": "pw_tab_enter",
+  "keys": "{PWD}{TAB}{ENTER}"
+ },
+ {
+  "name": "tab_pw_enter",
+  "keys": "{TAB}{PWD}{ENTER}"
+ },
+ {
+  "name": "tab2_pw_enter",
+  "keys": "{TAB}{TAB}{PWD}{ENTER}"
+ },
+ {
+  "name": "pw_enter",
+  "keys": "{PWD}{ENTER}"
+ },
+ {
+  "name": "tab_pw_only",
+  "keys": "{TAB}{PWD}"
+ },
+ {
+  "name": "uid_tab_pw_enter",
+  "keys": "{UID}{TAB}{PWD}{ENTER}"
+ }
+]

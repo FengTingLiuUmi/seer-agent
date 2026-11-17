@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>seer flash host</title>
+<style>html,body{margin:0;padding:0;height:100%;width:100%;background:#111;overflow:hidden}</style>
+<script>
+// Flash (Login.swf) 会通过这些全局函数取环境
+window.getAd = function () { return '0'; };
+window.get_uid = function () { return window.__uid || ''; };
+window.getHostname = function () { return 'h5-seer.61.com'; };
+window.setAddIconIsShow = function () { return true; };
+window.taomeeLoginCall = function () { return true; };
+
+// 宿主 → 页面：进游戏（hex = uid 4B BE + session 16B）
+window.seerLogin = function (hex) {
+  var o = document.getElementById('swf');
+  if (!o || !o.startWebSessionLogin) return 'no-callback';
+  o.startWebSessionLogin(hex);
+  return 'ok';
+};
+window.seerReady = function () {
+  var o = document.getElementById('swf');
+  return !!(o && o.startWebSessionLogin);
+};
+</script>
+</head>
+<body>
+<!-- Chromium(PPAPI) 更认 embed；object 只保留给 IE 兜底 -->
+<embed id="swf" name="swf" src="Login.swf" type="application/x-shockwave-flash"
+       width="1000" height="650" quality="high" bgcolor="#000000"
+       allowScriptAccess="always" allowFullScreen="true" wmode="opaque">
+<div id="dbg" style="color:#888;font:12px monospace;padding:4px"></div>
+<script>
+setInterval(function () {
+  try {
+    var o = document.getElementById('swf');
+    var pct = (o && o.PercentLoaded) ? o.PercentLoaded() : -1;
+    window.__pct = pct;
+    document.getElementById('dbg').textContent = 'pct=' + pct +
+      ' cb=' + !!(o && o.startWebSessionLogin) + ' tag=' + (o && o.tagName);
+  } catch (e) { document.getElementById('dbg').textContent = 'err ' + e.message; }
+}, 1000);
+</script>
+</body>
+</html>

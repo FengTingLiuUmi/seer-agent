@@ -1,0 +1,7 @@
+{
+  "tasks": [
+    {"name": "日常信息", "cmd": 8016, "expect": 8016, "write": false, "timeout": 10},
+    {"name": "日常数值", "cmd": 2707, "expect": 2707, "write": false, "timeout": 10},
+    {"name": "勇者之塔成就", "cmd": 3453, "expect": 3453, "write": false, "timeout": 10}
+  ]
+}
