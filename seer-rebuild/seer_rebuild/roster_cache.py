@@ -19,8 +19,9 @@ ROOT = Path(__file__).resolve().parent.parent
 STATIC = ROOT / "data" / "account_pets.json"
 DYNAMIC = ROOT / "data" / "roster_cache.json"
 
-# 站场/生存机制标签（不要求克制）
-SURVIVAL_TAGS = {"减伤", "吸血", "免疫攻击", "保命", "免异常", "免下降", "回血", "护盾", "护罩"}
+# 站场手判定只用「定位层」的「站场」标签（tag 意义见 domain_knowledge/tags.json），
+# 不再用机制标签拼凑——否则会把「强攻」(如弑序神罗/希瓦) 误判成站场。
+STATION_ROLE = "站场"
 
 
 def load_static() -> list[dict]:
@@ -74,13 +75,12 @@ def _single_types(p: dict) -> set[str]:
 
 
 def station_tanks(pets: list[dict], *, lv: int = 90) -> list[dict]:
-    """站场手：满级 + 带生存机制标签（不要求克制）。"""
+    """站场手：满级 + 定位层「站场」标签（不要求克制）。"""
     out = []
     for p in pets:
         if p["level"] < lv:
             continue
-        allt = set(p["role_tags"]) | set(p["soulmark_tags"])
-        if allt & SURVIVAL_TAGS:
+        if STATION_ROLE in (p.get("role_tags") or []):
             out.append(p)
     return sorted(out, key=lambda x: -(x.get("hp") or 0))
 

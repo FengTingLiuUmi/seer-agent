@@ -235,14 +235,22 @@ def _worn_sections(body: bytes) -> tuple[list[int], list[int]]:
 
 
 def _worn_title(body: bytes) -> int | None:
-    """从 1001 快照提取当前称号 id（实测：装备段前 0x1396 的 4 字节 BE 低位即称号 id）。"""
-    if not body or len(body) < 0x139c:
+    """从 1001 快照提取当前称号 id。
+
+    旧实现硬编码读 0x1396，已随登录快照结构变化失效（实测 1001 body 仅 ~4KB，
+    称号 591 实际在 0x98c 附近）。改为扫描第一个「连续 3 个相同、值 ∈ 1..5000」
+    的三连（实测称号/穿戴项区是 591/228/315/336 这类三连），best-effort。
+    """
+    if not body or len(body) < 12:
         return None
-    v4 = struct.unpack_from(">I", body, 0x1396)[0]
-    if 1 <= v4 <= 5000:
-        return v4
-    v2 = struct.unpack_from(">H", body, 0x1398)[0]
-    return v2 if 1 <= v2 <= 5000 else None
+    for off in range(0, len(body) - 12, 4):
+        v = struct.unpack_from(">I", body, off)[0]
+        if not (1 <= v <= 5000):
+            continue
+        if (struct.unpack_from(">I", body, off + 4)[0] == v
+                and struct.unpack_from(">I", body, off + 8)[0] == v):
+            return v
+    return None
 
 
 def parse_equipment_from_1001(body: bytes | None) -> list[int]:

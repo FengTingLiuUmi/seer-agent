@@ -308,6 +308,33 @@ def run(
         import json as _json
         from pathlib import Path as _Path
         from .battle_records import DEFAULT_RECORDS_DIR, append_timeline, reset_live
+        from .battle_data import BattleData as _BD
+
+        # 技能名/精灵名反查（本地战斗库），供实时战报与 results 落盘使用。
+        _bd = _BD(r"F:\seer\seer_cfg\json")
+        skill_names = {sid: m.name for sid, m in _bd.moves.items()}
+        species_names = {sid: s.name for sid, s in _bd.species.items()}
+
+        # 技能名在线兜底（SeerAPI 懒加载）：本地战斗库缺的 BOSS 专属技
+        # （如「临时改良/工业套组/绝境脱出」）在实时 timeline / 回合表里也要即时反查，
+        # 否则前端战报会把敌方技能显示成裸 id。
+        _prov = None
+
+        def _resolve_skill(sid: int):
+            nonlocal _prov
+            if _prov is None:
+                try:
+                    from .provider import SeerApiProvider
+                    _prov = SeerApiProvider()
+                except Exception:
+                    _prov = False
+            if _prov is False:
+                return None
+            try:
+                return _prov.name("skill", sid)
+            except Exception:
+                return None
+
         rec_dir = records_dir if records_dir is not None else str(DEFAULT_RECORDS_DIR)
         turns_fh = None
         if report_dir:
@@ -340,15 +367,60 @@ def run(
             if on_turn is not None:
                 on_turn(rec)
 
+        last_res = None
         for p in plans:
             await _send_plain(c, build_pre_battle_steps(p), write=write, log=lines, timeline=timeline)
             pol = battle_policy(p)
             if pol.sequence and write:
                 res = await drive_battle(c, pol, turn_wait=turn_wait, log=lines,
-                                         context=battle_context(p), on_turn=_handle_turn, on_frame=_on_frame)
+                                         context=battle_context(p), on_turn=_handle_turn, on_frame=_on_frame,
+                                         skill_names=skill_names, resolve_skill=_resolve_skill)
                 timeline.extend(res.frames)
+                last_res = res
                 lines.append(f"[对战] 结束(2506)={res.over} 过关(45827)={res.passed}")
             await _send_plain(c, build_collect_steps(p), write=write, log=lines, timeline=timeline)
+
+        # 打完后写 latest.json（含当前阵容 + 结果），前端据此做 catch->name 反查与胜负判定。
+        if last_res is not None and write and rec_dir:
+            try:
+                from .pets import parse_bag_43706
+                from .battle_report import build_report_from_timeline
+                from .inventory import snapshot_from_1001
+                from .battle_records import record_battle
+
+                def _nm(pet) -> str:
+                    sp = _bd.species.get(pet.species_id)
+                    return sp.name if sp else str(pet.species_id)
+
+                await c.send(Cmd.GET_PET_INFO_BY_ONCE, [])
+                _bag = {"正式": [], "待命": [], "uid": c.session.uid}
+                _loop = asyncio.get_running_loop()
+                _end = _loop.time() + 6.0
+                while _loop.time() < _end:
+                    _f = await asyncio.wait_for(c.frames.get(), timeout=1.0)
+                    if _f.cmd == Cmd.GET_PET_INFO_BY_ONCE:
+                        cnt, _pets = parse_bag_43706(_f.body, data=_bd)
+                        _bag["正式"] = [{"species_id": p.species_id, "catch_time": p.catch_time, "name": _nm(p)} for p in _pets[:cnt]]
+                        _bag["待命"] = [{"species_id": p.species_id, "catch_time": p.catch_time, "name": _nm(p)} for p in _pets[cnt:]]
+                        break
+
+                lf = getattr(c, "login_frame", None)
+                _snap = snapshot_from_1001(lf.body).as_dict() if lf is not None else {"equipment": [], "titles": []}
+
+                _rep = build_report_from_timeline(
+                    timeline, bag=_bag, snap=_snap,
+                    skill_names=skill_names, species_names=species_names,
+                    factor_name="伊娜因子", design_id=plans[-1].design_id, stage_index=plans[-1].stage_index,
+                    resolve_skill=_resolve_skill,
+                )
+                _rep.result.over = last_res.over
+                _rep.result.passed = last_res.passed
+                if not _rep.result.winner:
+                    _rep.result.winner = "胜利" if last_res.passed else ("未判胜负" if last_res.over else "未结束")
+                record_battle(_rep.as_dict(), rec_dir)
+                lines.append("[战报] latest.json 已更新（含阵容/结果，前端据此反查精灵名）")
+            except Exception as _e:  # noqa: BLE001
+                lines.append(f"[战报] latest.json 生成失败：{_e}")
 
         if turns_fh is not None:
             turns_fh.close()

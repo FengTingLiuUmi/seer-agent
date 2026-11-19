@@ -65,7 +65,12 @@ class TurnRecord:
     enemy_hp_max: int | None = None
     my_hp: int | None = None
     my_hp_max: int | None = None
-    damage: int | None = None             # 由敌方血量前后差推算（本回合我方造成）
+    damage: int | None = None             # 净伤害：敌方本回合开始时血 - 结算后血（<=0 可能被回复/减伤抵消）
+    enemy_skill_id: int | None = None     # 敌方本回合使用的技能/被动
+    enemy_skill_name: str = ""
+    enemy_hp_prev: int | None = None      # 敌方本回合开始时的血（=上回合结算后血）
+    enemy_hp_delta: int | None = None     # 敌方结算后血 - 开始血（负数=掉血，0=持平，正数=回复）
+    enemy_eid: int | None = None
     status: list[str] = field(default_factory=list)
 
     def as_dict(self) -> dict:
@@ -82,6 +87,11 @@ class TurnRecord:
             "my_hp": self.my_hp,
             "my_hp_max": self.my_hp_max,
             "damage": self.damage,
+            "enemy_skill_id": self.enemy_skill_id,
+            "enemy_skill_name": self.enemy_skill_name,
+            "enemy_hp_prev": self.enemy_hp_prev,
+            "enemy_hp_delta": self.enemy_hp_delta,
+            "enemy_eid": self.enemy_eid,
             "status": list(self.status),
         }
 
@@ -259,6 +269,72 @@ def _my_hp_from_body(body: bytes, catch: int, max_hp: int | None) -> tuple[int |
     return None, None
 
 
+def _settle_records(body: bytes, *, my_catches: set[int] | None = None) -> list[dict]:
+    """2505 结算帧里的「动作块」扫描。
+
+     动作块布局（每块 11×u32，id 落在 catch 区间 = 我方 catch 或敌方 eid）：
+       [+0] 判别：0=敌方动作块 / uid=我方动作块
+       [+1] skill_id（该方本回合使用的技能/被动）
+       [+2] 回合序号
+       [+3] id（我方 catch_time 或敌方 eid）
+       [+4] flag  [+5] 1  [+6] x  [+7] 0  [+8] 0
+       [+9] 当前血  [+10] 满血
+     仅保留「满血合理、当前血 ≤ 满血」的记录；别名/占位块（血 0/微小）不在此列。
+    """
+    my_catches = my_catches or set()
+    out: list[dict] = []
+    for off in range(0, len(body) - 40):
+        idv = _u32(body, off)
+        if not _is_catch(idv):
+            continue
+        cur = _u32(body, off + 24)
+        mx = _u32(body, off + 28)
+        if mx is None or not (1 <= mx <= 200000):
+            continue
+        if cur is None or cur > mx:
+            continue
+        out.append({
+            "off": off,
+            "role": "my" if idv in my_catches else "enemy",
+            "id": idv,
+            "skill_id": _u32(body, off - 8) if off >= 8 else None,
+            "turn": _u32(body, off - 4) if off >= 4 else None,
+            "hp": cur,
+            "max_hp": mx,
+        })
+    return out
+
+
+def _enemy_head_block(body: bytes, my_catches: set[int] | None = None,
+                      enemy_max: int | None = None) -> dict | None:
+    """2505 头部固定「敌方动作块」：byte0=0 时落在 12(敌方eid)/4(技能)/36(血)/40(满血)。"""
+    my_catches = my_catches or set()
+    if len(body) < 44:
+        return None
+    eid = _u32(body, 12)
+    skill = _u32(body, 4)
+    hp = _u32(body, 36)
+    mx = _u32(body, 40)
+    if not (_is_catch(eid) and eid not in my_catches and mx and 1 <= mx <= 200000):
+        return None
+    if hp is None or hp > mx:
+        return None
+    if enemy_max is not None and mx != enemy_max:
+        return None
+    return {"id": eid, "skill_id": skill, "hp": hp, "max_hp": mx}
+
+
+def _discover_enemy_from_2505(body: bytes, my_catches: set[int] | None = None) -> tuple[int | None, int | None]:
+    """从第一个 2505 的头部敌方块发现「敌方 eid + 满血」（比 2504 扫描稳，避免误判）。"""
+    b = _enemy_head_block(body, my_catches)
+    if b:
+        return int(b["id"]), int(b["max_hp"])
+    for r in _settle_records(body, my_catches=my_catches):
+        if r["role"] == "enemy" and r["max_hp"] and r["max_hp"] >= 2000:
+            return int(r["id"]), int(r["max_hp"])
+    return None, None
+
+
 # --------------------------------------------------------------------------
 # 出招序列（C2S 命令日志）
 # --------------------------------------------------------------------------
@@ -314,6 +390,7 @@ def build_report_from_timeline(
     design_id: int | None = None,
     stage_index: int | None = None,
     enemy_max_hp: int | None = None,
+    resolve_skill: Any = None,
 ) -> BattleReport:
     """从「单场战斗的按时间顺序 C2S/S2C 事件列表」生成战报。
 
@@ -348,6 +425,28 @@ def build_report_from_timeline(
                 starter_catch = p.catch_time
                 break
 
+    # 技能名兜底：本地库缺的（尤其 BOSS 被动/专属技）尝试在线反查
+    _resolved: dict[int, str] = {}
+
+    def _skill_name(sid: int | None) -> str:
+        if sid is None:
+            return ""
+        n = sk_names.get(sid)
+        if n:
+            return n
+        if sid in _resolved:
+            return _resolved[sid]
+        if callable(resolve_skill):
+            try:
+                n = resolve_skill(sid)
+            except Exception:
+                n = None
+            if n:
+                _resolved[sid] = str(n)
+                return _resolved[sid]
+        _resolved[sid] = ""
+        return ""
+
     # 先把 S2C 帧抽出来 → 我方满血映射 + 敌方满血
     s2c = [e for e in timeline if e.get("dir") == "s2c"]
     my_max: dict[int, int] = {}
@@ -356,21 +455,28 @@ def build_report_from_timeline(
         if e["cmd"] == S2C_START:
             my_max = _team_max_hp_from_2504(bytes.fromhex(e["body"]), known)
             break
-    exclude_my_hp = {0} | set(my_max.values())
-    enemy_eid, _discovered_max = _discover_enemy(s2c, known)
+
+    # 敌方满血：优先从 2505 头部敌方块读（最稳），2504 扫描兜底
+    enemy_eid: int | None = None
+    discovered_max: int | None = None
+    for e in s2c:
+        if e["cmd"] == S2C_SKILL:
+            enemy_eid, discovered_max = _discover_enemy_from_2505(bytes.fromhex(e["body"]), known)
+            if discovered_max:
+                break
+    if discovered_max is None:
+        enemy_eid, discovered_max = _discover_enemy(s2c, known)
     if enemy_max_hp is None:
-        enemy_max_hp = _discovered_max
+        enemy_max_hp = discovered_max
     if enemy_max_hp:
-        src = "传入" if enemy_max_hp != _discovered_max else "自帧发现"
+        src = "传入" if enemy_max_hp != discovered_max else "自帧发现"
         rep.notes.append(f"敌方满血={enemy_max_hp}（{src}）")
 
-    # 逐事件走时间线
+    # 逐事件走时间线：敌方血/技能在 2505 结算帧即时落地（末回合也能结清）
     active_catch = starter_catch
     turn = 0
     cur: TurnRecord | None = None
-    pending_enemy_hp: int | None = None
-    prev_enemy_hp: int | None = None
-    pending_my_hp: int | None = None
+    prev_enemy_hp: int | None = enemy_max_hp  # 开战满血，供第 1 回合算净伤害
 
     for e in timeline:
         cmd = e.get("cmd")
@@ -378,45 +484,52 @@ def build_report_from_timeline(
         body = bytes.fromhex(e["body"]) if e.get("body") else b""
         if d == "c2s":
             if cmd == C2S_SKILL:
-                # 收尾上一回合
-                if cur is not None:
-                    cur.enemy_hp = pending_enemy_hp
-                    cur.my_hp = pending_my_hp
-                    if prev_enemy_hp is not None and pending_enemy_hp is not None:
-                        cur.damage = max(0, prev_enemy_hp - pending_enemy_hp)
-                    prev_enemy_hp = pending_enemy_hp
                 turn += 1
                 sid = struct.unpack_from(">I", body, 0)[0] if len(body) >= 4 else None
-                cur = TurnRecord(turn=turn, skill_id=sid, skill_name=sk_names.get(sid, ""), active_catch=active_catch)
+                cur = TurnRecord(turn=turn, skill_id=sid, skill_name=_skill_name(sid), active_catch=active_catch)
                 if active_catch is not None and active_catch in catches:
                     cur.active_species, cur.active_name = catches[active_catch]
                 cur.enemy_hp_max = enemy_max_hp
+                cur.enemy_hp_prev = prev_enemy_hp
+                cur.enemy_eid = enemy_eid
                 cur.my_hp_max = my_max.get(active_catch) if active_catch else None
                 rep.turns.append(cur)
-                pending_enemy_hp = None
-                pending_my_hp = None
             elif cmd == C2S_SWITCH and len(body) >= 4:
                 active_catch = struct.unpack_from(">I", body, 0)[0] & 0xFFFFFFFF
                 if cur is not None:
                     cur.switch_to_catch = active_catch
                     cur.my_hp_max = my_max.get(active_catch)
-        elif d == "s2c":
+        elif d == "s2c" and cur is not None:
             if cmd == S2C_SKILL:
-                if enemy_max_hp is not None:
-                    h = _enemy_hp_from_body(body, enemy_max_hp, exclude_my_hp)
-                    if h is not None:
-                        pending_enemy_hp = h
-                if cur is not None and cur.active_catch is not None:
-                    mh = my_max.get(cur.active_catch)
-                    c2, _m2 = _my_hp_from_body(body, cur.active_catch, mh)
-                    if c2 is not None:
-                        pending_my_hp = c2
+                en = _enemy_head_block(body, known)
+                if en is None:
+                    for r in _settle_records(body, my_catches=known):
+                        if r["role"] == "enemy":
+                            en = r
+                            break
+                if en is not None:
+                    if enemy_max_hp is None or en["max_hp"] != enemy_max_hp:
+                        enemy_max_hp = en["max_hp"]
+                        enemy_eid = en["id"]
+                    cur.enemy_hp = en["hp"]
+                    cur.enemy_hp_max = en["max_hp"]
+                    cur.enemy_skill_id = en["skill_id"]
+                    cur.enemy_skill_name = _skill_name(en["skill_id"])
+                    cur.enemy_eid = en["id"]
+                    if cur.enemy_hp_prev is None:
+                        cur.enemy_hp_prev = enemy_max_hp
+                    prev = cur.enemy_hp_prev
+                    cur.damage = max(0, prev - en["hp"]) if prev is not None else None
+                    cur.enemy_hp_delta = (en["hp"] - prev) if prev is not None else None
+                    prev_enemy_hp = en["hp"]
+                if cur.active_catch is not None:
+                    for r in _settle_records(body, my_catches=known):
+                        if r["role"] == "my" and r["id"] == cur.active_catch:
+                            cur.my_hp = r["hp"]
+                            if r["max_hp"]:
+                                cur.my_hp_max = r["max_hp"]
+                            break
             elif cmd == S2C_OVER:
-                if cur is not None:
-                    cur.enemy_hp = pending_enemy_hp
-                    cur.my_hp = pending_my_hp
-                    if prev_enemy_hp is not None and pending_enemy_hp is not None:
-                        cur.damage = max(0, prev_enemy_hp - pending_enemy_hp)
                 rep.result.over = True
                 if not rep.result.winner:
                     rep.result.winner = "战斗结束(未判胜负)"
@@ -537,11 +650,14 @@ def report_to_text(rep: BattleReport) -> str:
         who = t.active_name or (f"species={t.active_species}" if t.active_species else "?")
         sk = t.skill_name or (f"技能id={t.skill_id}" if t.skill_id else "?")
         sw = f" → 换宠 0x{t.switch_to_catch:08x}" if t.switch_to_catch else ""
+        esk = t.enemy_skill_name or (f"技能id={t.enemy_skill_id}" if t.enemy_skill_id is not None else "")
         enemy = f"敌血 {t.enemy_hp}/{t.enemy_hp_max}" if t.enemy_hp is not None else ""
         my = f"我血 {t.my_hp}/{t.my_hp_max}" if t.my_hp is not None else ""
         dmg = f" 伤害~{t.damage}" if t.damage is not None else ""
+        edelta = f" 敌血变化{t.enemy_hp_delta:+d}" if t.enemy_hp_delta is not None else ""
+        eact = f" 敌用:{esk}" if esk else ""
         status = f" 状态[{','.join(t.status)}]" if t.status else ""
-        L.append(f"  第{t.turn}回合 [{who}] {sk}{sw}  {enemy}  {my}{dmg}{status}")
+        L.append(f"  第{t.turn}回合 [{who}] {sk}{sw}{eact}  {enemy}{edelta}  {my}{dmg}{status}")
     L.append("")
     L.append("【结果】")
     r = rep.result

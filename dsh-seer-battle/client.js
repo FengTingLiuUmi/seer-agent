@@ -113,6 +113,22 @@ window.__ModuleLoader__.load({
       return null;
     }
 
+    /** 2505 头部固定「敌方动作块」：byte0=0，eid@12 / 技能@4 / 血@36 / 满血@40。 */
+    function parseSettleEnemy(hex) {
+      if (!hex) return null;
+      const len = hex.length / 2;
+      if (len < 44) return null;
+      const eid = u32AtHex(hex, 12);
+      const skill = u32AtHex(hex, 4);
+      const hp = u32AtHex(hex, 36);
+      const mx = u32AtHex(hex, 40);
+      if (eid != null && isCatch(eid) && mx != null && mx >= 1 && mx <= 200000
+        && hp != null && hp <= mx) {
+        return { eid, skill, hp, mx };
+      }
+      return null;
+    }
+
     /** 已知敌方 catch 与满血后，在 catch 之后的近距离内取 [当前][满血] 对里的当前血。 */
     function curAfterCatch(hex, eid, mx) {
       if (!hex || eid == null || mx == null) return null;
@@ -192,7 +208,7 @@ window.__ModuleLoader__.load({
             round += 1;
             push('round', `-----回合 ${round} -----`);
             const sid = u32AtHex(body, 0);
-            const name = sid != null ? skills[String(sid)] : null;
+            const name = e.skill_name || (sid != null ? skills[String(sid)] : null);
             const skillLabel = name || (sid != null ? `技能#${sid}` : '未出招');
             push('line', `[我方]${myName} · ${skillLabel}`);
           } else if (cmd === C_SWITCH) {
@@ -211,19 +227,22 @@ window.__ModuleLoader__.load({
             }
             push('line', '战斗开始');
           } else if (cmd === C_SKILL_RES) {
-            if (enemyMax != null) {
-              const c = curAfterCatch(body, enemyCatch, enemyMax);
-              if (c != null) enemyCur = c;
-            } else {
-              const d = discoverEnemy(body);
+            // 后端驱动层已注入 enemy_skill_id/name/hp/max，优先用；否则本地解析兜底
+            let enId = e.enemy_skill_id != null ? e.enemy_skill_id : null;
+            let enHp = e.enemy_hp != null ? e.enemy_hp : null;
+            let enMx = e.enemy_max != null ? e.enemy_max : null;
+            if (enMx == null) {
+              const d = parseSettleEnemy(body);
               if (d) {
-                enemyCatch = d.eid;
-                enemyMax = d.mx;
-                enemyCur = d.cur;
+                enId = d.skill; enHp = d.hp; enMx = d.mx; enemyCatch = d.eid;
               }
             }
-            if (enemyCur != null && enemyMax != null) {
-              push('line', `[敌方]体力 ${enemyCur}/${enemyMax}`);
+            if (enMx != null) enemyMax = enMx;
+            if (enHp != null) enemyCur = enHp;
+            const enName = e.enemy_skill_name || (enId != null ? skills[String(enId)] : null);
+            const enSkill = enName || (enId != null ? `技能#${enId}` : null);
+            if (enHp != null || enSkill) {
+              push('line', `[敌方]${enSkill ? ` · ${enSkill}` : ''}${enHp != null ? `  体力 ${enHp}/${enMx != null ? enMx : '?'}` : ''}`);
             }
           } else if (cmd === C_OVER) {
             over = true;
@@ -507,16 +526,24 @@ window.__ModuleLoader__.load({
       if (!latest || !latest.turns || !latest.turns.length) return null;
       const turnHead = h('tr', null,
         h('th', { style: { textAlign: 'left', paddingRight: 8 } }, '回合'),
-        h('th', { style: { textAlign: 'left', paddingRight: 8 } }, '技能'),
-        h('th', { style: { textAlign: 'left', paddingRight: 8 } }, '敌方HP'),
-        h('th', { style: { textAlign: 'left' } }, '伤害'));
-      const turnRows = latest.turns.map((t, i) =>
-        h('tr', { key: 'turn' + i },
+        h('th', { style: { textAlign: 'left', paddingRight: 8 } }, '我方'),
+        h('th', { style: { textAlign: 'left', paddingRight: 8 } }, '敌方技能'),
+        h('th', { style: { textAlign: 'left', paddingRight: 8 } }, '敌方HP(开始→结算)'),
+        h('th', { style: { textAlign: 'left' } }, '伤害/变化'));
+      const turnRows = latest.turns.map((t, i) => {
+        const hpCell = t.enemy_hp != null
+          ? `${t.enemy_hp_prev != null ? t.enemy_hp_prev + '→' : ''}${t.enemy_hp}${t.enemy_hp_max != null ? '/' + t.enemy_hp_max : ''}`
+          : '—';
+        const dmgCell = [t.damage != null ? t.damage : null,
+          t.enemy_hp_delta != null ? (t.enemy_hp_delta >= 0 ? '+' : '') + t.enemy_hp_delta : null]
+          .filter((x) => x != null).join(' / ') || '—';
+        return h('tr', { key: 'turn' + i },
           h('td', { style: { paddingRight: 8 } }, t.turn),
           h('td', { style: { paddingRight: 8 } }, t.skill_name || '—'),
-          h('td', { style: { paddingRight: 8 } },
-            t.enemy_hp != null ? `${t.enemy_hp}${t.enemy_hp_max != null ? '/' + t.enemy_hp_max : ''}` : '—'),
-          h('td', null, t.damage != null ? t.damage : '—')));
+          h('td', { style: { paddingRight: 8 } }, t.enemy_skill_name || (t.enemy_skill_id != null ? '#' + t.enemy_skill_id : '—')),
+          h('td', { style: { paddingRight: 8 } }, hpCell),
+          h('td', null, dmgCell));
+      });
       return h('div', { style: { marginBottom: 8 } },
         h('div', { style: { fontWeight: 600, marginBottom: 2 } }, '完整战报 · 回合'),
         h('table', { style: { borderCollapse: 'collapse' } },

@@ -11,17 +11,21 @@ from __future__ import annotations
 import asyncio
 import struct
 from dataclasses import dataclass, field
+from typing import Any
 
 from .action_policy import Action, ActionPolicy, BattleContext, PetInfo, SkillInfo
 from .battle_report import (
     _discover_enemy,
+    _enemy_head_block,
     _enemy_hp_from_body,
     _my_hp_from_body,
+    _settle_records,
     _team_max_hp_from_2504,
 )
 from .commands import Cmd
 
-FACTOR_PASS = 45827  # 因子过关推送（因子特定结果，但对战层要能识别它）
+FACTOR_PASS = 45827  # 因子过关推送（单精灵关等）
+FACTOR_WIN = 42390   # 因子胜利（多精灵关 = 胜利即过关）
 
 
 @dataclass(slots=True)
@@ -105,6 +109,8 @@ class LiveBattleContextBuilder:
         self.my_hp: dict[int, int] = {}
         self.my_max: dict[int, int] = {ct: p.max_hp for ct, p in self.team.items() if p.max_hp}
         self.enemy_hp: int | None = None
+        self.enemy_eid: int | None = None
+        self.enemy_skill_id: int | None = None   # 敌方最近一结算回合使用的技能/被动
         self.last_switch_flag: int | None = None
         self.switch_kind: str | None = None   # 最近一次换宠：passive(死亡免费) / active(主动占回合)
         self.starter_catch: int | None = None
@@ -133,18 +139,32 @@ class LiveBattleContextBuilder:
                 if emax:
                     self.enemy_max_hp = emax
                     self.enemy_hp = emax       # 敌方开战满血
-        elif cmd == Cmd.NOTE_USE_SKILL:          # 2505 结算
-            if self.enemy_max_hp is not None:
-                h = _enemy_hp_from_body(body, self.enemy_max_hp, exclude={0} | set(self.my_max.values()))
-                if h is not None:
-                    self.enemy_hp = h
-            for ct, p in self.team.items():
-                mh = self.my_max.get(ct) or p.max_hp
-                cur, mx = _my_hp_from_body(body, ct, mh)
-                if cur is not None:
-                    self.my_hp[ct] = cur
-                if mx:
-                    self.my_max[ct] = mx
+        elif cmd == Cmd.NOTE_USE_SKILL:          # 2505 结算：动作块级解析（敌方技能/血 + 我方血）
+            en = _enemy_head_block(body, set(self.team))
+            if en is None:
+                for r in _settle_records(body, my_catches=set(self.team)):
+                    if r["role"] == "enemy":
+                        en = r
+                        break
+            if en is not None:
+                self.enemy_eid = en["id"]
+                self.enemy_max_hp = en["max_hp"]
+                self.enemy_hp = en["hp"]
+                self.enemy_skill_id = en["skill_id"]
+            for r in _settle_records(body, my_catches=set(self.team)):
+                if r["role"] != "my" or r["id"] not in self.team:
+                    continue
+                ct = r["id"]
+                if r["hp"] is not None:
+                    self.my_hp[ct] = r["hp"]
+                if r["max_hp"]:
+                    self.my_max[ct] = r["max_hp"]
+                p = self.team.get(ct)
+                if p is not None:
+                    if r["hp"] is not None:
+                        p.hp = r["hp"]
+                    if r["max_hp"]:
+                        p.max_hp = r["max_hp"]
         elif cmd == Cmd.SWITCH_PET:          # 2407 换宠回包：带回换入精灵完整状态
             info = _parse_switch_ack(body)
             if not info or info["catch"] is None:
@@ -175,6 +195,8 @@ class LiveBattleContextBuilder:
                 "my_max": dict(self.my_max),
                 "enemy_hp": self.enemy_hp,
                 "enemy_max_hp": self.enemy_max_hp,
+                "enemy_eid": self.enemy_eid,
+                "enemy_skill_id": self.enemy_skill_id,
                 "last_switch_flag": self.last_switch_flag,
                 "switch_kind": self.switch_kind,
             },
@@ -206,6 +228,8 @@ async def drive_battle(
     on_turn=None,
     on_frame=None,
     max_turns: int = 60,
+    skill_names: dict[int, str] | None = None,
+    resolve_skill: Any = None,
 ) -> BattleResult:
     """驱动一场对战：2404 准备 → 逐回合「回合开始→decide→执行→结算」→ 2506 结束。
 
@@ -219,6 +243,30 @@ async def drive_battle(
     res = BattleResult()
     loop = asyncio.get_running_loop()
     out = log if log is not None else []
+    names = skill_names or {}
+
+    # 技能名反查：本地战斗库优先，缺的（尤其 BOSS 被动/专属技，如「临时改良/工业套组」）
+    # 交给 resolve_skill 在线兜底，失败静默返回空串，避免实时战报里敌方技能显示成裸 id。
+    _resolved: dict[int, str] = {}
+
+    def skill_label(sid: int | None) -> str:
+        if sid is None:
+            return ""
+        n = names.get(sid)
+        if n:
+            return n
+        if sid in _resolved:
+            return _resolved[sid]
+        if callable(resolve_skill):
+            try:
+                n = resolve_skill(sid)
+            except Exception:
+                n = None
+            if n:
+                _resolved[sid] = str(n)
+                return _resolved[sid]
+        _resolved[sid] = ""
+        return ""
 
     active_catch: int | None = None
     turn = 0  # 已完成的回合数
@@ -227,6 +275,24 @@ async def drive_battle(
     def on_recv(f) -> None:
         out.append(f"  [recv] cmd={f.cmd} result={f.result} len={len(f.body)} body={f.body[:32].hex()}")
         rec = {"dir": "recv", "cmd": f.cmd, "result": f.result, "body": f.body.hex()}
+        if f.cmd == FACTOR_WIN:      # 42390 只是「战斗结束」，胜利/战败都会发，不代表过关
+            res.over = True
+        if f.cmd == FACTOR_PASS:     # 45827 才是「因子过关推送」
+            res.passed = True
+        # 2505 结算帧顺带注入「敌方使用的技能 + 敌方血」，前端实时战报据此展示
+        if f.cmd == Cmd.NOTE_USE_SKILL and context is not None:
+            try:
+                _en = _enemy_head_block(f.body, set(context.team))
+                if _en is None:
+                    _en = next((r for r in _settle_records(f.body, my_catches=set(context.team))
+                                if r["role"] == "enemy"), None)
+                if _en is not None:
+                    rec["enemy_skill_id"] = _en["skill_id"]
+                    rec["enemy_skill_name"] = skill_label(_en["skill_id"])
+                    rec["enemy_hp"] = _en["hp"]
+                    rec["enemy_max"] = _en["max_hp"]
+            except Exception:
+                pass
         res.frames.append(rec)
         if on_frame is not None:
             on_frame(rec)
@@ -240,6 +306,11 @@ async def drive_battle(
             return False
         out.append(f"[sent] cmd={cmd} body={body.hex()}")
         rec = {"dir": "send", "cmd": cmd, "body": body.hex()}
+        if cmd == Cmd.USE_SKILL and len(body) >= 4:
+            sid = struct.unpack_from(">I", body, 0)[0]
+            rec["skill_id"] = sid
+            if names.get(sid):
+                rec["skill_name"] = names[sid]
         res.frames.append(rec)
         if on_frame is not None:
             on_frame(rec)
@@ -263,8 +334,10 @@ async def drive_battle(
 
     if active_catch is None and context is not None and context.starter_catch is not None:
         active_catch = context.starter_catch
-    if prev_enemy_hp is None and context is not None and context.enemy_max_hp is not None:
-        prev_enemy_hp = context.enemy_max_hp
+    # prev_enemy_hp 不在此预填：2504 扫描满血可能误判（如 7680），
+    # 交给第 1 回合结算时用「动作块解析出的敌方满血」作为基准，避免算出假的“敌回血”。
+
+    #对战-->  回合循环
 
     #对战-->  回合循环
     while turn < max_turns and not res.over:
@@ -351,27 +424,43 @@ async def drive_battle(
             my_max = context.my_max.get(active_catch) if context else None
             ehp = context.enemy_hp if context else None
             emax = context.enemy_max_hp if context else None
+            esid = context.enemy_skill_id if context else None
+            if ehp == 0:                     # 敌方结算后 0 血 = 已击败（过关）
+                res.passed = True
             dmg = None
-            if prev_enemy_hp is not None and ehp is not None:
-                dmg = max(0, prev_enemy_hp - ehp)
+            delta = None
+            prev = prev_enemy_hp if prev_enemy_hp is not None else emax
+            if prev is not None and ehp is not None:
+                dmg = max(0, prev - ehp)
+                delta = ehp - prev
             rec = {
                 "turn": turn + 1,
                 "skill_id": act.skill_id,
+                "skill_name": names.get(act.skill_id, ""),
                 "active_catch": active_catch,
                 "switch_kind": context.switch_kind if context else None,
                 "my_hp": my_hp, "my_max": my_max,
                 "enemy_hp": ehp, "enemy_max": emax,
+                "enemy_hp_prev": prev,
+                "enemy_hp_delta": delta,
+                "enemy_skill_id": esid,
+                "enemy_skill_name": skill_label(esid),
                 "damage": dmg,
             }
             res.turns.append(rec)
             if on_turn is not None:
                 on_turn(rec)
             active_s = f"0x{active_catch:08x}" if active_catch is not None else "?"
+            skl = act.skill_id
+            skn = names.get(skl, "")
+            sk_s = f"{skl}" + (f"({skn})" if skn else "")
+            eskn = skill_label(esid)
+            esk_s = f"{esid}({eskn})" if eskn else (f"{esid}" if esid is not None else "?")
             out.append(
-                f"[回合{turn + 1}结算] 出招 {act.skill_id} | "
+                f"[回合{turn + 1}结算] 出招 {sk_s} | 敌用 {esk_s} | "
                 f"我方 {active_s} {my_hp if my_hp is not None else '?'}/{my_max if my_max is not None else '?'} | "
                 f"敌方 {ehp if ehp is not None else '?'}/{emax if emax is not None else '?'} | "
-                f"伤害~{dmg if dmg is not None else '?'}"
+                f"伤害~{dmg if dmg is not None else '?'}(敌血变化{delta if delta is not None else '?'})"
             )
             prev_enemy_hp = ehp
         turn += 1
