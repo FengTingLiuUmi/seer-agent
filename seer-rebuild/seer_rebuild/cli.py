@@ -436,6 +436,7 @@ def cmd_factor(args: argparse.Namespace) -> None:
         turn_wait=args.turn_wait,
         resolve=args.resolve,
         report_dir=args.report_dir,
+        records_dir=args.records_dir,
     ):
         print(line)
 
@@ -762,7 +763,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--equip", default=None, help="更换装备/装扮 id，逗号分隔")
     p.add_argument("--title-id", type=lambda x: int(x, 0), default=None, help="更换称号 id")
     p.add_argument("--turn-wait", type=float, default=2.0, help="出招后等待战斗结束的秒数")
-    p.add_argument("--report-dir", default=None, help="落盘目录：写入 timeline.jsonl（完整帧，供 battle-report 用）")
+    p.add_argument("--report-dir", default=None, help="落盘目录：写入 timeline.jsonl + turns.jsonl（完整帧，供 battle-report 用）")
+    p.add_argument("--records-dir", default=None, help="实时写 latest.timeline.jsonl 到该目录（供 dsh-seer-battle 插件战斗记录实时更新，如 seer/battle-records）")
     p.add_argument("--send", action="store_true", help="实际登录并发包")
     p.add_argument("--write", action="store_true", help="允许发送写命令（默认 dry-run）")
     p.add_argument("--resolve", action="store_true", help="反查 ID 名称（--list 时用）")

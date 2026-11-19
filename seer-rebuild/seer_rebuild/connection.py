@@ -21,7 +21,11 @@ def new_login(account: str, password: str) -> LoginSession:
 
 
 async def open_unity(account: str, password: str, *, timeout: float = 20.0) -> GameClient:
-    """建一条已连接的 Unity 明文客户端（含 1001 握手 + token 回传）。"""
+    """建一条已连接的 Unity 明文客户端（含 1001 握手 + token 回传）。
+
+    把 1001 登录快照挂在 ``c.login_frame`` 上，供装备/称号等 1001 快照解析复用，
+    避免再开一条连接去读身披装备（顶号）。
+    """
     c = GameClient(new_login(account, password), mode="unity")
-    await c.connect(timeout=timeout)
+    c.login_frame = await c.connect(timeout=timeout)
     return c

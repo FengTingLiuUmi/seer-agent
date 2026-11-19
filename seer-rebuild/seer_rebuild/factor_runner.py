@@ -35,7 +35,6 @@ from .factor import (
     FactorSpec,
     factor_progress,
     factor_enter_steps,
-    battle_loop_steps,
     load_factor_spec,
 )
 from .team import (
@@ -44,6 +43,8 @@ from .team import (
     equip_step,
     title_step,
 )
+from .battle_driver import LiveBattleContextBuilder, drive_battle
+from .action_policy import Action, PetInfo, ScriptedPolicy
 
 # 命令表（值统一在 commands.Cmd 维护，这里只留可读别名）
 GET_PET_INFO_BY_ONCE = Cmd.GET_PET_INFO_BY_ONCE
@@ -186,8 +187,8 @@ def collect_step(*, factor_id: int, action: tuple[int, int] = (1, 0)) -> Feature
     return FeatureStep("因子领取", FACTOR_ACTION, u32(factor_id) + u32(action[0]) + u32(action[1]), True, "FACTOR_ACTION")
 
 
-def build_factor_stage_steps(plan: FactorStagePlan) -> list[FeatureStep]:
-    """把单关参数展开成完整命令序列（dry-run 可直接打印，send 可执行）。"""
+def build_pre_battle_steps(plan: FactorStagePlan) -> list[FeatureStep]:
+    """进入战斗前的准备步骤（整容/换装/进关）。对战本身由对战层(drive_battle)负责。"""
     steps: list[FeatureStep] = []
     steps.append(FeatureStep("打开背包", GET_PET_INFO_BY_ONCE, b"", False, "GET_PET_INFO_BY_ONCE"))
     if plan.equip_ids:
@@ -204,24 +205,31 @@ def build_factor_stage_steps(plan: FactorStagePlan) -> list[FeatureStep]:
     elif plan.enter_map:
         # 雷小伊旧链路：进入因子界面（2001）
         steps.append(FeatureStep("进入因子关卡", ENTER_MAP, b"", True, "ENTER_MAP"))
-    if plan.battle_skills:
-        # 动态出招（由主 agent 提供）：2404 准备 → 2405/2407 出招/换精灵循环
-        steps += battle_loop_steps(skills=plan.battle_skills, switches=plan.battle_switches)
-    else:
-        # 固定兜底（旧链路 42396/2405）：不推荐，保留兼容
-        skills = [plan.skills[s] for s in plan.lineup if s in plan.skills] or list(plan.skills.values())
-        steps += fight_steps(boss_id=plan.boss_id, skills=skills)
-    if plan.factor_id is not None:
-        steps.append(collect_step(factor_id=plan.factor_id, action=plan.collect_action))
     return steps
 
 
-def build_factor_cycle_steps(plans: list[FactorStagePlan]) -> list[FeatureStep]:
-    """多关顺序打：把每个 FactorStagePlan 串起来。"""
-    out: list[FeatureStep] = []
-    for p in plans:
-        out += build_factor_stage_steps(p)
-    return out
+def build_collect_steps(plan: FactorStagePlan) -> list[FeatureStep]:
+    """战斗后的结算/领取步骤。"""
+    if plan.factor_id is not None:
+        return [collect_step(factor_id=plan.factor_id, action=plan.collect_action)]
+    return []
+
+
+def battle_policy(plan: FactorStagePlan) -> ScriptedPolicy:
+    """把 plan 的出招/换宠转成「操作表能力」（固定序列 ScriptedPolicy）。"""
+    seq: list[Action] = []
+    for i, sid in enumerate(plan.battle_skills):
+        seq.append(Action(skill_id=sid))
+        if plan.battle_switches and i < len(plan.battle_switches):
+            seq.append(Action(switch_to=plan.battle_switches[i]))
+    return ScriptedPolicy(seq)
+
+
+def battle_context(plan: FactorStagePlan) -> LiveBattleContextBuilder:
+    """用 plan 的正式/待命 catch 预填 team；即使为空也返回 builder，由帧自动发现首发/敌方。"""
+    team = [PetInfo(species=0, name="", catch_time=ct)
+            for ct in (plan.lineup_catch or []) + (plan.reserve_catch or [])]
+    return LiveBattleContextBuilder(team)
 
 
 # ---------------------------------------------------------------------------
@@ -235,78 +243,30 @@ def format_plan(plan: FactorStagePlan) -> str:
     )
 
 
-async def _drive(client, steps: list[FeatureStep], *, write: bool, turn_wait: float = 2.0,
-                 report_dir: str | None = None) -> list[str]:
-    """按顺序发步骤，每步之间收 S2C；收到 2506（战斗结束）后停止后续出招/切换。
-
-    ``report_dir`` 非空时，把整场（sent/recv）的**完整**帧落成 timeline jsonl，
-    供 ``battle-report --timeline`` 生成战报。控制台打印仍只截断方便阅读。
-    """
+async def _send_plain(client, steps: list[FeatureStep], *, write: bool,
+                      log: list[str], timeline: list[dict]) -> None:
+    """发送非对战的流程步骤（整容/进关/结算），逐块收帧；不做战斗专用等待。"""
     loop = asyncio.get_running_loop()
-    out: list[str] = []
-    timeline: list[dict] = []
-    battle_over = False
-
-    def note(entry: dict) -> None:
-        timeline.append(entry)
-
     for s in steps:
-        if battle_over:
-            out.append(f"[跳过] 战斗已结束，跳过 {s.name} cmd={s.cmd}")
-            break
         if s.write and not write:
-            out.append(f"[dry-run] skip write {s.name} cmd={s.cmd} body={s.body.hex()}")
+            log.append(f"[dry-run] skip write {s.name} cmd={s.cmd} body={s.body.hex()}")
             continue
         try:
             await client.send(s.cmd, [s.body] if s.body else [])
         except (ConnectionError, asyncio.IncompleteReadError) as e:
-            out.append(f"[send-failed] {s.name} cmd={s.cmd}: {e}")
-            note({"dir": "send", "cmd": s.cmd, "body": (s.body or b"").hex(), "error": str(e)})
+            log.append(f"[send-failed] {s.name} cmd={s.cmd}: {e}")
+            timeline.append({"dir": "send", "cmd": s.cmd, "body": (s.body or b"").hex(), "error": str(e)})
             break
-        out.append(f"[sent] {s.name} cmd={s.cmd} body={s.body.hex()[:40]}")
-        note({"dir": "send", "cmd": s.cmd, "body": (s.body or b"").hex()})
-
-        # 出招后才等结算；切换精灵(2407)不等待、紧接下一招，避免服务器中间多吐一个回合导致错位。
-        if s.cmd == USE_SKILL:
-            end = loop.time() + turn_wait
-            while loop.time() < end:
-                try:
-                    f = await asyncio.wait_for(client.frames.get(), timeout=min(0.6, end - loop.time()))
-                except asyncio.TimeoutError:
-                    continue
-                body = f.body[:32].hex()
-                out.append(f"    [recv] cmd={f.cmd} result={f.result} len={len(f.body)} body={body}")
-                note({"dir": "recv", "cmd": f.cmd, "result": f.result, "body": f.body.hex()})
-                if f.cmd == FIGHT_OVER:
-                    out.append("    [战斗结束]")
-                    battle_over = True
-                    break
-                if f.cmd == 2505:  # 这一步出招的结算帧已到，立即结束等待、发下一步
-                    break
-        elif s.cmd == READY_TO_FIGHT:
-            end = loop.time() + 3.0
-            while loop.time() < end:
-                try:
-                    f = await asyncio.wait_for(client.frames.get(), timeout=min(0.6, end - loop.time()))
-                except asyncio.TimeoutError:
-                    continue
-                body = f.body[:32].hex()
-                out.append(f"    [recv] cmd={f.cmd} result={f.result} len={len(f.body)} body={body}")
-                note({"dir": "recv", "cmd": f.cmd, "result": f.result, "body": f.body.hex()})
-                if f.cmd == 2504:  # 开战帧已到
-                    break
-        # 2407 切换精灵：不等待，直接发下一招
-
-    if report_dir:
-        import json as _json
-        from pathlib import Path as _Path
-        _Path(report_dir).mkdir(parents=True, exist_ok=True)
-        _Path(report_dir, "timeline.jsonl").write_text(
-            "\n".join(_json.dumps(e, ensure_ascii=False) for e in timeline) + "\n",
-            encoding="utf-8",
-        )
-        out.append(f"[recorded] {len(timeline)} 帧已落盘 {report_dir}/timeline.jsonl")
-    return out
+        log.append(f"[sent] {s.name} cmd={s.cmd} body={s.body.hex()[:40]}")
+        timeline.append({"dir": "send", "cmd": s.cmd, "body": (s.body or b"").hex()})
+        end = loop.time() + 1.2
+        while loop.time() < end:
+            try:
+                f = await asyncio.wait_for(client.frames.get(), timeout=min(0.5, end - loop.time()))
+            except asyncio.TimeoutError:
+                break
+            log.append(f"  [recv] cmd={f.cmd} result={f.result} len={len(f.body)} body={f.body[:32].hex()}")
+            timeline.append({"dir": "recv", "cmd": f.cmd, "result": f.result, "body": f.body.hex()})
 
 
 def run(
@@ -319,14 +279,23 @@ def run(
     turn_wait: float = 2.0,
     resolve: bool = False,
     report_dir: str | None = None,
+    on_turn=None,
+    records_dir: str | None = None,
 ) -> list[str]:
-    """统一入口。send=False 只打印步骤（dry-run）；send=True 才真机执行。"""
-    steps = build_factor_cycle_steps(plans)
+    """统一入口。send=False 只打印步骤（dry-run）；send=True 才真机执行。
+
+    流程分层：前置(整容/进关) → 对战驱动层(drive_battle) → 结算(41413)。
+    """
     if not send:
-        lines = [f"[dry-run] {len(steps)} 步，不发送", "计划："]
+        lines = [f"[dry-run] 不发送", "计划："]
         lines += [f"  - {format_plan(p)}" for p in plans]
-        lines += ["步骤："]
-        lines += [f"  {s.name} cmd={s.cmd} write={s.write} body={s.body.hex()[:48]}" for s in steps]
+        for p in plans:
+            lines += ["前置："] + [f"  {s.name} cmd={s.cmd} write={s.write} body={s.body.hex()[:48]}" for s in build_pre_battle_steps(p)]
+            pol = battle_policy(p)
+            lines += ["对战："] + ([f"  {a.label()}" for a in pol.sequence] or ["  (无出招)"])
+            cs = build_collect_steps(p)
+            if cs:
+                lines += ["结算："] + [f"  {s.name} cmd={s.cmd} body={s.body.hex()[:48]}" for s in cs]
         return lines
 
     from .connection import open_unity
@@ -334,7 +303,62 @@ def run(
     async def _run() -> list[str]:
         c = await open_unity(account, password)
         lines = ["计划："] + [f"  - {format_plan(p)}" for p in plans]
-        lines += await _drive(c, steps, write=write, turn_wait=turn_wait, report_dir=report_dir)
+        timeline: list[dict] = []
+        all_turns: list[dict] = []
+        import json as _json
+        from pathlib import Path as _Path
+        from .battle_records import DEFAULT_RECORDS_DIR, append_timeline, reset_live
+        rec_dir = records_dir if records_dir is not None else str(DEFAULT_RECORDS_DIR)
+        turns_fh = None
+        if report_dir:
+            _Path(report_dir).mkdir(parents=True, exist_ok=True)
+            turns_fh = open(_Path(report_dir, "turns.jsonl"), "w", encoding="utf-8")
+        if rec_dir:
+            reset_live(rec_dir)
+
+        # 阵容配置确认：装备 + 称号也是阵容的一环，打前先从 1001 快照读出来。
+        try:
+            from .inventory import snapshot_from_1001
+            lf = getattr(c, "login_frame", None)
+            if lf is not None:
+                snap = snapshot_from_1001(lf.body)
+                lines.append(f"[阵容·装备] ids={[e.id for e in snap.equipment]}"
+                             f" 称号 ids={[t.id for t in snap.titles]}"
+                             f"  (空 = 没穿有加成的装备/没戴称号，伤害会缺增伤)")
+        except Exception as _e:  # noqa: BLE001
+            lines.append(f"[阵容·装备] 读取失败：{_e}")
+
+        def _on_frame(ev: dict) -> None:
+            if rec_dir:
+                append_timeline(ev, rec_dir)
+
+        def _handle_turn(rec: dict) -> None:
+            all_turns.append(rec)
+            if turns_fh is not None:
+                turns_fh.write(_json.dumps(rec, ensure_ascii=False) + "\n")
+                turns_fh.flush()
+            if on_turn is not None:
+                on_turn(rec)
+
+        for p in plans:
+            await _send_plain(c, build_pre_battle_steps(p), write=write, log=lines, timeline=timeline)
+            pol = battle_policy(p)
+            if pol.sequence and write:
+                res = await drive_battle(c, pol, turn_wait=turn_wait, log=lines,
+                                         context=battle_context(p), on_turn=_handle_turn, on_frame=_on_frame)
+                timeline.extend(res.frames)
+                lines.append(f"[对战] 结束(2506)={res.over} 过关(45827)={res.passed}")
+            await _send_plain(c, build_collect_steps(p), write=write, log=lines, timeline=timeline)
+
+        if turns_fh is not None:
+            turns_fh.close()
+        if report_dir:
+            _Path(report_dir, "timeline.jsonl").write_text(
+                "\n".join(_json.dumps(e, ensure_ascii=False) for e in timeline) + "\n",
+                encoding="utf-8",
+            )
+            lines.append(f"[recorded] {len(timeline)} 帧已落盘 {report_dir}/timeline.jsonl")
+            lines.append(f"[recorded] {len(all_turns)} 回合结算已落盘 {report_dir}/turns.jsonl")
         await c.close()
         return lines
 

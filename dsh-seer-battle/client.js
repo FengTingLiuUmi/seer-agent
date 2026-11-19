@@ -537,14 +537,30 @@ window.__ModuleLoader__.load({
     }
 
     return {
-      inject: ['slots', 'remote', 'remote.workspaceFiles'],
+      inject: ['slots', 'remote', 'remote.workspaceFiles', 'sidebarRightTabs'],
       apply(ctx) {
         const remote = ctx.remote;
-        ctx.slots.inject('conversation.composer.dock', () => ctx.slots.register({
-          name: 'conversation.composer.dock',
-          id: 'dsh-seer-battle',
-          order: 20,
-        }, (props) => h(Panel, { ...props, remote })));
+        const TAB_ID = '@local/dsh-seer-battle';
+
+        // 阶段一：注册右侧栏 tab 类型（与 dsh-context / ui-sidebar-documentpreview 同路径）
+        ctx.effect(() => ctx.sidebarRightTabs.register({
+          id: TAB_ID,
+          kind: 'seer-battle',
+          title: () => '战斗记录',
+          guide: [{
+            id: 'battle',
+            order: 10,
+            title: () => '战斗记录',
+            description: () => '赛尔号对战逐回合实时记录 · 血条 · 战报',
+          }],
+        }), 'seer-battle: register tab type');
+
+        // 阶段二：把面板 body 挂到 keyed 槽；sessionId 由 session 作用域注入透传给 Panel
+        ctx.effect(() => ctx.slots.inject('sidebar.right.pane.tab', () => ctx.slots.register({
+          name: 'sidebar.right.pane.tab',
+          key: TAB_ID,
+          inject: (sessionId) => ({ sessionId, remote }),
+        }, Panel)), 'seer-battle: register tab body');
       },
     };
   },

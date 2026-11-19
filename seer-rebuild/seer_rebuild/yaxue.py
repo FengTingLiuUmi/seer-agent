@@ -25,6 +25,8 @@ import struct
 from dataclasses import dataclass
 
 from .commands import Cmd
+from .battle_driver import LiveBattleContextBuilder, drive_battle
+from .action_policy import Action, PetInfo, ScriptedPolicy
 
 AUTO_RECOVER_OFF = 0x6AFE0B13   # 41228 body 显式值：关闭自动恢复（抓包常量）
 AUTO_RECOVER_ON = 0x6AFE0B1E    # 41228 body 显式值：打开自动恢复（抓包常量）
@@ -81,6 +83,18 @@ def iter_battle_steps(targets: list[Target], *, starter: int | None = None) -> l
             current = t.catch_time
         steps.append(Step(f"出招 #{i} {t.name or t.catch_time}", Cmd.USE_SKILL, _u32(t.skill or 0)))
     return steps
+
+
+def battle_policy_for(targets: list[Target], *, starter: int | None = None) -> ScriptedPolicy:
+    """把压血目标转成「操作表能力」（固定序列 ScriptedPolicy：换宠+出招）。"""
+    seq: list[Action] = []
+    current = starter
+    for t in targets:
+        if t.catch_time and t.catch_time != current:
+            seq.append(Action(switch_to=t.catch_time))
+            current = t.catch_time
+        seq.append(Action(skill_id=t.skill or 0))
+    return ScriptedPolicy(seq)
 
 
 def format_steps(steps: list[Step]) -> list[str]:
@@ -214,13 +228,10 @@ async def _run_async(account: str, password: str, targets: list[Target], *,
         if recover:
             await _send(c, CURE, b"", out, wait=2.0)
         await _send(c, Cmd.BAIHU_TRIAL, _u32(BAIHU_BATTLE_ID), out, wait=2.0)
-        await _send(c, Cmd.READY_TO_FIGHT, b"", out, wait=2.0)
-        battle_over = False
-        for s in iter_battle_steps(usable, starter=starter):
-            seen = await _send_observe(c, s.cmd, s.body, out,
-                                       wait=1.5 if s.cmd == Cmd.USE_SKILL else 1.0, stop_cmd=Cmd.FIGHT_OVER)
-            battle_over = battle_over or seen
-        if battle_over:
+        team = [PetInfo(species=t.species_id or 0, name=t.name or "", catch_time=t.catch_time) for t in usable]
+        ctx = LiveBattleContextBuilder(team)
+        res = await drive_battle(c, battle_policy_for(usable, starter=starter), turn_wait=1.5, log=out, context=ctx)
+        if res.over:
             out.append("[战斗已结束(2506)] 跳过 2410")
         else:
             await _send(c, Cmd.END_BATTLE, b"", out, wait=2.0)

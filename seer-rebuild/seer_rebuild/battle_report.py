@@ -87,6 +87,31 @@ class TurnRecord:
 
 
 @dataclass(slots=True)
+class ResultRecord:
+    """对战结果记录（战报的第二部分）。"""
+    over: bool = False              # 是否收到 2506（战斗正常结束）
+    passed: bool = False            # 是否收到 45827/42390（因子过关）
+    winner: str = ""                # 胜利 / 战斗结束(未判胜负) / 未结束
+    turns: int = 0                  # 总回合数
+    enemy_hp: int | None = None     # 结束时敌方血
+    enemy_hp_max: int | None = None
+    my_hp: int | None = None        # 结束时我方当前精灵血
+    my_hp_max: int | None = None
+
+    def as_dict(self) -> dict:
+        return {
+            "over": self.over,
+            "passed": self.passed,
+            "winner": self.winner,
+            "turns": self.turns,
+            "enemy_hp": self.enemy_hp,
+            "enemy_hp_max": self.enemy_hp_max,
+            "my_hp": self.my_hp,
+            "my_hp_max": self.my_hp_max,
+        }
+
+
+@dataclass(slots=True)
 class BattleReport:
     uid: int | None
     title: str = "战斗战报"
@@ -97,8 +122,8 @@ class BattleReport:
     equipment: list[dict] = field(default_factory=list)
     title_equipped: list[dict] = field(default_factory=list)
     clothes: list[dict] = field(default_factory=list)
-    turns: list[TurnRecord] = field(default_factory=list)
-    winner: str = ""
+    turns: list[TurnRecord] = field(default_factory=list)             # 第一部分：过程（每回合）
+    result: ResultRecord = field(default_factory=ResultRecord)        # 第二部分：结果
     notes: list[str] = field(default_factory=list)
 
     def as_dict(self) -> dict:
@@ -113,7 +138,7 @@ class BattleReport:
             "title_equipped": [dict(t) for t in self.title_equipped],
             "clothes": [dict(c) for c in self.clothes],
             "turns": [t.as_dict() for t in self.turns],
-            "winner": self.winner,
+            "result": self.result.as_dict(),
             "notes": list(self.notes),
         }
 
@@ -294,6 +319,11 @@ def build_report_from_timeline(
 
     timeline 每项：{'dir':'c2s'|'s2c', 'cmd':int, 'body':hex字符串, 'result':int(可选)}
     """
+    # 统一方向字段：驱动层(battle_driver/factor_runner)写 send/recv，旧文档写 c2s/s2c。
+    timeline = [
+        {**e, "dir": "c2s" if e.get("dir") == "send" else ("s2c" if e.get("dir") == "recv" else e.get("dir"))}
+        for e in timeline
+    ]
     sk_names, sp_names = _load_names(data_root)
     if skill_names:
         sk_names = {**sk_names, **skill_names}
@@ -387,12 +417,26 @@ def build_report_from_timeline(
                     cur.my_hp = pending_my_hp
                     if prev_enemy_hp is not None and pending_enemy_hp is not None:
                         cur.damage = max(0, prev_enemy_hp - pending_enemy_hp)
-                if not rep.winner:
-                    rep.winner = "战斗结束(未判胜负)"
+                rep.result.over = True
+                if not rep.result.winner:
+                    rep.result.winner = "战斗结束(未判胜负)"
             elif cmd == S2C_WIN:
-                rep.winner = "胜利"
+                rep.result.passed = True
+                rep.result.winner = "胜利"
             elif cmd == S2C_PROGRESS:
-                rep.winner = "胜利"
+                rep.result.passed = True
+                rep.result.winner = "胜利"
+
+    # 第二部分：结果汇总
+    rep.result.turns = len(rep.turns)
+    if rep.turns:
+        last = rep.turns[-1]
+        rep.result.enemy_hp = last.enemy_hp
+        rep.result.enemy_hp_max = last.enemy_hp_max or enemy_max_hp
+        rep.result.my_hp = last.my_hp
+        rep.result.my_hp_max = last.my_hp_max
+    if not rep.result.winner:
+        rep.result.winner = "未结束"
 
     return rep
 
@@ -447,6 +491,14 @@ def build_report(
             t.enemy_hp_max = enemy_max
             t.my_hp_max = my_max.get(t.active_catch) if t.active_catch else None
 
+    rep.result.turns = len(rep.turns)
+    if rep.turns:
+        last = rep.turns[-1]
+        rep.result.enemy_hp = last.enemy_hp
+        rep.result.enemy_hp_max = last.enemy_hp_max
+        rep.result.my_hp = last.my_hp
+        rep.result.my_hp_max = last.my_hp_max
+
     return rep
 
 
@@ -478,7 +530,7 @@ def report_to_text(rep: BattleReport) -> str:
         for t in rep.title_equipped:
             L.append(f"  {t['name']}（{t['bonus']}）")
     L.append("")
-    L.append("【出招（回合）】")
+    L.append("【过程 · 每回合】")
     if not rep.turns:
         L.append("  （无出招记录）")
     for t in rep.turns:
@@ -490,9 +542,15 @@ def report_to_text(rep: BattleReport) -> str:
         dmg = f" 伤害~{t.damage}" if t.damage is not None else ""
         status = f" 状态[{','.join(t.status)}]" if t.status else ""
         L.append(f"  第{t.turn}回合 [{who}] {sk}{sw}  {enemy}  {my}{dmg}{status}")
-    if rep.winner:
-        L.append("")
-        L.append(f"【结果】{rep.winner}")
+    L.append("")
+    L.append("【结果】")
+    r = rep.result
+    L.append(f"  胜败：{r.winner or '未结束'}   结束(2506)={'是' if r.over else '否'}   过关(45827)={'是' if r.passed else '否'}")
+    L.append(f"  总回合：{r.turns}")
+    if r.enemy_hp is not None:
+        L.append(f"  结束时敌血 {r.enemy_hp}/{r.enemy_hp_max or '?'}")
+    if r.my_hp is not None:
+        L.append(f"  结束时我血 {r.my_hp}/{r.my_hp_max or '?'}")
     if rep.notes:
         L.append("")
         L.append("【说明】")
