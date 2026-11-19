@@ -374,7 +374,7 @@ def read_state(account: str, password: str, *, resolve: bool = True, factor_id: 
         await c.close()
 
         out: dict = {
-            "uid": sess.uid,
+            "uid": c.session.uid,
             "factor": spec.as_dict() if spec else None,
             "progress": factor_progress(forever),
             "forever": forever,

@@ -58,9 +58,10 @@ def _local_suit_map() -> dict[int, int]:
 
 @dataclass(slots=True)
 class InventoryItem:
-    id: int
-    name: str = ""
-    count: int = 1
+    """道具（背包里的普通物品）。"""
+    id: int            # 道具 id（seerapi `item` 资源）
+    name: str = ""     # 道具名（resolve 反查后填入）
+    count: int = 1     # 数量
 
     @property
     def label(self) -> str:
@@ -69,10 +70,11 @@ class InventoryItem:
 
 @dataclass(slots=True)
 class TitleEntry:
-    id: int
-    name: str = ""
-    bonus: str = ""
-    desc: str = ""
+    """称号（独立称号栏，提供称号加成）。"""
+    id: int            # 称号 id（seerapi `title` 资源）
+    name: str = ""     # 称号名（resolve 反查后填入）
+    bonus: str = ""    # 称号加成文本（attr_bonus/ability_desc 反查，如"攻击+60"）
+    desc: str = ""     # 称号描述
 
     @property
     def label(self) -> str:
@@ -84,12 +86,18 @@ class TitleEntry:
 
 @dataclass(slots=True)
 class EquipEntry:
-    slot: str
-    id: int
-    name: str = ""
-    bonus: str = ""
-    suit: str = ""
-    suit_bonus: str = ""
+    """角色身上一个穿戴部位（头/目镜/腰/手/足等）。
+
+    一个类同时承载「装备/装扮」两种含义，靠 bonus / suit_bonus 是否有值区分：
+      - 装备(equipment)：真正提供属性加成（bonus 或 suit_bonus 有值）
+      - 装扮(clothes) ：纯外观时装（两者皆空）
+    """
+    slot: str          # 部位名："头部"/"目镜"/"腰部"/"手部"/"足部"/"背景"/"坐骑"
+    id: int            # 该部位穿戴的 equip id（seerapi `equip` 资源）
+    name: str = ""     # 名称（resolve 反查后填入）
+    bonus: str = ""    # 单件加成文本（如"物攻+30点、速度+15点"）；空=无单件加成
+    suit: str = ""     # 所属套装名；空=不属于套装
+    suit_bonus: str = ""  # 套装加成文本；空=该套装无加成
 
     @property
     def label(self) -> str:
@@ -113,20 +121,27 @@ class EquipEntry:
 
 @dataclass(slots=True)
 class InventorySnapshot:
-    """equipment=有属性的装备；clothes=纯外观装扮；items=道具；titles=称号。"""
-    equipment: list[EquipEntry] = field(default_factory=list)
-    clothes: list[EquipEntry] = field(default_factory=list)
-    items: list[InventoryItem] = field(default_factory=list)
-    titles: list[TitleEntry] = field(default_factory=list)
-    source: str = ""
-    uid: int | None = None
+    """一次「背包/穿戴」快照的总结构。
+
+    字段区分（务必分清，避免把装扮误判成装备）：
+      - equipment：真正提供属性加成的装备（有 bonus/suit_bonus）
+      - clothes  ：纯外观装扮（无加成）这里屏蔽掉了 避免对大模型造成干扰
+      - items    ：道具
+      - titles   ：称号
+    """
+    equipment: list[EquipEntry] = field(default_factory=list)   # 装备：有属性加成的部位
+    #clothes: list[EquipEntry] = field(default_factory=list)     # 装扮：已停用，恒空（保留字段以兼容旧调用）
+    items: list[InventoryItem] = field(default_factory=list)    # 道具
+    titles: list[TitleEntry] = field(default_factory=list)      # 称号
+    source: str = ""        # 数据来源："live:<uid>" / 抓包文件路径 / "1001"
+    uid: int | None = None  # 账号 uid
 
     def as_dict(self) -> dict:
         return {
             "uid": self.uid,
             "source": self.source,
             "equipment": [e.as_dict() for e in self.equipment],
-            "clothes": [e.as_dict() for e in self.clothes],
+            # "clothes": [e.as_dict() for e in self.clothes],  # 装扮段已停用，不再输出
             "items": [{"id": i.id, "name": i.name, "count": i.count} for i in self.items],
             "titles": [t.as_dict() for t in self.titles],
         }
@@ -175,22 +190,22 @@ def _worn_sections(body: bytes) -> tuple[list[int], list[int]]:
     if not body or len(body) < 24:
         return [], []
 
-    # 装扮：第一个「连续 5 个 0x13xxxx」run（间隔 4）
+    # 装扮段已停用：不再解析，避免装扮数据污染「装备」判断。clothes 恒为空。
     clothes: list[int] = []
-    for off in range(0, max(0, len(body) - 20) + 1, 4):
-        run = []
-        p = off
-        for _ in range(5):
-            if p + 4 > len(body):
-                break
-            v = struct.unpack(">I", body[p:p + 4])[0]
-            if not (0x130001 <= v <= 0x13FFFF):
-                break
-            run.append(v)
-            p += 4
-        if len(run) == 5:
-            clothes = run
-            break
+    # for off in range(0, max(0, len(body) - 20) + 1, 4):
+    #     run = []
+    #     p = off
+    #     for _ in range(5):
+    #         if p + 4 > len(body):
+    #             break
+    #         v = struct.unpack(">I", body[p:p + 4])[0]
+    #         if not (0x130001 <= v <= 0x13FFFF):
+    #             break
+    #         run.append(v)
+    #         p += 4
+    #     if len(run) == 5:
+    #         clothes = run
+    #         break
 
     # 装备：[count][id 0] * count
     equip: list[int] = []
@@ -236,8 +251,9 @@ def parse_equipment_from_1001(body: bytes | None) -> list[int]:
 
 
 def parse_clothes_from_1001(body: bytes | None) -> list[int]:
-    """返回「装扮」段 ID。"""
-    return _worn_sections(body or b"")[0]
+    """已停用：装扮段不再解析，恒返回空。"""
+    return []
+    # return _worn_sections(body or b"")[0]
 
 
 def _fill_entry(e: EquipEntry, provider: Any) -> EquipEntry:
@@ -273,9 +289,9 @@ def resolve(snapshot: InventorySnapshot, provider: Any | None) -> InventorySnaps
     if provider is None:
         return snapshot
 
-    # 1) 装备段与装扮段分别补字段，不再按 bonus 重新分流
+    # 1) 装备段补字段（装扮段已停用，不再补）
     snapshot.equipment = [_fill_entry(e, provider) for e in snapshot.equipment]
-    snapshot.clothes = [_fill_entry(e, provider) for e in snapshot.clothes]
+    # snapshot.clothes = [_fill_entry(e, provider) for e in snapshot.clothes]
 
     # 2) 道具反查
     for it in snapshot.items:
@@ -366,8 +382,9 @@ def snapshot_from_1001(body: bytes, provider=None) -> InventorySnapshot:
     cloth_ids, equip_ids = _worn_sections(body)
     for obj_id in equip_ids:
         snap.equipment.append(EquipEntry(slot="", id=obj_id))
-    for obj_id in cloth_ids:
-        snap.clothes.append(EquipEntry(slot="", id=obj_id))
+    # 装扮段已停用：不再写入 snapshot.clothes
+    # for obj_id in cloth_ids:
+    #     snap.clothes.append(EquipEntry(slot="", id=obj_id))
     tid = _worn_title(body)
     if tid:
         snap.titles.append(TitleEntry(id=tid))
@@ -388,8 +405,9 @@ def snapshot_from_live(account: str, password: str, out_path: str | Path | None)
         cloth_ids, equip_ids = _worn_sections(body)
         for obj_id in equip_ids:
             snap.equipment.append(EquipEntry(slot="", id=obj_id))
-        for obj_id in cloth_ids:
-            snap.clothes.append(EquipEntry(slot="", id=obj_id))
+        # 装扮段已停用：不再写入 snapshot.clothes
+        # for obj_id in cloth_ids:
+        #     snap.clothes.append(EquipEntry(slot="", id=obj_id))
         tid = _worn_title(body)
         if tid:
             snap.titles.append(TitleEntry(id=tid))
