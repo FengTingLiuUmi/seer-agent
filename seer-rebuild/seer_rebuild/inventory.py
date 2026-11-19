@@ -414,6 +414,68 @@ def snapshot_from_live(account: str, password: str, out_path: str | Path | None)
     return snap
 
 
+def read_equipment(account: str, password: str, *, resolve_names: bool = True) -> dict:
+    """只读实战关心的「装备 + 称号」（不含装扮、不含道具）。
+
+    实战中影响作战能力的核心就是这两项：
+      - equipment：有属性加成的装备部位
+      - titles   ：称号（提供称号加成）
+
+    返回：{"equipment": [...], "titles": [...]}
+    """
+    from .provider import SeerApiProvider
+
+    snap = snapshot_from_live(account, password, None)
+    if resolve_names:
+        snap = resolve(snap, SeerApiProvider())
+    return {
+        "equipment": [e.as_dict() for e in snap.equipment],
+        "titles": [t.as_dict() for t in snap.titles],
+    }
+
+
+async def _collect_items_async(account: str, password: str) -> list[dict]:
+    """登录后只发 42399(MULTI_ITEM_LIST) 收集道具背包帧。"""
+    sess = authenticate_cached(account, password)
+    host, port = get_unity_gateway()
+    sess.host, sess.port, sess.path, sess.mode = host, port, "/", "unity"
+    c = GameClient(sess, mode="unity")
+    await c.connect(timeout=20.0)  # 1001 握手被消费，忽略
+    collected: list[dict] = []
+    try:
+        await c.send(42399, [])
+    except (ConnectionError, asyncio.IncompleteReadError):
+        await c.close()
+        return collected
+    end = asyncio.get_running_loop().time() + 4.0
+    while asyncio.get_running_loop().time() < end:
+        try:
+            f = await asyncio.wait_for(c.frames.get(), timeout=min(1.0, end - asyncio.get_running_loop().time()))
+        except asyncio.TimeoutError:
+            continue
+        collected.append({"cmd": f.cmd, "result": f.result, "len": len(f.body), "body": f.body.hex()})
+    await c.close()
+    return collected
+
+
+def read_items(account: str, password: str, *, resolve_names: bool = True) -> dict:
+    """只读背包道具（42399 MULTI_ITEM_LIST），返回：{"items": [{"id","name","count"}, ...]}。"""
+    from .provider import SeerApiProvider
+
+    rows = asyncio.run(_collect_items_async(account, password))
+    items: list[InventoryItem] = []
+    for r in rows:
+        if r["cmd"] == 42399:
+            for iid in _u32s(bytes.fromhex(r["body"])):
+                if iid:
+                    items.append(InventoryItem(id=iid))
+    if resolve_names and items:
+        prov = SeerApiProvider()
+        for it in items:
+            it.name = prov.resolve("item", it.id) or ""
+    return {"items": [{"id": i.id, "name": i.name, "count": i.count} for i in items]}
+
+
 _AUTH_CACHE: dict[str, tuple[float, LoginSession]] = {}
 
 
