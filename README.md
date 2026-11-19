@@ -118,9 +118,3 @@ MCP：`python -m seer_rebuild.cli mcp`（stdio）。暴露 `seer_login / seer_un
 4. **主包瘦身**：`seer-rebuild/` 内的历史抓包证据与约 150 个分析脚本迁出主包，只保留 `seer_rebuild/` 代码 + 少量运营脚本。
 5. **版本声明统一**：`requires-python>=3.11` 与实际 py3.10 不一致。
 6. **知识库二象性**：`strategies.json`(机制→反制) 与 `sqlite_kb` 并存，明确边界。
-
-## 9. 待办（诚实）
-
-- 普通/困难难度因子未破（6 回合限制 + 不可重复上阵 + BOSS 减伤/回血，需「无视减伤/固定/百分比穿透」打手）。
-- `.ysc`(VMProtect) / `.cjcy` 内 `dzb.txt` 未解密；雷小伊「打因子」的 Flash 加密通道未解密。
-- 战报的血量解析（敌方满血自动发现）偶发误判。
