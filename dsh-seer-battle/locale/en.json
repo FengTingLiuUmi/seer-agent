@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Seer battle records",
+    "description": "Show the current Seer battle in real time: poll latest.timeline.jsonl for round-by-round HP and moves, then fall back to the full report and history.",
+    "detail": "docs/DETAIL.md"
+  }
+}

@@ -15,12 +15,10 @@ from __future__ import annotations
 import asyncio
 from dataclasses import dataclass
 
-from .client import GameClient
-from .login import authenticate_cached, get_unity_gateway
+from .commands import Cmd
+from .connection import open_unity
 from .pets import parse_pet_list, release_body
 
-ELITE_WAREHOUSE = 2361     # GET_LOVE_PET_LIST
-PET_RELEASE = 2304         # 仓库/背包移动
 SLOT_FLAG = {"formal": 1, "reserve": 2}
 SLOT_NAME = {1: "正式", 2: "待命"}
 
@@ -31,13 +29,6 @@ class ElitePet:
     flag: int
     catch_time: int
     name: str = ""
-
-
-def _login(account: str, password: str):
-    sess = authenticate_cached(account, password)
-    host, port = get_unity_gateway()
-    sess.host, sess.port, sess.path, sess.mode = host, port, "/", "unity"
-    return sess
 
 
 def _resolve_names(entries: list[ElitePet], *, provider=None) -> list[ElitePet]:
@@ -62,12 +53,11 @@ def _resolve_names(entries: list[ElitePet], *, provider=None) -> list[ElitePet]:
 
 
 async def _read_elite_async(account: str, password: str, *, resolve_names: bool = True) -> dict:
-    sess = _login(account, password)
-    c = GameClient(sess, mode="unity")
-    await c.connect(timeout=20.0)
+    c = await open_unity(account, password)
+    uid = c.session.uid
 
     # 读精英仓库
-    await c.send(ELITE_WAREHOUSE, [])
+    await c.send(Cmd.GET_LOVE_PET_LIST, [])
 
     loop = asyncio.get_running_loop()
     body = b""
@@ -77,7 +67,7 @@ async def _read_elite_async(account: str, password: str, *, resolve_names: bool 
             f = await asyncio.wait_for(c.frames.get(), timeout=min(1.0, end - loop.time()))
         except asyncio.TimeoutError:
             continue
-        if f.cmd == ELITE_WAREHOUSE and len(f.body) >= 4:
+        if f.cmd == Cmd.GET_LOVE_PET_LIST and len(f.body) >= 4:
             body = f.body
             break
 
@@ -87,7 +77,7 @@ async def _read_elite_async(account: str, password: str, *, resolve_names: bool 
     await c.close()
 
     return {
-        "uid": sess.uid,
+        "uid": uid,
         "count": len(entries),
         "pets": [{"species_id": e.species_id, "name": e.name, "flag": e.flag, "catch_time": e.catch_time} for e in entries],
     }
@@ -107,7 +97,7 @@ def plan_add(catch_time: int, *, slot: str = "formal") -> dict:
     flag = SLOT_FLAG[slot]
     body = release_body(catch_time, flag)
     return {
-        "cmd": PET_RELEASE,
+        "cmd": Cmd.PET_RELEASE,
         "slot": SLOT_NAME[flag],
         "flag": flag,
         "catch_time": catch_time,
@@ -162,13 +152,12 @@ def add_to_bag(
         return plan
 
     # 2) 真发包
-    sess = _login(account, password)
-    c = GameClient(sess, mode="unity")
-    out: dict = dict(plan, dry_run=False, uid=sess.uid, recv=[])
+    out: dict = dict(plan, dry_run=False, recv=[])
 
     async def _send() -> None:
-        await c.connect(timeout=20.0)
-        await c.send(PET_RELEASE, [bytes.fromhex(plan["body_hex"])])
+        c = await open_unity(account, password)
+        out["uid"] = c.session.uid
+        await c.send(Cmd.PET_RELEASE, [bytes.fromhex(plan["body_hex"])])
         loop = asyncio.get_running_loop()
         end = loop.time() + 3.0
         while loop.time() < end:
@@ -177,7 +166,7 @@ def add_to_bag(
             except asyncio.TimeoutError:
                 continue
             out["recv"].append({"cmd": f.cmd, "result": f.result, "len": len(f.body), "body": f.body[:32].hex()})
-            if f.cmd == PET_RELEASE:
+            if f.cmd == Cmd.PET_RELEASE:
                 break
         await c.close()
 

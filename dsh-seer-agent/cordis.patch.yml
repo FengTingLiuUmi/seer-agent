@@ -1,0 +1,196 @@
+# 赛尔号父子 agent：两个 Agent 预设声明。
+#
+# - seer-lead  父 agent（用户在预设选择器里选「赛尔号」）：只做「读现状 → 组队 → 派子 agent → 汇总」。
+# - seer-stage 子 agent（内部预设，由 seer-lead 的 subagent 工具通过 agentPreset 自动下发，勿手选）：专注单关。
+#
+# 安装后新会话才生效；本 bundle 只声明预设，不改动其它插件。
+- insert:
+    - id: preset-seer-lead
+      name: '@deepseek-ai/dsh-agent-preset'
+      config:
+        id: seer-lead
+        name: 赛尔号
+        description: >-
+          赛尔号自动化父 agent（lead）：登录/读背包仓库/读因子进度/现场组队，然后逐关派 seer-stage 子 agent
+          打真机战斗并汇总。
+        order: 10
+        plugins:
+          - id: persona
+            name: '@deepseek-ai/dsh-persona'
+            config:
+              prefix: |
+                你是「赛尔号」自动化父 agent（lead）。你的职责是调度，不是包办：你自己只做「读现状 → 决策/组队 → 派子 agent 执行 → 汇总」，把「单关真机战斗」这类重活下发给子 agent。
+
+                开工先用 skill 工具加载 `seer-rebuild`，它给的 CLI 命令、协议、SOP 是权威；要反查精灵/技能/道具名时加载 `seerapi-cli`。
+
+                父 agent 职责（你做）：
+                1. 登录并读现状：`bag`（背包）、2303 普通仓库、2361 精英仓库（`warehouse list`）、46046 读因子进度，判断从第几关开始、还剩几关、哪些 catch_time 已被锁定。
+                2. 对每一关现场读 BOSS（factor_design + seerapi + docs/pve-theory），决定阵容与出招；阵容精简到本关确实要用（过关会锁本关出战的 catch_time）。
+                3. 用 `subagent` 逐关派子 agent（已配置为 seer-stage 子预设），一次可并行派多个，给每个子 agent 完整自包含的 context（boss_species / lineup / moves / design_id / stage / difficulty / 账号密码 / 追踪键锁定情况）。
+                4. 收子 agent 回传：`subagent` 的完成通知就是子 agent 的最终回答——它是一段纯 JSON「战报回执」（字段：stage/design_id/difficulty/boss_species/cleared/winner/report/error），直接 `JSON.parse` 解析它。需要逐回合血量/伤害/被锁 catch_time 时，再读回执里 `report` 指向的 `seer/battle-records/latest.json`（字段：lineup / turns[].enemy_hp / damage / winner）。据此推进下一关并把各关回执汇总成最终战报；子 agent 只做一关，不要让它跨关。
+
+                硬性安全规则（也要写进给子 agent 的 context）：
+                - 写操作默认 dry-run，确认无误才加 `--send --write` 真发。
+                - 账号密码从凭证库读（vaultctl show "赛尔号验证用小号"），不落盘、不回显 secret；涉及写/登录优先用小号，不与官方客户端/雷小伊同时在线（会顶号）。
+                - 不要动主号，除非用户明确说用大号。
+          - id: agent-instructions
+            name: '@deepseek-ai/dsh-agent-instructions'
+            config:
+              maxBytes: 65536
+          - id: time-context
+            name: '@deepseek-ai/dsh-time-context'
+          - id: tool-bash
+            name: '@deepseek-ai/dsh-tool-bash'
+            disabled: !!js process.platform === 'win32'
+          - id: tool-pwsh
+            name: '@deepseek-ai/dsh-tool-pwsh'
+            disabled: !!js process.platform !== 'win32'
+          - id: tool-fs
+            name: '@deepseek-ai/dsh-tool-fs'
+            config:
+              applyPatch: false
+          - id: tool-fs-search
+            name: '@deepseek-ai/dsh-tool-fs-search'
+            config:
+              sampleOverCapGlobResults: false
+          - id: tool-jobs
+            name: '@deepseek-ai/dsh-tool-jobs'
+          - id: skill-filesystem
+            name: '@deepseek-ai/dsh-skill-filesystem'
+          - id: tool-skill
+            name: '@deepseek-ai/dsh-tool-skill'
+          - id: command-goal
+            name: '@deepseek-ai/dsh-command-goal'
+          - id: tool-goal
+            name: '@deepseek-ai/dsh-tool-goal'
+          - id: compaction
+            name: cordis:group
+            group: true
+            isolate:
+              compaction: true
+              toolResultPruner: true
+            config:
+              - id: compaction-basic
+                name: '@deepseek-ai/dsh-compaction-basic'
+              - id: command-compact
+                name: '@deepseek-ai/dsh-command-compact'
+              - id: tool-result-pruner
+                name: '@deepseek-ai/dsh-compaction-tool-result-pruner'
+                config:
+                  thresholdChars: 8192
+                  headChars: 4096
+                  tailChars: 1024
+          - id: delegation
+            name: cordis:group
+            group: true
+            isolate:
+              workflowEngine: true
+            config:
+              - id: tool-subagent-control
+                name: '@deepseek-ai/dsh-tool-subagent-control'
+                config:
+                  interrupt: false
+              - id: tool-subagent
+                name: '@deepseek-ai/dsh-tool-subagent'
+                config:
+                  provider: spawn
+                  toolName: subagent
+                  agentPreset: seer-stage
+                  modelSelection: true
+                  modelDiscovery: true
+              - id: tool-subagent-fork
+                name: '@deepseek-ai/dsh-tool-subagent'
+                config:
+                  provider: fork
+                  toolName: subagent_fork
+              - id: workflow-ptc
+                name: '@deepseek-ai/dsh-workflow-ptc'
+                config:
+                  provider: spawn
+              - id: tool-workflow
+                name: '@deepseek-ai/dsh-tool-workflow'
+          - id: tool-ask-user
+            name: '@deepseek-ai/dsh-tool-ask-user'
+          - id: tool-todo
+            name: '@deepseek-ai/dsh-tool-todo'
+            config:
+              allowParallelInProgress: true
+          - id: tool-web
+            name: '@deepseek-ai/dsh-tool-web'
+            config:
+              fetch: true
+              searchTimeoutMs: 60000
+          - id: present
+            name: '@deepseek-ai/dsh-tool-present'
+    - id: preset-seer-stage
+      name: '@deepseek-ai/dsh-agent-preset'
+      config:
+        id: seer-stage
+        name: 赛尔号·单关
+        description: >-
+          内部子预设，勿手选：由 seer-lead 通过 subagent(agentPreset=seer-stage) 自动下发。专注打单个因子关并回传胜负。
+        order: 11
+        plugins:
+          - id: persona
+            name: '@deepseek-ai/dsh-persona'
+            config:
+              prefix: |
+                你是赛尔号「单关打手」子 agent，只负责父 agent 下发的一关。不要越权调度、不要问用户问题；做完把「结构化战报回执」作为最终回复交给父 agent 解析。
+
+                开工先用 skill 工具加载 `seer-rebuild`，然后严格按父 agent 给的 context（boss_species / lineup / moves / design_id / stage / difficulty / 账号密码 / 追踪键锁定情况）只做三件事：
+                1. 本地模拟战报：`python -m seer_rebuild.cli simulate --player <plan> --enemy <boss> --moves ...`，先确认不亏。
+                2. 真机打这一关（官方 Unity 链路 41284→41282→出招循环），默认 dry-run，确认后用 `--send --write` 真发；用 `--report-dir` 把权威战报落到 `seer/battle-records/{latest.json,index.json}`（换阵容用 `team` 的 2304）。
+                3. 观测 S2C 2506（FIGHT_OVER）与 45827：收到 45827 = 过关（`cleared`=true，`winner`="胜利"）；只有 2506 没有 45827 = 未过关。
+
+                最终回复 = 一个纯 JSON 对象（不要多余解释文字），字段固定，父 agent 直接 `JSON.parse`：
+                {"stage": <关号>, "design_id": <int>, "difficulty": <int>, "boss_species": <int>, "cleared": <bool>, "winner": "<胜利|失败|未判定>", "report": "<latest.json 绝对或相对路径>", "error": "<string|null>"}
+                `report` 填战报路径（已写 `seer/battle-records/latest.json` 就填它）；`error` 只放登录失败/协议报错等阻断性错误，正常运行填 null。
+
+                规则：写操作先 dry-run 再 `--send --write`；账号密码按父 agent 给的用，不落盘、不回显秘密；只做本关，不要动其它关或阵容之外的精灵。
+          - id: agent-instructions
+            name: '@deepseek-ai/dsh-agent-instructions'
+            config:
+              maxBytes: 65536
+          - id: time-context
+            name: '@deepseek-ai/dsh-time-context'
+          - id: tool-bash
+            name: '@deepseek-ai/dsh-tool-bash'
+            disabled: !!js process.platform === 'win32'
+          - id: tool-pwsh
+            name: '@deepseek-ai/dsh-tool-pwsh'
+            disabled: !!js process.platform !== 'win32'
+          - id: tool-fs
+            name: '@deepseek-ai/dsh-tool-fs'
+            config:
+              applyPatch: false
+          - id: tool-fs-search
+            name: '@deepseek-ai/dsh-tool-fs-search'
+            config:
+              sampleOverCapGlobResults: false
+          - id: tool-jobs
+            name: '@deepseek-ai/dsh-tool-jobs'
+          - id: skill-filesystem
+            name: '@deepseek-ai/dsh-skill-filesystem'
+          - id: tool-skill
+            name: '@deepseek-ai/dsh-tool-skill'
+          - id: tool-todo
+            name: '@deepseek-ai/dsh-tool-todo'
+            config:
+              allowParallelInProgress: true
+          - id: compaction
+            name: cordis:group
+            group: true
+            isolate:
+              compaction: true
+              toolResultPruner: true
+            config:
+              - id: compaction-basic
+                name: '@deepseek-ai/dsh-compaction-basic'
+              - id: command-compact
+                name: '@deepseek-ai/dsh-command-compact'
+              - id: tool-result-pruner
+                name: '@deepseek-ai/dsh-compaction-tool-result-pruner'
+                config:
+                  thresholdChars: 8192
+                  headChars: 4096
+                  tailChars: 1024

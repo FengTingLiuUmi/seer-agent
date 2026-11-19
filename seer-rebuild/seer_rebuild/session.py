@@ -20,7 +20,8 @@ from typing import Any
 
 from .client import GameClient
 from .inventory import InventorySnapshot, resolve, snapshot_from_live
-from .login import LoginSession, authenticate_cached, get_unity_gateway
+from .connection import new_login
+from .login import LoginSession
 from .protocol import Frame
 
 
@@ -42,11 +43,8 @@ class GameSession:
 
     # ------------------------------------------------------------------
     def _new_login(self) -> LoginSession:
-        sess = authenticate_cached(self.account, self.password)
-        host, port = get_unity_gateway()
-        sess.host, sess.port, sess.path, sess.mode = host, port, "/", "unity"
-        self._login = sess
-        return sess
+        self._login = new_login(self.account, self.password)
+        return self._login
 
     def _client(self) -> GameClient:
         sess = self._login if self._login else self._new_login()

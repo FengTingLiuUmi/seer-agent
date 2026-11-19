@@ -9,6 +9,8 @@ from __future__ import annotations
 import struct
 from dataclasses import dataclass, field
 
+from .commands import Cmd
+
 
 def u32(v: int) -> bytes:
     return struct.pack(">I", v & 0xFFFFFFFF)
@@ -23,7 +25,7 @@ def list_body(values: list[int]) -> bytes:
 
 
 # 因子关卡列表：45543，body=[start][end]（lxy_yz/factor_write_only 实证：分页查询 [0,999] / [1000,1999]）
-STAGE_LIST = 45543
+STAGE_LIST = Cmd.STAGE_LIST
 
 
 def stage_list_step(start: int, end: int) -> FeatureStep:
@@ -49,18 +51,18 @@ def bag_steps(
 ) -> list[FeatureStep]:
     """精灵背包 / 装备。参数为 None 的步骤不发送。"""
     steps = [
-        FeatureStep("打开背包", 43706, b"", False, "GET_PET_INFO_BY_ONCE"),
+        FeatureStep("打开背包", Cmd.GET_PET_INFO_BY_ONCE, b"", False, "GET_PET_INFO_BY_ONCE"),
     ]
     if forever_ids is not None:
-        steps.append(FeatureStep("加载配置", 46046, list_body(forever_ids), False, "GET_MULTI_FOREVER"))
+        steps.append(FeatureStep("加载配置", Cmd.GET_MULTI_FOREVER, list_body(forever_ids), False, "GET_MULTI_FOREVER"))
     if item_ids is not None:
-        steps.append(FeatureStep("装备列表", 42399, list_body(item_ids), False, "MULTI_ITEM_LIST"))
+        steps.append(FeatureStep("装备列表", Cmd.MULTI_ITEM_LIST, list_body(item_ids), False, "MULTI_ITEM_LIST"))
     if pet_id is not None:
-        steps.append(FeatureStep("精灵信息", 2301, u32(pet_id), False, "GET_PET_INFO"))
+        steps.append(FeatureStep("精灵信息", Cmd.GET_PET_INFO, u32(pet_id), False, "GET_PET_INFO"))
     if cloth_ids is not None:
-        steps.append(FeatureStep("切换装扮", 2604, list_body(cloth_ids), True, "CHANGE_CLOTH"))
+        steps.append(FeatureStep("切换装扮", Cmd.CHANGE_CLOTH, list_body(cloth_ids), True, "CHANGE_CLOTH"))
     if title_id is not None:
-        steps.append(FeatureStep("设置称号", 3404, u32(title_id), True, "SETTITLE"))
+        steps.append(FeatureStep("设置称号", Cmd.SETTITLE, u32(title_id), True, "SETTITLE"))
     return steps
 
 
@@ -78,18 +80,18 @@ def factor_steps(
     """
     steps: list[FeatureStep] = []
     if item_ids is not None:
-        steps.append(FeatureStep("因子道具", 42399, list_body(item_ids), False, "MULTI_ITEM_LIST"))
-    steps.append(FeatureStep("打开背包", 43706, b"", False, "GET_PET_INFO_BY_ONCE"))
+        steps.append(FeatureStep("因子道具", Cmd.MULTI_ITEM_LIST, list_body(item_ids), False, "MULTI_ITEM_LIST"))
+    steps.append(FeatureStep("打开背包", Cmd.GET_PET_INFO_BY_ONCE, b"", False, "GET_PET_INFO_BY_ONCE"))
     if factor_ids is not None:
-        steps.append(FeatureStep("因子信息", 46046, list_body(factor_ids), False, "GET_MULTI_FOREVER"))
+        steps.append(FeatureStep("因子信息", Cmd.GET_MULTI_FOREVER, list_body(factor_ids), False, "GET_MULTI_FOREVER"))
     if pet_id is not None:
-        steps.append(FeatureStep("选择精灵", 2301, u32(pet_id), False, "GET_PET_INFO"))
-    steps.append(FeatureStep("进入地图", 2001, b"", False, "ENTER_MAP"))
+        steps.append(FeatureStep("选择精灵", Cmd.GET_PET_INFO, u32(pet_id), False, "GET_PET_INFO"))
+    steps.append(FeatureStep("进入地图", Cmd.ENTER_MAP, b"", False, "ENTER_MAP"))
     if factor_id is not None:
         steps.append(
             FeatureStep(
                 "因子动作",
-                41413,
+                Cmd.FACTOR_ACTION,
                 u32(factor_id) + u32(action[0]) + u32(action[1]),
                 True,
                 "因子关卡/领取",
@@ -166,17 +168,17 @@ def readable_steps(
             tag = "DRY-WRITE"
         if provider is None:
             detail = s.body.hex()
-        elif s.cmd in (42399, 2604, 46046):
+        elif s.cmd in (Cmd.MULTI_ITEM_LIST, Cmd.CHANGE_CLOTH, Cmd.GET_MULTI_FOREVER):
             ids = _id_list(s.body)
             resolve_res = ("item", "factor", "pet", "equip")
             detail = ", ".join(_resolve(provider, x, resolve_res) for x in ids) or "(空)"
-        elif s.cmd == 3404:
+        elif s.cmd == Cmd.SETTITLE:
             ids = _id_list(s.body)
             detail = _resolve(provider, ids[0], ("title", "item")) if ids else "(空)"
-        elif s.cmd == 2301:
+        elif s.cmd == Cmd.GET_PET_INFO:
             ids = _id_list(s.body)
             detail = _resolve(provider, ids[0], ("pet", "item")) if ids else "(空)"
-        elif s.cmd == 41413:
+        elif s.cmd == Cmd.FACTOR_ACTION:
             ids = _id_list(s.body)
             if ids:
                 factor = _resolve(provider, ids[0], ("factor", "item"))

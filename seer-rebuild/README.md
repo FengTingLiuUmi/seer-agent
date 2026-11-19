@@ -113,6 +113,7 @@ seer_rebuild/
   inventory_window.py 背包/装备展示窗口（tkinter）
   factor.py        因子关数据（BOSS/阵容）+ 战斗步骤构造
   factor_runner.py 打精灵因子关卡执行器（进度/关卡列表解析 + 步骤构造 + live 驱动）
+  yaxue.py         压血/自动恢复（送进白虎试炼打到残血并关自动恢复；低血翻倍打手前置）
   mcp_server.py    MCP 服务器（登录/探测/特征/战斗/因子/查询/日志 工具）
   daily.py        一键日常配置、任务框架、内置命令任务
   applog.py       日常日志 / 出招记录解析（真实 2.0.9 数据）
@@ -137,6 +138,7 @@ data/
 | `battle.py` | ⚠️ 近似 | 公式/特性为可读近似，不是官方战斗服务器逐字节复刻 |
 | `daily.py` | ⚠️ 骨架 | 只读 cmd 可试；写操作默认 dry-run，body 未校准 |
 | `factor.py` / `factor_runner.py` | ⚠️ 部分实测 | 选关/切阵容/战斗/领取步骤构造有 lxy_yz_2/3 抓包证据，单测覆盖；实机战斗循环未用真实账号逐回合校准 |
+| `yaxue.py` | ⚠️ 部分实测 | 命令序列从 `reverse/yaxue.pcapng` + 雷小伊工具箱反解，伊娜普通第4关前置实测；`build_steps` 单测覆盖 |
 | `.ysc` / `.cjcy` | ❌ 未解密 | `.ysc` 含 VMProtect；`.cjcy` 容器已解析，内部 `dzb.txt` 仍加密 |
 
 ## 5. 安全与边界

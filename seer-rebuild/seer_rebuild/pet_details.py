@@ -4,7 +4,7 @@
   0x00 species_id
   0x20+  经验/零区
   0x24  level
-  0x34  体力(满)  0x38 体力(当前)
+  0x34  体力(当前)  0x38 体力(满)
   0x3c  物攻      0x40 物防
   0x44  特攻      0x48 特防
   0x4c  速度
@@ -49,8 +49,8 @@ def parse_2301(body: bytes) -> PetDetail:
     return PetDetail(
         species_id=u32_at(body, 0x00),
         level=u32_at(body, 0x24),
-        max_hp=u32_at(body, 0x34),
-        cur_hp=u32_at(body, 0x38),
+        max_hp=u32_at(body, 0x38),
+        cur_hp=u32_at(body, 0x34),
         atk=u32_at(body, 0x3c),
         def_=u32_at(body, 0x40),
         sp_atk=u32_at(body, 0x44),
@@ -62,15 +62,10 @@ def parse_2301(body: bytes) -> PetDetail:
 
 def read_pet_detail(account: str, password: str, catch_time: int, *, timeout: float = 20.0) -> PetDetail | None:
     """登录并读某个体(catch_time)的 2301 详情。只读。"""
-    from .client import GameClient
-    from .login import authenticate, get_unity_gateway
+    from .connection import open_unity
 
     async def _run() -> PetDetail | None:
-        sess = authenticate(account, password)
-        host, port = get_unity_gateway()
-        sess.host, sess.port, sess.path, sess.mode = host, port, "/", "unity"
-        c = GameClient(sess, mode="unity")
-        await c.connect(timeout=timeout)
+        c = await open_unity(account, password, timeout=timeout)
         await c.send(2301, [struct.pack(">I", catch_time & 0xFFFFFFFF)])
         loop = asyncio.get_running_loop()
         end = loop.time() + 6.0

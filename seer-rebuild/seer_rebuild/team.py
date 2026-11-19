@@ -14,6 +14,7 @@ from __future__ import annotations
 import asyncio
 from dataclasses import dataclass
 
+from .commands import Cmd
 from .features import FeatureStep, format_steps, readable_steps, list_body, u32, stage_list_step
 
 
@@ -29,7 +30,7 @@ def move_step(catch_time: int, to_bag: bool) -> FeatureStep:
     flag = 1 if to_bag else 0
     return FeatureStep(
         "加入背包" if to_bag else "放回仓库",
-        2304,
+        Cmd.PET_RELEASE,
         u32(catch_time) + u32(flag),
         True,
         "PET_RELEASE",
@@ -38,22 +39,22 @@ def move_step(catch_time: int, to_bag: bool) -> FeatureStep:
 
 def equip_step(equip_ids: list[int]) -> FeatureStep:
     """更换装备/装扮（2604 CHANGE_CLOTH）。"""
-    return FeatureStep("更换装备", 2604, list_body(equip_ids), True, "CHANGE_CLOTH")
+    return FeatureStep("更换装备", Cmd.CHANGE_CLOTH, list_body(equip_ids), True, "CHANGE_CLOTH")
 
 
 def title_step(title_id: int) -> FeatureStep:
     """更换称号（3404 SETTITLE）。"""
-    return FeatureStep("更换称号", 3404, u32(title_id), True, "SETTITLE")
+    return FeatureStep("更换称号", Cmd.SETTITLE, u32(title_id), True, "SETTITLE")
 
 
 def starter_step(catch_time: int) -> FeatureStep:
     """换首发 / 升为正式：2308 PET_DEFAULT，body=[catch_time]。"""
-    return FeatureStep("设默认/换首发", 2308, u32(catch_time), True, "PET_DEFAULT")
+    return FeatureStep("设默认/换首发", Cmd.PET_DEFAULT, u32(catch_time), True, "PET_DEFAULT")
 
 
 def demote_step(catch_time: int) -> FeatureStep:
     """降为待命：2304 PET_RELEASE flag=4，body=[catch_time][4]。"""
-    return FeatureStep("降为待命", 2304, u32(catch_time) + u32(4), True, "PET_RELEASE(-4)")
+    return FeatureStep("降为待命", Cmd.PET_RELEASE, u32(catch_time) + u32(4), True, "PET_RELEASE(-4)")
 
 
 def clear_reserve_step(catch_time: int) -> FeatureStep:
@@ -61,7 +62,7 @@ def clear_reserve_step(catch_time: int) -> FeatureStep:
 
     lxy_yz.pcapng（打因子·切换精灵）实证：待命精灵用 flag=3 清出；flag=0 只对正式精灵有效。
     """
-    return FeatureStep("清除待命", 2304, u32(catch_time) + u32(3), True, "PET_RELEASE(-3)")
+    return FeatureStep("清除待命", Cmd.PET_RELEASE, u32(catch_time) + u32(3), True, "PET_RELEASE(-3)")
 
 
 def add_reserve_step(catch_time: int) -> FeatureStep:
@@ -69,7 +70,7 @@ def add_reserve_step(catch_time: int) -> FeatureStep:
 
     lxy_yz_2 实证：打因子切阵容时，正式用 flag=1、待命用 flag=2。
     """
-    return FeatureStep("加入待命", 2304, u32(catch_time) + u32(2), True, "PET_RELEASE(-2)")
+    return FeatureStep("加入待命", Cmd.PET_RELEASE, u32(catch_time) + u32(2), True, "PET_RELEASE(-2)")
 
 
 def lineup_steps(*, starter: int | None = None, demote: int | None = None) -> list[FeatureStep]:
@@ -105,12 +106,12 @@ def factor_cycle_steps(
         steps.append(title_step(title_id))
     for catch, flag in (switches or []):
         name = {0: "放回仓库", 1: "加入背包", 3: "清除待命", 4: "降待命"}.get(flag, f"flag={flag}")
-        steps.append(FeatureStep(f"切换精灵({name})", 2304, u32(catch) + u32(flag), True, "PET_RELEASE"))
+        steps.append(FeatureStep(f"切换精灵({name})", Cmd.PET_RELEASE, u32(catch) + u32(flag), True, "PET_RELEASE"))
     steps.append(stage_list_step(0, 999))
     steps.append(stage_list_step(1000, 1999))
     if factor_ids:
-        steps.append(FeatureStep("因子信息", 46046, list_body(factor_ids), False, "GET_MULTI_FOREVER"))
-    steps.append(FeatureStep("进入因子关卡", 2001, b"", True, "ENTER_MAP"))
+        steps.append(FeatureStep("因子信息", Cmd.GET_MULTI_FOREVER, list_body(factor_ids), False, "GET_MULTI_FOREVER"))
+    steps.append(FeatureStep("进入因子关卡", Cmd.ENTER_MAP, b"", True, "ENTER_MAP"))
     return steps
 
 
@@ -121,14 +122,9 @@ def present(steps: list[FeatureStep], *, send: bool = False, account: str | None
 
 
 async def _send_steps(account: str, password: str, steps: list[FeatureStep], *, write: bool) -> list[str]:
-    from .client import GameClient
-    from .login import authenticate, get_unity_gateway
+    from .connection import open_unity
 
-    sess = authenticate(account, password)
-    host, port = get_unity_gateway()
-    sess.host, sess.port, sess.path, sess.mode = host, port, "/", "unity"
-    c = GameClient(sess, mode="unity")
-    await c.connect(timeout=20.0)
+    c = await open_unity(account, password)
     out: list[str] = []
     loop = asyncio.get_running_loop()
     for s in steps:

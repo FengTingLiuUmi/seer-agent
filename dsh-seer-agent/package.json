@@ -1,0 +1,11 @@
+{
+  "name": "@local/dsh-seer-agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "赛尔号父子 agent 预设：seer-lead 作为父 agent 只做登录/读进度/组队/调度，seer-stage 作为子 agent 专注打单个因子关并回传胜负。",
+  "files": ["cordis.patch.yml", "docs", "locale/*.json", "README.md"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" }
+  }
+}

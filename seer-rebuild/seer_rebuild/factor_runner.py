@@ -28,6 +28,7 @@ import asyncio
 import struct
 from dataclasses import dataclass, field
 
+from .commands import Cmd
 from .features import FeatureStep, list_body, u32, stage_list_step
 from .factor import (
     CURRENT_FACTOR,
@@ -44,20 +45,20 @@ from .team import (
     title_step,
 )
 
-# 命令表（Unity 端）
-GET_PET_INFO_BY_ONCE = 43706   # 打开背包 / 读正式+待命精灵
-PET_RELEASE = 2304             # 切阵容：body=[catch_time][flag]
-STAGE_LIST = 45543             # 因子关卡列表：body=[start][end]
-GET_MULTI_FOREVER = 46046      # 因子信息 / 进度：body=[count][ids...]
-ENTER_MAP = 2001               # 进入地图（因子关）
-CHANGE_CLOTH = 2604            # 更换装备/装扮
-SETTITLE = 3404                # 更换称号
-PET_CURE_FREE = 47136          # 免费治疗
-FIGHT_H5_PVE_BOSS = 42396      # 发起 PVE BOSS 战（=因子关战斗入口）
-READY_TO_FIGHT = 2404          # 准备战斗
-USE_SKILL = 2405               # 出招
-FIGHT_OVER = 2506              # S2C 战斗结束
-FACTOR_ACTION = 41413          # 因子关卡/领取
+# 命令表（值统一在 commands.Cmd 维护，这里只留可读别名）
+GET_PET_INFO_BY_ONCE = Cmd.GET_PET_INFO_BY_ONCE
+PET_RELEASE = Cmd.PET_RELEASE
+STAGE_LIST = Cmd.STAGE_LIST
+GET_MULTI_FOREVER = Cmd.GET_MULTI_FOREVER
+ENTER_MAP = Cmd.ENTER_MAP
+CHANGE_CLOTH = Cmd.CHANGE_CLOTH
+SETTITLE = Cmd.SETTITLE
+PET_CURE_FREE = Cmd.PET_CURE_FREE
+FIGHT_H5_PVE_BOSS = Cmd.FIGHT_H5_PVE_BOSS
+READY_TO_FIGHT = Cmd.READY_TO_FIGHT
+USE_SKILL = Cmd.USE_SKILL
+FIGHT_OVER = Cmd.FIGHT_OVER
+FACTOR_ACTION = Cmd.FACTOR_ACTION
 
 # 2304 PET_RELEASE 的 flag 语义（lxy_yz / lxy_yz_2 实证）
 FLAG_TO_WAREHOUSE = 0          # 正式 → 仓库
@@ -143,6 +144,7 @@ class FactorStagePlan:
     boss_id: int | None = None                               # 42396 的关卡 id
     factor_id: int | None = None                             # 41413 领取的 factor id
     design_id: int | None = None                             # 官方端进入因子的 design_id（41284/41282）
+    difficulty: int = 1                                      # 41284/41282 的难度：1=简单 2=普通 3=困难
     collect_action: tuple[int, int] = (1, 0)
     equip_ids: list[int] | None = None
     title_id: int | None = None
@@ -197,8 +199,8 @@ def build_factor_stage_steps(plan: FactorStagePlan) -> list[FeatureStep]:
     steps.append(stage_list_step(0, 999))
     steps.append(stage_list_step(1000, 1999))
     if plan.design_id is not None:
-        # 官方 Unity 端：进入因子关 + 开始战斗（难度默认 1=简单；BOSS 由服务端按进度自动推进）
-        steps += factor_enter_steps(design_id=plan.design_id, difficulty=1)
+        # 官方 Unity 端：进入因子关 + 开始战斗（难度由 plan.difficulty 指定；BOSS 由服务端按进度自动推进）
+        steps += factor_enter_steps(design_id=plan.design_id, difficulty=plan.difficulty)
     elif plan.enter_map:
         # 雷小伊旧链路：进入因子界面（2001）
         steps.append(FeatureStep("进入因子关卡", ENTER_MAP, b"", True, "ENTER_MAP"))
@@ -233,11 +235,21 @@ def format_plan(plan: FactorStagePlan) -> str:
     )
 
 
-async def _drive(client, steps: list[FeatureStep], *, write: bool, turn_wait: float = 2.0) -> list[str]:
-    """按顺序发步骤，每步之间收 S2C；收到 2506（战斗结束）后停止后续出招/切换。"""
+async def _drive(client, steps: list[FeatureStep], *, write: bool, turn_wait: float = 2.0,
+                 report_dir: str | None = None) -> list[str]:
+    """按顺序发步骤，每步之间收 S2C；收到 2506（战斗结束）后停止后续出招/切换。
+
+    ``report_dir`` 非空时，把整场（sent/recv）的**完整**帧落成 timeline jsonl，
+    供 ``battle-report --timeline`` 生成战报。控制台打印仍只截断方便阅读。
+    """
     loop = asyncio.get_running_loop()
     out: list[str] = []
+    timeline: list[dict] = []
     battle_over = False
+
+    def note(entry: dict) -> None:
+        timeline.append(entry)
+
     for s in steps:
         if battle_over:
             out.append(f"[跳过] 战斗已结束，跳过 {s.name} cmd={s.cmd}")
@@ -249,23 +261,51 @@ async def _drive(client, steps: list[FeatureStep], *, write: bool, turn_wait: fl
             await client.send(s.cmd, [s.body] if s.body else [])
         except (ConnectionError, asyncio.IncompleteReadError) as e:
             out.append(f"[send-failed] {s.name} cmd={s.cmd}: {e}")
+            note({"dir": "send", "cmd": s.cmd, "body": (s.body or b"").hex(), "error": str(e)})
             break
         out.append(f"[sent] {s.name} cmd={s.cmd} body={s.body.hex()[:40]}")
+        note({"dir": "send", "cmd": s.cmd, "body": (s.body or b"").hex()})
 
-        # 出招后多等一会，观察战斗结束(2506)
-        wait = turn_wait if s.cmd == USE_SKILL else 1.2
-        end = loop.time() + wait
-        while loop.time() < end:
-            try:
-                f = await asyncio.wait_for(client.frames.get(), timeout=min(0.6, end - loop.time()))
-            except asyncio.TimeoutError:
-                continue
-            body = f.body[:32].hex()
-            out.append(f"    [recv] cmd={f.cmd} result={f.result} len={len(f.body)} body={body}")
-            if f.cmd == FIGHT_OVER:
-                out.append("    [战斗结束]")
-                battle_over = True
-                break
+        # 出招后才等结算；切换精灵(2407)不等待、紧接下一招，避免服务器中间多吐一个回合导致错位。
+        if s.cmd == USE_SKILL:
+            end = loop.time() + turn_wait
+            while loop.time() < end:
+                try:
+                    f = await asyncio.wait_for(client.frames.get(), timeout=min(0.6, end - loop.time()))
+                except asyncio.TimeoutError:
+                    continue
+                body = f.body[:32].hex()
+                out.append(f"    [recv] cmd={f.cmd} result={f.result} len={len(f.body)} body={body}")
+                note({"dir": "recv", "cmd": f.cmd, "result": f.result, "body": f.body.hex()})
+                if f.cmd == FIGHT_OVER:
+                    out.append("    [战斗结束]")
+                    battle_over = True
+                    break
+                if f.cmd == 2505:  # 这一步出招的结算帧已到，立即结束等待、发下一步
+                    break
+        elif s.cmd == READY_TO_FIGHT:
+            end = loop.time() + 3.0
+            while loop.time() < end:
+                try:
+                    f = await asyncio.wait_for(client.frames.get(), timeout=min(0.6, end - loop.time()))
+                except asyncio.TimeoutError:
+                    continue
+                body = f.body[:32].hex()
+                out.append(f"    [recv] cmd={f.cmd} result={f.result} len={len(f.body)} body={body}")
+                note({"dir": "recv", "cmd": f.cmd, "result": f.result, "body": f.body.hex()})
+                if f.cmd == 2504:  # 开战帧已到
+                    break
+        # 2407 切换精灵：不等待，直接发下一招
+
+    if report_dir:
+        import json as _json
+        from pathlib import Path as _Path
+        _Path(report_dir).mkdir(parents=True, exist_ok=True)
+        _Path(report_dir, "timeline.jsonl").write_text(
+            "\n".join(_json.dumps(e, ensure_ascii=False) for e in timeline) + "\n",
+            encoding="utf-8",
+        )
+        out.append(f"[recorded] {len(timeline)} 帧已落盘 {report_dir}/timeline.jsonl")
     return out
 
 
@@ -278,6 +318,7 @@ def run(
     write: bool = False,
     turn_wait: float = 2.0,
     resolve: bool = False,
+    report_dir: str | None = None,
 ) -> list[str]:
     """统一入口。send=False 只打印步骤（dry-run）；send=True 才真机执行。"""
     steps = build_factor_cycle_steps(plans)
@@ -288,17 +329,12 @@ def run(
         lines += [f"  {s.name} cmd={s.cmd} write={s.write} body={s.body.hex()[:48]}" for s in steps]
         return lines
 
-    from .client import GameClient
-    from .login import authenticate, get_unity_gateway
+    from .connection import open_unity
 
     async def _run() -> list[str]:
-        sess = authenticate(account, password)
-        host, port = get_unity_gateway()
-        sess.host, sess.port, sess.path, sess.mode = host, port, "/", "unity"
-        c = GameClient(sess, mode="unity")
-        await c.connect(timeout=20.0)
+        c = await open_unity(account, password)
         lines = ["计划："] + [f"  - {format_plan(p)}" for p in plans]
-        lines += await _drive(c, steps, write=write, turn_wait=turn_wait)
+        lines += await _drive(c, steps, write=write, turn_wait=turn_wait, report_dir=report_dir)
         await c.close()
         return lines
 
@@ -310,18 +346,13 @@ def read_state(account: str, password: str, *, resolve: bool = True, factor_id: 
 
     注意：45543 是「图鉴/收集进度」，不是因子关卡列表（见 factor.py 说明）。
     """
-    from .client import GameClient
-    from .login import authenticate, get_unity_gateway
+    from .connection import open_unity
 
     spec = load_factor_spec(factor_id) if factor_id is not None else CURRENT_FACTOR
     keys = spec.forever_progress_keys if spec else [0]
 
     async def _run() -> dict:
-        sess = authenticate(account, password)
-        host, port = get_unity_gateway()
-        sess.host, sess.port, sess.path, sess.mode = host, port, "/", "unity"
-        c = GameClient(sess, mode="unity")
-        await c.connect(timeout=20.0)
+        c = await open_unity(account, password)
         loop = asyncio.get_running_loop()
 
         await c.send(GET_MULTI_FOREVER, [list_body(keys)])

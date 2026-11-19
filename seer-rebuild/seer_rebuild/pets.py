@@ -16,14 +16,10 @@ import struct
 from dataclasses import dataclass
 from pathlib import Path
 
-from .client import GameClient
-from .login import LoginSession, authenticate_cached, get_unity_gateway
+from .commands import Cmd
+from .connection import open_unity
 from .protocol import Frame
 
-SESSION_KEY = 1016      # GET_SESSION_KEY，body = u32(2)
-GET_PETS = 43706        # GET_PET_INFO_BY_ONCE，空 body
-PET_RELEASE = 2304      # 仓库/背包移动
-PET_LIST = 2361         # GET_LOVE_PET_LIST（仓库，S2C）
 # 背包(战斗背包)详情：43706 响应，第一个 u32 = count（当前背包精灵数）。
 # 每只精灵详情结构（变长）：species_id(4B) + 技能序列 + runtime_id(4B，0x5~0x6 开头随机)
 #   + 属性字段 + catch_time(unix)。实测识别到：
@@ -33,9 +29,9 @@ PET_LIST = 2361         # GET_LOVE_PET_LIST（仓库，S2C）
 
 @dataclass(slots=True)
 class PetEntry:
-    species_id: int
-    flag: int
-    catch_time: int
+    species_id: int #精灵图鉴id
+    flag: int #操作
+    catch_time: int #精灵获得时间 其实就是赛尔号检测重复精灵的标识
 
     @property
     def is_starter(self) -> bool:
@@ -132,9 +128,9 @@ species 之后 0x94(148) 字节处。用「species + 148B 后是 catch_time」�
     return count, out
 
 
-async def _send_and_collect(sess: LoginSession, send_specs: list[tuple[int, bytes]], *, wait: float = 4.0) -> list[dict]:
-    c = GameClient(sess, mode="unity")
-    await c.connect(timeout=20.0)
+async def _send_and_collect(account: str, password: str, send_specs: list[tuple[int, bytes]], *, wait: float = 4.0) -> tuple[int, list[dict]]:
+    c = await open_unity(account, password)
+    uid = c.session.uid
     collected: list[dict] = []
 
     def add(f: Frame) -> None:
@@ -154,14 +150,7 @@ async def _send_and_collect(sess: LoginSession, send_specs: list[tuple[int, byte
                 continue
             add(f)
     await c.close()
-    return collected
-
-
-def _login(account: str, password: str) -> LoginSession:
-    sess = authenticate_cached(account, password)
-    host, port = get_unity_gateway()
-    sess.host, sess.port, sess.path, sess.mode = host, port, "/", "unity"
-    return sess
+    return uid, collected
 
 
 def _u32(v: int) -> bytes:
@@ -180,12 +169,11 @@ def read_bag(account: str, password: str, *, resolve_names: bool = True) -> dict
         from .battle_data import BattleData
         data = BattleData(r"F:\seer\seer_cfg\json")
 
-        sess = _login(account, password)
-        c = GameClient(sess, mode="unity")
-        await c.connect(timeout=20.0)
+        c = await open_unity(account, password)
+        uid = c.session.uid
         loop = asyncio.get_running_loop()
 
-        await c.send(GET_PETS, [])  # 43706 GET_PET_INFO_BY_ONCE：一次返回整个背包（正式 + 待命）
+        await c.send(Cmd.GET_PET_INFO_BY_ONCE, [])  # 一次性读背包（正式 + 待命）
 
         # 只取第一个 43706 响应；按 body 头部计数区分「正式 / 待命」。
         formal: list[PetEntry] = []
@@ -196,7 +184,7 @@ def read_bag(account: str, password: str, *, resolve_names: bool = True) -> dict
                 f = await asyncio.wait_for(c.frames.get(), timeout=min(1.0, end - loop.time()))
             except asyncio.TimeoutError:
                 continue
-            if f.cmd == GET_PETS:
+            if f.cmd == Cmd.GET_PET_INFO_BY_ONCE:
                 cnt, pets = parse_bag_43706(f.body, data=data)
                 formal = pets[:cnt]
                 reserve = pets[cnt:]
@@ -212,7 +200,7 @@ def read_bag(account: str, password: str, *, resolve_names: bool = True) -> dict
             return d
 
         return {
-            "uid": sess.uid,
+            "uid": uid,
             "正式": [fmt(p) for p in formal],
             "待命": [fmt(p) for p in reserve],
         }
@@ -236,9 +224,10 @@ def move_pet(account: str, password: str, pet_catch_time: int, *, to_bag: bool, 
     """加入背包(to_bag=True, flag=1) 或 放回仓库(to_bag=False, flag=0)。用 catch_time 定位精灵个体。"""
     flag = 1 if to_bag else 0
     body = release_body(pet_catch_time, flag)
-    sess = _login(account, password)
-    specs = [(SESSION_KEY, b"\x00\x00\x00\x02"), (GET_PETS, b""), (PET_RELEASE, body)]
-    frames = asyncio.run(_send_and_collect(sess, specs))
+    specs = [(Cmd.GET_SESSION_KEY, b"\x00\x00\x00\x02"), (Cmd.GET_PET_INFO_BY_ONCE, b""), (Cmd.PET_RELEASE, body)]
+    uid, frames = asyncio.run(_send_and_collect(account, password, specs))
     if out_path:
         Path(out_path).write_text("\n".join(json.dumps(x, ensure_ascii=False) for x in frames) + "\n", encoding="utf-8")
-    return {"uid": sess.uid, "pet_catch_time": pet_catch_time, "to_bag": to_bag, "body": body.hex(), "frames": frames}
+    return {"uid": uid, "pet_catch_time": pet_catch_time, "to_bag": to_bag, "body": body.hex(), "frames": frames}
+
+

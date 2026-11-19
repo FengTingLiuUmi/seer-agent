@@ -25,6 +25,15 @@ from seer_rebuild.battle_data import BattleData
 from seer_rebuild.inventory import snapshot_from_1001
 from seer_rebuild.provider import SeerApiProvider
 from seer_rebuild.battle_report import build_report_from_timeline, report_to_text
+from seer_rebuild.battle_records import append_timeline, record_battle, reset_live
+
+
+class _LiveTimeline(list):
+    """在 append 时同步追加到 battle-records/latest.timeline.jsonl（前端实时轮询用）。"""
+
+    def append(self, item):
+        super().append(item)
+        append_timeline(item)
 
 DESIGN_ID = 266
 DIFFICULTY = 1
@@ -140,14 +149,7 @@ async def collect_quiet(c: GameClient, seconds: float, timeline: list[dict], *, 
 
 
 def write_report_dir(report_dir: str | None, timeline: list[dict], bag: dict, snap: dict,
-                     *, factor_name: str, stage: int | None) -> None:
-    if not report_dir:
-        return
-    p = Path(report_dir)
-    p.mkdir(parents=True, exist_ok=True)
-    (p / "timeline.jsonl").write_text("\n".join(json.dumps(e, ensure_ascii=False) for e in timeline) + "\n", encoding="utf-8")
-    (p / "bag.json").write_text(json.dumps(bag, ensure_ascii=False, indent=2), encoding="utf-8")
-    (p / "snap.json").write_text(json.dumps(snap, ensure_ascii=False, indent=2), encoding="utf-8")
+                     *, factor_name: str, stage: int | None, record: bool = False) -> None:
     uid = bag.get("uid") if isinstance(bag, dict) else None
     bag2 = dict(bag) if isinstance(bag, dict) else {}
     bag2.setdefault("uid", uid)
@@ -155,9 +157,17 @@ def write_report_dir(report_dir: str | None, timeline: list[dict], bag: dict, sn
         timeline, bag=bag2, snap=snap, data_root=r"F:\seer\seer_cfg\json",
         factor_name=factor_name, design_id=DESIGN_ID, stage_index=stage, enemy_max_hp=None,
     )
-    (p / "report.txt").write_text(report_to_text(rep) + "\n", encoding="utf-8")
-    (p / "report.json").write_text(json.dumps(rep.as_dict(), ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"\n[战报] 已落盘到 {p}（report.txt / report.json）")
+    if report_dir is not None:
+        p = Path(report_dir)
+        p.mkdir(parents=True, exist_ok=True)
+        (p / "timeline.jsonl").write_text("\n".join(json.dumps(e, ensure_ascii=False) for e in timeline) + "\n", encoding="utf-8")
+        (p / "bag.json").write_text(json.dumps(bag, ensure_ascii=False, indent=2), encoding="utf-8")
+        (p / "snap.json").write_text(json.dumps(snap, ensure_ascii=False, indent=2), encoding="utf-8")
+        (p / "report.txt").write_text(report_to_text(rep) + "\n", encoding="utf-8")
+        (p / "report.json").write_text(json.dumps(rep.as_dict(), ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"\n[战报] 已落盘到 {p}（report.txt / report.json）")
+    if record:
+        record_battle(rep.as_dict())
 
 
 async def main() -> None:
@@ -167,6 +177,7 @@ async def main() -> None:
     starter = None
     difficulty = DIFFICULTY
     report_dir, factor_name, stage = None, "", None
+    record = False
     i = 2
     while i < len(args):
         if args[i] == "--skills":
@@ -184,6 +195,9 @@ async def main() -> None:
         elif args[i] == "--report-dir":
             report_dir = args[i + 1]
             i += 2
+        elif args[i] == "--record":
+            record = True
+            i += 1
         elif args[i] == "--factor-name":
             factor_name = args[i + 1]
             i += 2
@@ -193,7 +207,10 @@ async def main() -> None:
         else:
             i += 1
 
-    timeline: list[dict] = []
+    recording = bool(report_dir) or record
+    timeline: list[dict] = _LiveTimeline() if recording else []
+    if recording:
+        reset_live()
 
     sess = authenticate(account, password)
     host, port = get_unity_gateway()
@@ -212,17 +229,17 @@ async def main() -> None:
             print(f"[warn] 解析1001快照失败: {e}")
             snap = {"equipment": [], "clothes": [], "titles": []}
 
-    await collect_quiet(c, 0.3, timeline, record=bool(report_dir))
+    await collect_quiet(c, 0.3, timeline, record=recording)
 
-    bag = await read_bag(c, timeline if report_dir else None)
+    bag = await read_bag(c, timeline if recording else None)
     bag["uid"] = sess.uid  # type: ignore[attr-defined]
 
-    pre = await read_forever(c, timeline if report_dir else None)
+    pre = await read_forever(c, timeline if recording else None)
     print(f"[进度前] forever(progress,time,fail) = {pre}")
 
     if starter is not None:
         await c.send(SET_DEFAULT, [u32(starter)])
-        if report_dir:
+        if recording:
             timeline.append({"dir": "c2s", "cmd": SET_DEFAULT, "body": u32(starter).hex(), "result": 0})
         print(f"[sent] 2308 设首发 catch={starter} (0x{starter:08x})")
         await asyncio.sleep(1.0)
@@ -231,21 +248,21 @@ async def main() -> None:
     await c.send(ENTER, [body])
     await asyncio.sleep(1.0)
     await c.send(START, [body])
-    if report_dir:
+    if recording:
         timeline.append({"dir": "c2s", "cmd": ENTER, "body": body.hex(), "result": 0})
         timeline.append({"dir": "c2s", "cmd": START, "body": body.hex(), "result": 0})
     print(f"[sent] 41284/41282 进关+开战 design={DESIGN_ID} diff={difficulty}")
     await asyncio.sleep(1.5)
 
     await c.send(READY, [])
-    if report_dir:
+    if recording:
         timeline.append({"dir": "c2s", "cmd": READY, "body": "", "result": 0})
     print("[sent] 2404 准备战斗")
 
     # 出招循环
     for idx, sid in enumerate(skills):
         await c.send(USE_SKILL, [u32(sid)])
-        if report_dir:
+        if recording:
             timeline.append({"dir": "c2s", "cmd": USE_SKILL, "body": u32(sid).hex(), "result": 0})
         print(f"[sent] 2405 出招 skill={sid}")
         loop = asyncio.get_running_loop()
@@ -256,7 +273,7 @@ async def main() -> None:
                 f = await asyncio.wait_for(c.frames.get(), timeout=min(0.8, end - loop.time()))
             except asyncio.TimeoutError:
                 continue
-            if report_dir:
+            if recording:
                 timeline.append({"dir": "s2c", "cmd": f.cmd, "body": f.body.hex(), "result": f.result})
             if f.cmd in BATTLE_NOISE:
                 continue
@@ -271,23 +288,23 @@ async def main() -> None:
             break
         if idx < len(switches) and switches[idx] != 0:
             await c.send(SWITCH_PET, [u32(switches[idx])])
-            if report_dir:
+            if recording:
                 timeline.append({"dir": "c2s", "cmd": SWITCH_PET, "body": u32(switches[idx]).hex(), "result": 0})
             print(f"[sent] 2407 换宠 catch={switches[idx]} (0x{switches[idx]:08x})")
             await asyncio.sleep(0.6)
 
-    for line in await collect_quiet(c, 5.0, timeline, record=bool(report_dir)):
+    for line in await collect_quiet(c, 5.0, timeline, record=recording):
         print(f"  [tail] {line}")
 
-    post = await read_forever(c, timeline if report_dir else None)
+    post = await read_forever(c, timeline if recording else None)
     print(f"[进度后] forever(progress,time,fail) = {post}")
 
     advanced = post and pre and (post[0] != pre[0] or post[1] != pre[1])
     print(f"[判定] 进度变化={advanced}  (pre={pre} -> post={post})")
     await c.close()
 
-    if report_dir:
-        write_report_dir(report_dir, timeline, bag, snap, factor_name=factor_name, stage=stage)
+    if recording:
+        write_report_dir(report_dir, timeline, bag, snap, factor_name=factor_name, stage=stage, record=recording)
 
 
 if __name__ == "__main__":

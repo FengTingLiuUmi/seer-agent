@@ -7,6 +7,7 @@ import struct
 from collections.abc import Callable
 from typing import Any
 
+from .commands import Cmd
 from .login import LoginSession, build_flash_login, build_h5_login_body, build_unity_login_body, get_unity_gateway, parse_gateway
 from .protocol import Frame, FrameSplitter, FlashEncoder, H5Encoder, pack_h5
 from .ws import WSConfig, WebSocket, WebSocketError
@@ -76,9 +77,9 @@ class GameClient:
         else:
             body = build_flash_login(self.session)
         self.log(f"[login] send 1001 body={len(body)}B")
-        await self.send(1001, [body])
+        await self.send(Cmd.LOGIN, [body])
         try:
-            first = await asyncio.wait_for(self._wait_cmd(1001), timeout=timeout)
+            first = await asyncio.wait_for(self._wait_cmd(Cmd.LOGIN), timeout=timeout)
             self.log(f"[login] got 1001 result={first.result} body={first.body[:32].hex()}")
             return first
         except asyncio.TimeoutError:
@@ -122,7 +123,7 @@ class GameClient:
         self._reader_task = asyncio.create_task(self._read_loop_tcp())
         body = build_unity_login_body(self.session, area_id=self.area_id or 1, platform=self.platform)
         self.log(f"[login] send 1001 body={len(body)}B")
-        await self.send(1001, [body])
+        await self.send(Cmd.LOGIN, [body])
 
         loop = asyncio.get_running_loop()
 
@@ -134,15 +135,15 @@ class GameClient:
                 f = await asyncio.wait_for(self.frames.get(), timeout=min(1.0, end - loop.time()))
             except asyncio.TimeoutError:
                 continue
-            if f.cmd == 1001:
+            if f.cmd == Cmd.LOGIN:
                 first_1001 = f
                 self.log(f"[unity] got S2C 1001 result={f.result}")
                 break
 
         # 2) 引导帧（petbag_ws / seer-proto 实测顺序）：42494 + 1002(心跳) + 1016(GET_SESSION_KEY, body=u32(2))
-        await self.send(42494, [])
-        await self.send(1002, [])
-        await self.send(1016, [struct.pack(">I", 2)])
+        await self.send(Cmd.BOOTSTRAP, [])
+        await self.send(Cmd.HEARTBEAT, [])
+        await self.send(Cmd.GET_SESSION_KEY, [struct.pack(">I", 2)])
 
         # 3) 会话握手：token 来自 S2C 2002(len>=4) / 1002(len>=4) / 2001(ENTER_MAP, body[4:8])，
         #    在 45963 回传 `[2][1][token]`（否则服务端不推背包/业务数据）。
@@ -153,11 +154,11 @@ class GameClient:
                 f = await asyncio.wait_for(self.frames.get(), timeout=min(1.0, end - loop.time()))
             except asyncio.TimeoutError:
                 continue
-            if f.cmd == 2002 and len(f.body) >= 4:
+            if f.cmd == Cmd.SESSION_TOKEN and len(f.body) >= 4:
                 token = f.body[:4]
-            elif f.cmd == 1002 and len(f.body) >= 4:
+            elif f.cmd == Cmd.HEARTBEAT and len(f.body) >= 4:
                 token = f.body[:4]
-            elif f.cmd == 2001 and len(f.body) >= 8:
+            elif f.cmd == Cmd.ENTER_MAP and len(f.body) >= 8:
                 token = f.body[4:8]
             if token:
                 self.log(f"[unity] got token {token.hex()} via cmd={f.cmd}")
@@ -166,7 +167,7 @@ class GameClient:
         if token:
             self.token = token
             try:
-                await self.send(45963, [struct.pack(">I", 2) + struct.pack(">I", 1) + token])
+                await self.send(Cmd.TOKEN_ECHO, [struct.pack(">I", 2) + struct.pack(">I", 1) + token])
                 self.log("[unity] echo token via 45963")
             except (ConnectionError, asyncio.IncompleteReadError):
                 pass
@@ -195,7 +196,7 @@ class GameClient:
         await self.writer.drain()
         self.log(f"[login] send flash 1001 frame={frame.hex()}")
         try:
-            return await asyncio.wait_for(self._wait_cmd(1001), timeout=timeout)
+            return await asyncio.wait_for(self._wait_cmd(Cmd.LOGIN), timeout=timeout)
         except asyncio.TimeoutError:
             return None
 

@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "赛尔号战斗记录",
+    "description": "在会话里实时展示赛尔号当前战斗：轮询 latest.timeline.jsonl 逐回合刷新血条与出招日志，结束后回退为完整战报与历史记录。",
+    "detail": "docs/DETAIL.md"
+  }
+}

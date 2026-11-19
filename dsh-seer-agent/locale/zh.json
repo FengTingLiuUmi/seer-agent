@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "赛尔号父子 agent",
+    "description": "赛尔号自动化父子 agent 预设：seer-lead 父 agent 调度，seer-stage 子 agent 专注单关打因子。",
+    "detail": "docs/DETAIL.md"
+  }
+}

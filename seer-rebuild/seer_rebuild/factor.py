@@ -24,22 +24,23 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
+from .commands import Cmd
 from .features import FeatureStep, u32
 
-# 因子战斗命令
-PET_CURE_FREE = 47136          # 免费治疗（战前/战后）
-FIGHT_H5_PVE_BOSS = 42396      # 发起 PVE BOSS 战：body=[关卡id][1][1]
-READY_TO_FIGHT = 2404          # 准备战斗：空 body，S2C 回 4B seed
-USE_SKILL = 2405               # 出招：body=[技能id]
-SWITCH_PET = 2407              # 战斗内切换精灵：body=[catch_time]（unity_yz_battle 实证）
-FIGHT_OVER = 2506              # S2C 战斗结束
-FACTOR_ACTION = 41413          # 因子动作/领取：body=[factor_id][action0][action1]
-GET_MULTI_FOREVER = 46046      # 读 forever（进度/次数/失败次数）
-STAGE_LIST = 45543             # 注意：这是「图鉴/收集进度」列表，不是因子关卡表
+# 因子战斗命令（命令号统一在 commands.Cmd 里维护，这里只做可读别名）
+PET_CURE_FREE = Cmd.PET_CURE_FREE          # 免费治疗（战前/战后）
+FIGHT_H5_PVE_BOSS = Cmd.FIGHT_H5_PVE_BOSS   # 发起 PVE BOSS 战：body=[关卡id][1][1]
+READY_TO_FIGHT = Cmd.READY_TO_FIGHT         # 准备战斗：空 body，S2C 回 4B seed
+USE_SKILL = Cmd.USE_SKILL                   # 出招：body=[技能id]
+SWITCH_PET = Cmd.SWITCH_PET                 # 战斗内切换精灵：body=[catch_time]
+FIGHT_OVER = Cmd.FIGHT_OVER                 # S2C 战斗结束
+FACTOR_ACTION = Cmd.FACTOR_ACTION           # 因子动作/领取
+GET_MULTI_FOREVER = Cmd.GET_MULTI_FOREVER   # 读 forever（进度/次数/失败次数）
+STAGE_LIST = Cmd.STAGE_LIST                 # 图鉴/收集进度列表，不是因子关卡表
 
-# 官方 Unity 端「进入因子关 → 开始战斗」的两个命令（unity_mzyx.pcapng 实证）
-FACTOR_ENTER_STAGE = 41284     # 进入因子关：body=[design_id][stage_index]
-FACTOR_START_BATTLE = 41282    # 开始因子战斗：body=[design_id][stage_index]
+# 官方 Unity 端「进入因子关 → 开始战斗」的两个命令
+FACTOR_ENTER_STAGE = Cmd.FACTOR_ENTER_STAGE   # 进入因子关：body=[design_id][difficulty]
+FACTOR_START_BATTLE = Cmd.FACTOR_START_BATTLE # 开始因子战斗：body=[design_id][difficulty]
 
 
 @dataclass(slots=True)

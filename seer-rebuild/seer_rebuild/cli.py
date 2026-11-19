@@ -418,6 +418,7 @@ def cmd_factor(args: argparse.Namespace) -> None:
             boss_id=args.boss_id,
             factor_id=args.factor_id,
             design_id=design_id,
+            difficulty=getattr(args, "difficulty", 1),
             collect_action=tuple(_parse_ids(args.collect_action)) if args.collect_action else (1, 0),
             equip_ids=_parse_ids(args.equip) if args.equip else None,
             title_id=args.title_id,
@@ -434,6 +435,109 @@ def cmd_factor(args: argparse.Namespace) -> None:
         write=args.write,
         turn_wait=args.turn_wait,
         resolve=args.resolve,
+        report_dir=args.report_dir,
+    ):
+        print(line)
+
+
+def cmd_wiki(args: argparse.Namespace) -> None:
+    from . import wiki
+    import json
+
+    def _show(page: dict | None) -> None:
+        if not page:
+            print("(未找到)")
+            return
+        print(f"== {page['path']} ==")
+        meta = page.get("meta") or {}
+        fm = {k: meta[k] for k in ("name", "species", "type", "weak", "multi_life", "factors", "tags", "aliases") if k in meta}
+        print(f"[meta] {json.dumps(fm, ensure_ascii=False)}")
+        print()
+        print(page["body"])
+        print()
+        print("相关：", " ".join(wiki.backlinks_of_page(page["path"])) or "—")
+
+    if args.action == "list":
+        for p in wiki.list_pages(category=args.category):
+            tags = ",".join(map(str, p["tags"] or []))
+            print(f"{p['path']}\tname={p['name']}\tspecies={p['species']}\ttags={tags}")
+        return
+
+    if args.action == "boss":
+        _show(wiki.boss(int(args.value, 0)))
+        return
+
+    if args.action == "read":
+        _show(wiki.read_page(args.value))
+        return
+
+    if args.action == "find":
+        for p in wiki.find(tag=args.tag, type_=args.type_, species=args.species, name=args.name, keyword=args.keyword, category=args.category):
+            print(f"{p['path']}\tname={p['meta'].get('name')}\tspecies={p['meta'].get('species')}")
+        return
+
+    if args.action == "search":
+        for h in wiki.search(args.value):
+            print(f"{h['path']}\tname={h['name']}\n    …{h['snippet']}…")
+        return
+
+    if args.action == "backlink":
+        for rel in wiki.backlinks(args.value):
+            print(rel)
+        return
+
+
+def cmd_yaxue(args: argparse.Namespace) -> None:
+    from .yaxue import Target, resolve_from_species, restore, run
+
+    if args.restore:
+        if not args.account or not args.password:
+            raise SystemExit("--restore 需要 --account / --password（或 SEER_ACCOUNT/SEER_PASSWORD 环境变量）")
+        if args.send:
+            print("⚠️ 真机会顶掉在线账号，不要与官方客户端/雷小伊同时在线；测试请用验证用小号。")
+        for line in restore(args.account, args.password, send=args.send):
+            print(line)
+        return
+
+    catch_times = _parse_ids(args.catch_time) if args.catch_time else []
+    species_ids = _parse_ids(args.species) if args.species else []
+    targets = [Target(catch_time=ct) for ct in catch_times]
+
+    if not catch_times and not species_ids:
+        raise SystemExit("需要 --catch-time 或 --species（至少一种）")
+    needs_creds = bool(args.send) or bool(species_ids)
+    if needs_creds and (not args.account or not args.password):
+        raise SystemExit("--send 或 --species 需要 --account / --password（或 SEER_ACCOUNT/SEER_PASSWORD 环境变量）")
+
+    if species_ids:
+        # 读背包把 species -> 个体（只读登录；同名多只全列出）
+        resolved, warnings = resolve_from_species(
+            args.account, args.password, species_ids, resolve_names=not args.no_resolve
+        )
+        for w in warnings:
+            print(f"[警告] {w}")
+        targets += [t for t in resolved if t.catch_time]
+
+    if not targets:
+        raise SystemExit("没有解析到可压血的目标（species 不在背包 / catch_time 为空）")
+
+    if args.skill:
+        skills = _parse_ids(args.skill)
+        if len(skills) != len(targets):
+            raise SystemExit(f"--skill 数量({len(skills)}) 与目标数量({len(targets)}) 不一致")
+        for t, sk in zip(targets, skills):
+            t.skill = sk
+
+    if args.send:
+        print("⚠️ 真机会顶掉在线账号，不要与官方客户端/雷小伊同时在线；测试请用验证用小号。")
+    for line in run(
+        args.account,
+        args.password,
+        targets,
+        close_auto=not args.keep_auto,
+        recover=args.recover,
+        send=args.send,
+        resolve_names=not args.no_resolve,
     ):
         print(line)
 
@@ -653,14 +757,40 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--clear-reserve", default=None, help="要清除的待命 catch_time，逗号分隔")
     p.add_argument("--factor-id", type=lambda x: int(x, 0), default=None, help="41413 领取的 factor id")
     p.add_argument("--design-id", type=lambda x: int(x, 0), default=None, help="官方端进入因子的 design_id（默认当前因子）")
+    p.add_argument("--difficulty", type=int, default=1, help="41284/41282 难度：1=简单 2=普通 3=困难")
     p.add_argument("--collect-action", default=None, help="41413 的 action0,action1")
     p.add_argument("--equip", default=None, help="更换装备/装扮 id，逗号分隔")
     p.add_argument("--title-id", type=lambda x: int(x, 0), default=None, help="更换称号 id")
     p.add_argument("--turn-wait", type=float, default=2.0, help="出招后等待战斗结束的秒数")
+    p.add_argument("--report-dir", default=None, help="落盘目录：写入 timeline.jsonl（完整帧，供 battle-report 用）")
     p.add_argument("--send", action="store_true", help="实际登录并发包")
     p.add_argument("--write", action="store_true", help="允许发送写命令（默认 dry-run）")
     p.add_argument("--resolve", action="store_true", help="反查 ID 名称（--list 时用）")
     p.set_defaults(func=cmd_factor)
+
+    p = sub.add_parser("wiki", help="llmwiki 知识库检索：list / boss / find / search / backlink / read")
+    p.add_argument("action", choices=["list", "boss", "find", "search", "backlink", "read"])
+    p.add_argument("value", nargs="?", default=None, help="boss:species / read:相对路径 / search:关键词 / backlink:页名")
+    p.add_argument("--category", default=None, help="只列/过滤一级目录，如 bosses、tactics、mechanics、runbooks")
+    p.add_argument("--tag", default=None, help="find：按 tag 过滤")
+    p.add_argument("--type", dest="type_", default=None, help="find：按属性过滤")
+    p.add_argument("--species", type=lambda x: int(x, 0), default=None, help="find：按 species 过滤")
+    p.add_argument("--name", default=None, help="find：按页名过滤")
+    p.add_argument("--keyword", default=None, help="find：正文/名/别名含关键词")
+    p.set_defaults(func=cmd_wiki)
+
+    p = sub.add_parser("yaxue", help="压血：把打手送进白虎试炼打到残血并关自动恢复（默认 dry-run）")
+    p.add_argument("--account", default=None)
+    p.add_argument("--password", default=None)
+    p.add_argument("--catch-time", default=None, help="要压血的个体 catch_time，逗号分隔（0x 前缀十六进制亦可）")
+    p.add_argument("--species", default=None, help="要压血的物种 species_id，逗号分隔（从背包反查个体）")
+    p.add_argument("--skill", default=None, help="每只的 2405 出招技能 id，逗号分隔（与目标数一致；缺省读 2301 首个装备技）")
+    p.add_argument("--recover", action="store_true", help="压血前先 42036 全体回复")
+    p.add_argument("--keep-auto", action="store_true", help="不发送 41228 关自动恢复（默认会关）")
+    p.add_argument("--send", action="store_true", help="实际登录并发包（写操作；默认 dry-run）")
+    p.add_argument("--restore", action="store_true", help="恢复模式：打开自动恢复 + 全体回复（压血后的还原）")
+    p.add_argument("--no-resolve", action="store_true", help="不反查精灵名")
+    p.set_defaults(func=cmd_yaxue)
 
     p = sub.add_parser("battle-report", help="从战斗时间线(jsonl)生成战报")
     p.add_argument("--timeline", required=True, help="时间线 jsonl（每行 dir/cmd/body/result）")
