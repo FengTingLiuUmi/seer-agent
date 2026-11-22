@@ -1,0 +1,9 @@
+﻿seerapi : {"error":"Client error '404 Not Found' for url 'https://api.seerapi.com/v1/factor/155'\nFor more information 
+check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404","status":404,"url":"https://api.seerapi.com/v1/fac
+tor/155"}
+所在位置 行:1 字符: 195
++ ... name,id 2>&1; Write-Output "---"; seerapi get factor 155 2>&1 | Out-F ...
++                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ({"error":"Clien...v1/factor/155"}:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

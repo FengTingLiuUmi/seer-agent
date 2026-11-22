@@ -1,0 +1,13 @@
+- insert:
+    - id: seer-kb-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: seer
+        transport: stdio
+        command: 'F:\python\py310\python.exe'
+        args:
+          - 'C:\Users\kmdbn\Documents\deepseek-harness\default-workspace\seer\seer-factor-kb\ontology\seer_kb_mcp.py'
+        env:
+          PYTHONPATH: 'C:\Users\kmdbn\Documents\deepseek-harness\default-workspace\seer\seer-factor-kb\.pylibs'
+          PYTHONUTF8: '1'
+        failOnStartupError: true

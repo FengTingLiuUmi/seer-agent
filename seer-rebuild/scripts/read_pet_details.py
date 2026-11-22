@@ -1,46 +1,84 @@
-"""只读：一次登录读多只精灵的 2301 详情（level / 能力 / 装备技能）。"""
-import asyncio
-import struct
-import sys
+"""读关键打手个体的 2301 详情（等级 + 装备技能），供组队用。只读。"""
+import asyncio, json, os, struct, sys, io
+from pathlib import Path
 
-sys.path.insert(0, r"C:\Users\kmdbn\Documents\deepseek-harness\default-workspace\seer\seer-rebuild")
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+os.environ["PYTHONIOENCODING"] = "utf-8"
 
-from seer_rebuild.client import GameClient
-from seer_rebuild.login import authenticate, get_unity_gateway
+from seer_rebuild.connection import open_unity
 from seer_rebuild.pet_details import parse_2301
 
 
-async def main(account: str, password: str, catch_times: list[int]) -> None:
-    sess = authenticate(account, password)
-    host, port = get_unity_gateway()
-    sess.host, sess.port, sess.path, sess.mode = host, port, "/", "unity"
-    c = GameClient(sess, mode="unity")
-    await c.connect(timeout=20.0)
+def vault(name):
+    import subprocess
+    p = subprocess.run(["node", os.path.join(os.environ["DSH_PROFILE_DIR"], "node_modules",
+                                             "dsh-credential-vault", "vaultctl.mjs"), "show", name],
+                       capture_output=True)
+    return json.loads(p.stdout.decode("utf-8", "replace"))
+
+
+def local_names():
+    names_sp = {}
+    names_sk = {}
+    try:
+        from seer_rebuild.battle_data import BattleData
+        bd = BattleData(r"F:\seer\seer_cfg\json")
+        names_sp = {sp: s.name for sp, s in bd.species.items()}
+        names_sk = {sid: m.name for sid, m in bd.moves.items()}
+    except Exception:
+        pass
+    return names_sp, names_sk
+
+
+TARGETS = [
+    ("帝皇之御", 0x62D8B735),
+    ("帝皇之御", 0x63EE3591),
+    ("帝皇之御", 0x602211AE),
+    ("六界神王", 0x62EF6F18),
+    ("六界帝神", 0x602FE200),
+    ("时空界皇", 0x5FFD1DD6),
+    ("希瓦", 0x6A197A40),
+    ("蒂朵", 0x62AF4FD3),
+    ("圣灵谱尼", 0x57C55A7F),
+    ("月照星魂", 0x60312CB4),
+    ("弑序神罗", 0x5FF913DE),
+    ("魔钰", 0x640CB1EA),
+    ("艾欧丽娅", 0x5FF9227D),
+    ("王之哈莫", 0x57B67917),
+]
+
+
+async def main():
+    cred = vault("赛尔号测试账号")
+    u, s = str(cred["username"]), cred["secret"]
+    names_sp, names_sk = local_names()
+    c = await open_unity(u, s, timeout=25.0)
     loop = asyncio.get_running_loop()
 
-    for ct in catch_times:
+    for label, ct in TARGETS:
         await c.send(2301, [struct.pack(">I", ct & 0xFFFFFFFF)])
-        detail = None
+        body = b""
         end = loop.time() + 6.0
         while loop.time() < end:
             try:
                 f = await asyncio.wait_for(c.frames.get(), timeout=0.8)
             except asyncio.TimeoutError:
                 continue
-            if f.cmd == 2301:
-                detail = parse_2301(f.body)
+            if f.cmd == 2301 and len(f.body) >= 0x80:
+                body = f.body
                 break
-        if detail is None:
-            print(f"catch={ct} (0x{ct:08x}): 无响应")
-        else:
-            print(f"catch={ct} (0x{ct:08x}) species={detail.species_id} level={detail.level} "
-                  f"HP={detail.max_hp}/{detail.cur_hp} 物攻={detail.atk} 物防={detail.def_} "
-                  f"特攻={detail.sp_atk} 特防={detail.sp_def} 速={detail.spd} 技能={detail.skills}")
+        if not body:
+            print(f"{label} ct=0x{ct:08X}: (无 2301 回包)")
+            continue
+        d = parse_2301(body)
+        sk = ", ".join(f"{sid}({names_sk.get(sid, '?')})" for sid in d.skills)
+        sp_name = names_sp.get(d.species_id, d.species_id)
+        print(f"{label} ct=0x{ct:08X}: species={d.species_id}({sp_name}) lv={d.level} "
+              f"HP={d.cur_hp}/{d.max_hp} 物攻={d.atk} 特攻={d.sp_atk} 速度={d.spd} 技能={sk}")
     await c.close()
 
 
 if __name__ == "__main__":
-    acct = sys.argv[1]
-    pw = sys.argv[2]
-    cts = [int(x, 0) for x in sys.argv[3:]]
-    asyncio.run(main(acct, pw, cts))
+    asyncio.run(main())

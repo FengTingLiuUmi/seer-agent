@@ -1,4 +1,4 @@
-"""命令行入口：登录、模拟战斗、日常、观测。"""
+"""命令行入口：登录、日常、观测。"""
 from __future__ import annotations
 
 import argparse
@@ -13,8 +13,7 @@ from .captures import summarize as summarize_capture
 from .features import CAPTURE_EQUIP, CAPTURE_FACTOR, FeatureStep, format_steps, readable_steps
 from .provider import SeerApiProvider
 from .probe import probe_credentials
-from .battle import Battle, simulate
-from .battle_data import BattleData, BossTrait
+from .battle_data import BattleData
 from .cjc import BattlePlan
 from .client import GameClient
 from .daily import (
@@ -82,48 +81,6 @@ async def _connect_and_report(sess: LoginSession, args: argparse.Namespace) -> N
             _print({"cmd": f.cmd, "result": f.result, "len": len(f.body), "body": f.body[:64].hex()})
     finally:
         await c.close()
-
-
-def cmd_simulate(args: argparse.Namespace) -> None:
-    data = BattleData(args.data_root)
-    plan = BattlePlan.load(args.plan) if args.plan else None
-    players = [data.make_pet(int(x), side="player") for x in args.player.split(",")]
-    enemies = [data.make_pet(int(x), side="enemy") for x in args.enemy.split(",")]
-    traits: list[BossTrait] = []
-    if args.boss_effect:
-        for item in args.boss_effect.split(";"):
-            if not item.strip():
-                continue
-            parts = item.split(":")
-            bid = int(parts[0])
-            targs = [int(x) for x in parts[1].split()] if len(parts) > 1 and parts[1].strip() else []
-            text = parts[2] if len(parts) > 2 else ""
-            traits.append(BossTrait(bid, targs, text))
-    result = simulate(
-        args.data_root,
-        player_ids=[p.species.id for p in players],
-        enemy_ids=[e.species.id for e in enemies],
-        plan_path=args.plan,
-        moves=_parse_moves(args.moves),
-        boss_traits=traits,
-        seed=args.seed,
-        max_turns=args.max_turns,
-    )
-    print("\n".join(result.log_lines))
-    if args.out:
-        result.write_log(args.out)
-
-
-def _parse_moves(text: str | None) -> dict[int, int] | None:
-    if not text:
-        return None
-    out: dict[int, int] = {}
-    for part in text.split(","):
-        if not part.strip():
-            continue
-        k, v = part.split(":")
-        out[int(k)] = int(v)
-    return out
 
 
 def cmd_parse_cjc(args: argparse.Namespace) -> None:
@@ -219,8 +176,30 @@ def cmd_capture_summary(args: argparse.Namespace) -> None:
 
 
 def cmd_seer_query(args: argparse.Namespace) -> None:
-    p = SeerApiProvider(scheme=args.scheme, hostname=args.hostname)
     fields = [x for x in (args.fields or "").split(",") if x]
+
+    # pet 名/ID 消歧 → 本体（seer-all.owl），不再走 seerapi / BattleData 名反查。
+    if args.resource in ("pet", "精灵"):
+        from .ontology import pet_lookup
+        q = args.name or args.id_or_name
+        if q is None:
+            raise SystemExit("pet 查询需要给 id 或 --name <名称>")
+        r = pet_lookup(str(q))
+        if r is not None:
+            if r["matches"]:
+                _print(r)
+                return
+            # 本体无精确匹配：数字 id 降级 seerapi 查未建模精灵；名称不做子串（避免误配）
+            if str(q).strip().isdigit():
+                p = SeerApiProvider(scheme=args.scheme, hostname=args.hostname)
+                _print(p.get("pet", int(str(q).strip()), fields=fields or None))
+            else:
+                r["note"] = "本体无精确匹配（不做子串，避免『伊芙→伊芙莉莎』这类误配）；请换精确名。"
+                _print(r)
+            return
+        # 本体不可用 → 降级 seerapi（并标注）
+
+    p = SeerApiProvider(scheme=args.scheme, hostname=args.hostname)
     if args.name:
         if args.id_or_name is not None:
             raise SystemExit("--name 与按 id 查询不能同时用；name 参数直接给子串")
@@ -245,44 +224,6 @@ def cmd_inventory(args: argparse.Namespace) -> None:
     if provider:
         snap = resolve(snap, provider)
     InventoryWindow(snap).run()
-
-
-def cmd_battle_window(args: argparse.Namespace) -> None:
-    from .battle_window import BattleWindow, ReplayModel
-
-    if args.replay:
-        record = parse_battle_record(args.replay)
-        model = ReplayModel.from_record(record, title=Path(args.replay).stem)
-    else:
-        if not (args.player and args.enemy):
-            raise SystemExit("模拟模式需要 --player 和 --enemy；只看记录请用 --replay")
-        data = BattleData(args.data_root)
-        plan = BattlePlan.load(args.plan) if args.plan else None
-        players = [data.make_pet(int(x), side="player") for x in args.player.split(",")]
-        enemies = [data.make_pet(int(x), side="enemy") for x in args.enemy.split(",")]
-        traits = _parse_boss_effects(args.boss_effect)
-        result = Battle(
-            data, players, enemies, plan=plan, boss_traits=traits, seed=args.seed
-        ).run(max_turns=args.max_turns)
-        model = ReplayModel.from_result(result, title="本地战斗")
-
-    win = BattleWindow(model, interval_ms=args.interval, auto_play=not args.no_auto_play)
-    win.run()
-
-
-def _parse_boss_effects(text: str | None) -> list[BossTrait]:
-    traits: list[BossTrait] = []
-    if not text:
-        return traits
-    for item in text.split(";"):
-        if not item.strip():
-            continue
-        parts = item.split(":")
-        bid = int(parts[0])
-        targs = [int(x) for x in parts[1].split()] if len(parts) > 1 and parts[1].strip() else []
-        desc = parts[2] if len(parts) > 2 else ""
-        traits.append(BossTrait(bid, targs, desc))
-    return traits
 
 
 def cmd_probe(args: argparse.Namespace) -> None:
@@ -359,8 +300,47 @@ def cmd_warehouse(args: argparse.Namespace) -> None:
     _print(result)
 
 
+def cmd_roster_dump(args: argparse.Namespace) -> None:
+    from .roster import read_roster
+
+    rows = read_roster(args.account, args.password)
+    lines = [
+        json.dumps(
+            {"uid": str(args.account), "kind": "pet",
+             "species_id": r["species_id"], "catch_time": r["catch_time"],
+             "location": r["location"], "level": r.get("level")},
+            ensure_ascii=False, separators=(",", ":"),
+        )
+        for r in rows
+    ]
+    if args.out:
+        Path(args.out).parent.mkdir(parents=True, exist_ok=True)
+        Path(args.out).write_text("\n".join(lines) + "\n", encoding="utf-8")
+        print(f"[roster-dump] {len(rows)} 只 -> {args.out}")
+    else:
+        print("\n".join(lines))
+
+
+def cmd_flame(args: argparse.Namespace) -> None:
+    from .flame import claim_flame, read_flame_state
+
+    if args.action == "status":
+        _print(read_flame_state(args.account, args.password))
+    elif args.action == "claim":
+        if not args.send:
+            print(f"[dry-run] 领火 47348 via={args.via} flame={args.flame}（加 --send 才真正发包）")
+            return
+        _print(claim_flame(args.account, args.password, args.flame, args.via))
+
+
 def _parse_ids(text: str) -> list[int]:
     return [int(x, 0) for x in text.split(",") if x.strip()]
+
+
+def cmd_pet_level(args: argparse.Namespace) -> None:
+    from .roster import read_levels
+
+    _print({"levels": read_levels(args.account, args.password, _parse_ids(args.catch_time))})
 
 
 def cmd_team(args: argparse.Namespace) -> None:
@@ -383,32 +363,27 @@ def cmd_team(args: argparse.Namespace) -> None:
 
 
 def cmd_factor(args: argparse.Namespace) -> None:
-    from .factor import DEFAULT_LINEUP, spec_for
     from .factor_runner import FactorStagePlan, read_state, run
 
-    spec = spec_for(design_id=args.design_id, factor_id=args.factor_id)
-    design_id = args.design_id if args.design_id is not None else spec.design_id
-    stages = [
-        {"index": i + 1, "boss_species": b, "boss_name": spec.boss_name(b)}
-        for i, b in enumerate(spec.bosses)
-    ]
-
     if args.list:
-        _print(read_state(args.account, args.password, resolve=args.resolve, factor_id=args.factor_id))
+        if args.design_id is None and args.factor_id is None:
+            raise SystemExit("--list 需要 --design-id 或 --factor-id（不再有默认当前因子）")
+        _print(read_state(args.account, args.password, resolve=args.resolve,
+                          factor_id=args.factor_id, design_id=args.design_id))
         return
 
+    if args.design_id is None:
+        raise SystemExit("需要 --design-id（官方端 41284/41282 进入因子关；不再有默认当前因子）")
+
     if args.stage is None and not args.all:
-        raise SystemExit("需要 --stage N 或 --all；先用 --list 看当前进度")
+        raise SystemExit("需要 --stage N 或 --all；先用 --list --design-id <id> 看当前进度")
 
     def _plan(idx: int) -> FactorStagePlan:
-        st = stages[idx - 1]
-        species = st["boss_species"]
-        lineup = _parse_ids(args.lineup) if args.lineup else list(DEFAULT_LINEUP.get(species, ([], {}))[0])
         return FactorStagePlan(
             stage_index=idx,
-            boss_species=species,
-            boss_name=st["boss_name"],
-            lineup=lineup,
+            boss_species=args.boss_species,
+            boss_name="",
+            lineup=_parse_ids(args.lineup) if args.lineup else [],
             reserve=_parse_ids(args.reserve) if args.reserve else [],
             skills={},
             battle_skills=_parse_ids(args.skill) if args.skill else [],
@@ -417,7 +392,7 @@ def cmd_factor(args: argparse.Namespace) -> None:
             reserve_catch=_parse_ids(args.reserve_catch) if args.reserve_catch else [],
             boss_id=args.boss_id,
             factor_id=args.factor_id,
-            design_id=design_id,
+            design_id=args.design_id,
             difficulty=getattr(args, "difficulty", 1),
             collect_action=tuple(_parse_ids(args.collect_action)) if args.collect_action else (1, 0),
             equip_ids=_parse_ids(args.equip) if args.equip else None,
@@ -425,7 +400,8 @@ def cmd_factor(args: argparse.Namespace) -> None:
             clear_reserve=_parse_ids(args.clear_reserve) if args.clear_reserve else [],
         )
 
-    indices = [args.stage] if args.stage else list(range(1, len(stages) + 1))
+    # 每个因子固定 5 关；官方端第几关由服务端按账号进度自动推进。
+    indices = [args.stage] if args.stage else list(range(1, 6))
     plans = [_plan(i) for i in indices]
     for line in run(
         args.account,
@@ -612,18 +588,6 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--keep", type=float, default=3.0)
     p.set_defaults(func=cmd_login)
 
-    p = sub.add_parser("simulate", help="本地战斗模拟")
-    p.add_argument("--data-root", default=r"F:\seer\seer_cfg\json")
-    p.add_argument("--player", required=True, help="我方精灵 ID，逗号分隔")
-    p.add_argument("--enemy", required=True, help="对方精灵 ID，逗号分隔")
-    p.add_argument("--plan", default=None, help=".cjc 对战方案")
-    p.add_argument("--moves", default=None, help="固定出招预设，如 3512:31505,3045:19314,3463:31252")
-    p.add_argument("--boss-effect", default="", help="id:args:text;...")
-    p.add_argument("--seed", type=int, default=20260909)
-    p.add_argument("--max-turns", type=int, default=50)
-    p.add_argument("--out", default=None)
-    p.set_defaults(func=cmd_simulate)
-
     p = sub.add_parser("parse-cjc", help="解析 .cjc 对战方案")
     p.add_argument("path")
     p.set_defaults(func=cmd_parse_cjc)
@@ -658,7 +622,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--battle", default=None, help="出招记录 TXT")
     p.set_defaults(func=cmd_app_log)
 
-    p = sub.add_parser("seer-query", help="用 seerapi 查询在线游戏数据")
+    p = sub.add_parser("seer-query", help="按资源查询：pet 走本体(名/ID 消歧)，item/equip/skill 等走 seerapi")
     p.add_argument("resource")
     p.add_argument("id_or_name", nargs="?", default=None)
     p.add_argument("--name", default=None, help="按名称子串搜索列表")
@@ -686,19 +650,6 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--password", default=None)
     p.add_argument("--resolve", action="store_true", help="用 SeerAPI 反查名称")
     p.set_defaults(func=cmd_inventory)
-
-    p = sub.add_parser("battle-window", help="打开逐回合战斗窗口（模拟或回放真实出招记录）")
-    p.add_argument("--player", default=None, help="我方精灵 ID，逗号分隔")
-    p.add_argument("--enemy", default=None, help="对方精灵 ID，逗号分隔")
-    p.add_argument("--plan", default=None, help=".cjc 对战方案")
-    p.add_argument("--boss-effect", default="", help="id:args:text;...")
-    p.add_argument("--replay", default=None, help="回放 2.0.9 出招记录 txt")
-    p.add_argument("--data-root", default=r"F:\seer\seer_cfg\json")
-    p.add_argument("--seed", type=int, default=20260909)
-    p.add_argument("--max-turns", type=int, default=50)
-    p.add_argument("--interval", type=int, default=900, help="每回合毫秒数")
-    p.add_argument("--no-auto-play", action="store_true", help="打开后停在第 1 回合")
-    p.set_defaults(func=cmd_battle_window)
 
     p = sub.add_parser("feature", help="精灵背包/装备 或 精灵因子 的已抓包命令序列")
     p.add_argument("--seq", choices=["equip", "factor"], required=True)
@@ -731,6 +682,27 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--no-resolve", action="store_true", help="list/add：不反查精灵名")
     p.set_defaults(func=cmd_warehouse)
 
+    p = sub.add_parser("roster-dump", help="只读导出玩家全部精灵个体（43706+2361+2303，统一 JSONL 契约）")
+    p.add_argument("--account", default=None)
+    p.add_argument("--password", default=None)
+    p.add_argument("--out", default=None, help="输出 UTF-8 JSONL 文件路径（否则打印到 stdout）")
+    p.set_defaults(func=cmd_roster_dump)
+
+    p = sub.add_parser("flame", help="战斗火焰：读状态 / 领火（绿火6 蓝火7）")
+    p.add_argument("action", choices=["status", "claim"])
+    p.add_argument("--account", default=None)
+    p.add_argument("--password", default=None)
+    p.add_argument("--flame", type=lambda x: int(x, 0), default=6, help="火焰 id：6=绿火 7=蓝火")
+    p.add_argument("--via", type=int, default=2, help="领取方式：1=VIP每日免费 2=友谊之星")
+    p.add_argument("--send", action="store_true", help="claim：实际发包领火（默认 dry-run）")
+    p.set_defaults(func=cmd_flame)
+
+    p = sub.add_parser("pet-level", help="只读：按 catch_time 读个体等级(2301)，组队前选满级用")
+    p.add_argument("--account", default=None)
+    p.add_argument("--password", default=None)
+    p.add_argument("--catch-time", required=True, help="个体 catch_time，逗号分隔")
+    p.set_defaults(func=cmd_pet_level)
+
     p = sub.add_parser("team", help="统一阵容/装备调整（默认 dry-run）")
     p.add_argument("action", choices=["move", "equip", "title", "starter", "demote"])
     p.add_argument("--account", default=None)
@@ -749,6 +721,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--stage", type=int, default=None, help="目标第 N 关（1 基）")
     p.add_argument("--all", action="store_true", help="打全部 5 关")
     p.add_argument("--boss-id", type=lambda x: int(x, 0), default=None, help="42396 的关卡 id（发起 BOSS 战）")
+    p.add_argument("--boss-species", type=lambda x: int(x, 0), default=None, help="本关 BOSS species（展示/技能映射；官方端由服务端按进度自动推进）")
     p.add_argument("--skill", default=None, help="出招技能 id 序列，逗号分隔（由主 agent 提供，按回合顺序）")
     p.add_argument("--switch", default=None, help="出招间切换精灵的 catch_time 序列，逗号分隔（2407，比 --skill 少一个）")
     p.add_argument("--lineup", default=None, help="正式精灵 species，逗号分隔（技能映射/展示）")
@@ -757,8 +730,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--reserve-catch", default=None, help="待命精灵 catch_time，逗号分隔（2304 加待命）")
     p.add_argument("--clear-reserve", default=None, help="要清除的待命 catch_time，逗号分隔")
     p.add_argument("--factor-id", type=lambda x: int(x, 0), default=None, help="41413 领取的 factor id")
-    p.add_argument("--design-id", type=lambda x: int(x, 0), default=None, help="官方端进入因子的 design_id（默认当前因子）")
-    p.add_argument("--difficulty", type=int, default=1, help="41284/41282 难度：1=简单 2=普通 3=困难")
+    p.add_argument("--design-id", type=lambda x: int(x, 0), default=None, help="官方端进入因子的 design_id（41284/41282；必填）")
+    p.add_argument("--difficulty", type=str, default="1", help="41284/41282 难度：1/简单/easy 2/困难/normal 3/地狱/hard")
     p.add_argument("--collect-action", default=None, help="41413 的 action0,action1")
     p.add_argument("--equip", default=None, help="更换装备/装扮 id，逗号分隔")
     p.add_argument("--title-id", type=lambda x: int(x, 0), default=None, help="更换称号 id")

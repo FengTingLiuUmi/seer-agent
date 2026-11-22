@@ -1,0 +1,170 @@
+{
+ "doc_id": "帕诺·绿光武装#地狱",
+ "factor": "帕诺·绿光武装",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 82,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "机械",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 300固伤; 攻击命中清空2项技能PP; 消强; 减伤16.7%",
+   "mech": [
+    "clearPP",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐自爆+特攻强攻 / 卡莎单挑 / 漆黑套典韦·吕布秒杀 / 西斯里巫祝祈愿符(第五)秒杀"
+   ],
+   "pets": [
+    "帝皇之御",
+    "卡莎",
+    "典韦",
+    "吕布",
+    "西斯里"
+   ],
+   "why": "Boss 必先+封属、攻击命中还清空2项技能PP且消强，既拖不起也叠不了强化；表姐「守御八方」是攻击技、不吃封属，自爆给后手必先+必暴（伪必中，且给的必先必暴不是自身强化、不怕消强），接特攻强攻手秒杀机械系，从而避开清PP和持续300固伤。卡莎单挑是另一条不靠自身强化的站场磨法。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4648,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "水",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 300固伤; 100%闪避; 消强; 减伤16.7%; 回血; 月亮",
+   "mech": [
+    "dodge",
+    "heal",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "自爆+必中强攻手 / 卡裸伤希可洛单挑 / 卡裸伤千裳单挑 / 圣谕之风·岚第五"
+   ],
+   "pets": [
+    "帝皇之御",
+    "希可洛",
+    "千裳",
+    "圣谕之风·岚"
+   ],
+   "why": "Boss 的100%闪避属高闪避，表姐自爆的必暴本质是伪必中、直接覆盖闪避命中，不必强求真·必中；封属同样用表姐攻击技起手再接强攻手。回血+月亮(吸血)需要禁疗/控血或速杀，卡裸伤希可洛/千裳则是卡裸伤站场磨、不靠自身强化绕开消强的思路。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4649,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "火",
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 500固伤; 必暴; 消强; 月亮; 减伤33.3%; 单精灵对战",
+   "mech": [
+    "singlePet",
+    "heal",
+    "clearBuff",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "紫火瀚宇星皇漆黑套秒杀 / 月华单挑(星皇+桃园+元神+蓝火)"
+   ],
+   "pets": [
+    "瀚宇星皇",
+    "月华"
+   ],
+   "why": "Boss 会必暴(刀刀暴击)且带月亮回血、封属，不能拖，思路是抢在它连续暴击和回血前靠增伤先手高伤秒杀，瀚宇星皇走这条速杀。月华单挑则是搭星皇+桃园+元神+蓝火提供减伤/免异常与回血，站场把 Boss 的必暴和月亮慢慢磨掉。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4647,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "草",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 500固伤; 偷强; 随机弱化; 两命复活全属性+1; 护盾; 月亮; 减伤33.3%",
+   "mech": [
+    "shield",
+    "twoLife",
+    "heal",
+    "selfBuff",
+    "debuff",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "送5钢牙鲨弹伤+时空界皇补刀 / 星光鲁斯王克制打一命+无为觉者弹伤+补刀"
+   ],
+   "pets": [
+    "钢牙鲨",
+    "时空界皇",
+    "星光·鲁斯王",
+    "无为觉者"
+   ],
+   "why": "Boss 两命复活全属性+1、偷强、带护盾且减伤33.3%，硬打红伤会越磨越亏；攻略用弹伤(钢牙鲨/星光鲁斯王/无为觉者送死反弹)先打掉一命，再由补刀手(时空界皇)收割复活后的第二命，靠反弹越过两命并规避偷强与护盾。随机弱化用解弱化/金火兜底。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4686,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "草机械",
+   "boss_hp": 20000,
+   "traits": "必先; 封属; 500固伤; 偷强; 体力<1500回满; 免疫并吸收克制系伤害; 减伤33.3%",
+   "mech": [
+    "heal",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "4波克尔送死+星光魔焰猩猩+星光鲁斯王克制 / 卡裸伤圣灵谱尼单挑+深渊狱神哈迪斯补刀"
+   ],
+   "pets": [
+    "波克尔",
+    "星光·魔焰猩猩",
+    "星光·鲁斯王",
+    "圣灵谱尼",
+    "深渊狱神哈迪斯"
+   ],
+   "why": "Boss 免疫并吸收克制系伤害，用克制草机械的属性(如火)会被吸走输出，所以攻略不靠克制硬打，改卡裸伤圣灵谱尼站场磨，同时绕开减伤33.3%；又因体力<1500会回满、还偷强，先用波克尔送死压血线再补刀，避免它无限回满并把我方强化偷去。"
+  }
+ ],
+ "tids": [
+  2532,
+  2563,
+  2534,
+  2536,
+  2537,
+  2539,
+  2544,
+  2549
+ ],
+ "note": "无正文数据"
+}

@@ -45,14 +45,34 @@ def _make_id(report: dict) -> str:
 
 
 def _summary(report: dict) -> dict:
-    head = report.get("title") or report.get("factor_name") or "战斗"
-    winner = report.get("winner") or report.get("result") or ""
+    result = report.get("result") or {}
+    factor = report.get("factor_name", "") or ""
+    stage = report.get("stage_index")
+
+    # winner 抽成纯字符串。历史脏数据会整包塞 result 对象、以及“战败也标胜利”的旧值，
+    # 所以以 result.passed / result.over 为准推导；只有极老格式（顶层 winner 字符串且无 result）才直接采用。
+    top = report.get("winner")
+    if isinstance(top, str) and not result:
+        winner = top
+    else:
+        passed = bool(result.get("passed"))
+        over = bool(result.get("over"))
+        # 旧 bug 会把 42390 误判成 passed=true（敌血还是满的也没死），
+        # 过关必须敌方结算后 0 血；这里做一次兜底纠偏。
+        enemy_hp = result.get("enemy_hp")
+        if passed and enemy_hp is not None and enemy_hp != 0:
+            passed = False
+        winner = "胜利" if passed else ("未结束" if not over else "未过关")
+
+    # 标题：优先因子名（前端另外会显示「第N关」，这里不再重复塞关卡号）
+    head = factor or report.get("title") or "战斗"
+
     return {
         "id": _make_id(report),
         "ts": report.get("started_at") or report.get("time") or int(time.time()),
-        "factor_name": report.get("factor_name", ""),
+        "factor_name": factor,
         "design_id": report.get("design_id"),
-        "stage": report.get("stage_index"),
+        "stage": stage,
         "winner": winner,
         "title": head,
     }

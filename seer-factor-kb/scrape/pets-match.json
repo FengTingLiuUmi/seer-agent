@@ -1,0 +1,1851 @@
+{
+ "matched": {
+  "DS001": {
+   "id": 4797,
+   "name": "极渊DS-001",
+   "type": {
+    "id": 75,
+    "url": "https://api.seerapi.com/v1/element_type_combination/75"
+   }
+  },
+  "万人敌张飞": {
+   "id": 2530,
+   "name": "万人敌张飞",
+   "type": {
+    "id": 47,
+    "url": "https://api.seerapi.com/v1/element_type_combination/47"
+   }
+  },
+  "万兽之尊猛虎王": {
+   "id": 3676,
+   "name": "万兽之尊·猛虎王",
+   "type": {
+    "id": 7,
+    "url": "https://api.seerapi.com/v1/element_type_combination/7"
+   }
+  },
+  "万兽至尊·猛虎王": {
+   "id": 299,
+   "name": "猛虎王",
+   "type": {
+    "id": 7,
+    "url": "https://api.seerapi.com/v1/element_type_combination/7"
+   }
+  },
+  "万魔尊": {
+   "id": 2468,
+   "name": "万魔天尊",
+   "type": {
+    "id": 19,
+    "url": "https://api.seerapi.com/v1/element_type_combination/19"
+   }
+  },
+  "上古战魔": {
+   "id": 2797,
+   "name": "上古战魔",
+   "type": {
+    "id": 41,
+    "url": "https://api.seerapi.com/v1/element_type_combination/41"
+   }
+  },
+  "丽娜菲": {
+   "id": 3942,
+   "name": "丽娜菲",
+   "type": {
+    "id": 2,
+    "url": "https://api.seerapi.com/v1/element_type_combination/2"
+   }
+  },
+  "乌瑞亚": {
+   "id": 2327,
+   "name": "瑞亚",
+   "type": {
+    "id": 12,
+    "url": "https://api.seerapi.com/v1/element_type_combination/12"
+   }
+  },
+  "乌瑞娅": {
+   "id": 3763,
+   "name": "乌瑞娅",
+   "type": {
+    "id": 109,
+    "url": "https://api.seerapi.com/v1/element_type_combination/109"
+   }
+  },
+  "乐普斯": {
+   "id": 4456,
+   "name": "天兔·乐普斯",
+   "type": {
+    "id": 54,
+    "url": "https://api.seerapi.com/v1/element_type_combination/54"
+   }
+  },
+  "仙凤托鲁克": {
+   "id": 865,
+   "name": "托鲁克",
+   "type": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/element_type_combination/4"
+   }
+  },
+  "仙女龙": {
+   "id": 2973,
+   "name": "仙女龙",
+   "type": {
+    "id": 83,
+    "url": "https://api.seerapi.com/v1/element_type_combination/83"
+   }
+  },
+  "仿生兽·库比": {
+   "id": 4658,
+   "name": "仿生兽·库比",
+   "type": {
+    "id": 114,
+    "url": "https://api.seerapi.com/v1/element_type_combination/114"
+   }
+  },
+  "仿生兽库比": {
+   "id": 4658,
+   "name": "仿生兽·库比",
+   "type": {
+    "id": 114,
+    "url": "https://api.seerapi.com/v1/element_type_combination/114"
+   }
+  },
+  "伊塔": {
+   "id": 4699,
+   "name": "伊塔",
+   "type": {
+    "id": 6,
+    "url": "https://api.seerapi.com/v1/element_type_combination/6"
+   }
+  },
+  "伊塔吉雅": {
+   "id": 4342,
+   "name": "伊塔吉雅",
+   "type": {
+    "id": 6,
+    "url": "https://api.seerapi.com/v1/element_type_combination/6"
+   }
+  },
+  "伊诺尔顿": {
+   "id": 2509,
+   "name": "诺伊尔顿",
+   "type": {
+    "id": 13,
+    "url": "https://api.seerapi.com/v1/element_type_combination/13"
+   }
+  },
+  "伏尔格安": {
+   "id": 4625,
+   "name": "伏尔格安",
+   "type": {
+    "id": 107,
+    "url": "https://api.seerapi.com/v1/element_type_combination/107"
+   }
+  },
+  "伽尔": {
+   "id": 3366,
+   "name": "伽尔",
+   "type": {
+    "id": 69,
+    "url": "https://api.seerapi.com/v1/element_type_combination/69"
+   }
+  },
+  "佩里德": {
+   "id": 4634,
+   "name": "佩里德",
+   "type": {
+    "id": 56,
+    "url": "https://api.seerapi.com/v1/element_type_combination/56"
+   }
+  },
+  "克劳蒂雅": {
+   "id": 3267,
+   "name": "克劳蒂雅",
+   "type": {
+    "id": 41,
+    "url": "https://api.seerapi.com/v1/element_type_combination/41"
+   }
+  },
+  "克鲁斯": {
+   "id": 1521,
+   "name": "克鲁斯",
+   "type": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/element_type_combination/4"
+   }
+  },
+  "兔兔仙子": {
+   "id": 3963,
+   "name": "兔兔仙子",
+   "type": {
+    "id": 112,
+    "url": "https://api.seerapi.com/v1/element_type_combination/112"
+   }
+  },
+  "八岐大蛇": {
+   "id": 3814,
+   "name": "八岐大蛇",
+   "type": {
+    "id": 62,
+    "url": "https://api.seerapi.com/v1/element_type_combination/62"
+   }
+  },
+  "公爵": {
+   "id": 3813,
+   "name": "哀伤公爵·阿洛希尔",
+   "type": {
+    "id": 111,
+    "url": "https://api.seerapi.com/v1/element_type_combination/111"
+   }
+  },
+  "冥王断空破": {
+   "id": 2491,
+   "name": "冥王·断空",
+   "type": {
+    "id": 31,
+    "url": "https://api.seerapi.com/v1/element_type_combination/31"
+   }
+  },
+  "凡尔斯": {
+   "id": 2988,
+   "name": "凡尔斯",
+   "type": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/element_type_combination/4"
+   }
+  },
+  "刘备": {
+   "id": 2512,
+   "name": "昭烈帝刘备",
+   "type": {
+    "id": 10,
+    "url": "https://api.seerapi.com/v1/element_type_combination/10"
+   }
+  },
+  "利刃之主": {
+   "id": 2947,
+   "name": "利刃之主鲁斯王",
+   "type": {
+    "id": 2,
+    "url": "https://api.seerapi.com/v1/element_type_combination/2"
+   }
+  },
+  "利塞特": {
+   "id": 4665,
+   "name": "重塑之子·利塞特",
+   "type": {
+    "id": 69,
+    "url": "https://api.seerapi.com/v1/element_type_combination/69"
+   }
+  },
+  "利赛特": {
+   "id": 897,
+   "name": "赛特",
+   "type": {
+    "id": 6,
+    "url": "https://api.seerapi.com/v1/element_type_combination/6"
+   }
+  },
+  "华光之翼·杰洛恩": {
+   "id": 4697,
+   "name": "华光之翼·杰洛恩",
+   "type": {
+    "id": 31,
+    "url": "https://api.seerapi.com/v1/element_type_combination/31"
+   }
+  },
+  "南十字": {
+   "id": 4575,
+   "name": "南十字·克鲁斯",
+   "type": {
+    "id": 76,
+    "url": "https://api.seerapi.com/v1/element_type_combination/76"
+   }
+  },
+  "南十字·克鲁斯": {
+   "id": 4575,
+   "name": "南十字·克鲁斯",
+   "type": {
+    "id": 76,
+    "url": "https://api.seerapi.com/v1/element_type_combination/76"
+   }
+  },
+  "南十字克鲁斯": {
+   "id": 4575,
+   "name": "南十字·克鲁斯",
+   "type": {
+    "id": 76,
+    "url": "https://api.seerapi.com/v1/element_type_combination/76"
+   }
+  },
+  "启灵原神": {
+   "id": 3986,
+   "name": "启灵元神",
+   "type": {
+    "id": 223,
+    "url": "https://api.seerapi.com/v1/element_type_combination/223"
+   }
+  },
+  "喵九儿": {
+   "id": 3903,
+   "name": "喵九儿",
+   "type": {
+    "id": 9,
+    "url": "https://api.seerapi.com/v1/element_type_combination/9"
+   }
+  },
+  "四九幻曦": {
+   "id": 3572,
+   "name": "四九幻曦",
+   "type": {
+    "id": 20,
+    "url": "https://api.seerapi.com/v1/element_type_combination/20"
+   }
+  },
+  "圣地卡修斯": {
+   "id": 3568,
+   "name": "圣地卡修斯",
+   "type": {
+    "id": 100,
+    "url": "https://api.seerapi.com/v1/element_type_combination/100"
+   }
+  },
+  "圣奇·赫里斯": {
+   "id": 3445,
+   "name": "赫里斯",
+   "type": {
+    "id": 12,
+    "url": "https://api.seerapi.com/v1/element_type_combination/12"
+   }
+  },
+  "圣念卡地亚": {
+   "id": 3864,
+   "name": "圣念·卡迪亚",
+   "type": {
+    "id": 16,
+    "url": "https://api.seerapi.com/v1/element_type_combination/16"
+   }
+  },
+  "圣战瑞尔斯": {
+   "id": 3482,
+   "name": "圣战瑞尔斯",
+   "type": {
+    "id": 78,
+    "url": "https://api.seerapi.com/v1/element_type_combination/78"
+   }
+  },
+  "圣焰菲格罗亚": {
+   "id": 3748,
+   "name": "圣焰·菲格罗亚",
+   "type": {
+    "id": 108,
+    "url": "https://api.seerapi.com/v1/element_type_combination/108"
+   }
+  },
+  "圣甲·机盖": {
+   "id": 3056,
+   "name": "圣甲·盖亚",
+   "type": {
+    "id": 11,
+    "url": "https://api.seerapi.com/v1/element_type_combination/11"
+   }
+  },
+  "圣瞳·天蛇太祖": {
+   "id": 2695,
+   "name": "圣瞳·天蛇太祖",
+   "type": {
+    "id": 30,
+    "url": "https://api.seerapi.com/v1/element_type_combination/30"
+   }
+  },
+  "坚壁机甲": {
+   "id": 3386,
+   "name": "坚壁机甲",
+   "type": {
+    "id": 6,
+    "url": "https://api.seerapi.com/v1/element_type_combination/6"
+   }
+  },
+  "坦普瑞": {
+   "id": 4387,
+   "name": "坦普瑞",
+   "type": {
+    "id": 225,
+    "url": "https://api.seerapi.com/v1/element_type_combination/225"
+   }
+  },
+  "埃兰": {
+   "id": 3417,
+   "name": "埃兰",
+   "type": {
+    "id": 57,
+    "url": "https://api.seerapi.com/v1/element_type_combination/57"
+   }
+  },
+  "埃斯宾诺": {
+   "id": 4866,
+   "name": "埃斯宾诺",
+   "type": {
+    "id": 225,
+    "url": "https://api.seerapi.com/v1/element_type_combination/225"
+   }
+  },
+  "堕落之魂": {
+   "id": 4223,
+   "name": "堕落炮魂",
+   "type": {
+    "id": 69,
+    "url": "https://api.seerapi.com/v1/element_type_combination/69"
+   }
+  },
+  "塔兰度斯": {
+   "id": 3535,
+   "name": "塔兰度斯",
+   "type": {
+    "id": 84,
+    "url": "https://api.seerapi.com/v1/element_type_combination/84"
+   }
+  },
+  "塞娅": {
+   "id": 4093,
+   "name": "塞娅",
+   "type": {
+    "id": 36,
+    "url": "https://api.seerapi.com/v1/element_type_combination/36"
+   }
+  },
+  "塞弥丝珂": {
+   "id": 4631,
+   "name": "塞弥丝珂",
+   "type": {
+    "id": 54,
+    "url": "https://api.seerapi.com/v1/element_type_combination/54"
+   }
+  },
+  "墨纪拉": {
+   "id": 4246,
+   "name": "墨纪拉",
+   "type": {
+    "id": 107,
+    "url": "https://api.seerapi.com/v1/element_type_combination/107"
+   }
+  },
+  "夏厄普": {
+   "id": 4626,
+   "name": "夏厄普",
+   "type": {
+    "id": 41,
+    "url": "https://api.seerapi.com/v1/element_type_combination/41"
+   }
+  },
+  "夜罗琉彩": {
+   "id": 4472,
+   "name": "夜罗·琉彩",
+   "type": {
+    "id": 110,
+    "url": "https://api.seerapi.com/v1/element_type_combination/110"
+   }
+  },
+  "夜魔龙战": {
+   "id": 2900,
+   "name": "夜魔龙战",
+   "type": {
+    "id": 55,
+    "url": "https://api.seerapi.com/v1/element_type_combination/55"
+   }
+  },
+  "大力牛魔王": {
+   "id": 3365,
+   "name": "大力牛魔王",
+   "type": {
+    "id": 48,
+    "url": "https://api.seerapi.com/v1/element_type_combination/48"
+   }
+  },
+  "大梵天王": {
+   "id": 3376,
+   "name": "大梵天王",
+   "type": {
+    "id": 57,
+    "url": "https://api.seerapi.com/v1/element_type_combination/57"
+   }
+  },
+  "大潘多拉": {
+   "id": 2518,
+   "name": "潘多拉",
+   "type": {
+    "id": 62,
+    "url": "https://api.seerapi.com/v1/element_type_combination/62"
+   }
+  },
+  "天启星魂": {
+   "id": 3661,
+   "name": "天启星魂",
+   "type": {
+    "id": 71,
+    "url": "https://api.seerapi.com/v1/element_type_combination/71"
+   }
+  },
+  "天奔流·东辉": {
+   "id": 4422,
+   "name": "天奔流·东辉",
+   "type": {
+    "id": 116,
+    "url": "https://api.seerapi.com/v1/element_type_combination/116"
+   }
+  },
+  "天玄界神": {
+   "id": 4037,
+   "name": "天玄界神",
+   "type": {
+    "id": 31,
+    "url": "https://api.seerapi.com/v1/element_type_combination/31"
+   }
+  },
+  "妖族元皇·兰蒂斯": {
+   "id": 3686,
+   "name": "妖族元皇·兰蒂斯",
+   "type": {
+    "id": 70,
+    "url": "https://api.seerapi.com/v1/element_type_combination/70"
+   }
+  },
+  "娜娜薇尔": {
+   "id": 4653,
+   "name": "娜娜薇尔",
+   "type": {
+    "id": 61,
+    "url": "https://api.seerapi.com/v1/element_type_combination/61"
+   }
+  },
+  "嬴政": {
+   "id": 4468,
+   "name": "始皇帝·嬴政",
+   "type": {
+    "id": 221,
+    "url": "https://api.seerapi.com/v1/element_type_combination/221"
+   }
+  },
+  "孙小圣": {
+   "id": 3027,
+   "name": "孙小圣",
+   "type": {
+    "id": 18,
+    "url": "https://api.seerapi.com/v1/element_type_combination/18"
+   }
+  },
+  "孙悟空": {
+   "id": 4524,
+   "name": "孙悟空",
+   "type": {
+    "id": 108,
+    "url": "https://api.seerapi.com/v1/element_type_combination/108"
+   }
+  },
+  "宛白": {
+   "id": 4300,
+   "name": "宛白",
+   "type": {
+    "id": 76,
+    "url": "https://api.seerapi.com/v1/element_type_combination/76"
+   }
+  },
+  "小嘉": {
+   "id": 3119,
+   "name": "小嘉",
+   "type": {
+    "id": 20,
+    "url": "https://api.seerapi.com/v1/element_type_combination/20"
+   }
+  },
+  "小镰": {
+   "id": 4488,
+   "name": "小镰",
+   "type": {
+    "id": 6,
+    "url": "https://api.seerapi.com/v1/element_type_combination/6"
+   }
+  },
+  "尚克斯": {
+   "id": 4668,
+   "name": "尚克斯",
+   "type": {
+    "id": 113,
+    "url": "https://api.seerapi.com/v1/element_type_combination/113"
+   }
+  },
+  "山菊·花信": {
+   "id": 4110,
+   "name": "山菊·花信",
+   "type": {
+    "id": 64,
+    "url": "https://api.seerapi.com/v1/element_type_combination/64"
+   }
+  },
+  "巴拉龟": {
+   "id": 32,
+   "name": "巴拉龟",
+   "type": {
+    "id": 2,
+    "url": "https://api.seerapi.com/v1/element_type_combination/2"
+   }
+  },
+  "布姆殿下": {
+   "id": 4010,
+   "name": "布姆殿下",
+   "type": {
+    "id": 7,
+    "url": "https://api.seerapi.com/v1/element_type_combination/7"
+   }
+  },
+  "希瓦": {
+   "id": 3865,
+   "name": "希瓦",
+   "type": {
+    "id": 226,
+    "url": "https://api.seerapi.com/v1/element_type_combination/226"
+   }
+  },
+  "帕庀特": {
+   "id": 4253,
+   "name": "帕庀特",
+   "type": {
+    "id": 92,
+    "url": "https://api.seerapi.com/v1/element_type_combination/92"
+   }
+  },
+  "帝王之刃": {
+   "id": 2802,
+   "name": "帝王之刃",
+   "type": {
+    "id": 57,
+    "url": "https://api.seerapi.com/v1/element_type_combination/57"
+   }
+  },
+  "幻尘蜜雪儿": {
+   "id": 4007,
+   "name": "幻尘·蜜雪儿",
+   "type": {
+    "id": 109,
+    "url": "https://api.seerapi.com/v1/element_type_combination/109"
+   }
+  },
+  "幻曦": {
+   "id": 3572,
+   "name": "四九幻曦",
+   "type": {
+    "id": 20,
+    "url": "https://api.seerapi.com/v1/element_type_combination/20"
+   }
+  },
+  "幽冥狼魂": {
+   "id": 4420,
+   "name": "幽冥狼魂",
+   "type": {
+    "id": 97,
+    "url": "https://api.seerapi.com/v1/element_type_combination/97"
+   }
+  },
+  "库乐芭": {
+   "id": 4366,
+   "name": "库乐芭",
+   "type": {
+    "id": 57,
+    "url": "https://api.seerapi.com/v1/element_type_combination/57"
+   }
+  },
+  "库坦": {
+   "id": 4503,
+   "name": "库坦",
+   "type": {
+    "id": 48,
+    "url": "https://api.seerapi.com/v1/element_type_combination/48"
+   }
+  },
+  "库塔莫西": {
+   "id": 3821,
+   "name": "库塔莫西",
+   "type": {
+    "id": 226,
+    "url": "https://api.seerapi.com/v1/element_type_combination/226"
+   }
+  },
+  "库比": {
+   "id": 761,
+   "name": "库比",
+   "type": {
+    "id": 2,
+    "url": "https://api.seerapi.com/v1/element_type_combination/2"
+   }
+  },
+  "库贝萨": {
+   "id": 1730,
+   "name": "库贝萨",
+   "type": {
+    "id": 18,
+    "url": "https://api.seerapi.com/v1/element_type_combination/18"
+   }
+  },
+  "库贝萨隆": {
+   "id": 3044,
+   "name": "库贝萨隆",
+   "type": {
+    "id": 18,
+    "url": "https://api.seerapi.com/v1/element_type_combination/18"
+   }
+  },
+  "弑神猎皇": {
+   "id": 3514,
+   "name": "弑神猎皇",
+   "type": {
+    "id": 73,
+    "url": "https://api.seerapi.com/v1/element_type_combination/73"
+   }
+  },
+  "弗勒克斯": {
+   "id": 4920,
+   "name": "弗勒克斯",
+   "type": {
+    "id": 86,
+    "url": "https://api.seerapi.com/v1/element_type_combination/86"
+   }
+  },
+  "弗莱特": {
+   "id": 4207,
+   "name": "弗莱特",
+   "type": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/element_type_combination/4"
+   }
+  },
+  "影蝠": {
+   "id": 4028,
+   "name": "影蝠",
+   "type": {
+    "id": 14,
+    "url": "https://api.seerapi.com/v1/element_type_combination/14"
+   }
+  },
+  "彼尔德": {
+   "id": 4495,
+   "name": "彼尔德",
+   "type": {
+    "id": 34,
+    "url": "https://api.seerapi.com/v1/element_type_combination/34"
+   }
+  },
+  "德罗西尼": {
+   "id": 3280,
+   "name": "德罗西尼",
+   "type": {
+    "id": 7,
+    "url": "https://api.seerapi.com/v1/element_type_combination/7"
+   }
+  },
+  "怒雷神裁·雷伊": {
+   "id": 4765,
+   "name": "怒雷神裁·雷伊",
+   "type": {
+    "id": 5,
+    "url": "https://api.seerapi.com/v1/element_type_combination/5"
+   }
+  },
+  "怒雷神裁雷伊": {
+   "id": 4765,
+   "name": "怒雷神裁·雷伊",
+   "type": {
+    "id": 5,
+    "url": "https://api.seerapi.com/v1/element_type_combination/5"
+   }
+  },
+  "怒霆雷伊": {
+   "id": 70,
+   "name": "雷伊",
+   "type": {
+    "id": 5,
+    "url": "https://api.seerapi.com/v1/element_type_combination/5"
+   }
+  },
+  "恶鬼图伽": {
+   "id": 4459,
+   "name": "恶鬼·图伽",
+   "type": {
+    "id": 93,
+    "url": "https://api.seerapi.com/v1/element_type_combination/93"
+   }
+  },
+  "愈灵": {
+   "id": 4135,
+   "name": "愈灵·克丽娅",
+   "type": {
+    "id": 112,
+    "url": "https://api.seerapi.com/v1/element_type_combination/112"
+   }
+  },
+  "托尔希": {
+   "id": 3569,
+   "name": "托尔希",
+   "type": {
+    "id": 7,
+    "url": "https://api.seerapi.com/v1/element_type_combination/7"
+   }
+  },
+  "托尼老师": {
+   "id": 158,
+   "name": "托尼",
+   "type": {
+    "id": 9,
+    "url": "https://api.seerapi.com/v1/element_type_combination/9"
+   }
+  },
+  "扫荡之锋": {
+   "id": 3647,
+   "name": "扫荡之锋",
+   "type": {
+    "id": 103,
+    "url": "https://api.seerapi.com/v1/element_type_combination/103"
+   }
+  },
+  "拉可尼": {
+   "id": 1462,
+   "name": "拉可尼",
+   "type": {
+    "id": 5,
+    "url": "https://api.seerapi.com/v1/element_type_combination/5"
+   }
+  },
+  "拉斯塔特": {
+   "id": 3860,
+   "name": "拉斯塔特",
+   "type": {
+    "id": 225,
+    "url": "https://api.seerapi.com/v1/element_type_combination/225"
+   }
+  },
+  "拉特雷奇": {
+   "id": 3469,
+   "name": "拉特雷奇",
+   "type": {
+    "id": 11,
+    "url": "https://api.seerapi.com/v1/element_type_combination/11"
+   }
+  },
+  "拓弥丸": {
+   "id": 3426,
+   "name": "拓弥丸",
+   "type": {
+    "id": 60,
+    "url": "https://api.seerapi.com/v1/element_type_combination/60"
+   }
+  },
+  "擎空·凡尔斯": {
+   "id": 3697,
+   "name": "擎空·凡尔斯",
+   "type": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/element_type_combination/4"
+   }
+  },
+  "斗天武神瑞尔斯": {
+   "id": 3102,
+   "name": "斗天武神·瑞尔斯",
+   "type": {
+    "id": 11,
+    "url": "https://api.seerapi.com/v1/element_type_combination/11"
+   }
+  },
+  "斥星": {
+   "id": 4582,
+   "name": "斥星",
+   "type": {
+    "id": 71,
+    "url": "https://api.seerapi.com/v1/element_type_combination/71"
+   }
+  },
+  "斯达伏尔": {
+   "id": 4254,
+   "name": "斯达伏尔",
+   "type": {
+    "id": 19,
+    "url": "https://api.seerapi.com/v1/element_type_combination/19"
+   }
+  },
+  "斯达伐尔": {
+   "id": 4254,
+   "name": "斯达伏尔",
+   "type": {
+    "id": 19,
+    "url": "https://api.seerapi.com/v1/element_type_combination/19"
+   }
+  },
+  "无为觉者": {
+   "id": 4661,
+   "name": "无为觉者",
+   "type": {
+    "id": 8,
+    "url": "https://api.seerapi.com/v1/element_type_combination/8"
+   }
+  },
+  "无妙": {
+   "id": 3551,
+   "name": "无妙",
+   "type": {
+    "id": 11,
+    "url": "https://api.seerapi.com/v1/element_type_combination/11"
+   }
+  },
+  "无限·欧根尼克": {
+   "id": 4605,
+   "name": "无限·欧根尼克",
+   "type": {
+    "id": 79,
+    "url": "https://api.seerapi.com/v1/element_type_combination/79"
+   }
+  },
+  "时空界神": {
+   "id": 4050,
+   "name": "时空界神",
+   "type": {
+    "id": 64,
+    "url": "https://api.seerapi.com/v1/element_type_combination/64"
+   }
+  },
+  "星光·里奥斯": {
+   "id": 4822,
+   "name": "星光·里奥斯",
+   "type": {
+    "id": 3,
+    "url": "https://api.seerapi.com/v1/element_type_combination/3"
+   }
+  },
+  "星光布布": {
+   "id": 4647,
+   "name": "星光·丽莎布布",
+   "type": {
+    "id": 1,
+    "url": "https://api.seerapi.com/v1/element_type_combination/1"
+   }
+  },
+  "昭烈帝刘备": {
+   "id": 2512,
+   "name": "昭烈帝刘备",
+   "type": {
+    "id": 10,
+    "url": "https://api.seerapi.com/v1/element_type_combination/10"
+   }
+  },
+  "普拉薇安": {
+   "id": 4374,
+   "name": "普拉薇安",
+   "type": {
+    "id": 1,
+    "url": "https://api.seerapi.com/v1/element_type_combination/1"
+   }
+  },
+  "暗影极夜·诺伊尔顿": {
+   "id": 3261,
+   "name": "暗影极夜·诺伊尔顿",
+   "type": {
+    "id": 13,
+    "url": "https://api.seerapi.com/v1/element_type_combination/13"
+   }
+  },
+  "暮瑶": {
+   "id": 3260,
+   "name": "暮瑶",
+   "type": {
+    "id": 10,
+    "url": "https://api.seerapi.com/v1/element_type_combination/10"
+   }
+  },
+  "暴乱": {
+   "id": 3994,
+   "name": "暴乱·格劳瑞",
+   "type": {
+    "id": 35,
+    "url": "https://api.seerapi.com/v1/element_type_combination/35"
+   }
+  },
+  "暴君·史莱姆": {
+   "id": 3522,
+   "name": "暴君史莱姆",
+   "type": {
+    "id": 17,
+    "url": "https://api.seerapi.com/v1/element_type_combination/17"
+   }
+  },
+  "暴君史莱姆": {
+   "id": 3522,
+   "name": "暴君史莱姆",
+   "type": {
+    "id": 17,
+    "url": "https://api.seerapi.com/v1/element_type_combination/17"
+   }
+  },
+  "未来小火猴": {
+   "id": 3890,
+   "name": "未来·小火猴",
+   "type": {
+    "id": 3,
+    "url": "https://api.seerapi.com/v1/element_type_combination/3"
+   }
+  },
+  "极天之翼·托鲁克": {
+   "id": 3642,
+   "name": "极天之翼·托鲁克",
+   "type": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/element_type_combination/4"
+   }
+  },
+  "极战·阿尔斯兰": {
+   "id": 4327,
+   "name": "极战·阿尔斯兰",
+   "type": {
+    "id": 11,
+    "url": "https://api.seerapi.com/v1/element_type_combination/11"
+   }
+  },
+  "格拉托尼": {
+   "id": 2975,
+   "name": "格拉托尼",
+   "type": {
+    "id": 54,
+    "url": "https://api.seerapi.com/v1/element_type_combination/54"
+   }
+  },
+  "武心婵": {
+   "id": 4500,
+   "name": "武心婵",
+   "type": {
+    "id": 88,
+    "url": "https://api.seerapi.com/v1/element_type_combination/88"
+   }
+  },
+  "沐怜": {
+   "id": 4397,
+   "name": "沐怜",
+   "type": {
+    "id": 45,
+    "url": "https://api.seerapi.com/v1/element_type_combination/45"
+   }
+  },
+  "泠月": {
+   "id": 4261,
+   "name": "泠月",
+   "type": {
+    "id": 86,
+    "url": "https://api.seerapi.com/v1/element_type_combination/86"
+   }
+  },
+  "波客比": {
+   "id": 383,
+   "name": "波比",
+   "type": {
+    "id": 8,
+    "url": "https://api.seerapi.com/v1/element_type_combination/8"
+   }
+  },
+  "洛琦": {
+   "id": 3989,
+   "name": "洛琦",
+   "type": {
+    "id": 69,
+    "url": "https://api.seerapi.com/v1/element_type_combination/69"
+   }
+  },
+  "混元天尊": {
+   "id": 3788,
+   "name": "混元天尊",
+   "type": {
+    "id": 110,
+    "url": "https://api.seerapi.com/v1/element_type_combination/110"
+   }
+  },
+  "混沌耶里梅斯": {
+   "id": 3464,
+   "name": "混沌耶里梅斯",
+   "type": {
+    "id": 93,
+    "url": "https://api.seerapi.com/v1/element_type_combination/93"
+   }
+  },
+  "混沌魔使": {
+   "id": 3392,
+   "name": "混沌魔使",
+   "type": {
+    "id": 13,
+    "url": "https://api.seerapi.com/v1/element_type_combination/13"
+   }
+  },
+  "漆黑皮神": {
+   "id": 4731,
+   "name": "皮神",
+   "type": {
+    "id": 128,
+    "url": "https://api.seerapi.com/v1/element_type_combination/128"
+   }
+  },
+  "潘多克斯": {
+   "id": 2023,
+   "name": "潘多斯",
+   "type": {
+    "id": 3,
+    "url": "https://api.seerapi.com/v1/element_type_combination/3"
+   }
+  },
+  "潜影灵蛇": {
+   "id": 4146,
+   "name": "潜隐灵蛇",
+   "type": {
+    "id": 51,
+    "url": "https://api.seerapi.com/v1/element_type_combination/51"
+   }
+  },
+  "潜能灵蛇": {
+   "id": 4146,
+   "name": "潜隐灵蛇",
+   "type": {
+    "id": 51,
+    "url": "https://api.seerapi.com/v1/element_type_combination/51"
+   }
+  },
+  "火忍·浓信": {
+   "id": 2753,
+   "name": "火忍·浓信",
+   "type": {
+    "id": 47,
+    "url": "https://api.seerapi.com/v1/element_type_combination/47"
+   }
+  },
+  "灵·辰坤星魂": {
+   "id": 3983,
+   "name": "灵·辰坤星魂",
+   "type": {
+    "id": 100,
+    "url": "https://api.seerapi.com/v1/element_type_combination/100"
+   }
+  },
+  "灾厄王妃·潘多拉": {
+   "id": 2965,
+   "name": "灾厄王妃潘多拉",
+   "type": {
+    "id": 62,
+    "url": "https://api.seerapi.com/v1/element_type_combination/62"
+   }
+  },
+  "炽焰金刚": {
+   "id": 2221,
+   "name": "炽焰金刚",
+   "type": {
+    "id": 3,
+    "url": "https://api.seerapi.com/v1/element_type_combination/3"
+   }
+  },
+  "炽羽炎凤朱雀": {
+   "id": 3318,
+   "name": "炽羽炎凰·朱雀",
+   "type": {
+    "id": 27,
+    "url": "https://api.seerapi.com/v1/element_type_combination/27"
+   }
+  },
+  "烈羽赤兔": {
+   "id": 3029,
+   "name": "烈羽赤兔",
+   "type": {
+    "id": 17,
+    "url": "https://api.seerapi.com/v1/element_type_combination/17"
+   }
+  },
+  "猎皇": {
+   "id": 3514,
+   "name": "弑神猎皇",
+   "type": {
+    "id": 73,
+    "url": "https://api.seerapi.com/v1/element_type_combination/73"
+   }
+  },
+  "猛虎王": {
+   "id": 299,
+   "name": "猛虎王",
+   "type": {
+    "id": 7,
+    "url": "https://api.seerapi.com/v1/element_type_combination/7"
+   }
+  },
+  "玛提斯特": {
+   "id": 4312,
+   "name": "玛提斯特",
+   "type": {
+    "id": 97,
+    "url": "https://api.seerapi.com/v1/element_type_combination/97"
+   }
+  },
+  "玛格尼亚": {
+   "id": 4206,
+   "name": "玛格尼亚",
+   "type": {
+    "id": 90,
+    "url": "https://api.seerapi.com/v1/element_type_combination/90"
+   }
+  },
+  "环·零": {
+   "id": 4241,
+   "name": "环·零",
+   "type": {
+    "id": 103,
+    "url": "https://api.seerapi.com/v1/element_type_combination/103"
+   }
+  },
+  "环源": {
+   "id": 4258,
+   "name": "环·源",
+   "type": {
+    "id": 103,
+    "url": "https://api.seerapi.com/v1/element_type_combination/103"
+   }
+  },
+  "瑞尔斯": {
+   "id": 1045,
+   "name": "瑞尔斯",
+   "type": {
+    "id": 11,
+    "url": "https://api.seerapi.com/v1/element_type_combination/11"
+   }
+  },
+  "瓦普特": {
+   "id": 4414,
+   "name": "瓦普特",
+   "type": {
+    "id": 79,
+    "url": "https://api.seerapi.com/v1/element_type_combination/79"
+   }
+  },
+  "甜蜜宵宵": {
+   "id": 4008,
+   "name": "甜蜜宵宵",
+   "type": {
+    "id": 8,
+    "url": "https://api.seerapi.com/v1/element_type_combination/8"
+   }
+  },
+  "皮特尔": {
+   "id": 4271,
+   "name": "皮特尔",
+   "type": {
+    "id": 69,
+    "url": "https://api.seerapi.com/v1/element_type_combination/69"
+   }
+  },
+  "皮皮": {
+   "id": 10,
+   "name": "皮皮",
+   "type": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/element_type_combination/4"
+   }
+  },
+  "神裁·雷伊": {
+   "id": 4757,
+   "name": "神裁·雷伊",
+   "type": {
+    "id": 5,
+    "url": "https://api.seerapi.com/v1/element_type_combination/5"
+   }
+  },
+  "神裁雷伊": {
+   "id": 4757,
+   "name": "神裁·雷伊",
+   "type": {
+    "id": 5,
+    "url": "https://api.seerapi.com/v1/element_type_combination/5"
+   }
+  },
+  "神谕哈肯萨": {
+   "id": 1989,
+   "name": "哈肯萨",
+   "type": {
+    "id": 55,
+    "url": "https://api.seerapi.com/v1/element_type_combination/55"
+   }
+  },
+  "神谕莫妮卡": {
+   "id": 3355,
+   "name": "莫妮卡",
+   "type": {
+    "id": 20,
+    "url": "https://api.seerapi.com/v1/element_type_combination/20"
+   }
+  },
+  "禅老": {
+   "id": 4449,
+   "name": "禅老",
+   "type": {
+    "id": 60,
+    "url": "https://api.seerapi.com/v1/element_type_combination/60"
+   }
+  },
+  "科纳什": {
+   "id": 2961,
+   "name": "科纳什",
+   "type": {
+    "id": 61,
+    "url": "https://api.seerapi.com/v1/element_type_combination/61"
+   }
+  },
+  "米卡尔": {
+   "id": 919,
+   "name": "米尔",
+   "type": {
+    "id": 1,
+    "url": "https://api.seerapi.com/v1/element_type_combination/1"
+   }
+  },
+  "米拉克": {
+   "id": 4243,
+   "name": "米拉克",
+   "type": {
+    "id": 77,
+    "url": "https://api.seerapi.com/v1/element_type_combination/77"
+   }
+  },
+  "糖果皮皮": {
+   "id": 4729,
+   "name": "糖果皮皮",
+   "type": {
+    "id": 31,
+    "url": "https://api.seerapi.com/v1/element_type_combination/31"
+   }
+  },
+  "索比特": {
+   "id": 343,
+   "name": "索比拉特",
+   "type": {
+    "id": 13,
+    "url": "https://api.seerapi.com/v1/element_type_combination/13"
+   }
+  },
+  "红桃皇后": {
+   "id": 3587,
+   "name": "红桃皇后",
+   "type": {
+    "id": 10,
+    "url": "https://api.seerapi.com/v1/element_type_combination/10"
+   }
+  },
+  "纳瓦雷多": {
+   "id": 2865,
+   "name": "纳瓦雷多",
+   "type": {
+    "id": 7,
+    "url": "https://api.seerapi.com/v1/element_type_combination/7"
+   }
+  },
+  "缥缈幽芙": {
+   "id": 4069,
+   "name": "缥缈幽芙",
+   "type": {
+    "id": 92,
+    "url": "https://api.seerapi.com/v1/element_type_combination/92"
+   }
+  },
+  "艾拉": {
+   "id": 3501,
+   "name": "艾拉",
+   "type": {
+    "id": 2,
+    "url": "https://api.seerapi.com/v1/element_type_combination/2"
+   }
+  },
+  "艾莉安娜": {
+   "id": 4863,
+   "name": "艾莉安娜",
+   "type": {
+    "id": 225,
+    "url": "https://api.seerapi.com/v1/element_type_combination/225"
+   }
+  },
+  "艾莫丽萨": {
+   "id": 4123,
+   "name": "莫丽",
+   "type": {
+    "id": 35,
+    "url": "https://api.seerapi.com/v1/element_type_combination/35"
+   }
+  },
+  "艾莫利萨": {
+   "id": 3573,
+   "name": "艾莫莉萨",
+   "type": {
+    "id": 73,
+    "url": "https://api.seerapi.com/v1/element_type_combination/73"
+   }
+  },
+  "艾莫莉丝": {
+   "id": 3573,
+   "name": "艾莫莉萨",
+   "type": {
+    "id": 73,
+    "url": "https://api.seerapi.com/v1/element_type_combination/73"
+   }
+  },
+  "艾隆德": {
+   "id": 4483,
+   "name": "艾隆德",
+   "type": {
+    "id": 43,
+    "url": "https://api.seerapi.com/v1/element_type_combination/43"
+   }
+  },
+  "花灯仙子": {
+   "id": 4725,
+   "name": "花灯仙子",
+   "type": {
+    "id": 12,
+    "url": "https://api.seerapi.com/v1/element_type_combination/12"
+   }
+  },
+  "苍星": {
+   "id": 4450,
+   "name": "逐界苍星",
+   "type": {
+    "id": 118,
+    "url": "https://api.seerapi.com/v1/element_type_combination/118"
+   }
+  },
+  "莱因哈特": {
+   "id": 3174,
+   "name": "莱茵哈特",
+   "type": {
+    "id": 7,
+    "url": "https://api.seerapi.com/v1/element_type_combination/7"
+   }
+  },
+  "菠萝霸王": {
+   "id": 4664,
+   "name": "菠萝霸王",
+   "type": {
+    "id": 5,
+    "url": "https://api.seerapi.com/v1/element_type_combination/5"
+   }
+  },
+  "蒙鲁特": {
+   "id": 4629,
+   "name": "霜之荆棘·蒙鲁特",
+   "type": {
+    "id": 91,
+    "url": "https://api.seerapi.com/v1/element_type_combination/91"
+   }
+  },
+  "蓝露": {
+   "id": 3644,
+   "name": "蓝露",
+   "type": {
+    "id": 2,
+    "url": "https://api.seerapi.com/v1/element_type_combination/2"
+   }
+  },
+  "蚀骨冰姬": {
+   "id": 3825,
+   "name": "蚀骨冰姬",
+   "type": {
+    "id": 45,
+    "url": "https://api.seerapi.com/v1/element_type_combination/45"
+   }
+  },
+  "西塔轮": {
+   "id": 59,
+   "name": "西塔",
+   "type": {
+    "id": 6,
+    "url": "https://api.seerapi.com/v1/element_type_combination/6"
+   }
+  },
+  "西曼德妮": {
+   "id": 4915,
+   "name": "西曼德妮",
+   "type": {
+    "id": 16,
+    "url": "https://api.seerapi.com/v1/element_type_combination/16"
+   }
+  },
+  "费德约克": {
+   "id": 3389,
+   "name": "费德约克",
+   "type": {
+    "id": 6,
+    "url": "https://api.seerapi.com/v1/element_type_combination/6"
+   }
+  },
+  "贾斯": {
+   "id": 4603,
+   "name": "贾斯",
+   "type": {
+    "id": 112,
+    "url": "https://api.seerapi.com/v1/element_type_combination/112"
+   }
+  },
+  "超算鲁比克": {
+   "id": 4748,
+   "name": "超算鲁比克",
+   "type": {
+    "id": 6,
+    "url": "https://api.seerapi.com/v1/element_type_combination/6"
+   }
+  },
+  "超维暴龙": {
+   "id": 3948,
+   "name": "超维暴龙",
+   "type": {
+    "id": 17,
+    "url": "https://api.seerapi.com/v1/element_type_combination/17"
+   }
+  },
+  "跳跳狮": {
+   "id": 3819,
+   "name": "跳跳狮",
+   "type": {
+    "id": 68,
+    "url": "https://api.seerapi.com/v1/element_type_combination/68"
+   }
+  },
+  "辛": {
+   "id": 3964,
+   "name": "辛",
+   "type": {
+    "id": 222,
+    "url": "https://api.seerapi.com/v1/element_type_combination/222"
+   }
+  },
+  "辛辛子": {
+   "id": 4326,
+   "name": "辛辛子",
+   "type": {
+    "id": 225,
+    "url": "https://api.seerapi.com/v1/element_type_combination/225"
+   }
+  },
+  "辰坤星魂": {
+   "id": 3983,
+   "name": "灵·辰坤星魂",
+   "type": {
+    "id": 100,
+    "url": "https://api.seerapi.com/v1/element_type_combination/100"
+   }
+  },
+  "迷你果": {
+   "id": 295,
+   "name": "迷你果",
+   "type": {
+    "id": 1,
+    "url": "https://api.seerapi.com/v1/element_type_combination/1"
+   }
+  },
+  "逆世之瞳·哀目黑子": {
+   "id": 4642,
+   "name": "逆世之瞳·哀目黑子",
+   "type": {
+    "id": 97,
+    "url": "https://api.seerapi.com/v1/element_type_combination/97"
+   }
+  },
+  "重塑之子": {
+   "id": 4665,
+   "name": "重塑之子·利塞特",
+   "type": {
+    "id": 69,
+    "url": "https://api.seerapi.com/v1/element_type_combination/69"
+   }
+  },
+  "重塑之子·利塞特": {
+   "id": 4665,
+   "name": "重塑之子·利塞特",
+   "type": {
+    "id": 69,
+    "url": "https://api.seerapi.com/v1/element_type_combination/69"
+   }
+  },
+  "重塑之子利塞特": {
+   "id": 4665,
+   "name": "重塑之子·利塞特",
+   "type": {
+    "id": 69,
+    "url": "https://api.seerapi.com/v1/element_type_combination/69"
+   }
+  },
+  "金瑞福龙": {
+   "id": 4602,
+   "name": "金瑞福龙",
+   "type": {
+    "id": 28,
+    "url": "https://api.seerapi.com/v1/element_type_combination/28"
+   }
+  },
+  "金角灵魔": {
+   "id": 3344,
+   "name": "金角灵魔",
+   "type": {
+    "id": 7,
+    "url": "https://api.seerapi.com/v1/element_type_combination/7"
+   }
+  },
+  "钢牙鲨": {
+   "id": 34,
+   "name": "钢牙鲨",
+   "type": {
+    "id": 2,
+    "url": "https://api.seerapi.com/v1/element_type_combination/2"
+   }
+  },
+  "铭唤": {
+   "id": 4785,
+   "name": "铭唤",
+   "type": {
+    "id": 98,
+    "url": "https://api.seerapi.com/v1/element_type_combination/98"
+   }
+  },
+  "闪光猛虎王": {
+   "id": 4440,
+   "name": "闪光猛虎王",
+   "type": {
+    "id": 7,
+    "url": "https://api.seerapi.com/v1/element_type_combination/7"
+   }
+  },
+  "闪光皮皮": {
+   "id": 164,
+   "name": "闪光皮皮",
+   "type": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/element_type_combination/4"
+   }
+  },
+  "闪电犬": {
+   "id": 3630,
+   "name": "闪电犬",
+   "type": {
+    "id": 5,
+    "url": "https://api.seerapi.com/v1/element_type_combination/5"
+   }
+  },
+  "阿克西亚": {
+   "id": 1887,
+   "name": "阿克",
+   "type": {
+    "id": 13,
+    "url": "https://api.seerapi.com/v1/element_type_combination/13"
+   }
+  },
+  "霆律": {
+   "id": 4561,
+   "name": "霆律",
+   "type": {
+    "id": 80,
+    "url": "https://api.seerapi.com/v1/element_type_combination/80"
+   }
+  },
+  "魂弦": {
+   "id": 4612,
+   "name": "魂弦",
+   "type": {
+    "id": 52,
+    "url": "https://api.seerapi.com/v1/element_type_combination/52"
+   }
+  },
+  "魇魔": {
+   "id": 4763,
+   "name": "魇魔",
+   "type": {
+    "id": 13,
+    "url": "https://api.seerapi.com/v1/element_type_combination/13"
+   }
+  },
+  "魔化克雷尔": {
+   "id": 3185,
+   "name": "魔化克雷尔",
+   "type": {
+    "id": 69,
+    "url": "https://api.seerapi.com/v1/element_type_combination/69"
+   }
+  },
+  "魔域": {
+   "id": 1216,
+   "name": "魔域仙子",
+   "type": {
+    "id": 1,
+    "url": "https://api.seerapi.com/v1/element_type_combination/1"
+   }
+  },
+  "魔花仙灵": {
+   "id": 4198,
+   "name": "魔花仙灵",
+   "type": {
+    "id": 1,
+    "url": "https://api.seerapi.com/v1/element_type_combination/1"
+   }
+  },
+  "鱼龙帝王": {
+   "id": 3309,
+   "name": "鱼龙帝王",
+   "type": {
+    "id": 2,
+    "url": "https://api.seerapi.com/v1/element_type_combination/2"
+   }
+  },
+  "麦卡威": {
+   "id": 2685,
+   "name": "麦卡威",
+   "type": {
+    "id": 38,
+    "url": "https://api.seerapi.com/v1/element_type_combination/38"
+   }
+  },
+  "黑石女妖": {
+   "id": 4807,
+   "name": "黑石女妖",
+   "type": {
+    "id": 105,
+    "url": "https://api.seerapi.com/v1/element_type_combination/105"
+   }
+  },
+  "龙伽": {
+   "id": 4262,
+   "name": "龙伽",
+   "type": {
+    "id": 63,
+    "url": "https://api.seerapi.com/v1/element_type_combination/63"
+   }
+  },
+  "龙翼战神": {
+   "id": 3104,
+   "name": "龙翼战神",
+   "type": {
+    "id": 73,
+    "url": "https://api.seerapi.com/v1/element_type_combination/73"
+   }
+  }
+ },
+ "ambiguous": {
+  "万魔尊": [
+   "fuzzy:0.86"
+  ],
+  "仙凤托鲁克": [
+   97,
+   865
+  ],
+  "伊诺尔顿": [
+   "fuzzy:0.75"
+  ],
+  "刘备": [
+   2512,
+   3074
+  ],
+  "启灵原神": [
+   "fuzzy:0.75"
+  ],
+  "圣念卡地亚": [
+   "fuzzy:0.8"
+  ],
+  "圣甲·机盖": [
+   "fuzzy:0.75"
+  ],
+  "堕落之魂": [
+   "fuzzy:0.75"
+  ],
+  "斯达伐尔": [
+   "fuzzy:0.75"
+  ],
+  "星光布布": [
+   "fuzzy:0.8"
+  ],
+  "波客比": [
+   "fuzzy:0.8"
+  ],
+  "潘多克斯": [
+   "fuzzy:0.86"
+  ],
+  "潜影灵蛇": [
+   "fuzzy:0.75"
+  ],
+  "潜能灵蛇": [
+   "fuzzy:0.75"
+  ],
+  "炽羽炎凤朱雀": [
+   "fuzzy:0.83"
+  ],
+  "皮皮": [
+   3295,
+   10
+  ],
+  "神谕哈肯萨": [
+   1988,
+   1989
+  ],
+  "神谕莫妮卡": [
+   3354,
+   3355
+  ],
+  "米卡尔": [
+   "fuzzy:0.8"
+  ],
+  "索比特": [
+   "fuzzy:0.86"
+  ],
+  "艾莫利萨": [
+   "fuzzy:0.75"
+  ],
+  "艾莫莉丝": [
+   "fuzzy:0.75"
+  ],
+  "莱因哈特": [
+   "fuzzy:0.75"
+  ]
+ },
+ "unresolved": [
+  "三兄弟",
+  "不死大队",
+  "乌鸦",
+  "佩韦",
+  "元神星皇",
+  "八戒",
+  "冰博士",
+  "冰熊",
+  "厄姆沃斯",
+  "古巨基",
+  "咤帝",
+  "大眼",
+  "奇镰",
+  "奇镰解放",
+  "女邪灵王",
+  "小飞王",
+  "屠龙",
+  "无极至尊",
+  "星巴克",
+  "暗暗",
+  "月钰",
+  "格丝塔斯",
+  "混伊",
+  "混布",
+  "混沌邪灵王",
+  "漆黑闪皮",
+  "潜伏",
+  "火王",
+  "灵神烽火",
+  "熊大",
+  "特攻圣萨",
+  "电月费",
+  "草哈",
+  "虫佬",
+  "虫老",
+  "西游",
+  "西里斯",
+  "赛娅",
+  "邪灵主宰摩鸭子",
+  "魂魄缠绕",
+  "魔咤"
+ ]
+}

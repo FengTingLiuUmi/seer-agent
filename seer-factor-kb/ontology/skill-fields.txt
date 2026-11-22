@@ -1,0 +1,21 @@
+===== skill/10611 keys: ['accuracy', 'advance', 'atk_num', 'category', 'crit_rate', 'friend_skill_effect', 'hash', 'hide_effect', 'id', 'info', 'learned_by_pet', 'max_pp', 'must_hit', 'name', 'power', 'priority', 'skill_effect', 'type'] =====
+  id = 10611
+  name = "龙爪"
+  power = 45
+  priority = 0
+  category = {"id": 1, "url": "https://api.seerapi.com/v1/skill_category/1"}
+  type = {"id": 15, "url": "https://api.seerapi.com/v1/element_type_combination/15"}
+===== skill/20265 keys: ['accuracy', 'advance', 'atk_num', 'category', 'crit_rate', 'friend_skill_effect', 'hash', 'hide_effect', 'id', 'info', 'learned_by_pet', 'max_pp', 'must_hit', 'name', 'power', 'priority', 'skill_effect', 'type'] =====
+  id = 20265
+  name = "锋利"
+  power = 0
+  priority = 0
+  category = {"id": 4, "url": "https://api.seerapi.com/v1/skill_category/4"}
+  type = {"id": 8, "url": "https://api.seerapi.com/v1/element_type_combination/8"}
+===== skill/22295 keys: ['accuracy', 'advance', 'atk_num', 'category', 'crit_rate', 'friend_skill_effect', 'hash', 'hide_effect', 'id', 'info', 'learned_by_pet', 'max_pp', 'must_hit', 'name', 'power', 'priority', 'skill_effect', 'type'] =====
+  id = 22295
+  name = "逆鳞龙甲"
+  power = 0
+  priority = 0
+  category = {"id": 4, "url": "https://api.seerapi.com/v1/skill_category/4"}
+  type = {"id": 8, "url": "https://api.seerapi.com/v1/element_type_combination/8"}

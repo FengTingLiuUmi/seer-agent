@@ -1,0 +1,1970 @@
+{
+ "pets": [
+  {
+   "name": "万人敌张飞",
+   "seerapiId": "2530",
+   "type": [
+    "战斗",
+    "火"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "万兽之尊·猛虎王",
+   "seerapiId": "3676",
+   "type": [
+    "地面"
+   ],
+   "variants": [
+    "万兽之尊猛虎王",
+    "万兽至尊·猛虎王"
+   ],
+   "role": ""
+  },
+  {
+   "name": "万魔天尊",
+   "seerapiId": "2468",
+   "type": [
+    "邪灵"
+   ],
+   "variants": [
+    "万魔尊"
+   ],
+   "role": ""
+  },
+  {
+   "name": "上古战魔",
+   "seerapiId": "2797",
+   "type": [
+    "战斗",
+    "地面"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "丽娜菲",
+   "seerapiId": "3942",
+   "type": [
+    "水"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "乌瑞娅",
+   "seerapiId": "3763",
+   "type": [
+    "神秘",
+    "地面"
+   ],
+   "variants": [
+    "乌瑞亚"
+   ],
+   "role": ""
+  },
+  {
+   "name": "仙女龙",
+   "seerapiId": "2973",
+   "type": [
+    "龙",
+    "自然"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "仿生兽·库比",
+   "seerapiId": "4658",
+   "type": [
+    "混沌",
+    "虚空"
+   ],
+   "variants": [
+    "仿生兽库比"
+   ],
+   "role": ""
+  },
+  {
+   "name": "伊塔",
+   "seerapiId": "4699",
+   "type": [
+    "机械"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "伊塔吉雅",
+   "seerapiId": "4342",
+   "type": [
+    "机械"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "伏尔格安",
+   "seerapiId": "4625",
+   "type": [
+    "混沌",
+    "火"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "伽尔",
+   "seerapiId": "3366",
+   "type": [
+    "光",
+    "暗影"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "佩里德",
+   "seerapiId": "4634",
+   "type": [
+    "暗影",
+    "圣灵"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "克劳蒂雅",
+   "seerapiId": "3267",
+   "type": [
+    "战斗",
+    "地面"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "克鲁斯",
+   "seerapiId": "1521",
+   "type": [
+    "飞行"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "兔兔仙子",
+   "seerapiId": "3963",
+   "type": [
+    "神秘",
+    "自然"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "八岐大蛇",
+   "seerapiId": "3814",
+   "type": [
+    "神秘",
+    "邪灵"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "凡尔斯",
+   "seerapiId": "2988",
+   "type": [
+    "飞行"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "利刃之主鲁斯王",
+   "seerapiId": "2947",
+   "type": [
+    "水"
+   ],
+   "variants": [
+    "利刃之主"
+   ],
+   "role": ""
+  },
+  {
+   "name": "华光之翼·杰洛恩",
+   "seerapiId": "4697",
+   "type": [
+    "光",
+    "飞行"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "南十字·克鲁斯",
+   "seerapiId": "4575",
+   "type": [
+    "次元",
+    "电"
+   ],
+   "variants": [
+    "南十字克鲁斯",
+    "南十字"
+   ],
+   "role": ""
+  },
+  {
+   "name": "启灵元神",
+   "seerapiId": "3986",
+   "type": [
+    "神灵"
+   ],
+   "variants": [
+    "启灵原神"
+   ],
+   "role": ""
+  },
+  {
+   "name": "哀伤公爵·阿洛希尔",
+   "seerapiId": "3813",
+   "type": [
+    "混沌",
+    "冰"
+   ],
+   "variants": [
+    "公爵"
+   ],
+   "role": ""
+  },
+  {
+   "name": "哈肯萨",
+   "seerapiId": "1989",
+   "type": [
+    "暗影",
+    "龙"
+   ],
+   "variants": [
+    "神谕哈肯萨"
+   ],
+   "role": ""
+  },
+  {
+   "name": "喵九儿",
+   "seerapiId": "3903",
+   "type": [
+    "冰"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "四九幻曦",
+   "seerapiId": "3572",
+   "type": [
+    "自然"
+   ],
+   "variants": [
+    "幻曦"
+   ],
+   "role": ""
+  },
+  {
+   "name": "圣地卡修斯",
+   "seerapiId": "3568",
+   "type": [
+    "圣灵",
+    "地面"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "圣念·卡迪亚",
+   "seerapiId": "3864",
+   "type": [
+    "圣灵"
+   ],
+   "variants": [
+    "圣念卡地亚"
+   ],
+   "role": ""
+  },
+  {
+   "name": "圣战瑞尔斯",
+   "seerapiId": "3482",
+   "type": [
+    "战斗",
+    "圣灵"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "圣焰·菲格罗亚",
+   "seerapiId": "3748",
+   "type": [
+    "圣灵",
+    "火"
+   ],
+   "variants": [
+    "圣焰菲格罗亚"
+   ],
+   "role": ""
+  },
+  {
+   "name": "圣瞳·天蛇太祖",
+   "seerapiId": "2695",
+   "type": [
+    "超能",
+    "飞行"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "圣骑·赫里斯",
+   "seerapiId": "3938",
+   "type": [
+    "光"
+   ],
+   "variants": [
+    "圣奇·赫里斯"
+   ],
+   "role": ""
+  },
+  {
+   "name": "坚壁机甲",
+   "seerapiId": "3386",
+   "type": [
+    "机械"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "坦普瑞",
+   "seerapiId": "4387",
+   "type": [
+    "虫"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "埃兰",
+   "seerapiId": "3417",
+   "type": [
+    "战斗",
+    "远古"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "埃斯宾诺",
+   "seerapiId": "4866",
+   "type": [
+    "虫"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "塔兰度斯",
+   "seerapiId": "3535",
+   "type": [
+    "神秘",
+    "冰"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "塞娅",
+   "seerapiId": "4093",
+   "type": [
+    "暗影",
+    "电"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "塞弥丝珂",
+   "seerapiId": "4631",
+   "type": [
+    "超能",
+    "地面"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "墨纪拉",
+   "seerapiId": "4246",
+   "type": [
+    "混沌",
+    "火"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "夏厄普",
+   "seerapiId": "4626",
+   "type": [
+    "战斗",
+    "地面"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "夜罗·琉彩",
+   "seerapiId": "4472",
+   "type": [
+    "次元",
+    "混沌"
+   ],
+   "variants": [
+    "夜罗琉彩"
+   ],
+   "role": ""
+  },
+  {
+   "name": "夜魔龙战",
+   "seerapiId": "2900",
+   "type": [
+    "暗影",
+    "龙"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "大力牛魔王",
+   "seerapiId": "3365",
+   "type": [
+    "战斗",
+    "暗影"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "大梵天王",
+   "seerapiId": "3376",
+   "type": [
+    "战斗",
+    "远古"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "天兔·乐普斯",
+   "seerapiId": "4456",
+   "type": [
+    "超能",
+    "地面"
+   ],
+   "variants": [
+    "乐普斯"
+   ],
+   "role": ""
+  },
+  {
+   "name": "天启星魂",
+   "seerapiId": "3661",
+   "type": [
+    "神秘",
+    "远古"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "天奔流·东辉",
+   "seerapiId": "4422",
+   "type": [
+    "次元",
+    "水"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "天玄界神",
+   "seerapiId": "4037",
+   "type": [
+    "光",
+    "飞行"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "妖族元皇·兰蒂斯",
+   "seerapiId": "3686",
+   "type": [
+    "龙",
+    "邪灵"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "始皇帝·嬴政",
+   "seerapiId": "4468",
+   "type": [
+    "王"
+   ],
+   "variants": [
+    "嬴政"
+   ],
+   "role": ""
+  },
+  {
+   "name": "娜娜薇尔",
+   "seerapiId": "4653",
+   "type": [
+    "战斗",
+    "次元"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "孙小圣",
+   "seerapiId": "3027",
+   "type": [
+    "远古"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "孙悟空",
+   "seerapiId": "4524",
+   "type": [
+    "圣灵",
+    "火"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "宛白",
+   "seerapiId": "4300",
+   "type": [
+    "次元",
+    "电"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "小嘉",
+   "seerapiId": "3119",
+   "type": [
+    "自然"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "小镰",
+   "seerapiId": "4488",
+   "type": [
+    "机械"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "尚克斯",
+   "seerapiId": "4668",
+   "type": [
+    "邪灵",
+    "虚空"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "山菊·花信",
+   "seerapiId": "4110",
+   "type": [
+    "光",
+    "次元"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "巴拉龟",
+   "seerapiId": "32",
+   "type": [
+    "水"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "布姆殿下",
+   "seerapiId": "4010",
+   "type": [
+    "地面"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "希瓦",
+   "seerapiId": "3865",
+   "type": [
+    "虚空"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "帕庀特",
+   "seerapiId": "4253",
+   "type": [
+    "暗影",
+    "混沌"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "帝王之刃",
+   "seerapiId": "2802",
+   "type": [
+    "战斗",
+    "远古"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "幻尘·蜜雪儿",
+   "seerapiId": "4007",
+   "type": [
+    "神秘",
+    "地面"
+   ],
+   "variants": [
+    "幻尘蜜雪儿"
+   ],
+   "role": ""
+  },
+  {
+   "name": "幽冥狼魂",
+   "seerapiId": "4420",
+   "type": [
+    "暗影",
+    "邪灵"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "库乐芭",
+   "seerapiId": "4366",
+   "type": [
+    "战斗",
+    "远古"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "库坦",
+   "seerapiId": "4503",
+   "type": [
+    "战斗",
+    "暗影"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "库塔莫西",
+   "seerapiId": "3821",
+   "type": [
+    "虚空"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "库比",
+   "seerapiId": "761",
+   "type": [
+    "水"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "库贝萨",
+   "seerapiId": "1730",
+   "type": [
+    "远古"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "库贝萨隆",
+   "seerapiId": "3044",
+   "type": [
+    "远古"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "弑神猎皇",
+   "seerapiId": "3514",
+   "type": [
+    "战斗",
+    "龙"
+   ],
+   "variants": [
+    "猎皇"
+   ],
+   "role": ""
+  },
+  {
+   "name": "弗勒克斯",
+   "seerapiId": "4920",
+   "type": [
+    "火",
+    "冰"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "弗莱特",
+   "seerapiId": "4207",
+   "type": [
+    "飞行"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "影蝠",
+   "seerapiId": "4028",
+   "type": [
+    "神秘"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "彼尔德",
+   "seerapiId": "4495",
+   "type": [
+    "电",
+    "冰"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "德罗西尼",
+   "seerapiId": "3280",
+   "type": [
+    "地面"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "怒雷神裁·雷伊",
+   "seerapiId": "4765",
+   "type": [
+    "电"
+   ],
+   "variants": [
+    "怒雷神裁雷伊"
+   ],
+   "role": ""
+  },
+  {
+   "name": "恶鬼·图伽",
+   "seerapiId": "4459",
+   "type": [
+    "战斗",
+    "混沌"
+   ],
+   "variants": [
+    "恶鬼图伽"
+   ],
+   "role": ""
+  },
+  {
+   "name": "愈灵·克丽娅",
+   "seerapiId": "4135",
+   "type": [
+    "神秘",
+    "自然"
+   ],
+   "variants": [
+    "愈灵"
+   ],
+   "role": ""
+  },
+  {
+   "name": "托尔希",
+   "seerapiId": "3569",
+   "type": [
+    "地面"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "托尼",
+   "seerapiId": "158",
+   "type": [
+    "冰"
+   ],
+   "variants": [
+    "托尼老师"
+   ],
+   "role": ""
+  },
+  {
+   "name": "扫荡之锋",
+   "seerapiId": "3647",
+   "type": [
+    "战斗",
+    "机械"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "拉可尼",
+   "seerapiId": "1462",
+   "type": [
+    "电"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "拉斯塔特",
+   "seerapiId": "3860",
+   "type": [
+    "虫"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "拉特雷奇",
+   "seerapiId": "3469",
+   "type": [
+    "战斗"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "拓弥丸",
+   "seerapiId": "3426",
+   "type": [
+    "战斗",
+    "神秘"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "擎空·凡尔斯",
+   "seerapiId": "3697",
+   "type": [
+    "飞行"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "斗天武神·瑞尔斯",
+   "seerapiId": "3102",
+   "type": [
+    "战斗"
+   ],
+   "variants": [
+    "斗天武神瑞尔斯"
+   ],
+   "role": ""
+  },
+  {
+   "name": "斥星",
+   "seerapiId": "4582",
+   "type": [
+    "神秘",
+    "远古"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "斯达伏尔",
+   "seerapiId": "4254",
+   "type": [
+    "邪灵"
+   ],
+   "variants": [
+    "斯达伐尔"
+   ],
+   "role": ""
+  },
+  {
+   "name": "无为觉者",
+   "seerapiId": "4661",
+   "type": [
+    "普通"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "无妙",
+   "seerapiId": "3551",
+   "type": [
+    "战斗"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "无限·欧根尼克",
+   "seerapiId": "4605",
+   "type": [
+    "圣灵",
+    "次元"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "时空界神",
+   "seerapiId": "4050",
+   "type": [
+    "光",
+    "次元"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "星光·里奥斯",
+   "seerapiId": "4822",
+   "type": [
+    "火"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "昭烈帝刘备",
+   "seerapiId": "2512",
+   "type": [
+    "超能"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "普拉薇安",
+   "seerapiId": "4374",
+   "type": [
+    "草"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "暗影极夜·诺伊尔顿",
+   "seerapiId": "3261",
+   "type": [
+    "暗影"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "暮瑶",
+   "seerapiId": "3260",
+   "type": [
+    "超能"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "暴乱·格劳瑞",
+   "seerapiId": "3994",
+   "type": [
+    "战斗",
+    "电"
+   ],
+   "variants": [
+    "暴乱"
+   ],
+   "role": ""
+  },
+  {
+   "name": "暴君史莱姆",
+   "seerapiId": "3522",
+   "type": [
+    "次元"
+   ],
+   "variants": [
+    "暴君·史莱姆"
+   ],
+   "role": ""
+  },
+  {
+   "name": "未来·小火猴",
+   "seerapiId": "3890",
+   "type": [
+    "火"
+   ],
+   "variants": [
+    "未来小火猴"
+   ],
+   "role": ""
+  },
+  {
+   "name": "极天之翼·托鲁克",
+   "seerapiId": "3642",
+   "type": [
+    "飞行"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "极战·阿尔斯兰",
+   "seerapiId": "4327",
+   "type": [
+    "战斗"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "极渊DS-001",
+   "seerapiId": "4797",
+   "type": [
+    "邪灵",
+    "机械"
+   ],
+   "variants": [
+    "DS001"
+   ],
+   "role": ""
+  },
+  {
+   "name": "格拉托尼",
+   "seerapiId": "2975",
+   "type": [
+    "超能",
+    "地面"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "武心婵",
+   "seerapiId": "4500",
+   "type": [
+    "圣灵",
+    "自然"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "沐怜",
+   "seerapiId": "4397",
+   "type": [
+    "暗影",
+    "冰"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "泠月",
+   "seerapiId": "4261",
+   "type": [
+    "火",
+    "冰"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "洛琦",
+   "seerapiId": "3989",
+   "type": [
+    "光",
+    "暗影"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "混元天尊",
+   "seerapiId": "3788",
+   "type": [
+    "次元",
+    "混沌"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "混沌耶里梅斯",
+   "seerapiId": "3464",
+   "type": [
+    "战斗",
+    "混沌"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "混沌魔使",
+   "seerapiId": "3392",
+   "type": [
+    "暗影"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "潜隐灵蛇",
+   "seerapiId": "4146",
+   "type": [
+    "超能",
+    "神秘"
+   ],
+   "variants": [
+    "潜影灵蛇",
+    "潜能灵蛇"
+   ],
+   "role": ""
+  },
+  {
+   "name": "火忍·浓信",
+   "seerapiId": "2753",
+   "type": [
+    "战斗",
+    "火"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "灵·辰坤星魂",
+   "seerapiId": "3983",
+   "type": [
+    "圣灵",
+    "地面"
+   ],
+   "variants": [
+    "辰坤星魂"
+   ],
+   "role": ""
+  },
+  {
+   "name": "灾厄王妃潘多拉",
+   "seerapiId": "2965",
+   "type": [
+    "神秘",
+    "邪灵"
+   ],
+   "variants": [
+    "灾厄王妃·潘多拉"
+   ],
+   "role": ""
+  },
+  {
+   "name": "炽焰金刚",
+   "seerapiId": "2221",
+   "type": [
+    "火"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "炽羽炎凰·朱雀",
+   "seerapiId": "3318",
+   "type": [
+    "火",
+    "飞行"
+   ],
+   "variants": [
+    "炽羽炎凤朱雀"
+   ],
+   "role": ""
+  },
+  {
+   "name": "烈羽赤兔",
+   "seerapiId": "3029",
+   "type": [
+    "次元"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "猛虎王",
+   "seerapiId": "299",
+   "type": [
+    "地面"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "玛提斯特",
+   "seerapiId": "4312",
+   "type": [
+    "暗影",
+    "邪灵"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "玛格尼亚",
+   "seerapiId": "4206",
+   "type": [
+    "远古",
+    "邪灵"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "环·源",
+   "seerapiId": "4258",
+   "type": [
+    "战斗",
+    "机械"
+   ],
+   "variants": [
+    "环源"
+   ],
+   "role": ""
+  },
+  {
+   "name": "环·零",
+   "seerapiId": "4241",
+   "type": [
+    "战斗",
+    "机械"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "瑞尔斯",
+   "seerapiId": "1045",
+   "type": [
+    "战斗"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "瓦普特",
+   "seerapiId": "4414",
+   "type": [
+    "圣灵",
+    "次元"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "甜蜜宵宵",
+   "seerapiId": "4008",
+   "type": [
+    "普通"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "皮特尔",
+   "seerapiId": "4271",
+   "type": [
+    "光",
+    "暗影"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "皮皮",
+   "seerapiId": "3295",
+   "type": [
+    "飞行"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "神裁·雷伊",
+   "seerapiId": "4757",
+   "type": [
+    "电"
+   ],
+   "variants": [
+    "神裁雷伊"
+   ],
+   "role": ""
+  },
+  {
+   "name": "禅老",
+   "seerapiId": "4449",
+   "type": [
+    "战斗",
+    "神秘"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "科纳什",
+   "seerapiId": "2961",
+   "type": [
+    "战斗",
+    "次元"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "米拉克",
+   "seerapiId": "4243",
+   "type": [
+    "远古",
+    "火"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "糖果皮皮",
+   "seerapiId": "4729",
+   "type": [
+    "光",
+    "飞行"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "红桃皇后",
+   "seerapiId": "3587",
+   "type": [
+    "超能"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "纳瓦雷多",
+   "seerapiId": "2865",
+   "type": [
+    "地面"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "缥缈幽芙",
+   "seerapiId": "4069",
+   "type": [
+    "暗影",
+    "混沌"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "艾拉",
+   "seerapiId": "3501",
+   "type": [
+    "水"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "艾莉安娜",
+   "seerapiId": "4863",
+   "type": [
+    "虫"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "艾莫莉萨",
+   "seerapiId": "3573",
+   "type": [
+    "战斗",
+    "龙"
+   ],
+   "variants": [
+    "艾莫丽萨",
+    "艾莫莉丝",
+    "艾莫利萨"
+   ],
+   "role": ""
+  },
+  {
+   "name": "艾隆德",
+   "seerapiId": "4483",
+   "type": [
+    "龙",
+    "冰"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "花灯仙子",
+   "seerapiId": "4725",
+   "type": [
+    "光"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "莫妮卡",
+   "seerapiId": "3355",
+   "type": [
+    "自然"
+   ],
+   "variants": [
+    "神谕莫妮卡"
+   ],
+   "role": ""
+  },
+  {
+   "name": "莱茵哈特",
+   "seerapiId": "3174",
+   "type": [
+    "地面"
+   ],
+   "variants": [
+    "莱因哈特"
+   ],
+   "role": ""
+  },
+  {
+   "name": "菠萝霸王",
+   "seerapiId": "4664",
+   "type": [
+    "电"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "蓝露",
+   "seerapiId": "3644",
+   "type": [
+    "水"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "蚀骨冰姬",
+   "seerapiId": "3825",
+   "type": [
+    "暗影",
+    "冰"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "西塔伦",
+   "seerapiId": "4636",
+   "type": [
+    "草",
+    "超能"
+   ],
+   "variants": [
+    "西塔轮"
+   ],
+   "role": ""
+  },
+  {
+   "name": "西曼德妮",
+   "seerapiId": "4915",
+   "type": [
+    "圣灵"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "诺伊尔顿",
+   "seerapiId": "2509",
+   "type": [
+    "暗影"
+   ],
+   "variants": [
+    "伊诺尔顿"
+   ],
+   "role": ""
+  },
+  {
+   "name": "费德约克",
+   "seerapiId": "3389",
+   "type": [
+    "机械"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "贾斯",
+   "seerapiId": "4603",
+   "type": [
+    "神秘",
+    "自然"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "超算鲁比克",
+   "seerapiId": "4748",
+   "type": [
+    "机械"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "超维暴龙",
+   "seerapiId": "3948",
+   "type": [
+    "次元"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "跳跳狮",
+   "seerapiId": "3819",
+   "type": [
+    "光",
+    "火"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "辛",
+   "seerapiId": "3964",
+   "type": [
+    "混沌"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "辛辛子",
+   "seerapiId": "4326",
+   "type": [
+    "虫"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "迷你果",
+   "seerapiId": "295",
+   "type": [
+    "草"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "逆世之瞳·哀目黑子",
+   "seerapiId": "4642",
+   "type": [
+    "暗影",
+    "邪灵"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "逐界苍星",
+   "seerapiId": "4450",
+   "type": [
+    "神秘",
+    "机械"
+   ],
+   "variants": [
+    "苍星"
+   ],
+   "role": ""
+  },
+  {
+   "name": "重塑之子·利塞特",
+   "seerapiId": "4665",
+   "type": [
+    "光",
+    "暗影"
+   ],
+   "variants": [
+    "重塑之子利塞特",
+    "利塞特",
+    "重塑之子",
+    "利赛特"
+   ],
+   "role": ""
+  },
+  {
+   "name": "金瑞福龙",
+   "seerapiId": "4602",
+   "type": [
+    "龙",
+    "火"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "金角灵魔",
+   "seerapiId": "3344",
+   "type": [
+    "地面"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "钢牙鲨",
+   "seerapiId": "34",
+   "type": [
+    "水"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "铭唤",
+   "seerapiId": "4785",
+   "type": [
+    "远古",
+    "混沌"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "闪光猛虎王",
+   "seerapiId": "4440",
+   "type": [
+    "地面"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "闪光皮皮",
+   "seerapiId": "164",
+   "type": [
+    "飞行"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "闪电犬",
+   "seerapiId": "3630",
+   "type": [
+    "电"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "阿克希亚",
+   "seerapiId": "50",
+   "type": [
+    "冰"
+   ],
+   "variants": [
+    "阿克西亚"
+   ],
+   "role": ""
+  },
+  {
+   "name": "霆律",
+   "seerapiId": "4561",
+   "type": [
+    "圣灵",
+    "电"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "霜之荆棘·蒙鲁特",
+   "seerapiId": "4629",
+   "type": [
+    "自然",
+    "冰"
+   ],
+   "variants": [
+    "蒙鲁特"
+   ],
+   "role": ""
+  },
+  {
+   "name": "魂弦",
+   "seerapiId": "4612",
+   "type": [
+    "光",
+    "圣灵"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "魇魔",
+   "seerapiId": "4763",
+   "type": [
+    "暗影"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "魔化克雷尔",
+   "seerapiId": "3185",
+   "type": [
+    "光",
+    "暗影"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "魔域仙子",
+   "seerapiId": "1216",
+   "type": [
+    "草"
+   ],
+   "variants": [
+    "魔域"
+   ],
+   "role": ""
+  },
+  {
+   "name": "魔花仙灵",
+   "seerapiId": "4198",
+   "type": [
+    "草"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "鱼龙帝王",
+   "seerapiId": "3309",
+   "type": [
+    "水"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "麦卡威",
+   "seerapiId": "2685",
+   "type": [
+    "超能",
+    "机械"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "黑石女妖",
+   "seerapiId": "4807",
+   "type": [
+    "混沌",
+    "飞行"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "龙伽",
+   "seerapiId": "4262",
+   "type": [
+    "龙",
+    "远古"
+   ],
+   "variants": [],
+   "role": ""
+  },
+  {
+   "name": "龙翼战神",
+   "seerapiId": "3104",
+   "type": [
+    "战斗",
+    "龙"
+   ],
+   "variants": [],
+   "role": ""
+  }
+ ],
+ "ambiguous": {},
+ "fuzzy": {},
+ "noise_or_unresolved": [
+  "三兄弟",
+  "不死大队",
+  "乌鸦",
+  "仙凤托鲁克",
+  "佩韦",
+  "元神星皇",
+  "八戒",
+  "冥王断空破",
+  "冰博士",
+  "冰熊",
+  "刘备",
+  "厄姆沃斯",
+  "古巨基",
+  "咤帝",
+  "圣甲·机盖",
+  "堕落之魂",
+  "大潘多拉",
+  "大眼",
+  "奇镰",
+  "奇镰解放",
+  "女邪灵王",
+  "小飞王",
+  "屠龙",
+  "怒霆雷伊",
+  "无极至尊",
+  "星光布布",
+  "星巴克",
+  "暗暗",
+  "月钰",
+  "格丝塔斯",
+  "波客比",
+  "混伊",
+  "混布",
+  "混沌邪灵王",
+  "漆黑皮神",
+  "漆黑闪皮",
+  "潘多克斯",
+  "潜伏",
+  "火王",
+  "灵神烽火",
+  "熊大",
+  "特攻圣萨",
+  "电月费",
+  "米卡尔",
+  "索比特",
+  "草哈",
+  "虫佬",
+  "虫老",
+  "西游",
+  "西里斯",
+  "赛娅",
+  "邪灵主宰摩鸭子",
+  "魂魄缠绕",
+  "魔咤"
+ ],
+ "noise": [],
+ "unresolved": [
+  "三兄弟",
+  "不死大队",
+  "乌鸦",
+  "仙凤托鲁克",
+  "佩韦",
+  "元神星皇",
+  "八戒",
+  "冥王断空破",
+  "冰博士",
+  "冰熊",
+  "刘备",
+  "厄姆沃斯",
+  "古巨基",
+  "咤帝",
+  "圣甲·机盖",
+  "堕落之魂",
+  "大潘多拉",
+  "大眼",
+  "奇镰",
+  "奇镰解放",
+  "女邪灵王",
+  "小飞王",
+  "屠龙",
+  "怒霆雷伊",
+  "无极至尊",
+  "星光布布",
+  "星巴克",
+  "暗暗",
+  "月钰",
+  "格丝塔斯",
+  "波客比",
+  "混伊",
+  "混布",
+  "混沌邪灵王",
+  "漆黑皮神",
+  "漆黑闪皮",
+  "潘多克斯",
+  "潜伏",
+  "火王",
+  "灵神烽火",
+  "熊大",
+  "特攻圣萨",
+  "电月费",
+  "米卡尔",
+  "索比特",
+  "草哈",
+  "虫佬",
+  "虫老",
+  "西游",
+  "西里斯",
+  "赛娅",
+  "邪灵主宰摩鸭子",
+  "魂魄缠绕",
+  "魔咤"
+ ]
+}

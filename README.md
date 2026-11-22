@@ -39,7 +39,7 @@ seer/
 | 传输/协议 | `protocol.py` `ws.py` `client.py` | 帧编解码（17B 帧头）、手写 RFC6455 WS、`GameClient` 三通道（unity TCP / h5 WSS / flash TCP）|
 | 登录 | `login.py` `session.py` `progress.py` | 61.com 鉴权、OAuth、Unity 网关选址、三端登录体构造、会话/进度 |
 | 领域能力 | `pets.py` `warehouse.py` `team.py` `inventory.py` `pet_details.py` `features.py` `probe.py` | 背包(43706/2303/2361)、仓库移动(2304)、阵容/装备/称号(2308/2604/3404)、1001 快照读穿戴、2301 详情、命令序列、只读探测 |
-| 因子 | `factor.py` `factor_runner.py` | `KNOWN_FACTORS`、41284/41282 进关、2404/2405/2407 出招、进度读取 |
+| 因子 | `factor.py` `factor_runner.py` | `FactorSpec`/`load_factor_spec`（显式 design_id/factor_id）、41284/41282 进关、2404/2405/2407 出招、进度读取 |
 | 战斗 | `battle_data.py` `battle.py` `battle_observer.py` `battle_window.py` `battle_report.py` | 本地数据底座/模拟引擎/逐帧观测/tk 窗口/**真实战斗战报** |
 | 数据/知识 | `provider.py` `ini_util.py` `domain_knowledge.py` `sqlite_kb.py` + `domain_knowledge/` | seerapi 子进程反查、GBK INI、本地知识库(states.db + strategies.json) |
 | 入口 | `cli.py` `mcp_server.py` | argparse 子命令分发；MCP stdio 工具暴露 |

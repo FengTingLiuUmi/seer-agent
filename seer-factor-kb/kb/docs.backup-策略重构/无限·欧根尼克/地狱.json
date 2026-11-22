@@ -1,0 +1,172 @@
+{
+ "doc_id": "无限·欧根尼克#地狱",
+ "factor": "无限·欧根尼克",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4534,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "次元",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 300固伤; 免疫非先制技能伤害; 消强; 减伤16.7%",
+   "mech": [
+    "onlyFirstStrike",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "2次引爆+先制强攻（极寒魔兽/冥契·格斯塔丝等） / 暗影极夜·诺伊尔顿先三单挑 / 塞勒涅单挑"
+   ],
+   "pets": [
+    "帝皇之御",
+    "极寒魔兽",
+    "冥契·格斯塔丝",
+    "恶咒巫师·科萨斯",
+    "暗影极夜·诺伊尔顿",
+    "塞勒涅"
+   ],
+   "why": "核心是「必先+封属+免疫非先制技能伤害」：Boss 永远先手、封属性，普通(非先制)技能打不出红伤。所以用帝皇之御守御八方——它是攻击技能、不受封属影响，给全队「必先+必暴」；强攻手(极寒魔兽/冥契·格斯塔丝等)接力只放先制技(先三)绕过「免疫非先制」门槛打爆发。消强决定不能靠堆强化，可配金火；300固伤靠速杀解决。单挑线(暗影极夜·诺伊尔顿先三/塞勒涅)差异在自带先制输出或续航，一只即可循环磨死。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4291,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "次元",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 300固伤; 非必中必miss; 消强; 减伤16.7%",
+   "mech": [
+    "dodge",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "必中引爆+强攻（极战·阿尔斯兰等） / 索比斯第五单挑 / 茉蕊儿保沐怜 / 希可洛单挑"
+   ],
+   "pets": [
+    "极战·阿尔斯兰",
+    "幽冥狼魂",
+    "伊莱",
+    "索比斯",
+    "茉蕊儿",
+    "沐怜",
+    "希可洛"
+   ],
+   "why": "核心是「非必中必miss」：非必中技能必被闪，普通攻击甚至普通引爆都会 miss。因此要走必中引爆+强攻(极战·阿尔斯兰等)，用真·必中(或必暴的伪必中=命中100%)顶掉 miss 门再打红伤。多方案差异：索比斯/希可洛是靠站场反伤或磨血单挑，不走速杀；茉蕊儿保沐怜则是辅助保强攻手续航。消强依然要求不靠强化，减伤16.7%+300固伤靠爆发或高回复。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4477,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "电次元",
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 500固伤; 概率害怕; 消强; 减伤16.7%",
+   "mech": [
+    "clearBuff",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "圣谱单挑 / 四九圣尊单挑（刷55害怕抗）"
+   ],
+   "pets": [
+    "圣灵谱尼",
+    "四九圣尊"
+   ],
+   "why": "核心威胁是概率害怕控场+500固伤+必先封属。圣谱(圣灵谱尼)免疫异常、回血与防御都强，单挑最稳；四九圣尊靠把害怕抗性刷到55顶掉控场后站场磨血。消强决定不靠强化、可配金火，500固伤靠高回复/吸血续航，减伤16.7%略微拉高练度门槛。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4542,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "机械次元",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 500固伤; 免疫并反弹暴击伤害; 吸强(偷强); 全属性-1; 减伤33.3%",
+   "mech": [
+    "reflection",
+    "debuff",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "潘+蒂朵+消强后典韦秒杀，未击杀补必先 / 必先大队强攻 / 卡莎单挑（金火压攻）"
+   ],
+   "pets": [
+    "潘克多斯",
+    "蒂朵",
+    "典韦",
+    "深渊狱神·哈迪斯",
+    "卡莎"
+   ],
+   "why": "核心是「免疫并反弹暴击伤害」：这关打暴击会被免疫且反伤，所以绝不能用表姐引爆/必暴流，必须走非暴击。方案一潘克多斯+蒂朵做攻击铺垫增伤，先消强(Boss 吸强偷强)再让典韦一次性秒杀，没秒掉再补必先；卡莎单挑则靠金火压攻+减伤顶住「全属性-1」的持续削弱与反弹、站场磨死。减伤33.3%+500固伤要求高爆发或强续航。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4605,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "圣灵次元",
+   "boss_hp": 20000,
+   "traits": "必先; 封属; 500固伤; 吸强(偷强); 清PP; 两命; 复活后全属性+1; 减伤33.3%",
+   "mech": [
+    "clearPP",
+    "twoLife",
+    "selfBuff",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "消强后千裳单挑（金火，复活切消强） / 希可洛单挑（金火） / 圣谱单挑（双消强）"
+   ],
+   "pets": [
+    "千裳",
+    "希可洛",
+    "圣灵谱尼",
+    "帝皇之御",
+    "蒂朵",
+    "极寒魔兽",
+    "至序圣华",
+    "潘克多斯",
+    "鲁肃"
+   ],
+   "why": "核心是「吸强偷强+清PP+两命且复活后全属性+1」的组合。先要消强清掉 Boss 偷来的强化，再让千裳/希可洛站场(配金火减伤续航)打；清PP要选不怕 PP(高PP/回PP)或免 PP 的手。两命且复活后全属性+1，复活瞬间必须切出消强手再消一次(双消强)压住强化，否则被打崩；减伤33.3%+500固伤要求持续高回复。"
+  }
+ ],
+ "tids": [
+  2556,
+  2594,
+  479,
+  489,
+  2207
+ ],
+ "note": "无正文数据"
+}

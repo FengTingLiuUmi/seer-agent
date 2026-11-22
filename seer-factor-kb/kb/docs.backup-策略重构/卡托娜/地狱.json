@@ -1,0 +1,137 @@
+{
+ "doc_id": "卡托娜#地狱",
+ "factor": "卡托娜",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4314,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "草",
+   "boss_hp": 6000,
+   "traits": "先制+3; 天生攻击+2; 消强; 吸血200; 减伤",
+   "mech": [
+    "heal",
+    "clearBuff",
+    "firstStrike",
+    "damageReduction"
+   ],
+   "strategies": [
+    "圣光莫妮卡第五强攻 / 苍穹之望艾希丝先三强攻"
+   ],
+   "pets": [
+    "圣光莫妮卡",
+    "苍穹之望艾希丝"
+   ],
+   "why": "Boss 消强让靠强化站场的打法不可行，吸血200让拖延越久 Boss 越占优，减伤又稀释多段输出，所以攻略用「第五/先三」这类高面板单段大招直接强攻速杀。圣光莫妮卡第五偏打爆发，苍穹之望艾希丝先三抢先手反制 Boss 先制+3，两者都绕开强化依赖一波收。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4316,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "地面战斗",
+   "boss_hp": 8000,
+   "traits": "先制+3; 天生攻击+2; 消强; 吸血250; 减伤; 必暴; 害怕",
+   "mech": [
+    "heal",
+    "clearBuff",
+    "control",
+    "bossCrit",
+    "firstStrike",
+    "damageReduction"
+   ],
+   "strategies": [
+    "拉斯塔特(虫老)先三消强+第五断回合磨死"
+   ],
+   "pets": [
+    "拉斯塔特"
+   ],
+   "why": "致命在 Boss 必暴(刀刀暴击)+害怕控场+吸血250+减伤：速杀打不穿减伤、拖延又被吸血续命。拉斯塔特先三消强清掉 Boss 天生攻击+2 以压低必暴重创，再靠第五断回合拆掉 Boss 的增益回合、配合抗性硬磨，避免被控后持续挨暴击流血流死。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4323,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "草暗影",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 天生攻击+2; 消强; 吸血300; 护盾",
+   "mech": [
+    "shield",
+    "heal",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr"
+   ],
+   "strategies": [
+    "圣灵谱尼先三吸强化+第五吸血磨死"
+   ],
+   "pets": [
+    "圣灵谱尼"
+   ],
+   "why": "Boss 封属锁死属性技能，加上必先+吸血300+护盾，只能靠攻击技能对耗。圣灵谱尼先三吸强化是攻击技、不受封属，能吸走 Boss 天生攻击+2 反哺自己，再用第五的吸血抵消 Boss 吸血300/护盾慢慢磨死，把「秒不掉」转化为站场对耗。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4268,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "地面超能",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 天生攻击+2; 全属性+1; 闪避; 吸强(偷强)",
+   "mech": [
+    "dodge",
+    "selfBuff",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr"
+   ],
+   "strategies": [
+    "帝皇之御自爆+霍夫曼第五强攻"
+   ],
+   "pets": [
+    "帝皇之御",
+    "霍夫曼"
+   ],
+   "why": "Boss 高闪避使普攻易 miss，必先+全属性+1 越拖越强，吸强还会偷我方强化。帝皇之御自爆守御八方是攻击技、不受封属，给霍夫曼「必先+必暴」：必暴即伪必中盖住闪避、必先反超 Boss 必先，再接第五不下强化一波强攻速杀，避开吸强偷 buff 的持久战。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4324,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "圣灵地面",
+   "boss_hp": 14000,
+   "traits": "必先; 封属; 天生攻击+2; 免疫克制系伤害; 石化",
+   "mech": [
+    "control",
+    "firstStrike",
+    "sealAttr"
+   ],
+   "strategies": [
+    "潘克多斯+蒂朵+斯克鲁恩送buff后魔钰150强攻 / 高热冰冷千裳磨 / 盾体四九圣尊单挑"
+   ],
+   "pets": [
+    "潘克多斯",
+    "蒂朵",
+    "斯克鲁恩",
+    "魔钰",
+    "千裳",
+    "四九圣尊"
+   ],
+   "why": "Boss 免疫克制系伤害+石化控场+必先+封属，让依赖克制倍率的常规强攻失效。方案一改用火潘+蒂朵+斯克鲁恩增伤链堆非克制红伤、魔钰150 一波速杀绕开克制免疫；方案二(千裳高热冰冷)与方案三(四九圣尊盾体)则放弃强攻转为站场磨/扛石化单挑，核心都是「不靠克制、耗过去」。"
+  }
+ ]
+}

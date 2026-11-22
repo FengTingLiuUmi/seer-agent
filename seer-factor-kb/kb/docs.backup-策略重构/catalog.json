@@ -1,0 +1,1787 @@
+[
+ {
+  "doc_id": "B-12#地狱",
+  "factor": "B-12",
+  "difficulty": "地狱",
+  "path": "docs/B-12/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "万里春·北鸟#地狱",
+  "factor": "万里春·北鸟",
+  "difficulty": "地狱",
+  "path": "docs/万里春·北鸟/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "不破帝·南霜#困难",
+  "factor": "不破帝·南霜",
+  "difficulty": "困难",
+  "path": "docs/不破帝·南霜/困难.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "不破帝·南霜#地狱",
+  "factor": "不破帝·南霜",
+  "difficulty": "地狱",
+  "path": "docs/不破帝·南霜/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "亚巴兰托#地狱",
+  "factor": "亚巴兰托",
+  "difficulty": "地狱",
+  "path": "docs/亚巴兰托/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "仿生兽·库比#困难",
+  "factor": "仿生兽·库比",
+  "difficulty": "困难",
+  "path": "docs/仿生兽·库比/困难.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "仿生兽·库比#地狱",
+  "factor": "仿生兽·库比",
+  "difficulty": "地狱",
+  "path": "docs/仿生兽·库比/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "伊塔·回溯型#地狱",
+  "factor": "伊塔·回溯型",
+  "difficulty": "地狱",
+  "path": "docs/伊塔·回溯型/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "伊娜#地狱",
+  "factor": "伊娜",
+  "difficulty": "地狱",
+  "path": "docs/伊娜/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "伏尔格安#困难",
+  "factor": "伏尔格安",
+  "difficulty": "困难",
+  "path": "docs/伏尔格安/困难.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "伏尔格安#地狱",
+  "factor": "伏尔格安",
+  "difficulty": "地狱",
+  "path": "docs/伏尔格安/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "佩洛瑟斯#困难",
+  "factor": "佩洛瑟斯",
+  "difficulty": "困难",
+  "path": "docs/佩洛瑟斯/困难.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "佩洛瑟斯#地狱",
+  "factor": "佩洛瑟斯",
+  "difficulty": "地狱",
+  "path": "docs/佩洛瑟斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "僧行#地狱",
+  "factor": "僧行",
+  "difficulty": "地狱",
+  "path": "docs/僧行/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "冥契·格斯塔丝#地狱",
+  "factor": "冥契·格斯塔丝",
+  "difficulty": "地狱",
+  "path": "docs/冥契·格斯塔丝/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "凯亚#地狱",
+  "factor": "凯亚",
+  "difficulty": "地狱",
+  "path": "docs/凯亚/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "北鸟#地狱",
+  "factor": "北鸟",
+  "difficulty": "地狱",
+  "path": "docs/北鸟/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "卓尔布#地狱",
+  "factor": "卓尔布",
+  "difficulty": "地狱",
+  "path": "docs/卓尔布/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "卡塔·武装型#地狱",
+  "factor": "卡塔·武装型",
+  "difficulty": "地狱",
+  "path": "docs/卡塔·武装型/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "卡威治#困难",
+  "factor": "卡威治",
+  "difficulty": "困难",
+  "path": "docs/卡威治/困难.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "卡威治#地狱",
+  "factor": "卡威治",
+  "difficulty": "地狱",
+  "path": "docs/卡威治/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "卡托娜#地狱",
+  "factor": "卡托娜",
+  "difficulty": "地狱",
+  "path": "docs/卡托娜/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "卡斯珀#地狱",
+  "factor": "卡斯珀",
+  "difficulty": "地狱",
+  "path": "docs/卡斯珀/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "卡莎#地狱",
+  "factor": "卡莎",
+  "difficulty": "地狱",
+  "path": "docs/卡莎/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "卡鲁维德#地狱",
+  "factor": "卡鲁维德",
+  "difficulty": "地狱",
+  "path": "docs/卡鲁维德/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "卫岳#地狱",
+  "factor": "卫岳",
+  "difficulty": "地狱",
+  "path": "docs/卫岳/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "厄孽提亚#地狱",
+  "factor": "厄孽提亚",
+  "difficulty": "地狱",
+  "path": "docs/厄孽提亚/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "原始预言·吉尼亚斯#地狱",
+  "factor": "原始预言·吉尼亚斯",
+  "difficulty": "地狱",
+  "path": "docs/原始预言·吉尼亚斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "参天巨型仙人掌#地狱",
+  "factor": "参天巨型仙人掌",
+  "difficulty": "地狱",
+  "path": "docs/参天巨型仙人掌/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "变异鳄兰#地狱",
+  "factor": "变异鳄兰",
+  "difficulty": "地狱",
+  "path": "docs/变异鳄兰/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "吉甘提卡#地狱",
+  "factor": "吉甘提卡",
+  "difficulty": "地狱",
+  "path": "docs/吉甘提卡/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "启源伊洛特斯#地狱",
+  "factor": "启源伊洛特斯",
+  "difficulty": "地狱",
+  "path": "docs/启源伊洛特斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "命运之轮·莫伊莱#地狱",
+  "factor": "命运之轮·莫伊莱",
+  "difficulty": "地狱",
+  "path": "docs/命运之轮·莫伊莱/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "命运玛酷索#地狱",
+  "factor": "命运玛酷索",
+  "difficulty": "地狱",
+  "path": "docs/命运玛酷索/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "哈洛兰特#地狱",
+  "factor": "哈洛兰特",
+  "difficulty": "地狱",
+  "path": "docs/哈洛兰特/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "哲利斯#地狱",
+  "factor": "哲利斯",
+  "difficulty": "地狱",
+  "path": "docs/哲利斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "噬夜疾袭·库拉塔克#地狱",
+  "factor": "噬夜疾袭·库拉塔克",
+  "difficulty": "地狱",
+  "path": "docs/噬夜疾袭·库拉塔克/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "图托尔斯#地狱",
+  "factor": "图托尔斯",
+  "difficulty": "地狱",
+  "path": "docs/图托尔斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "图特摩斯#地狱",
+  "factor": "图特摩斯",
+  "difficulty": "地狱",
+  "path": "docs/图特摩斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "圣心女孩·卡托娜#地狱",
+  "factor": "圣心女孩·卡托娜",
+  "difficulty": "地狱",
+  "path": "docs/圣心女孩·卡托娜/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "圣血猎者·赫布洛#困难",
+  "factor": "圣血猎者·赫布洛",
+  "difficulty": "困难",
+  "path": "docs/圣血猎者·赫布洛/困难.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "圣血猎者·赫布洛#地狱",
+  "factor": "圣血猎者·赫布洛",
+  "difficulty": "地狱",
+  "path": "docs/圣血猎者·赫布洛/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "圣谕之风·岚#地狱",
+  "factor": "圣谕之风·岚",
+  "difficulty": "地狱",
+  "path": "docs/圣谕之风·岚/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "坎普瑞亚#地狱",
+  "factor": "坎普瑞亚",
+  "difficulty": "地狱",
+  "path": "docs/坎普瑞亚/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "坦普瑞#地狱",
+  "factor": "坦普瑞",
+  "difficulty": "地狱",
+  "path": "docs/坦普瑞/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "埃斯宾诺#地狱",
+  "factor": "埃斯宾诺",
+  "difficulty": "地狱",
+  "path": "docs/埃斯宾诺/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "堕息·迹#地狱",
+  "factor": "堕息·迹",
+  "difficulty": "地狱",
+  "path": "docs/堕息·迹/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "塔威尔#地狱",
+  "factor": "塔威尔",
+  "difficulty": "地狱",
+  "path": "docs/塔威尔/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "塔尼瓦#地狱",
+  "factor": "塔尼瓦",
+  "difficulty": "地狱",
+  "path": "docs/塔尼瓦/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "塞弥丝珂#困难",
+  "factor": "塞弥丝珂",
+  "difficulty": "困难",
+  "path": "docs/塞弥丝珂/困难.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "塞弥丝珂#地狱",
+  "factor": "塞弥丝珂",
+  "difficulty": "地狱",
+  "path": "docs/塞弥丝珂/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "墟婆#地狱",
+  "factor": "墟婆",
+  "difficulty": "地狱",
+  "path": "docs/墟婆/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "墨纪拉#地狱",
+  "factor": "墨纪拉",
+  "difficulty": "地狱",
+  "path": "docs/墨纪拉/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "夜居魔使#地狱",
+  "factor": "夜居魔使",
+  "difficulty": "地狱",
+  "path": "docs/夜居魔使/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "夜罗琉彩#地狱",
+  "factor": "夜罗琉彩",
+  "difficulty": "地狱",
+  "path": "docs/夜罗琉彩/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "天奔流·东辉#地狱",
+  "factor": "天奔流·东辉",
+  "difficulty": "地狱",
+  "path": "docs/天奔流·东辉/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "天阶机器人#困难",
+  "factor": "天阶机器人",
+  "difficulty": "困难",
+  "path": "docs/天阶机器人/困难.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "天阶机器人#地狱",
+  "factor": "天阶机器人",
+  "difficulty": "地狱",
+  "path": "docs/天阶机器人/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "奇塔·解算型#地狱",
+  "factor": "奇塔·解算型",
+  "difficulty": "地狱",
+  "path": "docs/奇塔·解算型/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "娜娜薇尔#困难",
+  "factor": "娜娜薇尔",
+  "difficulty": "困难",
+  "path": "docs/娜娜薇尔/困难.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "娜娜薇尔#地狱",
+  "factor": "娜娜薇尔",
+  "difficulty": "地狱",
+  "path": "docs/娜娜薇尔/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "娜诺#地狱",
+  "factor": "娜诺",
+  "difficulty": "地狱",
+  "path": "docs/娜诺/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "婕克拉德#地狱",
+  "factor": "婕克拉德",
+  "difficulty": "地狱",
+  "path": "docs/婕克拉德/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "安姆耐特#地狱",
+  "factor": "安姆耐特",
+  "difficulty": "地狱",
+  "path": "docs/安姆耐特/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "安瑟伦#地狱",
+  "factor": "安瑟伦",
+  "difficulty": "地狱",
+  "path": "docs/安瑟伦/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "小珍妮#地狱",
+  "factor": "小珍妮",
+  "difficulty": "地狱",
+  "path": "docs/小珍妮/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "尘息巨像#地狱",
+  "factor": "尘息巨像",
+  "difficulty": "地狱",
+  "path": "docs/尘息巨像/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "尤莉米特#地狱",
+  "factor": "尤莉米特",
+  "difficulty": "地狱",
+  "path": "docs/尤莉米特/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "工程型TOH#地狱",
+  "factor": "工程型TOH",
+  "difficulty": "地狱",
+  "path": "docs/工程型TOH/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "巴特勒#地狱",
+  "factor": "巴特勒",
+  "difficulty": "地狱",
+  "path": "docs/巴特勒/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "布贝巴拉#地狱",
+  "factor": "布贝巴拉",
+  "difficulty": "地狱",
+  "path": "docs/布贝巴拉/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "希可洛#地狱",
+  "factor": "希可洛",
+  "difficulty": "地狱",
+  "path": "docs/希可洛/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "希尔瑟拉#地狱",
+  "factor": "希尔瑟拉",
+  "difficulty": "地狱",
+  "path": "docs/希尔瑟拉/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "帕诺·海啸武装#地狱",
+  "factor": "帕诺·海啸武装",
+  "difficulty": "地狱",
+  "path": "docs/帕诺·海啸武装/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "帕诺·烈焰武装#地狱",
+  "factor": "帕诺·烈焰武装",
+  "difficulty": "地狱",
+  "path": "docs/帕诺·烈焰武装/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "帕诺·绿光武装#地狱",
+  "factor": "帕诺·绿光武装",
+  "difficulty": "地狱",
+  "path": "docs/帕诺·绿光武装/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "幽阑·执冥#地狱",
+  "factor": "幽阑·执冥",
+  "difficulty": "地狱",
+  "path": "docs/幽阑·执冥/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "幽魅之影·杰格#地狱",
+  "factor": "幽魅之影·杰格",
+  "difficulty": "地狱",
+  "path": "docs/幽魅之影·杰格/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "库乐芭#地狱",
+  "factor": "库乐芭",
+  "difficulty": "地狱",
+  "path": "docs/库乐芭/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "库坦#地狱",
+  "factor": "库坦",
+  "difficulty": "地狱",
+  "path": "docs/库坦/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "库拉姆斯#地狱",
+  "factor": "库拉姆斯",
+  "difficulty": "地狱",
+  "path": "docs/库拉姆斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "库洛妮#地狱",
+  "factor": "库洛妮",
+  "difficulty": "地狱",
+  "path": "docs/库洛妮/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "库莱姆斯#地狱",
+  "factor": "库莱姆斯",
+  "difficulty": "地狱",
+  "path": "docs/库莱姆斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "康迪亚克#地狱",
+  "factor": "康迪亚克",
+  "difficulty": "地狱",
+  "path": "docs/康迪亚克/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "异维·拉伯克#地狱",
+  "factor": "异维·拉伯克",
+  "difficulty": "地狱",
+  "path": "docs/异维·拉伯克/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "异能元素奥薇纳#地狱",
+  "factor": "异能元素奥薇纳",
+  "difficulty": "地狱",
+  "path": "docs/异能元素奥薇纳/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "影行者#地狱",
+  "factor": "影行者",
+  "difficulty": "地狱",
+  "path": "docs/影行者/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "彼尔德#地狱",
+  "factor": "彼尔德",
+  "difficulty": "地狱",
+  "path": "docs/彼尔德/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "德布比特#地狱",
+  "factor": "德布比特",
+  "difficulty": "地狱",
+  "path": "docs/德布比特/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "德拉莫斯#地狱",
+  "factor": "德拉莫斯",
+  "difficulty": "地狱",
+  "path": "docs/德拉莫斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "恶咒巫师科萨斯#地狱",
+  "factor": "恶咒巫师科萨斯",
+  "difficulty": "地狱",
+  "path": "docs/恶咒巫师科萨斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "恶鬼图伽#地狱",
+  "factor": "恶鬼图伽",
+  "difficulty": "地狱",
+  "path": "docs/恶鬼图伽/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "戟决先锋#地狱",
+  "factor": "戟决先锋",
+  "difficulty": "地狱",
+  "path": "docs/戟决先锋/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "托勒斯#地狱",
+  "factor": "托勒斯",
+  "difficulty": "地狱",
+  "path": "docs/托勒斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "拉托奥#地狱",
+  "factor": "拉托奥",
+  "difficulty": "地狱",
+  "path": "docs/拉托奥/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "拉米兹#地狱",
+  "factor": "拉米兹",
+  "difficulty": "地狱",
+  "path": "docs/拉米兹/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "提西弗涅#地狱",
+  "factor": "提西弗涅",
+  "difficulty": "地狱",
+  "path": "docs/提西弗涅/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "摆渡者·费雷#地狱",
+  "factor": "摆渡者·费雷",
+  "difficulty": "地狱",
+  "path": "docs/摆渡者·费雷/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "文森特#地狱",
+  "factor": "文森特",
+  "difficulty": "地狱",
+  "path": "docs/文森特/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "斥星#地狱",
+  "factor": "斥星",
+  "difficulty": "地狱",
+  "path": "docs/斥星/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "斯凯普#地狱",
+  "factor": "斯凯普",
+  "difficulty": "地狱",
+  "path": "docs/斯凯普/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "斯弗洛浦亚#地狱",
+  "factor": "斯弗洛浦亚",
+  "difficulty": "地狱",
+  "path": "docs/斯弗洛浦亚/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "斯缇尔#地狱",
+  "factor": "斯缇尔",
+  "difficulty": "地狱",
+  "path": "docs/斯缇尔/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "斯达莱斯#地狱",
+  "factor": "斯达莱斯",
+  "difficulty": "地狱",
+  "path": "docs/斯达莱斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "方术·悠悠#地狱",
+  "factor": "方术·悠悠",
+  "difficulty": "地狱",
+  "path": "docs/方术·悠悠/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "无为觉者#困难",
+  "factor": "无为觉者",
+  "difficulty": "困难",
+  "path": "docs/无为觉者/困难.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "无为觉者#地狱",
+  "factor": "无为觉者",
+  "difficulty": "地狱",
+  "path": "docs/无为觉者/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "无极使者#地狱",
+  "factor": "无极使者",
+  "difficulty": "地狱",
+  "path": "docs/无极使者/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "无限·欧根尼克#地狱",
+  "factor": "无限·欧根尼克",
+  "difficulty": "地狱",
+  "path": "docs/无限·欧根尼克/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "时钟试炼官·极#困难",
+  "factor": "时钟试炼官·极",
+  "difficulty": "困难",
+  "path": "docs/时钟试炼官·极/困难.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "时钟试炼官·极#地狱",
+  "factor": "时钟试炼官·极",
+  "difficulty": "地狱",
+  "path": "docs/时钟试炼官·极/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "时钟诛机#地狱",
+  "factor": "时钟诛机",
+  "difficulty": "地狱",
+  "path": "docs/时钟诛机/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "星光·纳多雷#地狱",
+  "factor": "星光·纳多雷",
+  "difficulty": "地狱",
+  "path": "docs/星光·纳多雷/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "星光·蘑菇怪#地狱",
+  "factor": "星光·蘑菇怪",
+  "difficulty": "地狱",
+  "path": "docs/星光·蘑菇怪/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "星光·里奥斯#地狱",
+  "factor": "星光·里奥斯",
+  "difficulty": "地狱",
+  "path": "docs/星光·里奥斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "星光·雷纳多#地狱",
+  "factor": "星光·雷纳多",
+  "difficulty": "地狱",
+  "path": "docs/星光·雷纳多/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "普鲁修托#地狱",
+  "factor": "普鲁修托",
+  "difficulty": "地狱",
+  "path": "docs/普鲁修托/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "曜焰万象·文森特#地狱",
+  "factor": "曜焰万象·文森特",
+  "difficulty": "地狱",
+  "path": "docs/曜焰万象·文森特/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "未明#地狱",
+  "factor": "未明",
+  "difficulty": "地狱",
+  "path": "docs/未明/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "机魂核心·卡尔玛#地狱",
+  "factor": "机魂核心·卡尔玛",
+  "difficulty": "地狱",
+  "path": "docs/机魂核心·卡尔玛/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "杰特洛#地狱",
+  "factor": "杰特洛",
+  "difficulty": "地狱",
+  "path": "docs/杰特洛/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "极恶妖兽#地狱",
+  "factor": "极恶妖兽",
+  "difficulty": "地狱",
+  "path": "docs/极恶妖兽/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "极战·阿尔斯兰#地狱",
+  "factor": "极战·阿尔斯兰",
+  "difficulty": "地狱",
+  "path": "docs/极战·阿尔斯兰/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "枫落殇·西叶#困难",
+  "factor": "枫落殇·西叶",
+  "difficulty": "困难",
+  "path": "docs/枫落殇·西叶/困难.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "枫落殇·西叶#地狱",
+  "factor": "枫落殇·西叶",
+  "difficulty": "地狱",
+  "path": "docs/枫落殇·西叶/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "格斯塔丝#地狱",
+  "factor": "格斯塔丝",
+  "difficulty": "地狱",
+  "path": "docs/格斯塔丝/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "桑多姆#地狱",
+  "factor": "桑多姆",
+  "difficulty": "地狱",
+  "path": "docs/桑多姆/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "梦魇塔奇拉顿#地狱",
+  "factor": "梦魇塔奇拉顿",
+  "difficulty": "地狱",
+  "path": "docs/梦魇塔奇拉顿/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "梦魇尼斯克#地狱",
+  "factor": "梦魇尼斯克",
+  "difficulty": "地狱",
+  "path": "docs/梦魇尼斯克/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "森曼#地狱",
+  "factor": "森曼",
+  "difficulty": "地狱",
+  "path": "docs/森曼/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "欧根尼克#地狱",
+  "factor": "欧根尼克",
+  "difficulty": "地狱",
+  "path": "docs/欧根尼克/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "沙弑·吉拉#地狱",
+  "factor": "沙弑·吉拉",
+  "difficulty": "地狱",
+  "path": "docs/沙弑·吉拉/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "沙罗摩奥#地狱",
+  "factor": "沙罗摩奥",
+  "difficulty": "地狱",
+  "path": "docs/沙罗摩奥/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "泠月#地狱",
+  "factor": "泠月",
+  "difficulty": "地狱",
+  "path": "docs/泠月/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "泰普斯#地狱",
+  "factor": "泰普斯",
+  "difficulty": "地狱",
+  "path": "docs/泰普斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "派利尔#地狱",
+  "factor": "派利尔",
+  "difficulty": "地狱",
+  "path": "docs/派利尔/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "流荧·雪#地狱",
+  "factor": "流荧·雪",
+  "difficulty": "地狱",
+  "path": "docs/流荧·雪/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "浮掠双刃·卓尔布#困难",
+  "factor": "浮掠双刃·卓尔布",
+  "difficulty": "困难",
+  "path": "docs/浮掠双刃·卓尔布/困难.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "浮掠双刃·卓尔布#地狱",
+  "factor": "浮掠双刃·卓尔布",
+  "difficulty": "地狱",
+  "path": "docs/浮掠双刃·卓尔布/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "海棠教皇·未明#地狱",
+  "factor": "海棠教皇·未明",
+  "difficulty": "地狱",
+  "path": "docs/海棠教皇·未明/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "涡锋#地狱",
+  "factor": "涡锋",
+  "difficulty": "地狱",
+  "path": "docs/涡锋/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "混灵·莱因哈特#地狱",
+  "factor": "混灵·莱因哈特",
+  "difficulty": "地狱",
+  "path": "docs/混灵·莱因哈特/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "渊枭#地狱",
+  "factor": "渊枭",
+  "difficulty": "地狱",
+  "path": "docs/渊枭/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "溯洄·拉伯克#地狱",
+  "factor": "溯洄·拉伯克",
+  "difficulty": "地狱",
+  "path": "docs/溯洄·拉伯克/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "灰蛾#地狱",
+  "factor": "灰蛾",
+  "difficulty": "地狱",
+  "path": "docs/灰蛾/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "灵巢之主·索杰德尔#地狱",
+  "factor": "灵巢之主·索杰德尔",
+  "difficulty": "地狱",
+  "path": "docs/灵巢之主·索杰德尔/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "灼云#地狱",
+  "factor": "灼云",
+  "difficulty": "地狱",
+  "path": "docs/灼云/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "灼渊煌龙#地狱",
+  "factor": "灼渊煌龙",
+  "difficulty": "地狱",
+  "path": "docs/灼渊煌龙/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "爵刻黑沃德#地狱",
+  "factor": "爵刻黑沃德",
+  "difficulty": "地狱",
+  "path": "docs/爵刻黑沃德/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "特维耶#地狱",
+  "factor": "特维耶",
+  "difficulty": "地狱",
+  "path": "docs/特维耶/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "特罗斯#地狱",
+  "factor": "特罗斯",
+  "difficulty": "地狱",
+  "path": "docs/特罗斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "猛虎之刃·泰伯#地狱",
+  "factor": "猛虎之刃·泰伯",
+  "difficulty": "地狱",
+  "path": "docs/猛虎之刃·泰伯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "王之查尔顿#地狱",
+  "factor": "王之查尔顿",
+  "difficulty": "地狱",
+  "path": "docs/王之查尔顿/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "王座守卫·古亚尼斯#地狱",
+  "factor": "王座守卫·古亚尼斯",
+  "difficulty": "地狱",
+  "path": "docs/王座守卫·古亚尼斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "玖莉娜#地狱",
+  "factor": "玖莉娜",
+  "difficulty": "地狱",
+  "path": "docs/玖莉娜/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "玛提斯特#地狱",
+  "factor": "玛提斯特",
+  "difficulty": "地狱",
+  "path": "docs/玛提斯特/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "环·格#地狱",
+  "factor": "环·格",
+  "difficulty": "地狱",
+  "path": "docs/环·格/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "环·零#地狱",
+  "factor": "环·零",
+  "difficulty": "地狱",
+  "path": "docs/环·零/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "瑞特拉尼#地狱",
+  "factor": "瑞特拉尼",
+  "difficulty": "地狱",
+  "path": "docs/瑞特拉尼/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "瑞迪卡#地狱",
+  "factor": "瑞迪卡",
+  "difficulty": "地狱",
+  "path": "docs/瑞迪卡/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "瓏首#地狱",
+  "factor": "瓏首",
+  "difficulty": "地狱",
+  "path": "docs/瓏首/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "瓦伦汀#地狱",
+  "factor": "瓦伦汀",
+  "difficulty": "地狱",
+  "path": "docs/瓦伦汀/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "瓦坎#地狱",
+  "factor": "瓦坎",
+  "difficulty": "地狱",
+  "path": "docs/瓦坎/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "瓦普特#地狱",
+  "factor": "瓦普特",
+  "difficulty": "地狱",
+  "path": "docs/瓦普特/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "白图泰#地狱",
+  "factor": "白图泰",
+  "difficulty": "地狱",
+  "path": "docs/白图泰/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "皎梦·悠悠#地狱",
+  "factor": "皎梦·悠悠",
+  "difficulty": "地狱",
+  "path": "docs/皎梦·悠悠/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "眠降·玛缇娜#地狱",
+  "factor": "眠降·玛缇娜",
+  "difficulty": "地狱",
+  "path": "docs/眠降·玛缇娜/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "破世之拳·特罗斯#地狱",
+  "factor": "破世之拳·特罗斯",
+  "difficulty": "地狱",
+  "path": "docs/破世之拳·特罗斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "祭空墟祖#地狱",
+  "factor": "祭空墟祖",
+  "difficulty": "地狱",
+  "path": "docs/祭空墟祖/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "禅老#地狱",
+  "factor": "禅老",
+  "difficulty": "地狱",
+  "path": "docs/禅老/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "福尔摩苏斯#地狱",
+  "factor": "福尔摩苏斯",
+  "difficulty": "地狱",
+  "path": "docs/福尔摩苏斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "空洄星徒#地狱",
+  "factor": "空洄星徒",
+  "difficulty": "地狱",
+  "path": "docs/空洄星徒/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "笛科特#地狱",
+  "factor": "笛科特",
+  "difficulty": "地狱",
+  "path": "docs/笛科特/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "米格罗斯#地狱",
+  "factor": "米格罗斯",
+  "difficulty": "地狱",
+  "path": "docs/米格罗斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "米罗博士#地狱",
+  "factor": "米罗博士",
+  "difficulty": "地狱",
+  "path": "docs/米罗博士/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "紫烬魔兽#地狱",
+  "factor": "紫烬魔兽",
+  "difficulty": "地狱",
+  "path": "docs/紫烬魔兽/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "织灵者·维伊#地狱",
+  "factor": "织灵者·维伊",
+  "difficulty": "地狱",
+  "path": "docs/织灵者·维伊/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "绒霜·柯蓝#地狱",
+  "factor": "绒霜·柯蓝",
+  "difficulty": "地狱",
+  "path": "docs/绒霜·柯蓝/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "绮影罗心·织焰#地狱",
+  "factor": "绮影罗心·织焰",
+  "difficulty": "地狱",
+  "path": "docs/绮影罗心·织焰/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "绮芒·蝠迪#地狱",
+  "factor": "绮芒·蝠迪",
+  "difficulty": "地狱",
+  "path": "docs/绮芒·蝠迪/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "维德弗尼尔#地狱",
+  "factor": "维德弗尼尔",
+  "difficulty": "地狱",
+  "path": "docs/维德弗尼尔/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "绿棘巨魔#地狱",
+  "factor": "绿棘巨魔",
+  "difficulty": "地狱",
+  "path": "docs/绿棘巨魔/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "考沃莱恩#地狱",
+  "factor": "考沃莱恩",
+  "difficulty": "地狱",
+  "path": "docs/考沃莱恩/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "腐坏幽魔·克劳里菲#困难",
+  "factor": "腐坏幽魔·克劳里菲",
+  "difficulty": "困难",
+  "path": "docs/腐坏幽魔·克劳里菲/困难.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "腐坏幽魔·克劳里菲#地狱",
+  "factor": "腐坏幽魔·克劳里菲",
+  "difficulty": "地狱",
+  "path": "docs/腐坏幽魔·克劳里菲/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "艾克特希#地狱",
+  "factor": "艾克特希",
+  "difficulty": "地狱",
+  "path": "docs/艾克特希/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "艾斯普鲁#地狱",
+  "factor": "艾斯普鲁",
+  "difficulty": "地狱",
+  "path": "docs/艾斯普鲁/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "艾莉安娜#地狱",
+  "factor": "艾莉安娜",
+  "difficulty": "地狱",
+  "path": "docs/艾莉安娜/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "艾隆德#地狱",
+  "factor": "艾隆德",
+  "difficulty": "地狱",
+  "path": "docs/艾隆德/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "花灯仙子#地狱",
+  "factor": "花灯仙子",
+  "difficulty": "地狱",
+  "path": "docs/花灯仙子/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "苔岩·磐岳#地狱",
+  "factor": "苔岩·磐岳",
+  "difficulty": "地狱",
+  "path": "docs/苔岩·磐岳/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "若兰#地狱",
+  "factor": "若兰",
+  "difficulty": "地狱",
+  "path": "docs/若兰/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "苦痛龙魇#地狱",
+  "factor": "苦痛龙魇",
+  "difficulty": "地狱",
+  "path": "docs/苦痛龙魇/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "莫伊莱#地狱",
+  "factor": "莫伊莱",
+  "difficulty": "地狱",
+  "path": "docs/莫伊莱/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "莱布缇#地狱",
+  "factor": "莱布缇",
+  "difficulty": "地狱",
+  "path": "docs/莱布缇/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "蔓古#地狱",
+  "factor": "蔓古",
+  "difficulty": "地狱",
+  "path": "docs/蔓古/地狱.json",
+  "n_stages": 1
+ },
+ {
+  "doc_id": "蕊沃尔#地狱",
+  "factor": "蕊沃尔",
+  "difficulty": "地狱",
+  "path": "docs/蕊沃尔/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "蛇舞·天鸣#地狱",
+  "factor": "蛇舞·天鸣",
+  "difficulty": "地狱",
+  "path": "docs/蛇舞·天鸣/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "裁罪魔剪塞泽斯#地狱",
+  "factor": "裁罪魔剪塞泽斯",
+  "difficulty": "地狱",
+  "path": "docs/裁罪魔剪塞泽斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "裂岩·艾克特希#地狱",
+  "factor": "裂岩·艾克特希",
+  "difficulty": "地狱",
+  "path": "docs/裂岩·艾克特希/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "西叶#地狱",
+  "factor": "西叶",
+  "difficulty": "地狱",
+  "path": "docs/西叶/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "西塔·能源型#地狱",
+  "factor": "西塔·能源型",
+  "difficulty": "地狱",
+  "path": "docs/西塔·能源型/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "西忒蕾妃#地狱",
+  "factor": "西忒蕾妃",
+  "difficulty": "地狱",
+  "path": "docs/西忒蕾妃/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "西曼德妮#地狱",
+  "factor": "西曼德妮",
+  "difficulty": "地狱",
+  "path": "docs/西曼德妮/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "西蒙妮#地狱",
+  "factor": "西蒙妮",
+  "difficulty": "地狱",
+  "path": "docs/西蒙妮/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "西西弗#地狱",
+  "factor": "西西弗",
+  "difficulty": "地狱",
+  "path": "docs/西西弗/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "视界·明德里奇#地狱",
+  "factor": "视界·明德里奇",
+  "difficulty": "地狱",
+  "path": "docs/视界·明德里奇/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "诺尔玛罗#地狱",
+  "factor": "诺尔玛罗",
+  "difficulty": "地狱",
+  "path": "docs/诺尔玛罗/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "谜之英雄#地狱",
+  "factor": "谜之英雄",
+  "difficulty": "地狱",
+  "path": "docs/谜之英雄/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "贝尔恩克#地狱",
+  "factor": "贝尔恩克",
+  "difficulty": "地狱",
+  "path": "docs/贝尔恩克/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "贾斯#地狱",
+  "factor": "贾斯",
+  "difficulty": "地狱",
+  "path": "docs/贾斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "赤虹仙凤#地狱",
+  "factor": "赤虹仙凤",
+  "difficulty": "地狱",
+  "path": "docs/赤虹仙凤/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "超算·鲁比克#地狱",
+  "factor": "超算·鲁比克",
+  "difficulty": "地狱",
+  "path": "docs/超算·鲁比克/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "超级噗纽#地狱",
+  "factor": "超级噗纽",
+  "difficulty": "地狱",
+  "path": "docs/超级噗纽/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "迹#地狱",
+  "factor": "迹",
+  "difficulty": "地狱",
+  "path": "docs/迹/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "逆世之瞳·哀目黑子#困难",
+  "factor": "逆世之瞳·哀目黑子",
+  "difficulty": "困难",
+  "path": "docs/逆世之瞳·哀目黑子/困难.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "逆世之瞳·哀目黑子#地狱",
+  "factor": "逆世之瞳·哀目黑子",
+  "difficulty": "地狱",
+  "path": "docs/逆世之瞳·哀目黑子/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "里扎德#地狱",
+  "factor": "里扎德",
+  "difficulty": "地狱",
+  "path": "docs/里扎德/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "重塑之子·利塞特#地狱",
+  "factor": "重塑之子·利塞特",
+  "difficulty": "地狱",
+  "path": "docs/重塑之子·利塞特/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "重装·派鲁基达#地狱",
+  "factor": "重装·派鲁基达",
+  "difficulty": "地狱",
+  "path": "docs/重装·派鲁基达/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "银椋奥雷莫德#地狱",
+  "factor": "银椋奥雷莫德",
+  "difficulty": "地狱",
+  "path": "docs/银椋奥雷莫德/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "锚点相座#困难",
+  "factor": "锚点相座",
+  "difficulty": "困难",
+  "path": "docs/锚点相座/困难.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "锚点相座#地狱",
+  "factor": "锚点相座",
+  "difficulty": "地狱",
+  "path": "docs/锚点相座/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "镇魂·约凡撒#地狱",
+  "factor": "镇魂·约凡撒",
+  "difficulty": "地狱",
+  "path": "docs/镇魂·约凡撒/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "阿华华#地狱",
+  "factor": "阿华华",
+  "difficulty": "地狱",
+  "path": "docs/阿华华/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "阿塔塔#地狱",
+  "factor": "阿塔塔",
+  "difficulty": "地狱",
+  "path": "docs/阿塔塔/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "阿波波#地狱",
+  "factor": "阿波波",
+  "difficulty": "地狱",
+  "path": "docs/阿波波/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "隙之门·基卢#地狱",
+  "factor": "隙之门·基卢",
+  "difficulty": "地狱",
+  "path": "docs/隙之门·基卢/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "雷瀑飞雪·桑多姆#困难",
+  "factor": "雷瀑飞雪·桑多姆",
+  "difficulty": "困难",
+  "path": "docs/雷瀑飞雪·桑多姆/困难.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "雷瀑飞雪·桑多姆#地狱",
+  "factor": "雷瀑飞雪·桑多姆",
+  "difficulty": "地狱",
+  "path": "docs/雷瀑飞雪·桑多姆/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "雾灯徘徊者#地狱",
+  "factor": "雾灯徘徊者",
+  "difficulty": "地狱",
+  "path": "docs/雾灯徘徊者/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "霆流·希拉#地狱",
+  "factor": "霆流·希拉",
+  "difficulty": "地狱",
+  "path": "docs/霆流·希拉/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "霆终陨灭·罗库#地狱",
+  "factor": "霆终陨灭·罗库",
+  "difficulty": "地狱",
+  "path": "docs/霆终陨灭·罗库/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "霍努努#地狱",
+  "factor": "霍努努",
+  "difficulty": "地狱",
+  "path": "docs/霍努努/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "霍瑞洛吉#地狱",
+  "factor": "霍瑞洛吉",
+  "difficulty": "地狱",
+  "path": "docs/霍瑞洛吉/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "霍莱#地狱",
+  "factor": "霍莱",
+  "difficulty": "地狱",
+  "path": "docs/霍莱/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "霜之荆棘·蒙鲁特#困难",
+  "factor": "霜之荆棘·蒙鲁特",
+  "difficulty": "困难",
+  "path": "docs/霜之荆棘·蒙鲁特/困难.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "霜之荆棘·蒙鲁特#地狱",
+  "factor": "霜之荆棘·蒙鲁特",
+  "difficulty": "地狱",
+  "path": "docs/霜之荆棘·蒙鲁特/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "霜寂锁灵#地狱",
+  "factor": "霜寂锁灵",
+  "difficulty": "地狱",
+  "path": "docs/霜寂锁灵/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "霸颚鲛#地狱",
+  "factor": "霸颚鲛",
+  "difficulty": "地狱",
+  "path": "docs/霸颚鲛/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "青啼#地狱",
+  "factor": "青啼",
+  "difficulty": "地狱",
+  "path": "docs/青啼/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "鞘盾龙鱼#地狱",
+  "factor": "鞘盾龙鱼",
+  "difficulty": "地狱",
+  "path": "docs/鞘盾龙鱼/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "风暴龙灵#困难",
+  "factor": "风暴龙灵",
+  "difficulty": "困难",
+  "path": "docs/风暴龙灵/困难.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "风暴龙灵#地狱",
+  "factor": "风暴龙灵",
+  "difficulty": "地狱",
+  "path": "docs/风暴龙灵/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "风魔之骸#地狱",
+  "factor": "风魔之骸",
+  "difficulty": "地狱",
+  "path": "docs/风魔之骸/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "飞鱼骑士#地狱",
+  "factor": "飞鱼骑士",
+  "difficulty": "地狱",
+  "path": "docs/飞鱼骑士/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "飞鱼骑士#简单",
+  "factor": "飞鱼骑士",
+  "difficulty": "简单",
+  "path": "docs/飞鱼骑士/简单.json",
+  "n_stages": 1
+ },
+ {
+  "doc_id": "鬼地行者#地狱",
+  "factor": "鬼地行者",
+  "difficulty": "地狱",
+  "path": "docs/鬼地行者/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "魂弦#困难",
+  "factor": "魂弦",
+  "difficulty": "困难",
+  "path": "docs/魂弦/困难.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "魂弦#地狱",
+  "factor": "魂弦",
+  "difficulty": "地狱",
+  "path": "docs/魂弦/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "魇魔#地狱",
+  "factor": "魇魔",
+  "difficulty": "地狱",
+  "path": "docs/魇魔/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "鲍尔斯#地狱",
+  "factor": "鲍尔斯",
+  "difficulty": "地狱",
+  "path": "docs/鲍尔斯/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "麦迪亚#地狱",
+  "factor": "麦迪亚",
+  "difficulty": "地狱",
+  "path": "docs/麦迪亚/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "黑石女妖#地狱",
+  "factor": "黑石女妖",
+  "difficulty": "地狱",
+  "path": "docs/黑石女妖/地狱.json",
+  "n_stages": 5
+ },
+ {
+  "doc_id": "龙灵战士#地狱",
+  "factor": "龙灵战士",
+  "difficulty": "地狱",
+  "path": "docs/龙灵战士/地狱.json",
+  "n_stages": 5
+ }
+]

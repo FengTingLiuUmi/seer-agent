@@ -1,0 +1,153 @@
+{
+ "doc_id": "瓦伦汀#地狱",
+ "factor": "瓦伦汀",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4641,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "虫",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 免疫瞬杀; 300固伤; 消强; 腐坏(每回合全属性-1); 减伤16.7%",
+   "mech": [
+    "debuff",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "月照星魂必先150强攻（漆黑套压血）/ 帝皇之御自爆+黄金龙鹰等强攻"
+   ],
+   "pets": [
+    "月照星魂",
+    "帝皇之御",
+    "黄金龙鹰"
+   ],
+   "why": "Boss 必先+封属，属性技能被封，只能靠攻击技能反制；且携带消强与腐坏(每回合全属性-1)，我方无法叠强化，所以走「压血裸伤」路线——月照星魂的必先150攻击先手强攻、漆黑套把血线压低换取更高裸伤（减伤仅16.7%）。另一方案帝皇之御自爆「守御八方」是不受封属影响的攻击技，给后续黄金龙鹰等强攻手上必先+必暴，同样绕过封属。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 3056,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "战斗",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 免疫瞬杀; 300固伤; 消强; 免疫并反弹暴击伤害; 减伤16.7%",
+   "mech": [
+    "reflection",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "魔钰必先150强攻（银翼套）"
+   ],
+   "pets": [
+    "魔钰"
+   ],
+   "why": "这关最致命的是「免疫并反弹暴击伤害」：暴击打上去不仅没伤害还会把伤害反弹回自己，所以绝不能上必暴/引爆流。攻略改用魔钰的必先150直接强攻（不走暴击），配合银翼套提伤；Boss 封属+消强，全程用攻击技能走裸伤即可。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4364,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "光神秘",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 500固伤; 消强; 睡眠(低级主动睡眠控); 减伤16.7%",
+   "mech": [
+    "clearBuff",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "圣灵谱尼裸伤一直复苏 / 带星皇的强攻手(斯达伐尔)强攻 / 星光·丽莎布布刷睡眠站场"
+   ],
+   "pets": [
+    "圣灵谱尼",
+    "斯达伐尔",
+    "星光·丽莎布布"
+   ],
+   "why": "核心致命点是「睡眠(低级主动睡眠控)」+必先+封属，还会每回合掉500固伤并被消强，站不住也叠不了强化。反制靠免疫异常/抗性：圣灵谱尼靠「复苏」持续回血顶住固伤、不需要强化地站场磨；斯达伐尔这类带星皇(免疫异常)的强攻手直接强攻；星光·丽莎布布刷睡眠抗性后站场。差异：谱尼/丽莎走站场磨血，斯达伐尔走速杀强攻。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4636,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "草超能",
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 500固伤; 吸强(偷强); 100%闪避; 清PP(命中后随机清空2个技能PP); 减伤33.3%",
+   "mech": [
+    "dodge",
+    "clearPP",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "潘克多斯(火潘)送死+帝皇之御自爆+黄金龙鹰第五(艾欧150补刀) / 火潘+蒂朵+典韦+时空界皇强攻 / 四九幻曦站场"
+   ],
+   "pets": [
+    "潘克多斯",
+    "帝皇之御",
+    "黄金龙鹰",
+    "艾欧丽娅",
+    "蒂朵",
+    "星光·鲁斯王"
+   ],
+   "why": "这关有100%闪避+吸强(偷强)+清PP+封属。100%闪避属于高闪避，用帝皇之御自爆「守御八方」给的必暴(伪必中)即可把命中拉到100%覆盖掉闪避，无需专门必中；火潘(潘克多斯)送死垫增伤，黄金龙鹰第五强攻、艾欧150补刀应对清PP/多段。另一方案火潘+蒂朵+典韦+时空界皇同样靠增伤链强攻；四九幻曦走站场。因 Boss 吸强，不能依赖强化，走裸伤速杀最优。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4810,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "超能",
+   "boss_hp": 18000,
+   "traits": "封属; 必先; 500固伤; 吸强(偷强); 100%闪避; 腐坏(每回合全属性-1); 减伤33.3%",
+   "mech": [
+    "dodge",
+    "debuff",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "帝皇之御自爆+黄金龙鹰第五+霍夫曼第五 / 帝皇之御自爆+送蒂朵+霍夫曼第五 / 漆黑套人马站场"
+   ],
+   "pets": [
+    "帝皇之御",
+    "霍夫曼",
+    "黄金龙鹰",
+    "蒂朵",
+    "闪光皮神",
+    "潘克多斯"
+   ],
+   "why": "与第4关类似：100%闪避+吸强(偷强)+腐坏(全属性-1)，我方既不能叠强化，普通攻击又容易被闪避。反制仍用帝皇之御自爆「守御八方」给必先+必暴(伪必中覆盖闪避)，再黄金龙鹰/霍夫曼第五强攻；或自爆后送蒂朵垫增伤再接霍夫曼。漆黑套人马走站场磨血。核心是必暴覆盖闪避 + 裸伤不吃强化。"
+  }
+ ]
+}

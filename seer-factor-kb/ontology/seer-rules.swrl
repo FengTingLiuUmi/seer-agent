@@ -1,0 +1,57 @@
+# 赛尔号因子 PVE 打法本体 —— SWRL 规则（Protégé SWRLTab 可导入/执行）
+#
+# v0.2：新增「衍生推理」规则 —— 通过 Buff 状态轴 / 装备轴把机制自动映射到打法与配置。
+#
+# 用法：
+#  1) Protégé 打开 seer-onto.ttl，把前缀 : -> http://example.org/seer-factor# 加入前缀管理器。
+#  2) 在 SWRLTab 新建规则逐条粘贴，选 Openllet（或 SWRLTab+Drools）执行。
+#
+# 命名约定：变量 ?x；属性/类用 :... （等价于 http://example.org/seer-factor#...）。
+
+# ===================== v0.1 机制→打法 =====================
+
+# R1 免疫裸伤 → 站场磨血
+Boss(?b) ^ :hasMechanism(?b, :裸伤上限) -> :recommendedStrategy(?b, :站场磨血)
+
+# R2 免疫面板 → 弹伤
+Boss(?b) ^ :hasMechanism(?b, :面板免疫) -> :recommendedStrategy(?b, :弹伤反伤)
+
+# R3 护盾 → 弹伤
+Boss(?b) ^ :hasMechanism(?b, :护盾) -> :recommendedStrategy(?b, :弹伤反伤)
+
+# R4 控场（害怕） → 必先大队
+Boss(?b) ^ :hasMechanism(?b, :控场) -> :recommendedStrategy(?b, :必先大队)
+
+# R5 偷强/消强 → 判弱+先制
+Boss(?b) ^ (:hasMechanism(?b, :偷强) v :hasMechanism(?b, :消强)) -> :recommendedStrategy(?b, :判弱先制)
+
+# R6 每回合固伤 → 站场磨血
+Boss(?b) ^ :hasMechanism(?b, :固伤) -> :recommendedStrategy(?b, :站场磨血)
+
+# R7 属性克制 + 强攻定位 → 推荐打手
+Boss(?b) ^ :hasElement(?b, ?be) ^ Pet(?p) ^ :hasElement(?p, ?pe) ^
+  :counters(?pe, ?be) ^ :playsRole(?p, :强攻) -> :recommendedPet(?b, ?p)
+
+# R8 被Ban → 可替代打手（substitutesFor 已声明为 Transitive，推理器自动推闭包）
+Stage(?s) ^ :bannedPet(?s, ?x) ^ Pet(?y) ^ :substitutesFor(?y, ?x) -> :recommendedPetForStage(?s, ?y)
+
+# ===================== v0.2 衍生推理 =====================
+
+# R9 状态轴统一推导：Boss 有某机制，机制施加某效果，某打法克制该效果 → 推荐该打法
+#     例：Boss 有「护盾」→ 护盾施加「护盾/护罩」效果 → 「弹伤反伤」克制 → 推荐弹伤。
+Boss(?b) ^ :hasMechanism(?b, ?m) ^ :hasBuff(?m, ?buf) ^
+  Strategy(?s) ^ :countersBuff(?s, ?buf) -> :recommendedStrategy(?b, ?s)
+
+# R10 机制 → 推荐配置（装备轴衍生）
+Boss(?b) ^ :hasMechanism(?b, :裸伤上限) -> :recommendedConfig(?b, :cfg_站场套)
+Boss(?b) ^ :hasMechanism(?b, :面板免疫) -> :recommendedConfig(?b, :cfg_弹伤套)
+Boss(?b) ^ :hasMechanism(?b, :护盾)     -> :recommendedConfig(?b, :cfg_弹伤套)
+Boss(?b) ^ :hasMechanism(?b, :控场)     -> :recommendedConfig(?b, :cfg_强攻套)
+
+# R11 反查（衍生）：一只精灵能克制哪些 Boss 机制中的效果
+#      由「魂印赋予效果 + 打法克制效果」反向给出该精灵适合的职业/关卡。
+Pet(?p) ^ :hasSoulmark(?p, ?sm) ^ :grantsBuff(?sm, ?buf) ^
+  Strategy(?s) ^ :countersBuff(?s, ?buf) -> :recommendedStrategyForPet(?p, ?s)
+
+# 备注：R11 用到 :recommendedStrategyForPet（域 Pet，值域 Strategy），
+#       已随 seer-onto.ttl 一起声明，无需手动补。

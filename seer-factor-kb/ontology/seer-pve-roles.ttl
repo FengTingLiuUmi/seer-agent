@@ -1,0 +1,117 @@
+@prefix pve: <http://example.org/seer/pve#> .
+@prefix seer: <http://example.org/seer#> .
+
+seer:pet_12 pve:hasRole pve:firstStrike,
+        pve:reflect .
+
+seer:pet_2499 pve:hasRole pve:support .
+
+seer:pet_2735 pve:hasRole pve:support .
+
+seer:pet_2807 pve:hasRole pve:attacker .
+
+seer:pet_2933 pve:hasRole pve:attacker .
+
+seer:pet_3031 pve:hasRole pve:attacker .
+
+seer:pet_3118 pve:hasRole pve:support .
+
+seer:pet_3141 pve:hasRole pve:attacker,
+        pve:firstStrike .
+
+seer:pet_3194 pve:hasRole pve:firstStrike,
+        pve:support .
+
+seer:pet_3221 pve:hasRole pve:support,
+        pve:tank .
+
+seer:pet_3239 pve:hasRole pve:attacker .
+
+seer:pet_3291 pve:hasRole pve:support .
+
+seer:pet_3322 pve:hasRole pve:support .
+
+seer:pet_3329 pve:hasRole pve:reflect .
+
+seer:pet_3390 pve:hasRole pve:attacker .
+
+seer:pet_3406 pve:hasRole pve:attacker,
+        pve:firstStrike,
+        pve:support .
+
+seer:pet_3414 pve:hasRole pve:support .
+
+seer:pet_3437 pve:hasRole pve:attacker .
+
+seer:pet_3438 pve:hasRole pve:attacker .
+
+seer:pet_3512 pve:hasRole pve:support .
+
+seer:pet_3517 pve:hasRole pve:attacker,
+        pve:firstStrike .
+
+seer:pet_3540 pve:hasRole pve:support .
+
+seer:pet_3561 pve:hasRole pve:attacker,
+        pve:firstStrike .
+
+seer:pet_3567 pve:hasRole pve:attacker .
+
+seer:pet_3594 pve:hasRole pve:attacker .
+
+seer:pet_3613 pve:hasRole pve:support .
+
+seer:pet_3711 pve:hasRole pve:attacker .
+
+seer:pet_3844 pve:hasRole pve:attacker .
+
+seer:pet_3866 pve:hasRole pve:attacker .
+
+seer:pet_3894 pve:hasRole pve:support,
+        pve:tank .
+
+seer:pet_3926 pve:hasRole pve:attacker .
+
+seer:pet_3938 pve:hasRole pve:attacker .
+
+seer:pet_3986 pve:hasRole pve:support .
+
+seer:pet_4146 pve:hasRole pve:attacker,
+        pve:support .
+
+seer:pet_4223 pve:hasRole pve:attacker .
+
+seer:pet_4310 pve:hasRole pve:attacker .
+
+seer:pet_4321 pve:hasRole pve:attacker .
+
+seer:pet_4344 pve:hasRole pve:support .
+
+seer:pet_4462 pve:hasRole pve:attacker,
+        pve:support,
+        pve:tank .
+
+seer:pet_4463 pve:hasRole pve:support .
+
+seer:pet_4484 pve:hasRole pve:tank .
+
+seer:pet_4487 pve:hasRole pve:support .
+
+seer:pet_4628 pve:hasRole pve:attacker,
+        pve:support .
+
+seer:pet_4636 pve:hasRole pve:firstStrike,
+        pve:support .
+
+seer:pet_4721 pve:hasRole pve:support .
+
+seer:pet_4732 pve:hasRole pve:support,
+        pve:tank .
+
+seer:pet_4797 pve:hasRole pve:attacker .
+
+seer:pet_4871 pve:hasRole pve:attacker .
+
+seer:pet_4912 pve:hasRole pve:attacker,
+        pve:support .
+

@@ -42,6 +42,30 @@ STAGE_LIST = Cmd.STAGE_LIST                 # 图鉴/收集进度列表，不是
 FACTOR_ENTER_STAGE = Cmd.FACTOR_ENTER_STAGE   # 进入因子关：body=[design_id][difficulty]
 FACTOR_START_BATTLE = Cmd.FACTOR_START_BATTLE # 开始因子战斗：body=[design_id][difficulty]
 
+# 难度锚定本体（pve:difficulty 受控词表 ⇄ SeerAPI level ⇄ 客户端 int ⇄ 46046 低16位标记）。
+# 唯一事实源是 factor_design.difficulties[].level ∈ {easy, normal, hard}，
+# 客户端 int = easy→1 / normal→2 / hard→3；46046 进度低16位 = 0x100/0x200/0x400 同序自证。
+# 不要再手写「1=简单 2=普通 3=困难」这类会和社区叫法打架的自由文本（社区的「困难」=normal=2）。
+DIFFICULTY_LABEL_TO_INT = {"简单": 1, "困难": 2, "地狱": 3}   # 社区/论坛叫法（SSOT 中文 label）
+DIFFICULTY_LEVEL_TO_INT = {"easy": 1, "normal": 2, "hard": 3}  # SeerAPI level 键
+
+
+def difficulty_int(spec: str | int) -> int:
+    """把「社区难度名 / SeerAPI level / 已给 int」统一解析成 41284/41282 的难度 int。
+
+    锚定本体：简单=easy=1 / 困难=normal=2 / 地狱=hard=3（对应 46046 0x100/0x200/0x400）。
+    未知值直接抛错，不静默落回默认值——避免再出现「把地狱当成 2」这类静默错档。
+    """
+    if isinstance(spec, int) and not isinstance(spec, bool):
+        if spec in (1, 2, 3):
+            return spec
+        raise ValueError(f"难度 int 越界: {spec}（合法 1/2/3 = easy/normal/hard）")
+    s = str(spec).strip()
+    for m in (DIFFICULTY_LABEL_TO_INT, DIFFICULTY_LEVEL_TO_INT):
+        if s in m:
+            return m[s]
+    raise ValueError(f"未知难度: {spec!r}（受控词表：简单/困难/地狱 或 easy/normal/hard）")
+
 
 @dataclass(slots=True)
 class FactorSpec:
@@ -83,76 +107,20 @@ class FactorSpec:
         }
 
 
-# 已知因子（seerapi 拉取结果固化；boss_names 来自本地 monsters_pro.ini）
-KNOWN_FACTORS: dict[int, FactorSpec] = {
-    2400338: FactorSpec(
-        factor_id=2400338, name="灵巢之主·索杰德尔因子", design_id=141, target_species=4599,
-        time_value=209679, progress_value=209678, fail_times=209676,
-        bosses=[4569, 4568, 4594, 4597, 4599],
-        boss_names={4569: "霆终陨灭·罗库", 4568: "幽魅之影·杰格", 4594: "摆渡者·费雷",
-                    4597: "织灵者·维伊", 4599: "灵巢之主·索杰德尔"},
-    ),
-    2400612: FactorSpec(
-        factor_id=2400612, name="沙罗摩奥因子", design_id=267, target_species=4965,
-        time_value=303303, progress_value=303302, fail_times=303300,
-        bosses=[3296, 4531, 4938, 4625, 4965],
-        boss_names={3296: "暗烬·朱雀", 4531: "极恶妖兽", 4938: "塞壬斯",
-                    4625: "伏尔格安", 4965: "沙罗摩奥"},
-    ),
-    2400532: FactorSpec(
-        factor_id=2400532, name="谜之英雄因子", design_id=225, target_species=4848,
-        time_value=302127, progress_value=302126, fail_times=302124,
-        bosses=[4539, 4330, 4137, 4845, 4848],
-        boss_names={4539: "文森特", 4330: "审判之魂", 4137: "坚盾·瓦尔德",
-                    4845: "白图泰", 4848: "谜之英雄"},
-    ),
-    2400545: FactorSpec(
-        factor_id=2400545, name="戟决先锋因子", design_id=228, target_species=4857,
-        time_value=302211, progress_value=302210, fail_times=302208,
-        bosses=[3618, 3595, 3599, 3978, 4857],
-        boss_names={3618: "埃拉辛姆", 3595: "泰拉图斯", 3599: "卡杉德拉",
-                    3978: "克利奥", 4857: "戟决先锋"},
-    ),
-    2400611: FactorSpec(
-        factor_id=2400611, name="伊娜因子", design_id=266, target_species=4964,
-        time_value=303275, progress_value=303274, fail_times=303272,
-        bosses=[4092, 4370, 4813, 4960, 4964],
-        boss_names={4092: "诶西欧", 4370: "僧行", 4813: "夏莉莉",
-                    4960: "塔尼瓦", 4964: "伊娜"},
-    ),
-}
+# 不再内置「当前因子」或「已知因子表」：打哪个因子必须由调用方显式给出
+# factor_id（41413 领取 / 动态拉 spec）或 design_id（41284/41282 进关）。
 
-# 当前周期因子（谜之英雄；用户实机验证打了前 4 关）
-CURRENT_FACTOR = KNOWN_FACTORS[2400532]
-
-
-def spec_for(*, design_id: int | None = None, factor_id: int | None = None) -> "FactorSpec":
-    """按 design_id（或 factor_id）定位因子 spec；找不到退回当前周期因子。"""
-    if factor_id is not None and factor_id in KNOWN_FACTORS:
-        return KNOWN_FACTORS[factor_id]
-    if design_id is not None:
-        for sp in KNOWN_FACTORS.values():
-            if sp.design_id == design_id:
-                return sp
-    return CURRENT_FACTOR
-
-# 兼容旧接口：5 关 BOSS（=当前因子的 bosses）与阵容。
-# 阵容不再硬编码：真实 catch_time 由 `pets.read_bag` 按账号反查。
-FACTOR_STAGES: list[dict] = [
-    {"index": i + 1, "boss_species": b, "boss_name": CURRENT_FACTOR.boss_name(b)}
-    for i, b in enumerate(CURRENT_FACTOR.bosses)
-]
-DEFAULT_LINEUP: dict[int, tuple[list[int], dict[int, int]]] = {}
+_DYNAMIC_CACHE: dict[int, FactorSpec] = {}
 
 
 def load_factor_spec(factor_id: int, provider=None) -> FactorSpec | None:
-    """从 seerapi 动态拉取 factor → factor_design，构造 FactorSpec。
+    """从 seerapi 动态拉取 factor → factor_design，构造 FactorSpec（运行时缓存）。
 
     顺序：`get factor <id>` → `design.id` → `get factor_design <id>` →
     取 time/progress/fail forever 键 + normal 难度的 5 个 task.boss_pet.id。
     """
-    if factor_id in KNOWN_FACTORS:
-        return KNOWN_FACTORS[factor_id]
+    if factor_id in _DYNAMIC_CACHE:
+        return _DYNAMIC_CACHE[factor_id]
     if provider is None:
         from .provider import SeerApiProvider
         provider = SeerApiProvider()
@@ -180,14 +148,41 @@ def load_factor_spec(factor_id: int, provider=None) -> FactorSpec | None:
             fail_times=int(d.get("fail_times") or 0),
             bosses=bosses,
         )
-        KNOWN_FACTORS[factor_id] = spec
+        _DYNAMIC_CACHE[factor_id] = spec
         return spec
     except Exception:
-        return KNOWN_FACTORS.get(factor_id)
+        return _DYNAMIC_CACHE.get(factor_id)
+
+
+def forever_keys(*, design_id: int | None = None, factor_id: int | None = None, provider=None) -> list[int]:
+    """46046 读因子进度的 forever 键 `[progress, time, fail]`。
+
+    必须显式给出 ``design_id`` 或 ``factor_id``；都没有则返回空列表（调用方应报错）。
+    """
+    if factor_id is not None:
+        spec = load_factor_spec(factor_id, provider=provider)
+        if spec:
+            return spec.forever_progress_keys
+    if design_id is not None:
+        if provider is None:
+            from .provider import SeerApiProvider
+            provider = SeerApiProvider()
+        try:
+            d = provider.get("factor_design", design_id)
+            if d:
+                return [
+                    int(d.get("progress_value") or 0),
+                    int(d.get("time_value") or 0),
+                    int(d.get("fail_times") or 0),
+                ]
+        except Exception:
+            pass
+    return []
 
 
 def describe_spec(spec: FactorSpec | None = None) -> str:
-    spec = spec or CURRENT_FACTOR
+    if spec is None:
+        return "(未指定因子)"
     lines = [f"{spec.name}（factor_id={spec.factor_id} design={spec.design_id}）"]
     for i, b in enumerate(spec.bosses, 1):
         lines.append(f"  第{i}关 BOSS={b}({spec.boss_name(b)})")
@@ -212,13 +207,16 @@ def factor_fight_steps(*, boss_id: int | None = None, skill_id: int | None = Non
     return steps
 
 
-def factor_enter_steps(*, design_id: int, difficulty: int = 1) -> list[FeatureStep]:
+def factor_enter_steps(*, design_id: int, difficulty: int | str = 1) -> list[FeatureStep]:
     """官方 Unity 端进入因子关并开始战斗（unity_mzyx / unity_yz_battle 实证）。
 
     41284 = 进入因子关，41282 = 开始因子战斗；body 均 = [design_id][difficulty]。
-    ``difficulty`` 1=简单 / 2=普通 / 3=困难；**第几关（BOSS）由服务端按账号进度
-    自动推进，客户端不传**。之后官方端进 2441 加载 → 战斗观测，无需 42396 关卡 id。
+    ``difficulty`` 传「简单/困难/地狱」「easy/normal/hard」或 1/2/3，统一经
+    :func:`difficulty_int` 归一：1=简单(easy) / 2=困难(normal) / 3=地狱(hard)。
+    **第几关（BOSS）由服务端按账号进度自动推进，客户端不传**。之后官方端进
+    2441 加载 → 战斗观测，无需 42396 关卡 id。
     """
+    difficulty = difficulty_int(difficulty)
     body = u32(design_id) + u32(difficulty)
     return [
         FeatureStep("进入因子关", FACTOR_ENTER_STAGE, body, True, "FACTOR_ENTER_STAGE"),

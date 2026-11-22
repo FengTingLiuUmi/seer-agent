@@ -1,0 +1,170 @@
+{
+ "doc_id": "埃斯宾诺#地狱",
+ "factor": "埃斯宾诺",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4859,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "冰光",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 300固伤; 消强; 随机两项能力-1; 必暴; 150先手冰封; 减伤16.7%",
+   "mech": [
+    "clearBuff",
+    "control",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐+强攻手×2 / 典韦150强攻 / 索比斯消强+草王保圣焰菲格罗亚 / 闪光皮神单挑 / 金瑞福龙150"
+   ],
+   "pets": [
+    "帝皇之御",
+    "典韦",
+    "索比斯",
+    "草王",
+    "圣焰菲格罗亚",
+    "闪光皮神",
+    "金瑞福龙"
+   ],
+   "why": "该关 Boss 必先+封属+自身必暴+150先手冰封控场，站场会被冻住且刀刀暴击、还吃300固伤与消强，必须抢在它出手前秒掉。表姐(帝皇之御)的守御八方作为攻击技能不受封属影响，给全队「必先+必暴」让强攻手先手秒杀，从而规避冰封控场与消强/随机弱化；索比斯消强+草王保圣焰菲格罗亚则是先消其强化再站场的保守路线。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 3605,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "暗影火",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 300固伤; 消强; 随机两项能力-1; 必暴; 强化回血; 减伤16.7%",
+   "mech": [
+    "heal",
+    "clearBuff",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐+强攻手×2 / 灵·辰坤星魂新第五 / 重塑之子利塞特第五 / 圣光莫妮卡第五 / 闪光皮神卡裸伤单挑"
+   ],
+   "pets": [
+    "帝皇之御",
+    "灵·辰坤星魂",
+    "重塑之子利塞特",
+    "圣光莫妮卡",
+    "闪光皮神"
+   ],
+   "why": "同属必先+封属+自身必暴+300固伤的高压关，且 Boss「强化回血」会越拖越难杀，必须速杀。表姐守御八方仍是攻击技能、无视封属，给后续强攻手必先+必暴一波秒掉，不给它靠强化回血滚雪球的机会。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 3577,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_hp": 15000,
+   "traits": "单精灵; 封属; 500固伤; 消强; 受1000+初始伤害后必先必暴; 攻击后随机两项能力+1; 减伤33.3%",
+   "mech": [
+    "singlePet",
+    "clearBuff",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "魇魔先三单挑 / 加尔鲁特150单挑 / 星光·丽莎布布单挑 / 魔花仙灵单挑 / 洛基希瓦一刀"
+   ],
+   "pets": [
+    "魇魔",
+    "加尔鲁特",
+    "星光·丽莎布布",
+    "魔花仙灵",
+    "洛基希瓦"
+   ],
+   "why": "这是单精灵关，上不了表姐自爆链；Boss 封属+消强让靠属性技/强化的打法难以站住，且在受1000+初始伤害后触发必先必暴。故攻略偏向不靠强化、能站场磨血的加尔鲁特(草潘)/丽莎布布/魔花仙灵或魇魔先三单挑压血，或洛基希瓦一刀秒，避免触发它的必先必暴反打。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 3860,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "虫",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 500固伤; 吸强; 闪避(必定miss); 浸染(回血递减/增伤+300固伤); 减伤33.3%",
+   "mech": [
+    "dodge",
+    "heal",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "炮灰×2+表姐+霍夫曼×2 / 克罗+星光·魔焰猩猩先三+蒂朵送死+星光·鲁斯王克制 / 表姐+星光·魔焰猩猩先三+霍夫曼第五 / 火潘+蒂朵+西塔伦+时空150"
+   ],
+   "pets": [
+    "帝皇之御",
+    "霍夫曼",
+    "克罗",
+    "星光·魔焰猩猩",
+    "蒂朵",
+    "星光·鲁斯王",
+    "潘克多斯",
+    "西塔伦",
+    "时空"
+   ],
+   "why": "这关关键门是「闪避(必定miss)」的高闪避，普通攻击会 miss；同时必先+封属+500固伤。表姐守御八方作为攻击技能无视封属，给全队必暴=伪必中，正好覆盖高闪避，再接霍夫曼/星光·鲁斯王克制等强攻手秒杀；必暴(伪必中)已够用，不必强求真·必中。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4866,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "虫",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 500固伤; 两命; 复活后全属性+1; 吸强; 免疫暴击; 自损320固伤; 减伤33.3%",
+   "mech": [
+    "twoLife",
+    "selfBuff",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "火潘自爆+蒂朵自爆+霍夫曼第五+克罗+DS-001先三+哈迪斯补刀 / 消强+加尔鲁特单挑 / 消强+希可洛单挑"
+   ],
+   "pets": [
+    "潘克多斯",
+    "蒂朵",
+    "霍夫曼",
+    "克罗",
+    "DS-001",
+    "哈迪斯",
+    "加尔鲁特",
+    "希可洛"
+   ],
+   "why": "这关两命+复活后全属性+1+免疫暴击，使表姐必暴一波流失效；同时吸强需要先消强。攻略用火潘/蒂朵自爆增伤吃掉第一命，再由哈迪斯补刀处理复活的第二命；或走消强+加尔鲁特(草潘)/希可洛(村长)站场磨，借 Boss 每回合自损320固伤且不被吸强滚雪球，把两条命磨掉。"
+  }
+ ]
+}

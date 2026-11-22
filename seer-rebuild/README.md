@@ -17,8 +17,8 @@
 | H5 登录包 | cmd `1001` + 508B 模板（session/区号/端口/平台/UA） | `login.build_h5_login_body()` |
 | Flash 登录包 | cmd `1001` + 44B body（`0x8ca151` 的 hex 常量） | `login.build_flash_login()` |
 | 对战方案 | `seer_cfg/script/method/**/*.cjc` 明文 GBK INI | `cjc.BattlePlan` |
-| 本地战斗 | `seer_cfg/json/{monsters_pro,moves,skill_effect,BossEffect,typesRelation}.ini` | `battle_data.BattleData` / `battle.Battle` |
-| 出招记录 | `seer_cfg/DLL/config/日常记录/出招记录/*.txt` | `BattleResult.write_log()` |
+| 本地战斗库 | `seer_cfg/json/{monsters_pro,moves,skill_effect,BossEffect,typesRelation}.ini` | `battle_data.BattleData` |
+| 出招记录 | `seer_cfg/DLL/config/日常记录/出招记录/*.txt` | `applog.parse_battle_record()` |
 | 一键日常 | `seer_cfg/DLL/config/一键日常配置/一键日常<uid>.ini` | `daily.load_app_daily_config()` |
 | 进度 | `日常日志`、`启动进度<uid>.ini`、`日常记录<uid>.ini` | `progress.ProgressTracker` |
 
@@ -51,17 +51,6 @@ python -m seer_rebuild.cli seer-query pet --name "王之哈莫" --limit 3
 
 # 解析一个对战方案
 python -m seer_rebuild.cli parse-cjc "F:\seer\seer_cfg\script\method\_5.29量子回廊静态基准v1.3_秋殇_1764157759723\王哈1.cjc"
-
-# 本地模拟：王之哈莫 vs 星光·魔焰猩猩，带 BOSS 特性
-python -m seer_rebuild.cli simulate --player 3022 --enemy 4649 `
-  --plan "F:\seer\seer_cfg\script\method\_5.29量子回廊静态基准v1.3_秋殇_1764157759723\王哈1.cjc" `
-  --boss-effect "1261:185 139 235:神话：免疫异常状态；42:3 0:迅捷：先制+3；77:150 0:锋锐：每回合附加150点固定伤害" `
-  --max-turns 20 --out battle.txt
-
-# 战斗窗口（逐回合，像雷小伊一样；模拟模式）
-python -m seer_rebuild.cli battle-window --player 3437 --enemy 4649 --max-turns 20
-# 回放真实 2.0.9 出招记录
-python -m seer_rebuild.cli battle-window --replay "F:\seer\seer_cfg\DLL\config\日常记录\出招记录\ACCOUNT.txt"
 
 # 背包/装备展示窗口（回放抓包 + SeerAPI 反查名称）
 python -m seer_rebuild.cli inventory --frames .\seer-rebuild\feature1_frames.jsonl --resolve
@@ -107,8 +96,6 @@ seer_rebuild/
   client.py       H5 WSS 与 Flash TCP 客户端
   battle_data.py  monsters_pro / moves / skill_effect / BossEffect / 属性
   cjc.py          .cjc / .cjpt 对战方案解析与出招选择
-  battle.py       回合制本地模拟、BOSS 特性、战报
-  battle_window.py 逐回合战斗窗口（tkinter，模拟/回放）
   inventory.py     背包/装备数据采集与解析
   inventory_window.py 背包/装备展示窗口（tkinter）
   factor.py        因子关数据（BOSS/阵容）+ 战斗步骤构造
@@ -135,7 +122,6 @@ data/
 | `client.py` | ⚠️ 未 live | 1001 模板偏移需用抓包校准；默认 `area_id=None` |
 | `battle_data.py` | ✅ 单测 | 5616 精灵、26755 技能、2374 效果、35 BOSS 特性 |
 | `cjc.py` | ✅ 单测 | 明文 .cjc/.cjpt；重复 section 保留 |
-| `battle.py` | ⚠️ 近似 | 公式/特性为可读近似，不是官方战斗服务器逐字节复刻 |
 | `daily.py` | ⚠️ 骨架 | 只读 cmd 可试；写操作默认 dry-run，body 未校准 |
 | `factor.py` / `factor_runner.py` | ⚠️ 部分实测 | 选关/切阵容/战斗/领取步骤构造有 lxy_yz_2/3 抓包证据，单测覆盖；实机战斗循环未用真实账号逐回合校准 |
 | `yaxue.py` | ⚠️ 部分实测 | 命令序列从 `reverse/yaxue.pcapng` + 雷小伊工具箱反解，伊娜普通第4关前置实测；`build_steps` 单测覆盖 |
@@ -152,5 +138,5 @@ data/
 
 1. 用 `client.py` 的 `observe` 抓 1001 后的前 30 帧，校准 `area_id` 与模板偏移。
 2. 抓 `2875/2876/2877/8016/2707` 的请求/响应 body，补全 `daily.py` 解析。
-3. 用 `出招记录` 的对局校准 `battle.py` 的伤害公式与 BOSS 特性。
+3. 用 `出招记录` 的对局继续校准伤害公式与 BOSS 特性。
 4. 若要继续 `.ysc`：先确认 VMProtect 版本与是否允许动态调试；否则只保留格式说明。

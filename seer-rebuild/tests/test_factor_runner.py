@@ -1,6 +1,6 @@
 import unittest
 
-from seer_rebuild.factor import DEFAULT_LINEUP, FACTOR_STAGES, factor_progress, factor_enter_steps, battle_loop_steps, KNOWN_FACTORS
+from seer_rebuild.factor import factor_progress, factor_enter_steps, battle_loop_steps
 from seer_rebuild.factor_runner import (
     FactorStagePlan,
     FLAG_CLEAR_RESERVE,
@@ -104,26 +104,6 @@ class FactorRunnerBuildTest(unittest.TestCase):
         self.assertEqual(steps[1].body.hex(), "00007b11")   # 31505
         self.assertEqual(steps[2].body.hex(), "62ef6f18")   # 切换 catch_time
         self.assertEqual(steps[3].body.hex(), "00004b72")   # 19314
-
-    def test_known_factors_have_design(self):
-        jj = KNOWN_FACTORS[2400545]
-        self.assertEqual(jj.name, "戟决先锋因子")
-        self.assertEqual(jj.design_id, 228)
-        self.assertEqual(jj.bosses, [3618, 3595, 3599, 3978, 4857])
-
-
-class FactorStageDataTest(unittest.TestCase):
-    def test_stages_are_current_factor(self):
-        self.assertEqual(len(FACTOR_STAGES), 5)
-        for st in FACTOR_STAGES:
-            self.assertTrue(1 <= st["boss_species"] <= 6000, st)
-            self.assertTrue(st.get("boss_name"), st)
-        # 谜之英雄因子的 5 关 BOSS（seerapi factor_design 225 固化）
-        self.assertEqual([s["boss_species"] for s in FACTOR_STAGES], [4539, 4330, 4137, 4845, 4848])
-
-    def test_default_lineup_is_derivable_not_hardcoded(self):
-        # 阵容取决于账号背包（catch_time），不再硬编码；这里只保证空集合不误报
-        self.assertEqual(DEFAULT_LINEUP, {})
 
 
 if __name__ == "__main__":

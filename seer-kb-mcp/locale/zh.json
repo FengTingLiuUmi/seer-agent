@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "赛尔号本体查询",
+    "description": "本地 MCP 工具，查询赛尔号 PVE 知识图谱：昵称消歧、因子逐关 Boss 硬门、按定位选精灵、属性克制倍率、禁用表。",
+    "detail": "docs/DETAIL.md"
+  }
+}

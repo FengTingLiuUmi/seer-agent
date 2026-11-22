@@ -1,0 +1,47 @@
+{
+  "factor": "恶咒巫师科萨斯",
+  "difficulty": "地狱",
+  "source": "https://bbs.tiepi.top/thread-2134-1-22.html ; https://www.bilibili.com/video/BV1JG4y127xG/",
+  "stages": [
+    {
+      "stage": 1,
+      "boss_type": "",
+      "boss_hp": "",
+      "traits": "必先；封属；只吃先制；我方使用技能全属性-1；300固伤",
+      "strategy": "圣萨(圣王萨格罗斯)随便打 / 小草王送死+星礼先3、150循环",
+      "pets": ["圣王萨格罗斯", "星礼", "茉蕊儿"]
+    },
+    {
+      "stage": 2,
+      "boss_type": "",
+      "boss_hp": "",
+      "traits": "",
+      "strategy": "熊大单挑 / 小草王送死+草潘(加尔鲁特)翠刃坚脊伤转体后150、属性循环",
+      "pets": ["熊大", "加尔鲁特", "茉蕊儿"]
+    },
+    {
+      "stage": 3,
+      "boss_type": "",
+      "boss_hp": "",
+      "traits": "",
+      "strategy": "圣谱(圣灵谱尼)先3+神圣复苏后，第五、先3循环",
+      "pets": ["圣灵谱尼"]
+    },
+    {
+      "stage": 4,
+      "boss_type": "",
+      "boss_hp": "",
+      "traits": "",
+      "strategy": "塞勒涅拉防差单挑(按住先三) / 典韦必先(漆黑套)",
+      "pets": ["塞勒涅", "典韦"]
+    },
+    {
+      "stage": 5,
+      "boss_type": "",
+      "boss_hp": "",
+      "traits": "",
+      "strategy": "表姐(帝皇之御)+强攻手 / 潘克多斯+蒂朵+斯克鲁恩+西塔伦+月照星魂必先+魔钰必先(银翼套)",
+      "pets": ["帝皇之御", "潘克多斯", "蒂朵", "斯克鲁恩", "西塔伦", "月照星魂", "魔钰"]
+    }
+  ]
+}

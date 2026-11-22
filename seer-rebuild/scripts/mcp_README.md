@@ -22,7 +22,6 @@ python -m seer_rebuild.cli mcp
 | `seer_probe` | 登录后发只读命令并收集 S2C | 只读 |
 | `seer_feature` | 背包/装备 或 精灵因子 的已抓包序列 | 默认 dry-run |
 | `seer_inventory` | 实时当前装备/背包 | 只读 |
-| `seer_battle_simulate` | 本地逐回合战斗模拟 | 纯本地 |
 | `seer_query` | seerapi 查 pet/skill/item/factor | 只读 |
 | `seer_applog` | 解析日常日志/出招记录 | 纯本地 |
 | `seer_capture_summary` | 分析抓包 | 纯本地 |

@@ -1,0 +1,147 @@
+{
+ "doc_id": "无极使者#地狱",
+ "factor": "无极使者",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4612,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "圣灵光",
+   "traits": "必先; 减伤16.7%; 攻击必暴; 免疫物攻(只受特攻伤害); 消强",
+   "mech": [
+    "immunePhysical",
+    "clearBuff",
+    "bossCrit",
+    "firstStrike",
+    "damageReduction"
+   ],
+   "strategies": [
+    "特攻强攻：无上·万魔天尊深渊忏悔一发带走"
+   ],
+   "pets": [
+    "无上·万魔天尊"
+   ],
+   "why": "核心致命机制是「免疫物攻(只受特攻伤害)」+「消强」+必先+攻击必暴+减伤16.7%。免疫物攻决定只能用特攻强攻手，无上·万魔天尊用特攻技能「深渊忏悔」单发带走，既绕开物攻免疫，又不叠强化、不给消强和 boss 必先/必暴反手任何出手机会，减伤16.7%对爆攻单发影响有限。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4611,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "混沌暗影",
+   "traits": "必先; 减伤16.7%; 攻击必暴; 免疫特攻(只受物攻伤害); 消强",
+   "mech": [
+    "immuneSpecial",
+    "clearBuff",
+    "bossCrit",
+    "firstStrike",
+    "damageReduction"
+   ],
+   "strategies": [
+    "物攻强攻：菠萝霸王菠萝多蜜斩(第五)一发带走"
+   ],
+   "pets": [
+    "菠萝霸王"
+   ],
+   "why": "核心致命机制是「免疫特攻(只受物攻伤害)」+「消强」+必先+攻击必暴+减伤16.7%。免疫特攻要求改用物攻强攻手，菠萝霸王「菠萝多蜜斩」(第五)一发带走，物攻绕开特攻免疫，单发秒杀不给必先/必暴/消强发挥空间。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4665,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "光暗影",
+   "traits": "必先; 减伤33.3%; 500固伤; 只受先制技能伤害; 消强",
+   "mech": [
+    "onlyFirstStrike",
+    "clearBuff",
+    "firstStrike",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "单精灵：星光·丽莎布布先三压血至2/3后一直150"
+   ],
+   "pets": [
+    "星光·丽莎布布"
+   ],
+   "why": "核心机制是「只受先制技能伤害」——只有带先制判定的技能才能造成红伤，其次是500固伤+减伤33.3%+消强。星光·丽莎布布用先三(先制先手)起手把 Boss 压到 2/3 血量，再一直用 150(同为满足先制的主输出)持续打伤；500固伤与消强靠草系站场回血硬磨、不依赖强化，避免被消强清空。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 3627,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "次元",
+   "traits": "必先; 减伤33.3%; 500固伤; 吸强(偷强); 害怕控; 全属性-1; 消强",
+   "mech": [
+    "debuff",
+    "clearBuff",
+    "stealBuff",
+    "control",
+    "firstStrike",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "增伤自爆队(潘克多斯+蒂朵+西塔伦)+魔钰梦境残缺强攻"
+   ],
+   "pets": [
+    "潘克多斯",
+    "蒂朵",
+    "西塔伦",
+    "魔钰"
+   ],
+   "why": "核心机制是「吸强(偷强)」+「全属性-1」+「消强」共同针对站场叠强化，「害怕控」针对长线受击，外加必先+减伤33.3%+500固伤。因此用增伤自爆队(潘克多斯/蒂朵/西塔伦)铺垫翻倍怒伤后，魔钰(爆攻压血强攻)「梦境残缺」一发秒杀：自爆增伤不吃站场回合、也留不下可被偷/可被清的强化，先手秒即可免疫害怕控并规避500固伤，减伤33.3%由增伤链补偿。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4674,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "次元",
+   "traits": "必先; 减伤33.3%; 500固伤; 吸强(偷强); 清PP; 断回合; 反弹克制系100%",
+   "mech": [
+    "reflection",
+    "clearPP",
+    "stealBuff",
+    "breakTurn",
+    "firstStrike",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "替死+万神寂灭·克罗诺斯+星光·魔焰猩猩先三+替死+星光·鲁斯王克制"
+   ],
+   "pets": [
+    "万神寂灭·克罗诺斯",
+    "星光·魔焰猩猩",
+    "星光·鲁斯王"
+   ],
+   "why": "核心机制是「反弹克制系100%」——用克制系(对次元超效)的红伤会被100%弹回，所以不能上克制系直打；另有吸强/清PP/断回合惩罚站场叠强化与长线回合，及必先+减伤33.3%+500固伤。反制用对次元=1.0的无克制属性(火/水)：万神寂灭·克罗诺斯(大克罗)魂印在下场后让下一只「免首回合异常+首回合受伤≤250」，护住星光·魔焰猩猩落地用火系先三打第一波；再替死吃 boss 的必先+500固伤，最后星光·鲁斯王(水)用「克制」技能收尾——水对次元1.0同样不会被反弹，全程不叠强化、速战绕开吸强/清PP/断回合。"
+  }
+ ],
+ "tids": [
+  2272,
+  2592,
+  2268,
+  2269,
+  2270,
+  2271,
+  2274,
+  2282
+ ],
+ "note": "无正文数据"
+}

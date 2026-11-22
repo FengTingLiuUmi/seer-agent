@@ -1,0 +1,173 @@
+{
+ "doc_id": "参天巨型仙人掌#地狱",
+ "factor": "参天巨型仙人掌",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4690,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "暗影草",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 300固伤; 消强; 闪避; 命中弱化; 回血(月亮); 减伤16.7%",
+   "mech": [
+    "hitDebuff",
+    "dodge",
+    "heal",
+    "debuff",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐+强攻手×2 / 消强+卡莎单挑 / 草王保圣焰菲格罗亚第五单挑"
+   ],
+   "pets": [
+    "帝皇之御",
+    "卡莎",
+    "茉蕊儿",
+    "圣焰菲格罗亚"
+   ],
+   "why": "必先+封属封死属性技能，故用表姐守御八方（攻击技能）开场，给全队必先+必暴压住先手与闪避；但此关另带命中弱化，必暴（伪必中）会被破，单挑路线需先解命中弱化或走真必中；月亮回血+消强+300固伤拖不起，强攻手须速杀。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4693,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "草",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 300固伤; 消强; 免疫物攻; 必暴; 减伤16.7%",
+   "mech": [
+    "immunePhysical",
+    "clearBuff",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐+特攻强攻手×2 / 星光布布单挑 / 压血灵神烽火秒杀 / 魔钰150秒杀 / 圣光莫妮卡第五"
+   ],
+   "pets": [
+    "帝皇之御",
+    "星光·丽莎布布",
+    "灵神烽火",
+    "魔钰",
+    "圣光莫妮卡"
+   ],
+   "why": "免疫物攻是硬门：物攻红伤归零，所以全部换特攻强攻手（星光布布/灵神烽火/魔钰/圣光莫妮卡）；封属+必先由表姐守御八方先手引爆（必先+必暴）绕过，紧跟特攻爆发秒杀，避免Boss必暴+固伤持续消耗；消强不影响自爆后速杀。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4731,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "飞行",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 500固伤; 消强; 护盾; 盾罩; 回血; 月亮; 减伤33.3%",
+   "mech": [
+    "shield",
+    "heal",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "千裳单挑 / 四九单挑 / 蒂朵单挑"
+   ],
+   "pets": [
+    "千裳",
+    "四九",
+    "蒂朵"
+   ],
+   "why": "护盾+盾罩开局让单发强攻难见效，回血（月亮）持续回血，33.3%减伤再压输出，故走站场磨：千裳/四九/蒂朵靠自身续航先破盾再叠伤磨掉；封属+必先不影响攻击技能与站场展开，消强也需配合不依赖强化的磨血打法。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4732,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "飞行圣灵",
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 500固伤; 偷强; 必暴; 秒杀; 回血(月亮); 减伤33.3%",
+   "mech": [
+    "heal",
+    "stealBuff",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "炮灰+表姐+极寒魔兽先三+补刀 / 克罗+眠降单挑 / 表姐+卡威治+异维·拉伯克150 / 冰潘+炮灰+克罗+六界弹伤+哈迪斯补刀"
+   ],
+   "pets": [
+    "帝皇之御",
+    "极寒魔兽",
+    "神寂·克罗诺斯",
+    "眠降·玛缇娜",
+    "卡威治",
+    "异维·拉伯克",
+    "斯克鲁恩",
+    "哈迪斯"
+   ],
+   "why": "秒杀+必暴（Boss刀刀暴击）逼出挡刀/复活位（炮灰、克罗、眠降），否则强攻未出手先被秒；月亮回血靠冰潘（斯克鲁恩）霜寒封印禁疗压掉；偷强让叠强化打法失效，故六界弹伤+补刀更稳，表姐守御八方仍用攻击技能给先手必先+必暴绕过封属+必先。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4734,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "草",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 500固伤; 偷强; 受击麻痹; 吸血; 免疫暴击; 反弹; 减伤33.3%",
+   "mech": [
+    "reflection",
+    "heal",
+    "stealBuff",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "冰潘+重生+泰坦+哈迪斯先三+克罗+奥斯卡先三 / 星光猩猩磨血 / 皮神单挑 / 无为觉者+冰潘送死+哈迪斯补刀+星光布布补刀 / 火潘+蒂朵+鲁肃+灵神烽火"
+   ],
+   "pets": [
+    "斯克鲁恩",
+    "重生之翼",
+    "泰坦",
+    "哈迪斯",
+    "神寂·克罗诺斯",
+    "奥斯卡",
+    "星光·魔焰猩猩",
+    "无为觉者",
+    "星光·丽莎布布",
+    "潘克多斯",
+    "蒂朵",
+    "鲁肃",
+    "灵神烽火"
+   ],
+   "why": "免疫暴击直接废掉表姐引爆/必暴流，所以本关不用表姐，改走禁疗+站场磨或火潘+蒂朵+鲁肃增伤链强攻；吸血由冰潘（斯克鲁恩）霜寒封印禁疗压制；受击麻痹需抗性/免异常或尽量先手规避；偷强+反弹让强化血拼变危险，故多用补刀/弹伤/磨血收尾。"
+  }
+ ]
+}

@@ -185,10 +185,12 @@ window.__ModuleLoader__.load({
       }
       if (!myName) myName = '我方精灵';
 
-      const enemyLabel = latestInfo.title || latestInfo.factor_name || '敌方';
+      const enemyLabel = latestInfo.enemy_name || latestInfo.title || latestInfo.factor_name || '敌方';
       let enemyMax = null;
       let enemyCur = null;
       let enemyCatch = null;
+      let myCurHp = null;      // 我方当前宠体力（实时，供算「我方受到伤害」）
+      let myMaxHp = null;
       let round = 0;
       let over = false;
       let winner = latestInfo.winner || '';
@@ -216,6 +218,8 @@ window.__ModuleLoader__.load({
             const nm = catchName[hex];
             if (nm) myName = nm;
             push('line', `[我方]换宠 → ${nm || (`0x${hex}`)}`);
+            // 换宠后旧体力基准失效，下一回合的「我方受伤」暂置空，待 2505 结算重新锚定
+            myCurHp = null;
           }
         } else {
           if (cmd === C_START) {
@@ -228,6 +232,7 @@ window.__ModuleLoader__.load({
             push('line', '战斗开始');
           } else if (cmd === C_SKILL_RES) {
             // 后端驱动层已注入 enemy_skill_id/name/hp/max，优先用；否则本地解析兜底
+            const prevCur = enemyCur;
             let enId = e.enemy_skill_id != null ? e.enemy_skill_id : null;
             let enHp = e.enemy_hp != null ? e.enemy_hp : null;
             let enMx = e.enemy_max != null ? e.enemy_max : null;
@@ -241,8 +246,37 @@ window.__ModuleLoader__.load({
             if (enHp != null) enemyCur = enHp;
             const enName = e.enemy_skill_name || (enId != null ? skills[String(enId)] : null);
             const enSkill = enName || (enId != null ? `技能#${enId}` : null);
-            if (enHp != null || enSkill) {
-              push('line', `[敌方]${enSkill ? ` · ${enSkill}` : ''}${enHp != null ? `  体力 ${enHp}/${enMx != null ? enMx : '?'}` : ''}`);
+            // 我方本回合净伤害 = 敌方本回合开始体力 - 结算体力（负值=敌方回血多于我方输出）
+            const myDmg = (prevCur != null && enHp != null) ? (prevCur - enHp) : null;
+            // 我方本回合受到的伤害 = 我方本回合开始体力 - 结算体力
+            const prevMy = myCurHp;
+            const mHp = e.my_hp != null ? e.my_hp : null;
+            const mMx = e.my_max != null ? e.my_max : null;
+            if (mHp != null) myCurHp = mHp;
+            if (mMx != null) myMaxHp = mMx;
+            const myDmgTaken = (prevMy != null && mHp != null) ? Math.max(0, prevMy - mHp) : null;
+            const enCrit = e.enemy_is_crit ? '【暴击】' : '';
+            const enStatus = (e.enemy_status && e.enemy_status.length)
+              ? `  敌方状态[${e.enemy_status.join(',')}]` : '';
+            const enEffect = e.enemy_effect ? ` ${e.enemy_effect}` : '';
+            const enPrio = e.enemy_priority != null ? ` 先制${e.enemy_priority >= 0 ? '+' : ''}${e.enemy_priority}` : '';
+            const enGain = e.enemy_gain_hp ? ` 回血${e.enemy_gain_hp}` : '';
+            const myCrit = e.is_crit ? '【暴击】' : '';
+            const myStatus = (e.status && e.status.length)
+              ? `  我方状态[${e.status.join(',')}]` : '';
+            const myEffect = e.my_effect ? ` ${e.my_effect}` : '';
+            const myPrio = e.my_priority != null ? ` 先制${e.my_priority >= 0 ? '+' : ''}${e.my_priority}` : '';
+            const myGain = e.my_gain_hp ? ` 回血${e.my_gain_hp}` : '';
+            if (enHp != null || enSkill || mHp != null || enStatus || myStatus) {
+              const dmgText = myDmg != null
+                ? `  我方伤害 ${myDmg}${prevCur != null ? `（${prevCur}→${enHp}）` : ''}`
+                : '';
+              const myHpText = mHp != null ? `  我方 ${mHp}/${mMx != null ? mMx : '?'}` : '';
+              const myDmgText = myDmgTaken != null
+                ? `  我方受伤 ${myDmgTaken}${prevMy != null ? `（${prevMy}→${mHp}）` : ''}`
+                : '';
+              const mySide = `${myCrit}${myEffect}${myPrio}${myGain}${myStatus}`;
+              push('line', `[敌方]${enSkill ? ` · ${enSkill}` : ''}${enCrit}${enEffect}${enPrio}${enHp != null ? `  体力 ${enHp}/${enMx != null ? enMx : '?'}` : ''}${dmgText}${myHpText}${myDmgText}${enGain}${mySide}${enStatus}`);
             }
           } else if (cmd === C_OVER) {
             over = true;
@@ -529,20 +563,56 @@ window.__ModuleLoader__.load({
         h('th', { style: { textAlign: 'left', paddingRight: 8 } }, '我方'),
         h('th', { style: { textAlign: 'left', paddingRight: 8 } }, '敌方技能'),
         h('th', { style: { textAlign: 'left', paddingRight: 8 } }, '敌方HP(开始→结算)'),
-        h('th', { style: { textAlign: 'left' } }, '伤害/变化'));
+        h('th', { style: { textAlign: 'left', paddingRight: 8 } }, '我方HP(开始→结算)'),
+        h('th', { style: { textAlign: 'left', paddingRight: 8 } }, '敌伤害/变化'),
+        h('th', { style: { textAlign: 'left', paddingRight: 8 } }, '我方受伤/变化'),
+        h('th', { style: { textAlign: 'left' } }, '状态/强化'));
       const turnRows = latest.turns.map((t, i) => {
         const hpCell = t.enemy_hp != null
           ? `${t.enemy_hp_prev != null ? t.enemy_hp_prev + '→' : ''}${t.enemy_hp}${t.enemy_hp_max != null ? '/' + t.enemy_hp_max : ''}`
           : '—';
+        const myHpCell = t.my_hp != null
+          ? `${t.my_hp_prev != null ? t.my_hp_prev + '→' : ''}${t.my_hp}${t.my_hp_max != null ? '/' + t.my_hp_max : ''}`
+          : '—';
         const dmgCell = [t.damage != null ? t.damage : null,
           t.enemy_hp_delta != null ? (t.enemy_hp_delta >= 0 ? '+' : '') + t.enemy_hp_delta : null]
           .filter((x) => x != null).join(' / ') || '—';
+        const myDmgCell = [t.damage_taken != null ? t.damage_taken : null,
+          t.my_hp_delta != null ? (t.my_hp_delta >= 0 ? '+' : '') + t.my_hp_delta : null]
+          .filter((x) => x != null).join(' / ') || '—';
+        let myCell = t.skill_name || '—';
+        if (t.is_crit) myCell += '【暴击】';
+        if (t.my_skill_pp && t.my_skill_pp.length) {
+          const hit = t.my_skill_pp.find((p) => p && p[0] === t.skill_id);
+          if (hit && hit[1] != null) myCell += ` PP${hit[1]}`;
+        }
+        if (t.switch_to_catch != null) {
+          const swName = t.switch_to_name || (t.switch_to_species != null ? '#' + t.switch_to_species : '0x' + (t.switch_to_catch >>> 0).toString(16));
+          const swKind = t.switch_kind === 'active' ? '主动' : (t.switch_kind === 'passive' ? '被动' : '');
+          myCell += `  →换 ${swName}${swKind ? `(${swKind})` : ''}`;
+        }
+        let enSkillCell = t.enemy_skill_name || (t.enemy_skill_id != null ? '#' + t.enemy_skill_id : '—');
+        if (t.enemy_is_crit) enSkillCell += '【暴击】';
+        if (t.enemy_skill_pp && t.enemy_skill_pp.length) {
+          const hit = t.enemy_skill_pp.find((p) => p && p[0] === t.enemy_skill_id);
+          if (hit && hit[1] != null) enSkillCell += ` 敌PP${hit[1]}`;
+        }
+        const statusParts = [];
+        if (t.status && t.status.length) statusParts.push('我:' + t.status.join(','));
+        if (t.enemy_status && t.enemy_status.length) statusParts.push('敌:' + t.enemy_status.join(','));
+        if (t.switch_lock_catch != null && t.switch_lock_catch !== 0) {
+          statusParts.push('被锁0x' + (t.switch_lock_catch >>> 0).toString(16));
+        }
+        const statusCell = statusParts.join('  ') || '—';
         return h('tr', { key: 'turn' + i },
           h('td', { style: { paddingRight: 8 } }, t.turn),
-          h('td', { style: { paddingRight: 8 } }, t.skill_name || '—'),
-          h('td', { style: { paddingRight: 8 } }, t.enemy_skill_name || (t.enemy_skill_id != null ? '#' + t.enemy_skill_id : '—')),
+          h('td', { style: { paddingRight: 8 } }, myCell),
+          h('td', { style: { paddingRight: 8 } }, enSkillCell),
           h('td', { style: { paddingRight: 8 } }, hpCell),
-          h('td', null, dmgCell));
+          h('td', { style: { paddingRight: 8 } }, myHpCell),
+          h('td', { style: { paddingRight: 8 } }, dmgCell),
+          h('td', { style: { paddingRight: 8 } }, myDmgCell),
+          h('td', null, statusCell));
       });
       return h('div', { style: { marginBottom: 8 } },
         h('div', { style: { fontWeight: 600, marginBottom: 2 } }, '完整战报 · 回合'),

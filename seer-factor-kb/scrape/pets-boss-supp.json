@@ -1,0 +1,6396 @@
+{
+ "pets": [
+  {
+   "seerapiId": 1230,
+   "name": "巨齿鲨",
+   "type": [
+    "水"
+   ],
+   "base_stats": {
+    "hp": 120,
+    "atk": 120,
+    "def": 82,
+    "sp_atk": 95,
+    "sp_def": 85,
+    "spd": 98
+   }
+  },
+  {
+   "seerapiId": 1277,
+   "name": "雷纳尔多",
+   "type": [
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 126,
+    "atk": 82,
+    "def": 100,
+    "sp_atk": 112,
+    "sp_def": 90,
+    "spd": 90
+   }
+  },
+  {
+   "seerapiId": 1649,
+   "name": "尼萨雷斯",
+   "type": [
+    "水"
+   ],
+   "base_stats": {
+    "hp": 124,
+    "atk": 115,
+    "def": 91,
+    "sp_atk": 75,
+    "sp_def": 99,
+    "spd": 96
+   }
+  },
+  {
+   "seerapiId": 1822,
+   "name": "查特林",
+   "type": [
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 121,
+    "atk": 105,
+    "def": 120,
+    "sp_atk": 76,
+    "sp_def": 100,
+    "spd": 88
+   }
+  },
+  {
+   "seerapiId": 2616,
+   "name": "提亚戈斯",
+   "type": [
+    "飞行"
+   ],
+   "base_stats": {
+    "hp": 128,
+    "atk": 77,
+    "def": 92,
+    "sp_atk": 120,
+    "sp_def": 92,
+    "spd": 109
+   }
+  },
+  {
+   "seerapiId": 2705,
+   "name": "鲁比豪克",
+   "type": [
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 129,
+    "atk": 75,
+    "def": 92,
+    "sp_atk": 121,
+    "sp_def": 92,
+    "spd": 109
+   }
+  },
+  {
+   "seerapiId": 2892,
+   "name": "希尔妮妮",
+   "type": [
+    "自然"
+   ],
+   "base_stats": {
+    "hp": 136,
+    "atk": 123,
+    "def": 93,
+    "sp_atk": 70,
+    "sp_def": 93,
+    "spd": 115
+   }
+  },
+  {
+   "seerapiId": 2979,
+   "name": "格利德",
+   "type": [
+    "远古",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 138,
+    "atk": 130,
+    "def": 100,
+    "sp_atk": 70,
+    "sp_def": 100,
+    "spd": 118
+   }
+  },
+  {
+   "seerapiId": 2999,
+   "name": "千夜死神",
+   "type": [
+    "飞行",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 137,
+    "atk": 128,
+    "def": 103,
+    "sp_atk": 70,
+    "sp_def": 103,
+    "spd": 117
+   }
+  },
+  {
+   "seerapiId": 300,
+   "name": "谱尼",
+   "type": [
+    "圣灵"
+   ],
+   "base_stats": {
+    "hp": 120,
+    "atk": 110,
+    "def": 100,
+    "sp_atk": 120,
+    "sp_def": 100,
+    "spd": 110
+   }
+  },
+  {
+   "seerapiId": 3020,
+   "name": "百鬼夜王",
+   "type": [
+    "神秘",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 139,
+    "atk": 120,
+    "def": 108,
+    "sp_atk": 70,
+    "sp_def": 107,
+    "spd": 117
+   }
+  },
+  {
+   "seerapiId": 3033,
+   "name": "帝天战佛",
+   "type": [
+    "远古",
+    "火"
+   ],
+   "base_stats": {
+    "hp": 140,
+    "atk": 131,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 120
+   }
+  },
+  {
+   "seerapiId": 3082,
+   "name": "米斯蒂克",
+   "type": [
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 162,
+    "atk": 80,
+    "def": 98,
+    "sp_atk": 127,
+    "sp_def": 100,
+    "spd": 123
+   }
+  },
+  {
+   "seerapiId": 3086,
+   "name": "战·肯扎德",
+   "type": [
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 134,
+    "atk": 125,
+    "def": 98,
+    "sp_atk": 70,
+    "sp_def": 96,
+    "spd": 117
+   }
+  },
+  {
+   "seerapiId": 3100,
+   "name": "源力·劫",
+   "type": [
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 140,
+    "atk": 130,
+    "def": 102,
+    "sp_atk": 70,
+    "sp_def": 100,
+    "spd": 123
+   }
+  },
+  {
+   "seerapiId": 3147,
+   "name": "神翼·波斯蒂加",
+   "type": [
+    "飞行",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 139,
+    "atk": 130,
+    "def": 102,
+    "sp_atk": 70,
+    "sp_def": 99,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 3200,
+   "name": "霍德尔",
+   "type": [
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 153,
+    "atk": 80,
+    "def": 103,
+    "sp_atk": 128,
+    "sp_def": 102,
+    "spd": 124
+   }
+  },
+  {
+   "seerapiId": 3223,
+   "name": "阿尔斯兰",
+   "type": [
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 150,
+    "atk": 130,
+    "def": 103,
+    "sp_atk": 80,
+    "sp_def": 102,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 3237,
+   "name": "大威势明王",
+   "type": [
+    "远古",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 152,
+    "atk": 128,
+    "def": 107,
+    "sp_atk": 70,
+    "sp_def": 107,
+    "spd": 126
+   }
+  },
+  {
+   "seerapiId": 3296,
+   "name": "暗烬·朱雀",
+   "type": [
+    "火",
+    "飞行"
+   ],
+   "base_stats": {
+    "hp": 145,
+    "atk": 70,
+    "def": 108,
+    "sp_atk": 130,
+    "sp_def": 107,
+    "spd": 126
+   }
+  },
+  {
+   "seerapiId": 3302,
+   "name": "炎魔之王",
+   "type": [
+    "火"
+   ],
+   "base_stats": {
+    "hp": 150,
+    "atk": 130,
+    "def": 107,
+    "sp_atk": 70,
+    "sp_def": 106,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 3308,
+   "name": "万世北溟·玄武",
+   "type": [
+    "机械",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 123,
+    "def": 140,
+    "sp_atk": 70,
+    "sp_def": 140,
+    "spd": 92
+   }
+  },
+  {
+   "seerapiId": 3330,
+   "name": "玄天神武",
+   "type": [
+    "战斗",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 140,
+    "atk": 125,
+    "def": 103,
+    "sp_atk": 70,
+    "sp_def": 102,
+    "spd": 110
+   }
+  },
+  {
+   "seerapiId": 3336,
+   "name": "地狱魔龙兽",
+   "type": [
+    "远古",
+    "邪灵"
+   ],
+   "base_stats": {
+    "hp": 152,
+    "atk": 130,
+    "def": 101,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 127
+   }
+  },
+  {
+   "seerapiId": 3455,
+   "name": "洛刹",
+   "type": [
+    "混沌",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 175,
+    "atk": 70,
+    "def": 100,
+    "sp_atk": 130,
+    "sp_def": 102,
+    "spd": 128
+   }
+  },
+  {
+   "seerapiId": 3456,
+   "name": "圣光斯嘉丽",
+   "type": [
+    "圣灵",
+    "光"
+   ],
+   "base_stats": {
+    "hp": 157,
+    "atk": 70,
+    "def": 115,
+    "sp_atk": 130,
+    "sp_def": 113,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 3465,
+   "name": "圣瞳缪斯",
+   "type": [
+    "圣灵",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 153,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 132,
+    "sp_def": 113,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 3467,
+   "name": "不灭·艾恩斯",
+   "type": [
+    "火"
+   ],
+   "base_stats": {
+    "hp": 164,
+    "atk": 132,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 129
+   }
+  },
+  {
+   "seerapiId": 3525,
+   "name": "天羽",
+   "type": [
+    "飞行",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 151,
+    "atk": 70,
+    "def": 102,
+    "sp_atk": 130,
+    "sp_def": 100,
+    "spd": 127
+   }
+  },
+  {
+   "seerapiId": 3529,
+   "name": "幻世·海瑟薇",
+   "type": [
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 161,
+    "atk": 70,
+    "def": 113,
+    "sp_atk": 132,
+    "sp_def": 110,
+    "spd": 129
+   }
+  },
+  {
+   "seerapiId": 3539,
+   "name": "混沌布莱克",
+   "type": [
+    "混沌",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 160,
+    "atk": 132,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 3541,
+   "name": "魔灵王·斯摩亚蒂",
+   "type": [
+    "混沌",
+    "邪灵"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 70,
+    "def": 116,
+    "sp_atk": 135,
+    "sp_def": 114,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 3552,
+   "name": "烟罗",
+   "type": [
+    "火",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 146,
+    "atk": 70,
+    "def": 105,
+    "sp_atk": 131,
+    "sp_def": 105,
+    "spd": 128
+   }
+  },
+  {
+   "seerapiId": 3570,
+   "name": "星诺",
+   "type": [
+    "冰",
+    "光"
+   ],
+   "base_stats": {
+    "hp": 156,
+    "atk": 70,
+    "def": 104,
+    "sp_atk": 130,
+    "sp_def": 106,
+    "spd": 127
+   }
+  },
+  {
+   "seerapiId": 3577,
+   "name": "光之惩戒·英卡洛斯",
+   "type": [
+    "光",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 145,
+    "def": 115,
+    "sp_atk": 70,
+    "sp_def": 115,
+    "spd": 140
+   }
+  },
+  {
+   "seerapiId": 3585,
+   "name": "索兰莉安",
+   "type": [
+    "草",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 158,
+    "atk": 70,
+    "def": 102,
+    "sp_atk": 125,
+    "sp_def": 102,
+    "spd": 123
+   }
+  },
+  {
+   "seerapiId": 3595,
+   "name": "泰拉图斯",
+   "type": [
+    "草",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 167,
+    "atk": 130,
+    "def": 108,
+    "sp_atk": 70,
+    "sp_def": 108,
+    "spd": 127
+   }
+  },
+  {
+   "seerapiId": 3599,
+   "name": "卡杉德拉",
+   "type": [
+    "战斗",
+    "火"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 132,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 108,
+    "spd": 128
+   }
+  },
+  {
+   "seerapiId": 3605,
+   "name": "拉贾克斯",
+   "type": [
+    "火",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 70,
+    "def": 110,
+    "sp_atk": 132,
+    "sp_def": 110,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 3618,
+   "name": "埃拉辛姆",
+   "type": [
+    "神秘",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 164,
+    "atk": 132,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 124
+   }
+  },
+  {
+   "seerapiId": 3623,
+   "name": "鬼面幽蝶",
+   "type": [
+    "光",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 135,
+    "def": 109,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 3631,
+   "name": "跃迁狂剑·兰斯洛特",
+   "type": [
+    "机械",
+    "次元"
+   ],
+   "base_stats": {
+    "hp": 163,
+    "atk": 135,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 3634,
+   "name": "卡恩特",
+   "type": [
+    "水",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 160,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 132,
+    "sp_def": 108,
+    "spd": 128
+   }
+  },
+  {
+   "seerapiId": 3639,
+   "name": "普约尔",
+   "type": [
+    "电",
+    "冰"
+   ],
+   "base_stats": {
+    "hp": 160,
+    "atk": 134,
+    "def": 109,
+    "sp_atk": 70,
+    "sp_def": 109,
+    "spd": 128
+   }
+  },
+  {
+   "seerapiId": 3640,
+   "name": "阿塔尼斯",
+   "type": [
+    "暗影",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 163,
+    "atk": 70,
+    "def": 111,
+    "sp_atk": 131,
+    "sp_def": 107,
+    "spd": 128
+   }
+  },
+  {
+   "seerapiId": 3653,
+   "name": "德马斯克",
+   "type": [
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 164,
+    "atk": 130,
+    "def": 105,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 126
+   }
+  },
+  {
+   "seerapiId": 3654,
+   "name": "奎因",
+   "type": [
+    "电",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 162,
+    "atk": 132,
+    "def": 109,
+    "sp_atk": 70,
+    "sp_def": 108,
+    "spd": 129
+   }
+  },
+  {
+   "seerapiId": 3734,
+   "name": "混沌飞王凡尔斯",
+   "type": [
+    "混沌",
+    "飞行"
+   ],
+   "base_stats": {
+    "hp": 140,
+    "atk": 140,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 108,
+    "spd": 160
+   }
+  },
+  {
+   "seerapiId": 3741,
+   "name": "上古魔尊·库贝萨",
+   "type": [
+    "远古"
+   ],
+   "base_stats": {
+    "hp": 185,
+    "atk": 130,
+    "def": 108,
+    "sp_atk": 70,
+    "sp_def": 108,
+    "spd": 129
+   }
+  },
+  {
+   "seerapiId": 3756,
+   "name": "逆世冰狐",
+   "type": [
+    "冰",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 154,
+    "atk": 130,
+    "def": 105,
+    "sp_atk": 70,
+    "sp_def": 105,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 3774,
+   "name": "雷羽",
+   "type": [
+    "飞行",
+    "电"
+   ],
+   "base_stats": {
+    "hp": 152,
+    "atk": 133,
+    "def": 105,
+    "sp_atk": 70,
+    "sp_def": 102,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 3786,
+   "name": "火炎巨鹿·里奥斯",
+   "type": [
+    "火"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 105,
+    "sp_atk": 134,
+    "sp_def": 120,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 3794,
+   "name": "混沌·洛拉菲德",
+   "type": [
+    "混沌",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 133,
+    "def": 116,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 126
+   }
+  },
+  {
+   "seerapiId": 3818,
+   "name": "汤圆妹妹",
+   "type": [
+    "光",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 160,
+    "atk": 130,
+    "def": 102,
+    "sp_atk": 70,
+    "sp_def": 108,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 3829,
+   "name": "皇室战狮",
+   "type": [
+    "光",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 154,
+    "atk": 134,
+    "def": 104,
+    "sp_atk": 70,
+    "sp_def": 102,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 3881,
+   "name": "蛊",
+   "type": [
+    "虫"
+   ],
+   "base_stats": {
+    "hp": 155,
+    "atk": 132,
+    "def": 105,
+    "sp_atk": 70,
+    "sp_def": 103,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 3886,
+   "name": "冰魄·柯尔德",
+   "type": [
+    "冰"
+   ],
+   "base_stats": {
+    "hp": 169,
+    "atk": 140,
+    "def": 114,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 3941,
+   "name": "混沌暗王霍德尔",
+   "type": [
+    "混沌",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 70,
+    "def": 114,
+    "sp_atk": 138,
+    "sp_def": 111,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 3949,
+   "name": "余罪魔女",
+   "type": [
+    "混沌",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 169,
+    "atk": 70,
+    "def": 115,
+    "sp_atk": 142,
+    "sp_def": 110,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 3966,
+   "name": "懒惰·斯洛斯",
+   "type": [
+    "光",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 176,
+    "atk": 70,
+    "def": 114,
+    "sp_atk": 135,
+    "sp_def": 112,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 3973,
+   "name": "寒灵·喵九儿",
+   "type": [
+    "冰"
+   ],
+   "base_stats": {
+    "hp": 169,
+    "atk": 138,
+    "def": 109,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 3978,
+   "name": "克利奥",
+   "type": [
+    "虫"
+   ],
+   "base_stats": {
+    "hp": 160,
+    "atk": 125,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 3999,
+   "name": "飒雷孤影·喵佐",
+   "type": [
+    "暗影",
+    "电"
+   ],
+   "base_stats": {
+    "hp": 174,
+    "atk": 144,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 109,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4000,
+   "name": "薇尔诗",
+   "type": [
+    "神灵"
+   ],
+   "base_stats": {
+    "hp": 180,
+    "atk": 80,
+    "def": 125,
+    "sp_atk": 150,
+    "sp_def": 125,
+    "spd": 140
+   }
+  },
+  {
+   "seerapiId": 4002,
+   "name": "御象灵尊",
+   "type": [
+    "远古",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 180,
+    "atk": 145,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 109,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4004,
+   "name": "圣光格劳瑞",
+   "type": [
+    "圣灵",
+    "电"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 142,
+    "def": 114,
+    "sp_atk": 70,
+    "sp_def": 114,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4012,
+   "name": "天幕神龙",
+   "type": [
+    "自然",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 138,
+    "def": 108,
+    "sp_atk": 70,
+    "sp_def": 108,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4020,
+   "name": "哀狂达尔",
+   "type": [
+    "战斗",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 142,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 108,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4023,
+   "name": "哀目黑子",
+   "type": [
+    "暗影",
+    "邪灵"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 138,
+    "sp_def": 110,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4025,
+   "name": "哀影疾风",
+   "type": [
+    "飞行",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 169,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 140,
+    "sp_def": 108,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4027,
+   "name": "神鹿仙子",
+   "type": [
+    "远古",
+    "草"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 70,
+    "def": 108,
+    "sp_atk": 134,
+    "sp_def": 108,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4032,
+   "name": "六界御神",
+   "type": [
+    "圣灵",
+    "光"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 140,
+    "def": 115,
+    "sp_atk": 70,
+    "sp_def": 113,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4034,
+   "name": "森莎",
+   "type": [
+    "自然",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 110,
+    "sp_atk": 135,
+    "sp_def": 110,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4043,
+   "name": "环·回响",
+   "type": [
+    "机械",
+    "次元"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 110,
+    "sp_atk": 138,
+    "sp_def": 113,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4045,
+   "name": "灰栗",
+   "type": [
+    "飞行"
+   ],
+   "base_stats": {
+    "hp": 144,
+    "atk": 130,
+    "def": 104,
+    "sp_atk": 70,
+    "sp_def": 102,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4047,
+   "name": "德拉蒙德",
+   "type": [
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 162,
+    "atk": 130,
+    "def": 108,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 120
+   }
+  },
+  {
+   "seerapiId": 4048,
+   "name": "幻境界神",
+   "type": [
+    "机械",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 136,
+    "sp_def": 112,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4051,
+   "name": "TSP",
+   "type": [
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 148,
+    "atk": 130,
+    "def": 99,
+    "sp_atk": 70,
+    "sp_def": 100,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4078,
+   "name": "喋血·哀影疾风",
+   "type": [
+    "混沌",
+    "飞行"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 143,
+    "sp_def": 112,
+    "spd": 138
+   }
+  },
+  {
+   "seerapiId": 4080,
+   "name": "迦曼吉",
+   "type": [
+    "水"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 110,
+    "sp_atk": 137,
+    "sp_def": 110,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4082,
+   "name": "苏格尔",
+   "type": [
+    "冰",
+    "火"
+   ],
+   "base_stats": {
+    "hp": 174,
+    "atk": 70,
+    "def": 113,
+    "sp_atk": 134,
+    "sp_def": 108,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 4092,
+   "name": "诶西欧",
+   "type": [
+    "神秘",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 70,
+    "def": 102,
+    "sp_atk": 138,
+    "sp_def": 106,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4097,
+   "name": "哀梦幻蝶",
+   "type": [
+    "飞行",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 169,
+    "atk": 70,
+    "def": 111,
+    "sp_atk": 137,
+    "sp_def": 114,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4109,
+   "name": "魔剪·塞泽丝",
+   "type": [
+    "战斗",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 169,
+    "atk": 138,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4113,
+   "name": "风之子·岚",
+   "type": [
+    "自然"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 140,
+    "def": 114,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4114,
+   "name": "科罗丽娜",
+   "type": [
+    "暗影",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 138,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4116,
+   "name": "核天使",
+   "type": [
+    "机械",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 175,
+    "atk": 140,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4117,
+   "name": "克莱芬斯",
+   "type": [
+    "火"
+   ],
+   "base_stats": {
+    "hp": 164,
+    "atk": 70,
+    "def": 106,
+    "sp_atk": 134,
+    "sp_def": 106,
+    "spd": 120
+   }
+  },
+  {
+   "seerapiId": 4122,
+   "name": "卡勒丽铂",
+   "type": [
+    "飞行",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 70,
+    "def": 111,
+    "sp_atk": 140,
+    "sp_def": 111,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4123,
+   "name": "莫丽",
+   "type": [
+    "电",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 138,
+    "def": 108,
+    "sp_atk": 70,
+    "sp_def": 108,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4137,
+   "name": "坚盾·瓦尔德",
+   "type": [
+    "光",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 130,
+    "def": 120,
+    "sp_atk": 70,
+    "sp_def": 120,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4138,
+   "name": "南瓜小鬼",
+   "type": [
+    "邪灵"
+   ],
+   "base_stats": {
+    "hp": 153,
+    "atk": 131,
+    "def": 98,
+    "sp_atk": 70,
+    "sp_def": 98,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4141,
+   "name": "夜使·库帕帕",
+   "type": [
+    "暗影",
+    "邪灵"
+   ],
+   "base_stats": {
+    "hp": 163,
+    "atk": 70,
+    "def": 115,
+    "sp_atk": 138,
+    "sp_def": 115,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4145,
+   "name": "克鲁斯汀",
+   "type": [
+    "飞行"
+   ],
+   "base_stats": {
+    "hp": 159,
+    "atk": 136,
+    "def": 100,
+    "sp_atk": 70,
+    "sp_def": 102,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4147,
+   "name": "月冕",
+   "type": [
+    "冰",
+    "光"
+   ],
+   "base_stats": {
+    "hp": 169,
+    "atk": 144,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4151,
+   "name": "奇莉奈",
+   "type": [
+    "冰",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 70,
+    "def": 113,
+    "sp_atk": 139,
+    "sp_def": 113,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4155,
+   "name": "岩天使",
+   "type": [
+    "远古",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 175,
+    "atk": 132,
+    "def": 118,
+    "sp_atk": 70,
+    "sp_def": 118,
+    "spd": 122
+   }
+  },
+  {
+   "seerapiId": 4156,
+   "name": "灰羽苍兽",
+   "type": [
+    "火",
+    "飞行"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 140,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4160,
+   "name": "奇米奈",
+   "type": [
+    "超能",
+    "冰"
+   ],
+   "base_stats": {
+    "hp": 167,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 140,
+    "sp_def": 112,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4163,
+   "name": "逆魂·佩特菲德",
+   "type": [
+    "混沌",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 175,
+    "atk": 134,
+    "def": 118,
+    "sp_atk": 70,
+    "sp_def": 118,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4167,
+   "name": "查梅洛尼达",
+   "type": [
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 175,
+    "atk": 135,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4173,
+   "name": "虹雨·茜尔",
+   "type": [
+    "光",
+    "火"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 140,
+    "sp_def": 112,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4175,
+   "name": "希尔克德",
+   "type": [
+    "冰",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 173,
+    "atk": 130,
+    "def": 115,
+    "sp_atk": 70,
+    "sp_def": 115,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4184,
+   "name": "贝狄薇尔",
+   "type": [
+    "机械",
+    "次元"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 144,
+    "def": 115,
+    "sp_atk": 70,
+    "sp_def": 115,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4187,
+   "name": "迪斯伯德",
+   "type": [
+    "远古",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 169,
+    "atk": 70,
+    "def": 114,
+    "sp_atk": 136,
+    "sp_def": 112,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4189,
+   "name": "凌雪·樱",
+   "type": [
+    "混沌",
+    "冰"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 141,
+    "def": 114,
+    "sp_atk": 70,
+    "sp_def": 114,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4194,
+   "name": "露姆莉亚",
+   "type": [
+    "圣灵",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 140,
+    "def": 114,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4200,
+   "name": "阿莱克托",
+   "type": [
+    "混沌",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 141,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4208,
+   "name": "锢灵·舞",
+   "type": [
+    "混沌",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 171,
+    "atk": 70,
+    "def": 114,
+    "sp_atk": 140,
+    "sp_def": 114,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4210,
+   "name": "莫伊莱",
+   "type": [
+    "轮回"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 70,
+    "def": 108,
+    "sp_atk": 135,
+    "sp_def": 108,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4211,
+   "name": "尤斯德",
+   "type": [
+    "水",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 162,
+    "atk": 132,
+    "def": 105,
+    "sp_atk": 70,
+    "sp_def": 106,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4216,
+   "name": "拉克希斯",
+   "type": [
+    "圣灵",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 142,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4218,
+   "name": "沙丘之狭",
+   "type": [
+    "地面",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 171,
+    "atk": 130,
+    "def": 117,
+    "sp_atk": 70,
+    "sp_def": 117,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4219,
+   "name": "红莲之誓·安卡",
+   "type": [
+    "圣灵",
+    "火"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 115,
+    "sp_atk": 144,
+    "sp_def": 115,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4224,
+   "name": "墨秋",
+   "type": [
+    "水",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 70,
+    "def": 115,
+    "sp_atk": 135,
+    "sp_def": 115,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4225,
+   "name": "霍瑞洛吉",
+   "type": [
+    "机械",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 167,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 139,
+    "sp_def": 112,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4231,
+   "name": "克洛托",
+   "type": [
+    "圣灵",
+    "电"
+   ],
+   "base_stats": {
+    "hp": 171,
+    "atk": 70,
+    "def": 110,
+    "sp_atk": 142,
+    "sp_def": 110,
+    "spd": 137
+   }
+  },
+  {
+   "seerapiId": 4237,
+   "name": "乾古通兽",
+   "type": [
+    "火",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 138,
+    "def": 108,
+    "sp_atk": 70,
+    "sp_def": 108,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 4238,
+   "name": "鬼面阎罗",
+   "type": [
+    "混沌",
+    "邪灵"
+   ],
+   "base_stats": {
+    "hp": 169,
+    "atk": 145,
+    "def": 115,
+    "sp_atk": 70,
+    "sp_def": 115,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4249,
+   "name": "时钟试炼官·默",
+   "type": [
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 171,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 136,
+    "sp_def": 112,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4251,
+   "name": "时钟试炼官·宙",
+   "type": [
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 171,
+    "atk": 70,
+    "def": 113,
+    "sp_atk": 136,
+    "sp_def": 113,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4252,
+   "name": "塔洛洛",
+   "type": [
+    "冰",
+    "飞行"
+   ],
+   "base_stats": {
+    "hp": 162,
+    "atk": 137,
+    "def": 103,
+    "sp_atk": 70,
+    "sp_def": 103,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4257,
+   "name": "幕",
+   "type": [
+    "光",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 174,
+    "atk": 70,
+    "def": 108,
+    "sp_atk": 140,
+    "sp_def": 108,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4264,
+   "name": "库莱姆斯",
+   "type": [
+    "邪灵",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 114,
+    "sp_atk": 146,
+    "sp_def": 114,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4267,
+   "name": "古索",
+   "type": [
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 150,
+    "atk": 130,
+    "def": 101,
+    "sp_atk": 70,
+    "sp_def": 101,
+    "spd": 128
+   }
+  },
+  {
+   "seerapiId": 4268,
+   "name": "古索迪尔",
+   "type": [
+    "地面",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 138,
+    "def": 114,
+    "sp_atk": 70,
+    "sp_def": 114,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 4270,
+   "name": "提西弗涅",
+   "type": [
+    "混沌",
+    "远古"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 70,
+    "def": 115,
+    "sp_atk": 135,
+    "sp_def": 115,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4276,
+   "name": "泰普斯",
+   "type": [
+    "电",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 169,
+    "atk": 137,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4278,
+   "name": "阿特洛波斯",
+   "type": [
+    "圣灵",
+    "光"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 137,
+    "def": 113,
+    "sp_atk": 70,
+    "sp_def": 113,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4282,
+   "name": "鲁塔",
+   "type": [
+    "机械",
+    "次元"
+   ],
+   "base_stats": {
+    "hp": 147,
+    "atk": 129,
+    "def": 107,
+    "sp_atk": 70,
+    "sp_def": 107,
+    "spd": 120
+   }
+  },
+  {
+   "seerapiId": 4285,
+   "name": "未明",
+   "type": [
+    "冰",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 138,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4286,
+   "name": "古渊灵鱼",
+   "type": [
+    "冰",
+    "火"
+   ],
+   "base_stats": {
+    "hp": 164,
+    "atk": 138,
+    "def": 108,
+    "sp_atk": 70,
+    "sp_def": 105,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4287,
+   "name": "混灵·莱茵哈特",
+   "type": [
+    "混沌",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 175,
+    "atk": 145,
+    "def": 115,
+    "sp_atk": 70,
+    "sp_def": 115,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4291,
+   "name": "琉彩",
+   "type": [
+    "次元"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 70,
+    "def": 109,
+    "sp_atk": 136,
+    "sp_def": 109,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4294,
+   "name": "霍莱",
+   "type": [
+    "普通"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 115,
+    "sp_atk": 135,
+    "sp_def": 115,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4296,
+   "name": "沃卡奥拉",
+   "type": [
+    "光",
+    "火"
+   ],
+   "base_stats": {
+    "hp": 169,
+    "atk": 139,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4297,
+   "name": "雅库布雷",
+   "type": [
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 169,
+    "atk": 138,
+    "def": 106,
+    "sp_atk": 70,
+    "sp_def": 106,
+    "spd": 121
+   }
+  },
+  {
+   "seerapiId": 4299,
+   "name": "塔威尔",
+   "type": [
+    "机械",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 175,
+    "atk": 135,
+    "def": 115,
+    "sp_atk": 70,
+    "sp_def": 115,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 4301,
+   "name": "风魔之骸",
+   "type": [
+    "自然",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 135,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4302,
+   "name": "艾斯普鲁",
+   "type": [
+    "飞行",
+    "电"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 109,
+    "sp_atk": 140,
+    "sp_def": 109,
+    "spd": 137
+   }
+  },
+  {
+   "seerapiId": 4305,
+   "name": "时钟诛机",
+   "type": [
+    "圣灵",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 182,
+    "atk": 70,
+    "def": 110,
+    "sp_atk": 140,
+    "sp_def": 111,
+    "spd": 137
+   }
+  },
+  {
+   "seerapiId": 4306,
+   "name": "异空战骑",
+   "type": [
+    "次元",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 140,
+    "def": 106,
+    "sp_atk": 70,
+    "sp_def": 106,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4311,
+   "name": "图托尔斯",
+   "type": [
+    "冰",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 133,
+    "def": 115,
+    "sp_atk": 70,
+    "sp_def": 115,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4314,
+   "name": "绿棘球",
+   "type": [
+    "草"
+   ],
+   "base_stats": {
+    "hp": 162,
+    "atk": 120,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 108,
+    "spd": 110
+   }
+  },
+  {
+   "seerapiId": 4315,
+   "name": "翡翠棘球",
+   "type": [
+    "草",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 162,
+    "atk": 120,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 108,
+    "spd": 110
+   }
+  },
+  {
+   "seerapiId": 4316,
+   "name": "沙狱使者",
+   "type": [
+    "战斗",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 174,
+    "atk": 135,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4317,
+   "name": "凯弗",
+   "type": [
+    "远古",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 180,
+    "atk": 132,
+    "def": 115,
+    "sp_atk": 70,
+    "sp_def": 115,
+    "spd": 123
+   }
+  },
+  {
+   "seerapiId": 4318,
+   "name": "布蕾里克",
+   "type": [
+    "超能",
+    "冰"
+   ],
+   "base_stats": {
+    "hp": 171,
+    "atk": 70,
+    "def": 113,
+    "sp_atk": 140,
+    "sp_def": 111,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4323,
+   "name": "绿棘巨魔",
+   "type": [
+    "草",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 173,
+    "atk": 132,
+    "def": 115,
+    "sp_atk": 70,
+    "sp_def": 115,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4324,
+   "name": "卡托娜",
+   "type": [
+    "圣灵",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 167,
+    "atk": 130,
+    "def": 114,
+    "sp_atk": 70,
+    "sp_def": 114,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 4325,
+   "name": "坎普瑞亚",
+   "type": [
+    "地面",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 176,
+    "atk": 132,
+    "def": 116,
+    "sp_atk": 70,
+    "sp_def": 116,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 4332,
+   "name": "鲍尔斯",
+   "type": [
+    "电",
+    "火"
+   ],
+   "base_stats": {
+    "hp": 174,
+    "atk": 70,
+    "def": 111,
+    "sp_atk": 138,
+    "sp_def": 111,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4333,
+   "name": "哀·拉伯克",
+   "type": [
+    "混沌",
+    "次元"
+   ],
+   "base_stats": {
+    "hp": 178,
+    "atk": 70,
+    "def": 111,
+    "sp_atk": 141,
+    "sp_def": 113,
+    "spd": 137
+   }
+  },
+  {
+   "seerapiId": 4339,
+   "name": "麦格姆",
+   "type": [
+    "远古",
+    "火"
+   ],
+   "base_stats": {
+    "hp": 175,
+    "atk": 134,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4340,
+   "name": "凝绝",
+   "type": [
+    "冰",
+    "光"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 70,
+    "def": 109,
+    "sp_atk": 133,
+    "sp_def": 109,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4341,
+   "name": "熔钳蟹",
+   "type": [
+    "火"
+   ],
+   "base_stats": {
+    "hp": 155,
+    "atk": 122,
+    "def": 102,
+    "sp_atk": 70,
+    "sp_def": 102,
+    "spd": 129
+   }
+  },
+  {
+   "seerapiId": 4343,
+   "name": "凛锋剑心",
+   "type": [
+    "冰",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 142,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4345,
+   "name": "圣心女皇·卡托娜",
+   "type": [
+    "圣灵",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 138,
+    "def": 116,
+    "sp_atk": 70,
+    "sp_def": 116,
+    "spd": 128
+   }
+  },
+  {
+   "seerapiId": 4347,
+   "name": "裁罪魔剪·塞泽丝",
+   "type": [
+    "战斗",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 141,
+    "def": 113,
+    "sp_atk": 70,
+    "sp_def": 113,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4348,
+   "name": "帕图",
+   "type": [
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 161,
+    "atk": 130,
+    "def": 109,
+    "sp_atk": 70,
+    "sp_def": 109,
+    "spd": 121
+   }
+  },
+  {
+   "seerapiId": 4350,
+   "name": "哈洛兰特",
+   "type": [
+    "光"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 110,
+    "sp_atk": 140,
+    "sp_def": 110,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4352,
+   "name": "艾瑞丽尔",
+   "type": [
+    "水"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 70,
+    "def": 104,
+    "sp_atk": 136,
+    "sp_def": 104,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 4356,
+   "name": "斯科尔",
+   "type": [
+    "草",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 167,
+    "atk": 140,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4358,
+   "name": "杰特洛",
+   "type": [
+    "飞行",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 171,
+    "atk": 70,
+    "def": 113,
+    "sp_atk": 137,
+    "sp_def": 113,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4359,
+   "name": "隙之门·基卢",
+   "type": [
+    "次元"
+   ],
+   "base_stats": {
+    "hp": 173,
+    "atk": 70,
+    "def": 109,
+    "sp_atk": 138,
+    "sp_def": 109,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4364,
+   "name": "尤莉米特",
+   "type": [
+    "光",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 147,
+    "sp_def": 112,
+    "spd": 137
+   }
+  },
+  {
+   "seerapiId": 4365,
+   "name": "环·格",
+   "type": [
+    "邪灵",
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 136,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4368,
+   "name": "玛斯克",
+   "type": [
+    "混沌",
+    "邪灵"
+   ],
+   "base_stats": {
+    "hp": 169,
+    "atk": 138,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4370,
+   "name": "僧行",
+   "type": [
+    "地面",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 125,
+    "sp_atk": 135,
+    "sp_def": 105,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4378,
+   "name": "青啼",
+   "type": [
+    "水",
+    "次元"
+   ],
+   "base_stats": {
+    "hp": 175,
+    "atk": 135,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4390,
+   "name": "玖莉娜",
+   "type": [
+    "水",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 177,
+    "atk": 70,
+    "def": 106,
+    "sp_atk": 141,
+    "sp_def": 106,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4392,
+   "name": "斯凯普",
+   "type": [
+    "混沌",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 173,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 137,
+    "sp_def": 112,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4394,
+   "name": "祭空墟祖",
+   "type": [
+    "远古"
+   ],
+   "base_stats": {
+    "hp": 175,
+    "atk": 70,
+    "def": 108,
+    "sp_atk": 138,
+    "sp_def": 108,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4395,
+   "name": "海棠教皇·未明",
+   "type": [
+    "冰",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 140,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4396,
+   "name": "苦痛龙魇",
+   "type": [
+    "暗影",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 70,
+    "def": 110,
+    "sp_atk": 145,
+    "sp_def": 110,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4401,
+   "name": "破世之拳·特罗斯",
+   "type": [
+    "战斗",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 174,
+    "atk": 146,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 138
+   }
+  },
+  {
+   "seerapiId": 4404,
+   "name": "马里诺",
+   "type": [
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 155,
+    "atk": 125,
+    "def": 105,
+    "sp_atk": 70,
+    "sp_def": 105,
+    "spd": 120
+   }
+  },
+  {
+   "seerapiId": 4405,
+   "name": "萨洛科",
+   "type": [
+    "水",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 164,
+    "atk": 143,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4408,
+   "name": "派利尔",
+   "type": [
+    "光",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 70,
+    "def": 116,
+    "sp_atk": 140,
+    "sp_def": 116,
+    "spd": 128
+   }
+  },
+  {
+   "seerapiId": 4411,
+   "name": "巴尔奇",
+   "type": [
+    "机械",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 141,
+    "def": 117,
+    "sp_atk": 70,
+    "sp_def": 117,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 4417,
+   "name": "疾翼先锋",
+   "type": [
+    "飞行",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 146,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4426,
+   "name": "异能元素·奥薇纳",
+   "type": [
+    "冰",
+    "火"
+   ],
+   "base_stats": {
+    "hp": 164,
+    "atk": 70,
+    "def": 110,
+    "sp_atk": 140,
+    "sp_def": 116,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4427,
+   "name": "金古德",
+   "type": [
+    "光",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 164,
+    "atk": 144,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4436,
+   "name": "幽火·海登",
+   "type": [
+    "火",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 140,
+    "def": 110,
+    "sp_atk": 140,
+    "sp_def": 110,
+    "spd": 70
+   }
+  },
+  {
+   "seerapiId": 4437,
+   "name": "查理斯",
+   "type": [
+    "机械",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 140,
+    "atk": 140,
+    "def": 100,
+    "sp_atk": 70,
+    "sp_def": 100,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4438,
+   "name": "银椋·奥雷莫德",
+   "type": [
+    "飞行",
+    "电"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 141,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 137
+   }
+  },
+  {
+   "seerapiId": 4445,
+   "name": "古温婆婆",
+   "type": [
+    "远古",
+    "草"
+   ],
+   "base_stats": {
+    "hp": 160,
+    "atk": 70,
+    "def": 120,
+    "sp_atk": 140,
+    "sp_def": 120,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 4454,
+   "name": "爵刻·黑沃德",
+   "type": [
+    "虚空",
+    "邪灵"
+   ],
+   "base_stats": {
+    "hp": 164,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 147,
+    "sp_def": 112,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4455,
+   "name": "灼渊煌龙",
+   "type": [
+    "火",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 70,
+    "def": 115,
+    "sp_atk": 130,
+    "sp_def": 115,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4460,
+   "name": "兹拉特",
+   "type": [
+    "电",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 135,
+    "atk": 140,
+    "def": 100,
+    "sp_atk": 80,
+    "sp_def": 100,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 4461,
+   "name": "追光·兰可",
+   "type": [
+    "机械",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 156,
+    "atk": 144,
+    "def": 114,
+    "sp_atk": 70,
+    "sp_def": 114,
+    "spd": 137
+   }
+  },
+  {
+   "seerapiId": 4466,
+   "name": "格斯塔丝",
+   "type": [
+    "邪灵"
+   ],
+   "base_stats": {
+    "hp": 146,
+    "atk": 70,
+    "def": 105,
+    "sp_atk": 139,
+    "sp_def": 105,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 4475,
+   "name": "阿谜",
+   "type": [
+    "光",
+    "火"
+   ],
+   "base_stats": {
+    "hp": 160,
+    "atk": 140,
+    "def": 105,
+    "sp_atk": 70,
+    "sp_def": 105,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4477,
+   "name": "启源·伊洛特斯",
+   "type": [
+    "电",
+    "次元"
+   ],
+   "base_stats": {
+    "hp": 169,
+    "atk": 142,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4479,
+   "name": "吉拉提斯",
+   "type": [
+    "冰",
+    "飞行"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 70,
+    "def": 114,
+    "sp_atk": 135,
+    "sp_def": 112,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4485,
+   "name": "烛鬼",
+   "type": [
+    "火",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 145,
+    "atk": 70,
+    "def": 108,
+    "sp_atk": 129,
+    "sp_def": 108,
+    "spd": 120
+   }
+  },
+  {
+   "seerapiId": 4489,
+   "name": "普鲁修托",
+   "type": [
+    "光",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 188,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 138,
+    "sp_def": 112,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4491,
+   "name": "仙后·卡筱佩娅",
+   "type": [
+    "圣灵",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 163,
+    "atk": 70,
+    "def": 108,
+    "sp_atk": 140,
+    "sp_def": 108,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 4492,
+   "name": "斯达莱斯",
+   "type": [
+    "邪灵"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 143,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4493,
+   "name": "冰骷使者",
+   "type": [
+    "冰",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 175,
+    "atk": 148,
+    "def": 105,
+    "sp_atk": 70,
+    "sp_def": 105,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4494,
+   "name": "嫉妒·哲利斯",
+   "type": [
+    "暗影",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 162,
+    "atk": 146,
+    "def": 113,
+    "sp_atk": 70,
+    "sp_def": 113,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4499,
+   "name": "德布比特",
+   "type": [
+    "圣灵",
+    "轮回"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 148,
+    "sp_def": 112,
+    "spd": 138
+   }
+  },
+  {
+   "seerapiId": 4508,
+   "name": "巨爵·克雷特",
+   "type": [
+    "远古",
+    "邪灵"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 138,
+    "def": 109,
+    "sp_atk": 70,
+    "sp_def": 109,
+    "spd": 124
+   }
+  },
+  {
+   "seerapiId": 4510,
+   "name": "卫岳",
+   "type": [
+    "水",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 185,
+    "atk": 145,
+    "def": 70,
+    "sp_atk": 145,
+    "sp_def": 70,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4511,
+   "name": "不破帝·南霜",
+   "type": [
+    "冰",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 148,
+    "def": 114,
+    "sp_atk": 70,
+    "sp_def": 114,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4514,
+   "name": "灼云",
+   "type": [
+    "火",
+    "飞行"
+   ],
+   "base_stats": {
+    "hp": 171,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 137,
+    "sp_def": 112,
+    "spd": 138
+   }
+  },
+  {
+   "seerapiId": 4519,
+   "name": "里扎德",
+   "type": [
+    "地面",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 140,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4520,
+   "name": "扎里里",
+   "type": [
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 148,
+    "atk": 132,
+    "def": 107,
+    "sp_atk": 70,
+    "sp_def": 106,
+    "spd": 117
+   }
+  },
+  {
+   "seerapiId": 4521,
+   "name": "涡锋",
+   "type": [
+    "水",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 145,
+    "def": 114,
+    "sp_atk": 70,
+    "sp_def": 114,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 4523,
+   "name": "科德布鲁",
+   "type": [
+    "自然",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 177,
+    "atk": 70,
+    "def": 111,
+    "sp_atk": 131,
+    "sp_def": 111,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4531,
+   "name": "极恶妖兽",
+   "type": [
+    "飞行",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 169,
+    "atk": 70,
+    "def": 110,
+    "sp_atk": 137,
+    "sp_def": 113,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4534,
+   "name": "咫",
+   "type": [
+    "次元"
+   ],
+   "base_stats": {
+    "hp": 178,
+    "atk": 136,
+    "def": 113,
+    "sp_atk": 70,
+    "sp_def": 113,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 4536,
+   "name": "瑞波",
+   "type": [
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 156,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 132,
+    "sp_def": 109,
+    "spd": 121
+   }
+  },
+  {
+   "seerapiId": 4538,
+   "name": "摩根",
+   "type": [
+    "地面",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 145,
+    "atk": 70,
+    "def": 103,
+    "sp_atk": 131,
+    "sp_def": 104,
+    "spd": 127
+   }
+  },
+  {
+   "seerapiId": 4539,
+   "name": "文森特",
+   "type": [
+    "光",
+    "火"
+   ],
+   "base_stats": {
+    "hp": 173,
+    "atk": 136,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4541,
+   "name": "莫塔里安",
+   "type": [
+    "远古",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 180,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 137,
+    "sp_def": 110,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4542,
+   "name": "视界·明德里奇",
+   "type": [
+    "机械",
+    "次元"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 70,
+    "def": 113,
+    "sp_atk": 142,
+    "sp_def": 112,
+    "spd": 137
+   }
+  },
+  {
+   "seerapiId": 4546,
+   "name": "巨鲸座",
+   "type": [
+    "飞行",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 175,
+    "atk": 130,
+    "def": 115,
+    "sp_atk": 70,
+    "sp_def": 115,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4547,
+   "name": "库拉塔克",
+   "type": [
+    "火",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 167,
+    "atk": 136,
+    "def": 113,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 137
+   }
+  },
+  {
+   "seerapiId": 4549,
+   "name": "安姆耐特",
+   "type": [
+    "水",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 174,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 132,
+    "sp_def": 114,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4550,
+   "name": "安姆尼",
+   "type": [
+    "水"
+   ],
+   "base_stats": {
+    "hp": 160,
+    "atk": 70,
+    "def": 107,
+    "sp_atk": 130,
+    "sp_def": 104,
+    "spd": 129
+   }
+  },
+  {
+   "seerapiId": 4551,
+   "name": "安姆妮",
+   "type": [
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 160,
+    "atk": 70,
+    "def": 107,
+    "sp_atk": 130,
+    "sp_def": 104,
+    "spd": 129
+   }
+  },
+  {
+   "seerapiId": 4553,
+   "name": "万里春·北鸟",
+   "type": [
+    "光",
+    "飞行"
+   ],
+   "base_stats": {
+    "hp": 174,
+    "atk": 70,
+    "def": 116,
+    "sp_atk": 137,
+    "sp_def": 114,
+    "spd": 139
+   }
+  },
+  {
+   "seerapiId": 4556,
+   "name": "尘息游龙",
+   "type": [
+    "远古",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 176,
+    "atk": 138,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 4557,
+   "name": "红月祭司",
+   "type": [
+    "神秘",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 167,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 139,
+    "sp_def": 110,
+    "spd": 137
+   }
+  },
+  {
+   "seerapiId": 4559,
+   "name": "提米",
+   "type": [
+    "草"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 135,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4562,
+   "name": "森曼",
+   "type": [
+    "战斗",
+    "自然"
+   ],
+   "base_stats": {
+    "hp": 177,
+    "atk": 143,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 4563,
+   "name": "奇普斯",
+   "type": [
+    "飞行"
+   ],
+   "base_stats": {
+    "hp": 154,
+    "atk": 139,
+    "def": 101,
+    "sp_atk": 70,
+    "sp_def": 101,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4564,
+   "name": "帕泽",
+   "type": [
+    "光",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 167,
+    "atk": 70,
+    "def": 111,
+    "sp_atk": 140,
+    "sp_def": 111,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4567,
+   "name": "灵石守卫",
+   "type": [
+    "远古",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 175,
+    "atk": 130,
+    "def": 120,
+    "sp_atk": 70,
+    "sp_def": 120,
+    "spd": 120
+   }
+  },
+  {
+   "seerapiId": 4568,
+   "name": "幽魅之影·杰格",
+   "type": [
+    "邪灵",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 142,
+    "sp_def": 112,
+    "spd": 138
+   }
+  },
+  {
+   "seerapiId": 4569,
+   "name": "霆终陨灭·罗库",
+   "type": [
+    "飞行",
+    "电"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 111,
+    "sp_atk": 139,
+    "sp_def": 111,
+    "spd": 139
+   }
+  },
+  {
+   "seerapiId": 4573,
+   "name": "PLD",
+   "type": [
+    "机械",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 115,
+    "sp_atk": 135,
+    "sp_def": 115,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4577,
+   "name": "斯缇尔",
+   "type": [
+    "光",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 70,
+    "def": 110,
+    "sp_atk": 142,
+    "sp_def": 110,
+    "spd": 137
+   }
+  },
+  {
+   "seerapiId": 4578,
+   "name": "蔓古",
+   "type": [
+    "草",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 176,
+    "atk": 70,
+    "def": 115,
+    "sp_atk": 130,
+    "sp_def": 115,
+    "spd": 129
+   }
+  },
+  {
+   "seerapiId": 4579,
+   "name": "玛奇",
+   "type": [
+    "火"
+   ],
+   "base_stats": {
+    "hp": 162,
+    "atk": 137,
+    "def": 103,
+    "sp_atk": 70,
+    "sp_def": 103,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 4580,
+   "name": "梅伊",
+   "type": [
+    "冰"
+   ],
+   "base_stats": {
+    "hp": 162,
+    "atk": 70,
+    "def": 103,
+    "sp_atk": 137,
+    "sp_def": 103,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 4581,
+   "name": "梦貘",
+   "type": [
+    "地面",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 135,
+    "def": 106,
+    "sp_atk": 70,
+    "sp_def": 108,
+    "spd": 128
+   }
+  },
+  {
+   "seerapiId": 4583,
+   "name": "巴特勒",
+   "type": [
+    "暗影",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 173,
+    "atk": 70,
+    "def": 110,
+    "sp_atk": 137,
+    "sp_def": 110,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4584,
+   "name": "黑灵灵",
+   "type": [
+    "飞行",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 152,
+    "atk": 133,
+    "def": 105,
+    "sp_atk": 70,
+    "sp_def": 105,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4587,
+   "name": "蛇舞·天鸣",
+   "type": [
+    "电",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 141,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 138
+   }
+  },
+  {
+   "seerapiId": 4589,
+   "name": "曜焰万象·文森特",
+   "type": [
+    "光",
+    "火"
+   ],
+   "base_stats": {
+    "hp": 174,
+    "atk": 138,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4590,
+   "name": "覆骸冥土",
+   "type": [
+    "机械",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 182,
+    "atk": 70,
+    "def": 106,
+    "sp_atk": 128,
+    "sp_def": 106,
+    "spd": 128
+   }
+  },
+  {
+   "seerapiId": 4592,
+   "name": "夜居魔使",
+   "type": [
+    "混沌",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 180,
+    "atk": 70,
+    "def": 115,
+    "sp_atk": 125,
+    "sp_def": 115,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4594,
+   "name": "摆渡者·费雷",
+   "type": [
+    "水",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 174,
+    "atk": 134,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4596,
+   "name": "索恩",
+   "type": [
+    "草",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 162,
+    "atk": 133,
+    "def": 105,
+    "sp_atk": 70,
+    "sp_def": 105,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 4597,
+   "name": "织灵者·维伊",
+   "type": [
+    "圣灵",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 70,
+    "def": 109,
+    "sp_atk": 144,
+    "sp_def": 108,
+    "spd": 138
+   }
+  },
+  {
+   "seerapiId": 4600,
+   "name": "斯布林蒂",
+   "type": [
+    "自然",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 190,
+    "atk": 70,
+    "def": 120,
+    "sp_atk": 130,
+    "sp_def": 120,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4607,
+   "name": "小灯龙",
+   "type": [
+    "光",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 132,
+    "def": 100,
+    "sp_atk": 70,
+    "sp_def": 100,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4608,
+   "name": "尘息巨像",
+   "type": [
+    "远古",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 140,
+    "def": 115,
+    "sp_atk": 70,
+    "sp_def": 115,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4611,
+   "name": "渊枭",
+   "type": [
+    "混沌",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 174,
+    "atk": 138,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4613,
+   "name": "艾克特希",
+   "type": [
+    "地面",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 137,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4614,
+   "name": "罗萨",
+   "type": [
+    "草"
+   ],
+   "base_stats": {
+    "hp": 158,
+    "atk": 137,
+    "def": 105,
+    "sp_atk": 70,
+    "sp_def": 105,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 4615,
+   "name": "罗萨尔",
+   "type": [
+    "远古",
+    "草"
+   ],
+   "base_stats": {
+    "hp": 158,
+    "atk": 137,
+    "def": 105,
+    "sp_atk": 70,
+    "sp_def": 105,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 4617,
+   "name": "猛虎之刃·泰伯",
+   "type": [
+    "电",
+    "火"
+   ],
+   "base_stats": {
+    "hp": 171,
+    "atk": 142,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4619,
+   "name": "贝利弗",
+   "type": [
+    "混沌",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 138,
+    "def": 106,
+    "sp_atk": 70,
+    "sp_def": 108,
+    "spd": 128
+   }
+  },
+  {
+   "seerapiId": 4620,
+   "name": "孤烛灯使",
+   "type": [
+    "自然"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 146,
+    "sp_def": 112,
+    "spd": 138
+   }
+  },
+  {
+   "seerapiId": 4621,
+   "name": "雾灯徘徊者",
+   "type": [
+    "远古",
+    "邪灵"
+   ],
+   "base_stats": {
+    "hp": 163,
+    "atk": 141,
+    "def": 114,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4623,
+   "name": "裂岩·艾克特希",
+   "type": [
+    "地面",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 140,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4630,
+   "name": "洛克斯",
+   "type": [
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 149,
+    "atk": 70,
+    "def": 108,
+    "sp_atk": 133,
+    "sp_def": 108,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4635,
+   "name": "枫落殇·西叶",
+   "type": [
+    "远古",
+    "草"
+   ],
+   "base_stats": {
+    "hp": 182,
+    "atk": 70,
+    "def": 111,
+    "sp_atk": 140,
+    "sp_def": 111,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4638,
+   "name": "阳光菊",
+   "type": [
+    "自然",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 161,
+    "atk": 70,
+    "def": 106,
+    "sp_atk": 130,
+    "sp_def": 105,
+    "spd": 128
+   }
+  },
+  {
+   "seerapiId": 4640,
+   "name": "黄桃鸟",
+   "type": [
+    "光",
+    "飞行"
+   ],
+   "base_stats": {
+    "hp": 151,
+    "atk": 135,
+    "def": 104,
+    "sp_atk": 70,
+    "sp_def": 105,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4641,
+   "name": "米特拉异虫",
+   "type": [
+    "虫"
+   ],
+   "base_stats": {
+    "hp": 158,
+    "atk": 132,
+    "def": 105,
+    "sp_atk": 70,
+    "sp_def": 105,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4643,
+   "name": "蓓丽安特",
+   "type": [
+    "圣灵",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 169,
+    "atk": 70,
+    "def": 115,
+    "sp_atk": 152,
+    "sp_def": 115,
+    "spd": 139
+   }
+  },
+  {
+   "seerapiId": 4644,
+   "name": "克雷弗德",
+   "type": [
+    "电",
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 177,
+    "atk": 142,
+    "def": 116,
+    "sp_atk": 70,
+    "sp_def": 116,
+    "spd": 139
+   }
+  },
+  {
+   "seerapiId": 4646,
+   "name": "时钟试炼官·极",
+   "type": [
+    "圣灵"
+   ],
+   "base_stats": {
+    "hp": 160,
+    "atk": 70,
+    "def": 115,
+    "sp_atk": 142,
+    "sp_def": 115,
+    "spd": 138
+   }
+  },
+  {
+   "seerapiId": 4650,
+   "name": "风暴龙灵",
+   "type": [
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 143,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 137
+   }
+  },
+  {
+   "seerapiId": 4651,
+   "name": "天阶机器人",
+   "type": [
+    "机械",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 173,
+    "atk": 142,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4655,
+   "name": "锚点相座",
+   "type": [
+    "机械",
+    "次元"
+   ],
+   "base_stats": {
+    "hp": 164,
+    "atk": 70,
+    "def": 118,
+    "sp_atk": 135,
+    "sp_def": 118,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4657,
+   "name": "浮掠双刃·卓尔布",
+   "type": [
+    "冰",
+    "火"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 70,
+    "def": 113,
+    "sp_atk": 135,
+    "sp_def": 113,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4659,
+   "name": "芙拉尔",
+   "type": [
+    "火",
+    "飞行"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 70,
+    "def": 104,
+    "sp_atk": 138,
+    "sp_def": 104,
+    "spd": 138
+   }
+  },
+  {
+   "seerapiId": 4662,
+   "name": "雷瀑飞雪·桑多姆",
+   "type": [
+    "电",
+    "冰"
+   ],
+   "base_stats": {
+    "hp": 169,
+    "atk": 140,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 138
+   }
+  },
+  {
+   "seerapiId": 4667,
+   "name": "龙灵战士",
+   "type": [
+    "战斗",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 180,
+    "atk": 134,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 4669,
+   "name": "紫烬魔兽",
+   "type": [
+    "远古",
+    "火"
+   ],
+   "base_stats": {
+    "hp": 171,
+    "atk": 140,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4671,
+   "name": "噬夜疾袭·库拉塔克",
+   "type": [
+    "火",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 141,
+    "def": 113,
+    "sp_atk": 70,
+    "sp_def": 113,
+    "spd": 138
+   }
+  },
+  {
+   "seerapiId": 4674,
+   "name": "无极使者",
+   "type": [
+    "次元"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 70,
+    "def": 109,
+    "sp_atk": 144,
+    "sp_def": 109,
+    "spd": 137
+   }
+  },
+  {
+   "seerapiId": 4675,
+   "name": "招财",
+   "type": [
+    "地面",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 164,
+    "atk": 134,
+    "def": 106,
+    "sp_atk": 70,
+    "sp_def": 106,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4682,
+   "name": "空洄星徒",
+   "type": [
+    "光",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 140,
+    "sp_def": 112,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4683,
+   "name": "帕诺·海啸武装",
+   "type": [
+    "水",
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 173,
+    "atk": 70,
+    "def": 113,
+    "sp_atk": 136,
+    "sp_def": 113,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4684,
+   "name": "帕诺·烈焰武装",
+   "type": [
+    "火",
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 110,
+    "sp_atk": 142,
+    "sp_def": 110,
+    "spd": 138
+   }
+  },
+  {
+   "seerapiId": 4686,
+   "name": "帕诺·绿光武装",
+   "type": [
+    "草",
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 177,
+    "atk": 70,
+    "def": 115,
+    "sp_atk": 130,
+    "sp_def": 115,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4687,
+   "name": "小妮",
+   "type": [
+    "冰",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 154,
+    "atk": 70,
+    "def": 108,
+    "sp_atk": 131,
+    "sp_def": 108,
+    "spd": 129
+   }
+  },
+  {
+   "seerapiId": 4688,
+   "name": "库洛妮",
+   "type": [
+    "冰",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 141,
+    "sp_def": 112,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4690,
+   "name": "变异鳄兰",
+   "type": [
+    "草",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 179,
+    "atk": 130,
+    "def": 113,
+    "sp_atk": 70,
+    "sp_def": 113,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4692,
+   "name": "无间巨兽",
+   "type": [
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 180,
+    "atk": 70,
+    "def": 100,
+    "sp_atk": 130,
+    "sp_def": 100,
+    "spd": 120
+   }
+  },
+  {
+   "seerapiId": 4693,
+   "name": "星光·蘑菇怪",
+   "type": [
+    "草"
+   ],
+   "base_stats": {
+    "hp": 177,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 139,
+    "sp_def": 112,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4694,
+   "name": "石晶晶",
+   "type": [
+    "远古",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 161,
+    "atk": 133,
+    "def": 104,
+    "sp_atk": 70,
+    "sp_def": 104,
+    "spd": 128
+   }
+  },
+  {
+   "seerapiId": 4695,
+   "name": "西塔·能源型",
+   "type": [
+    "火",
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 110,
+    "sp_atk": 140,
+    "sp_def": 110,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4696,
+   "name": "绮影罗心·织焰",
+   "type": [
+    "火",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 161,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 144,
+    "sp_def": 112,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4700,
+   "name": "米格罗斯",
+   "type": [
+    "机械",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 167,
+    "atk": 70,
+    "def": 116,
+    "sp_atk": 135,
+    "sp_def": 112,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4701,
+   "name": "霜爪雪貂",
+   "type": [
+    "冰",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 145,
+    "atk": 135,
+    "def": 109,
+    "sp_atk": 70,
+    "sp_def": 109,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4702,
+   "name": "霜寂锁灵",
+   "type": [
+    "混沌",
+    "冰"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 141,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4704,
+   "name": "吉甘提卡",
+   "type": [
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 173,
+    "atk": 70,
+    "def": 117,
+    "sp_atk": 133,
+    "sp_def": 117,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4705,
+   "name": "塔琳-MKII",
+   "type": [
+    "机械",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 155,
+    "atk": 127,
+    "def": 108,
+    "sp_atk": 70,
+    "sp_def": 108,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4706,
+   "name": "奥菲利娅",
+   "type": [
+    "远古",
+    "电"
+   ],
+   "base_stats": {
+    "hp": 180,
+    "atk": 70,
+    "def": 130,
+    "sp_atk": 160,
+    "sp_def": 130,
+    "spd": 140
+   }
+  },
+  {
+   "seerapiId": 4707,
+   "name": "卡塔·武装型",
+   "type": [
+    "机械",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 161,
+    "atk": 70,
+    "def": 111,
+    "sp_atk": 150,
+    "sp_def": 109,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4708,
+   "name": "波尼啵妮",
+   "type": [
+    "水",
+    "次元"
+   ],
+   "base_stats": {
+    "hp": 158,
+    "atk": 70,
+    "def": 111,
+    "sp_atk": 136,
+    "sp_def": 111,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4709,
+   "name": "原始预言·吉尼亚斯",
+   "type": [
+    "圣灵",
+    "电"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 140,
+    "def": 114,
+    "sp_atk": 70,
+    "sp_def": 114,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4711,
+   "name": "奇塔·解算型",
+   "type": [
+    "机械",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 167,
+    "atk": 148,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4713,
+   "name": "伊塔·回溯型",
+   "type": [
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 160,
+    "atk": 135,
+    "def": 120,
+    "sp_atk": 70,
+    "sp_def": 120,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4714,
+   "name": "古代巨型机器人",
+   "type": [
+    "机械",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 180,
+    "atk": 150,
+    "def": 115,
+    "sp_atk": 70,
+    "sp_def": 115,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4716,
+   "name": "赫尔卡长老",
+   "type": [
+    "电",
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 185,
+    "atk": 144,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 137
+   }
+  },
+  {
+   "seerapiId": 4717,
+   "name": "原始黑洞·尤纳斯",
+   "type": [
+    "虚空"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 115,
+    "sp_atk": 160,
+    "sp_def": 115,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4718,
+   "name": "渊夜门徒·洛比特",
+   "type": [
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 161,
+    "atk": 144,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4724,
+   "name": "波古拉",
+   "type": [
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 151,
+    "atk": 70,
+    "def": 107,
+    "sp_atk": 135,
+    "sp_def": 107,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4726,
+   "name": "机魂核心·卡尔玛",
+   "type": [
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 160,
+    "atk": 70,
+    "def": 113,
+    "sp_atk": 143,
+    "sp_def": 113,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4728,
+   "name": "考沃莱恩",
+   "type": [
+    "草",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 174,
+    "atk": 133,
+    "def": 115,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4731,
+   "name": "皮神",
+   "type": [
+    "圣灵",
+    "飞行"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 143,
+    "def": 114,
+    "sp_atk": 70,
+    "sp_def": 114,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4734,
+   "name": "参天巨型仙人掌",
+   "type": [
+    "草"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 115,
+    "sp_atk": 135,
+    "sp_def": 115,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4735,
+   "name": "紫幽",
+   "type": [
+    "混沌",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 151,
+    "atk": 70,
+    "def": 111,
+    "sp_atk": 142,
+    "sp_def": 111,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4736,
+   "name": "霆流·希拉",
+   "type": [
+    "电"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 70,
+    "def": 115,
+    "sp_atk": 134,
+    "sp_def": 115,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4738,
+   "name": "绮芒·蝠迪",
+   "type": [
+    "飞行"
+   ],
+   "base_stats": {
+    "hp": 162,
+    "atk": 146,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4739,
+   "name": "绒霜·柯蓝",
+   "type": [
+    "冰"
+   ],
+   "base_stats": {
+    "hp": 162,
+    "atk": 141,
+    "def": 115,
+    "sp_atk": 70,
+    "sp_def": 115,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4740,
+   "name": "幽阑·执冥",
+   "type": [
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 160,
+    "atk": 139,
+    "def": 115,
+    "sp_atk": 70,
+    "sp_def": 115,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4742,
+   "name": "驭火·迪尔克",
+   "type": [
+    "火"
+   ],
+   "base_stats": {
+    "hp": 161,
+    "atk": 133,
+    "def": 105,
+    "sp_atk": 70,
+    "sp_def": 105,
+    "spd": 126
+   }
+  },
+  {
+   "seerapiId": 4743,
+   "name": "星光·纳多雷",
+   "type": [
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 180,
+    "atk": 120,
+    "def": 125,
+    "sp_atk": 70,
+    "sp_def": 125,
+    "spd": 120
+   }
+  },
+  {
+   "seerapiId": 4744,
+   "name": "皎梦·悠悠",
+   "type": [
+    "普通"
+   ],
+   "base_stats": {
+    "hp": 164,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 142,
+    "sp_def": 112,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4746,
+   "name": "王之查尔顿",
+   "type": [
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 125,
+    "def": 125,
+    "sp_atk": 75,
+    "sp_def": 110,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4749,
+   "name": "对神兵器肯扎特",
+   "type": [
+    "机械",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 145,
+    "def": 115,
+    "sp_atk": 70,
+    "sp_def": 115,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4751,
+   "name": "珀瑞涅",
+   "type": [
+    "圣灵",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 150,
+    "atk": 132,
+    "def": 120,
+    "sp_atk": 70,
+    "sp_def": 120,
+    "spd": 128
+   }
+  },
+  {
+   "seerapiId": 4752,
+   "name": "镇魂约凡撒",
+   "type": [
+    "水"
+   ],
+   "base_stats": {
+    "hp": 164,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 143,
+    "sp_def": 112,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4753,
+   "name": "命运玛酷索",
+   "type": [
+    "飞行",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 173,
+    "atk": 70,
+    "def": 114,
+    "sp_atk": 134,
+    "sp_def": 114,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4755,
+   "name": "梦魇尼斯克",
+   "type": [
+    "水",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 169,
+    "atk": 141,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 4756,
+   "name": "梦魇塔奇拉顿",
+   "type": [
+    "地面",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 134,
+    "def": 118,
+    "sp_atk": 70,
+    "sp_def": 118,
+    "spd": 123
+   }
+  },
+  {
+   "seerapiId": 4758,
+   "name": "神决·盖亚",
+   "type": [
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 167,
+    "atk": 142,
+    "def": 113,
+    "sp_atk": 70,
+    "sp_def": 113,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4761,
+   "name": "琉梦",
+   "type": [
+    "远古",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 70,
+    "def": 118,
+    "sp_atk": 137,
+    "sp_def": 118,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 4762,
+   "name": "湮灭之主·咤克斯",
+   "type": [
+    "混沌"
+   ],
+   "base_stats": {
+    "hp": 178,
+    "atk": 70,
+    "def": 116,
+    "sp_atk": 142,
+    "sp_def": 116,
+    "spd": 138
+   }
+  },
+  {
+   "seerapiId": 4768,
+   "name": "欧古德",
+   "type": [
+    "地面",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 152,
+    "atk": 143,
+    "def": 105,
+    "sp_atk": 70,
+    "sp_def": 105,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 4779,
+   "name": "斯崔因",
+   "type": [
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 152,
+    "atk": 143,
+    "def": 105,
+    "sp_atk": 70,
+    "sp_def": 105,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 4780,
+   "name": "布贝巴拉",
+   "type": [
+    "水",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 171,
+    "atk": 70,
+    "def": 115,
+    "sp_atk": 136,
+    "sp_def": 115,
+    "spd": 128
+   }
+  },
+  {
+   "seerapiId": 4782,
+   "name": "鞘盾龙鱼",
+   "type": [
+    "水",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 179,
+    "atk": 70,
+    "def": 110,
+    "sp_atk": 131,
+    "sp_def": 112,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4783,
+   "name": "斯弗洛浦亚",
+   "type": [
+    "水",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 184,
+    "atk": 129,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 4784,
+   "name": "诺尔玛罗",
+   "type": [
+    "战斗",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 169,
+    "atk": 137,
+    "def": 114,
+    "sp_atk": 70,
+    "sp_def": 114,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 4787,
+   "name": "机械钢牙鲨",
+   "type": [
+    "水",
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 167,
+    "atk": 143,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4793,
+   "name": "厄孽提亚",
+   "type": [
+    "草"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 70,
+    "def": 111,
+    "sp_atk": 142,
+    "sp_def": 111,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4798,
+   "name": "霸颚鲛",
+   "type": [
+    "水"
+   ],
+   "base_stats": {
+    "hp": 167,
+    "atk": 149,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4799,
+   "name": "提玛拉",
+   "type": [
+    "水",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 155,
+    "atk": 70,
+    "def": 113,
+    "sp_atk": 135,
+    "sp_def": 113,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4810,
+   "name": "瓦伦汀",
+   "type": [
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 140,
+    "sp_def": 112,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4811,
+   "name": "拉米兹",
+   "type": [
+    "电",
+    "火"
+   ],
+   "base_stats": {
+    "hp": 163,
+    "atk": 70,
+    "def": 111,
+    "sp_atk": 144,
+    "sp_def": 111,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4812,
+   "name": "埃罗曼",
+   "type": [
+    "机械",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 136,
+    "def": 106,
+    "sp_atk": 70,
+    "sp_def": 106,
+    "spd": 127
+   }
+  },
+  {
+   "seerapiId": 4813,
+   "name": "夏莉莉",
+   "type": [
+    "地面",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 157,
+    "atk": 70,
+    "def": 106,
+    "sp_atk": 145,
+    "sp_def": 106,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 4814,
+   "name": "娜诺",
+   "type": [
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 174,
+    "atk": 137,
+    "def": 113,
+    "sp_atk": 70,
+    "sp_def": 113,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4816,
+   "name": "伊芙",
+   "type": [
+    "机械",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 176,
+    "atk": 70,
+    "def": 114,
+    "sp_atk": 143,
+    "sp_def": 114,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4818,
+   "name": "福尔摩苏斯",
+   "type": [
+    "光",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 161,
+    "atk": 70,
+    "def": 116,
+    "sp_atk": 137,
+    "sp_def": 116,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4820,
+   "name": "贝尔恩克",
+   "type": [
+    "火",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 114,
+    "sp_atk": 140,
+    "sp_def": 114,
+    "spd": 127
+   }
+  },
+  {
+   "seerapiId": 4834,
+   "name": "重装·派鲁基达",
+   "type": [
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 174,
+    "atk": 149,
+    "def": 106,
+    "sp_atk": 70,
+    "sp_def": 106,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4838,
+   "name": "笛科特",
+   "type": [
+    "机械",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 171,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 138,
+    "sp_def": 112,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4839,
+   "name": "麦迪亚",
+   "type": [
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 138,
+    "def": 113,
+    "sp_atk": 70,
+    "sp_def": 113,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 4841,
+   "name": "凯莫兽",
+   "type": [
+    "远古",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 145,
+    "atk": 135,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 126
+   }
+  },
+  {
+   "seerapiId": 4842,
+   "name": "雷漠克怪",
+   "type": [
+    "地面",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 145,
+    "atk": 135,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 126
+   }
+  },
+  {
+   "seerapiId": 4844,
+   "name": "沙弑·吉拉",
+   "type": [
+    "暗影",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 144,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4845,
+   "name": "白图泰",
+   "type": [
+    "光",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 113,
+    "sp_atk": 135,
+    "sp_def": 113,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4848,
+   "name": "谜之英雄",
+   "type": [
+    "光",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 142,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4850,
+   "name": "图特摩斯",
+   "type": [
+    "战斗",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 169,
+    "atk": 142,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 137
+   }
+  },
+  {
+   "seerapiId": 4853,
+   "name": "梅赫维特",
+   "type": [
+    "远古",
+    "光"
+   ],
+   "base_stats": {
+    "hp": 185,
+    "atk": 70,
+    "def": 130,
+    "sp_atk": 155,
+    "sp_def": 130,
+    "spd": 140
+   }
+  },
+  {
+   "seerapiId": 4854,
+   "name": "西忒蕾妃",
+   "type": [
+    "草"
+   ],
+   "base_stats": {
+    "hp": 174,
+    "atk": 70,
+    "def": 113,
+    "sp_atk": 133,
+    "sp_def": 113,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4857,
+   "name": "戟决先锋",
+   "type": [
+    "冰",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 136,
+    "def": 115,
+    "sp_atk": 70,
+    "sp_def": 115,
+    "spd": 127
+   }
+  },
+  {
+   "seerapiId": 4859,
+   "name": "闪光灯蛾",
+   "type": [
+    "冰",
+    "光"
+   ],
+   "base_stats": {
+    "hp": 160,
+    "atk": 130,
+    "def": 105,
+    "sp_atk": 70,
+    "sp_def": 105,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4860,
+   "name": "希尔瑟拉",
+   "type": [
+    "远古",
+    "邪灵"
+   ],
+   "base_stats": {
+    "hp": 167,
+    "atk": 139,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4870,
+   "name": "康迪亚克",
+   "type": [
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 167,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 145,
+    "sp_def": 112,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4874,
+   "name": "瓏首",
+   "type": [
+    "远古"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 140,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 137
+   }
+  },
+  {
+   "seerapiId": 4875,
+   "name": "永烬劫炎·上古炎兽",
+   "type": [
+    "火"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 151,
+    "def": 120,
+    "sp_atk": 70,
+    "sp_def": 120,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4876,
+   "name": "方术·悠悠",
+   "type": [
+    "光"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 138,
+    "sp_def": 112,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4879,
+   "name": "阿塔塔",
+   "type": [
+    "光"
+   ],
+   "base_stats": {
+    "hp": 173,
+    "atk": 70,
+    "def": 110,
+    "sp_atk": 140,
+    "sp_def": 110,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4881,
+   "name": "阿拿拿",
+   "type": [
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 160,
+    "atk": 135,
+    "def": 105,
+    "sp_atk": 70,
+    "sp_def": 105,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 4882,
+   "name": "阿波波",
+   "type": [
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 145,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4885,
+   "name": "灰蛾",
+   "type": [
+    "虫"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 147,
+    "def": 108,
+    "sp_atk": 70,
+    "sp_def": 108,
+    "spd": 137
+   }
+  },
+  {
+   "seerapiId": 4886,
+   "name": "阿华华",
+   "type": [
+    "草"
+   ],
+   "base_stats": {
+    "hp": 174,
+    "atk": 70,
+    "def": 111,
+    "sp_atk": 136,
+    "sp_def": 111,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4887,
+   "name": "托勒斯",
+   "type": [
+    "自然"
+   ],
+   "base_stats": {
+    "hp": 171,
+    "atk": 70,
+    "def": 110,
+    "sp_atk": 142,
+    "sp_def": 110,
+    "spd": 137
+   }
+  },
+  {
+   "seerapiId": 4889,
+   "name": "初诞之薇",
+   "type": [
+    "自然"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 70,
+    "def": 107,
+    "sp_atk": 130,
+    "sp_def": 107,
+    "spd": 121
+   }
+  },
+  {
+   "seerapiId": 4890,
+   "name": "B-12",
+   "type": [
+    "机械",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 175,
+    "atk": 130,
+    "def": 117,
+    "sp_atk": 70,
+    "sp_def": 117,
+    "spd": 126
+   }
+  },
+  {
+   "seerapiId": 4892,
+   "name": "迪利吉",
+   "type": [
+    "光",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 70,
+    "def": 107,
+    "sp_atk": 137,
+    "sp_def": 107,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 4893,
+   "name": "摩耶",
+   "type": [
+    "普通"
+   ],
+   "base_stats": {
+    "hp": 162,
+    "atk": 134,
+    "def": 105,
+    "sp_atk": 70,
+    "sp_def": 105,
+    "spd": 124
+   }
+  },
+  {
+   "seerapiId": 4894,
+   "name": "安瑟伦",
+   "type": [
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 147,
+    "def": 109,
+    "sp_atk": 70,
+    "sp_def": 109,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4896,
+   "name": "朝圣者",
+   "type": [
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 160,
+    "atk": 135,
+    "def": 105,
+    "sp_atk": 70,
+    "sp_def": 105,
+    "spd": 125
+   }
+  },
+  {
+   "seerapiId": 4897,
+   "name": "西蒙妮",
+   "type": [
+    "电",
+    "火"
+   ],
+   "base_stats": {
+    "hp": 170,
+    "atk": 70,
+    "def": 110,
+    "sp_atk": 139,
+    "sp_def": 110,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4898,
+   "name": "教皇",
+   "type": [
+    "机械",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 175,
+    "atk": 135,
+    "def": 120,
+    "sp_atk": 70,
+    "sp_def": 120,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4901,
+   "name": "特维耶",
+   "type": [
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 160,
+    "atk": 149,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4902,
+   "name": "莱布缇",
+   "type": [
+    "光"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 141,
+    "def": 112,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4903,
+   "name": "帝录天锋",
+   "type": [
+    "远古",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 143,
+    "sp_def": 112,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4904,
+   "name": "小珍妮",
+   "type": [
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 143,
+    "def": 113,
+    "sp_atk": 70,
+    "sp_def": 113,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 4905,
+   "name": "西西弗",
+   "type": [
+    "冰"
+   ],
+   "base_stats": {
+    "hp": 176,
+    "atk": 70,
+    "def": 104,
+    "sp_atk": 148,
+    "sp_def": 104,
+    "spd": 138
+   }
+  },
+  {
+   "seerapiId": 4908,
+   "name": "蕊沃尔",
+   "type": [
+    "火"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 70,
+    "def": 114,
+    "sp_atk": 144,
+    "sp_def": 114,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4916,
+   "name": "若兰",
+   "type": [
+    "冰",
+    "飞行"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 144,
+    "def": 109,
+    "sp_atk": 70,
+    "sp_def": 109,
+    "spd": 137
+   }
+  },
+  {
+   "seerapiId": 4917,
+   "name": "影行者",
+   "type": [
+    "战斗",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 160,
+    "atk": 153,
+    "def": 108,
+    "sp_atk": 70,
+    "sp_def": 108,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4919,
+   "name": "卡鲁维德",
+   "type": [
+    "虚空"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 140,
+    "def": 114,
+    "sp_atk": 70,
+    "sp_def": 114,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4922,
+   "name": "墟婆",
+   "type": [
+    "自然",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 70,
+    "def": 115,
+    "sp_atk": 135,
+    "sp_def": 115,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4925,
+   "name": "米罗博士",
+   "type": [
+    "草",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 162,
+    "atk": 146,
+    "def": 117,
+    "sp_atk": 70,
+    "sp_def": 117,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4927,
+   "name": "超级噗纽",
+   "type": [
+    "草",
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 173,
+    "atk": 133,
+    "def": 114,
+    "sp_atk": 70,
+    "sp_def": 114,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 4929,
+   "name": "鬼地行者",
+   "type": [
+    "混沌",
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 172,
+    "atk": 133,
+    "def": 120,
+    "sp_atk": 70,
+    "sp_def": 120,
+    "spd": 120
+   }
+  },
+  {
+   "seerapiId": 4932,
+   "name": "工程型TOH",
+   "type": [
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 164,
+    "atk": 138,
+    "def": 114,
+    "sp_atk": 70,
+    "sp_def": 114,
+    "spd": 135
+   }
+  },
+  {
+   "seerapiId": 4935,
+   "name": "苔岩·磐岳",
+   "type": [
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 165,
+    "atk": 120,
+    "def": 130,
+    "sp_atk": 70,
+    "sp_def": 130,
+    "spd": 120
+   }
+  },
+  {
+   "seerapiId": 4937,
+   "name": "星光·雷纳多",
+   "type": [
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 171,
+    "atk": 70,
+    "def": 114,
+    "sp_atk": 141,
+    "sp_def": 114,
+    "spd": 130
+   }
+  },
+  {
+   "seerapiId": 4938,
+   "name": "塞壬斯",
+   "type": [
+    "暗影",
+    "电"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 129,
+    "def": 111,
+    "sp_atk": 70,
+    "sp_def": 111,
+    "spd": 133
+   }
+  },
+  {
+   "seerapiId": 4940,
+   "name": "王座守卫·古亚尼斯",
+   "type": [
+    "圣灵",
+    "电"
+   ],
+   "base_stats": {
+    "hp": 176,
+    "atk": 140,
+    "def": 114,
+    "sp_atk": 70,
+    "sp_def": 114,
+    "spd": 126
+   }
+  },
+  {
+   "seerapiId": 4943,
+   "name": "瑞特拉尼",
+   "type": [
+    "地面"
+   ],
+   "base_stats": {
+    "hp": 175,
+    "atk": 130,
+    "def": 118,
+    "sp_atk": 70,
+    "sp_def": 118,
+    "spd": 124
+   }
+  },
+  {
+   "seerapiId": 4948,
+   "name": "亚巴兰托",
+   "type": [
+    "战斗",
+    "火"
+   ],
+   "base_stats": {
+    "hp": 167,
+    "atk": 133,
+    "def": 120,
+    "sp_atk": 70,
+    "sp_def": 114,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 4951,
+   "name": "维德弗尼尔",
+   "type": [
+    "飞行",
+    "神秘"
+   ],
+   "base_stats": {
+    "hp": 130,
+    "atk": 144,
+    "def": 130,
+    "sp_atk": 70,
+    "sp_def": 130,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 4955,
+   "name": "霍努努",
+   "type": [
+    "水",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 167,
+    "atk": 144,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4957,
+   "name": "凯亚",
+   "type": [
+    "光",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 166,
+    "atk": 70,
+    "def": 114,
+    "sp_atk": 147,
+    "sp_def": 106,
+    "spd": 132
+   }
+  },
+  {
+   "seerapiId": 4960,
+   "name": "塔尼瓦",
+   "type": [
+    "战斗",
+    "龙"
+   ],
+   "base_stats": {
+    "hp": 168,
+    "atk": 146,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 131
+   }
+  },
+  {
+   "seerapiId": 4964,
+   "name": "伊娜",
+   "type": [
+    "地面",
+    "超能"
+   ],
+   "base_stats": {
+    "hp": 163,
+    "atk": 70,
+    "def": 112,
+    "sp_atk": 144,
+    "sp_def": 112,
+    "spd": 134
+   }
+  },
+  {
+   "seerapiId": 4965,
+   "name": "沙罗摩奥",
+   "type": [
+    "火",
+    "暗影"
+   ],
+   "base_stats": {
+    "hp": 160,
+    "atk": 140,
+    "def": 108,
+    "sp_atk": 70,
+    "sp_def": 112,
+    "spd": 145
+   }
+  },
+  {
+   "seerapiId": 4968,
+   "name": "瓦坎",
+   "type": [
+    "神秘",
+    "战斗"
+   ],
+   "base_stats": {
+    "hp": 162,
+    "atk": 147,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 136
+   }
+  },
+  {
+   "seerapiId": 82,
+   "name": "帕尔西丝",
+   "type": [
+    "机械"
+   ],
+   "base_stats": {
+    "hp": 84,
+    "atk": 100,
+    "def": 82,
+    "sp_atk": 106,
+    "sp_def": 80,
+    "spd": 91
+   }
+  },
+  {
+   "seerapiId": 93,
+   "name": "希拉",
+   "type": [
+    "电"
+   ],
+   "base_stats": {
+    "hp": 79,
+    "atk": 90,
+    "def": 80,
+    "sp_atk": 103,
+    "sp_def": 90,
+    "spd": 102
+   }
+  }
+ ]
+}

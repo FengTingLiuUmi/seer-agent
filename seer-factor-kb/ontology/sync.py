@@ -1,0 +1,64 @@
+# -*- coding: utf-8 -*-
+"""一键同步：全量 ABox + PVE 精选 ABox + 导出 .owl + 合并一致性体检。
+用法：
+    python sync.py            # 全量同步（--full 耗时很长）
+    python sync.py --no-full  # 跳过全量，只跑 PVE + 导出 + 体检（本地快速验证）
+依赖：rdflib（PYTHONPATH 含 .pylibs 或已全局）；owlready2；推理需 java 在 PATH。
+"""
+import os, sys
+from rdflib import Graph, RDF, OWL
+
+HERE = os.path.dirname(os.path.abspath(__file__)).replace("\\", "/")
+FILES = ["seer-game.ttl", "seer-pve.ttl", "seer-pve-alias.ttl", "seer-pve-roles.ttl",
+         "seer-game-abox.ttl", "seer-typechart.ttl", "seer-pve-abox.ttl", "seer-pve-supp.ttl",
+         "seer-gear-abox.ttl", "seer-boss-abox.ttl", "seer-factors-abox.ttl"]
+
+
+def run(cmd):
+    print("\n==> " + cmd, flush=True)
+    print("    exit =", os.system(cmd))
+
+
+def merge_check():
+    print("\n==> 合并 TBox + ABox -> seer-all.owl")
+    g = Graph()
+    for f in FILES:
+        p = f"{HERE}/{f}"
+        if os.path.exists(p):
+            g.parse(p, format="turtle")
+            print("    +", f)
+    classes = set(g.subjects(RDF.type, OWL.Class))
+    n = 0
+    for s, o in list(g.subject_objects(RDF.type)):
+        if o in classes:
+            g.add((s, RDF.type, OWL.NamedIndividual))
+            n += 1
+    # 合并文件已自包含，去掉 owl:imports，否则 owlready2 会去下载 import 的 IRI
+    for s, o in list(g.subject_objects(OWL.imports)):
+        g.remove((s, OWL.imports, o))
+    merged = f"{HERE}/seer-all.owl"
+    g.serialize(merged, format="xml")
+    print(f"    NamedIndividual={n}  总三元组={len(g)}")
+
+    print("==> owlready2 + HermiT 一致性")
+    try:
+        from owlready2 import get_ontology, sync_reasoner_hermit, default_world
+        onto = get_ontology(merged).load()
+        with onto:
+            sync_reasoner_hermit()
+        inc = list(default_world.inconsistent_classes())
+        print("    HermiT 完成；不一致类:", [c.name for c in inc] or "无（本体一致）")
+    except Exception as e:
+        print("    推理跳过:", str(e)[:200])
+
+
+def main():
+    if "--no-full" not in sys.argv:
+        run(f'python "{HERE}/ingest.py" --full')
+    run(f'python "{HERE}/ingest.py" --pve')
+    run(f'python "{HERE}/export_owl.py"')
+    merge_check()
+
+
+if __name__ == "__main__":
+    main()

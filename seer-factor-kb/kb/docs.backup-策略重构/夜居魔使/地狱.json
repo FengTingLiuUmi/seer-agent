@@ -1,0 +1,177 @@
+{
+ "doc_id": "夜居魔使#地狱",
+ "factor": "夜居魔使",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4200,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "混沌战斗",
+   "boss_hp": 10000,
+   "traits": "封属; 必先; 300固伤; 消强; 只吃暴击; 吸血200; 免死(受致命伤害残留1体力); 减伤16.7%",
+   "mech": [
+    "onlyCrit",
+    "undying",
+    "heal",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "自爆+双强攻手 / 幻境界皇单挑 / 村长(希可洛)或卡莎单挑 / 混元天尊+魔钰+月照"
+   ],
+   "pets": [
+    "帝皇之御",
+    "幻境界皇",
+    "希可洛",
+    "卡莎",
+    "混元天尊",
+    "魔钰",
+    "月照星魂"
+   ],
+   "why": "封属只挡属性技能，表姐的守御八方是攻击技能不受封属，并给全队「必先+必暴」，正好覆盖「只吃暴击」；「免死残留1体力」决定必须双强攻手补刀，消强则要求别依赖自身强化，300固伤+吸血200宜控血/速杀。单挑方案（幻境界皇/村长/卡莎）则改走站场磨。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4246,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "混沌火",
+   "boss_hp": 10000,
+   "traits": "封属; 必先; 300固伤; 消强; 只吃先制技能; 减伤16.7%",
+   "mech": [
+    "onlyFirstStrike",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "塞勒涅单挑 / 自爆+鲁肃+双强攻手(圣谕之风·岚先三) / 自爆+沐怜传承+圣谕之风·岚先三 / 克罗+眠降单挑"
+   ],
+   "pets": [
+    "塞勒涅",
+    "帝皇之御",
+    "鲁肃",
+    "圣谕之风·岚",
+    "沐怜",
+    "克罗诺斯",
+    "眠降·玛缇娜"
+   ],
+   "why": "「只吃先制技能」意味着必须用先手（先制）技能才能打出伤害，所以用圣谕之风·岚的先三强攻；封属→只用攻击技能、消强→不叠强化。塞勒涅/眠降单挑是站场磨，自爆+鲁肃或沐怜传承则是在铺垫增伤后让岚先三一击收尾。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4270,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "混沌远古",
+   "boss_hp": 12000,
+   "traits": "封属; 必先; 单精灵; 500固伤; 清PP; 体力低于2000回满; 150威力技能伤害<300附带固伤; 减伤16.7%",
+   "mech": [
+    "singlePet",
+    "clearPP",
+    "heal",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "圣谱单挑(带buff) / 王之哈莫单挑(带buff) / 村长(希可洛)单挑(绑特攻宝石) / 阿尔法熊第五单挑"
+   ],
+   "pets": [
+    "圣灵谱尼",
+    "王之哈莫",
+    "希可洛",
+    "阿尔法熊"
+   ],
+   "why": "「单精灵」+封属要求单挑且靠攻击技能，清PP需要高PP/回PP能力，500固伤站场须回血或减伤；「体力低于2000回满」则要靠爆发一次性打穿或控血，故采用圣谱/王哈/村长/阿尔法熊带buff单挑。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4238,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "混沌邪灵",
+   "boss_hp": 15000,
+   "traits": "封属; 必先; 500固伤; 消强; 必暴; 免疫并反弹暴击伤害; 减伤33.3%",
+   "mech": [
+    "reflection",
+    "clearBuff",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "索比斯/草王+卡莎单挑 / 克罗+蒂朵+华子130 / 火潘+蒂朵+月照+魔钰 / 六界弹伤+泰坦补刀"
+   ],
+   "pets": [
+    "索比斯",
+    "草王",
+    "卡莎",
+    "克罗诺斯",
+    "蒂朵",
+    "华子",
+    "潘克多斯",
+    "月照星魂",
+    "魔钰",
+    "六界帝神",
+    "泰坦"
+   ],
+   "why": "Boss 必暴且「免疫并反弹暴击伤害」，我方靠暴击会被反弹自身，因此走六界/索比斯弹伤、卡莎站场磨或非暴击的蒂朵+华子/月照+魔钰强攻；封属→只用攻击技能，消强+500固伤→减伤/速杀。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4592,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "混沌地面",
+   "boss_hp": 18000,
+   "traits": "封属; 必先; 500固伤; 消强; 闪避100%; 受击控场(疲惫); 减伤33.3%",
+   "mech": [
+    "dodge",
+    "clearBuff",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐自爆+沐怜/库坦传承+潜伏强攻 / 火潘+炮灰+克罗保蒂朵自爆+潜伏"
+   ],
+   "pets": [
+    "帝皇之御",
+    "沐怜",
+    "库坦",
+    "潜伏",
+    "潘克多斯",
+    "克罗诺斯",
+    "蒂朵"
+   ],
+   "why": "「闪避100%」属高闪避，表姐守御八方给的必暴（伪必中）即可覆盖命中，无需强求真·必中；「受击控场(疲惫)」靠表姐先手自爆秒掉避开反击，封属下守御八方是攻击技能仍可用，消强→不靠强化，再接潜伏强攻。"
+  }
+ ],
+ "tids": [
+  290
+ ],
+ "note": "仅截图"
+}

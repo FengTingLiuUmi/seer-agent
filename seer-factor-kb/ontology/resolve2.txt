@@ -1,0 +1,40 @@
+===== name=哈莫雷特 =====
+  id=216 name=哈莫雷特 total=626
+===== name=谱尼 =====
+  id=300 name=谱尼 total=660
+  id=5000 name=圣灵谱尼 total=820
+===== name=波克尔 =====
+  id=12 name=波克尔 total=480
+  id=166 name=闪光波克尔 total=510
+===== name=典韦 =====
+  id=3594 name=典韦 total=700
+===== name=斯克鲁恩 =====
+  id=4463 name=斯克鲁恩 total=725
+===== name=泰坦 =====
+  id=735 name=泰坦达 total=590
+  id=2933 name=泰坦 total=700
+  id=3228 name=泰坦之锤 total=650
+  id=3229 name=泰坦之盾 total=650
+  id=3230 name=泰坦之玉 total=653
+  id=3532 name=堕落泰坦 total=730
+===== name=张飞 =====
+  id=2530 name=万人敌张飞 total=625
+  id=3060 name=盖世张飞 total=662
+===== name=魔钰 =====
+  id=3567 name=魔钰 total=685
+===== name=卡莎 =====
+  id=4484 name=卡莎 total=735
+===== name=幻境 =====
+  id=3026 name=幻境界王 total=658
+  id=3460 name=幻境界皇 total=680
+  id=4048 name=幻境界神 total=735
+===== name=西塔伦 =====
+  id=4636 name=西塔伦 total=745
+===== name=草王 =====
+  (none)
+===== name=村长 =====
+  (none)
+===== name=毁灭机甲 =====
+  id=3390 name=毁灭机甲 total=690
+===== name=地王 =====
+  id=3516 name=混沌地王莱茵哈特 total=715

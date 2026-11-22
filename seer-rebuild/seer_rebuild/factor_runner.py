@@ -31,10 +31,10 @@ from dataclasses import dataclass, field
 from .commands import Cmd
 from .features import FeatureStep, list_body, u32, stage_list_step
 from .factor import (
-    CURRENT_FACTOR,
     FactorSpec,
     factor_progress,
     factor_enter_steps,
+    forever_keys,
     load_factor_spec,
 )
 from .team import (
@@ -145,7 +145,7 @@ class FactorStagePlan:
     boss_id: int | None = None                               # 42396 的关卡 id
     factor_id: int | None = None                             # 41413 领取的 factor id
     design_id: int | None = None                             # 官方端进入因子的 design_id（41284/41282）
-    difficulty: int = 1                                      # 41284/41282 的难度：1=简单 2=普通 3=困难
+    difficulty: int | str = 1                                # 41284/41282 难度：1=简单(easy) 2=困难(normal) 3=地狱(hard)
     collect_action: tuple[int, int] = (1, 0)
     equip_ids: list[int] | None = None
     title_id: int | None = None
@@ -415,8 +415,8 @@ def run(
                 )
                 _rep.result.over = last_res.over
                 _rep.result.passed = last_res.passed
-                if not _rep.result.winner:
-                    _rep.result.winner = "胜利" if last_res.passed else ("未判胜负" if last_res.over else "未结束")
+                # winner 与最终 passed/over 保持一致（build_report 里 42390 只标 over，不再误判“胜利”）
+                _rep.result.winner = "胜利" if _rep.result.passed else ("未结束" if not _rep.result.over else "未过关")
                 record_battle(_rep.as_dict(), rec_dir)
                 lines.append("[战报] latest.json 已更新（含阵容/结果，前端据此反查精灵名）")
             except Exception as _e:  # noqa: BLE001
@@ -437,15 +437,19 @@ def run(
     return asyncio.run(_run())
 
 
-def read_state(account: str, password: str, *, resolve: bool = True, factor_id: int | None = None) -> dict:
+def read_state(account: str, password: str, *, resolve: bool = True, factor_id: int | None = None,
+               design_id: int | None = None) -> dict:
     """只读探测：登录 → 读因子进度(46046) + 图鉴进度(45543)。
 
+    必须显式给出因子身份（factor_id 或 design_id），不再有默认当前因子。
     注意：45543 是「图鉴/收集进度」，不是因子关卡列表（见 factor.py 说明）。
     """
     from .connection import open_unity
 
-    spec = load_factor_spec(factor_id) if factor_id is not None else CURRENT_FACTOR
-    keys = spec.forever_progress_keys if spec else [0]
+    spec = load_factor_spec(factor_id) if factor_id is not None else None
+    keys = forever_keys(factor_id=factor_id, design_id=design_id)
+    if not keys:
+        raise ValueError("读因子进度需要显式 --factor-id 或 --design-id")
 
     async def _run() -> dict:
         c = await open_unity(account, password)

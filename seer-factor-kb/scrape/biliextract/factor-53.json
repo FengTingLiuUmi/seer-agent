@@ -1,0 +1,47 @@
+{
+  "factor": "娜诺",
+  "difficulty": "地狱",
+  "source": "https://www.bilibili.com/video/BV1qwWgzNEpV/ | https://www.bilibili.com/video/BV1gyWVzPEfh/",
+  "stages": [
+    {
+      "stage": 1,
+      "boss_type": "冰暗影",
+      "boss_hp": 12000,
+      "traits": "必先；封属；300固伤；消强；必暴；随机弱化；减伤16.7%",
+      "strategy": "表姐+强攻手 / 典韦强攻 / 皮神单挑 / 圣谱单挑",
+      "pets": ["帝皇之御", "圣灵谱尼", "典韦"]
+    },
+    {
+      "stage": 2,
+      "boss_type": "光神秘",
+      "boss_hp": 12000,
+      "traits": "必先；封属；300固伤；消强；睡眠(50%)；随机弱化",
+      "strategy": "表姐+强攻手 / 星光·丽莎布布单挑(刷睡眠抗)",
+      "pets": ["帝皇之御", "星光·丽莎布布"]
+    },
+    {
+      "stage": 3,
+      "boss_type": "虫",
+      "boss_hp": 15000,
+      "traits": "必先；封属；500固伤；消强；护盾；盾罩；复活(20%)；减伤33.3%",
+      "strategy": "月照150 / 卡莎盾体磨",
+      "pets": ["月照星魂", "卡莎"]
+    },
+    {
+      "stage": 4,
+      "boss_type": "圣灵神秘",
+      "boss_hp": 18000,
+      "traits": "必先；封属；500固伤；两命；复活后全属性+1；免疫暴击；吸强(偷强)；月亮；闪避",
+      "strategy": "月华单挑 / 圣谱复苏磨(卡裸伤)",
+      "pets": ["月华", "圣灵谱尼"]
+    },
+    {
+      "stage": 5,
+      "boss_type": "战斗",
+      "boss_hp": 20000,
+      "traits": "必先；封属；500固伤；吸强(偷强)；闪避(100%)；疲惫",
+      "strategy": "表姐+蒂朵+强攻 / 引爆+强攻手",
+      "pets": ["帝皇之御", "蒂朵"]
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+ "doc_id": "斯弗洛浦亚#地狱",
+ "factor": "斯弗洛浦亚",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4755,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 300固伤; 免疫物攻; 消强; 减伤16.7%",
+   "mech": [
+    "immunePhysical",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "压血月照星魂嗑药必先秒 / 帝皇之御自爆+瑞迪卡第五+圣光莫妮卡第五强攻"
+   ],
+   "pets": [
+    "月照星魂",
+    "帝皇之御",
+    "瑞迪卡",
+    "圣光莫妮卡"
+   ],
+   "why": "Boss 免疫物攻(物攻红伤=0)+必先+封属+300固伤+消强:物理攻击打不出伤害、属性技能被封、每回合被300固伤追,只能靠攻击技能一波带走。月照星魂是特攻强攻手,压血嗑药触发必先/必暴一波秒;或帝皇之御自爆(守御八方是攻击技能,不受封属)给后续必先+必暴,再接瑞迪卡第五、圣光莫妮卡第五两位特攻强攻手补刀。差异:月照单刷省资源,表姐套路多一手补刀更稳。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4756,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 300固伤; 免疫特攻; 消强; 减伤16.7%",
+   "mech": [
+    "immuneSpecial",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "帝皇之御自爆+艾欧丽娅150/玛提斯特强攻 / 艾欧丽娅150单刷"
+   ],
+   "pets": [
+    "帝皇之御",
+    "艾欧丽娅",
+    "玛提斯特"
+   ],
+   "why": "与第1关镜像,Boss 免疫特攻(特攻红伤=0)+必先+封属+300固伤+消强,只能上物攻强攻手。艾欧丽娅(老形态)150低血增伤物攻单刷;或帝皇之御自爆(攻击技不受封属)给必先+必暴,接艾欧丽娅150/玛提斯特150物攻强攻补刀。差异:艾欧单刷更省,表姐套路补刀更稳。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4782,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 500固伤; 消强; 清PP; 低于1500回满; 减伤33.3%",
+   "mech": [
+    "clearPP",
+    "heal",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "格罗姆(屠龙)第五/150后手翻倍秒 / 加尔鲁特带星皇150磨 / 伊丽莎白·大梵天王第五"
+   ],
+   "pets": [
+    "格罗姆",
+    "加尔鲁特",
+    "星皇",
+    "伊丽莎白",
+    "大梵天王"
+   ],
+   "why": "Boss 必先+封属+500固伤+消强+清PP+「低于1500自动回满」+减伤33.3%:致命点是回满线与清PP——磨血会被回满,必须一次从1500血线上方打穿(单段爆发)。格罗姆(屠龙)/伊丽莎白/大梵天王用第五或150大威力单段爆发(格罗姆后手翻倍)直接秒,躲开回满线。加尔鲁特带星皇是站场磨路线(星皇后台增益免能力下降),但需同时应付清PP与回满线,稳定性更差,作备选。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4780,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 500固伤; 吸强; 必暴; 受暴击伤害回满; 减伤33.3%",
+   "mech": [
+    "heal",
+    "stealBuff",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "帝皇之御自爆+星光·魔焰猩猩+霍夫曼第五强攻 / 克罗·蒂朵送死后霍夫曼第五"
+   ],
+   "pets": [
+    "帝皇之御",
+    "星光·魔焰猩猩",
+    "霍夫曼",
+    "克罗",
+    "蒂朵"
+   ],
+   "why": "Boss 必先+封属+500固伤+吸强+必暴(刀刀暴击)+「受暴击伤害回满」+减伤33.3%:核心陷阱是被暴击则回合结束回满,所以不能用表姐自爆(表姐给必暴会触发回满),要「不暴击」爆发。克罗(小/大克罗)送死(魂印让下一只首回合免异且首伤害≤250)+蒂朵幻梦芳逝自爆铺垫,再接霍夫曼第五非暴击单段强攻秒杀。差异:克罗/蒂朵送死不送必暴,是绕开回满的正确路线。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4783,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "水暗影",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 500固伤; 吸强; 5000护盾+5000护罩; 减伤50%; 天敌时减伤翻倍",
+   "mech": [
+    "shield",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "加尔鲁特(草王)先三+150(魂弦)站场磨死"
+   ],
+   "pets": [
+    "加尔鲁特"
+   ],
+   "why": "Boss 水暗影+必先+封属+500固伤+吸强+开局5000护盾+5000护罩+减伤50%、天敌时减伤翻倍:开局大盾罩+高减伤让红伤极难打穿。加尔鲁特(草潘)站场磨:魂印受攻击叠「碧叶猛毒」(每层降对手攻击并令其用技能后受固伤,最高12层),先三+150持续磨,靠毒系固伤绕过减伤与天敌翻倍,逐步磨空护盾护罩与血量;吸强对付不靠能力强化的磨法无效。"
+  }
+ ]
+}

@@ -10,7 +10,6 @@
   seer_probe             登录后发送只读命令并收集响应
   seer_feature           精灵背包/装备 或 精灵因子 的已抓包命令序列（默认 dry-run）
   seer_inventory         实时读取当前装备/背包
-  seer_battle_simulate   本地战斗模拟（返回逐回合战报，无 GUI）
   seer_query             用 seerapi 查询 pet/skill/item/… 数据
   seer_applog            解析 2.0.9 日常日志 / 出招记录
   seer_capture_summary   分析官方 H5 抓包
@@ -26,7 +25,6 @@ import traceback
 from typing import Any, Callable
 
 from .applog import parse_battle_record, parse_daily_log, summarize
-from .battle import simulate
 from .captures import summarize as summarize_capture
 from .features import CAPTURE_EQUIP, CAPTURE_FACTOR, readable_steps
 from .inventory import snapshot_from_live
@@ -126,26 +124,11 @@ _TOOL_SPECS: list[dict] = [
                 "reserve_catch": {"type": "string", "description": "待命 catch_time 逗号分隔（2304 加待命）"},
                 "clear_reserve": {"type": "string", "description": "清除待命 catch_time 逗号分隔"},
                 "factor_id": {"type": "integer", "description": "41413 领取 id"},
-                "design_id": {"type": "integer", "description": "官方端进入因子 design_id（默认当前因子 225）"},
+                "design_id": {"type": "integer", "description": "官方端进入因子 design_id（41284/41282；必填）"},
+                "boss_species": {"type": "integer", "description": "本关 BOSS species（展示用；官方端服务端自动推进）"},
                 "write": {"type": "boolean", "default": False, "description": "是否真正发送（默认 dry-run）"},
             },
             "required": ["account", "password"],
-        },
-    },
-    {
-        "name": "seer_battle_simulate",
-        "description": "本地战斗模拟：给定双方精灵与 BOSS 特性，返回逐回合战报（文本，无 GUI）。",
-        "inputSchema": {
-            "type": "object",
-            "properties": {
-                "player_ids": {"type": "string", "description": "我方精灵 ID，逗号分隔"},
-                "enemy_ids": {"type": "string", "description": "对方精灵 ID，逗号分隔"},
-                "plan_path": {"type": "string", "description": ".cjc 方案路径（可选）"},
-                "boss_effects": {"type": "string", "description": "id:args:text;...（可选）"},
-                "max_turns": {"type": "integer", "default": 50},
-                "data_root": {"type": "string", "default": r"F:\seer\seer_cfg\json"},
-            },
-            "required": ["player_ids", "enemy_ids"],
         },
     },
     {
@@ -273,25 +256,28 @@ def _parse_id_list(text: str) -> list[int]:
 
 
 def tool_factor(args: dict) -> dict:
-    from .factor import CURRENT_FACTOR, FACTOR_STAGES, DEFAULT_LINEUP
     from .factor_runner import FactorStagePlan, read_state, run
 
+    design_id = args.get("design_id")
     if args.get("list"):
-        return {"list": True, **read_state(args["account"], args["password"], resolve=True)}
+        if not design_id and not args.get("factor_id"):
+            return {"error": "list=true 需要 design_id 或 factor_id（不再有默认当前因子）"}
+        return {"list": True, **read_state(args["account"], args["password"], resolve=True,
+                                           factor_id=args.get("factor_id"), design_id=design_id)}
+
+    if not design_id:
+        return {"error": "需要 design_id（官方端进入因子关；不再有默认当前因子）"}
 
     stage = args.get("stage")
     if stage is None and not args.get("all"):
         return {"error": "需要 stage 或 all=true；先用 list=true 看当前进度"}
 
     def _plan(idx: int) -> FactorStagePlan:
-        st = FACTOR_STAGES[idx - 1]
-        species = st["boss_species"]
-        lineup = _parse_id_list(args["lineup"]) if args.get("lineup") else list(DEFAULT_LINEUP.get(species, ([], {}))[0])
         return FactorStagePlan(
             stage_index=idx,
-            boss_species=species,
-            boss_name=st["boss_name"],
-            lineup=lineup,
+            boss_species=args.get("boss_species"),
+            boss_name="",
+            lineup=_parse_id_list(args["lineup"]) if args.get("lineup") else [],
             reserve=_parse_id_list(args["reserve"]) if args.get("reserve") else [],
             skills={},
             battle_skills=_parse_id_list(args["skills"]) if args.get("skills") else [],
@@ -300,12 +286,12 @@ def tool_factor(args: dict) -> dict:
             reserve_catch=_parse_id_list(args["reserve_catch"]) if args.get("reserve_catch") else [],
             boss_id=args.get("boss_id"),
             factor_id=args.get("factor_id"),
-            design_id=args.get("design_id") or CURRENT_FACTOR.design_id,
+            design_id=design_id,
             collect_action=(1, 0),
             clear_reserve=_parse_id_list(args["clear_reserve"]) if args.get("clear_reserve") else [],
         )
 
-    indices = [stage] if stage else list(range(1, len(FACTOR_STAGES) + 1))
+    indices = [stage] if stage else list(range(1, 6))
     lines = run(
         args["account"],
         args["password"],
@@ -316,41 +302,20 @@ def tool_factor(args: dict) -> dict:
     return {"dry_run": not bool(args.get("write")), "steps": lines}
 
 
-def tool_battle_simulate(args: dict) -> dict:
-    from .battle_data import BattleData, BossTrait
-    from .cjc import BattlePlan
-
-    data_root = args.get("data_root", r"F:\seer\seer_cfg\json")
-    data = BattleData(data_root)
-    plan = BattlePlan.load(args["plan_path"]) if args.get("plan_path") else None
-    players = [data.make_pet(int(x), side="player") for x in args["player_ids"].split(",")]
-    enemies = [data.make_pet(int(x), side="enemy") for x in args["enemy_ids"].split(",")]
-    traits: list[BossTrait] = []
-    if args.get("boss_effects"):
-        for item in args["boss_effects"].split(";"):
-            if not item.strip():
-                continue
-            parts = item.split(":")
-            bid = int(parts[0])
-            targs = [int(x) for x in parts[1].split()] if len(parts) > 1 and parts[1].strip() else []
-            desc = parts[2] if len(parts) > 2 else ""
-            traits.append(BossTrait(bid, targs, desc))
-    result = simulate(
-        data_root, player_ids=[p.species.id for p in players], enemy_ids=[e.species.id for e in enemies],
-        plan_path=args.get("plan_path"), boss_traits=traits, max_turns=int(args.get("max_turns", 50)),
-    )
-    return {
-        "winner": result.winner,
-        "turns": result.turns,
-        "snapshot_count": len(result.snapshots),
-        "log": "\n".join(result.log_lines),
-    }
-
-
 def tool_query(args: dict) -> dict:
-    prov = SeerApiProvider()
     resource = args["resource"]
-    key = args["id_or_name"]
+    key = str(args["id_or_name"])
+    # pet 名/ID 消歧 → 本体；其余未建模资源（item/equip/skill/...）仍走 seerapi。
+    if resource in ("pet", "精灵"):
+        from .ontology import pet_lookup
+        r = pet_lookup(key)
+        if r is not None and r["matches"]:
+            return r
+        prov = SeerApiProvider()
+        if key.isdigit():
+            return {"resource": resource, "id": int(key), "item": prov.get("pet", int(key))}
+        return {"resource": resource, "name": key, "items": prov.find(resource, key, limit=10)}
+    prov = SeerApiProvider()
     if args.get("by_name"):
         return {"resource": resource, "name": key, "items": prov.find(resource, key, limit=10)}
     if key.isdigit():
@@ -381,7 +346,6 @@ _DISPATCH: dict[str, Callable[[dict], Any]] = {
     "seer_feature": tool_feature,
     "seer_inventory": tool_inventory,
     "seer_factor": tool_factor,
-    "seer_battle_simulate": tool_battle_simulate,
     "seer_query": tool_query,
     "seer_applog": tool_applog,
     "seer_capture_summary": tool_capture_summary,

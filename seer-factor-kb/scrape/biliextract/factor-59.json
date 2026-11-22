@@ -1,0 +1,50 @@
+{
+  "factor": "尤莉米特",
+  "difficulty": "地狱",
+  "source": [
+    "https://bbs.tiepi.top/archiver/?tid-3279.html",
+    "https://news.4399.com/seer/zenmezhua/202204-26-959528.html"
+  ],
+  "stages": [
+    {
+      "stage": 1,
+      "boss_type": "火电",
+      "boss_hp": 10000,
+      "traits": "先制+3；220固伤；清PP；消强",
+      "strategy": "圣光莫妮卡单挑（漆黑+洛林卡之星）",
+      "pets": ["圣光莫妮卡"]
+    },
+    {
+      "stage": 2,
+      "boss_type": "冰超能",
+      "boss_hp": 12000,
+      "traits": "先制+3；220固伤；必暴；回血；消强",
+      "strategy": "月照星魂强攻 / 潘+表姐+艾莫莉萨强攻",
+      "pets": ["月照星魂", "艾莫莉萨", "帝皇之御"]
+    },
+    {
+      "stage": 3,
+      "boss_type": "飞行超能",
+      "boss_hp": 14000,
+      "traits": "必先；封属；吸血300；受击害怕控；消强；闪避",
+      "strategy": "鬼神吕布第五（吃全面战队攻击）",
+      "pets": ["鬼神吕布"]
+    },
+    {
+      "stage": 4,
+      "boss_type": "地面神秘",
+      "boss_hp": 16000,
+      "traits": "必先；封属；随机弱化；两命；50%免疫红伤粉伤",
+      "strategy": "圣灵谱尼先3+第五 / 星光·丽莎布布",
+      "pets": ["圣灵谱尼", "星光·丽莎布布"]
+    },
+    {
+      "stage": 5,
+      "boss_type": "光神秘",
+      "boss_hp": 18000,
+      "traits": "必先；封属；免疫暴击；免疫威力≤100攻击伤害；两命；全属性+1；害怕控",
+      "strategy": "加尔鲁特先3+150 / 邪灵主宰摩哥斯大招",
+      "pets": ["加尔鲁特", "邪灵主宰摩哥斯"]
+    }
+  ]
+}

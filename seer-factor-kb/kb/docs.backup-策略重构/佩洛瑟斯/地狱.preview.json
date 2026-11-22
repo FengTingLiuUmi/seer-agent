@@ -1,0 +1,103 @@
+{
+ "doc_id": "佩洛瑟斯#地狱",
+ "factor": "佩洛瑟斯",
+ "difficulty": "地狱",
+ "source_urls": [
+  "https://www.snm0516.aisee.tv/video/BV1BM4m1R7ft/",
+  "https://m.news.4399.com/seer/zenmezhua/202404-02-991835.html"
+ ],
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4615,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 300固伤; 免疫物攻; 消强(使用技能后被消强); 减伤16.7%",
+   "mech": ["immunePhysical", "clearBuff", "firstStrike", "sealAttr", "fixedDamage", "damageReduction"],
+   "strategies": [
+    {"text": "自爆+特攻强攻", "source": "bilibili", "plan": "强攻", "pets": ["帝皇之御"], "why": "Boss 免疫物攻，红伤必须走特攻；必先+封属下用表姐帝皇之御自爆守御八方（攻击技能、不受封属），给后续必先+必暴后接特攻手速杀。"},
+    {"text": "塞勒涅单挑", "source": "bilibili", "plan": "单挑", "pets": ["塞勒涅"], "why": "免疫物攻须走特攻；塞勒涅单挑走特攻思路，少一次自爆增伤，更依赖自身续航硬扛 300 固伤。"},
+    {"text": "千裳单挑", "source": "bilibili", "plan": "单挑", "pets": ["千裳"], "why": "免疫物攻须走特攻；千裳单挑走特攻思路，少一次自爆增伤，更依赖自身续航硬扛 300 固伤。"},
+    {"text": "帝皇之御 + 冰之契约阿克西亚 + 奥斯卡 / 希可洛（特防体力）", "source": "forum", "plan": "强攻", "pets": ["帝皇之御", "冰之契约阿克西亚", "奥斯卡", "希可洛"], "why": "表姐帝皇之御守御八方给必先+必暴，接特攻手（冰之契约阿克西亚）速杀，奥斯卡/希可洛补刀兜底。"}
+   ],
+   "why": "Boss 免疫物攻，红伤必须走特攻；必先+封属下先用表姐帝皇之御自爆守御八方，它是攻击技能、不受封属影响，给后续两只必先+必暴后接特攻手速杀。塞勒涅/千裳单挑走同一特攻思路，少一次自爆增伤，但更依赖自身续航硬扛300固伤。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4023,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 300固伤; 免疫特攻; 消强(使用技能后被消强); 减伤16.7%; 150大招伤害低于300附加450固伤; 月亮(强化技能半血以下)",
+   "mech": ["immuneSpecial", "heal", "clearBuff", "firstStrike", "sealAttr", "fixedDamage", "damageReduction"],
+   "strategies": [
+    {"text": "自爆+物攻强攻", "source": "bilibili", "plan": "强攻", "pets": ["帝皇之御"], "why": "Boss 免疫特攻，必须改用物攻强攻；表姐守御八方给必先+必暴接物攻手速杀，避免月亮(半血以下回血)拖久。"},
+    {"text": "加尔鲁特单挑", "source": "bilibili", "plan": "单挑", "pets": ["加尔鲁特"], "why": "免疫特攻走物攻；加尔鲁特单挑走控血磨，靠续航慢慢耗，压低回合避免月亮回血。"},
+    {"text": "草王+猎皇引爆+草王+强攻手+补刀", "source": "bilibili", "plan": "强攻", "pets": ["草王", "猎皇"], "why": "先让猎皇引爆给必暴，再切强攻手+补刀；草王(芳馨·茉蕊儿)送头套盾保命，规避月亮回血拖久。"},
+    {"text": "帝皇之御 + 任意形态喵佐 + 圣萨（第五） / 草加（特防体力）", "source": "forum", "plan": "强攻", "pets": ["帝皇之御", "喵佐", "圣萨", "草加"], "why": "表姐自爆给必先+必暴，接物攻手（喵佐任意形态/圣萨第五）速杀，草加(加尔鲁特)特防体力站场兜底。"}
+   ],
+   "why": "Boss 免疫特攻，必须改用物攻强攻；月亮(半血以下回血)要求速杀或控血，避免被拖回血；150大招低红伤附加450固伤也让低伤站场更危险。表姐自爆接物攻强攻是速杀线，加尔鲁特单挑走控血磨，草王+猎皇引爆则是先让猎皇给必暴再切强攻手+补刀。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4401,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_hp": 15000,
+   "traits": "单精灵; 必先; 封属; 500固伤; 出手后换属性(与我方交换属性); 害怕控(低级); 减伤16.7%; 140特攻附加秒人粉伤",
+   "mech": ["singlePet", "control", "firstStrike", "sealAttr", "fixedDamage", "damageReduction"],
+   "strategies": [
+    {"text": "月华单挑", "source": "bilibili", "plan": "单挑", "pets": ["月华"], "why": "单精灵限制只能带一只；月华靠抗性+回血硬磨，避免被偷强后崩盘，用抗性挡害怕控。"},
+    {"text": "盾体圣灵谱尼单挑", "source": "bilibili", "plan": "单挑", "pets": ["圣灵谱尼"], "why": "单精灵限制；盾体圣灵谱尼靠抗性与回血硬磨，免异常挡害怕控。"},
+    {"text": "圣灵谱尼（不灭+减伤 带复苏）", "source": "forum", "plan": "单挑", "pets": ["圣灵谱尼"], "why": "单精灵站场；圣灵谱尼带不灭能量珠+减伤+复苏重生硬磨，偷强/害怕控都有兜底。"}
+   ],
+   "why": "单精灵限制只能带一只，且 Boss 出手后换属性偷我方强化、还带低级害怕控，须用自带解控/续航的站场手；月华与盾体圣灵谱尼靠抗性与回血硬磨，避免被偷强后崩盘，并用抗性挡掉害怕。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4613,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 500固伤; 每回合全属性+1; 每回合吸强; 免疫威力>100的技能伤害; 减伤33.3%; 月亮(强化技能)",
+   "mech": ["immunePower", "heal", "selfBuff", "stealBuff", "firstStrike", "sealAttr", "fixedDamage", "damageReduction"],
+   "strategies": [
+    {"text": "自爆+低威力强攻", "source": "bilibili", "plan": "强攻", "pets": ["帝皇之御"], "why": "Boss 免疫威力>100 技能，只能上低威力(≤100)技能；表姐自爆给必先+必暴接低威力强攻手速杀，规避每回合全属性+1与吸强。"},
+    {"text": "克罗+眠降·玛缇娜单挑", "source": "bilibili", "plan": "单挑", "pets": ["克罗", "眠降·玛缇娜"], "why": "克罗锁伤保眠降·玛缇娜安稳登场站场磨，规避免疫高威力与每回合全属性+1。"},
+    {"text": "消强+加尔鲁特单挑", "source": "bilibili", "plan": "单挑", "pets": ["加尔鲁特"], "why": "Boss 每回合全属性+1+吸强，需断回合/消强；加尔鲁特单挑消强后站场磨。"},
+    {"text": "帝皇之御 + 重生 + 克里斯托（第五） + 艾欧丽娅（先3） + 极寒魔兽（先3） + 哈迪斯（补刀）", "source": "forum", "plan": "强攻", "pets": ["帝皇之御", "重生", "克里斯托", "艾欧丽娅", "极寒魔兽", "哈迪斯"], "why": "表姐自爆给必先+必暴，接低威力强攻手轮换（重生/克里斯托/艾欧/极寒魔兽）补刀收尾。"},
+    {"text": "草加（防御体力嗑药）", "source": "forum", "plan": "单挑", "pets": ["草加"], "why": "草加(加尔鲁特)防御体力嗑药站场磨，断回合压制每回合全属性+1。"}
+   ],
+   "why": "Boss 免疫威力>100的技能伤害，只能上低威力(≤100)技能强攻；每回合全属性+1与吸强需断回合/消强，月亮回血则靠速杀或控血压制。表姐自爆接低威力强攻是速杀线，消强+加尔鲁特单挑与克罗+眠降·玛缇娜则靠站场磨。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4618,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "邪灵龙",
+   "boss_hp": 20000,
+   "traits": "必先; 封属; 500固伤; 两命(复活后全属性+1); 每回合吸强; 清PP(攻击技能清空我方1个技能PP); 减伤33.3%; 免死(150大招3回合残留1血)",
+   "mech": ["clearPP", "twoLife", "undying", "selfBuff", "stealBuff", "firstStrike", "sealAttr", "fixedDamage", "damageReduction"],
+   "strategies": [
+    {"text": "自爆+断回合强攻", "source": "bilibili", "plan": "强攻", "pets": ["帝皇之御"], "why": "两命+清PP+免死叠加，表姐守御八方给必先+必暴，接断回合强攻手绕开封属并二段补刀，处理二命复活后的全属性+1。"},
+    {"text": "消强+卡莎单挑（二命切第二只消强继续）", "source": "bilibili", "plan": "单挑", "pets": ["卡莎"], "why": "卡莎单挑消强后打第一命，二命复活后切第二只继续消强打第二轮。"},
+    {"text": "潘克多斯 + 帝 + 帝皇之御 + 拉斯特 + 混沌哈肯撒/空元（130） + 战龙哈莫（龙怒天火断）", "source": "forum", "plan": "强攻", "pets": ["潘克多斯", "帝", "帝皇之御", "拉斯特", "混沌哈肯撒", "空元", "战龙哈莫"], "why": "潘克多斯+帝送死增伤铺垫，表姐守御八方给必先+必暴，接强攻手(混沌哈肯撒/空元130)主攻、战龙哈莫断回合收尾，处理两命+免死。"}
+   ],
+   "why": "两命+清PP+免死(150大招3回合留1血)+每回合吸强叠加，须先断回合压制免死、再处理二命复活后的全属性+1；表姐自爆给必先必暴，接断回合强攻手绕开封属并二段补刀，卡莎单挑则消强后二命切第二只继续消强打第二轮。"
+  }
+ ],
+ "tids": [1619, 2551, 708, 712, 715, 2212],
+ "note": "全程绿火"
+}

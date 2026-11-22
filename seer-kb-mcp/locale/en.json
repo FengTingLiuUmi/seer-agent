@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Seer KB query",
+    "description": "Local MCP tools querying the Seer PVE ontology: disambiguate nicknames, read factor boss gates, list pets by role, compute type multipliers, and check ban lists.",
+    "detail": "docs/DETAIL.md"
+  }
+}

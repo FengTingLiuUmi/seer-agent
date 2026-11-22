@@ -1,0 +1,337 @@
+{
+ "doc_id": "巴特勒#地狱",
+ "factor": "巴特勒",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4584,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "飞行暗影",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 免疫瞬杀; 每回合300固伤; 消强; 免疫威力≤100的技能; 减伤16.7%; 150大招随机附带烧伤/冻伤/中毒",
+   "mech": [
+    "immunePower",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    {
+     "text": "自爆+强攻手",
+     "source": "bili",
+     "plan": "自爆+强攻手",
+     "pets": [
+      "帝皇之御"
+     ],
+     "why": ""
+    },
+    {
+     "text": "消强+希可洛(村长)单挑",
+     "source": "bili",
+     "plan": "消强+希可洛(村长)单挑",
+     "pets": [
+      "希可洛"
+     ],
+     "why": ""
+    },
+    {
+     "text": "消强+多草王保艾欧单挑",
+     "source": "bili",
+     "plan": "消强+多草王保艾欧单挑",
+     "pets": [],
+     "why": ""
+    },
+    {
+     "text": "天尊+潘克多斯+月照+魔钰",
+     "source": "forum",
+     "plan": "天尊+潘克多斯+月照+魔钰",
+     "pets": [
+      "天尊",
+      "潘克多斯",
+      "魔钰"
+     ],
+     "why": ""
+    }
+   ],
+   "pets": [
+    "帝皇之御",
+    "希可洛",
+    "艾欧丽娅",
+    "天尊",
+    "潘克多斯",
+    "月照星魂",
+    "魔钰"
+   ],
+   "why": "封属禁属性技，同时「免疫威力≤100」要求用威力>100的攻击技，因此表姐守御八方（攻击技，不受封属）给后续必先+必暴再接强攻最直接。消强会清我方强化，村长/艾欧路线都是不靠强化、吃血药站场磨。每回合300固伤靠回血/吸血顶住或速杀避免拖长。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4578,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "草战斗",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 免疫瞬杀; 每回合300固伤; 消强; 清PP; 减伤16.7%; 吸血; 非本攻回血1/3",
+   "mech": [
+    "clearPP",
+    "heal",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    {
+     "text": "自爆+强攻手",
+     "source": "bili",
+     "plan": "自爆+强攻手",
+     "pets": [
+      "帝皇之御"
+     ],
+     "why": ""
+    },
+    {
+     "text": "消强+卡莎单挑",
+     "source": "bili",
+     "plan": "消强+卡莎单挑",
+     "pets": [
+      "卡莎"
+     ],
+     "why": "消强也使卡莎/草王走不依赖强化的打法"
+    },
+    {
+     "text": "消强+草王+咤克斯引爆+赤虹仙凤秒",
+     "source": "bili",
+     "plan": "消强+草王+咤克斯引爆+赤虹仙凤秒",
+     "pets": [
+      "咤克斯",
+      "赤虹仙凤"
+     ],
+     "why": "清PP威胁大，用咤克斯引爆接赤虹仙凤一波秒，或表姐自爆给必先+必暴跳过缠斗"
+    }
+   ],
+   "pets": [
+    "帝皇之御",
+    "卡莎",
+    "咤克斯",
+    "赤虹仙凤"
+   ],
+   "why": "封属禁属性技，「吸血」加「非本攻回血1/3」让耐久战拖不动，必须速杀并尽量用本系(STAB)强攻避免触发回血；清PP威胁大，用咤克斯引爆接赤虹仙凤一波秒，或表姐自爆给必先+必暴跳过缠斗。消强也使卡莎/草王走不依赖强化的打法。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4582,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "远古神秘",
+   "boss_hp": 15000,
+   "traits": "单精灵; 必先; 封属; 每回合500固伤; 每回合全属性+1; 断回合; 免疫威力＞100的伤害; 减伤16.7%; 强化技能吸血",
+   "mech": [
+    "singlePet",
+    "immunePower",
+    "heal",
+    "selfBuff",
+    "breakTurn",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    {
+     "text": "阿尔法熊单挑",
+     "source": "bili",
+     "plan": "阿尔法熊单挑",
+     "pets": [
+      "阿尔法熊"
+     ],
+     "why": "每回合全属性+1让Boss越打越强，加上断回合和500固伤，因此走阿尔法熊/村长希可洛的站场磨（卡裸伤）路线，用低威力技能持续削并靠回血顶固伤"
+    },
+    {
+     "text": "乾古套希可洛(村长)单挑",
+     "source": "bili",
+     "plan": "乾古套希可洛(村长)单挑",
+     "pets": [
+      "希可洛"
+     ],
+     "why": "每回合全属性+1让Boss越打越强，加上断回合和500固伤，因此走阿尔法熊/村长希可洛的站场磨（卡裸伤）路线，用低威力技能持续削并靠回血顶固伤"
+    }
+   ],
+   "pets": [
+    "阿尔法熊",
+    "希可洛",
+    "元神",
+    "星皇"
+   ],
+   "why": "免疫「威力＞100」的伤害等于封死大威力强攻，只能换威力≤100的低威力技能慢慢打；每回合全属性+1让Boss越打越强，加上断回合和500固伤，因此走阿尔法熊/村长希可洛的站场磨（卡裸伤）路线，用低威力技能持续削并靠回血顶固伤。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4577,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "光超能",
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 每回合500固伤; 只吃先制技能; 消强; 每回合回血1000; 减伤33.3%",
+   "mech": [
+    "onlyFirstStrike",
+    "heal",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    {
+     "text": "自爆+先制强攻手",
+     "source": "bili",
+     "plan": "自爆+先制强攻手",
+     "pets": [
+      "帝皇之御"
+     ],
+     "why": ""
+    },
+    {
+     "text": "斯克鲁恩+重生+克罗+奥斯卡+哈迪斯",
+     "source": "bili",
+     "plan": "斯克鲁恩+重生+克罗+奥斯卡+哈迪斯",
+     "pets": [
+      "斯克鲁恩",
+      "克罗",
+      "奥斯卡",
+      "哈迪斯"
+     ],
+     "why": ""
+    },
+    {
+     "text": "炮灰+冰冷千裳吃血药磨",
+     "source": "bili",
+     "plan": "炮灰+冰冷千裳吃血药磨",
+     "pets": [
+      "千裳"
+     ],
+     "why": "消强使打法不依赖强化，千裳则是吃血药靠吸血磨的慢路线"
+    },
+    {
+     "text": "补刀",
+     "source": "forum",
+     "plan": "补刀",
+     "pets": [],
+     "why": ""
+    }
+   ],
+   "pets": [
+    "帝皇之御",
+    "斯克鲁恩",
+    "克罗",
+    "奥斯卡",
+    "哈迪斯",
+    "千裳",
+    "鲁肃",
+    "洛基"
+   ],
+   "why": "「只吃先制技能」要求用带先制的攻击技，而封属又禁属性技，所以走攻击先制路线；表姐守御八方给后续必先+必暴，再接先制强攻手速杀，避开每回合回血1000和500固伤。消强使打法不依赖强化，千裳则是吃血药靠吸血磨的慢路线。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4583,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "暗影龙",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 每回合500固伤; 消强; 高级害怕控; 每回合全属性-1; 减伤33.3%; 150大招弱化我方特防-2; 140物攻附加250~400固伤",
+   "mech": [
+    "debuff",
+    "clearBuff",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    {
+     "text": "自爆+强攻手(送潘克多斯叠增伤+屠龙160)",
+     "source": "bili",
+     "plan": "自爆+强攻手(送潘克多斯叠增伤+屠龙160)",
+     "pets": [
+      "潘克多斯",
+      "帝皇之御"
+     ],
+     "why": ""
+    },
+    {
+     "text": "帝皇之御自爆+蒂朵+第五强攻",
+     "source": "bili",
+     "plan": "帝皇之御自爆+蒂朵+第五强攻",
+     "pets": [
+      "帝皇之御",
+      "蒂朵"
+     ],
+     "why": ""
+    },
+    {
+     "text": "送天尊蒂朵+月照魔钰必先强攻",
+     "source": "bili",
+     "plan": "送天尊蒂朵+月照魔钰必先强攻",
+     "pets": [
+      "蒂朵",
+      "魔钰"
+     ],
+     "why": ""
+    },
+    {
+     "text": "盾体圣灵谱尼单挑",
+     "source": "bili",
+     "plan": "盾体圣灵谱尼单挑",
+     "pets": [
+      "圣灵谱尼"
+     ],
+     "why": "每回合全属性-1的弱化与消强会持续扒我方状态，所以圣灵谱尼走免控单挑而非依赖会被清掉的强化"
+    },
+    {
+     "text": "强攻",
+     "source": "forum",
+     "plan": "强攻",
+     "pets": [],
+     "why": ""
+    }
+   ],
+   "pets": [
+    "帝皇之御",
+    "潘克多斯",
+    "蒂朵",
+    "月照星魂",
+    "魔钰",
+    "圣灵谱尼"
+   ],
+   "why": "封属+高级害怕控，最稳是免控或先手秒，表姐守御八方（攻击技，不受封属）给必先+必暴再接强攻、避免吃控，并送火潘叠增伤+屠龙160补伤害。每回合全属性-1的弱化与消强会持续扒我方状态，所以圣灵谱尼走免控单挑而非依赖会被清掉的强化。"
+  }
+ ],
+ "tids": [
+  122,
+  123,
+  132
+ ],
+ "note": "隐藏内容未展开，无正文数据",
+ "source_urls": [
+  "https://news.4399.com/seer/zenmezhua/202312-26-988976.html",
+  "https://www.bilibili.com/video/BV1864y1J797/"
+ ]
+}

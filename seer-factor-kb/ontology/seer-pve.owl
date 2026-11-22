@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/seer/pve#recommendedStrategy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/seer/pve#BattlePlan"/>
+    <rdfs:label xml:lang="zh">推荐打法</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#recommendedPet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:label xml:lang="zh">推荐打手</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:imports rdf:resource="http://example.org/seer"/>
+    <rdfs:label xml:lang="zh">赛尔号 PVE 打法层</rdfs:label>
+    <rdfs:comment xml:lang="zh">在赛尔号游戏本体之上描述打法/方案/定位与推荐关系；规则见 seer-rules.swrl。</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#attacker">
+    <rdf:type rdf:resource="http://example.org/seer/pve#Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">强攻（秒杀）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#hasRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://example.org/seer/pve#Role"/>
+    <rdfs:label xml:lang="zh">定位</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#substitutesFor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:label xml:lang="zh">可替代</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n58fae4a1c5b44443b6c5d44ff93bf5bcb1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="n58fae4a1c5b44443b6c5d44ff93bf5bcb2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#planFor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer/pve#BattlePlan"/>
+    <rdfs:range rdf:resource="http://example.org/seer#FactorStage"/>
+    <rdfs:label xml:lang="zh">针对关卡</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#usesPet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer/pve#Step"/>
+    <rdfs:range rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:label xml:lang="zh">出场精灵</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#usesLoadout">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer/pve#BattlePlan"/>
+    <rdfs:range rdf:resource="http://example.org/seer#Sailor"/>
+    <rdfs:label xml:lang="zh">玩家配装（赛尔+套装/称号/火）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#firstStrike">
+    <rdf:type rdf:resource="http://example.org/seer/pve#Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">必先（先制）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#usesSkill">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer/pve#Step"/>
+    <rdfs:range rdf:resource="http://example.org/seer#Skill"/>
+    <rdfs:label xml:lang="zh">使用技能</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#precedes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer/pve#Step"/>
+    <rdfs:range rdf:resource="http://example.org/seer/pve#Step"/>
+    <rdfs:label xml:lang="zh">紧接在前</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n58fae4a1c5b44443b6c5d44ff93bf5bcb6">
+    <rdf:first rdf:resource="http://example.org/seer#Gem"/>
+    <rdf:rest rdf:nodeID="n58fae4a1c5b44443b6c5d44ff93bf5bcb7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#tank">
+    <rdf:type rdf:resource="http://example.org/seer/pve#Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">站场（坦克磨血）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#usesGear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer/pve#Step"/>
+    <rdfs:range rdf:nodeID="n58fae4a1c5b44443b6c5d44ff93bf5bcb1"/>
+    <rdfs:label xml:lang="zh">宠物配装（装备/道具/性格/刻印/宝石/能量珠）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#Step">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">出招步骤</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n58fae4a1c5b44443b6c5d44ff93bf5bcb3">
+    <rdf:first rdf:resource="http://example.org/seer#Item"/>
+    <rdf:rest rdf:nodeID="n58fae4a1c5b44443b6c5d44ff93bf5bcb4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n58fae4a1c5b44443b6c5d44ff93bf5bcb2">
+    <rdf:first rdf:resource="http://example.org/seer#Equip"/>
+    <rdf:rest rdf:nodeID="n58fae4a1c5b44443b6c5d44ff93bf5bcb3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#bannedPet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#FactorStage"/>
+    <rdfs:range rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:label xml:lang="zh">禁用精灵</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#Enemy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:label xml:lang="zh">敌方/Boss</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n58fae4a1c5b44443b6c5d44ff93bf5bcb7">
+    <rdf:first rdf:resource="http://example.org/seer#EnergyBead"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#stepIndex">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer/pve#Step"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="zh">步骤序号</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#BattlePlan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">打法方案（对战计划）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n58fae4a1c5b44443b6c5d44ff93bf5bcb4">
+    <rdf:first rdf:resource="http://example.org/seer#Nature"/>
+    <rdf:rest rdf:nodeID="n58fae4a1c5b44443b6c5d44ff93bf5bcb5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#hasStep">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer/pve#BattlePlan"/>
+    <rdfs:range rdf:resource="http://example.org/seer/pve#Step"/>
+    <rdfs:label xml:lang="zh">含步骤</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#Role">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">PVE 定位</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#reflect">
+    <rdf:type rdf:resource="http://example.org/seer/pve#Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">弹伤（反伤）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n58fae4a1c5b44443b6c5d44ff93bf5bcb5">
+    <rdf:first rdf:resource="http://example.org/seer#Mintmark"/>
+    <rdf:rest rdf:nodeID="n58fae4a1c5b44443b6c5d44ff93bf5bcb6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer/pve#support">
+    <rdf:type rdf:resource="http://example.org/seer/pve#Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">辅助（判弱/场地/减伤）</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

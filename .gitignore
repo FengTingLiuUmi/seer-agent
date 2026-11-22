@@ -15,7 +15,7 @@ account.ini
 
 # ===== 逆向 / 研究资料（不入库）=====
 reverse/
-docs/
+/docs/
 ref/
 patch/
 **/patch/
@@ -61,3 +61,9 @@ logs/
 .vscode/
 .DS_Store
 battle-records/
+
+# ===== 整合后新增：第三方依赖 / 派生 / 临时（不入库）=====
+.pylibs/
+reports/
+data/
+boss_frames/

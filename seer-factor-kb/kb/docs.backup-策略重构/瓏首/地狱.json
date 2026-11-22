@@ -1,0 +1,152 @@
+{
+ "doc_id": "瓏首#地狱",
+ "factor": "瓏首",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 3033,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "远古火",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 免疫瞬杀; 300固伤; 减伤16.7%; 消强; 只吃暴击; 吸强(偷强)",
+   "mech": [
+    "onlyCrit",
+    "clearBuff",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "鲁斯王克制弹 / 表姐自爆+月照星魂强攻 / 漆黑套特攻强攻"
+   ],
+   "pets": [
+    "星光·鲁斯王",
+    "月照星魂",
+    "帝皇之御"
+   ],
+   "why": "本关致命机制是「必先+封属+只吃暴击+消强/吸强」：Boss 先手且封属性技能，普通非暴击伤害几乎打不出。反制思路三条走法：①星光·鲁斯王克制弹——用克制属性的弹伤站场，Boss 高输出反被弹死，弹伤不受封属影响；②表姐(帝皇之御)守御八方是攻击技能、不受封属影响，自爆后给全队「必先+必暴」，正好同时反制必先与只吃暴击，再接月照星魂强攻秒杀；③漆黑套特攻强攻——无表姐时的平民替代，靠套件提供必暴/先手节奏走特攻输出（本关未免疫特攻）。三方案差异：弹伤靠反伤、自爆流靠必暴强攻秒杀、套件特攻是省表姐的替代。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 3237,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "远古神秘",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 免疫瞬杀; 300固伤; 减伤16.7%; 消强; 只吃暴击",
+   "mech": [
+    "onlyCrit",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "漆黑套压血魔钰/灵蛇强攻"
+   ],
+   "pets": [
+    "魔钰",
+    "潜隐灵蛇"
+   ],
+   "why": "本关致命机制是「必先+封属+只吃暴击+消强」：封属禁止属性技能，只吃暴击要求必须先打出必暴，必先则让 Boss 抢到先手。攻略用「漆黑套压血魔钰/灵蛇强攻」——压血触发魔钰、潜隐灵蛇的低体力增伤/必暴机制，漆黑套补暴击与先手节奏，全程只点攻击技能不吃封属，非暴击无效的硬门被必暴化解；本关未标注免疫物攻/特攻，故特攻强攻可行。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4871,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "火飞行",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 500固伤; 减伤16.7%; 消强; 反转我方强化; 焚烬控",
+   "mech": [
+    "clearBuff",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "圣谱站场 / 伊芙莉莎站场"
+   ],
+   "pets": [
+    "圣灵谱尼",
+    "伊芙莉莎"
+   ],
+   "why": "本关致命机制是「必先+封属+消强+反转我方强化+焚烬控+500固伤」：焚烬控需要免疫异常/高抗性，封属只能点攻击技能，消强与反转强化意味着不能靠叠强化输出。攻略用圣灵谱尼/伊芙莉莎站场——二者是站场型（减伤/回血/免异常），既能扛住500固伤持续掉血，又能免疫焚烬控制，不用强化、靠磨血把 Boss 打死；本关无「只吃暴击」，红伤正常结算，站场磨血成立。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4002,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "远古战斗",
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 500固伤; 减伤33.3%; 消强; 吸强(偷强); 每回合全属性-1; 清PP",
+   "mech": [
+    "clearPP",
+    "debuff",
+    "clearBuff",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐自爆+蒂朵+极渊DS-001强攻"
+   ],
+   "pets": [
+    "帝皇之御",
+    "蒂朵",
+    "极渊DS-001"
+   ],
+   "why": "本关致命机制是「必先+封属+清PP+吸强+每回合全属性-1+500固伤」：清PP与每回合全属性-1决定了不能久拖站场，吸强+消强更让强化流失效。攻略用「表姐自爆+蒂朵+极渊DS-001」速杀——帝皇之御守御八方是攻击技能不吃封属，自爆给后续「必先+必暴」，反制必先；蒂朵提供增伤/缓冲保护；极渊DS-001 一波强攻带走，在清PP、每回合减属性生效前秒掉 Boss，是最优解法。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4874,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "远古",
+   "boss_hp": 18000,
+   "traits": "封属; 必先; 500固伤; 减伤33.3%; 消强; 吸强(偷强); 害怕控; 每回合全属性-1; 吃月亮(回血)",
+   "mech": [
+    "heal",
+    "debuff",
+    "clearBuff",
+    "stealBuff",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐自爆+蒂朵+阿尔法熊第五+拉托奥180强攻"
+   ],
+   "pets": [
+    "帝皇之御",
+    "蒂朵",
+    "阿尔法熊",
+    "拉托奥"
+   ],
+   "why": "本关致命机制是「封属+必先+吃月亮(回血)+害怕控+吸强+每回合全属性-1」：吃月亮回血意味着不速杀就陷入回血循环，害怕控和吸强也不宜久战。攻略用「表姐自爆+蒂朵+阿尔法熊第五+拉托奥180强攻」满伤害一波压死——帝皇之御守御八方(攻击技能，不吃封属)自爆给「必先+必暴」反制必先；蒂朵铺垫增伤；阿尔法熊用第五技能、拉托奥用威力180大招双段爆发，在 Boss 回血与害怕控生效前秒杀，专治吃月亮拖局。"
+  }
+ ]
+}

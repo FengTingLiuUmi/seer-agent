@@ -1,0 +1,148 @@
+{
+ "doc_id": "伊塔·回溯型#地狱",
+ "factor": "伊塔·回溯型",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4707,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "机械战斗",
+   "boss_hp": 10000,
+   "traits": "必先; 消强; 每回合300固伤; 5%概率5倍伤(秒人); 随机弱化我方三项; 减伤16.7%",
+   "mech": [
+    "debuff",
+    "clearBuff",
+    "firstStrike",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "爆攻压血魔钰一发带走 / 特防体星光·丽莎布布站场强攻"
+   ],
+   "pets": [
+    "魔钰",
+    "星光·丽莎布布"
+   ],
+   "why": "Boss 必先且消强、随机弱化、还有5%概率5倍秒人，拖越久越容易被秒，所以首选魔钰爆攻压血一回合速杀，绕开消强与弱化；星光·丽莎布布特防体站场方案则是靠加生存与回血硬吃每回合300固伤，用容错换速度。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4711,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "机械超能",
+   "boss_hp": 10000,
+   "traits": "必先; 免疫裸伤>2000并转体力(回血); 消强; 每回合300固伤; 每回合获得300护盾; 减伤16.7%",
+   "mech": [
+    "rawCap",
+    "shield",
+    "heal",
+    "clearBuff",
+    "firstStrike",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "卡裸伤希可洛(村长)站场 / 加尔鲁特(草潘)先手+150循环站场"
+   ],
+   "pets": [
+    "希可洛",
+    "加尔鲁特"
+   ],
+   "why": "致命机制是免疫裸伤>2000并转体力，红伤超过2000会被吞掉变成 Boss 回血，所以必须卡裸伤：希可洛(村长)和草潘加尔鲁特都用不超过上限的低裸伤输出，慢慢磨破每回合300护盾并靠回血顶住300固伤；消强则意味着不靠持续强化、靠回合数耗死。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4695,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "机械火",
+   "boss_hp": 12000,
+   "traits": "必先; 出手前偷强; 每回合全属性+1; 消强; 每回合500固伤; 双防弱化; 减伤33.3%",
+   "mech": [
+    "selfBuff",
+    "debuff",
+    "clearBuff",
+    "stealBuff",
+    "firstStrike",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "特防体卡莎站场(奇镰解放循环) / 混沌地王莱茵哈特爆攻强攻"
+   ],
+   "pets": [
+    "卡莎",
+    "混沌地王莱茵哈特"
+   ],
+   "why": "Boss 出手前偷强又每回合全属性+1、还消强，靠强化站场会被偷空且越拖越强；卡莎走特防体+奇镰解放循环，用吸血回血抵掉每回合500固伤与双防弱化，稳住站场；混沌地王莱茵哈特则爆攻速杀，抢在被偷强、被叠强到扛不住之前结束。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4714,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "机械神秘",
+   "boss_hp": 15000,
+   "traits": "免疫面板>100的攻击; 偷强; 开局5000护盾5000护罩; 每回合500固伤",
+   "mech": [
+    "rawCap",
+    "panelImmune",
+    "shield",
+    "stealBuff",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "星光·鲁斯王弹伤(波克尔+星光·魔焰猩猩垫场后克制) / 眠降·玛缇娜(眠酱)站场磨死"
+   ],
+   "pets": [
+    "星光·鲁斯王",
+    "眠降·玛缇娜",
+    "星光·魔焰猩猩"
+   ],
+   "why": "关键是免疫面板>100的攻击，面板一高就重击不动，正面高面板强攻不成立，所以改走弹伤或站场磨：星光·鲁斯王靠波克尔+星光魔焰猩猩垫场增伤后弹伤生效，弹伤不吃面板免疫；眠降·玛缇娜(眠酱)则不断磨掉开局5000护盾5000护罩并自回血顶500固伤，磨死 Boss。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4713,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "机械",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 出手前偷强; 每回合全属性+1; 每回合500固伤; 高概率害怕控",
+   "mech": [
+    "selfBuff",
+    "stealBuff",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "送buff必先大队(潘克多斯+蒂朵+月照星魂+魔钰) / 波克尔+星光·魔焰猩猩+星光·鲁斯王+索比斯+月照星魂"
+   ],
+   "pets": [
+    "潘克多斯",
+    "蒂朵",
+    "月照星魂",
+    "魔钰",
+    "星光·魔焰猩猩",
+    "星光·鲁斯王",
+    "索比斯"
+   ],
+   "why": "封属+偷强+每回合全属性+1+高概率害怕控，站场会被消耗和控制压死，只能抢速度秒杀：方案一用潘克多斯(火潘)+蒂朵铺增伤，月照星魂、魔钰用攻击技能(不吃封属)必先强攻一波带走，顺带规避偷强与害怕；方案二换成波克尔+星光魔焰猩猩+鲁斯王+索比斯垫场/弹伤后月照星魂收尾，思路同为先增伤再速杀。"
+  }
+ ]
+}
