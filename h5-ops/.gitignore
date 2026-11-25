@@ -1,0 +1,27 @@
+# Build and packaging output
+dist/
+*.zip
+*.tgz
+
+# Test and diagnostic run output
+artifacts/
+*.out.txt
+*.post.txt
+*.round2.txt
+*.final.txt
+last-run.json
+pacing-*.json
+stability-probe-*.json
+
+# Diagnostics that write into the tree
+tree-managed.txt
+tree-com.txt
+tree-*.htm
+_live-out.txt
+*.tmp
+
+# Caches written by the tooling
+.cache-baseline-schema.json
+
+# Never in the repo
+node_modules/
