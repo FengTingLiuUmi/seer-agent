@@ -1,0 +1,1 @@
+{"desc": "{0}回合内使用技能恢复{1}点体力，体力低于1/{2}时恢复至满", "desc_tag": null, "hash": "edd2b3ba", "icon": [31], "id": 133, "tag": "恢复", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

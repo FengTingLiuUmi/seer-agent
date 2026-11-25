@@ -1,0 +1,154 @@
+{
+ "doc_id": "命运玛酷索#地狱",
+ "factor": "命运玛酷索",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4748,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "机械",
+   "boss_hp": 12000,
+   "traits": "必先; 免疫瞬杀; 封属; 每回合300固伤; 减伤16.7%; 消强; 100%闪避(非必中miss); 有吃月亮技能",
+   "mech": [
+    "dodge",
+    "heal",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "漆黑套典韦/金吉娜150秒杀 / 帝皇之御自爆+强攻手"
+   ],
+   "pets": [
+    "典韦",
+    "金吉娜",
+    "帝皇之御"
+   ],
+   "why": "致命机制是封属＋100%闪避＋吃月亮：封属封死属性技能，增伤/必先/必暴只能走攻击技能（守御八方不被封）；100%闪避属高闪避，用必暴（伪必中）即可覆盖，不必求必中；吃月亮靠抢在回血前速杀规避。典韦/金吉娜150秒杀自带先制爆发，帝皇之御自爆守御八方再给后续强攻手必先必暴，一轮秒掉并躲开消强与300固伤的站场损耗。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4746,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "战斗",
+   "boss_hp": 12000,
+   "traits": "必先; 免疫瞬杀; 封属; 每回合300固伤; 减伤16.7%; 消强; 免疫物攻",
+   "mech": [
+    "immunePhysical",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "漆黑套魔钰150秒杀(特攻) / 纳西斯150特攻强攻 / 帝皇之御自爆+强攻手"
+   ],
+   "pets": [
+    "魔钰",
+    "纳西斯",
+    "帝皇之御"
+   ],
+   "why": "致命机制是免疫物攻＋封属：物攻红伤为0，必须换特攻强攻手，故魔钰/纳西斯150（特攻）秒杀。封属下帝皇之御自爆守御八方是攻击技能、不受影响，给特攻手必先必暴后一发带走，同时绕开消强与300固伤。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4749,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "机械战斗",
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 减伤16.7%; 每回合500固伤; 消强; 每回合全属性+1",
+   "mech": [
+    "selfBuff",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "漆黑套典韦150秒杀 / 耀世神话加尔鲁特150与先3轮流站场"
+   ],
+   "pets": [
+    "典韦",
+    "加尔鲁特"
+   ],
+   "why": "致命机制是每回合全属性+1（越打越强）＋500固伤＋封属，需抢在滚雪球前解决。典韦150秒杀走速杀路线；耀世神话加尔鲁特用150与先3轮流站场应对持续增伤，两条路线都靠攻击技能绕开封属。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 3577,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "光战斗",
+   "boss_hp": 15000,
+   "traits": "封属; 减伤33.3%; 每回合500固伤; 消强; 偷强; 受到暴击回满血; 50%主动害怕控场; 强化技能全属性+1且下两回合伤害翻倍必先",
+   "mech": [
+    "heal",
+    "selfBuff",
+    "clearBuff",
+    "stealBuff",
+    "control",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "送火潘+帝皇之御自爆+星光·魔焰猩猩第五上封回血buff+沉睡之眼第五强攻"
+   ],
+   "pets": [
+    "潘克多斯",
+    "帝皇之御",
+    "星光·魔焰猩猩",
+    "沉睡之眼"
+   ],
+   "why": "致命机制是「受到暴击回满血」＋50%害怕控场＋偷强/消强：直接暴击会白送Boss回血，所以先用星光·魔焰猩猩第五挂封回血（禁疗）再上沉睡之眼第五强攻。火潘铺垫增伤，帝皇之御自爆守御八方（攻击技能、不受封属）给必先必暴，必先同时避开主动害怕控场；封回血后暴击强攻不再触发回满血，偷强/消强也不影响靠自爆状态输出。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4753,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "飞行超能",
+   "boss_hp": 20000,
+   "traits": "必先; 封属; 减伤33.3%左右; 每回合500固伤; 消强; 偷强; 免疫威力大于100的技能",
+   "mech": [
+    "immunePower",
+    "clearBuff",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "帝皇之御自爆+送蒂朵+极寒魔兽先3，未打死奥斯卡先3补刀"
+   ],
+   "pets": [
+    "帝皇之御",
+    "蒂朵",
+    "极寒魔兽",
+    "奥斯卡"
+   ],
+   "why": "致命机制是「免疫威力>100」＋封属＋偷强：只能用威力≤100的攻击技能打红伤，故极寒魔兽先3（低威力）主攻、未打死奥斯卡先3补刀。帝皇之御自爆守御八方给必先必暴拉满命中与先手，送蒂朵补一轮增伤，全程走攻击技能绕开封属，靠低威力技能绕过威力上限而非依赖强化。"
+  }
+ ]
+}

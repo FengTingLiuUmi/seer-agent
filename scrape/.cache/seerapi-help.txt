@@ -1,0 +1,32 @@
+Usage: seerapi [OPTIONS] [COMMAND] [ARGS]...
+
+  SeerAPI command-line client.
+
+Options:
+  --hostname TEXT      API hostname.  [default: api.seerapi.com]
+  --scheme TEXT        API URL scheme.  [default: https]
+  --version-path TEXT  API version path segment.  [default: v1]
+  --pretty             Pretty-print JSON output.
+  -V, --version        Show the version and exit.
+  -h, --help           Show this message and exit.
+
+Commands:
+  describe     Show JSON Schema and supported operations for a resource.
+  get          Get a single resource by ID.
+  get-by-name  Get resources by name (NamedModel resources only).
+  list         List resources with single-page pagination.
+  resources    List all available API resources.
+  skill        Show and install the bundled agent skill.
+Usage: seerapi list [OPTIONS] RESOURCE
+
+  List resources with single-page pagination.
+
+Options:
+  --name TEXT             Search by name substring (named resources only).
+  --offset INTEGER        [default: 0]
+  --limit INTEGER         [default: 20]
+  --expand / --no-expand  Return full resource objects in list results.
+                          [default: expand]
+  --fields TEXT           Comma-separated fields to include for each result
+                          item.
+  -h, --help              Show this message and exit.

@@ -1,0 +1,1 @@
+{"desc": "体力低于{0}时每回合恢复{1}体力，每降低{2}恢复量提升{3}", "desc_tag": null, "hash": "bdb8fc8d", "icon": [31], "id": 2091, "tag": "恢复", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,1 @@
+{"desc": "{0}方的体力降至{1}以下时，每次攻击有{2}%的概率致命一击", "desc_tag": null, "hash": "f85ac523", "icon": [36], "id": 2010, "tag": "致命一击", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

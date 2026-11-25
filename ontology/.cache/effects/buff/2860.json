@@ -1,0 +1,1 @@
+{"desc": "每回合恢复50点体力，己方每有一只精灵存活则额外恢复50点体力", "desc_tag": null, "hash": "e8855055", "icon": [31], "id": 2860, "tag": "恢复", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

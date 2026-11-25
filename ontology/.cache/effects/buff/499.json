@@ -1,0 +1,1 @@
+{"desc": "对手下{0}次使用技能消耗的PP值为{1}倍", "desc_tag": null, "hash": "296a602d", "icon": [30], "id": 499, "tag": "减PP", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

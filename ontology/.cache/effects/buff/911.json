@@ -1,0 +1,1 @@
+{"desc": "{0}回合内自身使用{skilltypeC[1]}技能时使自身全属性+{2}", "desc_tag": "skilltypeC", "hash": "a91bff3c", "icon": [20], "id": 911, "tag": "强化", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

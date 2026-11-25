@@ -1,0 +1,1 @@
+{"desc": "{0}回合内若对手使用属性技能，则使用属性技能后的{roundnext[1]}造成的攻击伤害减少{2}点", "desc_tag": "roundnext", "hash": "867c6619", "icon": [41], "id": 551, "tag": "伤害降低", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

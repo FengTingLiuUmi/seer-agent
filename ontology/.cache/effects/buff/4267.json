@@ -1,0 +1,1 @@
+{"desc": "暴食：回合开始时增加自身{0}%的体力上限；每回合结束恢复自身已损失体力值的{1}%", "desc_tag": null, "hash": "6b1f90cb", "icon": [21], "id": 4267, "tag": "暴食", "type": {"id": 1, "url": "https://api.seerapi.com/v1/buff_type/1"}}

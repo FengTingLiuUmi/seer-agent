@@ -1,0 +1,1 @@
+{"desc": "{0}回合内若自身能力提升状态被消除或吸取则{1}%使对手{abst[2]}{3}回合", "desc_tag": "abst", "hash": "1b1b9c62", "icon": [14], "id": 118, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,1 @@
+{"desc": "{0}回合内每回合使用技能额外{1}%令对手{abst[2]}，未触发则恢复自身最大体力的1/{3}", "desc_tag": "abst", "hash": "8a4f60ba", "icon": [14], "id": 891, "tag": "施加异常|恢复", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

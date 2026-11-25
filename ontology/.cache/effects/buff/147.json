@@ -1,0 +1,1 @@
+{"desc": "{0}回合内，每回合随机恢复{1}-{2}点体力", "desc_tag": null, "hash": "c2a0830b", "icon": [31], "id": 147, "tag": "恢复", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

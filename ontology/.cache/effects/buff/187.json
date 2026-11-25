@@ -1,0 +1,1 @@
+{"desc": "{0}回合内若造成伤害大于{1}则{2}%概率使对手{abst[3]}", "desc_tag": "abst", "hash": "d8fe34bd", "icon": [14], "id": 187, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

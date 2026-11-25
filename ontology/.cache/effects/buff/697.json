@@ -1,0 +1,1 @@
+{"desc": "{0}回合内使用技能吸取对手{1}点体力，自身体力低于1/{2}时效果翻倍", "desc_tag": null, "hash": "8ca5b319", "icon": [7], "id": 697, "tag": "吸血", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

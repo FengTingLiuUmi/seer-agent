@@ -1,0 +1,1 @@
+{"desc": "{0}回合内{1}%令对手{abst[2]}，未触发则削减对手{3}点体力上限", "desc_tag": "abst", "hash": "accfcc5c", "icon": [14], "id": 501, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

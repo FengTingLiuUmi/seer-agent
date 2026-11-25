@@ -1,0 +1,47 @@
+{
+  "factor": "坦普瑞",
+  "difficulty": "地狱",
+  "source": "https://www.bilibili.com/video/BV1RZyGBTEhx/ ; https://bbs.tiepi.top/archiver/?tid-3289.html",
+  "stages": [
+    {
+      "stage": 1,
+      "boss_type": "地面机械",
+      "boss_hp": 6000,
+      "traits": "先制+3；免疫物攻；消强",
+      "strategy": "流荧·雪 150特攻强攻秒杀",
+      "pets": ["流荧·雪"]
+    },
+    {
+      "stage": 2,
+      "boss_type": "光超能",
+      "boss_hp": 8000,
+      "traits": "先制+3；免疫特攻；互换战斗属性；消强",
+      "strategy": "属性互换后用原被克制精灵反打(布布先手消强+150) / 迹自爆接喵佐150强攻",
+      "pets": ["布布", "迹", "飒雷孤影·喵佐"]
+    },
+    {
+      "stage": 3,
+      "boss_type": "暗影邪灵",
+      "boss_hp": 10000,
+      "traits": "必先；封属；50%害怕控；断回合；消强",
+      "strategy": "圣灵谱尼 落芳天华消强后神灵救世光循环 / 魔钰150强攻",
+      "pets": ["圣灵谱尼", "魔钰"]
+    },
+    {
+      "stage": 4,
+      "boss_type": "混沌飞行",
+      "boss_hp": 12000,
+      "traits": "必先；封属；反弹克制伤害100%；清PP；消强",
+      "strategy": "魔钰(压血)150强攻 / 雷伊160强攻",
+      "pets": ["魔钰", "雷伊"]
+    },
+    {
+      "stage": 5,
+      "boss_type": "虫",
+      "boss_hp": 14000,
+      "traits": "必先；封属；反转强化；免疫威力≤100技能；免疫粉伤",
+      "strategy": "月照星魂(压血) 月下华尔兹150强攻",
+      "pets": ["月照星魂"]
+    }
+  ]
+}

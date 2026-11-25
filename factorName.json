@@ -1,0 +1,10 @@
+﻿seerapi : {"error":"Client error '404 Not Found' for url 'https://api.seerapi.com/v1/factor/%E7%A0%B4%E4%B8%96%E4%B9%8B
+%E6%8B%B3%C2%B7%E7%89%B9%E7%BD%97%E6%96%AF'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/H
+TTP/Status/404","status":404,"url":"https://api.seerapi.com/v1/factor/%E7%A0%B4%E4%B8%96%E4%B9%8B%E6%8B%B3%C2%B7%E7%89%
+B9%E7%BD%97%E6%96%AF"}
+所在位置 行:1 字符: 129
++ ... ing]::new($false); seerapi get-by-name factor "破世之拳·特罗斯" 2>&1 | Out-F ...
++                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ({"error":"Clien...D%97%E6%96%AF"}:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

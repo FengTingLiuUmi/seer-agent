@@ -1,0 +1,202 @@
+@prefix seer: <http://example.org/seer#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# =====================================================================
+# 赛尔号「游戏本体」—— 骨干 TBox（权威来源：SeerAPI 数据）
+# ABox 由 ingest.py 从 SeerAPI 批量生成，不在本文件手写实例。
+# 主键：所有实体用 seer:seerapiId 与 SeerAPI 资源 id 对齐。
+# 本命名空间只描述「游戏是什么」；「怎么打」在 seer-pve.ttl（上层）。
+# =====================================================================
+
+<http://example.org/seer> a owl:Ontology ;
+    rdfs:label "赛尔号游戏本体"@zh ;
+    rdfs:comment "赛尔号 PVE 相关的游戏实体与关系（精灵/技能/魂印/属性克制/因子/装备/称号/套装…）。ABox 由 SeerAPI 生成。"@zh .
+
+# ---------------------------------------------------------------------
+# 类（PVE 子集 + 称号/套装）
+# ---------------------------------------------------------------------
+seer:Pet             a owl:Class ; rdfs:label "精灵"@zh .
+seer:PetClass        a owl:Class ; rdfs:label "精灵分类"@zh .
+seer:PetAdvance      a owl:Class ; rdfs:label "精灵进化/升阶"@zh .
+seer:PetEffect       a owl:Class ; rdfs:label "精灵特性效果"@zh .
+seer:Skill           a owl:Class ; rdfs:label "技能"@zh .
+seer:SkillEffectType a owl:Class ; rdfs:label "技能效果类型（先制/固伤/回血/反弹/增伤…）"@zh .
+seer:Soulmark        a owl:Class ; rdfs:label "魂印"@zh .
+seer:SoulmarkTag     a owl:Class ; rdfs:label "魂印标签"@zh .
+seer:ElementType     a owl:Class ; rdfs:label "单属性"@zh .
+seer:TypeCombination a owl:Class ; rdfs:label "属性组合"@zh .
+seer:Factor          a owl:Class ; rdfs:label "精灵因子"@zh .
+seer:FactorStage     a owl:Class ; rdfs:label "因子关卡"@zh .
+seer:Buff            a owl:Class ; rdfs:label "状态/增益"@zh .
+seer:BuffType        a owl:Class ; rdfs:label "状态类型"@zh .
+seer:BattleEffect    a owl:Class ; rdfs:label "战斗效果"@zh .
+seer:FieldEffect     a owl:Class ; rdfs:label "场地效果"@zh .
+seer:Item            a owl:Class ; rdfs:label "道具"@zh .
+seer:Equip           a owl:Class ; rdfs:label "装备"@zh ; rdfs:comment "伞类：玩家装备部件(seer:PlayerEquip)归属此支；精灵刻印不在装备支（见 seer:Mintmark）。"@zh .
+seer:Gem             a owl:Class ; rdfs:label "宝石"@zh .
+seer:EnergyBead      a owl:Class ; rdfs:label "能量珠"@zh .
+seer:Nature          a owl:Class ; rdfs:label "性格"@zh .
+seer:Mintmark        a owl:Class ; rdfs:label "刻印"@zh .
+seer:Title           a owl:Class ; rdfs:label "称号"@zh .
+seer:Suit            a owl:Class ; rdfs:label "套装"@zh .
+seer:SuitBonus       a owl:Class ; rdfs:label "套装加成"@zh ; rdfs:subClassOf seer:GearBonus .
+# --- 玩家装备（2026-11-24）：概念拆分 玩家装备 ≠ 精灵刻印 ---
+# 玩家装备 = 套装 Suit + 部件 PlayerEquip；精灵装备 = 刻印 Mintmark（已有类，不在本支）。
+seer:PlayerEquip     a owl:Class ; rdfs:label "玩家装备部件"@zh ; rdfs:subClassOf seer:Equip ;
+    rdfs:comment "玩家（赛尔）穿的装备部件，部位见 seer:EquipPart；数据源 SeerAPI equip 详情接口。"@zh .
+seer:GearBonus       a owl:Class ; rdfs:label "装备加成（抽象）"@zh ;
+    rdfs:comment "套装加成 seer:SuitBonus 与部件加成 seer:EquipBonus 的公共父类。"@zh .
+seer:EquipBonus      a owl:Class ; rdfs:label "部件加成"@zh ; rdfs:subClassOf seer:GearBonus ;
+    rdfs:comment "单个部件的 bonus；仅在 desc/六维/命中闪避暴击/eid_effect 任一非空时建个体（空壳不建）。"@zh .
+seer:EquipPart       a owl:Class ; rdfs:label "装备部位"@zh ;
+    rdfs:comment "SeerAPI equip_type 枚举：0头部 1眼部 2腰部 3手部 4足部 5背景 6坐骑。"@zh .
+seer:EquipOccasion   a owl:Class ; rdfs:label "部件生效场合"@zh ;
+    rdfs:comment "SeerAPI equip_effective_occasion：0全部战斗有效 1仅赛尔间对战有效 2仅对Boss有效。"@zh .
+seer:Sailor          a owl:Class ; rdfs:label "赛尔（玩家角色）"@zh ; rdfs:comment "自建聚合实体：SeerAPI 无玩家资源；套装/称号/火 的承载者"@zh .
+seer:Fire            a owl:Class ; rdfs:label "火焰（绿火/金火，全局增益）"@zh ; rdfs:comment "自建：SeerAPI 无 fire 资源"@zh .
+
+# ---------------------------------------------------------------------
+# 对象属性（关系）—— 都是 SeerAPI 里可观测的跨引用
+# ---------------------------------------------------------------------
+seer:hasSkill         a owl:ObjectProperty ; rdfs:domain seer:Pet ; rdfs:range seer:Skill ; rdfs:label "拥有技能"@zh .
+seer:hasSoulmark      a owl:ObjectProperty ; rdfs:domain seer:Pet ; rdfs:range seer:Soulmark ; rdfs:label "拥有魂印"@zh .
+seer:hasPetClass      a owl:ObjectProperty ; rdfs:domain seer:Pet ; rdfs:range seer:PetClass ; rdfs:label "属分类"@zh .
+seer:hasPetEffect     a owl:ObjectProperty ; rdfs:domain seer:Pet ; rdfs:range seer:PetEffect ; rdfs:label "具特性"@zh .
+seer:hasAdvance       a owl:ObjectProperty ; rdfs:domain seer:Pet ; rdfs:range seer:PetAdvance ; rdfs:label "可进化"@zh .
+seer:hasTypeCombination a owl:ObjectProperty ; rdfs:domain seer:Pet ; rdfs:range seer:TypeCombination ; rdfs:label "属性组合"@zh .
+seer:combinationOf    a owl:ObjectProperty ; rdfs:domain seer:TypeCombination ; rdfs:range seer:ElementType ; rdfs:label "组合含属性"@zh .
+seer:counters         a owl:ObjectProperty ; rdfs:domain seer:ElementType ; rdfs:range seer:ElementType ; rdfs:label "克制(2x)"@zh .
+seer:resisted         a owl:ObjectProperty ; rdfs:domain seer:ElementType ; rdfs:range seer:ElementType ; rdfs:label "微弱/被克(0.5x)"@zh .
+seer:immune           a owl:ObjectProperty ; rdfs:domain seer:ElementType ; rdfs:range seer:ElementType ; rdfs:label "无效(0x)"@zh .
+
+# 克制关系重化：精确倍率(multiple)承载在关系个体上，用于伤害核损
+seer:TypeRelation a owl:Class ; rdfs:label "克制关系（承载精确倍率）"@zh .
+seer:attacker  a owl:ObjectProperty ; rdfs:domain seer:TypeRelation ; rdfs:range seer:ElementType ; rdfs:label "攻击方属性"@zh .
+seer:target    a owl:ObjectProperty ; rdfs:domain seer:TypeRelation ; rdfs:range seer:ElementType ; rdfs:label "守方属性"@zh .
+seer:multiple  a owl:DatatypeProperty ; rdfs:domain seer:TypeRelation ; rdfs:range xsd:decimal ; rdfs:label "克制倍率(精确)"@zh .
+seer:skillEffectType  a owl:ObjectProperty ; rdfs:domain seer:Skill ; rdfs:range seer:SkillEffectType ; rdfs:label "生效类型"@zh .
+seer:soulmarkTag      a owl:ObjectProperty ; rdfs:domain seer:Soulmark ; rdfs:range seer:SoulmarkTag ; rdfs:label "魂印标签"@zh .
+seer:buffType         a owl:ObjectProperty ; rdfs:domain seer:Buff ; rdfs:range seer:BuffType ; rdfs:label "状态类型"@zh .
+seer:hasBattleEffect  a owl:ObjectProperty ; rdfs:range seer:BattleEffect ; rdfs:label "施加战斗效果"@zh .
+seer:hasFieldEffect   a owl:ObjectProperty ; rdfs:range seer:FieldEffect ; rdfs:label "施加场地效果"@zh .
+seer:appearsInFactor  a owl:ObjectProperty ; rdfs:domain seer:Pet ; rdfs:range seer:Factor ; rdfs:label "产出/登场因子"@zh .
+seer:hasStage         a owl:ObjectProperty ; rdfs:domain seer:Factor ; rdfs:range seer:FactorStage ; rdfs:label "含关卡"@zh .
+seer:equips           a owl:ObjectProperty ; rdfs:domain seer:Pet ; rdfs:range seer:Equip ; rdfs:label "佩戴装备"@zh ;
+    owl:deprecated true ;
+    rdfs:comment "无数据源、保留待废：SeerAPI 的 pet 资源没有 equip 字段（已核 /v1/pet/{id} 全字段），本体中该关系实例数为 0。玩家装备由 seer:Sailor 承载（seer:wearsSuit / seer:belongsToSuit）；精灵侧装备应使用 seer:hasMintmark（刻印）。"@zh .
+seer:holdsItem        a owl:ObjectProperty ; rdfs:domain seer:Pet ; rdfs:range seer:Item ; rdfs:label "携带道具"@zh .
+seer:hasGem           a owl:ObjectProperty ; rdfs:domain seer:Pet ; rdfs:range seer:Gem ; rdfs:label "佩戴宝石"@zh .
+seer:hasEnergyBead    a owl:ObjectProperty ; rdfs:domain seer:Pet ; rdfs:range seer:EnergyBead ; rdfs:label "佩戴能量珠"@zh .
+seer:hasNature        a owl:ObjectProperty ; rdfs:domain seer:Pet ; rdfs:range seer:Nature ; rdfs:label "性格"@zh .
+seer:hasMintmark      a owl:ObjectProperty ; rdfs:domain seer:Pet ; rdfs:range seer:Mintmark ; rdfs:label "刻印"@zh .
+seer:hasTitle         a owl:ObjectProperty ; rdfs:domain seer:Sailor ; rdfs:range seer:Title ; rdfs:label "佩戴称号"@zh .
+seer:wearsSuit        a owl:ObjectProperty ; rdfs:domain seer:Sailor ; rdfs:range seer:Suit ; rdfs:label "穿戴套装"@zh .
+seer:hasFire          a owl:ObjectProperty ; rdfs:domain seer:Sailor ; rdfs:range seer:Fire ; rdfs:label "携带火焰"@zh .
+seer:suitBonus        a owl:ObjectProperty ; rdfs:domain seer:Suit ; rdfs:range seer:SuitBonus ; rdfs:label "套装加成"@zh .
+
+# ---------------------------------------------------------------------
+# 数据属性 —— 支撑「卡阈值/压血/爆攻」等推理的面板数值
+# ---------------------------------------------------------------------
+seer:seerapiId a owl:DatatypeProperty ; rdfs:range xsd:string ; rdfs:label "SeerAPI id（对齐主键）"@zh .
+seer:power     a owl:DatatypeProperty ; rdfs:domain seer:Skill ; rdfs:range xsd:integer ; rdfs:label "威力"@zh .
+seer:priority  a owl:DatatypeProperty ; rdfs:domain seer:Skill ; rdfs:range xsd:integer ; rdfs:label "先制值"@zh .
+seer:baseHp    a owl:DatatypeProperty ; rdfs:domain seer:Pet ; rdfs:range xsd:integer ; rdfs:label "体力种族"@zh .
+seer:baseAtk   a owl:DatatypeProperty ; rdfs:domain seer:Pet ; rdfs:range xsd:integer ; rdfs:label "物攻种族"@zh .
+seer:baseDef   a owl:DatatypeProperty ; rdfs:domain seer:Pet ; rdfs:range xsd:integer ; rdfs:label "物防种族"@zh .
+seer:baseSpAtk a owl:DatatypeProperty ; rdfs:domain seer:Pet ; rdfs:range xsd:integer ; rdfs:label "特攻种族"@zh .
+seer:baseSpDef a owl:DatatypeProperty ; rdfs:domain seer:Pet ; rdfs:range xsd:integer ; rdfs:label "特防种族"@zh .
+seer:baseSpd   a owl:DatatypeProperty ; rdfs:domain seer:Pet ; rdfs:range xsd:integer ; rdfs:label "速度种族"@zh .
+seer:total     a owl:DatatypeProperty ; rdfs:domain seer:Pet ; rdfs:range xsd:integer ; rdfs:label "种族值总和"@zh .
+
+# ---------------------------------------------------------------------
+# 加成/效果层 —— 刻印/称号/套装/装备/宝石/能量珠/性格 的“加成”如何表达
+# 说明：具体数值与结构由 ingest.py 按 SeerAPI 字段(attr_bonus/effect/attributes…)展开；
+#       这里先立“效果实例 + 关系 + 少量拍平字段”的骨架，避免把加成塞成一对数字。
+# ---------------------------------------------------------------------
+seer:EidEffect a owl:Class ; rdfs:label "效果实例（对应 SeerAPI eid_effect）"@zh .
+
+# 载体 → 效果实例（称号/套装/刻印/装备/宝石/能量珠/魂印 的 effect 字段都走这条）
+seer:grantsEffect a owl:ObjectProperty ; rdfs:range seer:EidEffect ; rdfs:label "赋予效果"@zh .
+
+# 称号：attr_bonus
+seer:attrBonus a owl:DatatypeProperty ; rdfs:domain seer:Title ; rdfs:label "属性加成(attr_bonus)"@zh .
+
+# 刻印：base/extra/max_attr_value
+seer:baseAttrValue  a owl:DatatypeProperty ; rdfs:domain seer:Mintmark ; rdfs:label "基础属性值(base_attr_value)"@zh .
+seer:extraAttrValue a owl:DatatypeProperty ; rdfs:domain seer:Mintmark ; rdfs:label "额外属性值(extra_attr_value)"@zh .
+seer:maxAttrValue   a owl:DatatypeProperty ; rdfs:domain seer:Mintmark ; rdfs:label "属性上限值(max_attr_value)"@zh .
+
+# 装备：pk_attribute / speed / part_type
+seer:pkAttribute a owl:DatatypeProperty ; rdfs:domain seer:Equip ; rdfs:label "战斗属性(pk_attribute)"@zh ;
+    rdfs:comment "SeerAPI 原文：部件PK加成，战队保卫战等老玩法使用，三项皆为0时为 null。**不是 PVE 战斗属性**，PVE 数值在 seer:SuitBonus/seer:EquipBonus 的六维。"@zh .
+seer:equipSpeed  a owl:DatatypeProperty ; rdfs:domain seer:Equip ; rdfs:range xsd:decimal ;
+    rdfs:label "移动速度(speed)"@zh ;
+    rdfs:comment "SeerAPI 原文：部件速度移动加成，一般只有脚部部件提供。是**玩家跑图移动速度**，不是精灵面板速度。"@zh .
+seer:partType    a owl:DatatypeProperty ; rdfs:domain seer:Equip ; rdfs:range xsd:integer ; rdfs:label "部位(part_type)"@zh ;
+    rdfs:comment "原始枚举值 0..6（出处 SeerAPI equip.part_type.id）；语义化对象见 seer:hasPart。"@zh .
+# 装备：pk_attribute 结构化（与 JSON 字面量并存）
+seer:pkHp        a owl:DatatypeProperty ; rdfs:domain seer:Equip ; rdfs:range xsd:integer ; rdfs:label "PK血量加成(pk_hp)"@zh .
+seer:pkAtk       a owl:DatatypeProperty ; rdfs:domain seer:Equip ; rdfs:range xsd:integer ; rdfs:label "PK攻击加成(pk_atk)"@zh .
+seer:pkFireRange a owl:DatatypeProperty ; rdfs:domain seer:Equip ; rdfs:range xsd:integer ; rdfs:label "PK射击范围(pk_fire_range)"@zh .
+seer:itemRef     a owl:DatatypeProperty ; rdfs:range xsd:string ; rdfs:label "对应道具id(equip.item.id)"@zh ;
+    rdfs:comment "只存 id 指针：Item ABox 尚未入库（/v1/item 共 12802 条，不在本轮范围），不造假个体。"@zh .
+
+# 能量珠：use_times
+seer:useTimes a owl:DatatypeProperty ; rdfs:domain seer:EnergyBead ; rdfs:range xsd:integer ; rdfs:label "使用次数(use_times)"@zh .
+
+# 性格：attributes
+seer:attributes a owl:DatatypeProperty ; rdfs:domain seer:Nature ; rdfs:label "属性修正(attributes)"@zh .
+
+# 套装 → 装备（suit.equips）
+seer:suitEquips a owl:ObjectProperty ; rdfs:domain seer:Suit ; rdfs:range seer:Equip ; rdfs:label "套装含装备(equips)"@zh .
+
+# ---------------------------------------------------------------------
+# 玩家装备 / 套装（2026-11-24 新增，全部只增不删）
+# 数据源：/v1/suit/{id}、/v1/equip/{id}、/v1/equip_type/{id}、/v1/equip_effective_occasion/{id}
+# ---------------------------------------------------------------------
+seer:belongsToSuit  a owl:ObjectProperty ; rdfs:domain seer:PlayerEquip ; rdfs:range seer:Suit ; rdfs:label "部件属套装(equip.suit)"@zh .
+seer:hasPart        a owl:ObjectProperty ; rdfs:domain seer:PlayerEquip ; rdfs:range seer:EquipPart ; rdfs:label "部件部位(part_type)"@zh .
+seer:hasOccasion    a owl:ObjectProperty ; rdfs:domain seer:PlayerEquip ; rdfs:range seer:EquipOccasion ; rdfs:label "生效场合(occasion)"@zh .
+seer:equipBonus     a owl:ObjectProperty ; rdfs:domain seer:PlayerEquip ; rdfs:range seer:EquipBonus ; rdfs:label "部件加成(equip.bonus)"@zh .
+seer:bonusEffect    a owl:ObjectProperty ; rdfs:domain seer:GearBonus ; rdfs:range seer:EidEffect ; rdfs:label "加成效果(bonus.eid_effect)"@zh .
+seer:effectiveForPet a owl:ObjectProperty ; rdfs:domain seer:GearBonus ; rdfs:range seer:Pet ; rdfs:label "仅对这些精灵生效(effective_pets)"@zh .
+
+# 加成数值（六维来自 SeerAPI SixAttributes；percent=true 时数值是百分比）
+seer:bonusDesc     a owl:DatatypeProperty ; rdfs:domain seer:GearBonus ; rdfs:label "加成描述(bonus.desc)"@zh ;
+    rdfs:comment "接口原文，逐年累月由官方维护；结构性字段表达不了的语义只在这条里，逐字保留、不改写。"@zh .
+seer:bonusAtk      a owl:DatatypeProperty ; rdfs:domain seer:GearBonus ; rdfs:range xsd:decimal ; rdfs:label "加成攻击"@zh .
+seer:bonusDef      a owl:DatatypeProperty ; rdfs:domain seer:GearBonus ; rdfs:range xsd:decimal ; rdfs:label "加成防御"@zh .
+seer:bonusSpAtk    a owl:DatatypeProperty ; rdfs:domain seer:GearBonus ; rdfs:range xsd:decimal ; rdfs:label "加成特攻"@zh .
+seer:bonusSpDef    a owl:DatatypeProperty ; rdfs:domain seer:GearBonus ; rdfs:range xsd:decimal ; rdfs:label "加成特防"@zh .
+seer:bonusSpd      a owl:DatatypeProperty ; rdfs:domain seer:GearBonus ; rdfs:range xsd:decimal ; rdfs:label "加成速度"@zh .
+seer:bonusHp       a owl:DatatypeProperty ; rdfs:domain seer:GearBonus ; rdfs:range xsd:decimal ; rdfs:label "加成体力"@zh .
+seer:bonusPercent  a owl:DatatypeProperty ; rdfs:domain seer:GearBonus ; rdfs:range xsd:boolean ; rdfs:label "加成是百分比(percent)"@zh .
+seer:bonusTotal    a owl:DatatypeProperty ; rdfs:domain seer:GearBonus ; rdfs:range xsd:decimal ; rdfs:label "加成合计(total)"@zh ;
+    rdfs:comment "接口实测存在、官方 schema 未声明（observed, not in schema）。"@zh .
+seer:otherHitRate  a owl:DatatypeProperty ; rdfs:domain seer:EquipBonus ; rdfs:range xsd:integer ; rdfs:label "命中加成(hit_rate)"@zh .
+seer:otherDodgeRate a owl:DatatypeProperty ; rdfs:domain seer:EquipBonus ; rdfs:range xsd:integer ; rdfs:label "闪避加成(dodge_rate)"@zh .
+seer:otherCritRate a owl:DatatypeProperty ; rdfs:domain seer:EquipBonus ; rdfs:range xsd:integer ; rdfs:label "暴击加成(crit_rate)"@zh .
+seer:eidArgs       a owl:DatatypeProperty ; rdfs:domain seer:GearBonus ; rdfs:label "效果参数(eid_effect.effect_args JSON)"@zh ;
+    rdfs:comment "不复用 seer:effectArgs（其 domain 是 SkillEffect，跨 domain 会触发 HermiT 不一致）。"@zh .
+seer:effectivePetId a owl:DatatypeProperty ; rdfs:range xsd:string ; rdfs:label "专属生效精灵id原始值(effective_pets)"@zh ;
+    rdfs:comment "原样保留接口 id 列表；其中 1791/2931/2967/2986 不在 Pet ABox（750只）内，故不建悬空对象属性。"@zh .
+seer:transformSuit a owl:DatatypeProperty ; rdfs:domain seer:Suit ; rdfs:range xsd:boolean ; rdfs:label "套装可变形(transform)"@zh .
+seer:tranSpeed     a owl:DatatypeProperty ; rdfs:domain seer:Suit ; rdfs:range xsd:decimal ; rdfs:label "变形速度(tran_speed)"@zh .
+seer:sourceUrl     a owl:DatatypeProperty ; rdfs:range xsd:string ; rdfs:label "数据来源URL"@zh ;
+    rdfs:comment "逐个体记录 SeerAPI 详情接口 URL，保证每个数值可回溯出处。"@zh .
+
+# ---------------------------------------------------------------------
+# 技能效果子层 + 技能属性/本系 + 魂印PVE有效（2026-11-22 用户要求）
+# 伤害克制攻方按「技能 type」，非精灵 type；本系(技能属性与精灵属性同元素)另有加成。
+# ---------------------------------------------------------------------
+seer:SkillEffect a owl:Class ; rdfs:label "技能效果实例"@zh .
+seer:hasSkillEffect a owl:ObjectProperty ; rdfs:domain seer:Skill ; rdfs:range seer:SkillEffect ; rdfs:label "含效果"@zh .
+seer:effectTypeOf a owl:ObjectProperty ; rdfs:domain seer:SkillEffect ; rdfs:range seer:SkillEffectType ; rdfs:label "效果类型"@zh .
+seer:effectArgs a owl:DatatypeProperty ; rdfs:domain seer:SkillEffect ; rdfs:label "效果参数(args JSON)"@zh .
+seer:effectInfo a owl:DatatypeProperty ; rdfs:domain seer:SkillEffect ; rdfs:label "效果描述"@zh .
+seer:bossEffective a owl:DatatypeProperty ; rdfs:domain seer:SkillEffect ; rdfs:range xsd:boolean ; rdfs:label "对boss是否有效"@zh .
+seer:skillType a owl:ObjectProperty ; rdfs:domain seer:Skill ; rdfs:range seer:TypeCombination ; rdfs:label "技能属性(攻击方克制按此)"@zh .
+seer:pveEffective a owl:DatatypeProperty ; rdfs:domain seer:Soulmark ; rdfs:range xsd:boolean ; rdfs:label "PVE是否有效"@zh .

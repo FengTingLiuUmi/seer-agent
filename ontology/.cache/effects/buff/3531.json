@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若自身处于能力提升状态则当回合攻击技能造成的伤害提升50%", "desc_tag": null, "hash": "1d99da8e", "icon": [], "id": 3531, "tag": "增伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

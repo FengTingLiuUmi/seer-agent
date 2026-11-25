@@ -1,0 +1,1 @@
+{"desc": "登场后每回合由火灵和冰灵交替主导，触发不同的效果：\r\n火灵：受到的物理伤害减少50%\r\n冰灵：受到的特殊伤害减少50%", "desc_tag": null, "hash": "37885fa0", "icon": [29], "id": 3783, "tag": "减伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

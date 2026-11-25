@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若对手体力不为满则当回合自身造成的攻击伤害提升100%", "desc_tag": null, "hash": "35501841", "icon": [], "id": 4308, "tag": "增伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

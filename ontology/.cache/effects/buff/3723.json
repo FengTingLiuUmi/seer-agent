@@ -1,0 +1,1 @@
+{"desc": "战斗阶段结束时吸取对手300点体力，自身体力低于最大体力的1/3时恢复效果翻倍", "desc_tag": null, "hash": "8ab98132", "icon": [7], "id": 3723, "tag": "吸血", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,160 @@
+{
+ "doc_id": "万里春·北鸟#地狱",
+ "factor": "万里春·北鸟",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4534,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "次元",
+   "boss_hp": 12000,
+   "traits": "必先; 减伤16.7%; 300固伤; 交换属性(命中前与我方交换属性); 消强",
+   "mech": [
+    "clearBuff",
+    "firstStrike",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "银翼+送炮灰后月照150强攻 / 魔钰必先强攻",
+    "任意虫系送死+月照星魂强攻"
+   ],
+   "pets": [
+    "月照星魂",
+    "魔钰"
+   ],
+   "why": "Boss 必先且带交换属性、消强，直接站场会先被换属性又被清强化。攻略先送炮灰吃下「交换属性」，再让月照150或魔钰必先技直接红伤速杀，银翼抬强攻伤害；300固伤与减伤靠速战解决，不依赖自身强化。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4489,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "光暗影",
+   "boss_hp": 12000,
+   "traits": "必先; 减伤16.7%; 300固伤; 免疫并反弹暴击; 消强; 无视我方强化",
+   "mech": [
+    "reflection",
+    "clearBuff",
+    "firstStrike",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "漆黑+草王保邪灵主宰摩哥斯150循环强攻(带两只邪灵系备用)",
+    "人马仙三(盾体)"
+   ],
+   "pets": [
+    "邪灵主宰·摩哥斯",
+    "人马"
+   ],
+   "why": "Boss 免疫并反弹暴击，不能走表姐引爆/必暴流；同时消强且无视我方强化，也吃不到强化收益。攻略用草王保邪灵主宰·摩哥斯打无暴击的150循环红伤，靠属性克制直接磨血，备多只邪灵系防掉宠翻车。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4499,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "圣灵轮回",
+   "boss_hp": 15000,
+   "traits": "必先; 减伤16.7%; 500固伤; 全属性-1(每回合我方用技能则全属性-1); 清PP; 断回合",
+   "mech": [
+    "clearPP",
+    "debuff",
+    "breakTurn",
+    "firstStrike",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "耀世+H5金火+特防体村长(希可洛)站场循环",
+    "星礼(手打,盾体)"
+   ],
+   "pets": [
+    "希可洛",
+    "星礼"
+   ],
+   "why": "Boss 每回合用技能就全属性-1，还带清PP、断回合，强攻手容易被磨废。攻略换希可洛(村长)耀世+金火站场循环：金火顶住弱化与固伤、H5回血，村长卡裸伤靠站场慢慢磨，规避清PP与断回合对节奏的打断。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4511,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "冰暗影",
+   "boss_hp": 18000,
+   "traits": "必先; 减伤33.3%; 500固伤; 免疫粉伤; 50%高级冰封; 全属性-1; 消强",
+   "mech": [
+    "debuff",
+    "clearBuff",
+    "control",
+    "firstStrike",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "耀世+物防谱尼(圣灵谱尼)消强后一直第五站场",
+    "帝皇之御+重生之翼+喵佐+张飞+特罗斯+艾莫(全压血)"
+   ],
+   "pets": [
+    "圣灵谱尼",
+    "帝皇之御",
+    "重生之翼",
+    "喵佐",
+    "张飞",
+    "特罗斯",
+    "艾莫"
+   ],
+   "why": "Boss 免疫粉伤只能靠红伤，50%高级冰封控场与全属性-1、消强会压垮一般强攻手。攻略用物防圣灵谱尼先消强暖机再持续第五站场，靠谱尼免疫异常抗冰封并用红伤磨死 Boss。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4553,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "飞行光",
+   "boss_hp": 20000,
+   "traits": "封属; 必先; 减伤33.3%; 500固伤; 复制强化; 两命(复活后全属性+6); 免疫粉伤; 觉醒特性",
+   "mech": [
+    "twoLife",
+    "selfBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "耀世+特防草潘(加尔鲁特)先3+150 / 千裳单挑(先3循环) / 表姐自爆后艾欧自然石强攻",
+    "帝皇之御+蒂朵+鲁肃+伊芙丽+艾欧丽娅(自然石)"
+   ],
+   "pets": [
+    "加尔鲁特",
+    "千裳",
+    "帝皇之御",
+    "艾欧丽娅",
+    "蒂朵",
+    "鲁肃",
+    "伊芙丽"
+   ],
+   "why": "Boss 封属、必先且复制强化并免疫粉伤，又是两命(复活全属性+6)，干扰极重。草潘/千裳站场磨，避靠强化吃红伤；表姐自爆的守御八方是攻击技、不受封属，给艾欧必先+必暴再以自然石红伤强攻，趁复活间隙补刀过两命。"
+  }
+ ],
+ "tids": [
+  2586,
+  937,
+  2181
+ ],
+ "note": "无正文数据"
+}

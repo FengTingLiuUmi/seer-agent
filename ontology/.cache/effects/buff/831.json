@@ -1,0 +1,1 @@
+{"desc": "令对手下{0}回合无法主动切换精灵且先制效果失效", "desc_tag": null, "hash": "fd4b6560", "icon": [37], "id": 831, "tag": "切换限制|先制效果失效", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

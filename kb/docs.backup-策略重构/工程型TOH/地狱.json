@@ -1,0 +1,161 @@
+{
+ "doc_id": "工程型TOH#地狱",
+ "factor": "工程型TOH",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4123,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "电战斗",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 300固伤; 消强; 闪避100%; 强化技能4回合百分比月亮; 大招对我方强化翻倍",
+   "mech": [
+    "dodge",
+    "heal",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "蒂朵+星光·鲁斯王克制补刀 / 帝皇之御自爆+高倍克制强攻 / 圣谱·辰坤星魂站场"
+   ],
+   "pets": [
+    "蒂朵",
+    "星光·鲁斯王",
+    "帝皇之御",
+    "圣灵谱尼",
+    "辰坤星魂",
+    "圣光莫妮卡"
+   ],
+   "why": "这关 Boss 有 100% 闪避且闪避被必暴覆盖即可命中，必暴不需必中；同时持续封属+消强，强化月亮(百分比回血)和大招吃我方强化翻倍都会反噬堆强化流。因此首选帝皇之御守御八方自爆，给后手高倍克制强攻附必先+必暴，速杀且不吃自身强化，最稳。蒂朵+星光·鲁斯王的克制补刀、圣谱·辰坤星魂的站场则是无自爆时的替代。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4734,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "草",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 300固伤; 消强; 减伤50%（我方为天敌翻倍）; 大招消回合",
+   "mech": [
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "嘲风+补刀 / 加尔鲁特·暴君史莱姆强攻 / 圣谱粉伤磨死 / 草王保送强攻"
+   ],
+   "pets": [
+    "嘲风",
+    "加尔鲁特",
+    "暴君史莱姆",
+    "圣灵谱尼",
+    "星光·丽莎布布"
+   ],
+   "why": "Boss 减伤 50% 且我方为天敌时减伤再翻倍，天敌强攻收益被大幅压低；粉伤与固伤不受减伤限制，更适合磨。故走圣谱粉伤磨死、加尔鲁特(草潘)站场叠毒磨更稳；草王保送强攻虽能硬灌但因天敌被翻倍减伤有风险。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4834,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "机械",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 500固伤; 消强; 受击疲惫; 强化技能回血（半血以下回满）; 大招3回合减伤300",
+   "mech": [
+    "heal",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "典韦150强攻 / 金吉娜·西斯里·夏厄普强攻 / 千裳·闪光皮神·阿尔法熊站场"
+   ],
+   "pets": [
+    "典韦",
+    "金吉娜",
+    "西斯里",
+    "夏厄普",
+    "千裳",
+    "闪光皮神",
+    "阿尔法熊"
+   ],
+   "why": "Boss 强化技能在自身半血以下会直接回满血，配合 500 固伤与受击疲惫控制，站场期间留血反而会被反复回血拖住；同时大招 3 回合减伤 300 压低硬伤害，粉伤/固伤更高。因此要一击清血：典韦 150、金吉娜、西斯里、夏厄普走一波强攻；千裳、闪光皮神、阿尔法熊靠免控减伤站场磨也可。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4184,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "机械次元",
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 500固伤; 吸强; 免疫物攻; 随机弱化3项-2",
+   "mech": [
+    "immunePhysical",
+    "debuff",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "炮灰送强+帝皇之御+天尊免弱+极寒魔兽先三 / 星光·鲁斯王克制弹伤 / 缥缈幽芙先三"
+   ],
+   "pets": [
+    "帝皇之御",
+    "星光·鲁斯王",
+    "星光·魔焰猩猩",
+    "极寒魔兽",
+    "缥缈幽芙"
+   ],
+   "why": "Boss 免疫物攻并吸强、随机弱化，物攻直接报废导致必须走特攻。吸强与随机弱化会使必暴/特攻强攻也无法靠自身强化维持，故攻略用帝皇之御自爆给必先+必暴盖过吸强，让极寒魔兽先三特攻在残血下无条件爆发，且天尊免弱化避开随机弱化；星光·鲁斯王的克制弹伤和缥缈幽芙先三是变招。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4932,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "机械",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 500固伤; 吸强; 免疫特攻; 随机弱化3项-2",
+   "mech": [
+    "immuneSpecial",
+    "debuff",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "斯克鲁恩(冰潘)+西塔伦+克罗+蒂朵+西斯里强攻 / 帝皇之御+蒂朵送死+冰潘送死+星光·魔焰猩猩第五+西斯里第五"
+   ],
+   "pets": [
+    "斯克鲁恩",
+    "西塔伦",
+    "克罗",
+    "蒂朵",
+    "西斯里",
+    "星光·魔焰猩猩",
+    "帝皇之御"
+   ],
+   "why": "Boss 免疫特攻并吸强、随机弱化，特攻报废且堆自身强化会被吸走，需靠外挂必先必暴+增伤链打物攻。故用冰潘、西塔伦、蒂朵铺垫增伤后接西斯里物攻强杀；另一路帝皇之御自爆给必先+必暴后，接星光·魔焰猩猩第五+西斯里第五连打。"
+  }
+ ]
+}

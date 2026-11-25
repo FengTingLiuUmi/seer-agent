@@ -1,0 +1,1 @@
+{"desc": "自身攻击技能有50%的概率使对手冻伤，攻击处于冻伤状态的对手时，造成的伤害翻倍", "desc_tag": null, "hash": "ceae5c87", "icon": [14], "id": 2059, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

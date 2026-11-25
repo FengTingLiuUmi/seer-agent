@@ -1,0 +1,1 @@
+{"desc": "回合开始时若自身处于异常状态，则当回合受到致死攻击时残留1点体力", "desc_tag": null, "hash": "492253eb", "icon": [24], "id": 3189, "tag": "免死", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

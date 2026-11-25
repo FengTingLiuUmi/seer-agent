@@ -1,0 +1,163 @@
+{
+ "doc_id": "织灵者·维伊#地狱",
+ "factor": "织灵者·维伊",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4536,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 300固伤; 只吃暴击; 消强; 减伤16.7%",
+   "mech": [
+    "onlyCrit",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "引爆加强攻 / 茉蕊儿保圣灵谱尼单挑 / 塞勒涅单挑",
+    "3表强攻（第三只盾体希可洛，奇镰解放绑特攻宝石）"
+   ],
+   "pets": [
+    "茉蕊儿",
+    "圣灵谱尼",
+    "塞勒涅",
+    "黄金龙鹰",
+    "时钟试炼官·耀",
+    "帝皇之御",
+    "希可洛",
+    "奇镰"
+   ],
+   "why": "硬门是「只吃暴击」+「封属」：非暴击打不出伤害，属性技又被封，所以核心是攻击型必暴——表姐守御八方/引爆手先挂全队必暴，再接强攻（必先+消强+300固伤决定了要尽快终结）。备选「茉蕊儿保圣灵谱尼」「塞勒涅单挑」是用保命型站场/自保单攻绕过封属、磨掉每回合固伤；三套方案的区别在速杀 vs 稳磨。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4557,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 300固伤; 只吃先制技能; 消强; 减伤16.7%",
+   "mech": [
+    "onlyFirstStrike",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "幻境界皇先三单挑 / 消强后茉蕊儿保眠降·玛缇娜单挑 / 四九圣尊单挑"
+   ],
+   "pets": [
+    "幻境界皇",
+    "眠降·玛缇娜",
+    "茉蕊儿",
+    "四九圣尊"
+   ],
+   "why": "硬门是「只吃先制技能」：不带先制的技能即使命中也几乎无伤，必须用先制攻击（先三）兑现伤害。幻境界皇、四九圣尊、眠降·玛缇娜都靠先三/先制主攻；茉蕊儿提供保命抗住必先+300固伤。封属+消强下属性保命技受限，故以攻击先制主攻为轴，三套差异只在谁是主攻核、谁负责保命。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4594,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 500固伤; 非必中技能必miss; 体力低于1000回满; 减伤16.7%",
+   "mech": [
+    "dodge",
+    "heal",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "希可洛单挑 / 卡莎单挑"
+   ],
+   "pets": [
+    "希可洛",
+    "卡莎"
+   ],
+   "why": "命中门槛特殊：Boss「非必中技能必 miss」，主攻必须用必中技能才能兑现伤害（不是高闪避那种必暴就能盖过去的情形，而是技能自身要必中）；同时500固伤+「体力低于1000回满」要求持续压血并在低血时补足斩杀，否则越磨越回。希可洛/卡莎都是自带必中主攻+站场自保的单挑解法。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4589,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 500固伤; 消强; 每回合全属性-1; 清PP; 减伤33.3%",
+   "mech": [
+    "clearPP",
+    "debuff",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "加尔鲁特保圣灵谱尼单挑 / 茉蕊儿+跳跳狮保伊芙莉莎单挑 / 引爆加强攻"
+   ],
+   "pets": [
+    "加尔鲁特",
+    "圣灵谱尼",
+    "茉蕊儿",
+    "跳跳狮",
+    "伊芙莉莎"
+   ],
+   "why": "组合难点是「消强+每回合全属性-1+清PP」：我方被持续弱化、强化保不住、PP被清，很难站场。所以攻略都走「保核」结构——加尔鲁特/茉蕊儿/跳跳狮给主攻(圣灵谱尼/伊芙莉莎)上护罩/免死，主攻扛着必先+500固伤在被持续弱化拖崩前打完；引爆加强攻则是靠必暴快杀绕开长期弱化。各方案差异在护盾/免死来源与主攻选择。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4597,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "圣灵超能",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 500固伤; 每回合全属性+1; 消强; 麻痹(100%); 减伤33.3%",
+   "mech": [
+    "selfBuff",
+    "clearBuff",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "潘克多斯+蒂朵+斯克鲁恩后魔钰/月照星魂/时空界皇强攻 / 霍夫曼第五强攻 / 茉蕊儿保引爆后月照星魂秒杀"
+   ],
+   "pets": [
+    "潘克多斯",
+    "斯克鲁恩",
+    "蒂朵",
+    "月照星魂",
+    "时空界皇",
+    "魔钰",
+    "霍夫曼",
+    "茉蕊儿"
+   ],
+   "why": "Boss 自行每回合全属性+1（越打越强）+100%麻痹控场+必先封属，拖不起。主流是增伤链速杀：潘克多斯(火潘)+蒂朵+斯克鲁恩叠增伤后，魔钰/月照星魂/时空界皇吃必暴/锁定强攻一波秒掉，不等 Boss 叠属性或麻痹到自己；100%麻痹要靠先手秒或免死/抗性化解。霍夫曼第五强攻、茉蕊儿保月照星魂都属同一速杀思路的不同强攻核/保命方式。"
+  }
+ ],
+ "tids": [
+  366,
+  367
+ ],
+ "note": "仅截图"
+}

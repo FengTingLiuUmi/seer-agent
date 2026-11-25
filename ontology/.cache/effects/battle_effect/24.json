@@ -1,0 +1,1 @@
+{"desc": "附属类异常状态，该状态下精灵每回合结束后受到最大体力1/8的百分比伤害", "hash": "29699cf1", "id": 24, "name": "烈焰诅咒", "resistance": {"id": 2, "url": "https://api.seerapi.com/v1/resistance_category/2"}, "type": [{"id": 2, "url": "https://api.seerapi.com/v1/battle_effect_type/2"}]}

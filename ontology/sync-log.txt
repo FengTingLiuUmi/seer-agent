@@ -1,0 +1,26 @@
+
+==> python "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer-factor-kb/ontology/ingest.py" --pve
+ingest: 常用 PVE 精灵库 9 只
+完成 -> C:\Users\kmdbn\Documents\deepseek-harness\default-workspace\seer-factor-kb\ontology\seer-pve-abox.ttl 
+三元组 = 727
+  Pet: 9
+  Skill: 93
+  Skill.skipped: 83
+  Soulmark: 10
+  TypeCombination: 6
+    exit = 0
+
+==> python "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer-factor-kb/ontology/export_owl.py"
+OK seer-game.ttl -> seer-game.owl  个体=0  三元组=233
+OK seer-pve.ttl -> seer-pve.owl  个体=5  三元组=93
+    exit = 0
+
+==> 合并 TBox + ABox -> seer-all.owl
+    + seer-game.ttl
+    + seer-pve.ttl
+    + seer-pve-alias.ttl
+    + seer-game-abox.ttl
+    + seer-pve-abox.ttl
+    NamedIndividual=134  总三元组=1222
+==> owlready2 + HermiT 一致性
+    推理跳过: Cannot download 'http://example.org/seer/'!

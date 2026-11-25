@@ -1,0 +1,1 @@
+{"desc": "{roundnext[0]}自身造成物理攻击伤害后{1}%使对手{abst[2]}", "desc_tag": "roundnext, abst", "hash": "9c437cc0", "icon": [14], "id": 558, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

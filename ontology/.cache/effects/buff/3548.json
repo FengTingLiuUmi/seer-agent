@@ -1,0 +1,1 @@
+{"desc": "回合开始时使对手随机2项属性+1，若与上回合增加的属性存在任意1项相同则当回合自身所有技能吸取对手400点体力", "desc_tag": null, "hash": "7e87071a", "icon": [7], "id": 3548, "tag": "吸血", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

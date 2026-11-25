@@ -1,0 +1,165 @@
+{
+ "doc_id": "福尔摩苏斯#地狱",
+ "factor": "福尔摩苏斯",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4638,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "自然超能",
+   "boss_hp": 10000,
+   "traits": "封属; 必先; 300固伤; 消强; 全属性-1; 吸血; 护盾; 减伤16.7%",
+   "mech": [
+    "shield",
+    "heal",
+    "debuff",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐+强攻手×2 / 鬼神吕布(大吕布)第五 / 沉睡之眼第五 / 希可洛单挑 / 魔钰150"
+   ],
+   "pets": [
+    "帝皇之御",
+    "鬼神吕布",
+    "沉睡之眼",
+    "希可洛",
+    "魔钰"
+   ],
+   "why": "致命机制是封属+必先+每回合300固伤+消强+全属性-1+吸血+护盾：属性技能被封、Boss抢先手，站场会同时被消强、弱化、固伤和吸血拖垮。反制核心是表姐(帝皇之御)守御八方——它是攻击技能、不受封属影响，给后续两只必先+必暴，再接高爆发强攻速杀，用速杀规避消强/弱化/吸血/固伤的持久战。鬼神吕布第五、沉睡之眼第五、魔钰150同属高威力先行攻击爆发；希可洛单挑则走另一条路，靠站场磨(卡裸伤)反制消强/弱化/护盾，适合慢打。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4640,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "光飞行",
+   "boss_hp": 10000,
+   "traits": "封属; 必先; 300固伤; 消强; 断回合; 清PP; 吸血; 吸强; 必暴; 必中; 减伤16.7%",
+   "mech": [
+    "clearPP",
+    "heal",
+    "clearBuff",
+    "stealBuff",
+    "breakTurn",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐+强攻手×2 / 伊芙莉莎旧150 / 艾欧丽娅自然石S / 万魔150"
+   ],
+   "pets": [
+    "帝皇之御",
+    "伊芙莉莎",
+    "艾欧丽娅",
+    "万魔"
+   ],
+   "why": "致命在封属+必先+清PP+吸强，站场极难维持，且Boss自带必暴+必中，我方闪避无效、只能正面对拼。主思路仍是表姐守御八方(攻击技能破封属)给必先+必暴，接强攻手速杀，规避清PP、消强、吸强、吸血。伊芙莉莎、艾欧丽娅自然石S走自然系(对光飞行4倍克制)高爆发，万魔150高威力攻击同样速杀；因Boss刀刀必暴，我方不宜久留，以减伤+先手秒为主。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4810,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_hp": 12000,
+   "traits": "封属; 必先; 500固伤; 睡眠控; 吸强; 减伤33.3%",
+   "mech": [
+    "stealBuff",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "高配月照150 / 闪光皮神单挑 / 圣灵谱尼单挑 / 时空界皇必先"
+   ],
+   "pets": [
+    "月照星魂",
+    "闪光皮神",
+    "圣灵谱尼",
+    "时空界皇"
+   ],
+   "why": "致命在睡眠控+吸强+500固伤+封属+必先：一旦被睡控会被吸强、固伤反复压血，属性技能又被封难以自保。首选高配月照150先手爆发秒杀；闪光皮神、圣灵谱尼靠免疫异常不吃睡眠控，单挑也不依赖强化、不吃吸强；时空界皇必先则抢在控前输出。核心是抢先手或免疫异常，避免被睡控后陷入吸强+固伤的循环。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4816,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "机械超能",
+   "boss_hp": 15000,
+   "traits": "封属; 必先; 500固伤; 回血; 吸强; 全属性-1; 必暴; 减伤33.3%",
+   "mech": [
+    "heal",
+    "debuff",
+    "stealBuff",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "火潘+表姐+神圣龙鹰×2 / 典韦150压血 / 炮灰+星光·鲁斯王克制(弹伤)"
+   ],
+   "pets": [
+    "潘克多斯",
+    "帝皇之御",
+    "神圣龙鹰",
+    "典韦",
+    "星光·鲁斯王"
+   ],
+   "why": "必先+封属+500固伤+吸强+全属性-1+回血+Boss必暴，站场会同时吃弱化、吸强、固伤和Boss刀刀暴击。火潘(潘克多斯)铺垫增伤→表姐守御八方(攻击技能破封属)给必先必暴→神圣龙鹰双强攻速杀，用爆发一轮带走、规避吸强/弱化/回血。典韦150压血是控血速杀；炮灰+星光·鲁斯王(弹伤)则用反弹反制Boss必暴与固伤的高压输出。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4818,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "光神秘",
+   "boss_hp": 18000,
+   "traits": "封属; 必先; 500固伤; 害怕控; 吸强; 全属性-1; 回血; 减伤33.3%",
+   "mech": [
+    "heal",
+    "debuff",
+    "stealBuff",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐+蒂朵+消强+邪灵主宰摩哥斯150 / 火潘+蒂朵+时空界皇150+灵蛇150"
+   ],
+   "pets": [
+    "帝皇之御",
+    "蒂朵",
+    "潘克多斯",
+    "邪灵主宰·摩哥斯",
+    "时空界皇",
+    "灵蛇"
+   ],
+   "why": "封属+必先+500固伤+害怕控+吸强+全属性-1+回血，致命在害怕控+吸强把站场拖垮。方案一：表姐自爆给必先必暴→蒂朵增伤→消强手解Boss强化→邪灵主宰·摩哥斯150(邪灵系对光神秘4倍克制)收尾速杀；方案二：火潘+蒂朵增伤→时空界皇150+灵蛇150接力强攻。两者都是增伤链+克制攻击快速解决，规避吸强、弱化、害怕控、回血的持久战。"
+  }
+ ]
+}

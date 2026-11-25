@@ -1,0 +1,1 @@
+{"desc": "{roundnext[0]}自身使用的所有技能消耗对手全部体力", "desc_tag": "roundnext", "hash": "b983a1d9", "icon": [21], "id": 3939, "tag": "消耗体力", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,1 @@
+{"desc": "免疫对手下{0}次攻击技能造成的伤害并直接扣除对手等量体力", "desc_tag": null, "hash": "f6e152dd", "icon": [35], "id": 230, "tag": "免伤|反伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

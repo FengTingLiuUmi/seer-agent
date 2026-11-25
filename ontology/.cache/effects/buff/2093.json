@@ -1,0 +1,1 @@
+{"desc": "血量低于{0}时恢复{1}体力", "desc_tag": null, "hash": "79e1711b", "icon": [31], "id": 2093, "tag": "恢复", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,1 @@
+{"bonus": null, "hash": "5d5f5402", "id": 100123, "item": {"id": 100123, "url": "https://api.seerapi.com/v1/item/100123"}, "name": "特派队帽", "occasion": null, "part_type": {"id": 0, "url": "https://api.seerapi.com/v1/equip_type/0"}, "pk_attribute": {"pk_atk": 2, "pk_fire_range": 200, "pk_hp": 20}, "speed": 0, "suit": null, "x_position": 5, "y_position": 41}

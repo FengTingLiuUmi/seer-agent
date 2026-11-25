@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若自身体力低于对手则当回合攻击50%的概率打出致命一击", "desc_tag": null, "hash": "73249829", "icon": [36], "id": 3328, "tag": "致命一击", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

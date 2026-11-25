@@ -1,0 +1,1 @@
+{"desc": "{0}回合内受到物理攻击时有{1}%概率将对手麻痹", "desc_tag": null, "hash": "42568a11", "icon": [14], "id": 21, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

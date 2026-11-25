@@ -1,0 +1,164 @@
+{
+ "doc_id": "卓尔布#地狱",
+ "factor": "卓尔布",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4537,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "暗影邪灵",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 免疫瞬杀; 300固伤; 减伤16.7%; 消强; 只吃暴击; 月亮; 失明",
+   "mech": [
+    "onlyCrit",
+    "heal",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "漆黑套重生拉防差第五强攻 / 漆黑压血魔钰+月照强攻 / 表姐自爆圣华130或圣萨140强攻"
+   ],
+   "pets": [
+    "重生之翼",
+    "魔钰",
+    "月照星魂",
+    "帝皇之御",
+    "圣华",
+    "圣萨"
+   ],
+   "why": "致命点在只吃暴击+封属+必先+月亮：用帝皇之御自爆守御八方（攻击技能、不受封属）给后续必先+必暴，正好覆盖只吃暴击与Boss必先，再接高威力强攻一轮带走；消强下不靠站场强化、直接压血或强攻。月亮会回血所以必须速杀；失明属命中弱化，必暴(伪必中)会被压过，需真必中或先解命中。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4489,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "光暗影",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 免疫瞬杀; 300固伤; 减伤16.7%; 消强; 秒杀技",
+   "mech": [
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "漆黑套邪灵主宰150强攻 / 表姐自爆邪灵系强攻手强攻"
+   ],
+   "pets": [
+    "邪灵主宰",
+    "乌鸦",
+    "格斯塔斯",
+    "帝皇之御"
+   ],
+   "why": "致命点在必先+封属+秒杀技：Boss有秒杀技能不能硬吃，靠表姐守御八方（攻击技能）给必先+必暴，先手把Boss秒掉、不给秒杀技出手机会；邪灵系对光暗影4倍克制，故选邪灵主宰/乌鸦/格斯塔斯150强攻。消强下纯强攻速杀、不站场强化。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4589,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "光火",
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 减伤16.7%; 500固伤; 烧伤; 失明",
+   "mech": [
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "耀世套神话防体圣谱站场(强化时偷强) / 漆黑带星皇星光鲁斯王第五强攻 / 漆黑带星皇千裳两个第五+130强攻"
+   ],
+   "pets": [
+    "圣灵谱尼",
+    "星光·鲁斯王",
+    "千裳"
+   ],
+   "why": "必先+封属+500固伤+烧伤：耀世套让圣谱防体站场回血抗压、Boss强化时偷强慢慢磨；另一路用星皇续航+星光鲁斯王第五(水系克火)速杀。烧伤是异常、靠抗性或速杀规避；失明是命中弱化，必暴不再必中，需真必中或先解命中。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4635,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "远古草",
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 减伤33.3%; 500固伤; 消强; 只吃暴击; 全属性-1",
+   "mech": [
+    "onlyCrit",
+    "debuff",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "耀世套卡莎奇镰解放站场 / 漆黑元神130强攻(奥斯卡/哈迪斯/魔钰补刀) / 表姐自爆元神130或流荧雪150强攻"
+   ],
+   "pets": [
+    "卡莎",
+    "元神",
+    "流荧雪",
+    "圣血猎者",
+    "帝皇之御"
+   ],
+   "why": "只吃暴击+封属+消强+全属性-1：帝皇之御守御八方（攻击技能）给必先+必暴覆盖只吃暴击，接元神130/流荧雪150强攻，再由奥斯卡/哈迪斯/魔钰补刀；消强和全属性-1使我方难站场强化，故纯强攻或卡莎站场磨。500固伤靠速杀避免持续掉血。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4657,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "冰火",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 减伤33.3%; 500固伤; 消强; 全属性+1; 清PP; 焚烬",
+   "mech": [
+    "clearPP",
+    "selfBuff",
+    "clearBuff",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "漆黑爆攻典韦150强攻(送克罗后奥斯卡/哈迪斯补刀) / 送天尊或西塔伦+克罗+灵神圣灵石(消强后魔钰/月照收尾) / 表姐自爆+鲁肃+圣血140圣灵系大招强攻 / 表姐自爆+蒂朵+卡迪亚150或压血伏尔格安150强攻"
+   ],
+   "pets": [
+    "典韦",
+    "克罗",
+    "奥斯卡",
+    "哈迪斯",
+    "灵神",
+    "魔钰",
+    "月照星魂",
+    "帝皇之御",
+    "鲁肃",
+    "圣血猎者",
+    "蒂朵",
+    "卡迪亚",
+    "伏尔格安"
+   ],
+   "why": "全属性+1(越打越强)+封属+消强+清PP+焚烬是压力点：先送克罗/灵神消掉Boss强化再收尾，表姐守御八方（攻击技能）给必先必暴；圣灵系大招对冰火4倍克制。焚烬控场靠先手秒/抗性规避，清PP则一轮强攻带走不拖。多方案差异在铺垫：典韦/卡迪亚/伏尔格安等爆攻，或送死消强后魔钰/月照收尾。"
+  }
+ ]
+}

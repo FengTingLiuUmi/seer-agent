@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若任意一方处于回合类效果则自身所有技能先制+1", "desc_tag": null, "hash": "a48fb43a", "icon": [6], "id": 4114, "tag": "先制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,1 @@
+{"desc": "{0}回合内，若对手MISS则自身恢复1/{1}的最大体力值", "desc_tag": null, "hash": "e39d6545", "icon": [31], "id": 53, "tag": "恢复", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

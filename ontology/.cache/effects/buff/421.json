@@ -1,0 +1,1 @@
+{"desc": "{0}回合内每回合攻击有{1}%令对手{abst[2]}，未触发则下{3}回合攻击有{4}%概率使对手{abst[5]}", "desc_tag": "abst", "hash": "2f170d59", "icon": [14], "id": 421, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,97 @@
+[
+ {
+  "id": "01",
+  "file": "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer/seer-factor-kb/scrape/batches/threads-batch-01.jsonl",
+  "count": 20
+ },
+ {
+  "id": "02",
+  "file": "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer/seer-factor-kb/scrape/batches/threads-batch-02.jsonl",
+  "count": 20
+ },
+ {
+  "id": "03",
+  "file": "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer/seer-factor-kb/scrape/batches/threads-batch-03.jsonl",
+  "count": 20
+ },
+ {
+  "id": "04",
+  "file": "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer/seer-factor-kb/scrape/batches/threads-batch-04.jsonl",
+  "count": 20
+ },
+ {
+  "id": "05",
+  "file": "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer/seer-factor-kb/scrape/batches/threads-batch-05.jsonl",
+  "count": 20
+ },
+ {
+  "id": "06",
+  "file": "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer/seer-factor-kb/scrape/batches/threads-batch-06.jsonl",
+  "count": 20
+ },
+ {
+  "id": "07",
+  "file": "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer/seer-factor-kb/scrape/batches/threads-batch-07.jsonl",
+  "count": 20
+ },
+ {
+  "id": "08",
+  "file": "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer/seer-factor-kb/scrape/batches/threads-batch-08.jsonl",
+  "count": 20
+ },
+ {
+  "id": "09",
+  "file": "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer/seer-factor-kb/scrape/batches/threads-batch-09.jsonl",
+  "count": 20
+ },
+ {
+  "id": "10",
+  "file": "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer/seer-factor-kb/scrape/batches/threads-batch-10.jsonl",
+  "count": 20
+ },
+ {
+  "id": "11",
+  "file": "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer/seer-factor-kb/scrape/batches/threads-batch-11.jsonl",
+  "count": 20
+ },
+ {
+  "id": "12",
+  "file": "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer/seer-factor-kb/scrape/batches/threads-batch-12.jsonl",
+  "count": 20
+ },
+ {
+  "id": "13",
+  "file": "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer/seer-factor-kb/scrape/batches/threads-batch-13.jsonl",
+  "count": 20
+ },
+ {
+  "id": "14",
+  "file": "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer/seer-factor-kb/scrape/batches/threads-batch-14.jsonl",
+  "count": 20
+ },
+ {
+  "id": "15",
+  "file": "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer/seer-factor-kb/scrape/batches/threads-batch-15.jsonl",
+  "count": 20
+ },
+ {
+  "id": "16",
+  "file": "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer/seer-factor-kb/scrape/batches/threads-batch-16.jsonl",
+  "count": 20
+ },
+ {
+  "id": "17",
+  "file": "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer/seer-factor-kb/scrape/batches/threads-batch-17.jsonl",
+  "count": 20
+ },
+ {
+  "id": "18",
+  "file": "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer/seer-factor-kb/scrape/batches/threads-batch-18.jsonl",
+  "count": 20
+ },
+ {
+  "id": "19",
+  "file": "C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer/seer-factor-kb/scrape/batches/threads-batch-19.jsonl",
+  "count": 8
+ }
+]

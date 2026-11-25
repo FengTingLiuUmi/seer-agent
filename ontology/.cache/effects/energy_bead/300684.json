@@ -1,0 +1,1 @@
+{"ability_buff": null, "desc": "精灵使用该物品后，飞行系技能威力提升10%（使用战斗次数10，赛尔间对抗有效）", "effect": {"effect": {"id": 28, "url": "https://api.seerapi.com/v1/eid_effect/28"}, "effect_args": [4, 10]}, "hash": "970ebabf", "id": 300684, "idx": 1101, "item": {"id": 300684, "url": "https://api.seerapi.com/v1/item/300684"}, "name": "飞行系技能强化剂", "use_times": 10}

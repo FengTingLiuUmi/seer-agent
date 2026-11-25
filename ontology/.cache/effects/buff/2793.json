@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若自身体力高于对手，则当回合自身攻击先制+1", "desc_tag": null, "hash": "9ff2d08e", "icon": [6], "id": 2793, "tag": "先制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

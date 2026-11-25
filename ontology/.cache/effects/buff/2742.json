@@ -1,0 +1,1 @@
+{"desc": "自身体力小于1/2时，所有攻击技能先制+1", "desc_tag": null, "hash": "4eaf3ff4", "icon": [6], "id": 2742, "tag": "先制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

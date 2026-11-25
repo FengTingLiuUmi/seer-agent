@@ -1,0 +1,1 @@
+{"desc": "{0}回合内受到{skilltypeB[1]}伤害减少{2}%", "desc_tag": "skilltypeB", "hash": "f073aa8a", "icon": [29], "id": 128, "tag": "减伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,147 @@
+{
+ "doc_id": "卡鲁维德#地狱",
+ "factor": "卡鲁维德",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4080,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 300固伤; 50%闪避; 免疫裸伤<2000; 吸强(消强); 减伤16.7%",
+   "mech": [
+    "rawCap",
+    "dodge",
+    "clearBuff",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "高配圣光莫妮卡新第五强攻（不带西游/绿火）"
+   ],
+   "pets": [
+    "圣光莫妮卡",
+    "启灵元神"
+   ],
+   "why": "Boss 致命在免疫裸伤<2000：红伤不破此线就几乎不掉血，因此必须面板硬灌；高配圣光莫妮卡新第五靠强面板把单发红伤压过阈值，50%闪避用必暴（伪必中）覆盖。吸强(消强)使叠强化、带西游/绿火这类buff打法不稳，故走不吃强化的单发强攻。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 3142,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "电",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 300固伤; 50%闪避; 随机2项属性+1; 消强; 麻痹(主动麻痹控); 减伤16.7%",
+   "mech": [
+    "dodge",
+    "clearBuff",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "灵·辰坤星魂新第五强攻（刷55麻痹抗）"
+   ],
+   "pets": [
+    "灵·辰坤星魂",
+    "瀚宇星皇"
+   ],
+   "why": "Boss 主动麻痹控是最头疼的点，刷55麻痹抗让强攻手不被控住才能站住输出；50%闪避由必暴（伪必中）覆盖，消强使不能靠叠强化，灵·辰坤星魂新第五直接硬打，减伤16.7%靠高面板吃下。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4716,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "电",
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 500固伤; 开局5000护盾+5000护罩; 清PP(攻击清1个技能PP); 消强; 减伤33.3%",
+   "mech": [
+    "shield",
+    "clearPP",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "万兽至尊·猛虎王160强攻 / 混沌地王莱茵哈特140强攻"
+   ],
+   "pets": [
+    "万兽至尊·猛虎王",
+    "混沌地王莱茵哈特"
+   ],
+   "why": "Boss 开局5000护盾+5000护罩再叠33.3%减伤，必须用高威力单发攻击先破盾再压血；清PP+消强压制了续航与强化流，故选面板扎实的万兽至尊·猛虎王160/混沌地王莱茵哈特140强攻手直达。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4709,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "电",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 500固伤; 吸强; 两命; 免疫特攻",
+   "mech": [
+    "immuneSpecial",
+    "twoLife",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "帝皇之御自爆+送蒂朵+霍夫曼第五打两命 / 空灵之刃强攻两命"
+   ],
+   "pets": [
+    "帝皇之御",
+    "蒂朵",
+    "霍夫曼",
+    "空灵之刃",
+    "斯克鲁恩"
+   ],
+   "why": "Boss 免疫特攻限定必须用物攻手，两命还要连打两段/补刀；故用帝皇之御守御八方自爆给必先+必暴（伪必中），送蒂朵铺垫后由物攻霍夫曼第五连打两命（空灵之刃同理强攻两命）。吸强让强化流失效，靠必先必暴硬推。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4919,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "虚空",
+   "boss_hp": 20000,
+   "traits": "必先; 封属; 500固伤; 吸强(偷强); 必暴; 暴食; 减伤33.3%",
+   "mech": [
+    "stealBuff",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "送炮灰+裸装星光·鲁斯王克制弹死"
+   ],
+   "pets": [
+    "星光·鲁斯王"
+   ],
+   "why": "Boss 必暴+吸强(偷强)+减伤33.3%（另有暴食）令正面站场与红伤强攻都被严重削弱，故改用弹伤：裸装星光·鲁斯王靠克制倍率反弹红伤，弹伤不吃面板与减伤，吸强也影响不到；先送炮灰吃下其必先必暴，确保鲁斯王安全出手。"
+  }
+ ]
+}

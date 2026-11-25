@@ -1,0 +1,162 @@
+{
+ "doc_id": "托勒斯#地狱",
+ "factor": "托勒斯",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4881,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "地面",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 300固伤; 消强; 免疫<2000裸伤; 每回合随机弱化2项-1; 150威力技能强化80%暴击; 减伤16.7%",
+   "mech": [
+    "rawCap",
+    "debuff",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "帝皇之御自爆+高倍强攻 / 流荧·雪150秒杀 / 圣谕之风·岚150秒杀 / 艾欧丽娅强攻"
+   ],
+   "pets": [
+    "帝皇之御",
+    "流荧·雪",
+    "圣谕之风·岚",
+    "艾欧丽娅"
+   ],
+   "why": "Boss 必先+封属会让属性技能打法报废，表姐守御八方是攻击技能不吃封属，给后续强攻手「必先+必暴」，抢在 300 固伤和每回合随机弱化生效前一次带走；免疫<2000裸伤要求克制面板压过 2000，所以选高倍克制的强攻手顶伤害，弱化与消强都用速杀规避。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4859,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "冰光",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 300固伤; 消强; 断回合; 免疫>2000裸伤(转体力); 每回合随机强化2项+1; 强化技能3回合回血; 减伤16.7%",
+   "mech": [
+    "rawCap",
+    "heal",
+    "clearBuff",
+    "breakTurn",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "芳馨·茉蕊儿+索比斯保站场单挑 / 塞勒涅强攻 / 库乐芭单挑"
+   ],
+   "pets": [
+    "芳馨·茉蕊儿",
+    "索比斯",
+    "塞勒涅",
+    "库乐芭"
+   ],
+   "why": "这关免疫>2000裸伤并转为 Boss 体力，等于高额红伤被吃掉还回血，因此放弃强攻改站场单挑、把裸伤卡在≤2000 磨死；芳馨·茉蕊儿+索比斯保站场，用来抗必先+300 固伤并处理消强/断回合、随机强化与回血，靠续航慢慢耗掉 12000 血。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4850,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "地面战斗",
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 500固伤; 消强; 断回合; 受击害怕; 强化技能4回合350月亮; 减伤16.7%",
+   "mech": [
+    "heal",
+    "clearBuff",
+    "breakTurn",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "飞鱼骑士150秒杀 / 星光·鲁斯王强攻 / 格罗姆特虫S强攻 / 塞勒涅站场"
+   ],
+   "pets": [
+    "飞鱼骑士",
+    "星光·鲁斯王",
+    "格罗姆特",
+    "塞勒涅"
+   ],
+   "why": "Boss 受击害怕控场、强化后 4 回合每回合 350 月亮回血，拖回合只会被控又回不出来，所以主走速杀：飞鱼骑士 150 等高倍克制技能不吃封属直接秒；星光·鲁斯王/格罗姆特虫S/塞勒涅是强攻与站场的备选，均先用先手输出压掉月亮和控场。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4853,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "远古光",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 500固伤; 吸强; 全属性+1; 免疫暴击; 减伤33.3%",
+   "mech": [
+    "selfBuff",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "魇魔/眠降·玛缇娜/库乐芭/加尔鲁特/月华站场单挑 / 送死后帝皇之御+高倍强攻"
+   ],
+   "pets": [
+    "魇魔",
+    "眠降·玛缇娜",
+    "库乐芭",
+    "加尔鲁特",
+    "月华",
+    "帝皇之御"
+   ],
+   "why": "Boss 吸强且自身全属性+1 会越打越强，又免疫暴击让表姐必暴加成失效，所以主推不依赖强化与暴击的站场单挑（魇魔/眠降·玛缇娜/库乐芭/加尔鲁特/月华）磨或弹；「送死后帝皇之御+高倍强攻」则借守御八方的「必先」抢在 500 固伤前出手，靠高倍强攻规避免疫暴击的损失。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4887,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "自然",
+   "boss_hp": 20000,
+   "traits": "必先; 封属; 500固伤; 吸强; 50%麻痹控; 减伤33.3%",
+   "mech": [
+    "stealBuff",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "潘克多斯+帝皇之御自爆+西塔伦150秒杀 / 克罗保星光·魔焰猩猩上buff+芳馨·茉蕊儿+星光·鲁斯王克制弹 / 灵蛇强攻"
+   ],
+   "pets": [
+    "潘克多斯",
+    "帝皇之御",
+    "西塔伦",
+    "星光·魔焰猩猩",
+    "芳馨·茉蕊儿",
+    "星光·鲁斯王",
+    "灵蛇"
+   ],
+   "why": "Boss 50% 麻痹控场并吸强、封属，拖久必被控，因此走「叠增伤→表姐自爆抢必先→高倍强攻秒杀」：潘克多斯(火潘)放大伤害并规避封属与吸强，西塔伦 150 秒杀；克罗保星光·魔焰猩猩上 buff+芳馨·茉蕊儿+星光·鲁斯王克制弹是弹伤路线，灵蛇强攻为强攻备选，都是先手/免控思路压掉麻痹。"
+  }
+ ]
+}

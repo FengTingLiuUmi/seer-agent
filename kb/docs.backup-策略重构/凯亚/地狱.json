@@ -1,0 +1,125 @@
+{
+ "doc_id": "凯亚#地狱",
+ "factor": "凯亚",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4508,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "traits": "驱散(我方使用技能后被削强); 300固伤; 免疫大于2000的裸伤; 月亮有效; 150低体翻倍",
+   "mech": [
+    "rawCap",
+    "heal",
+    "clearBuff",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "星光鲁斯王弹伤 / 小草王送死+星光魔焰猩猩先三+炮灰送死+星光鲁斯王克制 / 眠降·玛缇娜先三第五对点"
+   ],
+   "pets": [
+    "星光·鲁斯王",
+    "星光·魔焰猩猩",
+    "加尔鲁特",
+    "眠降·玛缇娜"
+   ],
+   "why": "Boss 致命机制是驱散清强、每回合300固伤、免疫大于2000的裸伤、月亮回血有效且低体翻倍。星光鲁斯王走弹伤，绕开裸伤上限与清强；小草王送死+星光魔焰猩猩先三配炮灰用来弹伤/补刀；眠降·玛缇娜先三+第五对点靠回血站场磨。多方案差异在弹伤 vs 站场磨。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4491,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "traits": "驱散(我方使用技能后被削强); 300固伤; 免疫小于2000的裸伤",
+   "mech": [
+    "rawCap",
+    "clearBuff",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "表姐自爆+强攻 / 漆黑月华或灵蛇站场"
+   ],
+   "pets": [
+    "帝皇之御",
+    "月华",
+    "灵蛇"
+   ],
+   "why": "Boss 驱散清强、300固伤、且免疫小于2000的裸伤，低红伤打不出，只能靠高红伤或粉伤。表姐自爆守御八方给必先必暴，接强攻一发高红伤秒杀；漆黑月华/灵蛇则走站场用粉伤/固伤磨、不依赖强化。差异在速杀 vs 磨。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4546,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "traits": "驱散(我方使用技能后被削强); 500固伤; 攻击技能命中断回合; 清随机1个技能PP; 150有60%概率主动疲惫控且越打越疼; 弹控+粉伤",
+   "mech": [
+    "clearPP",
+    "clearBuff",
+    "breakTurn",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "表姐自爆+漆黑赫布洛强攻 / 漆黑顶配魔钰强攻 / 赫布洛刷疲惫抗性控场"
+   ],
+   "pets": [
+    "帝皇之御",
+    "圣血猎者·赫布洛",
+    "魔钰"
+   ],
+   "why": "Boss 有驱散、500固伤、攻击技能命中断回合、随机清PP、疲惫控场且越打越疼，并带弹控粉伤，控场与断回合最致命。表姐自爆守御八方给必先必暴，接赫布洛/魔钰强攻一发秒掉，绕开疲惫控与断回合；赫布洛刷疲惫抗性可改为站场控场磨。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4955,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "traits": "500固伤; 每回合随机2项-2(判定先于吸强); 免疫物攻",
+   "mech": [
+    "immunePhysical",
+    "stealBuff",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "表姐自爆+特攻强攻 / 裸伤圣谱 / 星光鲁斯王弹伤 / 必先大队"
+   ],
+   "pets": [
+    "帝皇之御",
+    "圣灵谱尼",
+    "星光·鲁斯王"
+   ],
+   "why": "Boss 免疫物攻，物攻红伤为0，所以主攻必须改特攻。表姐自爆守御八方给必先必暴，接特攻强攻/裸伤圣谱绕开吸强与免疫物攻；星光鲁斯王走弹伤不吃物攻红伤；每回合随机-2与500固伤则靠必先速杀解决。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4957,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "traits": "500固伤; 每回合随机2项-2(判定先于吸强); 免疫特攻; 属性技能附带粉伤",
+   "mech": [
+    "immuneSpecial",
+    "stealBuff",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "表姐自爆+物攻强攻 / 克罗蒂朵 / 裸伤圣谱"
+   ],
+   "pets": [
+    "帝皇之御",
+    "克罗蒂朵",
+    "圣灵谱尼"
+   ],
+   "why": "Boss 免疫特攻，特攻红伤为0，须换物攻强攻。表姐自爆守御八方给必先必暴，接物攻手如克罗蒂朵打高红伤；裸伤圣谱站场绕开吸强/免疫特攻；随机-2与500固伤靠速杀解决。"
+  }
+ ]
+}

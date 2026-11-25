@@ -1,0 +1,144 @@
+{
+ "doc_id": "卡斯珀#地狱",
+ "factor": "卡斯珀",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4314,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "草",
+   "boss_hp": 6000,
+   "traits": "先制+3; 天生攻击+2; 消强; 闪避（必定闪避非必中技能）; 吸血300",
+   "mech": [
+    "dodge",
+    "heal",
+    "clearBuff",
+    "firstStrike"
+   ],
+   "strategies": [
+    "圣光莫妮卡第五技能自身强化增伤直接秒杀"
+   ],
+   "pets": [
+    "圣光莫妮卡"
+   ],
+   "why": "致命机制是「必定闪避非必中技能」：高闪避维度下按铁律用必暴（伪必中）即可覆盖命中，不必死磕必中；攻略用圣光莫妮卡第五技能靠自身强化增伤直接秒杀，速杀同时避开吸血300（月亮回复）和消强对强化的反复清空。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4323,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "草暗影",
+   "boss_hp": 8000,
+   "traits": "先制+3; 天生攻击+2; 消强; 吸血250; 超高减伤; 免疫物攻",
+   "mech": [
+    "immunePhysical",
+    "heal",
+    "clearBuff",
+    "firstStrike",
+    "damageReduction"
+   ],
+   "strategies": [
+    "圣灵谱尼落芳天华吸强，一直第五技能神灵救世光吸血；BOSS开强化护盾时先三吸强，切茉蕊儿造护盾保命"
+   ],
+   "pets": [
+    "圣灵谱尼",
+    "瀚宇星皇",
+    "索比斯",
+    "茉蕊儿",
+    "芳馨茉蕊儿"
+   ],
+   "why": "硬门是免疫物攻+超高减伤：免疫物攻要求特攻出手，圣灵谱尼正是特攻强攻手；超高减伤靠第五技能神灵救世光吸血/固伤站场磨，落芳天华与先三吸强反制「消强」，Boss开强化护盾时先三吸强再切茉蕊儿造盾保命。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4268,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "地面超能",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 天生攻击+2; 消强; 免疫特攻",
+   "mech": [
+    "immuneSpecial",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr"
+   ],
+   "strategies": [
+    "帝皇之御守御八方自爆，霍夫曼第五技能震地无双锤吸强后满体威力翻倍"
+   ],
+   "pets": [
+    "帝皇之御",
+    "霍夫曼"
+   ],
+   "why": "硬门是封属+免疫特攻+消强的组合：封属下属性技能被封，只能用攻击技能，帝皇之御守御八方（攻击技能、不受封属）自爆给全队必先+必暴；免疫特攻要求物攻，接物攻手霍夫曼第五震地无双锤，其吸强后再满体翻倍，恰好反制消强并秒杀。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4324,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "圣灵地面",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 天生攻击+2; 概率面板免疫（直接/固定/百分比伤害）; 全属性+1; 偷强",
+   "mech": [
+    "rawCap",
+    "panelImmune",
+    "selfBuff",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr"
+   ],
+   "strategies": [
+    "四九圣尊双先三四方无敌与战灵冲锋轮流使用，第五技能战神破天杀断回合"
+   ],
+   "pets": [
+    "四九圣尊",
+    "索比斯"
+   ],
+   "why": "硬门是偷强+全属性+1+概率面板免疫：偷强与全属性+1会越打越强，四九圣尊靠第五战神破天杀断回合压制；概率面板免疫（直接/固定/百分比）使纯红伤不稳，改用双先三（四方无敌/战灵冲锋）轮转站场磨；封属下全程用攻击技能。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4337,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "光超能",
+   "boss_hp": 14000,
+   "traits": "必先; 封属; 天生攻击+2; 高额减伤; 清PP（每回合攻击清除我方2个技能PP）",
+   "mech": [
+    "clearPP",
+    "firstStrike",
+    "sealAttr",
+    "damageReduction"
+   ],
+   "strategies": [
+    "帝皇之御守御八方自爆，蒂朵星璨舞台场地增伤，洛琦第五洛繁星共舞接黄金龙鹰第五琉璃碎心咒，深渊狱神哈迪斯补刀"
+   ],
+   "pets": [
+    "帝皇之御",
+    "蒂朵",
+    "洛琦",
+    "黄金龙鹰",
+    "深渊狱神哈迪斯"
+   ],
+   "why": "硬门是封属+高额减伤+清PP：封属下用攻击技能，帝皇之御守御八方自爆给必先+必暴，蒂朵星璨舞台场地增伤叠加抵消高额减伤；清PP会让单只站场被耗空，于是洛琦、黄金龙鹰第五连续强攻、深渊狱神哈迪斯补刀，多输出轮换避开清PP拖死。"
+  }
+ ],
+ "tids": [
+  2585
+ ],
+ "note": "无正文数据"
+}

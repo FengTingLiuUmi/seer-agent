@@ -1,0 +1,1 @@
+{"desc": "回合开始时，对手每处于1种异常状态则攻击命中后吸取对手{0}点体力", "desc_tag": null, "hash": "760f6305", "icon": [7], "id": 2220, "tag": "吸血", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

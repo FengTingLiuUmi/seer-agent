@@ -1,0 +1,1 @@
+{"desc": "{0}回合内免疫控制类异常状态（烧伤、冻伤、中毒、流血、失明无法免疫）", "desc_tag": null, "hash": "e6e5cef1", "icon": [22], "id": 224, "tag": "免疫异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

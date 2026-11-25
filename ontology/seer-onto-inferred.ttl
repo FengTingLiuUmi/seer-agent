@@ -1,0 +1,773 @@
+# 推断产物（run.py 生成）。2026-11-25 清理：移除已废弃的 sf:playsRole 数据 17 条。
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sf: <http://example.org/seer-factor#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/seer-factor> a owl:Ontology ;
+    rdfs:label "赛尔号因子PVE打法本体"@zh ;
+    rdfs:comment "对因子脚本「为什么这样打」做结构与规则化沉淀：精灵/技能/魂印/Boss/机制/打法/配置及其关系。v0.1"@zh .
+
+sf:bannedPet a owl:ObjectProperty ;
+    rdfs:label "禁用精灵"@zh ;
+    rdfs:domain sf:Stage ;
+    rdfs:range sf:Pet .
+
+sf:configAtk a owl:DatatypeProperty ;
+    rdfs:label "攻击配置（爆攻/压血…）"@zh ;
+    rdfs:range xsd:string .
+
+sf:configDef a owl:DatatypeProperty ;
+    rdfs:label "防御定格"@zh ;
+    rdfs:range xsd:integer .
+
+sf:configMaxHp a owl:DatatypeProperty ;
+    rdfs:label "体力上限"@zh ;
+    rdfs:range xsd:integer .
+
+sf:configMinHp a owl:DatatypeProperty ;
+    rdfs:label "体力下限"@zh ;
+    rdfs:range xsd:integer .
+
+sf:counterStrategy a owl:ObjectProperty ;
+    rdfs:label "反制打法"@zh ;
+    rdfs:domain sf:Mechanism ;
+    rdfs:range sf:Strategy .
+
+sf:counters a owl:ObjectProperty ;
+    rdfs:label "克制"@zh ;
+    rdfs:domain sf:ElementType ;
+    rdfs:range sf:ElementType .
+
+sf:countersBuff a owl:ObjectProperty ;
+    rdfs:label "克制效果"@zh ;
+    rdfs:domain sf:Strategy ;
+    rdfs:range sf:Buff .
+
+sf:grantsBuff a owl:ObjectProperty ;
+    rdfs:label "赋予效果（魂印/技能）"@zh ;
+    rdfs:range sf:Buff .
+
+sf:hasBoss a owl:ObjectProperty ;
+    rdfs:label "关卡对应Boss"@zh ;
+    rdfs:domain sf:Stage ;
+    rdfs:range sf:Boss .
+
+sf:hasBuff a owl:ObjectProperty ;
+    rdfs:label "施加效果"@zh ;
+    rdfs:domain sf:Mechanism ;
+    rdfs:range sf:Buff .
+
+sf:hasElement a owl:ObjectProperty ;
+    rdfs:label "所属属性"@zh ;
+    rdfs:range sf:ElementType .
+
+sf:hasEquipment a owl:ObjectProperty ;
+    rdfs:label "采用装备"@zh ;
+    rdfs:domain sf:Config ;
+    rdfs:range sf:Equipment .
+
+sf:hasMechanism a owl:ObjectProperty ;
+    rdfs:label "具有机制"@zh ;
+    rdfs:domain sf:Boss ;
+    rdfs:range sf:Mechanism .
+
+sf:hasSkill a owl:ObjectProperty ;
+    rdfs:label "拥有技能"@zh ;
+    rdfs:domain sf:Pet ;
+    rdfs:range sf:Skill .
+
+sf:hasSoulmark a owl:ObjectProperty ;
+    rdfs:label "拥有魂印"@zh ;
+    rdfs:domain sf:Pet ;
+    rdfs:range sf:Soulmark .
+
+sf:hasStep a owl:ObjectProperty ;
+    rdfs:label "含步骤"@zh ;
+    rdfs:domain sf:Strategy ;
+    rdfs:range sf:Step .
+
+sf:hp a owl:DatatypeProperty ;
+    rdfs:label "血量"@zh ;
+    rdfs:domain sf:Boss ;
+    rdfs:range xsd:integer .
+
+sf:inDifficulty a owl:ObjectProperty ;
+    rdfs:label "属于难度"@zh ;
+    rdfs:domain sf:Stage ;
+    rdfs:range sf:Difficulty .
+
+sf:pet_2965 a sf:Pet ;
+    rdfs:label "灾厄王妃潘多拉"@zh ;
+    sf:seerapiId "2965" .
+
+sf:pet_3329 a sf:Pet ;
+    rdfs:label "六界帝神（六界）"@zh ;
+    sf:hasSoulmark sf:sm_653 ;
+    sf:seerapiId "3329" ;
+    sf:substitutesFor sf:pet_whm .
+
+sf:pet_3396 a sf:Pet ;
+    rdfs:label "灾厄女神潘多拉（潘）"@zh ;
+    sf:hasSoulmark sf:sm_2170,
+        sf:sm_709 ;
+    sf:seerapiId "3396" .
+
+sf:pet_3437 a sf:Pet ;
+    rdfs:label "艾欧丽娅（艾欧）"@zh ;
+    sf:hasSoulmark sf:sm_1209,
+        sf:sm_752 ;
+    sf:seerapiId "3437" ;
+    sf:substitutesFor sf:pet_whm .
+
+sf:pet_3463 a sf:Pet ;
+    rdfs:label "时空界皇（时空）"@zh ;
+    sf:hasSoulmark sf:sm_776 ;
+    sf:seerapiId "3463" .
+
+sf:pet_3512 a sf:Pet ;
+    rdfs:label "帝皇之御（表姐）"@zh ;
+    sf:hasSoulmark sf:sm_821 ;
+    sf:seerapiId "3512" .
+
+sf:pet_4377 a sf:Pet ;
+    rdfs:label "蒂朵"@zh ;
+    sf:hasSoulmark sf:sm_1601 ;
+    sf:seerapiId "4377" .
+
+sf:pet_sp a sf:Pet ;
+    rdfs:label "圣灵谱尼（圣普/圣谱）"@zh ;
+    rdfs:comment "免费顶级强攻；SeerAPI id 待锁定"@zh .
+
+sf:playsRole a owl:ObjectProperty ;
+    rdfs:label "扮演定位"@zh ;
+    rdfs:domain sf:Pet ;
+    rdfs:range sf:Role .
+
+sf:power a owl:DatatypeProperty ;
+    rdfs:label "威力"@zh ;
+    rdfs:domain sf:Skill ;
+    rdfs:range xsd:integer .
+
+sf:precedes a owl:ObjectProperty ;
+    rdfs:label "紧接在前"@zh ;
+    rdfs:domain sf:Step ;
+    rdfs:range sf:Step .
+
+sf:priority a owl:DatatypeProperty ;
+    rdfs:label "先制值"@zh ;
+    rdfs:domain sf:Skill ;
+    rdfs:range xsd:integer .
+
+sf:recommendedConfig a owl:ObjectProperty ;
+    rdfs:label "推荐配置"@zh ;
+    rdfs:domain sf:Boss ;
+    rdfs:range sf:Config .
+
+sf:recommendedPet a owl:ObjectProperty ;
+    rdfs:label "推荐打手"@zh ;
+    rdfs:domain sf:Boss ;
+    rdfs:range sf:Pet .
+
+sf:recommendedPetForStage a owl:ObjectProperty ;
+    rdfs:label "推荐关卡打手"@zh ;
+    rdfs:domain sf:Stage ;
+    rdfs:range sf:Pet .
+
+sf:recommendedStrategy a owl:ObjectProperty ;
+    rdfs:label "推荐打法（机制→打法 与 Boss→打法 复用）"@zh ;
+    rdfs:range sf:Strategy .
+
+sf:recommendedStrategyForPet a owl:ObjectProperty ;
+    rdfs:label "精灵适合的打法"@zh ;
+    rdfs:domain sf:Pet ;
+    rdfs:range sf:Strategy .
+
+sf:rewardPet a owl:ObjectProperty ;
+    rdfs:label "产出精灵"@zh ;
+    rdfs:domain sf:Reward ;
+    rdfs:range sf:Pet .
+
+sf:rewards a owl:ObjectProperty ;
+    rdfs:label "产出"@zh ;
+    rdfs:domain sf:Stage ;
+    rdfs:range sf:Reward .
+
+sf:seerapiId a owl:DatatypeProperty ;
+    rdfs:label "SeerAPI id"@zh ;
+    rdfs:range xsd:string .
+
+sf:stage_yita_1 a sf:Stage ;
+    rdfs:label "伊塔回溯型·第1关"@zh ;
+    sf:bannedPet sf:pet_dianwei,
+        sf:pet_sike,
+        sf:pet_whm ;
+    sf:hasBoss sf:boss_yita_1 ;
+    sf:inDifficulty sf:地狱 ;
+    sf:usesStrategy sf:strat_yita_1a,
+        sf:strat_yita_1b .
+
+sf:stage_yita_2 a sf:Stage ;
+    rdfs:label "伊塔回溯型·第2关"@zh ;
+    sf:hasBoss sf:boss_yita_2 ;
+    sf:inDifficulty sf:地狱 ;
+    sf:usesStrategy sf:strat_yita_2a,
+        sf:strat_yita_2b .
+
+sf:stage_yita_3 a sf:Stage ;
+    rdfs:label "伊塔回溯型·第3关"@zh ;
+    sf:hasBoss sf:boss_yita_3 ;
+    sf:inDifficulty sf:地狱 ;
+    sf:usesStrategy sf:strat_yita_3a,
+        sf:strat_yita_3b .
+
+sf:stage_yita_4 a sf:Stage ;
+    rdfs:label "伊塔回溯型·第4关"@zh ;
+    sf:hasBoss sf:boss_yita_4 ;
+    sf:inDifficulty sf:地狱 ;
+    sf:usesStrategy sf:strat_yita_4a,
+        sf:strat_yita_4b .
+
+sf:stage_yita_5 a sf:Stage ;
+    rdfs:label "伊塔回溯型·第5关"@zh ;
+    sf:hasBoss sf:boss_yita_5 ;
+    sf:inDifficulty sf:地狱 ;
+    sf:rewards sf:reward_yita ;
+    sf:usesStrategy sf:strat_yita_5a,
+        sf:strat_yita_5b .
+
+sf:stepIndex a owl:DatatypeProperty ;
+    rdfs:label "步骤序号"@zh ;
+    rdfs:domain sf:Step ;
+    rdfs:range xsd:integer .
+
+sf:substitutesFor a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "可替代"@zh ;
+    rdfs:domain sf:Pet ;
+    rdfs:range sf:Pet .
+
+sf:threshold a owl:DatatypeProperty ;
+    rdfs:label "阈值"@zh ;
+    rdfs:domain sf:Mechanism ;
+    rdfs:range xsd:integer .
+
+sf:usesConfig a owl:ObjectProperty ;
+    rdfs:label "采用配置"@zh ;
+    rdfs:range sf:Config .
+
+sf:usesPet a owl:ObjectProperty ;
+    rdfs:label "出场精灵"@zh ;
+    rdfs:domain sf:Step ;
+    rdfs:range sf:Pet .
+
+sf:usesStrategy a owl:ObjectProperty ;
+    rdfs:label "采用打法"@zh ;
+    rdfs:domain sf:Stage ;
+    rdfs:range sf:Strategy .
+
+sf:全面提升药水 a sf:道具 ;
+    rdfs:label "全面提升药水"@zh .
+
+sf:典狱长 a sf:套装 ;
+    rdfs:label "典狱长(强攻)"@zh .
+
+sf:勇者 a sf:套装 ;
+    rdfs:label "勇者(攻体)"@zh .
+
+sf:困难 a sf:Difficulty ;
+    rdfs:label "困难"@zh .
+
+sf:地面 a sf:ElementType ;
+    rdfs:label "地面"@zh ;
+    sf:counters sf:机械,
+        sf:火 .
+
+sf:场地增伤 a sf:Strategy ;
+    rdfs:label "场地增伤（蒂朵）"@zh ;
+    sf:countersBuff sf:buf免疫异常 .
+
+sf:弹伤 a sf:Role ;
+    rdfs:label "弹伤（反伤）"@zh .
+
+sf:强攻 a sf:Role ;
+    rdfs:label "强攻（秒杀）"@zh .
+
+sf:必先 a sf:Role ;
+    rdfs:label "必先（先制）"@zh .
+
+sf:未来 a sf:套装 ;
+    rdfs:label "未来(强攻)"@zh .
+
+sf:珠子 a sf:道具 ;
+    rdfs:label "珠子"@zh .
+
+sf:站场 a sf:Role ;
+    rdfs:label "站场（坦克磨血）"@zh .
+
+sf:简单 a sf:Difficulty ;
+    rdfs:label "简单"@zh .
+
+sf:绿火 a sf:火 ;
+    rdfs:label "绿火(基础)"@zh .
+
+sf:辅助 a sf:Role ;
+    rdfs:label "辅助（判弱/场地/减伤）"@zh .
+
+sf:金火 a sf:火 ;
+    rdfs:label "金火(增伤)"@zh .
+
+sf:boss_yita_1 a sf:Boss ;
+    sf:hasElement sf:机械战斗 ;
+    sf:hasMechanism sf:固伤,
+        sf:概率必杀,
+        sf:消强,
+        sf:随机弱化 ;
+    sf:hp 10000 ;
+    sf:recommendedStrategy sf:判弱先制,
+        sf:强攻秒杀,
+        sf:站场磨血 .
+
+sf:boss_yita_2 a sf:Boss ;
+    sf:hasElement sf:机械超能 ;
+    sf:hasMechanism sf:固伤,
+        sf:消强,
+        sf:裸伤上限 ;
+    sf:hp 10000 ;
+    sf:recommendedConfig sf:cfg_站场套 ;
+    sf:recommendedStrategy sf:判弱先制,
+        sf:站场磨血 .
+
+sf:boss_yita_3 a sf:Boss ;
+    sf:hasElement sf:机械火 ;
+    sf:hasMechanism sf:偷强,
+        sf:固伤,
+        sf:消强 ;
+    sf:hp 12000 ;
+    sf:recommendedStrategy sf:判弱先制,
+        sf:必先大队,
+        sf:站场磨血 .
+
+sf:boss_yita_4 a sf:Boss ;
+    sf:hasElement sf:机械神秘 ;
+    sf:hasMechanism sf:偷强,
+        sf:固伤,
+        sf:护盾,
+        sf:面板免疫 ;
+    sf:hp 15000 ;
+    sf:recommendedConfig sf:cfg_弹伤套 ;
+    sf:recommendedStrategy sf:判弱先制,
+        sf:弹伤反伤,
+        sf:必先大队,
+        sf:站场磨血 .
+
+sf:boss_yita_5 a sf:Boss ;
+    sf:hasElement sf:机械 ;
+    sf:hasMechanism sf:偷强,
+        sf:固伤,
+        sf:控场 ;
+    sf:hp 18000 ;
+    sf:recommendedConfig sf:cfg_强攻套 ;
+    sf:recommendedStrategy sf:判弱先制,
+        sf:必先大队,
+        sf:站场磨血 .
+
+sf:buf减伤 a sf:Buff ;
+    rdfs:label "受到伤害降低"@zh .
+
+sf:buf反弹 a sf:Buff ;
+    rdfs:label "反弹伤害"@zh .
+
+sf:buf吸血 a sf:Buff ;
+    rdfs:label "吸血"@zh .
+
+sf:buf强化 a sf:Buff ;
+    rdfs:label "能力提升"@zh .
+
+sf:buf必中 a sf:Buff ;
+    rdfs:label "必中"@zh .
+
+sf:buf必暴 a sf:Buff ;
+    rdfs:label "必定暴击"@zh .
+
+sf:cfg_cunzu a sf:Config ;
+    rdfs:label "村长卡裸伤配置（防御336 体力799-935）"@zh ;
+    sf:configDef 336 ;
+    sf:configMaxHp 935 ;
+    sf:configMinHp 799 ;
+    sf:hasEquipment sf:假面,
+        sf:耀世 .
+
+sf:cfg_弹伤套 a sf:Config ;
+    rdfs:label "弹伤配置(银翼套+假面+洛林卡之星)"@zh ;
+    sf:hasEquipment sf:假面,
+        sf:洛林卡之星,
+        sf:银翼套 .
+
+sf:cfg_强攻套 a sf:Config ;
+    rdfs:label "强攻配置(漆黑+假面+洛林卡之星)"@zh ;
+    sf:hasEquipment sf:假面,
+        sf:洛林卡之星,
+        sf:漆黑 .
+
+sf:cfg_站场套 a sf:Config ;
+    rdfs:label "站场配置(耀世+假面+神话)"@zh ;
+    sf:hasEquipment sf:假面,
+        sf:神话,
+        sf:耀世 .
+
+sf:pet_306 a sf:Pet ;
+    rdfs:label "鲁斯王"@zh ;
+    sf:hasElement sf:水 ;
+    sf:hasSkill sf:sk_水流喷射 ;
+    sf:seerapiId "306" .
+
+sf:pet_309 a sf:Pet ;
+    rdfs:label "魔焰猩猩（魔焰/猩猩）"@zh ;
+    sf:hasElement sf:火 ;
+    sf:seerapiId "309" .
+
+sf:pet_dianwei a sf:Pet ;
+    rdfs:label "典韦"@zh ;
+    rdfs:comment "常被Ban强攻手"@zh .
+
+sf:pet_poker a sf:Pet ;
+    rdfs:label "波克尔"@zh ;
+    rdfs:comment "先制杂兵，弹伤线前置；SeerAPI id 待锁定"@zh .
+
+sf:pet_sike a sf:Pet ;
+    rdfs:label "斯克鲁恩"@zh ;
+    rdfs:comment "常被Ban"@zh .
+
+sf:reward_yita a sf:Reward ;
+    rdfs:label "伊塔回溯型因子产出"@zh .
+
+sf:s4a1 a sf:Step ;
+    sf:precedes sf:s4a2 ;
+    sf:stepIndex 1 ;
+    sf:usesPet sf:pet_poker .
+
+sf:sk_水流喷射 a sf:Skill ;
+    rdfs:label "水流喷射(鲁斯王)"@zh ;
+    sf:priority 1 .
+
+sf:sm_1209 a sf:Soulmark ;
+    rdfs:label "艾欧丽娅魂印1209"@zh ;
+    sf:seerapiId "1209" .
+
+sf:sm_1601 a sf:Soulmark ;
+    rdfs:label "蒂朵魂印（奇偶回合场地）"@zh ;
+    sf:grantsBuff sf:buf回血,
+        sf:buf增伤,
+        sf:buf必中 ;
+    sf:seerapiId "1601" .
+
+sf:sm_2170 a sf:Soulmark ;
+    rdfs:label "潘多拉魂印2170"@zh ;
+    sf:seerapiId "2170" .
+
+sf:sm_653 a sf:Soulmark ;
+    rdfs:label "六界帝神魂印（低血强化+先制+免异增伤）"@zh ;
+    sf:grantsBuff sf:buf先制,
+        sf:buf免疫异常,
+        sf:buf增伤,
+        sf:buf强化 ;
+    sf:seerapiId "653" .
+
+sf:sm_709 a sf:Soulmark ;
+    rdfs:label "潘多拉魂印709（判弱+先制增伤）"@zh ;
+    sf:grantsBuff sf:buf先制,
+        sf:buf回血,
+        sf:buf增伤,
+        sf:buf弱化 ;
+    sf:seerapiId "709" .
+
+sf:sm_752 a sf:Soulmark ;
+    rdfs:label "艾欧丽娅魂印752（强攻+吸血）"@zh ;
+    sf:grantsBuff sf:buf吸血,
+        sf:buf增伤 ;
+    sf:seerapiId "752" .
+
+sf:sm_776 a sf:Soulmark ;
+    rdfs:label "时空界皇魂印（半血阈值打手）"@zh ;
+    sf:grantsBuff sf:buf先制,
+        sf:buf回血,
+        sf:buf固定伤害,
+        sf:buf必暴 ;
+    sf:seerapiId "776" .
+
+sf:sm_821 a sf:Soulmark ;
+    rdfs:label "帝皇之御魂印（免异+锁血+反弹+死后减伤）"@zh ;
+    sf:grantsBuff sf:buf先制,
+        sf:buf免疫异常,
+        sf:buf减伤,
+        sf:buf反弹,
+        sf:buf锁血 ;
+    sf:seerapiId "821" .
+
+sf:strat_yita_1a a sf:Strategy ;
+    rdfs:label "第1关·爆攻压血魔钰强攻"@zh .
+
+sf:strat_yita_1b a sf:Strategy ;
+    rdfs:label "第1关·特防体丽莎站场"@zh .
+
+sf:strat_yita_2a a sf:Strategy ;
+    rdfs:label "第2关·村长卡裸伤站场"@zh ;
+    sf:usesConfig sf:cfg_cunzu .
+
+sf:strat_yita_2b a sf:Strategy ;
+    rdfs:label "第2关·防体草潘站场"@zh .
+
+sf:strat_yita_3a a sf:Strategy ;
+    rdfs:label "第3关·特防体卡莎站场"@zh .
+
+sf:strat_yita_3b a sf:Strategy ;
+    rdfs:label "第3关·爆攻地王强攻"@zh .
+
+sf:strat_yita_4a a sf:Strategy ;
+    rdfs:label "第4关·鲁斯王弹伤（波克尔→魔焰→鲁斯王）"@zh ;
+    sf:hasStep sf:s4a1,
+        sf:s4a2,
+        sf:s4a3 .
+
+sf:strat_yita_4b a sf:Strategy ;
+    rdfs:label "第4关·攻体眠酱站场"@zh .
+
+sf:strat_yita_5a a sf:Strategy ;
+    rdfs:label "第5关·火潘+蒂朵+表姐+张飞+泰坦强攻线"@zh .
+
+sf:strat_yita_5b a sf:Strategy ;
+    rdfs:label "第5关·火潘+蒂朵+西塔伦+必先大队"@zh .
+
+sf:护盾 a sf:Mechanism ;
+    rdfs:label "开局护盾/护罩"@zh ;
+    sf:hasBuff sf:buf护盾,
+        sf:buf护罩 ;
+    sf:recommendedStrategy sf:弹伤反伤 ;
+    sf:threshold 5000 .
+
+sf:控场 a sf:Mechanism ;
+    rdfs:label "高概率主动控场（害怕）"@zh ;
+    sf:hasBuff sf:buf害怕 ;
+    sf:recommendedStrategy sf:必先大队 .
+
+sf:机械战斗 a sf:ElementType ;
+    rdfs:label "机械战斗"@zh .
+
+sf:机械火 a sf:ElementType ;
+    rdfs:label "机械火"@zh .
+
+sf:机械神秘 a sf:ElementType ;
+    rdfs:label "机械神秘"@zh .
+
+sf:机械超能 a sf:ElementType ;
+    rdfs:label "机械超能"@zh .
+
+sf:概率必杀 a sf:Mechanism ;
+    rdfs:label "小概率高倍伤害秒人"@zh ;
+    sf:recommendedStrategy sf:强攻秒杀 .
+
+sf:漆黑 a sf:套装 ;
+    rdfs:label "漆黑(输出套装)"@zh .
+
+sf:神话 a sf:称号 ;
+    rdfs:label "神话(称号/续航)"@zh .
+
+sf:草 a sf:ElementType ;
+    rdfs:label "草"@zh ;
+    sf:counters sf:水 .
+
+sf:裸伤上限 a sf:Mechanism ;
+    rdfs:label "免疫裸伤高于阈值并转体力"@zh ;
+    sf:recommendedStrategy sf:站场磨血 ;
+    sf:threshold 2000 .
+
+sf:银翼套 a sf:套装 ;
+    rdfs:label "银翼套"@zh .
+
+sf:随机弱化 a sf:Mechanism ;
+    rdfs:label "每回合随机弱化我方"@zh ;
+    sf:hasBuff sf:buf弱化 .
+
+sf:面板免疫 a sf:Mechanism ;
+    rdfs:label "免疫面板超过阈值的攻击技能"@zh ;
+    sf:recommendedStrategy sf:弹伤反伤 ;
+    sf:threshold 100 .
+
+sf:龙 a sf:ElementType ;
+    rdfs:label "龙"@zh .
+
+sf:buf害怕 a sf:Buff ;
+    rdfs:label "害怕(控场)"@zh .
+
+sf:buf护盾 a sf:Buff ;
+    rdfs:label "护盾"@zh .
+
+sf:buf护罩 a sf:Buff ;
+    rdfs:label "护罩"@zh .
+
+sf:buf消强 a sf:Buff ;
+    rdfs:label "消除强化"@zh .
+
+sf:buf锁血 a sf:Buff ;
+    rdfs:label "保留1点体力"@zh .
+
+sf:s4a2 a sf:Step ;
+    sf:precedes sf:s4a3 ;
+    sf:stepIndex 2 ;
+    sf:usesPet sf:pet_309 .
+
+sf:s4a3 a sf:Step ;
+    sf:stepIndex 3 ;
+    sf:usesPet sf:pet_306 .
+
+sf:强攻秒杀 a sf:Strategy ;
+    rdfs:label "强攻秒杀"@zh .
+
+sf:水 a sf:ElementType ;
+    rdfs:label "水"@zh ;
+    sf:counters sf:火 .
+
+sf:洛林卡之星 a sf:称号 ;
+    rdfs:label "洛林卡之星(称号/强攻)"@zh .
+
+sf:耀世 a sf:套装 ;
+    rdfs:label "耀世(续航)"@zh .
+
+sf:道具 a owl:Class ;
+    rdfs:label "道具(珠子/药水)"@zh ;
+    rdfs:subClassOf sf:Equipment .
+
+sf:Reward a owl:Class ;
+    rdfs:label "关卡产出"@zh .
+
+sf:buf免疫异常 a sf:Buff ;
+    rdfs:label "免疫异常状态"@zh .
+
+sf:buf回血 a sf:Buff ;
+    rdfs:label "回血"@zh .
+
+sf:buf固定伤害 a sf:Buff ;
+    rdfs:label "每回合固定伤害"@zh .
+
+sf:buf弱化 a sf:Buff ;
+    rdfs:label "能力下降"@zh .
+
+sf:pet_whm a sf:Pet ;
+    rdfs:label "王·哈莫雷特（王哈）"@zh ;
+    sf:hasElement sf:龙 ;
+    rdfs:comment "强攻锚点；SeerAPI id 待锁定（哈莫家族 3022/3809 之一）"@zh .
+
+sf:偷强 a sf:Mechanism ;
+    rdfs:label "攻击出手前偷强"@zh ;
+    sf:hasBuff sf:buf偷强 ;
+    sf:recommendedStrategy sf:判弱先制 .
+
+sf:弹伤反伤 a sf:Strategy ;
+    rdfs:label "弹伤/反伤"@zh ;
+    sf:countersBuff sf:buf护盾,
+        sf:buf护罩,
+        sf:buf锁血 .
+
+sf:机械 a sf:ElementType ;
+    rdfs:label "机械"@zh .
+
+sf:消强 a sf:Mechanism ;
+    rdfs:label "我方出手后被消强"@zh ;
+    sf:hasBuff sf:buf消强 ;
+    sf:recommendedStrategy sf:判弱先制 .
+
+sf:称号 a owl:Class ;
+    rdfs:label "称号/眼镜"@zh ;
+    rdfs:subClassOf sf:Equipment .
+
+sf:Difficulty a owl:Class ;
+    rdfs:label "难度分级"@zh .
+
+sf:Skill a owl:Class ;
+    rdfs:label "技能"@zh .
+
+sf:buf偷强 a sf:Buff ;
+    rdfs:label "偷取强化"@zh .
+
+sf:buf先制 a sf:Buff ;
+    rdfs:label "先制"@zh .
+
+sf:buf增伤 a sf:Buff ;
+    rdfs:label "伤害/威力提升"@zh .
+
+sf:假面 a sf:称号 ;
+    rdfs:label "假面(称号)"@zh .
+
+sf:必先大队 a sf:Strategy ;
+    rdfs:label "必先大队"@zh ;
+    sf:countersBuff sf:buf偷强,
+        sf:buf害怕 .
+
+sf:Equipment a owl:Class ;
+    rdfs:label "装备/培养件"@zh .
+
+sf:固伤 a sf:Mechanism ;
+    rdfs:label "每回合固定伤害"@zh ;
+    sf:hasBuff sf:buf固定伤害 ;
+    sf:recommendedStrategy sf:站场磨血 .
+
+sf:地狱 a sf:Difficulty ;
+    rdfs:label "地狱"@zh .
+
+sf:火 a sf:ElementType,
+        owl:Class ;
+    rdfs:label "火"@zh,
+        "火焰(绿火/金火)"@zh ;
+    sf:counters sf:机械,
+        sf:草 ;
+    rdfs:subClassOf sf:Equipment .
+
+sf:Role a owl:Class ;
+    rdfs:label "定位（强攻/辅助/站场/弹伤/必先）"@zh .
+
+sf:套装 a owl:Class ;
+    rdfs:label "套装"@zh ;
+    rdfs:subClassOf sf:Equipment .
+
+sf:Config a owl:Class ;
+    rdfs:label "配置（套装/称号/压血压防数值）"@zh .
+
+sf:判弱先制 a sf:Strategy ;
+    rdfs:label "判弱+先制增伤"@zh ;
+    sf:countersBuff sf:buf偷强,
+        sf:buf消强 .
+
+sf:站场磨血 a sf:Strategy ;
+    rdfs:label "站场磨血（卡裸伤）"@zh ;
+    sf:countersBuff sf:buf偷强,
+        sf:buf固定伤害,
+        sf:buf弱化 .
+
+sf:Step a owl:Class ;
+    rdfs:label "出招步骤（换人/技能）"@zh .
+
+sf:Soulmark a owl:Class ;
+    rdfs:label "魂印"@zh .
+
+sf:Boss a owl:Class ;
+    rdfs:label "Boss（敌精灵）"@zh .
+
+sf:Stage a owl:Class ;
+    rdfs:label "因子关卡"@zh .
+
+sf:ElementType a owl:Class ;
+    rdfs:label "属性/属性组合"@zh .
+
+sf:Mechanism a owl:Class ;
+    rdfs:label "Boss机制（固伤/免疫/护盾/控场/偷强…）"@zh .
+
+sf:Buff a owl:Class ;
+    rdfs:label "状态/效果原型(固伤/护盾/先制/回血…)"@zh .
+
+sf:Strategy a owl:Class ;
+    rdfs:label "打法/套路"@zh .
+
+sf:Pet a owl:Class ;
+    rdfs:label "精灵"@zh .
+

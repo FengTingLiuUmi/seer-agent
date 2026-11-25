@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若自身体力高于对手则当回合受到攻击伤害后80%令对手害怕", "desc_tag": null, "hash": "2fd17289", "icon": [14], "id": 3297, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

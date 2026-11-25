@@ -1,0 +1,1 @@
+{"desc": "造成的攻击伤害低于300则附加500点固定伤害", "desc_tag": null, "hash": "6eaebba8", "icon": [34], "id": 2210, "tag": "附加伤害", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

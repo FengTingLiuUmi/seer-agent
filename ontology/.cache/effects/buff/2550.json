@@ -1,0 +1,1 @@
+{"desc": "每次自身攻击技能命中时，伤害的20%会附加到自身攻击伤害中，每次造成伤害时附加百分比增加20%，最高累积100%", "desc_tag": null, "hash": "40fbeab0", "icon": [], "id": 2550, "tag": "增伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,1 @@
+{"desc": "自身造成的伤害提高50%，当回合造成的伤害低于300则{roundnext[0]}伤害提升变为100%", "desc_tag": null, "hash": "50b98240", "icon": [], "id": 2822, "tag": "增伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,1 @@
+{"desc": "回合结束时若自身体力高于对手则恢复全部体力", "desc_tag": null, "hash": "634ca3a", "icon": [31], "id": 2184, "tag": "恢复", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,1 @@
+{"desc": "受到致命一击的概率降低", "effect": {"effect": {"id": 150, "url": "https://api.seerapi.com/v1/eid_effect/150"}, "effect_args": [120, 0]}, "effect_alias": "150_120_0", "effect_group": {"id": 41, "url": "https://api.seerapi.com/v1/pet_effect_group/41"}, "hash": "e143c9f4", "id": 2141, "name": "免爆", "star_level": 4}

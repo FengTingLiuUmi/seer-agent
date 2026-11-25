@@ -1,0 +1,1 @@
+{"desc": "自身为对手天敌时，自身受到的伤害除以克制倍数，最高不超过2", "desc_tag": null, "hash": "8bf9bab1", "icon": [29], "id": 3862, "tag": "减伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

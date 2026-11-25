@@ -1,0 +1,1 @@
+{"ability_buff": null, "desc": "对战时使敌我双方造成的伤害降低1/4，使用次数1次。注意：赛尔间对战无效", "effect": {"effect": {"id": 47, "url": "https://api.seerapi.com/v1/eid_effect/47"}, "effect_args": [25]}, "hash": "869f661a", "id": 300060, "idx": 1057, "item": {"id": 300060, "url": "https://api.seerapi.com/v1/item/300060"}, "name": "减伤能量珠", "use_times": 1}

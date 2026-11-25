@@ -1,0 +1,1 @@
+{"desc": "回合开始时若自身体力低于对手，则当回合对手攻击100%miss", "desc_tag": null, "hash": "1648cafc", "icon": [16], "id": 2660, "tag": "闪避", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

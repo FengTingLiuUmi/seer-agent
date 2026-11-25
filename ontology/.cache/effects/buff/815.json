@@ -1,0 +1,1 @@
+{"desc": "下{0}次技能无效时令对手{1}，若为攻击技能则造成的伤害不少于{2}", "desc_tag": null, "hash": "ddc6ffaa", "icon": [14], "id": 815, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若自身体力低于对手则减少50%所有受到的伤害", "desc_tag": null, "hash": "41c3e54c", "icon": [29], "id": 2493, "tag": "减伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

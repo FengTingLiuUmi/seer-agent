@@ -1,0 +1,1 @@
+{"desc": "回合开始时若对手处于能力提升状态则消除对手能力提升状态", "desc_tag": null, "hash": "3693066c", "icon": [2], "id": 4076, "tag": "消除强化", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,171 @@
+{
+ "doc_id": "幽阑·执冥#地狱",
+ "factor": "幽阑·执冥",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 93,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "电",
+   "boss_hp": 10000,
+   "traits": "必先; 免疫瞬杀; 封属; 300固伤; 减伤16.7%; 消强; 闪避",
+   "mech": [
+    "dodge",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "耀世神话圣谱第五站场 / 漆黑套强攻手强攻 / 表姐自爆+强攻手"
+   ],
+   "pets": [
+    "圣灵谱尼",
+    "兔兔仙子",
+    "乌瑞亚",
+    "圣地卡修斯",
+    "帝皇之御"
+   ],
+   "why": "封属锁死属性技能，还带闪避，所以要么站场磨、要么走表姐(帝皇之御)自爆「守御八方」——它是攻击技能不吃封属，且给全队必先+必暴，必暴的伪必中正好覆盖闪避(不必硬凑必中)；消强会让站场不靠强化更稳，300固伤+减伤则靠速杀或圣谱第五站场磨掉。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4739,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "冰",
+   "boss_hp": 12000,
+   "traits": "必先; 免疫瞬杀; 封属; 300固伤; 减伤16.7%; 消强; 免疫物攻",
+   "mech": [
+    "immunePhysical",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "耀世神话卡莎/圣谱站场 / 漆黑套强攻手强攻 / 表姐+强攻手"
+   ],
+   "pets": [
+    "环源",
+    "金吉娜",
+    "卡莎",
+    "圣灵谱尼",
+    "帝皇之御",
+    "墨纪拉"
+   ],
+   "why": "免疫物攻把物攻红伤直接归零，只能换特攻强攻手(卡莎/圣谱/墨纪拉等)；封属要求用攻击技能，消强+快攻下要么表姐自爆接特攻手速杀，要么耀世神话减伤套让卡莎/圣谱站场磨。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4738,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "飞行",
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 减伤16.7%; 500固伤; 消强; 腐化(每回合全属性-1)",
+   "mech": [
+    "debuff",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "圣骑赫里斯站场(带星皇三兄弟) / 闪光皮神先手+第五循环(带波克尔) / 希可洛解放 / 三孔爆攻强攻手"
+   ],
+   "pets": [
+    "圣骑赫里斯",
+    "闪光皮神",
+    "波克尔",
+    "希可洛",
+    "瀚宇星皇"
+   ],
+   "why": "封属+消强锁掉属性技与己方强化，腐化(每回合全属性-1)持续压低能力值，因此打法要么走希可洛/圣骑赫里斯的裸伤站场磨、不依赖强化，要么三孔爆攻手抢在腐化叠起来前速杀；500固伤需要减伤套装或回血托底。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4736,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "电",
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 减伤33.3%; 500固伤; 消强; 吸强(偷强); 必暴; 麻痹",
+   "mech": [
+    "clearBuff",
+    "stealBuff",
+    "control",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "克罗+猩猩先3上buff+草王+鲁斯王克制弹(压防御) / 表姐+卡威治+星皇130强攻 / 索比斯+耀世神话圣谱站场"
+   ],
+   "pets": [
+    "克罗",
+    "星光·魔焰猩猩",
+    "加尔鲁特",
+    "星光·鲁斯王",
+    "卡威治",
+    "瀚宇星皇",
+    "索比斯",
+    "圣灵谱尼",
+    "帝皇之御"
+   ],
+   "why": "Boss 必暴+麻痹+偷强让常规站场很危险，所以主路是鲁斯王克制弹(压防御放大反弹)来反制它的高爆发，或表姐自爆接卡威治/星皇130攻击技速杀以绕开封属与消强；索比斯减伤+圣谱站场是另一条磨线。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4740,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "暗影",
+   "boss_hp": 18000,
+   "traits": "封属; 必先; 减伤33.3%; 500固伤; 消强; 两命; 只吃先制; 偷强",
+   "mech": [
+    "onlyFirstStrike",
+    "twoLife",
+    "clearBuff",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "耀世神话防体圣骑赫里斯双先3站场 / 潘克多斯+蒂朵+斯克鲁恩+表姐+喵佐+撒丹尼兹强攻 / 眠降·玛缇娜虚假+第五循环"
+   ],
+   "pets": [
+    "圣骑赫里斯",
+    "潘克多斯",
+    "蒂朵",
+    "斯克鲁恩",
+    "帝皇之御",
+    "喵佐",
+    "撒丹尼兹",
+    "眠降·玛缇娜",
+    "索比斯",
+    "炽羽炎凤朱雀"
+   ],
+   "why": "只吃先制意味着必须用先制(先3类)攻击技能才打得动红伤，两命又需要补刀或多段输出；偷强+消强逼你断回合或不靠强化，故用圣骑赫里斯双先3减伤站场，或潘克多斯增伤链+表姐接喵佐/撒丹尼兹强攻，眠降·玛缇娜虚假+第五则是循环磨法。"
+  }
+ ]
+}

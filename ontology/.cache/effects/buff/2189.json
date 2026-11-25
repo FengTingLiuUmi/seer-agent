@@ -1,0 +1,1 @@
+{"desc": "每回合开始时恢复自身上回合受到的攻击伤害50%的体力", "desc_tag": null, "hash": "e7ef1bba", "icon": [31], "id": 2189, "tag": "恢复", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

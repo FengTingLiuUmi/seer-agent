@@ -1,0 +1,1 @@
+{"desc": "冰属性技能威力增加5%", "effect": {"effect": {"id": 28, "url": "https://api.seerapi.com/v1/eid_effect/28"}, "effect_args": [9, 5]}, "effect_alias": "28_9_5", "effect_group": {"id": 9, "url": "https://api.seerapi.com/v1/pet_effect_group/9"}, "hash": "b7bb2f5f", "id": 1014, "name": "冰霜", "star_level": 0}

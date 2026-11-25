@@ -1,0 +1,1 @@
+{"desc": "{roundnext[0]}每回合使用攻击技能附加自身防御、特防值总和{1}%的百分比伤害", "desc_tag": "roundnext", "hash": "4334b4ca", "icon": [34], "id": 160, "tag": "附加伤害", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

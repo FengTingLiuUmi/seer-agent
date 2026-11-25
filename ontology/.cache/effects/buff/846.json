@@ -1,0 +1,1 @@
+{"desc": "{0}回合内，双方每处于1种属性技能无效状态，自身造成的技能伤害额外提升{1}%", "desc_tag": null, "hash": "24d0a4f1", "icon": [], "id": 846, "tag": "增伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

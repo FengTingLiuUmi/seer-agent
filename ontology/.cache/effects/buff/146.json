@@ -1,0 +1,1 @@
+{"desc": "{0}回合内受到攻击则有{1}%概率{btlvInd[2]}{pOrm[3]}", "desc_tag": "btlvInd, pOrm", "hash": "4edb7029", "icon": [20], "id": 146, "tag": "强化", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

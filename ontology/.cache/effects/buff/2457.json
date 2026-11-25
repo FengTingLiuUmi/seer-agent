@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若对方血量高于自身，则本回合内对方技能威力下降20%", "desc_tag": null, "hash": "f4e5828d", "icon": [41], "id": 2457, "tag": "伤害降低", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

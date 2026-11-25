@@ -1,0 +1,1 @@
+{"desc": "{0}回合内使用技能随机附加{1}种非限制类异常状态", "desc_tag": null, "hash": "92fa95b8", "icon": [14], "id": 659, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

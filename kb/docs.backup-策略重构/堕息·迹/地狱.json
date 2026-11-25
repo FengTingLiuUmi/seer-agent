@@ -1,0 +1,177 @@
+{
+ "doc_id": "堕息·迹#地狱",
+ "factor": "堕息·迹",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4502,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "远古",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 减伤16.7%; 50%闪避; 两命(复活后全属性+1); 附加已损失体力百分比固伤",
+   "mech": [
+    "dodge",
+    "twoLife",
+    "selfBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "自爆+特攻强攻 / 草王套盾+消强，月华第五磨",
+    "大/小草王+攻体月华"
+   ],
+   "pets": [
+    "帝皇之御",
+    "月华",
+    "卡威治",
+    "佩洛瑟斯",
+    "草王"
+   ],
+   "why": "Boss 必先+封属废掉常规先手与属性强化，只能靠不被封属影响的攻击技能——表姐守御八方自爆给全队必先+必暴，50%闪避由必暴(伪必中命中100%)直接覆盖。两命复活后全属性+1意味着必须补刀/消强，故主打自爆+强攻一波，或草王套盾加消强后用月华第五磨。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4479,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "冰飞行",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 300固伤; 必闪(非必中必miss); 每回合全属性+1; 减伤16.7%",
+   "mech": [
+    "dodge",
+    "selfBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "混索第五 / 典韦大招秒杀 / 库比130",
+    "帝皇之御+索比斯+爆攻混索150"
+   ],
+   "pets": [
+    "混索",
+    "典韦",
+    "库比",
+    "帝皇之御",
+    "索比斯"
+   ],
+   "why": "Boss 必先+封属且每回合全属性+1，拖得越久越打不动，必须单体速杀。必闪(非必中必miss)按规则属命中覆盖问题，必暴(伪必中)把命中拉满即可，不必强求真·必中；混索第五、典韦大招、库比130 都是能覆盖命中并直接秒的强攻手，差异在单兵强度与出手稳定性。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4511,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "冰暗影",
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 500固伤; 必暴; 消强; 减伤16.7%; 单精灵",
+   "mech": [
+    "singlePet",
+    "clearBuff",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "卡莎/希可洛/圣谱单挑 / 闪光皮神先三与第五对点",
+    "卡莎站场"
+   ],
+   "pets": [
+    "卡莎",
+    "希可洛",
+    "圣灵谱尼",
+    "闪光皮神",
+    "圣骑赫里斯"
+   ],
+   "why": "Boss 刀刀必暴+500固伤，站场单位必须能扛暴(减伤/护盾)并自带回血；消强会清掉我方强化，所以放弃强化、靠站场/断回合；单精灵一宠打全场，故选卡莎/希可洛/圣谱这类站场磨血型，闪光皮神则用先三+第五对点以先手压血并规避被清强化。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4531,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "飞行暗影",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 免疫物攻; 减伤33.3%; 吸强(贪婪); 随机弱化; 吸血500",
+   "mech": [
+    "immunePhysical",
+    "heal",
+    "debuff",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "damageReduction"
+   ],
+   "strategies": [
+    "草王套盾+消强+魔咤引爆+帕尔尼兹大招 / 六界弹伤+哈迪斯补刀 / 送死让BOSS特攻+6后星光鲁斯王克制",
+    "帝皇之御+帕尔妮兹150+极寒魔兽先三+哈迪斯补刀"
+   ],
+   "pets": [
+    "帝皇之御",
+    "魔咤",
+    "帕尔尼兹",
+    "六界",
+    "哈迪斯",
+    "星光·鲁斯王",
+    "草王",
+    "帕尔妮兹",
+    "极寒魔兽"
+   ],
+   "why": "Boss 免疫物攻直接作废所有物攻手，必须走特攻；吸强(贪婪)会偷走我方强化，故打法靠消强/断回合且不叠强化；随机弱化靠草王套盾挡、吸血500要速杀或弹伤。方案1草王盾+消强+魔咤必暴后帕尔尼兹特攻大招秒；方案2六界弹伤不吃物攻免疫、哈迪斯补刀绕开吸血；方案3送死攒势后星光鲁斯王走特攻线对点克制。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4532,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "混沌远古",
+   "boss_hp": 20000,
+   "traits": "必先; 封属; 500固伤; 回血(每回合3000); 两命(复活后全属性+1); 减伤33.3%; 侵染(减回血/增伤)",
+   "mech": [
+    "twoLife",
+    "heal",
+    "selfBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐自爆+蒂朵+强攻 / 不死大队拖11回合+消强+千裳/阿尔法熊磨",
+    "帝皇之御+蒂朵+爆攻元神+鲁肃+爆攻圣谱"
+   ],
+   "pets": [
+    "帝皇之御",
+    "蒂朵",
+    "圣灵谱尼",
+    "千裳",
+    "阿尔法熊",
+    "元神",
+    "鲁肃"
+   ],
+   "why": "Boss 每回合回血3000使常规磨血完全无效，必须禁疗补齐或一口气秒杀；两命复活后全属性+1还要补刀/消强。方案1表姐自爆+蒂朵增伤后强攻，单回合带走绕过回血；方案2不死大队拖11回合等侵染(减回血/增伤)消失后消强，再用千裳/阿尔法熊站场磨，靠免死吃500固伤与Boss必先。"
+  }
+ ],
+ "tids": [
+  551,
+  2162
+ ],
+ "note": "自动换套装、吃药、压血"
+}

@@ -1,0 +1,388 @@
+@prefix pve: <http://example.org/seer/pve#> .
+@prefix seer: <http://example.org/seer#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# =====================================================================
+# 因子关逐关数据 —— 困难(typeid=10) + 简单(typeid=9)
+# 来源：雷小伊论坛『因子脚本分享』帖子正文（https://bbs.tiepi.top）
+# 三层模型：Factor --hasStage--> FactorStage --hasEnemy--> Enemy
+# 难度 在 FactorStage；counteredBy(攻略用反制精灵) 在 Enemy。
+# 说明：困难 Su113「出招」帖、简单全通帖只给出每关反制精灵，未给出
+#       Boss 属性/血量/特性，故这些字段一律省略（宁缺毋滥，不编造）。
+#       counteredBy 的 pet id 均已核对 seer-pve-alias.ttl，找不到即省略。
+# =====================================================================
+
+# ---------- 困难因子（difficulty = normal） ----------
+seer:factor_peiluosesi    a seer:Factor ; rdfs:label "佩洛瑟斯"@zh .
+seer:factor_moyilai       a seer:Factor ; rdfs:label "小莫伊莱"@zh .
+seer:factor_lingshishouwei a seer:Factor ; rdfs:label "灵石守卫"@zh .
+seer:factor_jiulina       a seer:Factor ; rdfs:label "玖莉娜"@zh .
+seer:factor_wuweijuezhe   a seer:Factor ; rdfs:label "无为觉者"@zh .
+seer:factor_lisaite       a seer:Factor ; rdfs:label "重塑之子利塞特"@zh .
+seer:factor_mianjiang     a seer:Factor ; rdfs:label "眠降·玛缇娜"@zh .
+seer:factor_xingguangmoguguai a seer:Factor ; rdfs:label "星光蘑菇怪"@zh .
+seer:factor_aersilan      a seer:Factor ; rdfs:label "极战·阿尔斯兰"@zh .
+seer:factor_xianrenzhang  a seer:Factor ; rdfs:label "参天巨型仙人掌"@zh .
+seer:factor_kasha         a seer:Factor ; rdfs:label "卡莎"@zh .
+seer:factor_ji            a seer:Factor ; rdfs:label "迹"@zh .
+seer:factor_kubi          a seer:Factor ; rdfs:label "仿生兽·库比"@zh .
+seer:factor_zijinmoshou   a seer:Factor ; rdfs:label "紫烬魔兽"@zh .
+
+# ---------- 简单因子（difficulty = easy） ----------
+seer:factor_nanuo         a seer:Factor ; rdfs:label "娜诺"@zh .
+seer:factor_lamizi        a seer:Factor ; rdfs:label "拉米兹"@zh .
+
+seer:factor_peiluosesi seer:hasStage
+    seer:stage_peiluosesi_1, seer:stage_peiluosesi_2, seer:stage_peiluosesi_3,
+    seer:stage_peiluosesi_4, seer:stage_peiluosesi_5 .
+seer:factor_moyilai seer:hasStage
+    seer:stage_moyilai_1, seer:stage_moyilai_2, seer:stage_moyilai_3,
+    seer:stage_moyilai_4, seer:stage_moyilai_5 .
+seer:factor_lingshishouwei seer:hasStage
+    seer:stage_lingshishouwei_1, seer:stage_lingshishouwei_2, seer:stage_lingshishouwei_3,
+    seer:stage_lingshishouwei_4, seer:stage_lingshishouwei_5 .
+seer:factor_jiulina seer:hasStage
+    seer:stage_jiulina_1, seer:stage_jiulina_2, seer:stage_jiulina_3,
+    seer:stage_jiulina_4, seer:stage_jiulina_5 .
+seer:factor_wuweijuezhe seer:hasStage
+    seer:stage_wuweijuezhe_1, seer:stage_wuweijuezhe_2, seer:stage_wuweijuezhe_3,
+    seer:stage_wuweijuezhe_4, seer:stage_wuweijuezhe_5 .
+seer:factor_lisaite seer:hasStage
+    seer:stage_lisaite_1, seer:stage_lisaite_2, seer:stage_lisaite_3,
+    seer:stage_lisaite_4, seer:stage_lisaite_5 .
+seer:factor_mianjiang seer:hasStage
+    seer:stage_mianjiang_1, seer:stage_mianjiang_2, seer:stage_mianjiang_3,
+    seer:stage_mianjiang_4, seer:stage_mianjiang_5 .
+seer:factor_xingguangmoguguai seer:hasStage
+    seer:stage_xingguangmoguguai_1, seer:stage_xingguangmoguguai_2, seer:stage_xingguangmoguguai_3,
+    seer:stage_xingguangmoguguai_4, seer:stage_xingguangmoguguai_5 .
+seer:factor_aersilan seer:hasStage
+    seer:stage_aersilan_1, seer:stage_aersilan_2, seer:stage_aersilan_3,
+    seer:stage_aersilan_4, seer:stage_aersilan_5 .
+seer:factor_xianrenzhang seer:hasStage
+    seer:stage_xianrenzhang_1, seer:stage_xianrenzhang_2, seer:stage_xianrenzhang_3,
+    seer:stage_xianrenzhang_4, seer:stage_xianrenzhang_5 .
+seer:factor_kasha seer:hasStage
+    seer:stage_kasha_1, seer:stage_kasha_2, seer:stage_kasha_3,
+    seer:stage_kasha_4, seer:stage_kasha_5 .
+seer:factor_ji seer:hasStage
+    seer:stage_ji_1, seer:stage_ji_2, seer:stage_ji_3,
+    seer:stage_ji_4, seer:stage_ji_5 .
+seer:factor_kubi seer:hasStage
+    seer:stage_kubi_1, seer:stage_kubi_2, seer:stage_kubi_3,
+    seer:stage_kubi_4, seer:stage_kubi_5 .
+seer:factor_zijinmoshou seer:hasStage
+    seer:stage_zijinmoshou_1, seer:stage_zijinmoshou_2, seer:stage_zijinmoshou_3,
+    seer:stage_zijinmoshou_4, seer:stage_zijinmoshou_5 .
+seer:factor_nanuo seer:hasStage
+    seer:stage_nanuo_1, seer:stage_nanuo_2, seer:stage_nanuo_3,
+    seer:stage_nanuo_4, seer:stage_nanuo_5 .
+seer:factor_lamizi seer:hasStage
+    seer:stage_lamizi_1, seer:stage_lamizi_2, seer:stage_lamizi_3,
+    seer:stage_lamizi_4, seer:stage_lamizi_5 .
+
+# =====================================================================
+# 关卡（FactorStage）—— 困难 normal / 简单 easy
+# =====================================================================
+seer:stage_peiluosesi_1 a seer:FactorStage ; rdfs:label "佩洛瑟斯·困难 第1关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 1 ; pve:hasEnemy pve:enemy_peiluosesi_1 .
+seer:stage_peiluosesi_2 a seer:FactorStage ; rdfs:label "佩洛瑟斯·困难 第2关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 2 ; pve:hasEnemy pve:enemy_peiluosesi_2 .
+seer:stage_peiluosesi_3 a seer:FactorStage ; rdfs:label "佩洛瑟斯·困难 第3关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 3 ; pve:hasEnemy pve:enemy_peiluosesi_3 .
+seer:stage_peiluosesi_4 a seer:FactorStage ; rdfs:label "佩洛瑟斯·困难 第4关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 4 ; pve:hasEnemy pve:enemy_peiluosesi_4 .
+seer:stage_peiluosesi_5 a seer:FactorStage ; rdfs:label "佩洛瑟斯·困难 第5关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 5 ; pve:hasEnemy pve:enemy_peiluosesi_5 .
+
+seer:stage_moyilai_1 a seer:FactorStage ; rdfs:label "小莫伊莱·困难 第1关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 1 ; pve:hasEnemy pve:enemy_moyilai_1 .
+seer:stage_moyilai_2 a seer:FactorStage ; rdfs:label "小莫伊莱·困难 第2关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 2 ; pve:hasEnemy pve:enemy_moyilai_2 .
+seer:stage_moyilai_3 a seer:FactorStage ; rdfs:label "小莫伊莱·困难 第3关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 3 ; pve:hasEnemy pve:enemy_moyilai_3 .
+seer:stage_moyilai_4 a seer:FactorStage ; rdfs:label "小莫伊莱·困难 第4关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 4 ; pve:hasEnemy pve:enemy_moyilai_4 .
+seer:stage_moyilai_5 a seer:FactorStage ; rdfs:label "小莫伊莱·困难 第5关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 5 ; pve:hasEnemy pve:enemy_moyilai_5 .
+
+seer:stage_lingshishouwei_1 a seer:FactorStage ; rdfs:label "灵石守卫·困难 第1关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 1 ; pve:hasEnemy pve:enemy_lingshishouwei_1 .
+seer:stage_lingshishouwei_2 a seer:FactorStage ; rdfs:label "灵石守卫·困难 第2关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 2 ; pve:hasEnemy pve:enemy_lingshishouwei_2 .
+seer:stage_lingshishouwei_3 a seer:FactorStage ; rdfs:label "灵石守卫·困难 第3关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 3 ; pve:hasEnemy pve:enemy_lingshishouwei_3 .
+seer:stage_lingshishouwei_4 a seer:FactorStage ; rdfs:label "灵石守卫·困难 第4关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 4 ; pve:hasEnemy pve:enemy_lingshishouwei_4 .
+seer:stage_lingshishouwei_5 a seer:FactorStage ; rdfs:label "灵石守卫·困难 第5关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 5 ; pve:hasEnemy pve:enemy_lingshishouwei_5 .
+
+seer:stage_jiulina_1 a seer:FactorStage ; rdfs:label "玖莉娜·困难 第1关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 1 ; pve:hasEnemy pve:enemy_jiulina_1 .
+seer:stage_jiulina_2 a seer:FactorStage ; rdfs:label "玖莉娜·困难 第2关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 2 ; pve:hasEnemy pve:enemy_jiulina_2 .
+seer:stage_jiulina_3 a seer:FactorStage ; rdfs:label "玖莉娜·困难 第3关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 3 ; pve:hasEnemy pve:enemy_jiulina_3 .
+seer:stage_jiulina_4 a seer:FactorStage ; rdfs:label "玖莉娜·困难 第4关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 4 ; pve:hasEnemy pve:enemy_jiulina_4 .
+seer:stage_jiulina_5 a seer:FactorStage ; rdfs:label "玖莉娜·困难 第5关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 5 ; pve:hasEnemy pve:enemy_jiulina_5 .
+
+seer:stage_wuweijuezhe_1 a seer:FactorStage ; rdfs:label "无为觉者·困难 第1关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 1 ; pve:hasEnemy pve:enemy_wuweijuezhe_1 .
+seer:stage_wuweijuezhe_2 a seer:FactorStage ; rdfs:label "无为觉者·困难 第2关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 2 ; pve:hasEnemy pve:enemy_wuweijuezhe_2 .
+seer:stage_wuweijuezhe_3 a seer:FactorStage ; rdfs:label "无为觉者·困难 第3关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 3 ; pve:hasEnemy pve:enemy_wuweijuezhe_3 .
+seer:stage_wuweijuezhe_4 a seer:FactorStage ; rdfs:label "无为觉者·困难 第4关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 4 ; pve:hasEnemy pve:enemy_wuweijuezhe_4 .
+seer:stage_wuweijuezhe_5 a seer:FactorStage ; rdfs:label "无为觉者·困难 第5关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 5 ; pve:hasEnemy pve:enemy_wuweijuezhe_5 .
+
+seer:stage_lisaite_1 a seer:FactorStage ; rdfs:label "重塑之子利塞特·困难 第1关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 1 ; pve:hasEnemy pve:enemy_lisaite_1 .
+seer:stage_lisaite_2 a seer:FactorStage ; rdfs:label "重塑之子利塞特·困难 第2关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 2 ; pve:hasEnemy pve:enemy_lisaite_2 .
+seer:stage_lisaite_3 a seer:FactorStage ; rdfs:label "重塑之子利塞特·困难 第3关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 3 ; pve:hasEnemy pve:enemy_lisaite_3 .
+seer:stage_lisaite_4 a seer:FactorStage ; rdfs:label "重塑之子利塞特·困难 第4关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 4 ; pve:hasEnemy pve:enemy_lisaite_4 .
+seer:stage_lisaite_5 a seer:FactorStage ; rdfs:label "重塑之子利塞特·困难 第5关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 5 ; pve:hasEnemy pve:enemy_lisaite_5 .
+
+seer:stage_mianjiang_1 a seer:FactorStage ; rdfs:label "眠降·玛缇娜·困难 第1关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 1 ; pve:hasEnemy pve:enemy_mianjiang_1 .
+seer:stage_mianjiang_2 a seer:FactorStage ; rdfs:label "眠降·玛缇娜·困难 第2关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 2 ; pve:hasEnemy pve:enemy_mianjiang_2 .
+seer:stage_mianjiang_3 a seer:FactorStage ; rdfs:label "眠降·玛缇娜·困难 第3关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 3 ; pve:hasEnemy pve:enemy_mianjiang_3 .
+seer:stage_mianjiang_4 a seer:FactorStage ; rdfs:label "眠降·玛缇娜·困难 第4关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 4 ; pve:hasEnemy pve:enemy_mianjiang_4 .
+seer:stage_mianjiang_5 a seer:FactorStage ; rdfs:label "眠降·玛缇娜·困难 第5关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 5 ; pve:hasEnemy pve:enemy_mianjiang_5 .
+
+seer:stage_xingguangmoguguai_1 a seer:FactorStage ; rdfs:label "星光蘑菇怪·困难 第1关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 1 ; pve:hasEnemy pve:enemy_xingguangmoguguai_1 .
+seer:stage_xingguangmoguguai_2 a seer:FactorStage ; rdfs:label "星光蘑菇怪·困难 第2关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 2 ; pve:hasEnemy pve:enemy_xingguangmoguguai_2 .
+seer:stage_xingguangmoguguai_3 a seer:FactorStage ; rdfs:label "星光蘑菇怪·困难 第3关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 3 ; pve:hasEnemy pve:enemy_xingguangmoguguai_3 .
+seer:stage_xingguangmoguguai_4 a seer:FactorStage ; rdfs:label "星光蘑菇怪·困难 第4关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 4 ; pve:hasEnemy pve:enemy_xingguangmoguguai_4 .
+seer:stage_xingguangmoguguai_5 a seer:FactorStage ; rdfs:label "星光蘑菇怪·困难 第5关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 5 ; pve:hasEnemy pve:enemy_xingguangmoguguai_5 .
+
+seer:stage_aersilan_1 a seer:FactorStage ; rdfs:label "极战·阿尔斯兰·困难 第1关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 1 ; pve:hasEnemy pve:enemy_aersilan_1 .
+seer:stage_aersilan_2 a seer:FactorStage ; rdfs:label "极战·阿尔斯兰·困难 第2关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 2 ; pve:hasEnemy pve:enemy_aersilan_2 .
+seer:stage_aersilan_3 a seer:FactorStage ; rdfs:label "极战·阿尔斯兰·困难 第3关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 3 ; pve:hasEnemy pve:enemy_aersilan_3 .
+seer:stage_aersilan_4 a seer:FactorStage ; rdfs:label "极战·阿尔斯兰·困难 第4关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 4 ; pve:hasEnemy pve:enemy_aersilan_4 .
+seer:stage_aersilan_5 a seer:FactorStage ; rdfs:label "极战·阿尔斯兰·困难 第5关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 5 ; pve:hasEnemy pve:enemy_aersilan_5 .
+
+seer:stage_xianrenzhang_1 a seer:FactorStage ; rdfs:label "参天巨型仙人掌·困难 第1关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 1 ; pve:hasEnemy pve:enemy_xianrenzhang_1 .
+seer:stage_xianrenzhang_2 a seer:FactorStage ; rdfs:label "参天巨型仙人掌·困难 第2关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 2 ; pve:hasEnemy pve:enemy_xianrenzhang_2 .
+seer:stage_xianrenzhang_3 a seer:FactorStage ; rdfs:label "参天巨型仙人掌·困难 第3关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 3 ; pve:hasEnemy pve:enemy_xianrenzhang_3 .
+seer:stage_xianrenzhang_4 a seer:FactorStage ; rdfs:label "参天巨型仙人掌·困难 第4关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 4 ; pve:hasEnemy pve:enemy_xianrenzhang_4 .
+seer:stage_xianrenzhang_5 a seer:FactorStage ; rdfs:label "参天巨型仙人掌·困难 第5关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 5 ; pve:hasEnemy pve:enemy_xianrenzhang_5 .
+
+seer:stage_kasha_1 a seer:FactorStage ; rdfs:label "卡莎·困难 第1关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 1 ; pve:hasEnemy pve:enemy_kasha_1 .
+seer:stage_kasha_2 a seer:FactorStage ; rdfs:label "卡莎·困难 第2关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 2 ; pve:hasEnemy pve:enemy_kasha_2 .
+seer:stage_kasha_3 a seer:FactorStage ; rdfs:label "卡莎·困难 第3关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 3 ; pve:hasEnemy pve:enemy_kasha_3 .
+seer:stage_kasha_4 a seer:FactorStage ; rdfs:label "卡莎·困难 第4关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 4 ; pve:hasEnemy pve:enemy_kasha_4 .
+seer:stage_kasha_5 a seer:FactorStage ; rdfs:label "卡莎·困难 第5关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 5 ; pve:hasEnemy pve:enemy_kasha_5 .
+
+seer:stage_ji_1 a seer:FactorStage ; rdfs:label "迹·困难 第1关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 1 ; pve:hasEnemy pve:enemy_ji_1 .
+seer:stage_ji_2 a seer:FactorStage ; rdfs:label "迹·困难 第2关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 2 ; pve:hasEnemy pve:enemy_ji_2 .
+seer:stage_ji_3 a seer:FactorStage ; rdfs:label "迹·困难 第3关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 3 ; pve:hasEnemy pve:enemy_ji_3 .
+seer:stage_ji_4 a seer:FactorStage ; rdfs:label "迹·困难 第4关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 4 ; pve:hasEnemy pve:enemy_ji_4 .
+seer:stage_ji_5 a seer:FactorStage ; rdfs:label "迹·困难 第5关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 5 ; pve:hasEnemy pve:enemy_ji_5 .
+
+seer:stage_kubi_1 a seer:FactorStage ; rdfs:label "仿生兽·库比·困难 第1关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 1 ; pve:hasEnemy pve:enemy_kubi_1 .
+seer:stage_kubi_2 a seer:FactorStage ; rdfs:label "仿生兽·库比·困难 第2关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 2 ; pve:hasEnemy pve:enemy_kubi_2 .
+seer:stage_kubi_3 a seer:FactorStage ; rdfs:label "仿生兽·库比·困难 第3关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 3 ; pve:hasEnemy pve:enemy_kubi_3 .
+seer:stage_kubi_4 a seer:FactorStage ; rdfs:label "仿生兽·库比·困难 第4关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 4 ; pve:hasEnemy pve:enemy_kubi_4 .
+seer:stage_kubi_5 a seer:FactorStage ; rdfs:label "仿生兽·库比·困难 第5关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 5 ; pve:hasEnemy pve:enemy_kubi_5 .
+
+seer:stage_zijinmoshou_1 a seer:FactorStage ; rdfs:label "紫烬魔兽·困难 第1关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 1 ; pve:hasEnemy pve:enemy_zijinmoshou_1 .
+seer:stage_zijinmoshou_2 a seer:FactorStage ; rdfs:label "紫烬魔兽·困难 第2关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 2 ; pve:hasEnemy pve:enemy_zijinmoshou_2 .
+seer:stage_zijinmoshou_3 a seer:FactorStage ; rdfs:label "紫烬魔兽·困难 第3关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 3 ; pve:hasEnemy pve:enemy_zijinmoshou_3 .
+seer:stage_zijinmoshou_4 a seer:FactorStage ; rdfs:label "紫烬魔兽·困难 第4关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 4 ; pve:hasEnemy pve:enemy_zijinmoshou_4 .
+seer:stage_zijinmoshou_5 a seer:FactorStage ; rdfs:label "紫烬魔兽·困难 第5关"@zh ; pve:difficulty pve:diff_normal ; pve:stageNumber 5 ; pve:hasEnemy pve:enemy_zijinmoshou_5 .
+
+seer:stage_nanuo_1 a seer:FactorStage ; rdfs:label "娜诺·简单 第1关"@zh ; pve:difficulty pve:diff_easy ; pve:stageNumber 1 ; pve:hasEnemy pve:enemy_nanuo_1 .
+seer:stage_nanuo_2 a seer:FactorStage ; rdfs:label "娜诺·简单 第2关"@zh ; pve:difficulty pve:diff_easy ; pve:stageNumber 2 ; pve:hasEnemy pve:enemy_nanuo_2 .
+seer:stage_nanuo_3 a seer:FactorStage ; rdfs:label "娜诺·简单 第3关"@zh ; pve:difficulty pve:diff_easy ; pve:stageNumber 3 ; pve:hasEnemy pve:enemy_nanuo_3 .
+seer:stage_nanuo_4 a seer:FactorStage ; rdfs:label "娜诺·简单 第4关"@zh ; pve:difficulty pve:diff_easy ; pve:stageNumber 4 ; pve:hasEnemy pve:enemy_nanuo_4 .
+seer:stage_nanuo_5 a seer:FactorStage ; rdfs:label "娜诺·简单 第5关"@zh ; pve:difficulty pve:diff_easy ; pve:stageNumber 5 ; pve:hasEnemy pve:enemy_nanuo_5 .
+
+seer:stage_lamizi_1 a seer:FactorStage ; rdfs:label "拉米兹·简单 第1关"@zh ; pve:difficulty pve:diff_easy ; pve:stageNumber 1 ; pve:hasEnemy pve:enemy_lamizi_1 .
+seer:stage_lamizi_2 a seer:FactorStage ; rdfs:label "拉米兹·简单 第2关"@zh ; pve:difficulty pve:diff_easy ; pve:stageNumber 2 ; pve:hasEnemy pve:enemy_lamizi_2 .
+seer:stage_lamizi_3 a seer:FactorStage ; rdfs:label "拉米兹·简单 第3关"@zh ; pve:difficulty pve:diff_easy ; pve:stageNumber 3 ; pve:hasEnemy pve:enemy_lamizi_3 .
+seer:stage_lamizi_4 a seer:FactorStage ; rdfs:label "拉米兹·简单 第4关"@zh ; pve:difficulty pve:diff_easy ; pve:stageNumber 4 ; pve:hasEnemy pve:enemy_lamizi_4 .
+seer:stage_lamizi_5 a seer:FactorStage ; rdfs:label "拉米兹·简单 第5关"@zh ; pve:difficulty pve:diff_easy ; pve:stageNumber 5 ; pve:hasEnemy pve:enemy_lamizi_5 .
+
+# =====================================================================
+# Boss（Enemy）—— 反制精灵来自帖子逐关配置；属性/血量/特性未给出，省略
+# =====================================================================
+# 佩洛瑟斯（thread-2975）
+pve:enemy_peiluosesi_1 a pve:Enemy ; rdfs:label "佩洛瑟斯-第1关 Boss"@zh ;
+    pve:counteredBy seer:pet_5000 ; rdfs:comment "来源 thread-2975"@zh .
+pve:enemy_peiluosesi_2 a pve:Enemy ; rdfs:label "佩洛瑟斯-第2关 Boss"@zh ;
+    rdfs:comment "来源 thread-2975"@zh .
+pve:enemy_peiluosesi_3 a pve:Enemy ; rdfs:label "佩洛瑟斯-第3关 Boss"@zh ;
+    pve:counteredBy seer:pet_3460 ; rdfs:comment "来源 thread-2975"@zh .
+pve:enemy_peiluosesi_4 a pve:Enemy ; rdfs:label "佩洛瑟斯-第4关 Boss"@zh ;
+    pve:counteredBy seer:pet_3894 ; rdfs:comment "来源 thread-2975"@zh .
+pve:enemy_peiluosesi_5 a pve:Enemy ; rdfs:label "佩洛瑟斯-第5关 Boss"@zh ;
+    pve:counteredBy seer:pet_3022 ; rdfs:comment "来源 thread-2975"@zh .
+
+# 小莫伊莱（thread-3052）
+pve:enemy_moyilai_1 a pve:Enemy ; rdfs:label "小莫伊莱-第1关 Boss"@zh ;
+    rdfs:comment "来源 thread-3052"@zh .
+pve:enemy_moyilai_2 a pve:Enemy ; rdfs:label "小莫伊莱-第2关 Boss"@zh ;
+    rdfs:comment "来源 thread-3052"@zh .
+pve:enemy_moyilai_3 a pve:Enemy ; rdfs:label "小莫伊莱-第3关 Boss"@zh ;
+    rdfs:comment "来源 thread-3052"@zh .
+pve:enemy_moyilai_4 a pve:Enemy ; rdfs:label "小莫伊莱-第4关 Boss"@zh ;
+    pve:counteredBy seer:pet_3894, seer:pet_3512, seer:pet_3329 ;
+    rdfs:comment "来源 thread-3052（第4关千裳，无千裳用84弹=表姐+六界）"@zh .
+pve:enemy_moyilai_5 a pve:Enemy ; rdfs:label "小莫伊莱-第5关 Boss"@zh ;
+    rdfs:comment "来源 thread-3052"@zh .
+
+# 灵石守卫（thread-3091）
+pve:enemy_lingshishouwei_1 a pve:Enemy ; rdfs:label "灵石守卫-第1关 Boss"@zh ;
+    pve:counteredBy seer:pet_5000 ; rdfs:comment "来源 thread-3091"@zh .
+pve:enemy_lingshishouwei_2 a pve:Enemy ; rdfs:label "灵石守卫-第2关 Boss"@zh ;
+    pve:counteredBy seer:pet_3437 ; rdfs:comment "来源 thread-3091"@zh .
+pve:enemy_lingshishouwei_3 a pve:Enemy ; rdfs:label "灵石守卫-第3关 Boss"@zh ;
+    pve:counteredBy seer:pet_3567 ; rdfs:comment "来源 thread-3091"@zh .
+pve:enemy_lingshishouwei_4 a pve:Enemy ; rdfs:label "灵石守卫-第4关 Boss"@zh ;
+    pve:counteredBy seer:pet_3894 ; rdfs:comment "来源 thread-3091"@zh .
+pve:enemy_lingshishouwei_5 a pve:Enemy ; rdfs:label "灵石守卫-第5关 Boss"@zh ;
+    pve:counteredBy seer:pet_4649, seer:pet_4648 ; rdfs:comment "来源 thread-3091"@zh .
+
+# 玖莉娜（thread-3093）
+pve:enemy_jiulina_1 a pve:Enemy ; rdfs:label "玖莉娜-第1关 Boss"@zh ;
+    pve:counteredBy seer:pet_3894 ; rdfs:comment "来源 thread-3093"@zh .
+pve:enemy_jiulina_2 a pve:Enemy ; rdfs:label "玖莉娜-第2关 Boss"@zh ;
+    pve:counteredBy seer:pet_3437 ; rdfs:comment "来源 thread-3093"@zh .
+pve:enemy_jiulina_3 a pve:Enemy ; rdfs:label "玖莉娜-第3关 Boss"@zh ;
+    pve:counteredBy seer:pet_3561 ; rdfs:comment "来源 thread-3093"@zh .
+pve:enemy_jiulina_4 a pve:Enemy ; rdfs:label "玖莉娜-第4关 Boss"@zh ;
+    rdfs:comment "来源 thread-3093"@zh .
+pve:enemy_jiulina_5 a pve:Enemy ; rdfs:label "玖莉娜-第5关 Boss"@zh ;
+    rdfs:comment "来源 thread-3093"@zh .
+
+# 无为觉者（thread-3021）
+pve:enemy_wuweijuezhe_1 a pve:Enemy ; rdfs:label "无为觉者-第1关 Boss"@zh ;
+    pve:counteredBy seer:pet_5000, seer:pet_3512, seer:pet_3463 ;
+    rdfs:comment "来源 thread-3021"@zh .
+pve:enemy_wuweijuezhe_2 a pve:Enemy ; rdfs:label "无为觉者-第2关 Boss"@zh ;
+    pve:counteredBy seer:pet_3460 ; rdfs:comment "来源 thread-3021"@zh .
+pve:enemy_wuweijuezhe_3 a pve:Enemy ; rdfs:label "无为觉者-第3关 Boss"@zh ;
+    pve:counteredBy seer:pet_3567 ; rdfs:comment "来源 thread-3021"@zh .
+pve:enemy_wuweijuezhe_4 a pve:Enemy ; rdfs:label "无为觉者-第4关 Boss"@zh ;
+    pve:counteredBy seer:pet_2735, seer:pet_3613, seer:pet_3414 ;
+    rdfs:comment "来源 thread-3021"@zh .
+pve:enemy_wuweijuezhe_5 a pve:Enemy ; rdfs:label "无为觉者-第5关 Boss"@zh ;
+    pve:counteredBy seer:pet_4649, seer:pet_4648 ; rdfs:comment "来源 thread-3021"@zh .
+
+# 利塞特（thread-2995）
+pve:enemy_lisaite_1 a pve:Enemy ; rdfs:label "重塑之子利塞特-第1关 Boss"@zh ;
+    rdfs:comment "来源 thread-2995"@zh .
+pve:enemy_lisaite_2 a pve:Enemy ; rdfs:label "重塑之子利塞特-第2关 Boss"@zh ;
+    pve:counteredBy seer:pet_3894 ; rdfs:comment "来源 thread-2995"@zh .
+pve:enemy_lisaite_3 a pve:Enemy ; rdfs:label "重塑之子利塞特-第3关 Boss"@zh ;
+    pve:counteredBy seer:pet_3022 ; rdfs:comment "来源 thread-2995"@zh .
+pve:enemy_lisaite_4 a pve:Enemy ; rdfs:label "重塑之子利塞特-第4关 Boss"@zh ;
+    pve:counteredBy seer:pet_5000 ; rdfs:comment "来源 thread-2995"@zh .
+pve:enemy_lisaite_5 a pve:Enemy ; rdfs:label "重塑之子利塞特-第5关 Boss"@zh ;
+    pve:counteredBy seer:pet_4649, seer:pet_4648 ; rdfs:comment "来源 thread-2995"@zh .
+
+# 眠降·玛缇娜（thread-3535）
+pve:enemy_mianjiang_1 a pve:Enemy ; rdfs:label "眠降·玛缇娜-第1关 Boss"@zh ;
+    pve:counteredBy seer:pet_3022 ; rdfs:comment "来源 thread-3535"@zh .
+pve:enemy_mianjiang_2 a pve:Enemy ; rdfs:label "眠降·玛缇娜-第2关 Boss"@zh ;
+    pve:counteredBy seer:pet_2735, seer:pet_5000 ; rdfs:comment "来源 thread-3535"@zh .
+pve:enemy_mianjiang_3 a pve:Enemy ; rdfs:label "眠降·玛缇娜-第3关 Boss"@zh ;
+    pve:counteredBy seer:pet_3460 ; rdfs:comment "来源 thread-3535"@zh .
+pve:enemy_mianjiang_4 a pve:Enemy ; rdfs:label "眠降·玛缇娜-第4关 Boss"@zh ;
+    pve:counteredBy seer:pet_4648 ; rdfs:comment "来源 thread-3535"@zh .
+pve:enemy_mianjiang_5 a pve:Enemy ; rdfs:label "眠降·玛缇娜-第5关 Boss"@zh ;
+    pve:counteredBy seer:pet_4649, seer:pet_3613, seer:pet_3437 ;
+    rdfs:comment "来源 thread-3535"@zh .
+
+# 星光蘑菇怪（thread-2994）
+pve:enemy_xingguangmoguguai_1 a pve:Enemy ; rdfs:label "星光蘑菇怪-第1关 Boss"@zh ;
+    pve:counteredBy seer:pet_5000 ; rdfs:comment "来源 thread-2994"@zh .
+pve:enemy_xingguangmoguguai_2 a pve:Enemy ; rdfs:label "星光蘑菇怪-第2关 Boss"@zh ;
+    pve:counteredBy seer:pet_3463 ; rdfs:comment "来源 thread-2994"@zh .
+pve:enemy_xingguangmoguguai_3 a pve:Enemy ; rdfs:label "星光蘑菇怪-第3关 Boss"@zh ;
+    pve:counteredBy seer:pet_3022 ; rdfs:comment "来源 thread-2994"@zh .
+pve:enemy_xingguangmoguguai_4 a pve:Enemy ; rdfs:label "星光蘑菇怪-第4关 Boss"@zh ;
+    pve:counteredBy seer:pet_3437 ; rdfs:comment "来源 thread-2994"@zh .
+pve:enemy_xingguangmoguguai_5 a pve:Enemy ; rdfs:label "星光蘑菇怪-第5关 Boss"@zh ;
+    pve:counteredBy seer:pet_4649, seer:pet_4648 ; rdfs:comment "来源 thread-2994"@zh .
+
+# 极战·阿尔斯兰（thread-3058）
+pve:enemy_aersilan_1 a pve:Enemy ; rdfs:label "极战·阿尔斯兰-第1关 Boss"@zh ;
+    pve:counteredBy seer:pet_3463, seer:pet_3938, seer:pet_3894 ;
+    rdfs:comment "来源 thread-3058"@zh .
+pve:enemy_aersilan_2 a pve:Enemy ; rdfs:label "极战·阿尔斯兰-第2关 Boss"@zh ;
+    pve:counteredBy seer:pet_3022 ; rdfs:comment "来源 thread-3058"@zh .
+pve:enemy_aersilan_3 a pve:Enemy ; rdfs:label "极战·阿尔斯兰-第3关 Boss"@zh ;
+    pve:counteredBy seer:pet_3437 ; rdfs:comment "来源 thread-3058"@zh .
+pve:enemy_aersilan_4 a pve:Enemy ; rdfs:label "极战·阿尔斯兰-第4关 Boss"@zh ;
+    rdfs:comment "来源 thread-3058"@zh .
+pve:enemy_aersilan_5 a pve:Enemy ; rdfs:label "极战·阿尔斯兰-第5关 Boss"@zh ;
+    pve:counteredBy seer:pet_4636, seer:pet_4344, seer:pet_4606, seer:pet_4463, seer:pet_3567,
+        seer:pet_3866, seer:pet_3512, seer:pet_3329, seer:pet_4377 ;
+    rdfs:comment "来源 thread-3058"@zh .
+
+# 参天巨型仙人掌（thread-3689）
+pve:enemy_xianrenzhang_1 a pve:Enemy ; rdfs:label "参天巨型仙人掌-第1关 Boss"@zh ;
+    pve:counteredBy seer:pet_5000 ; rdfs:comment "来源 thread-3689"@zh .
+pve:enemy_xianrenzhang_2 a pve:Enemy ; rdfs:label "参天巨型仙人掌-第2关 Boss"@zh ;
+    pve:counteredBy seer:pet_3894 ; rdfs:comment "来源 thread-3689"@zh .
+pve:enemy_xianrenzhang_3 a pve:Enemy ; rdfs:label "参天巨型仙人掌-第3关 Boss"@zh ;
+    pve:counteredBy seer:pet_3022 ; rdfs:comment "来源 thread-3689"@zh .
+pve:enemy_xianrenzhang_4 a pve:Enemy ; rdfs:label "参天巨型仙人掌-第4关 Boss"@zh ;
+    pve:counteredBy seer:pet_4648 ; rdfs:comment "来源 thread-3689"@zh .
+pve:enemy_xianrenzhang_5 a pve:Enemy ; rdfs:label "参天巨型仙人掌-第5关 Boss"@zh ;
+    pve:counteredBy seer:pet_4647 ; rdfs:comment "来源 thread-3689"@zh .
+
+# 卡莎（thread-3561）
+pve:enemy_kasha_1 a pve:Enemy ; rdfs:label "卡莎-第1关 Boss"@zh ;
+    rdfs:comment "来源 thread-3561"@zh .
+pve:enemy_kasha_2 a pve:Enemy ; rdfs:label "卡莎-第2关 Boss"@zh ;
+    pve:counteredBy seer:pet_5000 ; rdfs:comment "来源 thread-3561"@zh .
+pve:enemy_kasha_3 a pve:Enemy ; rdfs:label "卡莎-第3关 Boss"@zh ;
+    pve:counteredBy seer:pet_3022 ; rdfs:comment "来源 thread-3561"@zh .
+pve:enemy_kasha_4 a pve:Enemy ; rdfs:label "卡莎-第4关 Boss"@zh ;
+    pve:counteredBy seer:pet_3460 ; rdfs:comment "来源 thread-3561"@zh .
+pve:enemy_kasha_5 a pve:Enemy ; rdfs:label "卡莎-第5关 Boss"@zh ;
+    pve:counteredBy seer:pet_3437, seer:pet_4649, seer:pet_3613, seer:pet_4648 ;
+    rdfs:comment "来源 thread-3561"@zh .
+
+# 迹（thread-3017）
+pve:enemy_ji_1 a pve:Enemy ; rdfs:label "迹-第1关 Boss"@zh ;
+    pve:counteredBy seer:pet_3613 ; rdfs:comment "来源 thread-3017"@zh .
+pve:enemy_ji_2 a pve:Enemy ; rdfs:label "迹-第2关 Boss"@zh ;
+    pve:counteredBy seer:pet_4647 ; rdfs:comment "来源 thread-3017"@zh .
+pve:enemy_ji_3 a pve:Enemy ; rdfs:label "迹-第3关 Boss"@zh ;
+    pve:counteredBy seer:pet_4648 ; rdfs:comment "来源 thread-3017"@zh .
+pve:enemy_ji_4 a pve:Enemy ; rdfs:label "迹-第4关 Boss"@zh ;
+    pve:counteredBy seer:pet_2977, seer:pet_3329, seer:pet_3463 ;
+    rdfs:comment "来源 thread-3017"@zh .
+pve:enemy_ji_5 a pve:Enemy ; rdfs:label "迹-第5关 Boss"@zh ;
+    pve:counteredBy seer:pet_3460, seer:pet_3437 ; rdfs:comment "来源 thread-3017"@zh .
+
+# 仿生兽·库比（thread-3046）
+pve:enemy_kubi_1 a pve:Enemy ; rdfs:label "仿生兽·库比-第1关 Boss"@zh ;
+    pve:counteredBy seer:pet_3561 ; rdfs:comment "来源 thread-3046"@zh .
+pve:enemy_kubi_2 a pve:Enemy ; rdfs:label "仿生兽·库比-第2关 Boss"@zh ;
+    rdfs:comment "来源 thread-3046"@zh .
+pve:enemy_kubi_3 a pve:Enemy ; rdfs:label "仿生兽·库比-第3关 Boss"@zh ;
+    pve:counteredBy seer:pet_3437 ; rdfs:comment "来源 thread-3046"@zh .
+pve:enemy_kubi_4 a pve:Enemy ; rdfs:label "仿生兽·库比-第4关 Boss"@zh ;
+    pve:counteredBy seer:pet_3460, seer:pet_4377, seer:pet_5000, seer:pet_3022, seer:pet_4636 ;
+    rdfs:comment "来源 thread-3046"@zh .
+pve:enemy_kubi_5 a pve:Enemy ; rdfs:label "仿生兽·库比-第5关 Boss"@zh ;
+    pve:counteredBy seer:pet_4649, seer:pet_4648, seer:pet_2977, seer:pet_12 ;
+    rdfs:comment "来源 thread-3046"@zh .
+
+# 紫烬魔兽（thread-2999）
+pve:enemy_zijinmoshou_1 a pve:Enemy ; rdfs:label "紫烬魔兽-第1关 Boss"@zh ;
+    pve:counteredBy seer:pet_5000 ; rdfs:comment "来源 thread-2999"@zh .
+pve:enemy_zijinmoshou_2 a pve:Enemy ; rdfs:label "紫烬魔兽-第2关 Boss"@zh ;
+    pve:counteredBy seer:pet_3022 ; rdfs:comment "来源 thread-2999"@zh .
+pve:enemy_zijinmoshou_3 a pve:Enemy ; rdfs:label "紫烬魔兽-第3关 Boss"@zh ;
+    pve:counteredBy seer:pet_3894 ; rdfs:comment "来源 thread-2999"@zh .
+pve:enemy_zijinmoshou_4 a pve:Enemy ; rdfs:label "紫烬魔兽-第4关 Boss"@zh ;
+    rdfs:comment "来源 thread-2999"@zh .
+pve:enemy_zijinmoshou_5 a pve:Enemy ; rdfs:label "紫烬魔兽-第5关 Boss"@zh ;
+    pve:counteredBy seer:pet_4649, seer:pet_4648 ; rdfs:comment "来源 thread-2999"@zh .
+
+# 娜诺（thread-6625，简单：1245自爆弹伤=表姐+六界，第3关鲁斯王）
+pve:enemy_nanuo_1 a pve:Enemy ; rdfs:label "娜诺-第1关 Boss"@zh ;
+    pve:counteredBy seer:pet_3512, seer:pet_3329 ; rdfs:comment "来源 thread-6625"@zh .
+pve:enemy_nanuo_2 a pve:Enemy ; rdfs:label "娜诺-第2关 Boss"@zh ;
+    pve:counteredBy seer:pet_3512, seer:pet_3329 ; rdfs:comment "来源 thread-6625"@zh .
+pve:enemy_nanuo_3 a pve:Enemy ; rdfs:label "娜诺-第3关 Boss"@zh ;
+    pve:counteredBy seer:pet_4648 ; rdfs:comment "来源 thread-6625"@zh .
+pve:enemy_nanuo_4 a pve:Enemy ; rdfs:label "娜诺-第4关 Boss"@zh ;
+    pve:counteredBy seer:pet_3512, seer:pet_3329 ; rdfs:comment "来源 thread-6625"@zh .
+pve:enemy_nanuo_5 a pve:Enemy ; rdfs:label "娜诺-第5关 Boss"@zh ;
+    pve:counteredBy seer:pet_3512, seer:pet_3329 ; rdfs:comment "来源 thread-6625"@zh .
+
+# 拉米兹（thread-6534，简单：1245自爆弹伤=表姐+六界，第3关蒂朵）
+pve:enemy_lamizi_1 a pve:Enemy ; rdfs:label "拉米兹-第1关 Boss"@zh ;
+    pve:counteredBy seer:pet_3512, seer:pet_3329 ; rdfs:comment "来源 thread-6534"@zh .
+pve:enemy_lamizi_2 a pve:Enemy ; rdfs:label "拉米兹-第2关 Boss"@zh ;
+    pve:counteredBy seer:pet_3512, seer:pet_3329 ; rdfs:comment "来源 thread-6534"@zh .
+pve:enemy_lamizi_3 a pve:Enemy ; rdfs:label "拉米兹-第3关 Boss"@zh ;
+    pve:counteredBy seer:pet_4377 ; rdfs:comment "来源 thread-6534"@zh .
+pve:enemy_lamizi_4 a pve:Enemy ; rdfs:label "拉米兹-第4关 Boss"@zh ;
+    pve:counteredBy seer:pet_3512, seer:pet_3329 ; rdfs:comment "来源 thread-6534"@zh .
+pve:enemy_lamizi_5 a pve:Enemy ; rdfs:label "拉米兹-第5关 Boss"@zh ;
+    pve:counteredBy seer:pet_3512, seer:pet_3329 ; rdfs:comment "来源 thread-6534"@zh .

@@ -1,0 +1,1 @@
+{"desc": "令对手下{0}次使用的技能PP值归零", "desc_tag": null, "hash": "4ded937d", "icon": [30], "id": 569, "tag": "减PP", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

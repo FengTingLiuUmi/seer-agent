@@ -1,0 +1,1 @@
+{"desc": "{0}回合内自身使用技能后{1}%随机附加{2}种弱化类异常状态", "desc_tag": null, "hash": "8ea85620", "icon": [14], "id": 652, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

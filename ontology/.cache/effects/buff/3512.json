@@ -1,0 +1,1 @@
+{"desc": "1回合内，攻击造成的伤害值低于对手最大体力的1/2则附加等量固定伤害", "desc_tag": null, "hash": "8b8e81dd", "icon": [34], "id": 3512, "tag": "附加伤害", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

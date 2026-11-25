@@ -1,0 +1,1 @@
+{"desc": "自身{roundnext[0]}攻击有{1}%使对手{abst[2]}", "desc_tag": "roundnext, abst", "hash": "3c27c5e7", "icon": [14], "id": 264, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

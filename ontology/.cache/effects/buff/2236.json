@@ -1,0 +1,1 @@
+{"desc": "自身造成的伤害低于{0}则附加对手最大体力{1}%的固定伤害", "desc_tag": null, "hash": "d1121da2", "icon": [34], "id": 2236, "tag": "附加伤害", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

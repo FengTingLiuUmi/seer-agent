@@ -1,0 +1,1 @@
+{"desc": "下{0}次被致命一击命中时消除自身回合类效果并抵挡该伤害", "desc_tag": null, "hash": "96db4985", "icon": [25], "id": 4463, "tag": "消除回合|免伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

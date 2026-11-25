@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若自身不处于能力提升状态，则当回合攻击技能必定致命、必定命中", "desc_tag": null, "hash": "cf5e92ac", "icon": [36], "id": 3934, "tag": "致命一击", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

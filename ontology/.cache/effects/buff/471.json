@@ -1,0 +1,1 @@
+{"desc": "{0}回合内自身回合类效果被消除后{1}%令对手{abst[2]}", "desc_tag": "abst", "hash": "99c43ac3", "icon": [14], "id": 471, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

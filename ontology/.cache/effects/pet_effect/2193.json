@@ -1,0 +1,1 @@
+{"desc": "35%弹90点固定伤害", "effect": {"effect": {"id": 699, "url": "https://api.seerapi.com/v1/eid_effect/699"}, "effect_args": [35, 90]}, "effect_alias": "699_35_90", "effect_group": {"id": 49, "url": "https://api.seerapi.com/v1/pet_effect_group/49"}, "hash": "bb27cc35", "id": 2193, "name": "反弹", "star_level": 3}

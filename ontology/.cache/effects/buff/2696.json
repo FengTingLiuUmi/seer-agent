@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若对手使用攻击技能则造成的攻击伤害不超过自身最大体力的一半", "desc_tag": null, "hash": "a247af40", "icon": [15], "id": 2696, "tag": "伤害限制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

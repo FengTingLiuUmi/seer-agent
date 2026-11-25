@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若对手处于异常状态则当回合攻击技能必定打出致命一击", "desc_tag": null, "hash": "5f5fe647", "icon": [36], "id": 4251, "tag": "致命一击", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

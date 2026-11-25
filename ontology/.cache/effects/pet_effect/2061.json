@@ -1,0 +1,1 @@
+{"desc": "所有技能命中率增加12%", "effect": {"effect": {"id": 29, "url": "https://api.seerapi.com/v1/eid_effect/29"}, "effect_args": [9, 0]}, "effect_alias": "29_9_0", "effect_group": {"id": 16, "url": "https://api.seerapi.com/v1/pet_effect_group/16"}, "hash": "9d5e8c95", "id": 2061, "name": "精准", "star_level": 4}

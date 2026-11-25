@@ -1,0 +1,160 @@
+{
+ "doc_id": "婕克拉德#地狱",
+ "factor": "婕克拉德",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4495,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "电冰",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 300固伤; 减伤16.7%; 消强; 全属性-1; 150技能(天叶盔)免疫下一发威力>150攻击",
+   "mech": [
+    "immunePower",
+    "debuff",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "启灵元神单挑 / 灵·辰坤星魂岳鉴诸天强攻",
+    "启灵保圣血猎者·赫布洛(裸上会被秒)"
+   ],
+   "pets": [
+    "启灵元神",
+    "灵·辰坤星魂",
+    "启灵",
+    "圣血猎者·赫布洛"
+   ],
+   "why": "该关封属+消强+全属性-1，让强化/属性技能都站不住，且150技能(天叶盔)免疫下一发威力>150的攻击；按速查表「免疫威力>150」需换区间外低威力技能，故攻略用启灵元神/灵·辰坤星魂以岳鉴诸天等不过线的攻击技能站场/强攻，绕开天叶盔与封属。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4479,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "冰飞行",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 300固伤; 减伤16.7%; 全属性+1; 消强",
+   "mech": [
+    "selfBuff",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "圣血猎者·赫布洛强攻 / 千裳单挑",
+    "阿什坎迪"
+   ],
+   "pets": [
+    "圣血猎者·赫布洛",
+    "千裳",
+    "阿什坎迪"
+   ],
+   "why": "Boss自身全属性+1会越打越强且带消强，靠强化站场会被清、拖久必崩，封属又禁用属性技能；所以改用攻击技能为主的强攻/单挑速杀（圣血猎者·赫布洛强攻或千裳单挑），不靠强化、抢先压血。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4493,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "冰神秘",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 500固伤; 减伤16.7%; 偷强",
+   "mech": [
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "希可洛(村长)奇镰解放站场单挑 / 20血魔钰梦境残缺强攻",
+    "村长 奇镰解放(单精灵偷强)"
+   ],
+   "pets": [
+    "希可洛",
+    "魔钰"
+   ],
+   "why": "Boss会偷强，叠强化等于把属性喂给Boss，封属又封住属性技能；按速查表改用不靠强化的打法——希可洛(村长)奇镰解放站场持续磨、或20血魔钰梦境残缺直接强攻，两条路线都是攻击技能路线避偷强。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4503,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "战斗暗影",
+   "boss_hp": 100000,
+   "traits": "必先; 封属; 500固伤; 减伤33.3%; 随机弱化(我方随机三项能力-2)",
+   "mech": [
+    "debuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "帝皇之御自爆+月照星魂/魔钰强攻 / 送潘克多斯+蒂朵后时空界皇+月照星魂强攻",
+    "月照+魔钰"
+   ],
+   "pets": [
+    "帝皇之御",
+    "月照星魂",
+    "魔钰",
+    "潘克多斯",
+    "时空界皇"
+   ],
+   "why": "10万血+减伤33.3%+随机弱化我方三项，硬磨不现实、只能拼爆发；表姐(帝皇之御)守御八方是攻击技能不受封属，给后续强攻手必先+必暴，月照星魂/魔钰吃必暴一轮斩杀；另一方案送潘克多斯+蒂朵叠增伤后由时空界皇+月照星魂强攻，同是拼一轮爆发。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4505,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "混沌飞行",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 500固伤; 减伤33.3%; 闪避(非必中必闪); 麻痹控",
+   "mech": [
+    "dodge",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "帝皇之御自爆+电系月费强攻(帕尔尼兹/雷霆虎卫) / 帝皇之御自爆+送蒂朵+帕尔尼兹",
+    "引爆 克罗保蒂朵自爆接电系月费强攻"
+   ],
+   "pets": [
+    "帝皇之御",
+    "帕尔尼兹",
+    "雷霆虎卫",
+    "蒂朵",
+    "克罗"
+   ],
+   "why": "Boss带麻痹控与高闪避(非必中必闪)，表姐自爆守御八方给必先+必暴，必暴按速查表是伪必中、可覆盖高闪避命中，再让克制的电系强攻手帕尔尼兹/雷霆虎卫爆发速杀，抢必先避免被麻痹；送蒂朵方案只是多叠一层增伤。"
+  }
+ ],
+ "tids": [
+  1338,
+  2015
+ ],
+ "note": "无正文数据"
+}

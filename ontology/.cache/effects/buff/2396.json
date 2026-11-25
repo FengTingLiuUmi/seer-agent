@@ -1,0 +1,1 @@
+{"desc": "若对手处于冻伤状态，则自身本回合受到的伤害减少100点", "desc_tag": null, "hash": "b55be86", "icon": [29], "id": 2396, "tag": "减伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

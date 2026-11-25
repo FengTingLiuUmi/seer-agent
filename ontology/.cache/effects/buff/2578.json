@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若对手处于烧伤状态，则当回合自身所有技能先制+1", "desc_tag": null, "hash": "b29c978b", "icon": [6], "id": 2578, "tag": "先制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

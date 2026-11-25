@@ -1,0 +1,1 @@
+{"ability_buff": null, "desc": "对战时增加精灵1/8致命一击几率，使用次数5。注意：赛尔之间对战无效", "effect": {"effect": {"id": 30, "url": "https://api.seerapi.com/v1/eid_effect/30"}, "effect_args": [2]}, "hash": "6a77c104", "id": 300784, "idx": 1109, "item": {"id": 300784, "url": "https://api.seerapi.com/v1/item/300784"}, "name": "愤怒能量珠", "use_times": 5}

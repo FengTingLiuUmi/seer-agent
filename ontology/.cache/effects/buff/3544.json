@@ -1,0 +1,1 @@
+{"desc": "回合开始时若自身体力高于对手则30%免疫当回合受到的攻击伤害", "desc_tag": null, "hash": "90de81c9", "icon": [25], "id": 3544, "tag": "免伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,183 @@
+{
+  "items": [
+    {
+      "tid": 1931,
+      "factor": "青啼",
+      "difficulty": "地狱",
+      "stages": [
+        {
+          "stage": 1,
+          "strategy": "消强精灵+四九圣尊",
+          "pets": ["四九圣尊"]
+        },
+        {
+          "stage": 2,
+          "strategy": "幻影碟自爆 / 伊莉莎 暗月×2 / 千裳补刀",
+          "pets": ["幻影碟", "伊莉莎", "千裳"]
+        },
+        {
+          "stage": 3,
+          "strategy": "星光·丽莎布布 究极吸取+150强攻",
+          "pets": ["星光·丽莎布布"]
+        },
+        {
+          "stage": 4,
+          "strategy": "潘星巴克+波客比",
+          "pets": ["波客比"]
+        },
+        {
+          "stage": 5,
+          "strategy": "圣灵谱尼单挑(盾体)",
+          "pets": ["圣灵谱尼"]
+        }
+      ]
+    },
+    {
+      "tid": 1943,
+      "factor": "桑多姆",
+      "difficulty": "地狱",
+      "stages": [
+        {
+          "stage": 1,
+          "strategy": "村长+卡莎+表姐+伊芙丽/伊芙丽莎+元神+火潘+西塔伦+月照+魔钰+鲁肃（天河神将/重生容错）",
+          "pets": ["希可洛", "卡莎", "帝皇之御", "伊芙丽", "伊芙丽莎", "元神", "潘克多斯", "西塔伦", "月照星魂", "魔钰", "鲁肃", "天河神将", "重生"],
+          "config": "金火(第1、5关)+绿火(第2-4关)"
+        }
+      ],
+      "note": "伊芙丽/伊芙丽莎特攻700+，村长防御600，卡莎防御550体力1000+，月照/魔钰750+"
+    },
+    {
+      "tid": 1944,
+      "factor": "里扎德",
+      "difficulty": "地狱",
+      "stages": [],
+      "note": "无正文数据（仅引用外部攻略）"
+    },
+    {
+      "tid": 1981,
+      "factor": "视界·明德里奇",
+      "difficulty": "地狱",
+      "stages": [],
+      "note": "无正文数据"
+    },
+    {
+      "tid": 1984,
+      "factor": "冥契格斯塔丝",
+      "difficulty": "地狱",
+      "stages": [],
+      "note": "无正文数据（含前置形态）"
+    },
+    {
+      "tid": 1989,
+      "factor": "尤莉米特",
+      "difficulty": "地狱",
+      "stages": [],
+      "note": "无正文数据"
+    },
+    {
+      "tid": 1992,
+      "factor": "重塑之子·利塞特",
+      "difficulty": "地狱",
+      "stages": [],
+      "note": "无正文数据"
+    },
+    {
+      "tid": 1993,
+      "factor": "重塑之子·利塞特",
+      "difficulty": "地狱",
+      "stages": [],
+      "note": "无正文数据"
+    },
+    {
+      "tid": 1996,
+      "factor": "重塑之子·利塞特",
+      "difficulty": "困难",
+      "stages": [],
+      "note": "无正文数据"
+    },
+    {
+      "tid": 1998,
+      "factor": "重塑之子·利塞特",
+      "difficulty": "地狱",
+      "stages": [],
+      "note": "无正文数据"
+    },
+    {
+      "tid": 1999,
+      "factor": "重塑之子·利塞特",
+      "difficulty": "地狱",
+      "stages": [],
+      "note": "无正文数据"
+    },
+    {
+      "tid": 2004,
+      "factor": "重塑之子·利塞特",
+      "difficulty": "地狱",
+      "stages": [],
+      "note": "无正文数据"
+    },
+    {
+      "tid": 2008,
+      "factor": "克劳里菲",
+      "difficulty": "地狱",
+      "stages": [],
+      "note": "无正文数据"
+    },
+    {
+      "tid": 2015,
+      "factor": "婕克拉德",
+      "difficulty": "地狱",
+      "stages": [],
+      "note": "无正文数据"
+    },
+    {
+      "tid": 2024,
+      "factor": "瑞迪卡",
+      "difficulty": "地狱",
+      "stages": [],
+      "note": "无正文数据"
+    },
+    {
+      "tid": 2024,
+      "factor": "恶鬼图伽",
+      "difficulty": "地狱",
+      "stages": [],
+      "note": "无正文数据"
+    },
+    {
+      "tid": 2047,
+      "factor": "溯洄·拉伯克",
+      "difficulty": "地狱",
+      "stages": [],
+      "note": "无正文数据"
+    },
+    {
+      "tid": 2047,
+      "factor": "异维·拉伯克",
+      "difficulty": "地狱",
+      "stages": [],
+      "note": "无正文数据"
+    },
+    {
+      "tid": 2048,
+      "factor": "墨纪拉",
+      "difficulty": "地狱",
+      "stages": [],
+      "note": "无正文数据"
+    },
+    {
+      "tid": 2051,
+      "factor": "泠月",
+      "difficulty": "地狱",
+      "stages": [],
+      "note": "无正文数据"
+    },
+    {
+      "tid": 2052,
+      "factor": "龙灵战士",
+      "difficulty": "地狱",
+      "stages": [],
+      "note": "无正文数据"
+    }
+  ]
+}

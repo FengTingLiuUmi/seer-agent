@@ -1,0 +1,1 @@
+{"desc": "战斗阶段结束时附加150点固定伤害，每回合增加100点，最高350点", "desc_tag": null, "hash": "205f7ba6", "icon": [34], "id": 3388, "tag": "附加伤害", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

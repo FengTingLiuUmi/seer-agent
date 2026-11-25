@@ -1,0 +1,1 @@
+{"desc": "{roundnext[0]}受到的攻击伤害减少50%，所有技能先制+1", "desc_tag": "roundnext", "hash": "595f67e0", "icon": [29], "id": 3606, "tag": "减伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

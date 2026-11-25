@@ -1,0 +1,1 @@
+{"desc": "{0}回合内，若对手使用{skilltypeC[1]}技能，则恢复{2}点体力", "desc_tag": "skilltypeC", "hash": "d7942850", "icon": [31], "id": 151, "tag": "恢复", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

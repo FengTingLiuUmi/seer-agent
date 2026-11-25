@@ -1,0 +1,45 @@
+{
+  "factor": "泠月",
+  "difficulty": "地狱",
+  "source": [
+    "https://bbs.tiepi.top/forum.php?mod=viewthread&tid=3197",
+    "https://www.bilibili.com/opus/829596319323521045"
+  ],
+  "stages": [
+    {
+      "stage": 1,
+      "boss_type": "飞行",
+      "traits": "消强；受击双防+1；免疫特攻",
+      "strategy": "夜罗琉彩150 / 菠萝霸王单挑",
+      "pets": ["夜罗琉彩", "菠萝霸王"]
+    },
+    {
+      "stage": 2,
+      "boss_type": "冰火",
+      "traits": "消强；受击双防+1；免疫物攻",
+      "strategy": "星光·魔焰猩猩单挑 / 塞勒涅单挑",
+      "pets": ["星光·魔焰猩猩", "塞勒涅"]
+    },
+    {
+      "stage": 3,
+      "boss_type": "火飞行",
+      "traits": "消强；只吃暴击；真伤吸血300",
+      "strategy": "伊芙丽莎暗月守护歌 / 魔钰必先",
+      "pets": ["伊芙丽莎", "魔钰"]
+    },
+    {
+      "stage": 4,
+      "boss_type": "冰暗影",
+      "traits": "70%闪避；全属性+1；偷强",
+      "strategy": "表姐自爆+月华强攻+星光·鲁斯王兜底",
+      "pets": ["帝皇之御", "月华", "星光·鲁斯王"]
+    },
+    {
+      "stage": 5,
+      "boss_type": "冰暗影",
+      "traits": "必先；封属；焚烬控；概率挡伤；全属性-1；强化回血",
+      "strategy": "索比斯送死后圣灵谱尼第五单挑",
+      "pets": ["圣灵谱尼", "索比斯"]
+    }
+  ]
+}

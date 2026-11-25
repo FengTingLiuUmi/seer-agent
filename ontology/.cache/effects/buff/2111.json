@@ -1,0 +1,1 @@
+{"desc": "若自身受到的伤害超过{0}，则使对手进入{abst[1]}", "desc_tag": "abst", "hash": "6d0646a6", "icon": [14], "id": 2111, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

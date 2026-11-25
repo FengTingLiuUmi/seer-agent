@@ -1,0 +1,1 @@
+{"desc": "先出手时100%使对手当回合技能失效，每触发1次则概率下降25%，每下降25%则自身本场战斗造成的攻击伤害提升25%", "desc_tag": null, "hash": "2310ff65", "icon": [], "id": 3266, "tag": "增伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

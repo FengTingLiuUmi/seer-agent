@@ -1,0 +1,1 @@
+{"desc": "自身受到攻击时有25%的概率免疫此次攻击伤害，自身体力低于最大体力的1/2时概率翻倍", "desc_tag": null, "hash": "b631cca4", "icon": [25], "id": 3725, "tag": "免伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

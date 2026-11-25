@@ -1,0 +1,1 @@
+{"desc": "{0}回合内每回合使用技能{1}%令对手{abst[2]}，未触发则吸取对手最大体力的1/{3}", "desc_tag": "abst", "hash": "23534f4c", "icon": [14], "id": 584, "tag": "施加异常|吸血", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

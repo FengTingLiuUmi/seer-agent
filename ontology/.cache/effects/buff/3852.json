@@ -1,0 +1,1 @@
+{"desc": "每回合开始时有一定概率令对手当回合攻击技能必定MISS，概率等同于自身剩余体力百分比", "desc_tag": null, "hash": "dc8d1c1d", "icon": [16], "id": 3852, "tag": "闪避", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

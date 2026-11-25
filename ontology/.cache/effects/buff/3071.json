@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若自身体力低于对手则当回合必定打出致命一击", "desc_tag": null, "hash": "c57d0f33", "icon": [36], "id": 3071, "tag": "致命一击", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

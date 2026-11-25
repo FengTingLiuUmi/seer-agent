@@ -1,0 +1,28 @@
+test_aiou_not_starlight (__main__.TestAlias) ... ok
+test_nickname_golden (__main__.TestAlias) ... ok
+test_pan_not_pandora (__main__.TestAlias) ... ok
+test_ban_references (__main__.TestBossStructure) ... ok
+test_countered_by_are_pets (__main__.TestBossStructure) ... ok
+test_jiulina_dual_difficulty (__main__.TestBossStructure) ... ok
+test_stage_difficulty_vocab (__main__.TestBossStructure) ... ok
+test_stage_enemy_bijection (__main__.TestBossStructure) ... ok
+test_stage_iri_encodes_difficulty (__main__.TestBossStructure) ... ok
+test_stage_number_range (__main__.TestBossStructure) ... ok
+test_ban_yita (__main__.TestMCP) ... ok
+test_boss_yita (__main__.TestMCP) ... ok
+test_mult_golden (__main__.TestMCP) ... ok
+test_out_of_vocab (__main__.TestMCP) ... ok
+test_role_attacker (__main__.TestMCP) ... ok
+test_role_vocab (__main__.TestSkillStructure) ... ok
+test_skill_effect_complete (__main__.TestSkillStructure) ... ok
+test_skill_type_complete (__main__.TestSkillStructure) ... ok
+test_golden_multipliers (__main__.TestTypeChart) ... ok
+test_stab_constant (__main__.TestTypeChart) ... ok
+test_stab_is_set_equality_not_share (__main__.TestTypeChart) ... ok
+test_buckets (__main__.TestTypechartCounts) ... ok
+test_counts (__main__.TestTypechartCounts) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 1.114s
+
+OK

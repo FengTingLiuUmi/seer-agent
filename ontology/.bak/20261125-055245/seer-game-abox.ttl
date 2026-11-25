@@ -1,0 +1,865 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix seer: <http://example.org/seer#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+seer:pet_3329 a seer:Pet ;
+    rdfs:label "六界帝神"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseHp 150 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 126 ;
+    seer:hasSkill seer:skill_19313,
+        seer:skill_20928,
+        seer:skill_21095,
+        seer:skill_21152,
+        seer:skill_24752,
+        seer:skill_24753,
+        seer:skill_24754,
+        seer:skill_25380,
+        seer:skill_25381,
+        seer:skill_30549,
+        seer:skill_30552 ;
+    seer:hasSoulmark seer:soulmark_653 ;
+    seer:hasTypeCombination seer:tc_64 ;
+    seer:seerapiId "3329" ;
+    seer:total 688 .
+
+seer:pet_3437 a seer:Pet ;
+    rdfs:label "艾欧丽娅"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseHp 161 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 109 ;
+    seer:baseSpd 126 ;
+    seer:hasSkill seer:skill_20177,
+        seer:skill_20618,
+        seer:skill_20644,
+        seer:skill_23745,
+        seer:skill_25561,
+        seer:skill_25562,
+        seer:skill_25563,
+        seer:skill_25572,
+        seer:skill_25573,
+        seer:skill_25665,
+        seer:skill_25666,
+        seer:skill_30906,
+        seer:skill_30928,
+        seer:skill_30929,
+        seer:skill_31114,
+        seer:skill_31115,
+        seer:skill_31117 ;
+    seer:hasSoulmark seer:soulmark_1209,
+        seer:soulmark_752 ;
+    seer:hasTypeCombination seer:tc_91 ;
+    seer:seerapiId "3437" ;
+    seer:total 705 .
+
+seer:pet_3463 a seer:Pet ;
+    rdfs:label "时空界皇"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseHp 144 ;
+    seer:baseSpAtk 130 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 125 ;
+    seer:hasSkill seer:skill_19190,
+        seer:skill_20044,
+        seer:skill_20744,
+        seer:skill_21881,
+        seer:skill_24687,
+        seer:skill_24688,
+        seer:skill_24689,
+        seer:skill_25734,
+        seer:skill_25735,
+        seer:skill_31250,
+        seer:skill_31253 ;
+    seer:hasSoulmark seer:soulmark_776 ;
+    seer:hasTypeCombination seer:tc_64 ;
+    seer:seerapiId "3463" ;
+    seer:total 680 .
+
+seer:pet_3512 a seer:Pet ;
+    rdfs:label "帝皇之御"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseHp 171 ;
+    seer:baseSpAtk 125 ;
+    seer:baseSpDef 103 ;
+    seer:baseSpd 126 ;
+    seer:hasSkill seer:skill_20168,
+        seer:skill_20618,
+        seer:skill_21528,
+        seer:skill_24184,
+        seer:skill_25860,
+        seer:skill_25861,
+        seer:skill_25862,
+        seer:skill_31502,
+        seer:skill_31505,
+        seer:skill_31507 ;
+    seer:hasSoulmark seer:soulmark_821 ;
+    seer:hasTypeCombination seer:tc_74 ;
+    seer:seerapiId "3512" ;
+    seer:total 699 .
+
+seer:pet_4344 a seer:Pet ;
+    rdfs:label "潘克多斯"@zh ;
+    seer:baseAtk 141 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 106 ;
+    seer:baseSpd 130 ;
+    seer:hasSkill seer:skill_14900,
+        seer:skill_20267,
+        seer:skill_20402,
+        seer:skill_20513,
+        seer:skill_22663,
+        seer:skill_22664,
+        seer:skill_22665,
+        seer:skill_27900,
+        seer:skill_27901,
+        seer:skill_35740,
+        seer:skill_35743 ;
+    seer:hasSoulmark seer:soulmark_1569 ;
+    seer:hasTypeCombination seer:tc_3 ;
+    seer:seerapiId "4344" ;
+    seer:total 725 .
+
+seer:pet_4377 a seer:Pet ;
+    rdfs:label "蒂朵"@zh ;
+    seer:appearsInFactor seer:factor_2400129 ;
+    seer:baseAtk 70 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 135 ;
+    seer:hasSkill seer:skill_20013,
+        seer:skill_20183,
+        seer:skill_20521,
+        seer:skill_24481,
+        seer:skill_27981,
+        seer:skill_27982,
+        seer:skill_27983,
+        seer:skill_35911,
+        seer:skill_35914,
+        seer:skill_35916 ;
+    seer:hasSoulmark seer:soulmark_1601 ;
+    seer:hasTypeCombination seer:tc_64 ;
+    seer:seerapiId "4377" ;
+    seer:total 745 .
+
+seer:pet_4647 a seer:Pet ;
+    rdfs:label "星光·丽莎布布"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseHp 180 ;
+    seer:baseSpAtk 135 ;
+    seer:baseSpDef 120 ;
+    seer:baseSpd 120 ;
+    seer:hasSkill seer:skill_20001,
+        seer:skill_20007,
+        seer:skill_20008,
+        seer:skill_28733,
+        seer:skill_28734,
+        seer:skill_28735,
+        seer:skill_37375,
+        seer:skill_37380 ;
+    seer:hasSoulmark seer:soulmark_1847 ;
+    seer:hasTypeCombination seer:tc_1 ;
+    seer:seerapiId "4647" ;
+    seer:total 745 .
+
+seer:pet_4648 a seer:Pet ;
+    rdfs:label "星光·鲁斯王"@zh ;
+    seer:baseAtk 142 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 135 ;
+    seer:hasSkill seer:skill_10024,
+        seer:skill_11008,
+        seer:skill_20003,
+        seer:skill_20010,
+        seer:skill_20011,
+        seer:skill_28736,
+        seer:skill_28737,
+        seer:skill_28738,
+        seer:skill_37381,
+        seer:skill_37383 ;
+    seer:hasSoulmark seer:soulmark_1848 ;
+    seer:hasTypeCombination seer:tc_2 ;
+    seer:seerapiId "4648" ;
+    seer:total 745 .
+
+seer:pet_4649 a seer:Pet ;
+    rdfs:label "星光·魔焰猩猩"@zh ;
+    seer:baseAtk 142 ;
+    seer:baseHp 162 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 138 ;
+    seer:hasSkill seer:skill_20001,
+        seer:skill_20043,
+        seer:skill_20360,
+        seer:skill_28739,
+        seer:skill_28740,
+        seer:skill_28741,
+        seer:skill_37382,
+        seer:skill_37388 ;
+    seer:hasSoulmark seer:soulmark_1849 ;
+    seer:hasTypeCombination seer:tc_3 ;
+    seer:seerapiId "4649" ;
+    seer:total 740 .
+
+seer:eid_1058 a seer:EidEffect ;
+    seer:seerapiId "1058" .
+
+seer:eid_1106 a seer:EidEffect ;
+    seer:seerapiId "1106" .
+
+seer:eid_1928 a seer:EidEffect ;
+    seer:seerapiId "1928" .
+
+seer:eid_1964 a seer:EidEffect ;
+    seer:seerapiId "1964" .
+
+seer:eid_2235 a seer:EidEffect ;
+    seer:seerapiId "2235" .
+
+seer:eid_2236 a seer:EidEffect ;
+    seer:seerapiId "2236" .
+
+seer:eid_2237 a seer:EidEffect ;
+    seer:seerapiId "2237" .
+
+seer:eid_936 a seer:EidEffect ;
+    seer:seerapiId "936" .
+
+seer:skill_10024 a seer:Skill ;
+    rdfs:label "水流喷射"@zh ;
+    seer:power 40 ;
+    seer:priority 1 ;
+    seer:seerapiId "10024" .
+
+seer:skill_11008 a seer:Skill ;
+    rdfs:label "闪击"@zh ;
+    seer:power 45 ;
+    seer:priority 1 ;
+    seer:seerapiId "11008" .
+
+seer:skill_14900 a seer:Skill ;
+    rdfs:label "地火击"@zh ;
+    seer:power 70 ;
+    seer:priority 1 ;
+    seer:seerapiId "14900" .
+
+seer:skill_19190 a seer:Skill ;
+    rdfs:label "幻灭生威"@zh ;
+    seer:power 80 ;
+    seer:priority 3 ;
+    seer:seerapiId "19190" .
+
+seer:skill_19313 a seer:Skill ;
+    rdfs:label "六芒神剑"@zh ;
+    seer:power 85 ;
+    seer:priority 3 ;
+    seer:seerapiId "19313" .
+
+seer:skill_20003 a seer:Skill ;
+    rdfs:label "玩水"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20003" .
+
+seer:skill_20007 a seer:Skill ;
+    rdfs:label "寄生种子"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20007" .
+
+seer:skill_20008 a seer:Skill ;
+    rdfs:label "诅咒"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20008" .
+
+seer:skill_20010 a seer:Skill ;
+    rdfs:label "剑舞"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20010" .
+
+seer:skill_20011 a seer:Skill ;
+    rdfs:label "虚张声势"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20011" .
+
+seer:skill_20013 a seer:Skill ;
+    rdfs:label "折磨"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20013" .
+
+seer:skill_20043 a seer:Skill ;
+    rdfs:label "热量集合"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20043" .
+
+seer:skill_20044 a seer:Skill ;
+    rdfs:label "意志集中"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20044" .
+
+seer:skill_20168 a seer:Skill ;
+    rdfs:label "念动力"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20168" .
+
+seer:skill_20177 a seer:Skill ;
+    rdfs:label "奋斗"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20177" .
+
+seer:skill_20183 a seer:Skill ;
+    rdfs:label "恐吓"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20183" .
+
+seer:skill_20267 a seer:Skill ;
+    rdfs:label "锁敌"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20267" .
+
+seer:skill_20360 a seer:Skill ;
+    rdfs:label "隔绝"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20360" .
+
+seer:skill_20402 a seer:Skill ;
+    rdfs:label "余温"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20402" .
+
+seer:skill_20513 a seer:Skill ;
+    rdfs:label "顿足"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20513" .
+
+seer:skill_20521 a seer:Skill ;
+    rdfs:label "沉默"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20521" .
+
+seer:skill_20644 a seer:Skill ;
+    rdfs:label "刺骨冰霜"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20644" .
+
+seer:skill_20744 a seer:Skill ;
+    rdfs:label "光之承载"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20744" .
+
+seer:skill_20928 a seer:Skill ;
+    rdfs:label "意念精神"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20928" .
+
+seer:skill_21095 a seer:Skill ;
+    rdfs:label "幻动击"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "21095" .
+
+seer:skill_21152 a seer:Skill ;
+    rdfs:label "致命光环"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "21152" .
+
+seer:skill_21528 a seer:Skill ;
+    rdfs:label "防护屏障"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "21528" .
+
+seer:skill_21881 a seer:Skill ;
+    rdfs:label "星罗棋布"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "21881" .
+
+seer:skill_22663 a seer:Skill ;
+    rdfs:label "怒火中烧"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "22663" .
+
+seer:skill_22664 a seer:Skill ;
+    rdfs:label "永恒灼烧"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "22664" .
+
+seer:skill_22665 a seer:Skill ;
+    rdfs:label "高温内核"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "22665" .
+
+seer:skill_23745 a seer:Skill ;
+    rdfs:label "迷乱之风"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "23745" .
+
+seer:skill_24184 a seer:Skill ;
+    rdfs:label "绝影夕阳"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "24184" .
+
+seer:skill_24481 a seer:Skill ;
+    rdfs:label "圣洁月光"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "24481" .
+
+seer:skill_24687 a seer:Skill ;
+    rdfs:label "空间之变"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "24687" .
+
+seer:skill_24688 a seer:Skill ;
+    rdfs:label "刹那主宰"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "24688" .
+
+seer:skill_24689 a seer:Skill ;
+    rdfs:label "时空之门"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "24689" .
+
+seer:skill_24752 a seer:Skill ;
+    rdfs:label "六界之主"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "24752" .
+
+seer:skill_24753 a seer:Skill ;
+    rdfs:label "天啸灵威"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "24753" .
+
+seer:skill_24754 a seer:Skill ;
+    rdfs:label "万宰之光"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "24754" .
+
+seer:skill_25380 a seer:Skill ;
+    rdfs:label "光灵耀世"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "25380" .
+
+seer:skill_25381 a seer:Skill ;
+    rdfs:label "魂之璀璨"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "25381" .
+
+seer:skill_25561 a seer:Skill ;
+    rdfs:label "风铃轻鸣"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "25561" .
+
+seer:skill_25562 a seer:Skill ;
+    rdfs:label "蓝色冰影"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "25562" .
+
+seer:skill_25563 a seer:Skill ;
+    rdfs:label "精灵之助"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "25563" .
+
+seer:skill_25572 a seer:Skill ;
+    rdfs:label "寒冰藤蔓"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "25572" .
+
+seer:skill_25573 a seer:Skill ;
+    rdfs:label "自然祝福"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "25573" .
+
+seer:skill_25665 a seer:Skill ;
+    rdfs:label "光荣骑士"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "25665" .
+
+seer:skill_25666 a seer:Skill ;
+    rdfs:label "冰魄风暴"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "25666" .
+
+seer:skill_25734 a seer:Skill ;
+    rdfs:label "次元结界"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "25734" .
+
+seer:skill_25735 a seer:Skill ;
+    rdfs:label "层叠屏障"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "25735" .
+
+seer:skill_25860 a seer:Skill ;
+    rdfs:label "万物意志"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "25860" .
+
+seer:skill_25861 a seer:Skill ;
+    rdfs:label "生命永恒"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "25861" .
+
+seer:skill_25862 a seer:Skill ;
+    rdfs:label "寰宇圣护"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "25862" .
+
+seer:skill_27900 a seer:Skill ;
+    rdfs:label "永燃归烬"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "27900" .
+
+seer:skill_27901 a seer:Skill ;
+    rdfs:label "爆炎焚心"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "27901" .
+
+seer:skill_27981 a seer:Skill ;
+    rdfs:label "异维守护"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "27981" .
+
+seer:skill_27982 a seer:Skill ;
+    rdfs:label "灵籁之愿"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "27982" .
+
+seer:skill_27983 a seer:Skill ;
+    rdfs:label "星璨之望"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "27983" .
+
+seer:skill_28733 a seer:Skill ;
+    rdfs:label "星光·花草护体"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "28733" .
+
+seer:skill_28734 a seer:Skill ;
+    rdfs:label "星光·光合作用"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "28734" .
+
+seer:skill_28735 a seer:Skill ;
+    rdfs:label "星光·花草能量"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "28735" .
+
+seer:skill_28736 a seer:Skill ;
+    rdfs:label "星光·剑舞"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "28736" .
+
+seer:skill_28737 a seer:Skill ;
+    rdfs:label "星光·水天一色"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "28737" .
+
+seer:skill_28738 a seer:Skill ;
+    rdfs:label "星光·随风逐浪"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "28738" .
+
+seer:skill_28739 a seer:Skill ;
+    rdfs:label "星光·压迫"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "28739" .
+
+seer:skill_28740 a seer:Skill ;
+    rdfs:label "星光·冥想"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "28740" .
+
+seer:skill_28741 a seer:Skill ;
+    rdfs:label "星光·觉醒"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "28741" .
+
+seer:skill_30549 a seer:Skill ;
+    rdfs:label "圣剑之芒"@zh ;
+    seer:power 85 ;
+    seer:priority 3 ;
+    seer:seerapiId "30549" .
+
+seer:skill_30552 a seer:Skill ;
+    rdfs:label "天辉斩魔剑"@zh ;
+    seer:power 160 ;
+    seer:priority 0 ;
+    seer:seerapiId "30552" .
+
+seer:skill_30906 a seer:Skill ;
+    rdfs:label "羁绊缔结"@zh ;
+    seer:power 85 ;
+    seer:priority 3 ;
+    seer:seerapiId "30906" .
+
+seer:skill_30928 a seer:Skill ;
+    rdfs:label "幻灭速击"@zh ;
+    seer:power 90 ;
+    seer:priority 3 ;
+    seer:seerapiId "30928" .
+
+seer:skill_30929 a seer:Skill ;
+    rdfs:label "弥漫冰雨"@zh ;
+    seer:power 140 ;
+    seer:priority 2 ;
+    seer:seerapiId "30929" .
+
+seer:skill_31114 a seer:Skill ;
+    rdfs:label "疾击之刺"@zh ;
+    seer:power 90 ;
+    seer:priority 3 ;
+    seer:seerapiId "31114" .
+
+seer:skill_31115 a seer:Skill ;
+    rdfs:label "魂魄缠绕"@zh ;
+    seer:power 140 ;
+    seer:priority 2 ;
+    seer:seerapiId "31115" .
+
+seer:skill_31117 a seer:Skill ;
+    rdfs:label "侍君奉此生"@zh ;
+    seer:power 160 ;
+    seer:priority 0 ;
+    seer:seerapiId "31117" .
+
+seer:skill_31250 a seer:Skill ;
+    rdfs:label "光之穿行"@zh ;
+    seer:power 85 ;
+    seer:priority 3 ;
+    seer:seerapiId "31250" .
+
+seer:skill_31253 a seer:Skill ;
+    rdfs:label "时空跃迁术"@zh ;
+    seer:power 160 ;
+    seer:priority 0 ;
+    seer:seerapiId "31253" .
+
+seer:skill_31502 a seer:Skill ;
+    rdfs:label "华光洗礼"@zh ;
+    seer:power 85 ;
+    seer:priority 3 ;
+    seer:seerapiId "31502" .
+
+seer:skill_31505 a seer:Skill ;
+    rdfs:label "守御八方"@zh ;
+    seer:power 0 ;
+    seer:priority 2 ;
+    seer:seerapiId "31505" .
+
+seer:skill_31507 a seer:Skill ;
+    rdfs:label "神谕涤罪曲"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "31507" .
+
+seer:skill_35740 a seer:Skill ;
+    rdfs:label "烈焰十字"@zh ;
+    seer:power 85 ;
+    seer:priority 3 ;
+    seer:seerapiId "35740" .
+
+seer:skill_35743 a seer:Skill ;
+    rdfs:label "鬼焰·焚身术"@zh ;
+    seer:power 0 ;
+    seer:priority 1 ;
+    seer:seerapiId "35743" .
+
+seer:skill_35911 a seer:Skill ;
+    rdfs:label "时空牵绊"@zh ;
+    seer:power 85 ;
+    seer:priority 3 ;
+    seer:seerapiId "35911" .
+
+seer:skill_35914 a seer:Skill ;
+    rdfs:label "幻梦芳逝"@zh ;
+    seer:power 0 ;
+    seer:priority 3 ;
+    seer:seerapiId "35914" .
+
+seer:skill_35916 a seer:Skill ;
+    rdfs:label "朵·盛夏咏叹"@zh ;
+    seer:power 130 ;
+    seer:priority 0 ;
+    seer:seerapiId "35916" .
+
+seer:skill_37375 a seer:Skill ;
+    rdfs:label "星光·究极吸取"@zh ;
+    seer:power 90 ;
+    seer:priority 3 ;
+    seer:seerapiId "37375" .
+
+seer:skill_37380 a seer:Skill ;
+    rdfs:label "星光·金光绿叶"@zh ;
+    seer:power 160 ;
+    seer:priority 0 ;
+    seer:seerapiId "37380" .
+
+seer:skill_37381 a seer:Skill ;
+    rdfs:label "星光·浪打千击"@zh ;
+    seer:power 30 ;
+    seer:priority 0 ;
+    seer:seerapiId "37381" .
+
+seer:skill_37382 a seer:Skill ;
+    rdfs:label "星光·魔焰裂空"@zh ;
+    seer:power 160 ;
+    seer:priority 0 ;
+    seer:seerapiId "37382" .
+
+seer:skill_37383 a seer:Skill ;
+    rdfs:label "星光·闪击"@zh ;
+    seer:power 90 ;
+    seer:priority 3 ;
+    seer:seerapiId "37383" .
+
+seer:skill_37388 a seer:Skill ;
+    rdfs:label "星光·音速火拳"@zh ;
+    seer:power 90 ;
+    seer:priority 3 ;
+    seer:seerapiId "37388" .
+
+seer:soulmark_1209 a seer:Soulmark ;
+    seer:grantsEffect seer:eid_1035 ;
+    seer:seerapiId "1209" .
+
+seer:soulmark_1569 a seer:Soulmark ;
+    seer:grantsEffect seer:eid_1928 ;
+    seer:seerapiId "1569" .
+
+seer:soulmark_1601 a seer:Soulmark ;
+    seer:grantsEffect seer:eid_1964 ;
+    seer:seerapiId "1601" .
+
+seer:soulmark_1847 a seer:Soulmark ;
+    seer:grantsEffect seer:eid_2235 ;
+    seer:seerapiId "1847" .
+
+seer:soulmark_1848 a seer:Soulmark ;
+    seer:grantsEffect seer:eid_2236 ;
+    seer:seerapiId "1848" .
+
+seer:soulmark_1849 a seer:Soulmark ;
+    seer:grantsEffect seer:eid_2237 ;
+    seer:seerapiId "1849" .
+
+seer:soulmark_653 a seer:Soulmark ;
+    seer:grantsEffect seer:eid_936 ;
+    seer:seerapiId "653" .
+
+seer:soulmark_752 a seer:Soulmark ;
+    seer:grantsEffect seer:eid_1035 ;
+    seer:seerapiId "752" .
+
+seer:soulmark_776 a seer:Soulmark ;
+    seer:grantsEffect seer:eid_1058 ;
+    seer:seerapiId "776" .
+
+seer:soulmark_821 a seer:Soulmark ;
+    seer:grantsEffect seer:eid_1106 ;
+    seer:seerapiId "821" .
+
+seer:tc_1 a seer:TypeCombination ;
+    rdfs:label "草"@zh ;
+    seer:seerapiId "1" .
+
+seer:tc_2 a seer:TypeCombination ;
+    rdfs:label "水"@zh ;
+    seer:seerapiId "2" .
+
+seer:tc_74 a seer:TypeCombination ;
+    rdfs:label "战斗 自然"@zh ;
+    seer:seerapiId "74" .
+
+seer:tc_91 a seer:TypeCombination ;
+    rdfs:label "自然 冰"@zh ;
+    seer:seerapiId "91" .
+
+seer:eid_1035 a seer:EidEffect ;
+    seer:seerapiId "1035" .
+
+seer:skill_20001 a seer:Skill ;
+    rdfs:label "缩头"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20001" .
+
+seer:skill_20618 a seer:Skill ;
+    rdfs:label "纯净之心"@zh ;
+    seer:power 0 ;
+    seer:priority 0 ;
+    seer:seerapiId "20618" .
+
+seer:tc_3 a seer:TypeCombination ;
+    rdfs:label "火"@zh ;
+    seer:seerapiId "3" .
+
+seer:tc_64 a seer:TypeCombination ;
+    rdfs:label "光 次元"@zh ;
+    seer:seerapiId "64" .
+

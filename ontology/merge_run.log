@@ -1,0 +1,19 @@
+* Owlready2 * Running HermiT...
+    java -Xmx2000M -cp C:\Users\kmdbn\AppData\Roaming\Python\Python310\site-packages\owlready2\hermit;C:\Users\kmdbn\AppData\Roaming\Python\Python310\site-packages\owlready2\hermit\HermiT.jar org.semanticweb.HermiT.cli.CommandLine -c -O -D -I file:///C:/Users/kmdbn/AppData/Local/Temp/dsh-QSbJnA/tmp4wsuocj6
+* Owlready2 * HermiT took 1.722698450088501 seconds
+* Owlready * (NB: only changes on entities loaded in Python are shown, other changes are done but not listed)
+
+==> 合并 TBox + ABox -> seer-all.owl
+    + seer-game.ttl
+    + seer-pve.ttl
+    + seer-pve-alias.ttl
+    + seer-pve-roles.ttl
+    + seer-game-abox.ttl
+    + seer-typechart.ttl
+    + seer-pve-abox.ttl
+    + seer-pve-supp.ttl
+    + seer-gear-abox.ttl
+    + seer-boss-abox.ttl
+    NamedIndividual=4985  总三元组=28995
+==> owlready2 + HermiT 一致性
+    HermiT 完成；不一致类: 无（本体一致）

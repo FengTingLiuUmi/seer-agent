@@ -1,0 +1,1 @@
+[seer-kb] MCP stdio server starting

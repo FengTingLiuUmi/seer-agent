@@ -1,0 +1,1 @@
+{"desc": "{0}回合内若对手使用天生先制等级＞0的技能则命中前{1}%令对手{abst[2]}", "desc_tag": "abst", "hash": "4ca22de4", "icon": [14], "id": 110, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

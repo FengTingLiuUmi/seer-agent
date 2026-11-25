@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若本回合对手选择了攻击技能则对手当回合造成的攻击伤害无法超过自身最大体力的1/3", "desc_tag": null, "hash": "cc81f5bd", "icon": [15], "id": 4200, "tag": "伤害限制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

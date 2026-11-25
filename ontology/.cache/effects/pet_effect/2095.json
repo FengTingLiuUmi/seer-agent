@@ -1,0 +1,1 @@
+{"desc": "受到普通攻击时有7%使对方冻伤", "effect": {"effect": {"id": 6, "url": "https://api.seerapi.com/v1/eid_effect/6"}, "effect_args": [5, 7]}, "effect_alias": "6_5_7", "effect_group": {"id": 25, "url": "https://api.seerapi.com/v1/pet_effect_group/25"}, "hash": "d2af789b", "id": 2095, "name": "冰冷", "star_level": 4}

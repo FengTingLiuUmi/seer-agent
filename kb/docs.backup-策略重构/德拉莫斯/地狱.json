@@ -1,0 +1,139 @@
+{
+ "doc_id": "德拉莫斯#地狱",
+ "factor": "德拉莫斯",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4368,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "混沌邪灵",
+   "boss_hp": 6000,
+   "traits": "先制+3; 天生攻击+2; 消强; 220固伤; 免疫高威力技能伤害",
+   "mech": [
+    "clearBuff",
+    "firstStrike",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "启灵元神一直先四涤罪强攻（神灵系四倍克制混沌邪灵）"
+   ],
+   "pets": [
+    "启灵元神"
+   ],
+   "why": "「免疫高威力技能伤害」意味着高威力技能会被兜底打不出伤害，只能换区间外的低威力技能强攻，启灵元神用先四「涤罪」低威力攻击正对应这一点；配合神灵系四倍克制混沌邪灵拉满红伤。Boss 同时消强且每回合 220 固伤，所以直接低威力强攻速杀、不依赖己方强化，避免被削弱和拖回合掉血。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4330,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "光次元",
+   "boss_hp": 8000,
+   "traits": "必暴; 先制+3; 天生攻击+2; 消强; 220固伤; 免疫低威力技能伤害",
+   "mech": [
+    "clearBuff",
+    "bossCrit",
+    "firstStrike",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "邪灵主宰摩哥斯150大招真堕落绝语秒杀（邪灵系四倍克制光次元）"
+   ],
+   "pets": [
+    "邪灵主宰摩哥斯"
+   ],
+   "why": "「免疫低威力技能伤害」要求用区间外的高威力技能，摩哥斯 150 大招「真堕落绝语」正是高威力输出，借邪灵系四倍克制光次元一击秒杀。Boss 自带必暴对站场威胁大，又消强+220 固伤，所以不磨直接高威力大招速杀。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4187,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "远古神秘",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 天生攻击+2; 消强; 吸血300; 只吃先制技能伤害",
+   "mech": [
+    "onlyFirstStrike",
+    "heal",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr"
+   ],
+   "strategies": [
+    "圣灵谱尼站场：先三落芳天华+150圣灵悲魂曲交替，第五神灵救世光吸血断回合；瀚宇星皇回血+免控"
+   ],
+   "pets": [
+    "圣灵谱尼",
+    "瀚宇星皇"
+   ],
+   "why": "封属封掉全部属性技能，所以谱尼全程只用攻击技站场；「只吃先制技能伤害」决定伤害主要靠先制技能，先三「落芳天华」正是为此带的先制输出。面对消强+ Boss 吸血 300，用第五「神灵救世光」攻击技吸血+断回合来反制清强与回血，星皇补回血续航防止被磨死。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4264,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "邪灵龙",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 天生攻击+2; 我方每回合全属性-1; 概率秒杀克制系; 免疫固伤和百分比伤害",
+   "mech": [
+    "debuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "潘克多斯送掉挂鬼火缠绕增伤 + 必先大队（潜能灵蛇/月照星魂/魔钰）残血必先叠伤"
+   ],
+   "pets": [
+    "潘克多斯",
+    "潜能灵蛇",
+    "月照星魂",
+    "魔钰"
+   ],
+   "why": "「免疫固伤和百分比伤害」意味着只能用红伤（直接伤害）强攻，潘克多斯送掉挂「鬼火缠绕」增伤正是铺垫红伤爆发，而非靠固伤/百分比磨。Boss 封属、必先、每回合弱化我方又会概率秒杀克制系，所以用必先大队残血必先叠伤，抢在弱化/秒杀生效前一波打掉，不做站场。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4371,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "混沌龙",
+   "boss_hp": 14000,
+   "traits": "必先; 封属; 天生攻击+2; 两命; 高概率诅咒控场; 清PP",
+   "mech": [
+    "clearPP",
+    "twoLife",
+    "control",
+    "firstStrike",
+    "sealAttr"
+   ],
+   "strategies": [
+    "帝皇之御守御八方自爆 + 蒂朵场地增伤 + 龙焉130大招打第一条命 + 格罗姆特160大招打第二条命"
+   ],
+   "pets": [
+    "帝皇之御",
+    "蒂朵",
+    "龙焉",
+    "格罗姆特"
+   ],
+   "why": "封属+必先使属性技和平常起手都不得利，表姐「守御八方」是攻击技能不吃封属，自爆后给后手「必先+必暴」；蒂朵再铺场地增伤。Boss 两命必须两段输出，高概率诅咒控场与清 PP 都逼你速杀不能拖，所以龙焉打第一条命、格罗姆特打第二条命分拆两命打完。"
+  }
+ ],
+ "tids": [
+  2119
+ ],
+ "note": "无正文数据"
+}

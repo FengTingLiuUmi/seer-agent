@@ -1,0 +1,1 @@
+{"bonus": null, "hash": "5a61a234", "id": 100624, "item": {"id": 100624, "url": "https://api.seerapi.com/v1/item/100624"}, "name": "胶囊弹射炮", "occasion": null, "part_type": {"id": 0, "url": "https://api.seerapi.com/v1/equip_type/0"}, "pk_attribute": {"pk_atk": 35, "pk_fire_range": 310, "pk_hp": 55}, "speed": 0, "suit": null, "x_position": 24, "y_position": 74}

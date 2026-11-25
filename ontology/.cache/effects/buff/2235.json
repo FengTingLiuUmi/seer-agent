@@ -1,0 +1,1 @@
+{"desc": "战斗结束时，当前精灵所有技能PP值+1", "desc_tag": null, "hash": "e83c465c", "icon": [30], "id": 2235, "tag": "减PP", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

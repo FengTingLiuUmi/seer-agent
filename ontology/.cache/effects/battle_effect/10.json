@@ -1,0 +1,1 @@
+{"desc": "弱化类异常状态，该状态下精灵攻击技能的命中率减少80%且每回合对手行动开始时5%扣除50点体力", "hash": "a7137052", "id": 10, "name": "混乱", "resistance": {"id": 1, "url": "https://api.seerapi.com/v1/resistance_category/1"}, "type": [{"id": 1, "url": "https://api.seerapi.com/v1/battle_effect_type/1"}]}

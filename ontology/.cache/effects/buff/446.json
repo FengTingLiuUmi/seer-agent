@@ -1,0 +1,1 @@
+{"desc": "{0}回合内每回合{1}%令自身全属性+{2}，未触发则令对手全属性-{3}", "desc_tag": null, "hash": "f7b23773", "icon": [20], "id": 446, "tag": "强化|弱化", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

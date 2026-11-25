@@ -1,0 +1,1 @@
+{"ability_buff": null, "desc": "精灵使用该物品后，火系技能威力提升10%(使用战斗场次:10,赛尔之间对抗有效)", "effect": {"effect": {"id": 28, "url": "https://api.seerapi.com/v1/eid_effect/28"}, "effect_args": [3, 10]}, "hash": "b6ac7d2e", "id": 300601, "idx": 1096, "item": {"id": 300601, "url": "https://api.seerapi.com/v1/item/300601"}, "name": "火系技能强化剂", "use_times": 10}

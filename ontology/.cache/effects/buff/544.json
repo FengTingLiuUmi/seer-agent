@@ -1,0 +1,1 @@
+{"desc": "{0}回合内每回合使用技能{1}%令对手{abst[2]}，未触发则令自身全属性+{3}", "desc_tag": "abst", "hash": "772539a2", "icon": [14], "id": 544, "tag": "施加异常|强化", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

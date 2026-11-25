@@ -1,0 +1,34 @@
+===== pet?name=潘多克斯 =====
+  (none)
+===== pet?name=潘克多斯 =====
+  id=4344 name=潘克多斯 total=725
+===== pet?name=潘 =====
+  id=856 name=潘达 total=591
+  id=2023 name=潘多斯 total=598
+  id=2518 name=潘多拉 total=631
+  id=2965 name=灾厄王妃潘多拉 total=670
+  id=3396 name=灾厄女神潘多拉 total=700
+  id=4344 name=潘克多斯 total=725
+===== pet?name=星光 =====
+  id=4647 name=星光·丽莎布布 total=745
+  id=4648 name=星光·鲁斯王 total=745
+  id=4649 name=星光·魔焰猩猩 total=740
+  id=4693 name=星光·蘑菇怪 total=740
+  id=4743 name=星光·纳多雷 total=740
+  id=4822 name=星光·里奥斯 total=740
+  id=4911 name=星光·艾欧丽娅 total=760
+  id=4937 name=星光·雷纳多 total=740
+===== pet?name=鲁斯王 =====
+  id=306 name=鲁斯王 total=610
+  id=2220 name=利爪鲁斯王 total=640
+  id=2625 name=暗黑鲁斯王 total=621
+  id=2947 name=利刃之主鲁斯王 total=670
+  id=4648 name=星光·鲁斯王 total=745
+===== pet?name=魔焰猩猩 =====
+  id=309 name=魔焰猩猩 total=618
+  id=4649 name=星光·魔焰猩猩 total=740
+===== pet?name=猩猩 =====
+  id=9 name=烈焰猩猩 total=534
+  id=309 name=魔焰猩猩 total=618
+  id=4649 name=星光·魔焰猩猩 total=740
+  id=4803 name=猩猩怪 total=740

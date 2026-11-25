@@ -1,0 +1,1 @@
+{"desc": "{0}回合内若对手使用技能，则对手下1次使用攻击技能时，若未打出致命一击则免疫该攻击伤害", "desc_tag": null, "hash": "a4a0b123", "icon": [25], "id": 575, "tag": "免伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

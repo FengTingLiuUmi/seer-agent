@@ -1,0 +1,1 @@
+{"desc": "满体力时受到的伤害降低{0}%，体力每降低{1}%，减伤效果降低{2}%", "desc_tag": null, "hash": "9a40a60a", "icon": [29], "id": 2504, "tag": "减伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

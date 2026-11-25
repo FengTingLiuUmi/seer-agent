@@ -1,0 +1,1 @@
+{"desc": "{0}回合内若对手使用攻击技能，则使用攻击技能后的下{1}回合属性技能命中效果失效", "desc_tag": null, "hash": "26fbc23a", "icon": [13], "id": 712, "tag": "诱发效果|命中效果失效", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

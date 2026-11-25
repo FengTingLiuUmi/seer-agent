@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若对手处于能力提升状态则当回合自身受到攻击伤害时100%令对手麻痹", "desc_tag": null, "hash": "b3b02090", "icon": [14], "id": 3619, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

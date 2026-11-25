@@ -1,0 +1,1 @@
+{"desc": "受到的伤害低于{0}时，则在受到伤害后恢复自身{1}点体力值", "desc_tag": null, "hash": "5f42d7", "icon": [31], "id": 2036, "tag": "恢复", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,1 @@
+{"desc": "每回合结束后自身恢复当前体力的50%，然后若自身体力不为满则所有技能先制+1", "desc_tag": null, "hash": "5b3f2f94", "icon": [6], "id": 4196, "tag": "先制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

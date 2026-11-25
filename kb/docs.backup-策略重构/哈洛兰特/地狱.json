@@ -1,0 +1,136 @@
+{
+ "doc_id": "哈洛兰特#地狱",
+ "factor": "哈洛兰特",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4341,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "火",
+   "boss_hp": 6000,
+   "traits": "先制+3; 消强; 低体增伤; 回合末体力高于我方回满血",
+   "mech": [
+    "heal",
+    "clearBuff",
+    "firstStrike"
+   ],
+   "strategies": [
+    "圣光莫妮卡第五强攻（圣灵自然四倍克制火）"
+   ],
+   "pets": [
+    "圣光莫妮卡"
+   ],
+   "why": "Boss「低体增伤」加上「回合末体力高于我方就回满血」要求必须一波带走不能拖；圣灵自然对火四倍克制，圣光莫妮卡第五能打出高额红伤，抢在 Boss 回满血/残血发威前完成击杀，而 Boss 消强所以不依赖站场叠强化。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4294,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "普通",
+   "boss_hp": 8000,
+   "traits": "先制+3; 消强; 低体增伤; 免疫固伤与百分比伤害",
+   "mech": [
+    "clearBuff",
+    "firstStrike",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "压血必先强攻 / 刘备自爆+霍夫曼第五吸强秒杀"
+   ],
+   "pets": [
+    "霍夫曼",
+    "昭烈帝刘备"
+   ],
+   "why": "「免疫固伤与百分比伤害」让弹伤、吸血和百分比磨血全部失效，只能靠红伤强攻一波，且「低体增伤」要求抢在 Boss 残血变凶前秒杀。方案一压血必先强攻；方案二刘备自爆给必先覆盖先制+3，霍夫曼第五吸强反过来借用 Boss 强化并秒杀。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4339,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "远古火",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 免反暴击伤害; 焚烬控",
+   "mech": [
+    "control",
+    "firstStrike",
+    "sealAttr"
+   ],
+   "strategies": [
+    "圣灵谱尼第五持续输出（避免暴击）"
+   ],
+   "pets": [
+    "圣灵谱尼"
+   ],
+   "why": "封属使属性技能被封，只能用攻击技能打；焚烬控需要免疫异常类扛住；「免反暴击伤害」说明暴击对 Boss 无收益/会被反制，所以圣灵谱尼用第五持续红伤磨血并刻意避免暴击，而不是赌暴击爆发。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4231,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "圣灵电",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 全属性+1; 吸血400; 偷强",
+   "mech": [
+    "heal",
+    "selfBuff",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr"
+   ],
+   "strategies": [
+    "帝皇之御自爆+影蝠第五（暴击无视强化）"
+   ],
+   "pets": [
+    "帝皇之御",
+    "影蝠"
+   ],
+   "why": "封属下帝皇之御「守御八方」是攻击技能、不受封属影响，给全队铺「必先+必暴」；影蝠第五「暴击无视强化」直接绕开 Boss 的全属性+1/偷强，把堆起来的强化无效化；一轮必暴强攻秒杀，避免 Boss 吸血400 越拖越亏。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4350,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "光",
+   "boss_hp": 14000,
+   "traits": "必先; 封属; 全属性-1; 清PP; 高减伤",
+   "mech": [
+    "clearPP",
+    "debuff",
+    "firstStrike",
+    "sealAttr",
+    "damageReduction"
+   ],
+   "strategies": [
+    "潘克多斯(鬼火缠绕)+蒂朵+帝皇之御自爆+无上万魔天尊150 / 千裳站场磨"
+   ],
+   "pets": [
+    "潘克多斯",
+    "蒂朵",
+    "帝皇之御",
+    "无上万魔天尊",
+    "千裳"
+   ],
+   "why": "高减伤+清PP 使站场互磨吃亏，主方案用增伤链（潘克多斯、蒂朵叠增伤）再加帝皇之御自爆（守御八方，攻击技能不受封属）铺必先必暴，由无上万魔天尊150 一波红伤秒杀；备用千裳站场磨逐步拖过高减伤。「全属性-1」会持续弱化我方，所以主方案倾向速战秒杀而非久拖。"
+  }
+ ],
+ "tids": [
+  2094
+ ],
+ "note": "无正文数据"
+}

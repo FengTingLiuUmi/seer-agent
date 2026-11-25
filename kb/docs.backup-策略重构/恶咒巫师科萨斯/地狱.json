@@ -1,0 +1,105 @@
+{
+ "doc_id": "恶咒巫师科萨斯#地狱",
+ "factor": "恶咒巫师科萨斯",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 3825,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "traits": "必先; 封属; 只吃先制; 我方使用技能全属性-1; 300固伤",
+   "mech": [
+    "onlyFirstStrike",
+    "debuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "圣萨(圣王萨格罗斯)随便打 / 小草王送死+星礼先3、150循环"
+   ],
+   "pets": [
+    "圣王萨格罗斯",
+    "星礼",
+    "茉蕊儿"
+   ],
+   "why": "Boss 封属、每用一次技能我方全属性-1，且带300固伤，拖越久越亏；同时 Boss「只吃先制」，普通攻击与属性技打不出红伤。因此要用带先制的攻击技能速杀并补续航：星礼的「先3」(先制+3)既绕开封属又满足只吃先制，小草王(茉蕊儿)送死接力/铺垫后星礼用先3与150技能循环回血输出；圣王萨格罗斯则靠自身站场能力顶住削弱与固伤直接打。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4392,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "strategies": [
+    "熊大单挑 / 小草王送死+草潘(加尔鲁特)翠刃坚脊伤转体后150、属性循环"
+   ],
+   "pets": [
+    "熊大",
+    "加尔鲁特",
+    "茉蕊儿"
+   ],
+   "why": "缺少 Boss 特性，无法给出机制解释。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 3541,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "strategies": [
+    "圣谱(圣灵谱尼)先3+神圣复苏后，第五、先3循环"
+   ],
+   "pets": [
+    "圣灵谱尼"
+   ],
+   "why": "缺少 Boss 特性，无法给出机制解释。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4426,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "strategies": [
+    "塞勒涅拉防差单挑(按住先三) / 典韦必先(漆黑套)"
+   ],
+   "pets": [
+    "塞勒涅",
+    "典韦"
+   ],
+   "why": "缺少 Boss 特性，无法给出机制解释。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4432,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "strategies": [
+    "表姐(帝皇之御)+强攻手 / 潘克多斯+蒂朵+斯克鲁恩+西塔伦+月照星魂必先+魔钰必先(银翼套)"
+   ],
+   "pets": [
+    "帝皇之御",
+    "潘克多斯",
+    "蒂朵",
+    "斯克鲁恩",
+    "西塔伦",
+    "月照星魂",
+    "魔钰"
+   ],
+   "why": "缺少 Boss 特性，无法给出机制解释。"
+  }
+ ],
+ "tids": [
+  2134
+ ],
+ "note": "无正文数据"
+}

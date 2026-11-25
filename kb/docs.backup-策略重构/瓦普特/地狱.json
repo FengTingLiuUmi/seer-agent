@@ -1,0 +1,141 @@
+{
+ "doc_id": "瓦普特#地狱",
+ "factor": "瓦普特",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4405,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "水战斗",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 220固伤; 免疫物攻; 断回合",
+   "mech": [
+    "immunePhysical",
+    "breakTurn",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "幻境界皇(耀世套)先3+150循环单挑"
+   ],
+   "pets": [
+    "幻境界皇"
+   ],
+   "why": "必先+每回合220固伤是主要伤害来源，幻境界皇带耀世套减伤站场顶住；封属封死属性技能，故全程走攻击技能(先3+150循环)；免疫物攻使物攻红伤为0，幻境界皇是特攻强攻手正好绕过该Ban；断回合则靠不叠强化的先3+150循环持续打红伤，不吃被断强化的亏。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4408,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "光超能",
+   "boss_hp": 10000,
+   "traits": "封属; 220固伤; 免疫特攻; 断回合",
+   "mech": [
+    "immuneSpecial",
+    "breakTurn",
+    "sealAttr",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "星光·鲁斯王第五 / 草潘(加尔鲁特)先3+150循环 / 重塑之子利塞特第五"
+   ],
+   "pets": [
+    "星光·鲁斯王",
+    "加尔鲁特",
+    "重塑之子利塞特"
+   ],
+   "why": "封属+断回合决定全程攻击技能且不叠强化；220固伤靠站场循环吸血/回血顶住；免疫特攻使特攻红伤为0，三只都选物攻强攻手绕过。方案差异：星光·鲁斯王、重塑之子利塞特用物攻第五爆发一波；草潘(加尔鲁特)用先3+150站场叠毒/吸血慢慢磨。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4354,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "地面神秘",
+   "boss_hp": 10000,
+   "traits": "220固伤; 害怕控; 回血500; 消强",
+   "mech": [
+    "heal",
+    "clearBuff",
+    "control",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "圣灵谱尼(特防体)先3+第五单挑"
+   ],
+   "pets": [
+    "圣灵谱尼"
+   ],
+   "why": "害怕控是这关致命点，圣灵谱尼天生免疫异常让控场失效；220固伤+回血500是持续掉血与Boss回血，用特防体(特防+体力)站场硬顶；消强会清我方强化，故不叠强化、只用先3+第五循环打红伤。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4364,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "光神秘",
+   "boss_hp": 12000,
+   "traits": "吸血300; 回血; 15%概率10倍伤害",
+   "mech": [
+    "heal"
+   ],
+   "strategies": [
+    "邪灵主宰摩哥斯150 / 腐坏幽魔克劳里菲160"
+   ],
+   "pets": [
+    "邪灵主宰摩哥斯",
+    "腐坏幽魔克劳里菲"
+   ],
+   "why": "吸血300+回血=月亮回血，须速杀压过Boss回复；15%概率10倍伤害可能被一波秒，更要抢在触发前一轮爆发带走；邪灵主宰摩哥斯150/腐坏幽魔克劳里菲160都是高威力强攻手，其中邪灵系对光神秘有4倍克制优势，一记大招压死血量。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4414,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "圣灵次元",
+   "boss_hp": 14000,
+   "traits": "减伤16.7%; 吸血300; 两命; 复活后全属性+1; 偶数回合秒杀",
+   "mech": [
+    "twoLife",
+    "heal",
+    "selfBuff",
+    "damageReduction"
+   ],
+   "strategies": [
+    "冰潘(斯克鲁恩)+蒂朵+西塔伦+魔钰/月照必先强攻 / 表姐(帝皇之御)+蒂朵+冰潘+沐怜+圣华/灵巢之主"
+   ],
+   "pets": [
+    "斯克鲁恩",
+    "蒂朵",
+    "西塔伦",
+    "魔钰",
+    "月照星魂",
+    "典韦",
+    "帝皇之御",
+    "沐怜",
+    "圣华",
+    "灵巢之主·索杰德尔"
+   ],
+   "why": "偶数回合秒杀是核心，必须在它到偶数回合前用必先强攻一波带走，不能磨；吸血300用冰潘(斯克鲁恩)霜寒封印禁疗；两命+复活后全属性+1意味着要多段输出/补刀，越拖越强；减伤16.7%要用增伤链抬红伤。方案差异：方案一蒂朵+西塔伦增伤链铺垫后接魔钰/月照必先强攻；方案二帝皇之御自爆守御八方(攻击技不惧封属)给后续2只必先+必暴，再接沐怜+圣华/灵巢之主补伤害。"
+  }
+ ],
+ "tids": [
+  2131
+ ],
+ "note": "无正文数据"
+}
