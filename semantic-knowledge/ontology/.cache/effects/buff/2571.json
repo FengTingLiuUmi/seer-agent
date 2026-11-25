@@ -1,0 +1,1 @@
+{"desc": "回合开始时若自身体力低于对手则当回合受到攻击时使对手害怕", "desc_tag": null, "hash": "1f2b15f6", "icon": [14], "id": 2571, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

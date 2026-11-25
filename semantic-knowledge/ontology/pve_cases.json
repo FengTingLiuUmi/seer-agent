@@ -1,0 +1,386 @@
+{
+ "_comment": "赛尔号 PVE 回归验证集。每条 = 用户在 2026-11-25 会话中指出过的一个具体问题或口径确认。由 check_pve_cases.py 执行；改本体/改文档后必须跑一遍，全绿才算没回退。",
+ "_rules": [
+  "知识先查本体；本体没有再走 SeerAPI；拿到数据必须回填本体（不许只查不写）。",
+  "文档里点名的精灵，本体必须能给出技能与魂印；「0 技能」和「技能清单不全」都算缺口。",
+  "本体认不出的简称：有歧义先问用户，禁止硬猜后写进别名。",
+  "PVE 口径：裸名指强化形态；不要为低等精灵建 PVE 别名（增加维护成本）。全局维度保留基础形态无妨。",
+  "特罗斯 就是特罗斯（用户明确：比较特殊），不映射到破世之拳·特罗斯。",
+  "同名多形态且功能等价时（大小克罗），别名必须覆盖多只，不能让只有小形态的人以为「没有」。",
+  "词条里的限制类文案（如「自身不为龙系时无法选择使用」）在 PVE 中可能不生效，不得当成硬门槛。",
+  "魂印的「（boss无效）」若单独成段且位于末尾 → 作用于整条；若跟在某分段末尾 → 只作用于该段。",
+  "反弹是一套方案；先手/后手只是同一方案的两种实现，不得当成两套可替代方案。",
+  "必暴是伪必中（命中率拉到 100%），不要因为 Boss 高闪避就过度追求必中技能。",
+  "禁止为了补缺口另起平行数据层（如 seer-alias-abox.ttl）；用已有的层（seer-pve-alias.ttl）。",
+  "why 正文不要写「未核实/本体未收录」这类噪音；查不到就换个能查到的说法。"
+ ],
+ "_pending": [
+  "希可洛用法已定型并入库（一直按奇镰解放，输出与续航同一个技能）。仍缺：把「金石→破产→奇镰」这类 Step 序列做成通用层（其它站场精灵也需要），以及给更多站场精灵补 seer:sustainSkill。",
+  "魂印分句级建模：2167 条里 777 条多段、736 条分段标记，现在整条只有一个 pveEffective 布尔；还有 91 条 API 与原文冲突（如 soulmark_1463 文本写 boss有效、API 记 false）。",
+  "魂印标记作用域规则只手工用在 2058（末尾标记=整条），尚未批量应用。",
+  "麻普：只在 魂弦#困难 第5关 出现，角色是先制+3 补刀，候选强化形态 麻普啾啾 4303，待用户确认指向。",
+  "库拉 / 克鲁斯：用户明确「不确定」，暂留基础形态 4548 / 1521。",
+  "文档 pets 数组的结构性错误（克罗蒂朵=克罗+蒂朵、漆黑典韦=套装+精灵、奇镰解放=技能名等）只记录未修，见 kb/_doc_pet_issues.md。",
+  "label 不统一：58 只精灵有两个 rdfs:label（纯名 + 纯名带 PVE 注解），2167 条魂印完全没有 label。用户 2026-11-25 决定先不改数据；工具侧已把取值改成确定性规则（不带括号优先→最短→字典序）。",
+  "仍有 58 个社区简称本体认不出。已解决 6 个：邪灵主宰、星光布布、八戒（别名）+ 星巴克、三兄弟、西游（阵容）。",
+  "八戒「小形态」在本体与 SeerAPI 里都搜不到（天河 2735 的 evolution_chain 只有它自己），需要用户给名字才能建第二个别名。"
+ ],
+ "cases": [
+  {
+   "id": "nick-zhakesi",
+   "kind": "nick",
+   "query": "咤克斯",
+   "expect_ids": [
+    "3194"
+   ],
+   "note": "PVE 口径指向魔王·咤克斯，不是基础形态 2648"
+  },
+  {
+   "id": "nick-lvbu",
+   "kind": "nick",
+   "query": "吕布",
+   "expect_ids": [
+    "3031"
+   ],
+   "note": "鬼神吕布"
+  },
+  {
+   "id": "nick-helisi",
+   "kind": "nick",
+   "query": "赫里斯",
+   "expect_ids": [
+    "3938"
+   ],
+   "note": "圣骑·赫里斯"
+  },
+  {
+   "id": "nick-wanmo",
+   "kind": "nick",
+   "query": "万魔天尊",
+   "expect_ids": [
+    "4001"
+   ],
+   "note": "无上·万魔天尊（本次新加别名）"
+  },
+  {
+   "id": "nick-kubeisa",
+   "kind": "nick",
+   "query": "库贝萨",
+   "expect_ids": [
+    "3741"
+   ],
+   "note": "上古魔尊·库贝萨（本次新加别名）"
+  },
+  {
+   "id": "nick-geluomu",
+   "kind": "nick",
+   "query": "格罗姆",
+   "expect_ids": [
+    "3107"
+   ],
+   "note": "格罗姆特（本次新加别名）"
+  },
+  {
+   "id": "nick-puni",
+   "kind": "nick",
+   "query": "谱尼",
+   "expect_ids": [
+    "5000"
+   ],
+   "note": "圣灵谱尼"
+  },
+  {
+   "id": "nick-teluosi",
+   "kind": "nick",
+   "query": "特罗斯",
+   "expect_ids": [
+    "4310"
+   ],
+   "note": "用户明确：特罗斯就是特罗斯，不许映射到破世之拳·特罗斯 4401"
+  },
+  {
+   "id": "nick-keluonuosi-both",
+   "kind": "nick",
+   "query": "克罗诺斯",
+   "expect_ids": [
+    "3443",
+    "2977"
+   ],
+   "note": "大小克罗功能相同，两只都必须命中；只挂大克罗会让只有小克罗的人以为「没有」"
+  },
+  {
+   "id": "nick-liuyingxue",
+   "kind": "nick",
+   "query": "流荧雪",
+   "expect_ids": [
+    "4448"
+   ],
+   "note": "标点归一化别名"
+  },
+  {
+   "id": "nick-yuanshen",
+   "kind": "nick",
+   "query": "元神",
+   "expect_ids": [
+    "3986"
+   ],
+   "note": "启灵元神"
+  },
+  {
+   "id": "nick-yita",
+   "kind": "nick",
+   "query": "伊塔",
+   "expect_ids": [
+    "4713"
+   ],
+   "note": "伊塔·回溯型（用户：伊塔换）"
+  },
+  {
+   "id": "skill-tiankou-pve-usable",
+   "kind": "skill",
+   "query": "天叩·千钧一发",
+   "expect": {
+    "威力": 1000,
+    "先制": 1
+   },
+   "forbid_keys": [
+    "PVE可用"
+   ],
+   "note": "「非龙系不可用」这条限制在 PVE 中不生效，技能可用；禁止再标 PVE 不可用"
+  },
+  {
+   "id": "skill-pochanzhiri",
+   "kind": "skill",
+   "query": "破产之日",
+   "expect": {
+    "威力": 85,
+    "先制": 3
+   },
+   "effect_contains": [
+    "先出手时无视攻击免疫效果",
+    "附加对手能力下降等级总和"
+   ],
+   "note": "希可洛固伤引擎：先手绕免疫 + 按降属性等级×50"
+  },
+  {
+   "id": "skill-jinshi",
+   "kind": "skill",
+   "query": "金石猥咒术",
+   "expect": {
+    "威力": 160
+   },
+   "effect_contains": [
+    "无法被解除或反转"
+   ],
+   "note": "起手降属性且 3 回合不可解除"
+  },
+  {
+   "id": "skill-qilian",
+   "kind": "skill",
+   "query": "奇镰解放",
+   "expect": {
+    "威力": 200
+   },
+   "effect_contains": [
+    "恢复自身所有PP值"
+   ],
+   "note": "回PP步：Boss 会清PP，必须靠它重置"
+  },
+  {
+   "id": "skill-shouyubafang",
+   "kind": "skill",
+   "query": "守御八方",
+   "expect": {
+    "威力": 0,
+    "先制": 2,
+    "类别": "物理攻击"
+   },
+   "note": "表姐自爆：攻击技能→不受封属；整队后 2 次必先必暴"
+  },
+  {
+   "id": "soulmark-chaofeng-whole-invalid",
+   "kind": "soulmark",
+   "pet": "嘲风",
+   "sid": "2058",
+   "expect": {
+    "pveEffective": false
+   },
+   "remark_contains": [
+    "整条无效"
+   ],
+   "note": "末尾单独一段「（boss无效）」作用于整条，不是分段标记"
+  },
+  {
+   "id": "soulmark-shilaiyao-segmented",
+   "kind": "soulmark",
+   "pet": "暴君史莱姆",
+   "sid": "831",
+   "expect": {
+    "pveEffective": true
+   },
+   "note": "分段标记：第1段无效、第2段有效，整体 true"
+  },
+  {
+   "id": "doc-taniwa-st3-xikeluo-sustain",
+   "kind": "doc_why",
+   "doc": "塔尼瓦",
+   "difficulty": "地狱",
+   "stage": 3,
+   "index": 0,
+   "must_contain": [
+    "奇镰解放",
+    "一直"
+   ],
+   "must_not_contain": [
+    "破产之日",
+    "金石猥咒术",
+    "免疫威力高于100",
+    "PVE 无效——"
+   ],
+   "note": "用户：希可洛就是一直按奇镰解放，不需要破产之日/金石猥咒术那套铺垫。第3关也没有「免疫威力高于100」（那是第5关）"
+  },
+  {
+   "id": "doc-flying-fish-all-why",
+   "kind": "doc_all_why",
+   "doc": "飞鱼骑士",
+   "difficulty": "地狱",
+   "note": "用户亲手改过的范文，所有 strategy 必须有 why"
+  },
+  {
+   "id": "doc-eight-cleaned-all-why",
+   "kind": "doc_all_why",
+   "doc": "墟婆",
+   "difficulty": "地狱",
+   "note": "8 篇清洗样板之一：全部 strategy 必须有 why，且不得含「未核实/未收录」"
+  },
+  {
+   "id": "onto-no-pveblocked",
+   "kind": "absent",
+   "what": "property",
+   "iri": "http://example.org/seer#pveBlocked",
+   "note": "我曾错误地把「非龙系不可用」记成 PVE 不可用，该属性已删除，不得复活"
+  },
+  {
+   "id": "onto-no-parallel-alias-layer",
+   "kind": "absent",
+   "what": "file",
+   "path": "seer-factor-kb/ontology/seer-alias-abox.ttl",
+   "note": "nick 本来就有消歧能力，另开别名层是冗余（用户指出）"
+  },
+  {
+   "id": "coverage-no-zero-skill",
+   "kind": "coverage",
+   "expect_zero_skill": 0,
+   "expect_incomplete_skill": 0,
+   "note": "文档点名的精灵在本体里必须有技能，且条数不少于 SeerAPI（避免「星光·鲁斯王缺克制」那类）"
+  },
+  {
+   "id": "pet-xikeluo-pve-role",
+   "kind": "pet",
+   "query": "希可洛",
+   "expect": {
+    "站场技": "奇镰解放",
+    "站场技id": "36481"
+   },
+   "roles_contains": [
+    "站场"
+   ],
+   "sustain_note_must": [
+    "回满",
+    "PP"
+   ],
+   "sustain_note_forbid": [
+    "破产之日",
+    "金石猥咒术"
+   ],
+   "note": "作用＝PVE 站场磨血；为什么＝奇镰解放一个技能同时给输出与续航（回满体力+回满PP），所以不换招一直按；不许再写成破产之日/金石猥咒术的循环"
+  },
+  {
+   "id": "sustain-qilianzhengjie-shared",
+   "kind": "shared_skill",
+   "skill_name": "奇镰解放",
+   "note": "用户：同样拥有奇镰解放的也是（卡莎/小镰）。凡会该技能的精灵都必须标 sustainSkill=奇镰解放"
+  },
+  {
+   "id": "nick-lineup-xingbake",
+   "kind": "lineup",
+   "query": "星巴克",
+   "expect_member_ids": [
+    "4649",
+    "4648"
+   ],
+   "note": "星巴克是一套阵容（猩猩上魂印固伤+鲁斯王克制弹伤，克罗减伤非必须），不是单只精灵"
+  },
+  {
+   "id": "nick-lineup-sanxiongdi",
+   "kind": "lineup",
+   "query": "三兄弟",
+   "expect_member_ids": [
+    "3074",
+    "3087",
+    "3060"
+   ],
+   "note": "刘关张三人组；有强化形态时用 3074/3087/3060"
+  },
+  {
+   "id": "nick-lineup-xiyou",
+   "kind": "lineup",
+   "query": "西游",
+   "expect_member_ids": [
+    "2727",
+    "3519",
+    "3409",
+    "2735"
+   ],
+   "note": "蒙奇多克+沙悟净+三藏+天河神将"
+  },
+  {
+   "id": "nick-bajie",
+   "kind": "nick",
+   "query": "八戒",
+   "expect_ids": [
+    "2735"
+   ],
+   "note": "用户：八戒就是天河神将（及小形态），西游阵容成员，PVE 作用是魂印消强"
+  },
+  {
+   "id": "soulmark-135-pve-verdict",
+   "kind": "soulmark",
+   "pet": "天河神将",
+   "sid": "135",
+   "expect": {
+    "pveEffective": false
+   },
+   "expect_extra": {
+    "PVE判定": "有效"
+   },
+   "note": "原文无 boss 标记、API 记 false，但用户实测是消强手 → 人工判定有效，API 值仅溯源"
+  },
+  {
+   "id": "pet-hadisi-finisher",
+   "kind": "pet",
+   "query": "深渊狱神·哈迪斯",
+   "roles_contains": [
+    "补刀"
+   ],
+   "roles_forbid": [
+    "强攻",
+    "必先"
+   ],
+   "note": "用户指出定位有问题：它是补刀（魂印留1血+下回合先制+对手最大体力1/3固伤；破寂同灾附已损35%），不是强攻/必先"
+  },
+  {
+   "id": "soulmark-480-partial",
+   "kind": "soulmark",
+   "pet": "深渊狱神·哈迪斯",
+   "sid": "480",
+   "expect": {
+    "pveEffective": false
+   },
+   "expect_extra": {
+    "PVE判定": "部分有效"
+   },
+   "note": "原文只在「使对手害怕」处标 boss无效，留1血/先制/固伤部分有效 → 人工判定部分有效"
+  }
+ ]
+}

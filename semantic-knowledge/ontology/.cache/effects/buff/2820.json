@@ -1,0 +1,1 @@
+{"desc": "回合开始时若自身处于异常状态，则当回合受到的伤害减少30%，自身体力低于对手时效果提升至80%", "desc_tag": null, "hash": "ad1a4e48", "icon": [29], "id": 2820, "tag": "减伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

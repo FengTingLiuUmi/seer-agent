@@ -1,0 +1,1 @@
+{"desc": "回合结束后，若本次在场触发过伤害减免的转变则恢复200点体力", "desc_tag": null, "hash": "1e75f40f", "icon": [31], "id": 4246, "tag": "恢复", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

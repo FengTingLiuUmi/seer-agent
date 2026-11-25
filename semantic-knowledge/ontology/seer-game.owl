@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/seer#hasTypeCombination">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://example.org/seer#TypeCombination"/>
+    <rdfs:label xml:lang="zh">属性组合</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#baseHp">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="zh">体力种族</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#grantsEffect">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/seer#EidEffect"/>
+    <rdfs:label xml:lang="zh">赋予效果</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#holdsItem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://example.org/seer#Item"/>
+    <rdfs:label xml:lang="zh">携带道具</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#PetAdvance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">精灵进化/升阶</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#BattleEffect">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">战斗效果</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#PetClass">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">精灵分类</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#equips">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://example.org/seer#Equip"/>
+    <rdfs:label xml:lang="zh">佩戴装备</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#Buff">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">状态/增益</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#FieldEffect">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">场地效果</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#hasGem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://example.org/seer#Gem"/>
+    <rdfs:label xml:lang="zh">佩戴宝石</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#combinationOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#TypeCombination"/>
+    <rdfs:range rdf:resource="http://example.org/seer#ElementType"/>
+    <rdfs:label xml:lang="zh">组合含属性</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#hasEnergyBead">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://example.org/seer#EnergyBead"/>
+    <rdfs:label xml:lang="zh">佩戴能量珠</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#baseSpDef">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="zh">特防种族</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#baseAttrValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Mintmark"/>
+    <rdfs:label xml:lang="zh">基础属性值(base_attr_value)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#partType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Equip"/>
+    <rdfs:label xml:lang="zh">部位(part_type)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#hasTitle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Sailor"/>
+    <rdfs:range rdf:resource="http://example.org/seer#Title"/>
+    <rdfs:label xml:lang="zh">佩戴称号</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#Soulmark">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">魂印</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#total">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="zh">种族值总和</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#hasBattleEffect">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/seer#BattleEffect"/>
+    <rdfs:label xml:lang="zh">施加战斗效果</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#soulmarkTag">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Soulmark"/>
+    <rdfs:range rdf:resource="http://example.org/seer#SoulmarkTag"/>
+    <rdfs:label xml:lang="zh">魂印标签</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#baseSpd">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="zh">速度种族</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#hasFire">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Sailor"/>
+    <rdfs:range rdf:resource="http://example.org/seer#Fire"/>
+    <rdfs:label xml:lang="zh">携带火焰</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#hasFieldEffect">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/seer#FieldEffect"/>
+    <rdfs:label xml:lang="zh">施加场地效果</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#Skill">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">技能</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#hasStage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Factor"/>
+    <rdfs:range rdf:resource="http://example.org/seer#FactorStage"/>
+    <rdfs:label xml:lang="zh">含关卡</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#baseSpAtk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="zh">特攻种族</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#FactorStage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">因子关卡</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#Sailor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">赛尔（玩家角色）</rdfs:label>
+    <rdfs:comment xml:lang="zh">自建聚合实体：SeerAPI 无玩家资源；套装/称号/火 的承载者</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#SkillEffectType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">技能效果类型（先制/固伤/回血/反弹/增伤…）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#Title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">称号</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#suitBonus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Suit"/>
+    <rdfs:range rdf:resource="http://example.org/seer#SuitBonus"/>
+    <rdfs:label xml:lang="zh">套装加成</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#Gem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">宝石</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#hasNature">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://example.org/seer#Nature"/>
+    <rdfs:label xml:lang="zh">性格</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label xml:lang="zh">赛尔号游戏本体</rdfs:label>
+    <rdfs:comment xml:lang="zh">赛尔号 PVE 相关的游戏实体与关系（精灵/技能/魂印/属性克制/因子/装备/称号/套装…）。ABox 由 SeerAPI 生成。</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#baseAtk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="zh">物攻种族</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#BuffType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">状态类型</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#suitEquips">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Suit"/>
+    <rdfs:range rdf:resource="http://example.org/seer#Equip"/>
+    <rdfs:label xml:lang="zh">套装含装备(equips)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#TypeCombination">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">属性组合</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#hasMintmark">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://example.org/seer#Mintmark"/>
+    <rdfs:label xml:lang="zh">刻印</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#seerapiId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="zh">SeerAPI id（对齐主键）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#priority">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Skill"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="zh">先制值</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#buffType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Buff"/>
+    <rdfs:range rdf:resource="http://example.org/seer#BuffType"/>
+    <rdfs:label xml:lang="zh">状态类型</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#baseDef">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="zh">物防种族</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#attributes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Nature"/>
+    <rdfs:label xml:lang="zh">属性修正(attributes)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#hasSkill">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://example.org/seer#Skill"/>
+    <rdfs:label xml:lang="zh">拥有技能</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#wearsSuit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Sailor"/>
+    <rdfs:range rdf:resource="http://example.org/seer#Suit"/>
+    <rdfs:label xml:lang="zh">穿戴套装</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#Equip">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">装备</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#SoulmarkTag">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">魂印标签</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#equipSpeed">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Equip"/>
+    <rdfs:label xml:lang="zh">速度(speed)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#power">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Skill"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="zh">威力</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#skillEffectType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Skill"/>
+    <rdfs:range rdf:resource="http://example.org/seer#SkillEffectType"/>
+    <rdfs:label xml:lang="zh">生效类型</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#counters">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#ElementType"/>
+    <rdfs:range rdf:resource="http://example.org/seer#ElementType"/>
+    <rdfs:label xml:lang="zh">克制</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#pkAttribute">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Equip"/>
+    <rdfs:label xml:lang="zh">战斗属性(pk_attribute)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#Suit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">套装</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#extraAttrValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Mintmark"/>
+    <rdfs:label xml:lang="zh">额外属性值(extra_attr_value)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#Pet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">精灵</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#appearsInFactor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://example.org/seer#Factor"/>
+    <rdfs:label xml:lang="zh">产出/登场因子</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#maxAttrValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Mintmark"/>
+    <rdfs:label xml:lang="zh">属性上限值(max_attr_value)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#Item">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">道具</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#hasAdvance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://example.org/seer#PetAdvance"/>
+    <rdfs:label xml:lang="zh">可进化</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#SuitBonus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">套装加成</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#hasPetClass">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://example.org/seer#PetClass"/>
+    <rdfs:label xml:lang="zh">属分类</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#Factor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">精灵因子</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#ElementType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">单属性</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#useTimes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#EnergyBead"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="zh">使用次数(use_times)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#EidEffect">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">效果实例（对应 SeerAPI eid_effect）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#Nature">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">性格</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#PetEffect">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">精灵特性效果</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#hasPetEffect">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://example.org/seer#PetEffect"/>
+    <rdfs:label xml:lang="zh">具特性</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#hasSoulmark">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Pet"/>
+    <rdfs:range rdf:resource="http://example.org/seer#Soulmark"/>
+    <rdfs:label xml:lang="zh">拥有魂印</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#attrBonus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer#Title"/>
+    <rdfs:label xml:lang="zh">属性加成(attr_bonus)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#Fire">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">火焰（绿火/金火，全局增益）</rdfs:label>
+    <rdfs:comment xml:lang="zh">自建：SeerAPI 无 fire 资源</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#Mintmark">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">刻印</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer#EnergyBead">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">能量珠</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

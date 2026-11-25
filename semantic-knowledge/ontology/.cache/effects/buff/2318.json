@@ -1,0 +1,1 @@
+{"desc": "每次受到攻击时若自身体力高于最大体力的1/2则受到的攻击伤害降低15%", "desc_tag": null, "hash": "e9134e68", "icon": [29], "id": 2318, "tag": "减伤 - 耀世战铠", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

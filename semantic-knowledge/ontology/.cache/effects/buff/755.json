@@ -1,0 +1,1 @@
+{"desc": "{0}回合内，使用技能后每处于{1}种异常状态，受到{2}点固定伤害", "desc_tag": null, "hash": "c95e969f", "icon": [34], "id": 755, "tag": "附加伤害", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

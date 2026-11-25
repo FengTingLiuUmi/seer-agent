@@ -1,0 +1,1 @@
+{"ability_buff": null, "desc": "对战时敌方精灵造成的伤害降低1/4，使用次数1。注意：赛尔之间对战无效", "effect": {"effect": {"id": 203, "url": "https://api.seerapi.com/v1/eid_effect/203"}, "effect_args": [0, 25]}, "hash": "cc5a57cc", "id": 300785, "idx": 1110, "item": {"id": 300785, "url": "https://api.seerapi.com/v1/item/300785"}, "name": "不灭能量珠", "use_times": 1}

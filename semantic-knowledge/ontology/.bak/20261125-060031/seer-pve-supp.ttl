@@ -1,0 +1,6253 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix seer: <http://example.org/seer#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+seer:pet_1045 a seer:Pet ;
+    rdfs:label "瑞尔斯"@zh ;
+    seer:hasTypeCombination seer:tc_11 ;
+    seer:seerapiId "1045" .
+
+seer:pet_1216 a seer:Pet ;
+    rdfs:label "魔域仙子"@zh ;
+    seer:hasTypeCombination seer:tc_1 ;
+    seer:seerapiId "1216" ;
+    rdfs:comment "别名: 魔域"@zh ;
+    skos:altLabel "魔域"@zh .
+
+seer:pet_1230 a seer:Pet ;
+    rdfs:label "巨齿鲨"@zh ;
+    seer:baseAtk 120 ;
+    seer:baseDef 82 ;
+    seer:baseHp 120 ;
+    seer:baseSpAtk 95 ;
+    seer:baseSpDef 85 ;
+    seer:baseSpd 98 ;
+    seer:hasTypeCombination seer:tc_2 ;
+    seer:seerapiId "1230" .
+
+seer:pet_1277 a seer:Pet ;
+    rdfs:label "雷纳尔多"@zh ;
+    seer:baseAtk 82 ;
+    seer:baseDef 100 ;
+    seer:baseHp 126 ;
+    seer:baseSpAtk 112 ;
+    seer:baseSpDef 90 ;
+    seer:baseSpd 90 ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "1277" .
+
+seer:pet_1462 a seer:Pet ;
+    rdfs:label "拉可尼"@zh ;
+    seer:hasTypeCombination seer:tc_5 ;
+    seer:seerapiId "1462" .
+
+seer:pet_1521 a seer:Pet ;
+    rdfs:label "克鲁斯"@zh ;
+    seer:hasTypeCombination seer:tc_4 ;
+    seer:seerapiId "1521" .
+
+seer:pet_158 a seer:Pet ;
+    rdfs:label "托尼"@zh ;
+    seer:hasTypeCombination seer:tc_9 ;
+    seer:seerapiId "158" ;
+    rdfs:comment "别名: 托尼老师"@zh ;
+    skos:altLabel "托尼老师"@zh .
+
+seer:pet_164 a seer:Pet ;
+    rdfs:label "闪光皮皮"@zh ;
+    seer:hasTypeCombination seer:tc_4 ;
+    seer:seerapiId "164" .
+
+seer:pet_1649 a seer:Pet ;
+    rdfs:label "尼萨雷斯"@zh ;
+    seer:baseAtk 115 ;
+    seer:baseDef 91 ;
+    seer:baseHp 124 ;
+    seer:baseSpAtk 75 ;
+    seer:baseSpDef 99 ;
+    seer:baseSpd 96 ;
+    seer:hasTypeCombination seer:tc_2 ;
+    seer:seerapiId "1649" .
+
+seer:pet_1730 a seer:Pet ;
+    rdfs:label "库贝萨"@zh ;
+    seer:hasTypeCombination seer:tc_18 ;
+    seer:seerapiId "1730" .
+
+seer:pet_1822 a seer:Pet ;
+    rdfs:label "查特林"@zh ;
+    seer:baseAtk 105 ;
+    seer:baseDef 120 ;
+    seer:baseHp 121 ;
+    seer:baseSpAtk 76 ;
+    seer:baseSpDef 100 ;
+    seer:baseSpd 88 ;
+    seer:hasTypeCombination seer:tc_11 ;
+    seer:seerapiId "1822" .
+
+seer:pet_1989 a seer:Pet ;
+    rdfs:label "哈肯萨"@zh ;
+    seer:hasTypeCombination seer:tc_55 ;
+    seer:seerapiId "1989" ;
+    rdfs:comment "别名: 神谕哈肯萨"@zh ;
+    skos:altLabel "神谕哈肯萨"@zh .
+
+seer:pet_2006 a seer:Pet ;
+    rdfs:label "奥斯卡"@zh ;
+    seer:hasTypeCombination seer:tc_16 ;
+    seer:seerapiId "2006" ;
+    rdfs:comment "圣灵奥斯卡即圣灵系奥斯卡 | 别名: 奥斯卡/圣灵奥斯卡"@zh ;
+    skos:altLabel "圣灵奥斯卡"@zh .
+
+seer:pet_2221 a seer:Pet ;
+    rdfs:label "炽焰金刚"@zh ;
+    seer:hasTypeCombination seer:tc_3 ;
+    seer:seerapiId "2221" .
+
+seer:pet_2468 a seer:Pet ;
+    rdfs:label "万魔天尊"@zh ;
+    seer:hasTypeCombination seer:tc_19 ;
+    seer:seerapiId "2468" ;
+    rdfs:comment "别名: 万魔尊"@zh ;
+    skos:altLabel "万魔尊"@zh .
+
+seer:pet_2496 a seer:Pet ;
+    rdfs:label "将神·吕布"@zh ;
+    seer:hasTypeCombination seer:tc_17 ;
+    seer:seerapiId "2496" ;
+    rdfs:comment "别名: 将神·吕布/将神吕布"@zh ;
+    skos:altLabel "将神吕布"@zh .
+
+seer:pet_2509 a seer:Pet ;
+    rdfs:label "诺伊尔顿"@zh ;
+    seer:hasTypeCombination seer:tc_13 ;
+    seer:seerapiId "2509" ;
+    rdfs:comment "别名: 伊诺尔顿"@zh ;
+    skos:altLabel "伊诺尔顿"@zh .
+
+seer:pet_2512 a seer:Pet ;
+    rdfs:label "昭烈帝刘备"@zh ;
+    seer:hasTypeCombination seer:tc_10 ;
+    seer:seerapiId "2512" .
+
+seer:pet_2530 a seer:Pet ;
+    rdfs:label "万人敌张飞"@zh ;
+    seer:hasTypeCombination seer:tc_47 ;
+    seer:seerapiId "2530" .
+
+seer:pet_2555 a seer:Pet ;
+    rdfs:label "雷霆虎卫"@zh ;
+    seer:hasTypeCombination seer:tc_5 ;
+    seer:seerapiId "2555" ;
+    rdfs:comment "别名: 雷霆虎卫/电虎"@zh ;
+    skos:altLabel "电虎"@zh .
+
+seer:pet_2616 a seer:Pet ;
+    rdfs:label "提亚戈斯"@zh ;
+    seer:baseAtk 77 ;
+    seer:baseDef 92 ;
+    seer:baseHp 128 ;
+    seer:baseSpAtk 120 ;
+    seer:baseSpDef 92 ;
+    seer:baseSpd 109 ;
+    seer:hasTypeCombination seer:tc_4 ;
+    seer:seerapiId "2616" .
+
+seer:pet_2685 a seer:Pet ;
+    rdfs:label "麦卡威"@zh ;
+    seer:hasTypeCombination seer:tc_38 ;
+    seer:seerapiId "2685" .
+
+seer:pet_2695 a seer:Pet ;
+    rdfs:label "圣瞳·天蛇太祖"@zh ;
+    seer:hasTypeCombination seer:tc_30 ;
+    seer:seerapiId "2695" .
+
+seer:pet_2705 a seer:Pet ;
+    rdfs:label "鲁比豪克"@zh ;
+    seer:baseAtk 75 ;
+    seer:baseDef 92 ;
+    seer:baseHp 129 ;
+    seer:baseSpAtk 121 ;
+    seer:baseSpDef 92 ;
+    seer:baseSpd 109 ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "2705" .
+
+seer:pet_2724 a seer:Pet ;
+    rdfs:label "幻影蝶"@zh ;
+    seer:hasTypeCombination seer:tc_13 ;
+    seer:seerapiId "2724" ;
+    rdfs:comment "自爆蝶/碟子为其昵称 | 别名: 幻影蝶/幻影碟/碟子/自爆蝶"@zh ;
+    skos:altLabel "幻影碟"@zh,
+        "碟子"@zh,
+        "自爆蝶"@zh .
+
+seer:pet_2753 a seer:Pet ;
+    rdfs:label "火忍·浓信"@zh ;
+    seer:hasTypeCombination seer:tc_47 ;
+    seer:seerapiId "2753" .
+
+seer:pet_2758 a seer:Pet ;
+    rdfs:label "万妖王·摩哥斯"@zh ;
+    seer:hasTypeCombination seer:tc_19 ;
+    seer:seerapiId "2758" ;
+    rdfs:comment "妖王/鸭子均为其昵称 | 别名: 万妖王·摩哥斯/妖王/鸭子"@zh ;
+    skos:altLabel "妖王"@zh,
+        "鸭子"@zh .
+
+seer:pet_2797 a seer:Pet ;
+    rdfs:label "上古战魔"@zh ;
+    seer:hasTypeCombination seer:tc_41 ;
+    seer:seerapiId "2797" .
+
+seer:pet_2802 a seer:Pet ;
+    rdfs:label "帝王之刃"@zh ;
+    seer:hasTypeCombination seer:tc_57 ;
+    seer:seerapiId "2802" .
+
+seer:pet_2865 a seer:Pet ;
+    rdfs:label "纳瓦雷多"@zh ;
+    seer:hasTypeCombination seer:tc_7 ;
+    seer:seerapiId "2865" .
+
+seer:pet_2892 a seer:Pet ;
+    rdfs:label "希尔妮妮"@zh ;
+    seer:baseAtk 123 ;
+    seer:baseDef 93 ;
+    seer:baseHp 136 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 93 ;
+    seer:baseSpd 115 ;
+    seer:hasTypeCombination seer:tc_20 ;
+    seer:seerapiId "2892" .
+
+seer:pet_2900 a seer:Pet ;
+    rdfs:label "夜魔龙战"@zh ;
+    seer:hasTypeCombination seer:tc_55 ;
+    seer:seerapiId "2900" .
+
+seer:pet_2945 a seer:Pet ;
+    rdfs:label "超时空暴龙"@zh ;
+    seer:hasTypeCombination seer:tc_17 ;
+    seer:seerapiId "2945" ;
+    rdfs:comment "别名: 超时空暴龙"@zh .
+
+seer:pet_2947 a seer:Pet ;
+    rdfs:label "利刃之主鲁斯王"@zh ;
+    seer:hasTypeCombination seer:tc_2 ;
+    seer:seerapiId "2947" ;
+    rdfs:comment "别名: 利刃之主"@zh ;
+    skos:altLabel "利刃之主"@zh .
+
+seer:pet_295 a seer:Pet ;
+    rdfs:label "迷你果"@zh ;
+    seer:hasTypeCombination seer:tc_1 ;
+    seer:seerapiId "295" .
+
+seer:pet_2957 a seer:Pet ;
+    rdfs:label "拉斯特"@zh ;
+    seer:hasTypeCombination seer:tc_50 ;
+    seer:seerapiId "2957" ;
+    rdfs:comment "别名: 拉斯特"@zh .
+
+seer:pet_2959 a seer:Pet ;
+    rdfs:label "弗里德"@zh ;
+    seer:hasTypeCombination seer:tc_17 ;
+    seer:seerapiId "2959" ;
+    rdfs:comment "次王即次元王弗里德 | 别名: 弗里德/次王"@zh ;
+    skos:altLabel "次王"@zh .
+
+seer:pet_2961 a seer:Pet ;
+    rdfs:label "科纳什"@zh ;
+    seer:hasTypeCombination seer:tc_61 ;
+    seer:seerapiId "2961" .
+
+seer:pet_2965 a seer:Pet ;
+    rdfs:label "灾厄王妃潘多拉"@zh ;
+    seer:hasTypeCombination seer:tc_62 ;
+    seer:seerapiId "2965" ;
+    rdfs:comment "别名: 灾厄王妃·潘多拉"@zh ;
+    skos:altLabel "灾厄王妃·潘多拉"@zh .
+
+seer:pet_2970 a seer:Pet ;
+    rdfs:label "睡神·修普诺斯"@zh ;
+    seer:hasTypeCombination seer:tc_42 ;
+    seer:seerapiId "2970" ;
+    rdfs:comment "完全体为梦天睡神·修普诺斯(3491) | 别名: 睡神·修普诺斯/眠神"@zh ;
+    skos:altLabel "眠神"@zh .
+
+seer:pet_2973 a seer:Pet ;
+    rdfs:label "仙女龙"@zh ;
+    seer:hasTypeCombination seer:tc_83 ;
+    seer:seerapiId "2973" .
+
+seer:pet_2975 a seer:Pet ;
+    rdfs:label "格拉托尼"@zh ;
+    seer:hasTypeCombination seer:tc_54 ;
+    seer:seerapiId "2975" .
+
+seer:pet_2979 a seer:Pet ;
+    rdfs:label "格利德"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 100 ;
+    seer:baseHp 138 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 100 ;
+    seer:baseSpd 118 ;
+    seer:hasTypeCombination seer:tc_57 ;
+    seer:seerapiId "2979" .
+
+seer:pet_2987 a seer:Pet ;
+    rdfs:label "重生之翼"@zh ;
+    seer:hasTypeCombination seer:tc_221 ;
+    seer:seerapiId "2987" ;
+    rdfs:comment "别名: 重生之翼/重生"@zh ;
+    skos:altLabel "重生"@zh .
+
+seer:pet_2988 a seer:Pet ;
+    rdfs:label "凡尔斯"@zh ;
+    seer:hasTypeCombination seer:tc_4 ;
+    seer:seerapiId "2988" .
+
+seer:pet_299 a seer:Pet ;
+    rdfs:label "猛虎王"@zh ;
+    seer:hasTypeCombination seer:tc_7 ;
+    seer:seerapiId "299" .
+
+seer:pet_2999 a seer:Pet ;
+    rdfs:label "千夜死神"@zh ;
+    seer:baseAtk 128 ;
+    seer:baseDef 103 ;
+    seer:baseHp 137 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 103 ;
+    seer:baseSpd 117 ;
+    seer:hasTypeCombination seer:tc_53 ;
+    seer:seerapiId "2999" .
+
+seer:pet_300 a seer:Pet ;
+    rdfs:label "谱尼"@zh ;
+    seer:baseAtk 110 ;
+    seer:baseDef 100 ;
+    seer:baseHp 120 ;
+    seer:baseSpAtk 120 ;
+    seer:baseSpDef 100 ;
+    seer:baseSpd 110 ;
+    seer:hasTypeCombination seer:tc_16 ;
+    seer:seerapiId "300" .
+
+seer:pet_3020 a seer:Pet ;
+    rdfs:label "百鬼夜王"@zh ;
+    seer:baseAtk 120 ;
+    seer:baseDef 108 ;
+    seer:baseHp 139 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 107 ;
+    seer:baseSpd 117 ;
+    seer:hasTypeCombination seer:tc_60 ;
+    seer:seerapiId "3020" .
+
+seer:pet_3027 a seer:Pet ;
+    rdfs:label "孙小圣"@zh ;
+    seer:hasTypeCombination seer:tc_18 ;
+    seer:seerapiId "3027" .
+
+seer:pet_3029 a seer:Pet ;
+    rdfs:label "烈羽赤兔"@zh ;
+    seer:hasTypeCombination seer:tc_17 ;
+    seer:seerapiId "3029" .
+
+seer:pet_3033 a seer:Pet ;
+    rdfs:label "帝天战佛"@zh ;
+    seer:baseAtk 131 ;
+    seer:baseDef 110 ;
+    seer:baseHp 140 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 120 ;
+    seer:hasTypeCombination seer:tc_77 ;
+    seer:seerapiId "3033" .
+
+seer:pet_3036 a seer:Pet ;
+    rdfs:label "乔特鲁德"@zh ;
+    seer:hasTypeCombination seer:tc_15 ;
+    seer:seerapiId "3036" ;
+    rdfs:comment "龙妈为其昵称 | 别名: 乔特鲁德/龙妈/楪龙妈"@zh ;
+    skos:altLabel "楪龙妈"@zh,
+        "龙妈"@zh .
+
+seer:pet_3042 a seer:Pet ;
+    rdfs:label "利亚苏斯"@zh ;
+    seer:hasTypeCombination seer:tc_30 ;
+    seer:seerapiId "3042" ;
+    rdfs:comment "别名: 利亚苏斯"@zh .
+
+seer:pet_3044 a seer:Pet ;
+    rdfs:label "库贝萨隆"@zh ;
+    seer:hasTypeCombination seer:tc_18 ;
+    seer:seerapiId "3044" .
+
+seer:pet_3045 a seer:Pet ;
+    rdfs:label "六界神王"@zh ;
+    seer:hasTypeCombination seer:tc_64 ;
+    seer:seerapiId "3045" ;
+    rdfs:comment "与六界帝神(3329)不同 | 别名: 六界神王"@zh .
+
+seer:pet_3046 a seer:Pet ;
+    rdfs:label "战龙哈莫"@zh ;
+    seer:hasTypeCombination seer:tc_15 ;
+    seer:seerapiId "3046" ;
+    rdfs:comment "别名: 战龙哈莫"@zh .
+
+seer:pet_3056 a seer:Pet ;
+    rdfs:label "圣甲·盖亚"@zh ;
+    seer:hasTypeCombination seer:tc_11 ;
+    seer:seerapiId "3056" ;
+    rdfs:comment "别名: 圣甲·盖亚/机盖"@zh ;
+    skos:altLabel "机盖"@zh .
+
+seer:pet_3082 a seer:Pet ;
+    rdfs:label "米斯蒂克"@zh ;
+    seer:baseAtk 80 ;
+    seer:baseDef 98 ;
+    seer:baseHp 162 ;
+    seer:baseSpAtk 127 ;
+    seer:baseSpDef 100 ;
+    seer:baseSpd 123 ;
+    seer:hasTypeCombination seer:tc_14 ;
+    seer:seerapiId "3082" .
+
+seer:pet_3086 a seer:Pet ;
+    rdfs:label "战·肯扎德"@zh ;
+    seer:baseAtk 125 ;
+    seer:baseDef 98 ;
+    seer:baseHp 134 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 96 ;
+    seer:baseSpd 117 ;
+    seer:hasTypeCombination seer:tc_11 ;
+    seer:seerapiId "3086" .
+
+seer:pet_3100 a seer:Pet ;
+    rdfs:label "源力·劫"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 102 ;
+    seer:baseHp 140 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 100 ;
+    seer:baseSpd 123 ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "3100" .
+
+seer:pet_3102 a seer:Pet ;
+    rdfs:label "斗天武神·瑞尔斯"@zh ;
+    seer:hasTypeCombination seer:tc_11 ;
+    seer:seerapiId "3102" ;
+    rdfs:comment "别名: 斗天武神瑞尔斯"@zh ;
+    skos:altLabel "斗天武神瑞尔斯"@zh .
+
+seer:pet_3104 a seer:Pet ;
+    rdfs:label "龙翼战神"@zh ;
+    seer:hasTypeCombination seer:tc_73 ;
+    seer:seerapiId "3104" .
+
+seer:pet_3107 a seer:Pet ;
+    rdfs:label "格罗姆特"@zh ;
+    seer:hasTypeCombination seer:tc_57 ;
+    seer:seerapiId "3107" ;
+    rdfs:comment "别名: 格罗姆特"@zh .
+
+seer:pet_3119 a seer:Pet ;
+    rdfs:label "小嘉"@zh ;
+    seer:hasTypeCombination seer:tc_20 ;
+    seer:seerapiId "3119" .
+
+seer:pet_3141 a seer:Pet ;
+    rdfs:label "深渊狱神·哈迪斯"@zh ;
+    seer:hasTypeCombination seer:tc_36 ;
+    seer:seerapiId "3141" ;
+    rdfs:comment "深渊之神应作深渊狱神；同已知 3141 | 别名: 深渊狱神·哈迪斯/深渊之神哈迪斯"@zh ;
+    skos:altLabel "深渊之神哈迪斯"@zh .
+
+seer:pet_3142 a seer:Pet ;
+    rdfs:label "王·雷伊"@zh ;
+    seer:hasTypeCombination seer:tc_5 ;
+    seer:seerapiId "3142" ;
+    rdfs:comment "别名: 王·雷伊/王雷"@zh ;
+    skos:altLabel "王雷"@zh .
+
+seer:pet_3147 a seer:Pet ;
+    rdfs:label "神翼·波斯蒂加"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 102 ;
+    seer:baseHp 139 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 99 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_53 ;
+    seer:seerapiId "3147" .
+
+seer:pet_3150 a seer:Pet ;
+    rdfs:label "格劳瑞"@zh ;
+    seer:hasTypeCombination seer:tc_5 ;
+    seer:seerapiId "3150" ;
+    rdfs:comment "别名: 格劳瑞"@zh .
+
+seer:pet_3174 a seer:Pet ;
+    rdfs:label "莱茵哈特"@zh ;
+    seer:hasTypeCombination seer:tc_7 ;
+    seer:seerapiId "3174" ;
+    rdfs:comment "别名: 莱因哈特"@zh ;
+    skos:altLabel "莱因哈特"@zh .
+
+seer:pet_3177 a seer:Pet ;
+    rdfs:label "撒丹尼兹"@zh ;
+    seer:hasTypeCombination seer:tc_69 ;
+    seer:seerapiId "3177" ;
+    rdfs:comment "别名: 撒丹尼兹"@zh .
+
+seer:pet_3185 a seer:Pet ;
+    rdfs:label "魔化克雷尔"@zh ;
+    seer:hasTypeCombination seer:tc_69 ;
+    seer:seerapiId "3185" .
+
+seer:pet_32 a seer:Pet ;
+    rdfs:label "巴拉龟"@zh ;
+    seer:hasTypeCombination seer:tc_2 ;
+    seer:seerapiId "32" .
+
+seer:pet_3200 a seer:Pet ;
+    rdfs:label "霍德尔"@zh ;
+    seer:baseAtk 80 ;
+    seer:baseDef 103 ;
+    seer:baseHp 153 ;
+    seer:baseSpAtk 128 ;
+    seer:baseSpDef 102 ;
+    seer:baseSpd 124 ;
+    seer:hasTypeCombination seer:tc_13 ;
+    seer:seerapiId "3200" .
+
+seer:pet_3214 a seer:Pet ;
+    rdfs:label "万古邪皇·威斯克"@zh ;
+    seer:hasTypeCombination seer:tc_62 ;
+    seer:seerapiId "3214" ;
+    rdfs:comment "别名: 万古邪皇·威斯克"@zh .
+
+seer:pet_3223 a seer:Pet ;
+    rdfs:label "阿尔斯兰"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 103 ;
+    seer:baseHp 150 ;
+    seer:baseSpAtk 80 ;
+    seer:baseSpDef 102 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_11 ;
+    seer:seerapiId "3223" .
+
+seer:pet_3237 a seer:Pet ;
+    rdfs:label "大威势明王"@zh ;
+    seer:baseAtk 128 ;
+    seer:baseDef 107 ;
+    seer:baseHp 152 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 107 ;
+    seer:baseSpd 126 ;
+    seer:hasTypeCombination seer:tc_71 ;
+    seer:seerapiId "3237" .
+
+seer:pet_3240 a seer:Pet ;
+    rdfs:label "邪灵王·摩哥斯"@zh ;
+    seer:hasTypeCombination seer:tc_19 ;
+    seer:seerapiId "3240" ;
+    rdfs:comment "别名: 邪灵王·摩哥斯/邪灵王魔哥斯"@zh ;
+    skos:altLabel "邪灵王魔哥斯"@zh .
+
+seer:pet_3253 a seer:Pet ;
+    rdfs:label "弥卡尔"@zh ;
+    seer:hasTypeCombination seer:tc_71 ;
+    seer:seerapiId "3253" ;
+    rdfs:comment "别名: 弥卡尔"@zh .
+
+seer:pet_3256 a seer:Pet ;
+    rdfs:label "天尊龙帝"@zh ;
+    seer:hasTypeCombination seer:tc_73 ;
+    seer:seerapiId "3256" ;
+    rdfs:comment "天尊为其简称 | 别名: 天尊龙帝/天尊"@zh ;
+    skos:altLabel "天尊"@zh .
+
+seer:pet_3260 a seer:Pet ;
+    rdfs:label "暮瑶"@zh ;
+    seer:hasTypeCombination seer:tc_10 ;
+    seer:seerapiId "3260" .
+
+seer:pet_3261 a seer:Pet ;
+    rdfs:label "暗影极夜·诺伊尔顿"@zh ;
+    seer:hasTypeCombination seer:tc_13 ;
+    seer:seerapiId "3261" .
+
+seer:pet_3267 a seer:Pet ;
+    rdfs:label "克劳蒂雅"@zh ;
+    seer:hasTypeCombination seer:tc_41 ;
+    seer:seerapiId "3267" .
+
+seer:pet_3280 a seer:Pet ;
+    rdfs:label "德罗西尼"@zh ;
+    seer:hasTypeCombination seer:tc_7 ;
+    seer:seerapiId "3280" .
+
+seer:pet_3295 a seer:Pet ;
+    rdfs:label "皮皮"@zh ;
+    seer:hasTypeCombination seer:tc_4 ;
+    seer:seerapiId "3295" .
+
+seer:pet_3296 a seer:Pet ;
+    rdfs:label "暗烬·朱雀"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 108 ;
+    seer:baseHp 145 ;
+    seer:baseSpAtk 130 ;
+    seer:baseSpDef 107 ;
+    seer:baseSpd 126 ;
+    seer:hasTypeCombination seer:tc_27 ;
+    seer:seerapiId "3296" .
+
+seer:pet_3302 a seer:Pet ;
+    rdfs:label "炎魔之王"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 107 ;
+    seer:baseHp 150 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 106 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_3 ;
+    seer:seerapiId "3302" .
+
+seer:pet_3308 a seer:Pet ;
+    rdfs:label "万世北溟·玄武"@zh ;
+    seer:baseAtk 123 ;
+    seer:baseDef 140 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 140 ;
+    seer:baseSpd 92 ;
+    seer:hasTypeCombination seer:tc_37 ;
+    seer:seerapiId "3308" .
+
+seer:pet_3309 a seer:Pet ;
+    rdfs:label "鱼龙帝王"@zh ;
+    seer:hasTypeCombination seer:tc_2 ;
+    seer:seerapiId "3309" .
+
+seer:pet_3311 a seer:Pet ;
+    rdfs:label "圣光灵神"@zh ;
+    seer:hasTypeCombination seer:tc_65 ;
+    seer:seerapiId "3311" ;
+    rdfs:comment "别名: 圣光灵神"@zh .
+
+seer:pet_3313 a seer:Pet ;
+    rdfs:label "福兽天禄"@zh ;
+    seer:hasTypeCombination seer:tc_49 ;
+    seer:seerapiId "3313" ;
+    rdfs:comment "福寿应作福兽天禄 | 别名: 福兽天禄/福寿"@zh ;
+    skos:altLabel "福寿"@zh .
+
+seer:pet_3318 a seer:Pet ;
+    rdfs:label "炽羽炎凰·朱雀"@zh ;
+    seer:hasTypeCombination seer:tc_27 ;
+    seer:seerapiId "3318" ;
+    rdfs:comment "朱雀族完全体 | 别名: 炽羽炎凰·朱雀/朱雀"@zh ;
+    skos:altLabel "朱雀"@zh,
+        "炽羽炎凤朱雀"@zh .
+
+seer:pet_3328 a seer:Pet ;
+    rdfs:label "圣王·萨格罗斯"@zh ;
+    seer:hasTypeCombination seer:tc_221 ;
+    seer:seerapiId "3328" ;
+    rdfs:comment "别名: 圣王·萨格罗斯/圣王萨格罗斯/圣萨"@zh ;
+    skos:altLabel "圣王萨格罗斯"@zh,
+        "圣萨"@zh .
+
+seer:pet_3330 a seer:Pet ;
+    rdfs:label "玄天神武"@zh ;
+    seer:baseAtk 125 ;
+    seer:baseDef 103 ;
+    seer:baseHp 140 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 102 ;
+    seer:baseSpd 110 ;
+    seer:hasTypeCombination seer:tc_41 ;
+    seer:seerapiId "3330" .
+
+seer:pet_3336 a seer:Pet ;
+    rdfs:label "地狱魔龙兽"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 101 ;
+    seer:baseHp 152 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 127 ;
+    seer:hasTypeCombination seer:tc_90 ;
+    seer:seerapiId "3336" .
+
+seer:pet_3344 a seer:Pet ;
+    rdfs:label "金角灵魔"@zh ;
+    seer:hasTypeCombination seer:tc_7 ;
+    seer:seerapiId "3344" .
+
+seer:pet_3355 a seer:Pet ;
+    rdfs:label "莫妮卡"@zh ;
+    seer:hasTypeCombination seer:tc_20 ;
+    seer:seerapiId "3355" ;
+    rdfs:comment "别名: 神谕莫妮卡"@zh ;
+    skos:altLabel "神谕莫妮卡"@zh .
+
+seer:pet_3365 a seer:Pet ;
+    rdfs:label "大力牛魔王"@zh ;
+    seer:hasTypeCombination seer:tc_48 ;
+    seer:seerapiId "3365" .
+
+seer:pet_3366 a seer:Pet ;
+    rdfs:label "伽尔"@zh ;
+    seer:hasTypeCombination seer:tc_69 ;
+    seer:seerapiId "3366" .
+
+seer:pet_3376 a seer:Pet ;
+    rdfs:label "大梵天王"@zh ;
+    seer:hasTypeCombination seer:tc_57 ;
+    seer:seerapiId "3376" .
+
+seer:pet_3386 a seer:Pet ;
+    rdfs:label "坚壁机甲"@zh ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "3386" .
+
+seer:pet_3389 a seer:Pet ;
+    rdfs:label "费德约克"@zh ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "3389" .
+
+seer:pet_3392 a seer:Pet ;
+    rdfs:label "混沌魔使"@zh ;
+    seer:hasTypeCombination seer:tc_13 ;
+    seer:seerapiId "3392" .
+
+seer:pet_34 a seer:Pet ;
+    rdfs:label "钢牙鲨"@zh ;
+    seer:hasTypeCombination seer:tc_2 ;
+    seer:seerapiId "34" .
+
+seer:pet_3411 a seer:Pet ;
+    rdfs:label "阿什坎迪"@zh ;
+    seer:hasTypeCombination seer:tc_92 ;
+    seer:seerapiId "3411" ;
+    rdfs:comment "别名: 阿什坎迪"@zh .
+
+seer:pet_3414 a seer:Pet ;
+    rdfs:label "混沌魔君索伦森"@zh ;
+    seer:hasTypeCombination seer:tc_222 ;
+    seer:seerapiId "3414" ;
+    rdfs:comment "混索为其简称；同已知 3414 | 别名: 混沌魔君索伦森/混索"@zh ;
+    skos:altLabel "混索"@zh .
+
+seer:pet_3417 a seer:Pet ;
+    rdfs:label "埃兰"@zh ;
+    seer:hasTypeCombination seer:tc_57 ;
+    seer:seerapiId "3417" .
+
+seer:pet_3426 a seer:Pet ;
+    rdfs:label "拓弥丸"@zh ;
+    seer:hasTypeCombination seer:tc_60 ;
+    seer:seerapiId "3426" .
+
+seer:pet_3435 a seer:Pet ;
+    rdfs:label "伊丽莎白"@zh ;
+    seer:hasTypeCombination seer:tc_73 ;
+    seer:seerapiId "3435" ;
+    rdfs:comment "别名: 伊丽莎白/伊莉莎"@zh ;
+    skos:altLabel "伊莉莎"@zh .
+
+seer:pet_3455 a seer:Pet ;
+    rdfs:label "洛刹"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 100 ;
+    seer:baseHp 175 ;
+    seer:baseSpAtk 130 ;
+    seer:baseSpDef 102 ;
+    seer:baseSpd 128 ;
+    seer:hasTypeCombination seer:tc_94 ;
+    seer:seerapiId "3455" .
+
+seer:pet_3456 a seer:Pet ;
+    rdfs:label "圣光斯嘉丽"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 115 ;
+    seer:baseHp 157 ;
+    seer:baseSpAtk 130 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_52 ;
+    seer:seerapiId "3456" .
+
+seer:pet_3464 a seer:Pet ;
+    rdfs:label "混沌耶里梅斯"@zh ;
+    seer:hasTypeCombination seer:tc_93 ;
+    seer:seerapiId "3464" .
+
+seer:pet_3465 a seer:Pet ;
+    rdfs:label "圣瞳缪斯"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 153 ;
+    seer:baseSpAtk 132 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_95 ;
+    seer:seerapiId "3465" .
+
+seer:pet_3467 a seer:Pet ;
+    rdfs:label "不灭·艾恩斯"@zh ;
+    seer:baseAtk 132 ;
+    seer:baseDef 110 ;
+    seer:baseHp 164 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 129 ;
+    seer:hasTypeCombination seer:tc_3 ;
+    seer:seerapiId "3467" .
+
+seer:pet_3469 a seer:Pet ;
+    rdfs:label "拉特雷奇"@zh ;
+    seer:hasTypeCombination seer:tc_11 ;
+    seer:seerapiId "3469" .
+
+seer:pet_3482 a seer:Pet ;
+    rdfs:label "圣战瑞尔斯"@zh ;
+    seer:hasTypeCombination seer:tc_78 ;
+    seer:seerapiId "3482" .
+
+seer:pet_3498 a seer:Pet ;
+    rdfs:label "天雪寒"@zh ;
+    seer:hasTypeCombination seer:tc_11 ;
+    seer:seerapiId "3498" ;
+    rdfs:comment "别名: 天雪寒"@zh .
+
+seer:pet_3501 a seer:Pet ;
+    rdfs:label "艾拉"@zh ;
+    seer:hasTypeCombination seer:tc_2 ;
+    seer:seerapiId "3501" .
+
+seer:pet_3514 a seer:Pet ;
+    rdfs:label "弑神猎皇"@zh ;
+    seer:hasTypeCombination seer:tc_73 ;
+    seer:seerapiId "3514" ;
+    rdfs:comment "别名: 猎皇"@zh ;
+    skos:altLabel "猎皇"@zh .
+
+seer:pet_3522 a seer:Pet ;
+    rdfs:label "暴君史莱姆"@zh ;
+    seer:hasTypeCombination seer:tc_17 ;
+    seer:seerapiId "3522" ;
+    rdfs:comment "别名: 暴君·史莱姆"@zh ;
+    skos:altLabel "暴君·史莱姆"@zh .
+
+seer:pet_3525 a seer:Pet ;
+    rdfs:label "天羽"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 102 ;
+    seer:baseHp 151 ;
+    seer:baseSpAtk 130 ;
+    seer:baseSpDef 100 ;
+    seer:baseSpd 127 ;
+    seer:hasTypeCombination seer:tc_30 ;
+    seer:seerapiId "3525" .
+
+seer:pet_3529 a seer:Pet ;
+    rdfs:label "幻世·海瑟薇"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 113 ;
+    seer:baseHp 161 ;
+    seer:baseSpAtk 132 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 129 ;
+    seer:hasTypeCombination seer:tc_10 ;
+    seer:seerapiId "3529" .
+
+seer:pet_3535 a seer:Pet ;
+    rdfs:label "塔兰度斯"@zh ;
+    seer:hasTypeCombination seer:tc_84 ;
+    seer:seerapiId "3535" .
+
+seer:pet_3539 a seer:Pet ;
+    rdfs:label "混沌布莱克"@zh ;
+    seer:baseAtk 132 ;
+    seer:baseDef 112 ;
+    seer:baseHp 160 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_92 ;
+    seer:seerapiId "3539" .
+
+seer:pet_3541 a seer:Pet ;
+    rdfs:label "魔灵王·斯摩亚蒂"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 116 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 135 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_99 ;
+    seer:seerapiId "3541" .
+
+seer:pet_3550 a seer:Pet ;
+    rdfs:label "天启帝君"@zh ;
+    seer:hasTypeCombination seer:tc_224 ;
+    seer:seerapiId "3550" ;
+    rdfs:comment "别名: 天启帝君/帝君"@zh ;
+    skos:altLabel "帝君"@zh .
+
+seer:pet_3551 a seer:Pet ;
+    rdfs:label "无妙"@zh ;
+    seer:hasTypeCombination seer:tc_11 ;
+    seer:seerapiId "3551" .
+
+seer:pet_3552 a seer:Pet ;
+    rdfs:label "烟罗"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 105 ;
+    seer:baseHp 146 ;
+    seer:baseSpAtk 131 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 128 ;
+    seer:hasTypeCombination seer:tc_29 ;
+    seer:seerapiId "3552" .
+
+seer:pet_3560 a seer:Pet ;
+    rdfs:label "倾城·虞姬"@zh ;
+    seer:hasTypeCombination seer:tc_20 ;
+    seer:seerapiId "3560" ;
+    rdfs:comment "倾世虞姬应作倾城·虞姬 | 别名: 倾城·虞姬/倾世虞姬"@zh ;
+    skos:altLabel "倾世虞姬"@zh .
+
+seer:pet_3568 a seer:Pet ;
+    rdfs:label "圣地卡修斯"@zh ;
+    seer:hasTypeCombination seer:tc_100 ;
+    seer:seerapiId "3568" .
+
+seer:pet_3569 a seer:Pet ;
+    rdfs:label "托尔希"@zh ;
+    seer:hasTypeCombination seer:tc_7 ;
+    seer:seerapiId "3569" .
+
+seer:pet_3570 a seer:Pet ;
+    rdfs:label "星诺"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 104 ;
+    seer:baseHp 156 ;
+    seer:baseSpAtk 130 ;
+    seer:baseSpDef 106 ;
+    seer:baseSpd 127 ;
+    seer:hasTypeCombination seer:tc_44 ;
+    seer:seerapiId "3570" .
+
+seer:pet_3572 a seer:Pet ;
+    rdfs:label "四九幻曦"@zh ;
+    seer:hasTypeCombination seer:tc_20 ;
+    seer:seerapiId "3572" ;
+    rdfs:comment "别名: 幻曦"@zh ;
+    skos:altLabel "幻曦"@zh .
+
+seer:pet_3573 a seer:Pet ;
+    rdfs:label "艾莫莉萨"@zh ;
+    seer:hasTypeCombination seer:tc_73 ;
+    seer:seerapiId "3573" ;
+    rdfs:comment "别名: 艾莫莉萨/艾莫"@zh ;
+    skos:altLabel "艾莫"@zh,
+        "艾莫丽萨"@zh,
+        "艾莫利萨"@zh,
+        "艾莫莉丝"@zh .
+
+seer:pet_3577 a seer:Pet ;
+    rdfs:label "光之惩戒·英卡洛斯"@zh ;
+    seer:baseAtk 145 ;
+    seer:baseDef 115 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 140 ;
+    seer:hasTypeCombination seer:tc_59 ;
+    seer:seerapiId "3577" .
+
+seer:pet_3582 a seer:Pet ;
+    rdfs:label "几米"@zh ;
+    seer:hasTypeCombination seer:tc_39 ;
+    seer:seerapiId "3582" ;
+    rdfs:comment "别名: 几米"@zh .
+
+seer:pet_3585 a seer:Pet ;
+    rdfs:label "索兰莉安"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 102 ;
+    seer:baseHp 158 ;
+    seer:baseSpAtk 125 ;
+    seer:baseSpDef 102 ;
+    seer:baseSpd 123 ;
+    seer:hasTypeCombination seer:tc_21 ;
+    seer:seerapiId "3585" .
+
+seer:pet_3587 a seer:Pet ;
+    rdfs:label "红桃皇后"@zh ;
+    seer:hasTypeCombination seer:tc_10 ;
+    seer:seerapiId "3587" .
+
+seer:pet_3595 a seer:Pet ;
+    rdfs:label "泰拉图斯"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 108 ;
+    seer:baseHp 167 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 127 ;
+    seer:hasTypeCombination seer:tc_22 ;
+    seer:seerapiId "3595" .
+
+seer:pet_3599 a seer:Pet ;
+    rdfs:label "卡杉德拉"@zh ;
+    seer:baseAtk 132 ;
+    seer:baseDef 112 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 128 ;
+    seer:hasTypeCombination seer:tc_47 ;
+    seer:seerapiId "3599" .
+
+seer:pet_3605 a seer:Pet ;
+    rdfs:label "拉贾克斯"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 110 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 132 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_101 ;
+    seer:seerapiId "3605" .
+
+seer:pet_3618 a seer:Pet ;
+    rdfs:label "埃拉辛姆"@zh ;
+    seer:baseAtk 132 ;
+    seer:baseDef 110 ;
+    seer:baseHp 164 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 124 ;
+    seer:hasTypeCombination seer:tc_60 ;
+    seer:seerapiId "3618" .
+
+seer:pet_3623 a seer:Pet ;
+    rdfs:label "鬼面幽蝶"@zh ;
+    seer:baseAtk 135 ;
+    seer:baseDef 109 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_69 ;
+    seer:seerapiId "3623" .
+
+seer:pet_3624 a seer:Pet ;
+    rdfs:label "圣光大师·苏曼阿尔"@zh ;
+    seer:hasTypeCombination seer:tc_16 ;
+    seer:seerapiId "3624" ;
+    rdfs:comment "别名: 圣光大师·苏曼阿尔/圣光大师"@zh ;
+    skos:altLabel "圣光大师"@zh .
+
+seer:pet_3627 a seer:Pet ;
+    rdfs:label "不羁·弗里德"@zh ;
+    seer:hasTypeCombination seer:tc_17 ;
+    seer:seerapiId "3627" ;
+    rdfs:comment "弗里德的超进化形态 | 别名: 不羁·弗里德/不羁弗里德"@zh ;
+    skos:altLabel "不羁弗里德"@zh .
+
+seer:pet_3630 a seer:Pet ;
+    rdfs:label "闪电犬"@zh ;
+    seer:hasTypeCombination seer:tc_5 ;
+    seer:seerapiId "3630" .
+
+seer:pet_3631 a seer:Pet ;
+    rdfs:label "跃迁狂剑·兰斯洛特"@zh ;
+    seer:baseAtk 135 ;
+    seer:baseDef 112 ;
+    seer:baseHp 163 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_72 ;
+    seer:seerapiId "3631" .
+
+seer:pet_3634 a seer:Pet ;
+    rdfs:label "卡恩特"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 160 ;
+    seer:baseSpAtk 132 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 128 ;
+    seer:hasTypeCombination seer:tc_25 ;
+    seer:seerapiId "3634" .
+
+seer:pet_3639 a seer:Pet ;
+    rdfs:label "普约尔"@zh ;
+    seer:baseAtk 134 ;
+    seer:baseDef 109 ;
+    seer:baseHp 160 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 109 ;
+    seer:baseSpd 128 ;
+    seer:hasTypeCombination seer:tc_34 ;
+    seer:seerapiId "3639" .
+
+seer:pet_3640 a seer:Pet ;
+    rdfs:label "阿塔尼斯"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 111 ;
+    seer:baseHp 163 ;
+    seer:baseSpAtk 131 ;
+    seer:baseSpDef 107 ;
+    seer:baseSpd 128 ;
+    seer:hasTypeCombination seer:tc_50 ;
+    seer:seerapiId "3640" .
+
+seer:pet_3642 a seer:Pet ;
+    rdfs:label "极天之翼·托鲁克"@zh ;
+    seer:hasTypeCombination seer:tc_4 ;
+    seer:seerapiId "3642" .
+
+seer:pet_3644 a seer:Pet ;
+    rdfs:label "蓝露"@zh ;
+    seer:hasTypeCombination seer:tc_2 ;
+    seer:seerapiId "3644" .
+
+seer:pet_3647 a seer:Pet ;
+    rdfs:label "扫荡之锋"@zh ;
+    seer:hasTypeCombination seer:tc_103 ;
+    seer:seerapiId "3647" .
+
+seer:pet_3653 a seer:Pet ;
+    rdfs:label "德马斯克"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 105 ;
+    seer:baseHp 164 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 126 ;
+    seer:hasTypeCombination seer:tc_14 ;
+    seer:seerapiId "3653" .
+
+seer:pet_3654 a seer:Pet ;
+    rdfs:label "奎因"@zh ;
+    seer:baseAtk 132 ;
+    seer:baseDef 109 ;
+    seer:baseHp 162 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 129 ;
+    seer:hasTypeCombination seer:tc_35 ;
+    seer:seerapiId "3654" .
+
+seer:pet_3661 a seer:Pet ;
+    rdfs:label "天启星魂"@zh ;
+    seer:hasTypeCombination seer:tc_71 ;
+    seer:seerapiId "3661" .
+
+seer:pet_3673 a seer:Pet ;
+    rdfs:label "艾夏拉"@zh ;
+    seer:hasTypeCombination seer:tc_74 ;
+    seer:seerapiId "3673" ;
+    rdfs:comment "别名: 艾夏拉"@zh .
+
+seer:pet_3676 a seer:Pet ;
+    rdfs:label "万兽之尊·猛虎王"@zh ;
+    seer:hasTypeCombination seer:tc_7 ;
+    seer:seerapiId "3676" ;
+    rdfs:comment "别名: 万兽之尊猛虎王/万兽至尊·猛虎王"@zh ;
+    skos:altLabel "万兽之尊猛虎王"@zh,
+        "万兽至尊·猛虎王"@zh .
+
+seer:pet_3679 a seer:Pet ;
+    rdfs:label "鬼蚀豹尊"@zh ;
+    seer:hasTypeCombination seer:tc_60 ;
+    seer:seerapiId "3679" ;
+    rdfs:comment "别名: 鬼蚀豹尊/鬼豹"@zh ;
+    skos:altLabel "鬼豹"@zh .
+
+seer:pet_3686 a seer:Pet ;
+    rdfs:label "妖族元皇·兰蒂斯"@zh ;
+    seer:hasTypeCombination seer:tc_70 ;
+    seer:seerapiId "3686" .
+
+seer:pet_3697 a seer:Pet ;
+    rdfs:label "擎空·凡尔斯"@zh ;
+    seer:hasTypeCombination seer:tc_4 ;
+    seer:seerapiId "3697" .
+
+seer:pet_3699 a seer:Pet ;
+    rdfs:label "冰之契约·阿克希亚"@zh ;
+    seer:hasTypeCombination seer:tc_9 ;
+    seer:seerapiId "3699" ;
+    rdfs:comment "别名: 冰之契约·阿克希亚/冰之契约阿克西亚"@zh ;
+    skos:altLabel "冰之契约阿克西亚"@zh .
+
+seer:pet_3705 a seer:Pet ;
+    rdfs:label "守护者·艾里克"@zh ;
+    seer:hasTypeCombination seer:tc_104 ;
+    seer:seerapiId "3705" ;
+    rdfs:comment "艾里克(1364)为基础形态 | 别名: 守护者·艾里克/守护者艾里克/艾里克"@zh ;
+    skos:altLabel "守护者艾里克"@zh,
+        "艾里克"@zh .
+
+seer:pet_3724 a seer:Pet ;
+    rdfs:label "混沌·哈肯萨"@zh ;
+    seer:hasTypeCombination seer:tc_106 ;
+    seer:seerapiId "3724" ;
+    rdfs:comment "别名: 混沌·哈肯萨/混沌哈肯撒/混沌哈肯萨"@zh ;
+    skos:altLabel "混沌哈肯撒"@zh,
+        "混沌哈肯萨"@zh .
+
+seer:pet_3734 a seer:Pet ;
+    rdfs:label "混沌飞王凡尔斯"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 112 ;
+    seer:baseHp 140 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 160 ;
+    seer:hasTypeCombination seer:tc_105 ;
+    seer:seerapiId "3734" .
+
+seer:pet_3741 a seer:Pet ;
+    rdfs:label "上古魔尊·库贝萨"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 108 ;
+    seer:baseHp 185 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 129 ;
+    seer:hasTypeCombination seer:tc_18 ;
+    seer:seerapiId "3741" .
+
+seer:pet_3748 a seer:Pet ;
+    rdfs:label "圣焰·菲格罗亚"@zh ;
+    seer:hasTypeCombination seer:tc_108 ;
+    seer:seerapiId "3748" ;
+    rdfs:comment "别名: 圣焰菲格罗亚"@zh ;
+    skos:altLabel "圣焰菲格罗亚"@zh .
+
+seer:pet_3756 a seer:Pet ;
+    rdfs:label "逆世冰狐"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 105 ;
+    seer:baseHp 154 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_84 ;
+    seer:seerapiId "3756" .
+
+seer:pet_3759 a seer:Pet ;
+    rdfs:label "明翼"@zh ;
+    seer:hasTypeCombination seer:tc_16 ;
+    seer:seerapiId "3759" ;
+    rdfs:comment "与明翼千裳(=千裳3894)不同 | 别名: 明翼"@zh .
+
+seer:pet_3763 a seer:Pet ;
+    rdfs:label "乌瑞娅"@zh ;
+    seer:hasTypeCombination seer:tc_109 ;
+    seer:seerapiId "3763" ;
+    rdfs:comment "别名: 乌瑞亚"@zh ;
+    skos:altLabel "乌瑞亚"@zh .
+
+seer:pet_3774 a seer:Pet ;
+    rdfs:label "雷羽"@zh ;
+    seer:baseAtk 133 ;
+    seer:baseDef 105 ;
+    seer:baseHp 152 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 102 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_104 ;
+    seer:seerapiId "3774" .
+
+seer:pet_3786 a seer:Pet ;
+    rdfs:label "火炎巨鹿·里奥斯"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 105 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 134 ;
+    seer:baseSpDef 120 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_3 ;
+    seer:seerapiId "3786" .
+
+seer:pet_3788 a seer:Pet ;
+    rdfs:label "混元天尊"@zh ;
+    seer:hasTypeCombination seer:tc_110 ;
+    seer:seerapiId "3788" .
+
+seer:pet_3790 a seer:Pet ;
+    rdfs:label "无治奇"@zh ;
+    seer:hasTypeCombination seer:tc_90 ;
+    seer:seerapiId "3790" ;
+    rdfs:comment "别名: 无治奇"@zh .
+
+seer:pet_3794 a seer:Pet ;
+    rdfs:label "混沌·洛拉菲德"@zh ;
+    seer:baseAtk 133 ;
+    seer:baseDef 116 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 126 ;
+    seer:hasTypeCombination seer:tc_96 ;
+    seer:seerapiId "3794" .
+
+seer:pet_3797 a seer:Pet ;
+    rdfs:label "混沌魔眼耶里梅斯"@zh ;
+    seer:hasTypeCombination seer:tc_93 ;
+    seer:seerapiId "3797" ;
+    rdfs:comment "别名: 混沌魔眼耶里梅斯/混沌魔眼/混耶"@zh ;
+    skos:altLabel "混沌魔眼"@zh,
+        "混耶"@zh .
+
+seer:pet_3813 a seer:Pet ;
+    rdfs:label "哀伤公爵·阿洛希尔"@zh ;
+    seer:hasTypeCombination seer:tc_111 ;
+    seer:seerapiId "3813" ;
+    rdfs:comment "别名: 公爵"@zh ;
+    skos:altLabel "公爵"@zh .
+
+seer:pet_3814 a seer:Pet ;
+    rdfs:label "八岐大蛇"@zh ;
+    seer:hasTypeCombination seer:tc_62 ;
+    seer:seerapiId "3814" .
+
+seer:pet_3818 a seer:Pet ;
+    rdfs:label "汤圆妹妹"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 102 ;
+    seer:baseHp 160 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_102 ;
+    seer:seerapiId "3818" .
+
+seer:pet_3819 a seer:Pet ;
+    rdfs:label "跳跳狮"@zh ;
+    seer:hasTypeCombination seer:tc_68 ;
+    seer:seerapiId "3819" .
+
+seer:pet_3821 a seer:Pet ;
+    rdfs:label "库塔莫西"@zh ;
+    seer:hasTypeCombination seer:tc_226 ;
+    seer:seerapiId "3821" .
+
+seer:pet_3825 a seer:Pet ;
+    rdfs:label "蚀骨冰姬"@zh ;
+    seer:hasTypeCombination seer:tc_45 ;
+    seer:seerapiId "3825" .
+
+seer:pet_3829 a seer:Pet ;
+    rdfs:label "皇室战狮"@zh ;
+    seer:baseAtk 134 ;
+    seer:baseDef 104 ;
+    seer:baseHp 154 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 102 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_59 ;
+    seer:seerapiId "3829" .
+
+seer:pet_3844 a seer:Pet ;
+    rdfs:label "伊芙莉莎"@zh ;
+    seer:hasTypeCombination seer:tc_20 ;
+    seer:seerapiId "3844" ;
+    rdfs:comment "伊芙丽/伊芙丽莎为其误写；同已知 3844 | 别名: 伊芙莉莎/伊芙丽/伊芙丽莎"@zh ;
+    skos:altLabel "伊芙丽"@zh,
+        "伊芙丽莎"@zh .
+
+seer:pet_3856 a seer:Pet ;
+    rdfs:label "力蒲"@zh ;
+    seer:hasTypeCombination seer:tc_225 ;
+    seer:seerapiId "3856" ;
+    rdfs:comment "别名: 力蒲"@zh .
+
+seer:pet_3860 a seer:Pet ;
+    rdfs:label "拉斯塔特"@zh ;
+    seer:hasTypeCombination seer:tc_225 ;
+    seer:seerapiId "3860" .
+
+seer:pet_3864 a seer:Pet ;
+    rdfs:label "圣念·卡迪亚"@zh ;
+    seer:hasTypeCombination seer:tc_16 ;
+    seer:seerapiId "3864" ;
+    rdfs:comment "卡迪亚(3855)的超进化 | 别名: 圣念·卡迪亚/圣念卡迪亚"@zh ;
+    skos:altLabel "圣念卡地亚"@zh,
+        "圣念卡迪亚"@zh .
+
+seer:pet_3865 a seer:Pet ;
+    rdfs:label "希瓦"@zh ;
+    seer:hasTypeCombination seer:tc_226 ;
+    seer:seerapiId "3865" .
+
+seer:pet_3881 a seer:Pet ;
+    rdfs:label "蛊"@zh ;
+    seer:baseAtk 132 ;
+    seer:baseDef 105 ;
+    seer:baseHp 155 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 103 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_225 ;
+    seer:seerapiId "3881" .
+
+seer:pet_3886 a seer:Pet ;
+    rdfs:label "冰魄·柯尔德"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 114 ;
+    seer:baseHp 169 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_9 ;
+    seer:seerapiId "3886" .
+
+seer:pet_3890 a seer:Pet ;
+    rdfs:label "未来·小火猴"@zh ;
+    seer:hasTypeCombination seer:tc_3 ;
+    seer:seerapiId "3890" ;
+    rdfs:comment "别名: 未来小火猴"@zh ;
+    skos:altLabel "未来小火猴"@zh .
+
+seer:pet_3903 a seer:Pet ;
+    rdfs:label "喵九儿"@zh ;
+    seer:hasTypeCombination seer:tc_9 ;
+    seer:seerapiId "3903" .
+
+seer:pet_3912 a seer:Pet ;
+    rdfs:label "阿尔法熊"@zh ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "3912" ;
+    rdfs:comment "α熊即阿尔法熊 | 别名: 阿尔法熊/α熊/熊"@zh ;
+    skos:altLabel "α熊"@zh,
+        "熊"@zh .
+
+seer:pet_3916 a seer:Pet ;
+    rdfs:label "喵佐"@zh ;
+    seer:hasTypeCombination seer:tc_36 ;
+    seer:seerapiId "3916" ;
+    rdfs:comment "别名: 喵佐"@zh .
+
+seer:pet_3938 a seer:Pet ;
+    rdfs:label "圣骑·赫里斯"@zh ;
+    seer:hasTypeCombination seer:tc_12 ;
+    seer:seerapiId "3938" ;
+    rdfs:comment "光人马；同已知 3938 | 别名: 圣骑·赫里斯/人马"@zh ;
+    skos:altLabel "人马"@zh,
+        "圣奇·赫里斯"@zh .
+
+seer:pet_3940 a seer:Pet ;
+    rdfs:label "鬼神无双·吕布"@zh ;
+    seer:hasTypeCombination seer:tc_17 ;
+    seer:seerapiId "3940" ;
+    rdfs:comment "鬼神吕布(3031)为其前态 | 别名: 鬼神无双·吕布"@zh .
+
+seer:pet_3941 a seer:Pet ;
+    rdfs:label "混沌暗王霍德尔"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 114 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 138 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_92 ;
+    seer:seerapiId "3941" .
+
+seer:pet_3942 a seer:Pet ;
+    rdfs:label "丽娜菲"@zh ;
+    seer:hasTypeCombination seer:tc_2 ;
+    seer:seerapiId "3942" .
+
+seer:pet_3948 a seer:Pet ;
+    rdfs:label "超维暴龙"@zh ;
+    seer:hasTypeCombination seer:tc_17 ;
+    seer:seerapiId "3948" .
+
+seer:pet_3949 a seer:Pet ;
+    rdfs:label "余罪魔女"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 115 ;
+    seer:baseHp 169 ;
+    seer:baseSpAtk 142 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_93 ;
+    seer:seerapiId "3949" .
+
+seer:pet_3963 a seer:Pet ;
+    rdfs:label "兔兔仙子"@zh ;
+    seer:hasTypeCombination seer:tc_112 ;
+    seer:seerapiId "3963" .
+
+seer:pet_3964 a seer:Pet ;
+    rdfs:label "辛"@zh ;
+    seer:hasTypeCombination seer:tc_222 ;
+    seer:seerapiId "3964" .
+
+seer:pet_3966 a seer:Pet ;
+    rdfs:label "懒惰·斯洛斯"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 114 ;
+    seer:baseHp 176 ;
+    seer:baseSpAtk 135 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_59 ;
+    seer:seerapiId "3966" .
+
+seer:pet_3973 a seer:Pet ;
+    rdfs:label "寒灵·喵九儿"@zh ;
+    seer:baseAtk 138 ;
+    seer:baseDef 109 ;
+    seer:baseHp 169 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_9 ;
+    seer:seerapiId "3973" .
+
+seer:pet_3976 a seer:Pet ;
+    rdfs:label "阿徒"@zh ;
+    seer:hasTypeCombination seer:tc_14 ;
+    seer:seerapiId "3976" ;
+    rdfs:comment "别名: 阿徒"@zh .
+
+seer:pet_3978 a seer:Pet ;
+    rdfs:label "克利奥"@zh ;
+    seer:baseAtk 125 ;
+    seer:baseDef 110 ;
+    seer:baseHp 160 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_225 ;
+    seer:seerapiId "3978" .
+
+seer:pet_3983 a seer:Pet ;
+    rdfs:label "灵·辰坤星魂"@zh ;
+    seer:hasTypeCombination seer:tc_100 ;
+    seer:seerapiId "3983" ;
+    rdfs:comment "别名: 辰坤星魂"@zh ;
+    skos:altLabel "辰坤星魂"@zh .
+
+seer:pet_3986 a seer:Pet ;
+    rdfs:label "启灵元神"@zh ;
+    seer:hasTypeCombination seer:tc_223 ;
+    seer:seerapiId "3986" ;
+    rdfs:comment "别名: 启灵原神"@zh ;
+    skos:altLabel "启灵原神"@zh .
+
+seer:pet_3989 a seer:Pet ;
+    rdfs:label "洛琦"@zh ;
+    seer:hasTypeCombination seer:tc_69 ;
+    seer:seerapiId "3989" .
+
+seer:pet_3994 a seer:Pet ;
+    rdfs:label "暴乱·格劳瑞"@zh ;
+    seer:hasTypeCombination seer:tc_35 ;
+    seer:seerapiId "3994" ;
+    rdfs:comment "别名: 暴乱"@zh ;
+    skos:altLabel "暴乱"@zh .
+
+seer:pet_3999 a seer:Pet ;
+    rdfs:label "飒雷孤影·喵佐"@zh ;
+    seer:baseAtk 144 ;
+    seer:baseDef 112 ;
+    seer:baseHp 174 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 109 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_36 ;
+    seer:seerapiId "3999" .
+
+seer:pet_4000 a seer:Pet ;
+    rdfs:label "薇尔诗"@zh ;
+    seer:baseAtk 80 ;
+    seer:baseDef 125 ;
+    seer:baseHp 180 ;
+    seer:baseSpAtk 150 ;
+    seer:baseSpDef 125 ;
+    seer:baseSpd 140 ;
+    seer:hasTypeCombination seer:tc_223 ;
+    seer:seerapiId "4000" .
+
+seer:pet_4001 a seer:Pet ;
+    rdfs:label "无上·万魔天尊"@zh ;
+    seer:hasTypeCombination seer:tc_113 ;
+    seer:seerapiId "4001" ;
+    rdfs:comment "万魔为其简称 | 别名: 无上·万魔天尊/万魔"@zh ;
+    skos:altLabel "万魔"@zh .
+
+seer:pet_4002 a seer:Pet ;
+    rdfs:label "御象灵尊"@zh ;
+    seer:baseAtk 145 ;
+    seer:baseDef 112 ;
+    seer:baseHp 180 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 109 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_57 ;
+    seer:seerapiId "4002" .
+
+seer:pet_4004 a seer:Pet ;
+    rdfs:label "圣光格劳瑞"@zh ;
+    seer:baseAtk 142 ;
+    seer:baseDef 114 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_80 ;
+    seer:seerapiId "4004" .
+
+seer:pet_4007 a seer:Pet ;
+    rdfs:label "幻尘·蜜雪儿"@zh ;
+    seer:hasTypeCombination seer:tc_109 ;
+    seer:seerapiId "4007" ;
+    rdfs:comment "别名: 幻尘蜜雪儿"@zh ;
+    skos:altLabel "幻尘蜜雪儿"@zh .
+
+seer:pet_4008 a seer:Pet ;
+    rdfs:label "甜蜜宵宵"@zh ;
+    seer:hasTypeCombination seer:tc_8 ;
+    seer:seerapiId "4008" .
+
+seer:pet_4010 a seer:Pet ;
+    rdfs:label "布姆殿下"@zh ;
+    seer:hasTypeCombination seer:tc_7 ;
+    seer:seerapiId "4010" .
+
+seer:pet_4012 a seer:Pet ;
+    rdfs:label "天幕神龙"@zh ;
+    seer:baseAtk 138 ;
+    seer:baseDef 108 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_83 ;
+    seer:seerapiId "4012" .
+
+seer:pet_4020 a seer:Pet ;
+    rdfs:label "哀狂达尔"@zh ;
+    seer:baseAtk 142 ;
+    seer:baseDef 111 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_41 ;
+    seer:seerapiId "4020" .
+
+seer:pet_4023 a seer:Pet ;
+    rdfs:label "哀目黑子"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 138 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_97 ;
+    seer:seerapiId "4023" .
+
+seer:pet_4025 a seer:Pet ;
+    rdfs:label "哀影疾风"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 169 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_53 ;
+    seer:seerapiId "4025" .
+
+seer:pet_4027 a seer:Pet ;
+    rdfs:label "神鹿仙子"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 108 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 134 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_82 ;
+    seer:seerapiId "4027" .
+
+seer:pet_4028 a seer:Pet ;
+    rdfs:label "影蝠"@zh ;
+    seer:hasTypeCombination seer:tc_14 ;
+    seer:seerapiId "4028" .
+
+seer:pet_4032 a seer:Pet ;
+    rdfs:label "六界御神"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 115 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_52 ;
+    seer:seerapiId "4032" .
+
+seer:pet_4034 a seer:Pet ;
+    rdfs:label "森莎"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 110 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 135 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_112 ;
+    seer:seerapiId "4034" .
+
+seer:pet_4037 a seer:Pet ;
+    rdfs:label "天玄界神"@zh ;
+    seer:hasTypeCombination seer:tc_31 ;
+    seer:seerapiId "4037" .
+
+seer:pet_4038 a seer:Pet ;
+    rdfs:label "克里斯托"@zh ;
+    seer:hasTypeCombination seer:tc_63 ;
+    seer:seerapiId "4038" ;
+    rdfs:comment "别名: 克里斯托"@zh .
+
+seer:pet_4043 a seer:Pet ;
+    rdfs:label "环·回响"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 110 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 138 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_72 ;
+    seer:seerapiId "4043" .
+
+seer:pet_4045 a seer:Pet ;
+    rdfs:label "灰栗"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 104 ;
+    seer:baseHp 144 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 102 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_4 ;
+    seer:seerapiId "4045" .
+
+seer:pet_4047 a seer:Pet ;
+    rdfs:label "德拉蒙德"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 108 ;
+    seer:baseHp 162 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 120 ;
+    seer:hasTypeCombination seer:tc_7 ;
+    seer:seerapiId "4047" .
+
+seer:pet_4048 a seer:Pet ;
+    rdfs:label "幻境界神"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 136 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_38 ;
+    seer:seerapiId "4048" .
+
+seer:pet_4050 a seer:Pet ;
+    rdfs:label "时空界神"@zh ;
+    seer:hasTypeCombination seer:tc_64 ;
+    seer:seerapiId "4050" .
+
+seer:pet_4051 a seer:Pet ;
+    rdfs:label "TSP"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 99 ;
+    seer:baseHp 148 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 100 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "4051" .
+
+seer:pet_4068 a seer:Pet ;
+    rdfs:label "苍穹之望·艾希丝"@zh ;
+    seer:hasTypeCombination seer:tc_91 ;
+    seer:seerapiId "4068" ;
+    rdfs:comment "别名: 苍穹之望·艾希丝/艾希丝/艾希斯"@zh ;
+    skos:altLabel "艾希丝"@zh,
+        "艾希斯"@zh .
+
+seer:pet_4069 a seer:Pet ;
+    rdfs:label "缥缈幽芙"@zh ;
+    seer:hasTypeCombination seer:tc_92 ;
+    seer:seerapiId "4069" .
+
+seer:pet_4078 a seer:Pet ;
+    rdfs:label "喋血·哀影疾风"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 143 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 138 ;
+    seer:hasTypeCombination seer:tc_105 ;
+    seer:seerapiId "4078" .
+
+seer:pet_4080 a seer:Pet ;
+    rdfs:label "迦曼吉"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 110 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 137 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_2 ;
+    seer:seerapiId "4080" .
+
+seer:pet_4082 a seer:Pet ;
+    rdfs:label "苏格尔"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 113 ;
+    seer:baseHp 174 ;
+    seer:baseSpAtk 134 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_86 ;
+    seer:seerapiId "4082" .
+
+seer:pet_4092 a seer:Pet ;
+    rdfs:label "诶西欧"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 102 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 138 ;
+    seer:baseSpDef 106 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_51 ;
+    seer:seerapiId "4092" .
+
+seer:pet_4093 a seer:Pet ;
+    rdfs:label "塞娅"@zh ;
+    seer:hasTypeCombination seer:tc_36 ;
+    seer:seerapiId "4093" .
+
+seer:pet_4097 a seer:Pet ;
+    rdfs:label "哀梦幻蝶"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 111 ;
+    seer:baseHp 169 ;
+    seer:baseSpAtk 137 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_30 ;
+    seer:seerapiId "4097" .
+
+seer:pet_4105 a seer:Pet ;
+    rdfs:label "沉睡之眼"@zh ;
+    seer:hasTypeCombination seer:tc_226 ;
+    seer:seerapiId "4105" ;
+    rdfs:comment "别名: 沉睡之眼"@zh .
+
+seer:pet_4109 a seer:Pet ;
+    rdfs:label "魔剪·塞泽丝"@zh ;
+    seer:baseAtk 138 ;
+    seer:baseDef 112 ;
+    seer:baseHp 169 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_48 ;
+    seer:seerapiId "4109" .
+
+seer:pet_4110 a seer:Pet ;
+    rdfs:label "山菊·花信"@zh ;
+    seer:hasTypeCombination seer:tc_64 ;
+    seer:seerapiId "4110" .
+
+seer:pet_4113 a seer:Pet ;
+    rdfs:label "风之子·岚"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 114 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_20 ;
+    seer:seerapiId "4113" .
+
+seer:pet_4114 a seer:Pet ;
+    rdfs:label "科罗丽娜"@zh ;
+    seer:baseAtk 138 ;
+    seer:baseDef 111 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_50 ;
+    seer:seerapiId "4114" .
+
+seer:pet_4116 a seer:Pet ;
+    rdfs:label "核天使"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 110 ;
+    seer:baseHp 175 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_103 ;
+    seer:seerapiId "4116" .
+
+seer:pet_4117 a seer:Pet ;
+    rdfs:label "克莱芬斯"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 106 ;
+    seer:baseHp 164 ;
+    seer:baseSpAtk 134 ;
+    seer:baseSpDef 106 ;
+    seer:baseSpd 120 ;
+    seer:hasTypeCombination seer:tc_3 ;
+    seer:seerapiId "4117" .
+
+seer:pet_4122 a seer:Pet ;
+    rdfs:label "卡勒丽铂"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 111 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_32 ;
+    seer:seerapiId "4122" .
+
+seer:pet_4123 a seer:Pet ;
+    rdfs:label "莫丽"@zh ;
+    seer:baseAtk 138 ;
+    seer:baseDef 108 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_35 ;
+    seer:seerapiId "4123" .
+
+seer:pet_4126 a seer:Pet ;
+    rdfs:label "乌拉诺斯"@zh ;
+    seer:hasTypeCombination seer:tc_5 ;
+    seer:seerapiId "4126" ;
+    rdfs:comment "别名: 乌拉诺斯/乌拉"@zh ;
+    skos:altLabel "乌拉"@zh .
+
+seer:pet_4135 a seer:Pet ;
+    rdfs:label "愈灵·克丽娅"@zh ;
+    seer:hasTypeCombination seer:tc_112 ;
+    seer:seerapiId "4135" ;
+    rdfs:comment "别名: 愈灵"@zh ;
+    skos:altLabel "愈灵"@zh .
+
+seer:pet_4137 a seer:Pet ;
+    rdfs:label "坚盾·瓦尔德"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 120 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 120 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_59 ;
+    seer:seerapiId "4137" .
+
+seer:pet_4138 a seer:Pet ;
+    rdfs:label "南瓜小鬼"@zh ;
+    seer:baseAtk 131 ;
+    seer:baseDef 98 ;
+    seer:baseHp 153 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 98 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_19 ;
+    seer:seerapiId "4138" .
+
+seer:pet_4141 a seer:Pet ;
+    rdfs:label "夜使·库帕帕"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 115 ;
+    seer:baseHp 163 ;
+    seer:baseSpAtk 138 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_97 ;
+    seer:seerapiId "4141" .
+
+seer:pet_4144 a seer:Pet ;
+    rdfs:label "麻普"@zh ;
+    seer:hasTypeCombination seer:tc_18 ;
+    seer:seerapiId "4144" ;
+    rdfs:comment "别名: 麻普"@zh .
+
+seer:pet_4145 a seer:Pet ;
+    rdfs:label "克鲁斯汀"@zh ;
+    seer:baseAtk 136 ;
+    seer:baseDef 100 ;
+    seer:baseHp 159 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 102 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_4 ;
+    seer:seerapiId "4145" .
+
+seer:pet_4146 a seer:Pet ;
+    rdfs:label "潜隐灵蛇"@zh ;
+    seer:hasTypeCombination seer:tc_51 ;
+    seer:seerapiId "4146" ;
+    rdfs:comment "别名: 潜影灵蛇/潜能灵蛇"@zh ;
+    skos:altLabel "潜影灵蛇"@zh,
+        "潜能灵蛇"@zh .
+
+seer:pet_4147 a seer:Pet ;
+    rdfs:label "月冕"@zh ;
+    seer:baseAtk 144 ;
+    seer:baseDef 111 ;
+    seer:baseHp 169 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_44 ;
+    seer:seerapiId "4147" .
+
+seer:pet_4151 a seer:Pet ;
+    rdfs:label "奇莉奈"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 113 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 139 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_45 ;
+    seer:seerapiId "4151" .
+
+seer:pet_4153 a seer:Pet ;
+    rdfs:label "金吉娜"@zh ;
+    seer:hasTypeCombination seer:tc_47 ;
+    seer:seerapiId "4153" ;
+    rdfs:comment "别名: 金吉娜"@zh .
+
+seer:pet_4155 a seer:Pet ;
+    rdfs:label "岩天使"@zh ;
+    seer:baseAtk 132 ;
+    seer:baseDef 118 ;
+    seer:baseHp 175 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 118 ;
+    seer:baseSpd 122 ;
+    seer:hasTypeCombination seer:tc_81 ;
+    seer:seerapiId "4155" .
+
+seer:pet_4156 a seer:Pet ;
+    rdfs:label "灰羽苍兽"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 111 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_27 ;
+    seer:seerapiId "4156" .
+
+seer:pet_4160 a seer:Pet ;
+    rdfs:label "奇米奈"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 167 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_46 ;
+    seer:seerapiId "4160" .
+
+seer:pet_4163 a seer:Pet ;
+    rdfs:label "逆魂·佩特菲德"@zh ;
+    seer:baseAtk 134 ;
+    seer:baseDef 118 ;
+    seer:baseHp 175 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 118 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_96 ;
+    seer:seerapiId "4163" .
+
+seer:pet_4167 a seer:Pet ;
+    rdfs:label "查梅洛尼达"@zh ;
+    seer:baseAtk 135 ;
+    seer:baseDef 110 ;
+    seer:baseHp 175 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_10 ;
+    seer:seerapiId "4167" .
+
+seer:pet_4169 a seer:Pet ;
+    rdfs:label "弑序神罗"@zh ;
+    seer:hasTypeCombination seer:tc_114 ;
+    seer:seerapiId "4169" ;
+    rdfs:comment "别名: 弑序神罗/神罗"@zh ;
+    skos:altLabel "神罗"@zh .
+
+seer:pet_4173 a seer:Pet ;
+    rdfs:label "虹雨·茜尔"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_68 ;
+    seer:seerapiId "4173" .
+
+seer:pet_4175 a seer:Pet ;
+    rdfs:label "希尔克德"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 115 ;
+    seer:baseHp 173 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_43 ;
+    seer:seerapiId "4175" .
+
+seer:pet_4184 a seer:Pet ;
+    rdfs:label "贝狄薇尔"@zh ;
+    seer:baseAtk 144 ;
+    seer:baseDef 115 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_72 ;
+    seer:seerapiId "4184" .
+
+seer:pet_4186 a seer:Pet ;
+    rdfs:label "镇世·乔特鲁德"@zh ;
+    seer:hasTypeCombination seer:tc_15 ;
+    seer:seerapiId "4186" ;
+    rdfs:comment "乔特鲁德的超进化形态 | 别名: 镇世·乔特鲁德/镇世乔特鲁德"@zh ;
+    skos:altLabel "镇世乔特鲁德"@zh .
+
+seer:pet_4187 a seer:Pet ;
+    rdfs:label "迪斯伯德"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 114 ;
+    seer:baseHp 169 ;
+    seer:baseSpAtk 136 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_71 ;
+    seer:seerapiId "4187" .
+
+seer:pet_4189 a seer:Pet ;
+    rdfs:label "凌雪·樱"@zh ;
+    seer:baseAtk 141 ;
+    seer:baseDef 114 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_111 ;
+    seer:seerapiId "4189" .
+
+seer:pet_4194 a seer:Pet ;
+    rdfs:label "露姆莉亚"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 114 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_95 ;
+    seer:seerapiId "4194" .
+
+seer:pet_4198 a seer:Pet ;
+    rdfs:label "魔花仙灵"@zh ;
+    seer:hasTypeCombination seer:tc_1 ;
+    seer:seerapiId "4198" .
+
+seer:pet_4200 a seer:Pet ;
+    rdfs:label "阿莱克托"@zh ;
+    seer:baseAtk 141 ;
+    seer:baseDef 112 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_93 ;
+    seer:seerapiId "4200" .
+
+seer:pet_4202 a seer:Pet ;
+    rdfs:label "纳西斯"@zh ;
+    seer:hasTypeCombination seer:tc_30 ;
+    seer:seerapiId "4202" ;
+    rdfs:comment "别名: 纳西斯"@zh .
+
+seer:pet_4206 a seer:Pet ;
+    rdfs:label "玛格尼亚"@zh ;
+    seer:hasTypeCombination seer:tc_90 ;
+    seer:seerapiId "4206" .
+
+seer:pet_4207 a seer:Pet ;
+    rdfs:label "弗莱特"@zh ;
+    seer:hasTypeCombination seer:tc_4 ;
+    seer:seerapiId "4207" .
+
+seer:pet_4208 a seer:Pet ;
+    rdfs:label "锢灵·舞"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 114 ;
+    seer:baseHp 171 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_94 ;
+    seer:seerapiId "4208" .
+
+seer:pet_4210 a seer:Pet ;
+    rdfs:label "莫伊莱"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 108 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 135 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_224 ;
+    seer:seerapiId "4210" .
+
+seer:pet_4211 a seer:Pet ;
+    rdfs:label "尤斯德"@zh ;
+    seer:baseAtk 132 ;
+    seer:baseDef 105 ;
+    seer:baseHp 162 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 106 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_66 ;
+    seer:seerapiId "4211" .
+
+seer:pet_4213 a seer:Pet ;
+    rdfs:label "拉伯克"@zh ;
+    seer:hasTypeCombination seer:tc_110 ;
+    seer:seerapiId "4213" ;
+    rdfs:comment "别名: 拉伯克"@zh .
+
+seer:pet_4216 a seer:Pet ;
+    rdfs:label "拉克希斯"@zh ;
+    seer:baseAtk 142 ;
+    seer:baseDef 111 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_78 ;
+    seer:seerapiId "4216" .
+
+seer:pet_4218 a seer:Pet ;
+    rdfs:label "沙丘之狭"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 117 ;
+    seer:baseHp 171 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 117 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_42 ;
+    seer:seerapiId "4218" .
+
+seer:pet_4219 a seer:Pet ;
+    rdfs:label "红莲之誓·安卡"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 115 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 144 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_108 ;
+    seer:seerapiId "4219" .
+
+seer:pet_4224 a seer:Pet ;
+    rdfs:label "墨秋"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 115 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 135 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_25 ;
+    seer:seerapiId "4224" .
+
+seer:pet_4225 a seer:Pet ;
+    rdfs:label "霍瑞洛吉"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 167 ;
+    seer:baseSpAtk 139 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_38 ;
+    seer:seerapiId "4225" .
+
+seer:pet_4231 a seer:Pet ;
+    rdfs:label "克洛托"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 110 ;
+    seer:baseHp 171 ;
+    seer:baseSpAtk 142 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 137 ;
+    seer:hasTypeCombination seer:tc_80 ;
+    seer:seerapiId "4231" .
+
+seer:pet_4237 a seer:Pet ;
+    rdfs:label "乾古通兽"@zh ;
+    seer:baseAtk 138 ;
+    seer:baseDef 108 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_101 ;
+    seer:seerapiId "4237" .
+
+seer:pet_4238 a seer:Pet ;
+    rdfs:label "鬼面阎罗"@zh ;
+    seer:baseAtk 145 ;
+    seer:baseDef 115 ;
+    seer:baseHp 169 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_99 ;
+    seer:seerapiId "4238" .
+
+seer:pet_4240 a seer:Pet ;
+    rdfs:label "溯洄·拉伯克"@zh ;
+    seer:hasTypeCombination seer:tc_110 ;
+    seer:seerapiId "4240" ;
+    rdfs:comment "别名: 溯洄·拉伯克/溯洄拉伯克"@zh ;
+    skos:altLabel "溯洄拉伯克"@zh .
+
+seer:pet_4241 a seer:Pet ;
+    rdfs:label "环·零"@zh ;
+    seer:hasTypeCombination seer:tc_103 ;
+    seer:seerapiId "4241" .
+
+seer:pet_4243 a seer:Pet ;
+    rdfs:label "米拉克"@zh ;
+    seer:hasTypeCombination seer:tc_77 ;
+    seer:seerapiId "4243" .
+
+seer:pet_4246 a seer:Pet ;
+    rdfs:label "墨纪拉"@zh ;
+    seer:hasTypeCombination seer:tc_107 ;
+    seer:seerapiId "4246" .
+
+seer:pet_4249 a seer:Pet ;
+    rdfs:label "时钟试炼官·默"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 171 ;
+    seer:baseSpAtk 136 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_13 ;
+    seer:seerapiId "4249" .
+
+seer:pet_4250 a seer:Pet ;
+    rdfs:label "时钟试炼官·耀"@zh ;
+    seer:hasTypeCombination seer:tc_12 ;
+    seer:seerapiId "4250" ;
+    rdfs:comment "别名: 时钟试炼官·耀/时钟试炼关·耀/时空试炼官·耀"@zh ;
+    skos:altLabel "时空试炼官·耀"@zh,
+        "时钟试炼关·耀"@zh .
+
+seer:pet_4251 a seer:Pet ;
+    rdfs:label "时钟试炼官·宙"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 113 ;
+    seer:baseHp 171 ;
+    seer:baseSpAtk 136 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_10 ;
+    seer:seerapiId "4251" .
+
+seer:pet_4252 a seer:Pet ;
+    rdfs:label "塔洛洛"@zh ;
+    seer:baseAtk 137 ;
+    seer:baseDef 103 ;
+    seer:baseHp 162 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 103 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_87 ;
+    seer:seerapiId "4252" .
+
+seer:pet_4253 a seer:Pet ;
+    rdfs:label "帕庀特"@zh ;
+    seer:hasTypeCombination seer:tc_92 ;
+    seer:seerapiId "4253" .
+
+seer:pet_4254 a seer:Pet ;
+    rdfs:label "斯达伏尔"@zh ;
+    seer:hasTypeCombination seer:tc_19 ;
+    seer:seerapiId "4254" ;
+    rdfs:comment "别名: 斯达伐尔"@zh ;
+    skos:altLabel "斯达伐尔"@zh .
+
+seer:pet_4257 a seer:Pet ;
+    rdfs:label "幕"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 108 ;
+    seer:baseHp 174 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_49 ;
+    seer:seerapiId "4257" .
+
+seer:pet_4258 a seer:Pet ;
+    rdfs:label "环·源"@zh ;
+    seer:hasTypeCombination seer:tc_103 ;
+    seer:seerapiId "4258" ;
+    rdfs:comment "别名: 环源"@zh ;
+    skos:altLabel "环源"@zh .
+
+seer:pet_4261 a seer:Pet ;
+    rdfs:label "泠月"@zh ;
+    seer:hasTypeCombination seer:tc_86 ;
+    seer:seerapiId "4261" .
+
+seer:pet_4262 a seer:Pet ;
+    rdfs:label "龙伽"@zh ;
+    seer:hasTypeCombination seer:tc_63 ;
+    seer:seerapiId "4262" .
+
+seer:pet_4264 a seer:Pet ;
+    rdfs:label "库莱姆斯"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 114 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 146 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_70 ;
+    seer:seerapiId "4264" .
+
+seer:pet_4267 a seer:Pet ;
+    rdfs:label "古索"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 101 ;
+    seer:baseHp 150 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 101 ;
+    seer:baseSpd 128 ;
+    seer:hasTypeCombination seer:tc_10 ;
+    seer:seerapiId "4267" .
+
+seer:pet_4268 a seer:Pet ;
+    rdfs:label "古索迪尔"@zh ;
+    seer:baseAtk 138 ;
+    seer:baseDef 114 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_54 ;
+    seer:seerapiId "4268" .
+
+seer:pet_4270 a seer:Pet ;
+    rdfs:label "提西弗涅"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 115 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 135 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_98 ;
+    seer:seerapiId "4270" .
+
+seer:pet_4271 a seer:Pet ;
+    rdfs:label "皮特尔"@zh ;
+    seer:hasTypeCombination seer:tc_69 ;
+    seer:seerapiId "4271" .
+
+seer:pet_4275 a seer:Pet ;
+    rdfs:label "命运之轮·莫伊莱"@zh ;
+    seer:hasTypeCombination seer:tc_224 ;
+    seer:seerapiId "4275" ;
+    rdfs:comment "别名: 命运之轮·莫伊莱/命运莫"@zh ;
+    skos:altLabel "命运莫"@zh .
+
+seer:pet_4276 a seer:Pet ;
+    rdfs:label "泰普斯"@zh ;
+    seer:baseAtk 137 ;
+    seer:baseDef 112 ;
+    seer:baseHp 169 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_67 ;
+    seer:seerapiId "4276" .
+
+seer:pet_4278 a seer:Pet ;
+    rdfs:label "阿特洛波斯"@zh ;
+    seer:baseAtk 137 ;
+    seer:baseDef 113 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_52 ;
+    seer:seerapiId "4278" .
+
+seer:pet_4279 a seer:Pet ;
+    rdfs:label "塞勒涅"@zh ;
+    seer:hasTypeCombination seer:tc_16 ;
+    seer:seerapiId "4279" ;
+    rdfs:comment "别名: 塞勒涅"@zh .
+
+seer:pet_4282 a seer:Pet ;
+    rdfs:label "鲁塔"@zh ;
+    seer:baseAtk 129 ;
+    seer:baseDef 107 ;
+    seer:baseHp 147 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 107 ;
+    seer:baseSpd 120 ;
+    seer:hasTypeCombination seer:tc_72 ;
+    seer:seerapiId "4282" .
+
+seer:pet_4285 a seer:Pet ;
+    rdfs:label "未明"@zh ;
+    seer:baseAtk 138 ;
+    seer:baseDef 111 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_84 ;
+    seer:seerapiId "4285" .
+
+seer:pet_4286 a seer:Pet ;
+    rdfs:label "古渊灵鱼"@zh ;
+    seer:baseAtk 138 ;
+    seer:baseDef 108 ;
+    seer:baseHp 164 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_86 ;
+    seer:seerapiId "4286" .
+
+seer:pet_4287 a seer:Pet ;
+    rdfs:label "混灵·莱茵哈特"@zh ;
+    seer:baseAtk 145 ;
+    seer:baseDef 115 ;
+    seer:baseHp 175 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_96 ;
+    seer:seerapiId "4287" .
+
+seer:pet_4289 a seer:Pet ;
+    rdfs:label "异维·拉伯克"@zh ;
+    seer:hasTypeCombination seer:tc_110 ;
+    seer:seerapiId "4289" ;
+    rdfs:comment "别名: 异维·拉伯克/异维拉伯克"@zh ;
+    skos:altLabel "异维拉伯克"@zh .
+
+seer:pet_4290 a seer:Pet ;
+    rdfs:label "灵魂收割者·黛"@zh ;
+    seer:hasTypeCombination seer:tc_60 ;
+    seer:seerapiId "4290" ;
+    rdfs:comment "别名: 灵魂收割者·黛/灵魂黛"@zh ;
+    skos:altLabel "灵魂黛"@zh .
+
+seer:pet_4291 a seer:Pet ;
+    rdfs:label "琉彩"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 109 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 136 ;
+    seer:baseSpDef 109 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_17 ;
+    seer:seerapiId "4291" .
+
+seer:pet_4294 a seer:Pet ;
+    rdfs:label "霍莱"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 115 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 135 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_8 ;
+    seer:seerapiId "4294" .
+
+seer:pet_4296 a seer:Pet ;
+    rdfs:label "沃卡奥拉"@zh ;
+    seer:baseAtk 139 ;
+    seer:baseDef 111 ;
+    seer:baseHp 169 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_68 ;
+    seer:seerapiId "4296" .
+
+seer:pet_4297 a seer:Pet ;
+    rdfs:label "雅库布雷"@zh ;
+    seer:baseAtk 138 ;
+    seer:baseDef 106 ;
+    seer:baseHp 169 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 106 ;
+    seer:baseSpd 121 ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "4297" .
+
+seer:pet_4299 a seer:Pet ;
+    rdfs:label "塔威尔"@zh ;
+    seer:baseAtk 135 ;
+    seer:baseDef 115 ;
+    seer:baseHp 175 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_37 ;
+    seer:seerapiId "4299" .
+
+seer:pet_4300 a seer:Pet ;
+    rdfs:label "宛白"@zh ;
+    seer:hasTypeCombination seer:tc_76 ;
+    seer:seerapiId "4300" .
+
+seer:pet_4301 a seer:Pet ;
+    rdfs:label "风魔之骸"@zh ;
+    seer:baseAtk 135 ;
+    seer:baseDef 112 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_83 ;
+    seer:seerapiId "4301" .
+
+seer:pet_4302 a seer:Pet ;
+    rdfs:label "艾斯普鲁"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 109 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 109 ;
+    seer:baseSpd 137 ;
+    seer:hasTypeCombination seer:tc_104 ;
+    seer:seerapiId "4302" .
+
+seer:pet_4305 a seer:Pet ;
+    rdfs:label "时钟诛机"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 110 ;
+    seer:baseHp 182 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 137 ;
+    seer:hasTypeCombination seer:tc_56 ;
+    seer:seerapiId "4305" .
+
+seer:pet_4306 a seer:Pet ;
+    rdfs:label "异空战骑"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 106 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 106 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_61 ;
+    seer:seerapiId "4306" .
+
+seer:pet_4310 a seer:Pet ;
+    rdfs:label "特罗斯"@zh ;
+    seer:hasTypeCombination seer:tc_73 ;
+    seer:seerapiId "4310" ;
+    rdfs:comment "别名: 特罗斯（强攻主C）"@zh .
+
+seer:pet_4311 a seer:Pet ;
+    rdfs:label "图托尔斯"@zh ;
+    seer:baseAtk 133 ;
+    seer:baseDef 115 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_45 ;
+    seer:seerapiId "4311" .
+
+seer:pet_4312 a seer:Pet ;
+    rdfs:label "玛提斯特"@zh ;
+    seer:hasTypeCombination seer:tc_97 ;
+    seer:seerapiId "4312" .
+
+seer:pet_4314 a seer:Pet ;
+    rdfs:label "绿棘球"@zh ;
+    seer:baseAtk 120 ;
+    seer:baseDef 110 ;
+    seer:baseHp 162 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 110 ;
+    seer:hasTypeCombination seer:tc_1 ;
+    seer:seerapiId "4314" .
+
+seer:pet_4315 a seer:Pet ;
+    rdfs:label "翡翠棘球"@zh ;
+    seer:baseAtk 120 ;
+    seer:baseDef 110 ;
+    seer:baseHp 162 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 110 ;
+    seer:hasTypeCombination seer:tc_23 ;
+    seer:seerapiId "4315" .
+
+seer:pet_4316 a seer:Pet ;
+    rdfs:label "沙狱使者"@zh ;
+    seer:baseAtk 135 ;
+    seer:baseDef 112 ;
+    seer:baseHp 174 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_41 ;
+    seer:seerapiId "4316" .
+
+seer:pet_4317 a seer:Pet ;
+    rdfs:label "凯弗"@zh ;
+    seer:baseAtk 132 ;
+    seer:baseDef 115 ;
+    seer:baseHp 180 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 123 ;
+    seer:hasTypeCombination seer:tc_71 ;
+    seer:seerapiId "4317" .
+
+seer:pet_4318 a seer:Pet ;
+    rdfs:label "布蕾里克"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 113 ;
+    seer:baseHp 171 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_46 ;
+    seer:seerapiId "4318" .
+
+seer:pet_4321 a seer:Pet ;
+    rdfs:label "至序圣华"@zh ;
+    seer:hasTypeCombination seer:tc_115 ;
+    seer:seerapiId "4321" ;
+    rdfs:comment "华子为其昵称；同已知 4321 | 别名: 至序圣华/华子"@zh ;
+    skos:altLabel "华子"@zh .
+
+seer:pet_4323 a seer:Pet ;
+    rdfs:label "绿棘巨魔"@zh ;
+    seer:baseAtk 132 ;
+    seer:baseDef 115 ;
+    seer:baseHp 173 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_23 ;
+    seer:seerapiId "4323" .
+
+seer:pet_4324 a seer:Pet ;
+    rdfs:label "卡托娜"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 114 ;
+    seer:baseHp 167 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_100 ;
+    seer:seerapiId "4324" .
+
+seer:pet_4325 a seer:Pet ;
+    rdfs:label "坎普瑞亚"@zh ;
+    seer:baseAtk 132 ;
+    seer:baseDef 116 ;
+    seer:baseHp 176 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 116 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_40 ;
+    seer:seerapiId "4325" .
+
+seer:pet_4326 a seer:Pet ;
+    rdfs:label "辛辛子"@zh ;
+    seer:hasTypeCombination seer:tc_225 ;
+    seer:seerapiId "4326" .
+
+seer:pet_4327 a seer:Pet ;
+    rdfs:label "极战·阿尔斯兰"@zh ;
+    seer:hasTypeCombination seer:tc_11 ;
+    seer:seerapiId "4327" .
+
+seer:pet_4330 a seer:Pet ;
+    rdfs:label "审判之魂"@zh ;
+    seer:hasTypeCombination seer:tc_64 ;
+    seer:seerapiId "4330" ;
+    rdfs:comment "别名: 审判之魂"@zh .
+
+seer:pet_4332 a seer:Pet ;
+    rdfs:label "鲍尔斯"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 111 ;
+    seer:baseHp 174 ;
+    seer:baseSpAtk 138 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_33 ;
+    seer:seerapiId "4332" .
+
+seer:pet_4333 a seer:Pet ;
+    rdfs:label "哀·拉伯克"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 111 ;
+    seer:baseHp 178 ;
+    seer:baseSpAtk 141 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 137 ;
+    seer:hasTypeCombination seer:tc_110 ;
+    seer:seerapiId "4333" .
+
+seer:pet_4337 a seer:Pet ;
+    rdfs:label "卡斯珀"@zh ;
+    seer:hasTypeCombination seer:tc_102 ;
+    seer:seerapiId "4337" ;
+    rdfs:comment "别名: 卡斯珀"@zh .
+
+seer:pet_4338 a seer:Pet ;
+    rdfs:label "星礼"@zh ;
+    seer:hasTypeCombination seer:tc_74 ;
+    seer:seerapiId "4338" ;
+    rdfs:comment "别名: 星礼"@zh .
+
+seer:pet_4339 a seer:Pet ;
+    rdfs:label "麦格姆"@zh ;
+    seer:baseAtk 134 ;
+    seer:baseDef 112 ;
+    seer:baseHp 175 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_77 ;
+    seer:seerapiId "4339" .
+
+seer:pet_4340 a seer:Pet ;
+    rdfs:label "凝绝"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 109 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 133 ;
+    seer:baseSpDef 109 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_44 ;
+    seer:seerapiId "4340" .
+
+seer:pet_4341 a seer:Pet ;
+    rdfs:label "熔钳蟹"@zh ;
+    seer:baseAtk 122 ;
+    seer:baseDef 102 ;
+    seer:baseHp 155 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 102 ;
+    seer:baseSpd 129 ;
+    seer:hasTypeCombination seer:tc_3 ;
+    seer:seerapiId "4341" .
+
+seer:pet_4342 a seer:Pet ;
+    rdfs:label "伊塔吉雅"@zh ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "4342" .
+
+seer:pet_4343 a seer:Pet ;
+    rdfs:label "凛锋剑心"@zh ;
+    seer:baseAtk 142 ;
+    seer:baseDef 112 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_84 ;
+    seer:seerapiId "4343" .
+
+seer:pet_4345 a seer:Pet ;
+    rdfs:label "圣心女皇·卡托娜"@zh ;
+    seer:baseAtk 138 ;
+    seer:baseDef 116 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 116 ;
+    seer:baseSpd 128 ;
+    seer:hasTypeCombination seer:tc_100 ;
+    seer:seerapiId "4345" .
+
+seer:pet_4346 a seer:Pet ;
+    rdfs:label "芽史莱姆"@zh ;
+    seer:hasTypeCombination seer:tc_1 ;
+    seer:seerapiId "4346" ;
+    rdfs:comment "别名: 芽史莱姆"@zh .
+
+seer:pet_4347 a seer:Pet ;
+    rdfs:label "裁罪魔剪·塞泽丝"@zh ;
+    seer:baseAtk 141 ;
+    seer:baseDef 113 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_48 ;
+    seer:seerapiId "4347" .
+
+seer:pet_4348 a seer:Pet ;
+    rdfs:label "帕图"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 109 ;
+    seer:baseHp 161 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 109 ;
+    seer:baseSpd 121 ;
+    seer:hasTypeCombination seer:tc_13 ;
+    seer:seerapiId "4348" .
+
+seer:pet_4349 a seer:Pet ;
+    rdfs:label "沃罗科"@zh ;
+    seer:hasTypeCombination seer:tc_36 ;
+    seer:seerapiId "4349" ;
+    rdfs:comment "别名: 沃罗科"@zh .
+
+seer:pet_4350 a seer:Pet ;
+    rdfs:label "哈洛兰特"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 110 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_12 ;
+    seer:seerapiId "4350" .
+
+seer:pet_4352 a seer:Pet ;
+    rdfs:label "艾瑞丽尔"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 104 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 136 ;
+    seer:baseSpDef 104 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_2 ;
+    seer:seerapiId "4352" .
+
+seer:pet_4354 a seer:Pet ;
+    rdfs:label "狂沙之主·萨特"@zh ;
+    seer:hasTypeCombination seer:tc_109 ;
+    seer:seerapiId "4354" ;
+    rdfs:comment "别名: 狂沙之主·萨特/萨特"@zh ;
+    skos:altLabel "萨特"@zh .
+
+seer:pet_4356 a seer:Pet ;
+    rdfs:label "斯科尔"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 112 ;
+    seer:baseHp 167 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_22 ;
+    seer:seerapiId "4356" .
+
+seer:pet_4357 a seer:Pet ;
+    rdfs:label "呼叶叶"@zh ;
+    seer:hasTypeCombination seer:tc_38 ;
+    seer:seerapiId "4357" ;
+    rdfs:comment "别名: 呼叶叶"@zh .
+
+seer:pet_4358 a seer:Pet ;
+    rdfs:label "杰特洛"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 113 ;
+    seer:baseHp 171 ;
+    seer:baseSpAtk 137 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_30 ;
+    seer:seerapiId "4358" .
+
+seer:pet_4359 a seer:Pet ;
+    rdfs:label "隙之门·基卢"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 109 ;
+    seer:baseHp 173 ;
+    seer:baseSpAtk 138 ;
+    seer:baseSpDef 109 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_17 ;
+    seer:seerapiId "4359" .
+
+seer:pet_4361 a seer:Pet ;
+    rdfs:label "洛基"@zh ;
+    seer:hasTypeCombination seer:tc_226 ;
+    seer:seerapiId "4361" ;
+    rdfs:comment "别名: 洛基"@zh .
+
+seer:pet_4364 a seer:Pet ;
+    rdfs:label "尤莉米特"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 147 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 137 ;
+    seer:hasTypeCombination seer:tc_49 ;
+    seer:seerapiId "4364" .
+
+seer:pet_4365 a seer:Pet ;
+    rdfs:label "环·格"@zh ;
+    seer:baseAtk 136 ;
+    seer:baseDef 112 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_75 ;
+    seer:seerapiId "4365" .
+
+seer:pet_4366 a seer:Pet ;
+    rdfs:label "库乐芭"@zh ;
+    seer:hasTypeCombination seer:tc_57 ;
+    seer:seerapiId "4366" .
+
+seer:pet_4368 a seer:Pet ;
+    rdfs:label "玛斯克"@zh ;
+    seer:baseAtk 138 ;
+    seer:baseDef 112 ;
+    seer:baseHp 169 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_99 ;
+    seer:seerapiId "4368" .
+
+seer:pet_4370 a seer:Pet ;
+    rdfs:label "僧行"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 125 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 135 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_42 ;
+    seer:seerapiId "4370" .
+
+seer:pet_4371 a seer:Pet ;
+    rdfs:label "德拉莫斯"@zh ;
+    seer:hasTypeCombination seer:tc_106 ;
+    seer:seerapiId "4371" ;
+    rdfs:comment "别名: 德拉莫斯"@zh .
+
+seer:pet_4373 a seer:Pet ;
+    rdfs:label "龙焉"@zh ;
+    seer:hasTypeCombination seer:tc_73 ;
+    seer:seerapiId "4373" ;
+    rdfs:comment "别名: 龙焉/龙嫣"@zh ;
+    skos:altLabel "龙嫣"@zh .
+
+seer:pet_4374 a seer:Pet ;
+    rdfs:label "普拉薇安"@zh ;
+    seer:hasTypeCombination seer:tc_1 ;
+    seer:seerapiId "4374" .
+
+seer:pet_4376 a seer:Pet ;
+    rdfs:label "圣谕之风·岚"@zh ;
+    seer:hasTypeCombination seer:tc_88 ;
+    seer:seerapiId "4376" ;
+    rdfs:comment "别名: 圣谕之风·岚/圣岚"@zh ;
+    skos:altLabel "圣岚"@zh .
+
+seer:pet_4378 a seer:Pet ;
+    rdfs:label "青啼"@zh ;
+    seer:baseAtk 135 ;
+    seer:baseDef 112 ;
+    seer:baseHp 175 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_116 ;
+    seer:seerapiId "4378" .
+
+seer:pet_4387 a seer:Pet ;
+    rdfs:label "坦普瑞"@zh ;
+    seer:hasTypeCombination seer:tc_225 ;
+    seer:seerapiId "4387" .
+
+seer:pet_4390 a seer:Pet ;
+    rdfs:label "玖莉娜"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 106 ;
+    seer:baseHp 177 ;
+    seer:baseSpAtk 141 ;
+    seer:baseSpDef 106 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_24 ;
+    seer:seerapiId "4390" .
+
+seer:pet_4391 a seer:Pet ;
+    rdfs:label "西斯里"@zh ;
+    seer:hasTypeCombination seer:tc_41 ;
+    seer:seerapiId "4391" ;
+    rdfs:comment "别名: 西斯里"@zh .
+
+seer:pet_4392 a seer:Pet ;
+    rdfs:label "斯凯普"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 173 ;
+    seer:baseSpAtk 137 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_94 ;
+    seer:seerapiId "4392" .
+
+seer:pet_4394 a seer:Pet ;
+    rdfs:label "祭空墟祖"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 108 ;
+    seer:baseHp 175 ;
+    seer:baseSpAtk 138 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_18 ;
+    seer:seerapiId "4394" .
+
+seer:pet_4395 a seer:Pet ;
+    rdfs:label "海棠教皇·未明"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 112 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_84 ;
+    seer:seerapiId "4395" .
+
+seer:pet_4396 a seer:Pet ;
+    rdfs:label "苦痛龙魇"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 110 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 145 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_55 ;
+    seer:seerapiId "4396" .
+
+seer:pet_4397 a seer:Pet ;
+    rdfs:label "沐怜"@zh ;
+    seer:hasTypeCombination seer:tc_45 ;
+    seer:seerapiId "4397" .
+
+seer:pet_4398 a seer:Pet ;
+    rdfs:label "帕尔妮兹"@zh ;
+    seer:hasTypeCombination seer:tc_5 ;
+    seer:seerapiId "4398" ;
+    rdfs:comment "别名: 帕尔妮兹/帕尔尼兹"@zh ;
+    skos:altLabel "帕尔尼兹"@zh .
+
+seer:pet_4401 a seer:Pet ;
+    rdfs:label "破世之拳·特罗斯"@zh ;
+    seer:baseAtk 146 ;
+    seer:baseDef 111 ;
+    seer:baseHp 174 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 138 ;
+    seer:hasTypeCombination seer:tc_73 ;
+    seer:seerapiId "4401" .
+
+seer:pet_4404 a seer:Pet ;
+    rdfs:label "马里诺"@zh ;
+    seer:baseAtk 125 ;
+    seer:baseDef 105 ;
+    seer:baseHp 155 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 120 ;
+    seer:hasTypeCombination seer:tc_11 ;
+    seer:seerapiId "4404" .
+
+seer:pet_4405 a seer:Pet ;
+    rdfs:label "萨洛科"@zh ;
+    seer:baseAtk 143 ;
+    seer:baseDef 111 ;
+    seer:baseHp 164 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_66 ;
+    seer:seerapiId "4405" .
+
+seer:pet_4407 a seer:Pet ;
+    rdfs:label "赤虹仙凤"@zh ;
+    seer:hasTypeCombination seer:tc_27 ;
+    seer:seerapiId "4407" ;
+    rdfs:comment "别名: 赤虹仙凤"@zh .
+
+seer:pet_4408 a seer:Pet ;
+    rdfs:label "派利尔"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 116 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 116 ;
+    seer:baseSpd 128 ;
+    seer:hasTypeCombination seer:tc_102 ;
+    seer:seerapiId "4408" .
+
+seer:pet_4411 a seer:Pet ;
+    rdfs:label "巴尔奇"@zh ;
+    seer:baseAtk 141 ;
+    seer:baseDef 117 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 117 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_103 ;
+    seer:seerapiId "4411" .
+
+seer:pet_4414 a seer:Pet ;
+    rdfs:label "瓦普特"@zh ;
+    seer:hasTypeCombination seer:tc_79 ;
+    seer:seerapiId "4414" .
+
+seer:pet_4417 a seer:Pet ;
+    rdfs:label "疾翼先锋"@zh ;
+    seer:baseAtk 146 ;
+    seer:baseDef 110 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_53 ;
+    seer:seerapiId "4417" .
+
+seer:pet_4420 a seer:Pet ;
+    rdfs:label "幽冥狼魂"@zh ;
+    seer:hasTypeCombination seer:tc_97 ;
+    seer:seerapiId "4420" .
+
+seer:pet_4422 a seer:Pet ;
+    rdfs:label "天奔流·东辉"@zh ;
+    seer:hasTypeCombination seer:tc_116 ;
+    seer:seerapiId "4422" .
+
+seer:pet_4426 a seer:Pet ;
+    rdfs:label "异能元素·奥薇纳"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 110 ;
+    seer:baseHp 164 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 116 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_86 ;
+    seer:seerapiId "4426" .
+
+seer:pet_4427 a seer:Pet ;
+    rdfs:label "金古德"@zh ;
+    seer:baseAtk 144 ;
+    seer:baseDef 111 ;
+    seer:baseHp 164 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_59 ;
+    seer:seerapiId "4427" .
+
+seer:pet_4430 a seer:Pet ;
+    rdfs:label "极光仙子"@zh ;
+    seer:hasTypeCombination seer:tc_16 ;
+    seer:seerapiId "4430" ;
+    rdfs:comment "别名: 极光仙子"@zh .
+
+seer:pet_4432 a seer:Pet ;
+    rdfs:label "恶咒巫师·科萨斯"@zh ;
+    seer:hasTypeCombination seer:tc_92 ;
+    seer:seerapiId "4432" ;
+    rdfs:comment "别名: 恶咒巫师·科萨斯/恶咒巫师"@zh ;
+    skos:altLabel "恶咒巫师"@zh .
+
+seer:pet_4436 a seer:Pet ;
+    rdfs:label "幽火·海登"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 110 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 70 ;
+    seer:hasTypeCombination seer:tc_58 ;
+    seer:seerapiId "4436" .
+
+seer:pet_4437 a seer:Pet ;
+    rdfs:label "查理斯"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 100 ;
+    seer:baseHp 140 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 100 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_37 ;
+    seer:seerapiId "4437" .
+
+seer:pet_4438 a seer:Pet ;
+    rdfs:label "银椋·奥雷莫德"@zh ;
+    seer:baseAtk 141 ;
+    seer:baseDef 112 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 137 ;
+    seer:hasTypeCombination seer:tc_104 ;
+    seer:seerapiId "4438" .
+
+seer:pet_4440 a seer:Pet ;
+    rdfs:label "闪光猛虎王"@zh ;
+    seer:hasTypeCombination seer:tc_7 ;
+    seer:seerapiId "4440" .
+
+seer:pet_4445 a seer:Pet ;
+    rdfs:label "古温婆婆"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 120 ;
+    seer:baseHp 160 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 120 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_82 ;
+    seer:seerapiId "4445" .
+
+seer:pet_4446 a seer:Pet ;
+    rdfs:label "露泽莫尔"@zh ;
+    seer:hasTypeCombination seer:tc_225 ;
+    seer:seerapiId "4446" ;
+    rdfs:comment "别名: 露泽莫尔"@zh .
+
+seer:pet_4448 a seer:Pet ;
+    rdfs:label "流荧·雪"@zh ;
+    seer:hasTypeCombination seer:tc_91 ;
+    seer:seerapiId "4448" ;
+    rdfs:comment "别名: 流荧·雪/流萤·雪/流萤雪"@zh ;
+    skos:altLabel "流萤·雪"@zh,
+        "流萤雪"@zh .
+
+seer:pet_4449 a seer:Pet ;
+    rdfs:label "禅老"@zh ;
+    seer:hasTypeCombination seer:tc_60 ;
+    seer:seerapiId "4449" .
+
+seer:pet_4450 a seer:Pet ;
+    rdfs:label "逐界苍星"@zh ;
+    seer:hasTypeCombination seer:tc_118 ;
+    seer:seerapiId "4450" ;
+    rdfs:comment "别名: 苍星"@zh ;
+    skos:altLabel "苍星"@zh .
+
+seer:pet_4454 a seer:Pet ;
+    rdfs:label "爵刻·黑沃德"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 164 ;
+    seer:baseSpAtk 147 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_113 ;
+    seer:seerapiId "4454" .
+
+seer:pet_4455 a seer:Pet ;
+    rdfs:label "灼渊煌龙"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 115 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 130 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_28 ;
+    seer:seerapiId "4455" .
+
+seer:pet_4456 a seer:Pet ;
+    rdfs:label "天兔·乐普斯"@zh ;
+    seer:hasTypeCombination seer:tc_54 ;
+    seer:seerapiId "4456" ;
+    rdfs:comment "别名: 乐普斯"@zh ;
+    skos:altLabel "乐普斯"@zh .
+
+seer:pet_4459 a seer:Pet ;
+    rdfs:label "恶鬼·图伽"@zh ;
+    seer:hasTypeCombination seer:tc_93 ;
+    seer:seerapiId "4459" ;
+    rdfs:comment "别名: 恶鬼图伽"@zh ;
+    skos:altLabel "恶鬼图伽"@zh .
+
+seer:pet_4460 a seer:Pet ;
+    rdfs:label "兹拉特"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 100 ;
+    seer:baseHp 135 ;
+    seer:baseSpAtk 80 ;
+    seer:baseSpDef 100 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_35 ;
+    seer:seerapiId "4460" .
+
+seer:pet_4461 a seer:Pet ;
+    rdfs:label "追光·兰可"@zh ;
+    seer:baseAtk 144 ;
+    seer:baseDef 114 ;
+    seer:baseHp 156 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 137 ;
+    seer:hasTypeCombination seer:tc_39 ;
+    seer:seerapiId "4461" .
+
+seer:pet_4466 a seer:Pet ;
+    rdfs:label "格斯塔丝"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 105 ;
+    seer:baseHp 146 ;
+    seer:baseSpAtk 139 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_19 ;
+    seer:seerapiId "4466" .
+
+seer:pet_4467 a seer:Pet ;
+    rdfs:label "冥契·格斯塔丝"@zh ;
+    seer:hasTypeCombination seer:tc_99 ;
+    seer:seerapiId "4467" ;
+    rdfs:comment "进化链末端 | 别名: 冥契·格斯塔丝/冥契格斯塔丝/冥契格斯塔斯/格斯塔丝/格斯塔斯/格塔丝/格拉"@zh ;
+    skos:altLabel "冥契格斯塔丝"@zh,
+        "冥契格斯塔斯"@zh,
+        "格塔丝"@zh,
+        "格拉"@zh,
+        "格斯塔丝"@zh,
+        "格斯塔斯"@zh .
+
+seer:pet_4468 a seer:Pet ;
+    rdfs:label "始皇帝·嬴政"@zh ;
+    seer:hasTypeCombination seer:tc_221 ;
+    seer:seerapiId "4468" ;
+    rdfs:comment "别名: 嬴政"@zh ;
+    skos:altLabel "嬴政"@zh .
+
+seer:pet_4472 a seer:Pet ;
+    rdfs:label "夜罗·琉彩"@zh ;
+    seer:hasTypeCombination seer:tc_110 ;
+    seer:seerapiId "4472" ;
+    rdfs:comment "别名: 夜罗琉彩"@zh ;
+    skos:altLabel "夜罗琉彩"@zh .
+
+seer:pet_4475 a seer:Pet ;
+    rdfs:label "阿谜"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 105 ;
+    seer:baseHp 160 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_68 ;
+    seer:seerapiId "4475" .
+
+seer:pet_4477 a seer:Pet ;
+    rdfs:label "启源·伊洛特斯"@zh ;
+    seer:baseAtk 142 ;
+    seer:baseDef 111 ;
+    seer:baseHp 169 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_76 ;
+    seer:seerapiId "4477" .
+
+seer:pet_4479 a seer:Pet ;
+    rdfs:label "吉拉提斯"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 114 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 135 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_87 ;
+    seer:seerapiId "4479" .
+
+seer:pet_4482 a seer:Pet ;
+    rdfs:label "冥霞"@zh ;
+    seer:hasTypeCombination seer:tc_62 ;
+    seer:seerapiId "4482" ;
+    rdfs:comment "别名: 冥霞"@zh .
+
+seer:pet_4483 a seer:Pet ;
+    rdfs:label "艾隆德"@zh ;
+    seer:hasTypeCombination seer:tc_43 ;
+    seer:seerapiId "4483" .
+
+seer:pet_4485 a seer:Pet ;
+    rdfs:label "烛鬼"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 108 ;
+    seer:baseHp 145 ;
+    seer:baseSpAtk 129 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 120 ;
+    seer:hasTypeCombination seer:tc_101 ;
+    seer:seerapiId "4485" .
+
+seer:pet_4488 a seer:Pet ;
+    rdfs:label "小镰"@zh ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "4488" .
+
+seer:pet_4489 a seer:Pet ;
+    rdfs:label "普鲁修托"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 188 ;
+    seer:baseSpAtk 138 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_69 ;
+    seer:seerapiId "4489" .
+
+seer:pet_4491 a seer:Pet ;
+    rdfs:label "仙后·卡筱佩娅"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 108 ;
+    seer:baseHp 163 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_117 ;
+    seer:seerapiId "4491" .
+
+seer:pet_4492 a seer:Pet ;
+    rdfs:label "斯达莱斯"@zh ;
+    seer:baseAtk 143 ;
+    seer:baseDef 111 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_19 ;
+    seer:seerapiId "4492" .
+
+seer:pet_4493 a seer:Pet ;
+    rdfs:label "冰骷使者"@zh ;
+    seer:baseAtk 148 ;
+    seer:baseDef 105 ;
+    seer:baseHp 175 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_84 ;
+    seer:seerapiId "4493" .
+
+seer:pet_4494 a seer:Pet ;
+    rdfs:label "嫉妒·哲利斯"@zh ;
+    seer:baseAtk 146 ;
+    seer:baseDef 113 ;
+    seer:baseHp 162 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_50 ;
+    seer:seerapiId "4494" .
+
+seer:pet_4495 a seer:Pet ;
+    rdfs:label "彼尔德"@zh ;
+    seer:hasTypeCombination seer:tc_34 ;
+    seer:seerapiId "4495" .
+
+seer:pet_4496 a seer:Pet ;
+    rdfs:label "箫澈"@zh ;
+    seer:hasTypeCombination seer:tc_67 ;
+    seer:seerapiId "4496" ;
+    rdfs:comment "别名: 箫澈"@zh .
+
+seer:pet_4499 a seer:Pet ;
+    rdfs:label "德布比特"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 148 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 138 ;
+    seer:hasTypeCombination seer:tc_115 ;
+    seer:seerapiId "4499" .
+
+seer:pet_4500 a seer:Pet ;
+    rdfs:label "武心婵"@zh ;
+    seer:hasTypeCombination seer:tc_88 ;
+    seer:seerapiId "4500" .
+
+seer:pet_4502 a seer:Pet ;
+    rdfs:label "迹"@zh ;
+    seer:hasTypeCombination seer:tc_18 ;
+    seer:seerapiId "4502" ;
+    rdfs:comment "别名: 迹"@zh .
+
+seer:pet_4503 a seer:Pet ;
+    rdfs:label "库坦"@zh ;
+    seer:hasTypeCombination seer:tc_48 ;
+    seer:seerapiId "4503" .
+
+seer:pet_4505 a seer:Pet ;
+    rdfs:label "婕克拉德"@zh ;
+    seer:hasTypeCombination seer:tc_105 ;
+    seer:seerapiId "4505" ;
+    rdfs:comment "别名: 婕克拉德/捷克拉德"@zh ;
+    skos:altLabel "捷克拉德"@zh .
+
+seer:pet_4507 a seer:Pet ;
+    rdfs:label "拉托奥"@zh ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "4507" ;
+    rdfs:comment "别名: 拉托奥"@zh .
+
+seer:pet_4508 a seer:Pet ;
+    rdfs:label "巨爵·克雷特"@zh ;
+    seer:baseAtk 138 ;
+    seer:baseDef 109 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 109 ;
+    seer:baseSpd 124 ;
+    seer:hasTypeCombination seer:tc_90 ;
+    seer:seerapiId "4508" .
+
+seer:pet_4510 a seer:Pet ;
+    rdfs:label "卫岳"@zh ;
+    seer:baseAtk 145 ;
+    seer:baseDef 70 ;
+    seer:baseHp 185 ;
+    seer:baseSpAtk 145 ;
+    seer:baseSpDef 70 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_24 ;
+    seer:seerapiId "4510" .
+
+seer:pet_4511 a seer:Pet ;
+    rdfs:label "不破帝·南霜"@zh ;
+    seer:baseAtk 148 ;
+    seer:baseDef 114 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_45 ;
+    seer:seerapiId "4511" .
+
+seer:pet_4514 a seer:Pet ;
+    rdfs:label "灼云"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 171 ;
+    seer:baseSpAtk 137 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 138 ;
+    seer:hasTypeCombination seer:tc_27 ;
+    seer:seerapiId "4514" .
+
+seer:pet_4519 a seer:Pet ;
+    rdfs:label "里扎德"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 112 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_42 ;
+    seer:seerapiId "4519" .
+
+seer:pet_4520 a seer:Pet ;
+    rdfs:label "扎里里"@zh ;
+    seer:baseAtk 132 ;
+    seer:baseDef 107 ;
+    seer:baseHp 148 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 106 ;
+    seer:baseSpd 117 ;
+    seer:hasTypeCombination seer:tc_7 ;
+    seer:seerapiId "4520" .
+
+seer:pet_4521 a seer:Pet ;
+    rdfs:label "涡锋"@zh ;
+    seer:baseAtk 145 ;
+    seer:baseDef 114 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_66 ;
+    seer:seerapiId "4521" .
+
+seer:pet_4523 a seer:Pet ;
+    rdfs:label "科德布鲁"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 111 ;
+    seer:baseHp 177 ;
+    seer:baseSpAtk 131 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_83 ;
+    seer:seerapiId "4523" .
+
+seer:pet_4524 a seer:Pet ;
+    rdfs:label "孙悟空"@zh ;
+    seer:hasTypeCombination seer:tc_108 ;
+    seer:seerapiId "4524" .
+
+seer:pet_4531 a seer:Pet ;
+    rdfs:label "极恶妖兽"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 110 ;
+    seer:baseHp 169 ;
+    seer:baseSpAtk 137 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_85 ;
+    seer:seerapiId "4531" .
+
+seer:pet_4532 a seer:Pet ;
+    rdfs:label "堕息·迹"@zh ;
+    seer:hasTypeCombination seer:tc_98 ;
+    seer:seerapiId "4532" ;
+    rdfs:comment "别名: 堕息·迹/堕迹"@zh ;
+    skos:altLabel "堕迹"@zh .
+
+seer:pet_4534 a seer:Pet ;
+    rdfs:label "咫"@zh ;
+    seer:baseAtk 136 ;
+    seer:baseDef 113 ;
+    seer:baseHp 178 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_17 ;
+    seer:seerapiId "4534" .
+
+seer:pet_4536 a seer:Pet ;
+    rdfs:label "瑞波"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 156 ;
+    seer:baseSpAtk 132 ;
+    seer:baseSpDef 109 ;
+    seer:baseSpd 121 ;
+    seer:hasTypeCombination seer:tc_10 ;
+    seer:seerapiId "4536" .
+
+seer:pet_4537 a seer:Pet ;
+    rdfs:label "瑞迪卡"@zh ;
+    seer:hasTypeCombination seer:tc_97 ;
+    seer:seerapiId "4537" ;
+    rdfs:comment "别名: 瑞迪卡"@zh .
+
+seer:pet_4538 a seer:Pet ;
+    rdfs:label "摩根"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 103 ;
+    seer:baseHp 145 ;
+    seer:baseSpAtk 131 ;
+    seer:baseSpDef 104 ;
+    seer:baseSpd 127 ;
+    seer:hasTypeCombination seer:tc_54 ;
+    seer:seerapiId "4538" .
+
+seer:pet_4539 a seer:Pet ;
+    rdfs:label "文森特"@zh ;
+    seer:baseAtk 136 ;
+    seer:baseDef 111 ;
+    seer:baseHp 173 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_68 ;
+    seer:seerapiId "4539" .
+
+seer:pet_4541 a seer:Pet ;
+    rdfs:label "莫塔里安"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 180 ;
+    seer:baseSpAtk 137 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_81 ;
+    seer:seerapiId "4541" .
+
+seer:pet_4542 a seer:Pet ;
+    rdfs:label "视界·明德里奇"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 113 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 142 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 137 ;
+    seer:hasTypeCombination seer:tc_72 ;
+    seer:seerapiId "4542" .
+
+seer:pet_4546 a seer:Pet ;
+    rdfs:label "巨鲸座"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 115 ;
+    seer:baseHp 175 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_53 ;
+    seer:seerapiId "4546" .
+
+seer:pet_4547 a seer:Pet ;
+    rdfs:label "库拉塔克"@zh ;
+    seer:baseAtk 136 ;
+    seer:baseDef 113 ;
+    seer:baseHp 167 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 137 ;
+    seer:hasTypeCombination seer:tc_101 ;
+    seer:seerapiId "4547" .
+
+seer:pet_4548 a seer:Pet ;
+    rdfs:label "库拉"@zh ;
+    seer:hasTypeCombination seer:tc_13 ;
+    seer:seerapiId "4548" ;
+    rdfs:comment "别名: 库拉"@zh .
+
+seer:pet_4549 a seer:Pet ;
+    rdfs:label "安姆耐特"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 174 ;
+    seer:baseSpAtk 132 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_119 ;
+    seer:seerapiId "4549" .
+
+seer:pet_4550 a seer:Pet ;
+    rdfs:label "安姆尼"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 107 ;
+    seer:baseHp 160 ;
+    seer:baseSpAtk 130 ;
+    seer:baseSpDef 104 ;
+    seer:baseSpd 129 ;
+    seer:hasTypeCombination seer:tc_2 ;
+    seer:seerapiId "4550" .
+
+seer:pet_4551 a seer:Pet ;
+    rdfs:label "安姆妮"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 107 ;
+    seer:baseHp 160 ;
+    seer:baseSpAtk 130 ;
+    seer:baseSpDef 104 ;
+    seer:baseSpd 129 ;
+    seer:hasTypeCombination seer:tc_14 ;
+    seer:seerapiId "4551" .
+
+seer:pet_4553 a seer:Pet ;
+    rdfs:label "万里春·北鸟"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 116 ;
+    seer:baseHp 174 ;
+    seer:baseSpAtk 137 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 139 ;
+    seer:hasTypeCombination seer:tc_31 ;
+    seer:seerapiId "4553" .
+
+seer:pet_4556 a seer:Pet ;
+    rdfs:label "尘息游龙"@zh ;
+    seer:baseAtk 138 ;
+    seer:baseDef 110 ;
+    seer:baseHp 176 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_63 ;
+    seer:seerapiId "4556" .
+
+seer:pet_4557 a seer:Pet ;
+    rdfs:label "红月祭司"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 167 ;
+    seer:baseSpAtk 139 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 137 ;
+    seer:hasTypeCombination seer:tc_51 ;
+    seer:seerapiId "4557" .
+
+seer:pet_4559 a seer:Pet ;
+    rdfs:label "提米"@zh ;
+    seer:baseAtk 135 ;
+    seer:baseDef 112 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_1 ;
+    seer:seerapiId "4559" .
+
+seer:pet_4561 a seer:Pet ;
+    rdfs:label "霆律"@zh ;
+    seer:hasTypeCombination seer:tc_80 ;
+    seer:seerapiId "4561" .
+
+seer:pet_4562 a seer:Pet ;
+    rdfs:label "森曼"@zh ;
+    seer:baseAtk 143 ;
+    seer:baseDef 110 ;
+    seer:baseHp 177 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_74 ;
+    seer:seerapiId "4562" .
+
+seer:pet_4563 a seer:Pet ;
+    rdfs:label "奇普斯"@zh ;
+    seer:baseAtk 139 ;
+    seer:baseDef 101 ;
+    seer:baseHp 154 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 101 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_4 ;
+    seer:seerapiId "4563" .
+
+seer:pet_4564 a seer:Pet ;
+    rdfs:label "帕泽"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 111 ;
+    seer:baseHp 167 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_69 ;
+    seer:seerapiId "4564" .
+
+seer:pet_4567 a seer:Pet ;
+    rdfs:label "灵石守卫"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 120 ;
+    seer:baseHp 175 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 120 ;
+    seer:baseSpd 120 ;
+    seer:hasTypeCombination seer:tc_57 ;
+    seer:seerapiId "4567" .
+
+seer:pet_4568 a seer:Pet ;
+    rdfs:label "幽魅之影·杰格"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 142 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 138 ;
+    seer:hasTypeCombination seer:tc_62 ;
+    seer:seerapiId "4568" .
+
+seer:pet_4569 a seer:Pet ;
+    rdfs:label "霆终陨灭·罗库"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 111 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 139 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 139 ;
+    seer:hasTypeCombination seer:tc_104 ;
+    seer:seerapiId "4569" .
+
+seer:pet_4571 a seer:Pet ;
+    rdfs:label "帕斯裟帝"@zh ;
+    seer:hasTypeCombination seer:tc_19 ;
+    seer:seerapiId "4571" ;
+    rdfs:comment "别名: 帕斯裟帝"@zh .
+
+seer:pet_4572 a seer:Pet ;
+    rdfs:label "飞鱼骑士"@zh ;
+    seer:hasTypeCombination seer:tc_30 ;
+    seer:seerapiId "4572" ;
+    rdfs:comment "别名: 飞鱼骑士"@zh .
+
+seer:pet_4573 a seer:Pet ;
+    rdfs:label "PLD"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 115 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 135 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_103 ;
+    seer:seerapiId "4573" .
+
+seer:pet_4575 a seer:Pet ;
+    rdfs:label "南十字·克鲁斯"@zh ;
+    seer:hasTypeCombination seer:tc_76 ;
+    seer:seerapiId "4575" ;
+    rdfs:comment "别名: 南十字克鲁斯/南十字"@zh ;
+    skos:altLabel "南十字"@zh,
+        "南十字克鲁斯"@zh .
+
+seer:pet_4577 a seer:Pet ;
+    rdfs:label "斯缇尔"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 110 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 142 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 137 ;
+    seer:hasTypeCombination seer:tc_102 ;
+    seer:seerapiId "4577" .
+
+seer:pet_4578 a seer:Pet ;
+    rdfs:label "蔓古"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 115 ;
+    seer:baseHp 176 ;
+    seer:baseSpAtk 130 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 129 ;
+    seer:hasTypeCombination seer:tc_22 ;
+    seer:seerapiId "4578" .
+
+seer:pet_4579 a seer:Pet ;
+    rdfs:label "玛奇"@zh ;
+    seer:baseAtk 137 ;
+    seer:baseDef 103 ;
+    seer:baseHp 162 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 103 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_3 ;
+    seer:seerapiId "4579" .
+
+seer:pet_4580 a seer:Pet ;
+    rdfs:label "梅伊"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 103 ;
+    seer:baseHp 162 ;
+    seer:baseSpAtk 137 ;
+    seer:baseSpDef 103 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_9 ;
+    seer:seerapiId "4580" .
+
+seer:pet_4581 a seer:Pet ;
+    rdfs:label "梦貘"@zh ;
+    seer:baseAtk 135 ;
+    seer:baseDef 106 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 128 ;
+    seer:hasTypeCombination seer:tc_109 ;
+    seer:seerapiId "4581" .
+
+seer:pet_4582 a seer:Pet ;
+    rdfs:label "斥星"@zh ;
+    seer:hasTypeCombination seer:tc_71 ;
+    seer:seerapiId "4582" .
+
+seer:pet_4583 a seer:Pet ;
+    rdfs:label "巴特勒"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 110 ;
+    seer:baseHp 173 ;
+    seer:baseSpAtk 137 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_55 ;
+    seer:seerapiId "4583" .
+
+seer:pet_4584 a seer:Pet ;
+    rdfs:label "黑灵灵"@zh ;
+    seer:baseAtk 133 ;
+    seer:baseDef 105 ;
+    seer:baseHp 152 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_85 ;
+    seer:seerapiId "4584" .
+
+seer:pet_4586 a seer:Pet ;
+    rdfs:label "空元行者"@zh ;
+    seer:hasTypeCombination seer:tc_120 ;
+    seer:seerapiId "4586" ;
+    rdfs:comment "别名: 空元行者/空元"@zh ;
+    skos:altLabel "空元"@zh .
+
+seer:pet_4587 a seer:Pet ;
+    rdfs:label "蛇舞·天鸣"@zh ;
+    seer:baseAtk 141 ;
+    seer:baseDef 110 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 138 ;
+    seer:hasTypeCombination seer:tc_35 ;
+    seer:seerapiId "4587" .
+
+seer:pet_4589 a seer:Pet ;
+    rdfs:label "曜焰万象·文森特"@zh ;
+    seer:baseAtk 138 ;
+    seer:baseDef 111 ;
+    seer:baseHp 174 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_68 ;
+    seer:seerapiId "4589" .
+
+seer:pet_4590 a seer:Pet ;
+    rdfs:label "覆骸冥土"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 106 ;
+    seer:baseHp 182 ;
+    seer:baseSpAtk 128 ;
+    seer:baseSpDef 106 ;
+    seer:baseSpd 128 ;
+    seer:hasTypeCombination seer:tc_37 ;
+    seer:seerapiId "4590" .
+
+seer:pet_4592 a seer:Pet ;
+    rdfs:label "夜居魔使"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 115 ;
+    seer:baseHp 180 ;
+    seer:baseSpAtk 125 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_96 ;
+    seer:seerapiId "4592" .
+
+seer:pet_4594 a seer:Pet ;
+    rdfs:label "摆渡者·费雷"@zh ;
+    seer:baseAtk 134 ;
+    seer:baseDef 112 ;
+    seer:baseHp 174 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_25 ;
+    seer:seerapiId "4594" .
+
+seer:pet_4596 a seer:Pet ;
+    rdfs:label "索恩"@zh ;
+    seer:baseAtk 133 ;
+    seer:baseDef 105 ;
+    seer:baseHp 162 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_23 ;
+    seer:seerapiId "4596" .
+
+seer:pet_4597 a seer:Pet ;
+    rdfs:label "织灵者·维伊"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 109 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 144 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 138 ;
+    seer:hasTypeCombination seer:tc_95 ;
+    seer:seerapiId "4597" .
+
+seer:pet_4599 a seer:Pet ;
+    rdfs:label "灵巢之主·索杰德尔"@zh ;
+    seer:hasTypeCombination seer:tc_224 ;
+    seer:seerapiId "4599" ;
+    rdfs:comment "别名: 灵巢之主·索杰德尔/灵巢/灵巢之主"@zh ;
+    skos:altLabel "灵巢"@zh,
+        "灵巢之主"@zh .
+
+seer:pet_4600 a seer:Pet ;
+    rdfs:label "斯布林蒂"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 120 ;
+    seer:baseHp 190 ;
+    seer:baseSpAtk 130 ;
+    seer:baseSpDef 120 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_121 ;
+    seer:seerapiId "4600" .
+
+seer:pet_4602 a seer:Pet ;
+    rdfs:label "金瑞福龙"@zh ;
+    seer:hasTypeCombination seer:tc_28 ;
+    seer:seerapiId "4602" .
+
+seer:pet_4603 a seer:Pet ;
+    rdfs:label "贾斯"@zh ;
+    seer:hasTypeCombination seer:tc_112 ;
+    seer:seerapiId "4603" .
+
+seer:pet_4605 a seer:Pet ;
+    rdfs:label "无限·欧根尼克"@zh ;
+    seer:hasTypeCombination seer:tc_79 ;
+    seer:seerapiId "4605" .
+
+seer:pet_4606 a seer:Pet ;
+    rdfs:label "加尔鲁特"@zh ;
+    seer:hasTypeCombination seer:tc_1 ;
+    seer:seerapiId "4606" ;
+    rdfs:comment "草加为其昵称；同已知 4606/草潘 | 别名: 加尔鲁特/草加"@zh ;
+    skos:altLabel "草加"@zh .
+
+seer:pet_4607 a seer:Pet ;
+    rdfs:label "小灯龙"@zh ;
+    seer:baseAtk 132 ;
+    seer:baseDef 100 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 100 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_102 ;
+    seer:seerapiId "4607" .
+
+seer:pet_4608 a seer:Pet ;
+    rdfs:label "尘息巨像"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 115 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_81 ;
+    seer:seerapiId "4608" .
+
+seer:pet_4611 a seer:Pet ;
+    rdfs:label "渊枭"@zh ;
+    seer:baseAtk 138 ;
+    seer:baseDef 112 ;
+    seer:baseHp 174 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_92 ;
+    seer:seerapiId "4611" .
+
+seer:pet_4612 a seer:Pet ;
+    rdfs:label "魂弦"@zh ;
+    seer:hasTypeCombination seer:tc_52 ;
+    seer:seerapiId "4612" .
+
+seer:pet_4613 a seer:Pet ;
+    rdfs:label "艾克特希"@zh ;
+    seer:baseAtk 137 ;
+    seer:baseDef 112 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_40 ;
+    seer:seerapiId "4613" .
+
+seer:pet_4614 a seer:Pet ;
+    rdfs:label "罗萨"@zh ;
+    seer:baseAtk 137 ;
+    seer:baseDef 105 ;
+    seer:baseHp 158 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_1 ;
+    seer:seerapiId "4614" .
+
+seer:pet_4615 a seer:Pet ;
+    rdfs:label "罗萨尔"@zh ;
+    seer:baseAtk 137 ;
+    seer:baseDef 105 ;
+    seer:baseHp 158 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_82 ;
+    seer:seerapiId "4615" .
+
+seer:pet_4617 a seer:Pet ;
+    rdfs:label "猛虎之刃·泰伯"@zh ;
+    seer:baseAtk 142 ;
+    seer:baseDef 110 ;
+    seer:baseHp 171 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_33 ;
+    seer:seerapiId "4617" .
+
+seer:pet_4618 a seer:Pet ;
+    rdfs:label "佩洛瑟斯"@zh ;
+    seer:hasTypeCombination seer:tc_70 ;
+    seer:seerapiId "4618" ;
+    rdfs:comment "别名: 佩洛瑟斯"@zh .
+
+seer:pet_4619 a seer:Pet ;
+    rdfs:label "贝利弗"@zh ;
+    seer:baseAtk 138 ;
+    seer:baseDef 106 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 128 ;
+    seer:hasTypeCombination seer:tc_106 ;
+    seer:seerapiId "4619" .
+
+seer:pet_4620 a seer:Pet ;
+    rdfs:label "孤烛灯使"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 146 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 138 ;
+    seer:hasTypeCombination seer:tc_20 ;
+    seer:seerapiId "4620" .
+
+seer:pet_4621 a seer:Pet ;
+    rdfs:label "雾灯徘徊者"@zh ;
+    seer:baseAtk 141 ;
+    seer:baseDef 114 ;
+    seer:baseHp 163 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_90 ;
+    seer:seerapiId "4621" .
+
+seer:pet_4623 a seer:Pet ;
+    rdfs:label "裂岩·艾克特希"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 112 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_40 ;
+    seer:seerapiId "4623" .
+
+seer:pet_4625 a seer:Pet ;
+    rdfs:label "伏尔格安"@zh ;
+    seer:hasTypeCombination seer:tc_107 ;
+    seer:seerapiId "4625" .
+
+seer:pet_4626 a seer:Pet ;
+    rdfs:label "夏厄普"@zh ;
+    seer:hasTypeCombination seer:tc_41 ;
+    seer:seerapiId "4626" .
+
+seer:pet_4629 a seer:Pet ;
+    rdfs:label "霜之荆棘·蒙鲁特"@zh ;
+    seer:hasTypeCombination seer:tc_91 ;
+    seer:seerapiId "4629" ;
+    rdfs:comment "别名: 蒙鲁特"@zh ;
+    skos:altLabel "蒙鲁特"@zh .
+
+seer:pet_4630 a seer:Pet ;
+    rdfs:label "洛克斯"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 108 ;
+    seer:baseHp 149 ;
+    seer:baseSpAtk 133 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_10 ;
+    seer:seerapiId "4630" .
+
+seer:pet_4631 a seer:Pet ;
+    rdfs:label "塞弥丝珂"@zh ;
+    seer:hasTypeCombination seer:tc_54 ;
+    seer:seerapiId "4631" .
+
+seer:pet_4632 a seer:Pet ;
+    rdfs:label "卡威治"@zh ;
+    seer:hasTypeCombination seer:tc_119 ;
+    seer:seerapiId "4632" ;
+    rdfs:comment "别名: 卡威治"@zh .
+
+seer:pet_4633 a seer:Pet ;
+    rdfs:label "腐坏幽魔·克劳里菲"@zh ;
+    seer:hasTypeCombination seer:tc_99 ;
+    seer:seerapiId "4633" ;
+    rdfs:comment "别名: 腐坏幽魔·克劳里菲/腐坏幽魔"@zh ;
+    skos:altLabel "腐坏幽魔"@zh .
+
+seer:pet_4634 a seer:Pet ;
+    rdfs:label "佩里德"@zh ;
+    seer:hasTypeCombination seer:tc_56 ;
+    seer:seerapiId "4634" .
+
+seer:pet_4635 a seer:Pet ;
+    rdfs:label "枫落殇·西叶"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 111 ;
+    seer:baseHp 182 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_82 ;
+    seer:seerapiId "4635" .
+
+seer:pet_4636 a seer:Pet ;
+    rdfs:label "西塔伦"@zh ;
+    seer:hasTypeCombination seer:tc_21 ;
+    seer:seerapiId "4636" ;
+    rdfs:comment "别名: 西塔轮"@zh ;
+    skos:altLabel "西塔轮"@zh .
+
+seer:pet_4638 a seer:Pet ;
+    rdfs:label "阳光菊"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 106 ;
+    seer:baseHp 161 ;
+    seer:baseSpAtk 130 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 128 ;
+    seer:hasTypeCombination seer:tc_121 ;
+    seer:seerapiId "4638" .
+
+seer:pet_4640 a seer:Pet ;
+    rdfs:label "黄桃鸟"@zh ;
+    seer:baseAtk 135 ;
+    seer:baseDef 104 ;
+    seer:baseHp 151 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_31 ;
+    seer:seerapiId "4640" .
+
+seer:pet_4641 a seer:Pet ;
+    rdfs:label "米特拉异虫"@zh ;
+    seer:baseAtk 132 ;
+    seer:baseDef 105 ;
+    seer:baseHp 158 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_225 ;
+    seer:seerapiId "4641" .
+
+seer:pet_4642 a seer:Pet ;
+    rdfs:label "逆世之瞳·哀目黑子"@zh ;
+    seer:hasTypeCombination seer:tc_97 ;
+    seer:seerapiId "4642" .
+
+seer:pet_4643 a seer:Pet ;
+    rdfs:label "蓓丽安特"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 115 ;
+    seer:baseHp 169 ;
+    seer:baseSpAtk 152 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 139 ;
+    seer:hasTypeCombination seer:tc_117 ;
+    seer:seerapiId "4643" .
+
+seer:pet_4644 a seer:Pet ;
+    rdfs:label "克雷弗德"@zh ;
+    seer:baseAtk 142 ;
+    seer:baseDef 116 ;
+    seer:baseHp 177 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 116 ;
+    seer:baseSpd 139 ;
+    seer:hasTypeCombination seer:tc_122 ;
+    seer:seerapiId "4644" .
+
+seer:pet_4646 a seer:Pet ;
+    rdfs:label "时钟试炼官·极"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 115 ;
+    seer:baseHp 160 ;
+    seer:baseSpAtk 142 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 138 ;
+    seer:hasTypeCombination seer:tc_16 ;
+    seer:seerapiId "4646" .
+
+seer:pet_4650 a seer:Pet ;
+    rdfs:label "风暴龙灵"@zh ;
+    seer:baseAtk 143 ;
+    seer:baseDef 110 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 137 ;
+    seer:hasTypeCombination seer:tc_15 ;
+    seer:seerapiId "4650" .
+
+seer:pet_4651 a seer:Pet ;
+    rdfs:label "天阶机器人"@zh ;
+    seer:baseAtk 142 ;
+    seer:baseDef 110 ;
+    seer:baseHp 173 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_38 ;
+    seer:seerapiId "4651" .
+
+seer:pet_4653 a seer:Pet ;
+    rdfs:label "娜娜薇尔"@zh ;
+    seer:hasTypeCombination seer:tc_61 ;
+    seer:seerapiId "4653" .
+
+seer:pet_4655 a seer:Pet ;
+    rdfs:label "锚点相座"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 118 ;
+    seer:baseHp 164 ;
+    seer:baseSpAtk 135 ;
+    seer:baseSpDef 118 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_72 ;
+    seer:seerapiId "4655" .
+
+seer:pet_4657 a seer:Pet ;
+    rdfs:label "浮掠双刃·卓尔布"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 113 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 135 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_86 ;
+    seer:seerapiId "4657" .
+
+seer:pet_4658 a seer:Pet ;
+    rdfs:label "仿生兽·库比"@zh ;
+    seer:hasTypeCombination seer:tc_114 ;
+    seer:seerapiId "4658" ;
+    rdfs:comment "别名: 仿生兽库比"@zh ;
+    skos:altLabel "仿生兽库比"@zh .
+
+seer:pet_4659 a seer:Pet ;
+    rdfs:label "芙拉尔"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 104 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 138 ;
+    seer:baseSpDef 104 ;
+    seer:baseSpd 138 ;
+    seer:hasTypeCombination seer:tc_27 ;
+    seer:seerapiId "4659" .
+
+seer:pet_4661 a seer:Pet ;
+    rdfs:label "无为觉者"@zh ;
+    seer:hasTypeCombination seer:tc_8 ;
+    seer:seerapiId "4661" .
+
+seer:pet_4662 a seer:Pet ;
+    rdfs:label "雷瀑飞雪·桑多姆"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 111 ;
+    seer:baseHp 169 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 138 ;
+    seer:hasTypeCombination seer:tc_34 ;
+    seer:seerapiId "4662" .
+
+seer:pet_4664 a seer:Pet ;
+    rdfs:label "菠萝霸王"@zh ;
+    seer:hasTypeCombination seer:tc_5 ;
+    seer:seerapiId "4664" .
+
+seer:pet_4665 a seer:Pet ;
+    rdfs:label "重塑之子·利塞特"@zh ;
+    seer:hasTypeCombination seer:tc_69 ;
+    seer:seerapiId "4665" ;
+    rdfs:comment "别名: 重塑之子利塞特/利塞特/重塑之子/利赛特"@zh ;
+    skos:altLabel "利塞特"@zh,
+        "利赛特"@zh,
+        "重塑之子"@zh,
+        "重塑之子利塞特"@zh .
+
+seer:pet_4667 a seer:Pet ;
+    rdfs:label "龙灵战士"@zh ;
+    seer:baseAtk 134 ;
+    seer:baseDef 110 ;
+    seer:baseHp 180 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_73 ;
+    seer:seerapiId "4667" .
+
+seer:pet_4668 a seer:Pet ;
+    rdfs:label "尚克斯"@zh ;
+    seer:hasTypeCombination seer:tc_113 ;
+    seer:seerapiId "4668" .
+
+seer:pet_4669 a seer:Pet ;
+    rdfs:label "紫烬魔兽"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 111 ;
+    seer:baseHp 171 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_77 ;
+    seer:seerapiId "4669" .
+
+seer:pet_4671 a seer:Pet ;
+    rdfs:label "噬夜疾袭·库拉塔克"@zh ;
+    seer:baseAtk 141 ;
+    seer:baseDef 113 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 138 ;
+    seer:hasTypeCombination seer:tc_101 ;
+    seer:seerapiId "4671" .
+
+seer:pet_4674 a seer:Pet ;
+    rdfs:label "无极使者"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 109 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 144 ;
+    seer:baseSpDef 109 ;
+    seer:baseSpd 137 ;
+    seer:hasTypeCombination seer:tc_17 ;
+    seer:seerapiId "4674" .
+
+seer:pet_4675 a seer:Pet ;
+    rdfs:label "招财"@zh ;
+    seer:baseAtk 134 ;
+    seer:baseDef 106 ;
+    seer:baseHp 164 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 106 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_42 ;
+    seer:seerapiId "4675" .
+
+seer:pet_4682 a seer:Pet ;
+    rdfs:label "空洄星徒"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_49 ;
+    seer:seerapiId "4682" .
+
+seer:pet_4683 a seer:Pet ;
+    rdfs:label "帕诺·海啸武装"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 113 ;
+    seer:baseHp 173 ;
+    seer:baseSpAtk 136 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_124 ;
+    seer:seerapiId "4683" .
+
+seer:pet_4684 a seer:Pet ;
+    rdfs:label "帕诺·烈焰武装"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 110 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 142 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 138 ;
+    seer:hasTypeCombination seer:tc_125 ;
+    seer:seerapiId "4684" .
+
+seer:pet_4686 a seer:Pet ;
+    rdfs:label "帕诺·绿光武装"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 115 ;
+    seer:baseHp 177 ;
+    seer:baseSpAtk 130 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_126 ;
+    seer:seerapiId "4686" .
+
+seer:pet_4687 a seer:Pet ;
+    rdfs:label "小妮"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 108 ;
+    seer:baseHp 154 ;
+    seer:baseSpAtk 131 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 129 ;
+    seer:hasTypeCombination seer:tc_84 ;
+    seer:seerapiId "4687" .
+
+seer:pet_4688 a seer:Pet ;
+    rdfs:label "库洛妮"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 141 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_84 ;
+    seer:seerapiId "4688" .
+
+seer:pet_4690 a seer:Pet ;
+    rdfs:label "变异鳄兰"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 113 ;
+    seer:baseHp 179 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_23 ;
+    seer:seerapiId "4690" .
+
+seer:pet_4692 a seer:Pet ;
+    rdfs:label "无间巨兽"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 100 ;
+    seer:baseHp 180 ;
+    seer:baseSpAtk 130 ;
+    seer:baseSpDef 100 ;
+    seer:baseSpd 120 ;
+    seer:hasTypeCombination seer:tc_10 ;
+    seer:seerapiId "4692" .
+
+seer:pet_4693 a seer:Pet ;
+    rdfs:label "星光·蘑菇怪"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 177 ;
+    seer:baseSpAtk 139 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_1 ;
+    seer:seerapiId "4693" .
+
+seer:pet_4694 a seer:Pet ;
+    rdfs:label "石晶晶"@zh ;
+    seer:baseAtk 133 ;
+    seer:baseDef 104 ;
+    seer:baseHp 161 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 104 ;
+    seer:baseSpd 128 ;
+    seer:hasTypeCombination seer:tc_81 ;
+    seer:seerapiId "4694" .
+
+seer:pet_4695 a seer:Pet ;
+    rdfs:label "西塔·能源型"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 110 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_125 ;
+    seer:seerapiId "4695" .
+
+seer:pet_4696 a seer:Pet ;
+    rdfs:label "绮影罗心·织焰"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 161 ;
+    seer:baseSpAtk 144 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_58 ;
+    seer:seerapiId "4696" .
+
+seer:pet_4697 a seer:Pet ;
+    rdfs:label "华光之翼·杰洛恩"@zh ;
+    seer:hasTypeCombination seer:tc_31 ;
+    seer:seerapiId "4697" .
+
+seer:pet_4699 a seer:Pet ;
+    rdfs:label "伊塔"@zh ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "4699" .
+
+seer:pet_4700 a seer:Pet ;
+    rdfs:label "米格罗斯"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 116 ;
+    seer:baseHp 167 ;
+    seer:baseSpAtk 135 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_37 ;
+    seer:seerapiId "4700" .
+
+seer:pet_4701 a seer:Pet ;
+    rdfs:label "霜爪雪貂"@zh ;
+    seer:baseAtk 135 ;
+    seer:baseDef 109 ;
+    seer:baseHp 145 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 109 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_45 ;
+    seer:seerapiId "4701" .
+
+seer:pet_4702 a seer:Pet ;
+    rdfs:label "霜寂锁灵"@zh ;
+    seer:baseAtk 141 ;
+    seer:baseDef 110 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_111 ;
+    seer:seerapiId "4702" .
+
+seer:pet_4704 a seer:Pet ;
+    rdfs:label "吉甘提卡"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 117 ;
+    seer:baseHp 173 ;
+    seer:baseSpAtk 133 ;
+    seer:baseSpDef 117 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_10 ;
+    seer:seerapiId "4704" .
+
+seer:pet_4705 a seer:Pet ;
+    rdfs:label "塔琳-MKII"@zh ;
+    seer:baseAtk 127 ;
+    seer:baseDef 108 ;
+    seer:baseHp 155 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_38 ;
+    seer:seerapiId "4705" .
+
+seer:pet_4706 a seer:Pet ;
+    rdfs:label "奥菲利娅"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 130 ;
+    seer:baseHp 180 ;
+    seer:baseSpAtk 160 ;
+    seer:baseSpDef 130 ;
+    seer:baseSpd 140 ;
+    seer:hasTypeCombination seer:tc_127 ;
+    seer:seerapiId "4706" .
+
+seer:pet_4707 a seer:Pet ;
+    rdfs:label "卡塔·武装型"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 111 ;
+    seer:baseHp 161 ;
+    seer:baseSpAtk 150 ;
+    seer:baseSpDef 109 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_103 ;
+    seer:seerapiId "4707" .
+
+seer:pet_4708 a seer:Pet ;
+    rdfs:label "波尼啵妮"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 111 ;
+    seer:baseHp 158 ;
+    seer:baseSpAtk 136 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_116 ;
+    seer:seerapiId "4708" .
+
+seer:pet_4709 a seer:Pet ;
+    rdfs:label "原始预言·吉尼亚斯"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 114 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_80 ;
+    seer:seerapiId "4709" .
+
+seer:pet_4711 a seer:Pet ;
+    rdfs:label "奇塔·解算型"@zh ;
+    seer:baseAtk 148 ;
+    seer:baseDef 110 ;
+    seer:baseHp 167 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_38 ;
+    seer:seerapiId "4711" .
+
+seer:pet_4713 a seer:Pet ;
+    rdfs:label "伊塔·回溯型"@zh ;
+    seer:baseAtk 135 ;
+    seer:baseDef 120 ;
+    seer:baseHp 160 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 120 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "4713" .
+
+seer:pet_4714 a seer:Pet ;
+    rdfs:label "古代巨型机器人"@zh ;
+    seer:baseAtk 150 ;
+    seer:baseDef 115 ;
+    seer:baseHp 180 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_118 ;
+    seer:seerapiId "4714" .
+
+seer:pet_4716 a seer:Pet ;
+    rdfs:label "赫尔卡长老"@zh ;
+    seer:baseAtk 144 ;
+    seer:baseDef 112 ;
+    seer:baseHp 185 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 137 ;
+    seer:hasTypeCombination seer:tc_122 ;
+    seer:seerapiId "4716" .
+
+seer:pet_4717 a seer:Pet ;
+    rdfs:label "原始黑洞·尤纳斯"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 115 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 160 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_226 ;
+    seer:seerapiId "4717" .
+
+seer:pet_4718 a seer:Pet ;
+    rdfs:label "渊夜门徒·洛比特"@zh ;
+    seer:baseAtk 144 ;
+    seer:baseDef 112 ;
+    seer:baseHp 161 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_13 ;
+    seer:seerapiId "4718" .
+
+seer:pet_4724 a seer:Pet ;
+    rdfs:label "波古拉"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 107 ;
+    seer:baseHp 151 ;
+    seer:baseSpAtk 135 ;
+    seer:baseSpDef 107 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_13 ;
+    seer:seerapiId "4724" .
+
+seer:pet_4725 a seer:Pet ;
+    rdfs:label "花灯仙子"@zh ;
+    seer:hasTypeCombination seer:tc_12 ;
+    seer:seerapiId "4725" .
+
+seer:pet_4726 a seer:Pet ;
+    rdfs:label "机魂核心·卡尔玛"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 113 ;
+    seer:baseHp 160 ;
+    seer:baseSpAtk 143 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "4726" .
+
+seer:pet_4728 a seer:Pet ;
+    rdfs:label "考沃莱恩"@zh ;
+    seer:baseAtk 133 ;
+    seer:baseDef 115 ;
+    seer:baseHp 174 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_22 ;
+    seer:seerapiId "4728" .
+
+seer:pet_4729 a seer:Pet ;
+    rdfs:label "糖果皮皮"@zh ;
+    seer:hasTypeCombination seer:tc_31 ;
+    seer:seerapiId "4729" .
+
+seer:pet_4731 a seer:Pet ;
+    rdfs:label "皮神"@zh ;
+    seer:baseAtk 143 ;
+    seer:baseDef 114 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_128 ;
+    seer:seerapiId "4731" .
+
+seer:pet_4734 a seer:Pet ;
+    rdfs:label "参天巨型仙人掌"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 115 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 135 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_1 ;
+    seer:seerapiId "4734" .
+
+seer:pet_4735 a seer:Pet ;
+    rdfs:label "紫幽"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 111 ;
+    seer:baseHp 151 ;
+    seer:baseSpAtk 142 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_94 ;
+    seer:seerapiId "4735" .
+
+seer:pet_4736 a seer:Pet ;
+    rdfs:label "霆流·希拉"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 115 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 134 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_5 ;
+    seer:seerapiId "4736" .
+
+seer:pet_4738 a seer:Pet ;
+    rdfs:label "绮芒·蝠迪"@zh ;
+    seer:baseAtk 146 ;
+    seer:baseDef 111 ;
+    seer:baseHp 162 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_4 ;
+    seer:seerapiId "4738" .
+
+seer:pet_4739 a seer:Pet ;
+    rdfs:label "绒霜·柯蓝"@zh ;
+    seer:baseAtk 141 ;
+    seer:baseDef 115 ;
+    seer:baseHp 162 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_9 ;
+    seer:seerapiId "4739" .
+
+seer:pet_4740 a seer:Pet ;
+    rdfs:label "幽阑·执冥"@zh ;
+    seer:baseAtk 139 ;
+    seer:baseDef 115 ;
+    seer:baseHp 160 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_13 ;
+    seer:seerapiId "4740" .
+
+seer:pet_4742 a seer:Pet ;
+    rdfs:label "驭火·迪尔克"@zh ;
+    seer:baseAtk 133 ;
+    seer:baseDef 105 ;
+    seer:baseHp 161 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 126 ;
+    seer:hasTypeCombination seer:tc_3 ;
+    seer:seerapiId "4742" .
+
+seer:pet_4743 a seer:Pet ;
+    rdfs:label "星光·纳多雷"@zh ;
+    seer:baseAtk 120 ;
+    seer:baseDef 125 ;
+    seer:baseHp 180 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 125 ;
+    seer:baseSpd 120 ;
+    seer:hasTypeCombination seer:tc_7 ;
+    seer:seerapiId "4743" .
+
+seer:pet_4744 a seer:Pet ;
+    rdfs:label "皎梦·悠悠"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 164 ;
+    seer:baseSpAtk 142 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_8 ;
+    seer:seerapiId "4744" .
+
+seer:pet_4746 a seer:Pet ;
+    rdfs:label "王之查尔顿"@zh ;
+    seer:baseAtk 125 ;
+    seer:baseDef 125 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 75 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_11 ;
+    seer:seerapiId "4746" .
+
+seer:pet_4748 a seer:Pet ;
+    rdfs:label "超算鲁比克"@zh ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "4748" .
+
+seer:pet_4749 a seer:Pet ;
+    rdfs:label "对神兵器肯扎特"@zh ;
+    seer:baseAtk 145 ;
+    seer:baseDef 115 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_103 ;
+    seer:seerapiId "4749" .
+
+seer:pet_4751 a seer:Pet ;
+    rdfs:label "珀瑞涅"@zh ;
+    seer:baseAtk 132 ;
+    seer:baseDef 120 ;
+    seer:baseHp 150 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 120 ;
+    seer:baseSpd 128 ;
+    seer:hasTypeCombination seer:tc_95 ;
+    seer:seerapiId "4751" .
+
+seer:pet_4752 a seer:Pet ;
+    rdfs:label "镇魂约凡撒"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 164 ;
+    seer:baseSpAtk 143 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_2 ;
+    seer:seerapiId "4752" .
+
+seer:pet_4753 a seer:Pet ;
+    rdfs:label "命运玛酷索"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 114 ;
+    seer:baseHp 173 ;
+    seer:baseSpAtk 134 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_30 ;
+    seer:seerapiId "4753" .
+
+seer:pet_4755 a seer:Pet ;
+    rdfs:label "梦魇尼斯克"@zh ;
+    seer:baseAtk 141 ;
+    seer:baseDef 112 ;
+    seer:baseHp 169 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_25 ;
+    seer:seerapiId "4755" .
+
+seer:pet_4756 a seer:Pet ;
+    rdfs:label "梦魇塔奇拉顿"@zh ;
+    seer:baseAtk 134 ;
+    seer:baseDef 118 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 118 ;
+    seer:baseSpd 123 ;
+    seer:hasTypeCombination seer:tc_42 ;
+    seer:seerapiId "4756" .
+
+seer:pet_4757 a seer:Pet ;
+    rdfs:label "神裁·雷伊"@zh ;
+    seer:hasTypeCombination seer:tc_5 ;
+    seer:seerapiId "4757" ;
+    rdfs:comment "别名: 神裁雷伊"@zh ;
+    skos:altLabel "神裁雷伊"@zh .
+
+seer:pet_4758 a seer:Pet ;
+    rdfs:label "神决·盖亚"@zh ;
+    seer:baseAtk 142 ;
+    seer:baseDef 113 ;
+    seer:baseHp 167 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_11 ;
+    seer:seerapiId "4758" .
+
+seer:pet_4761 a seer:Pet ;
+    rdfs:label "琉梦"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 118 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 137 ;
+    seer:baseSpDef 118 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_71 ;
+    seer:seerapiId "4761" .
+
+seer:pet_4762 a seer:Pet ;
+    rdfs:label "湮灭之主·咤克斯"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 116 ;
+    seer:baseHp 178 ;
+    seer:baseSpAtk 142 ;
+    seer:baseSpDef 116 ;
+    seer:baseSpd 138 ;
+    seer:hasTypeCombination seer:tc_222 ;
+    seer:seerapiId "4762" .
+
+seer:pet_4763 a seer:Pet ;
+    rdfs:label "魇魔"@zh ;
+    seer:hasTypeCombination seer:tc_13 ;
+    seer:seerapiId "4763" .
+
+seer:pet_4765 a seer:Pet ;
+    rdfs:label "怒雷神裁·雷伊"@zh ;
+    seer:hasTypeCombination seer:tc_5 ;
+    seer:seerapiId "4765" ;
+    rdfs:comment "别名: 怒雷神裁雷伊"@zh ;
+    skos:altLabel "怒雷神裁雷伊"@zh .
+
+seer:pet_4768 a seer:Pet ;
+    rdfs:label "欧古德"@zh ;
+    seer:baseAtk 143 ;
+    seer:baseDef 105 ;
+    seer:baseHp 152 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_54 ;
+    seer:seerapiId "4768" .
+
+seer:pet_4779 a seer:Pet ;
+    rdfs:label "斯崔因"@zh ;
+    seer:baseAtk 143 ;
+    seer:baseDef 105 ;
+    seer:baseHp 152 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_7 ;
+    seer:seerapiId "4779" .
+
+seer:pet_4780 a seer:Pet ;
+    rdfs:label "布贝巴拉"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 115 ;
+    seer:baseHp 171 ;
+    seer:baseSpAtk 136 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 128 ;
+    seer:hasTypeCombination seer:tc_24 ;
+    seer:seerapiId "4780" .
+
+seer:pet_4782 a seer:Pet ;
+    rdfs:label "鞘盾龙鱼"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 110 ;
+    seer:baseHp 179 ;
+    seer:baseSpAtk 131 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_26 ;
+    seer:seerapiId "4782" .
+
+seer:pet_4783 a seer:Pet ;
+    rdfs:label "斯弗洛浦亚"@zh ;
+    seer:baseAtk 129 ;
+    seer:baseDef 111 ;
+    seer:baseHp 184 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_25 ;
+    seer:seerapiId "4783" .
+
+seer:pet_4784 a seer:Pet ;
+    rdfs:label "诺尔玛罗"@zh ;
+    seer:baseAtk 137 ;
+    seer:baseDef 114 ;
+    seer:baseHp 169 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_73 ;
+    seer:seerapiId "4784" .
+
+seer:pet_4785 a seer:Pet ;
+    rdfs:label "铭唤"@zh ;
+    seer:hasTypeCombination seer:tc_98 ;
+    seer:seerapiId "4785" .
+
+seer:pet_4787 a seer:Pet ;
+    rdfs:label "机械钢牙鲨"@zh ;
+    seer:baseAtk 143 ;
+    seer:baseDef 112 ;
+    seer:baseHp 167 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_124 ;
+    seer:seerapiId "4787" .
+
+seer:pet_4793 a seer:Pet ;
+    rdfs:label "厄孽提亚"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 111 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 142 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_1 ;
+    seer:seerapiId "4793" .
+
+seer:pet_4797 a seer:Pet ;
+    rdfs:label "极渊DS-001"@zh ;
+    seer:hasTypeCombination seer:tc_75 ;
+    seer:seerapiId "4797" ;
+    rdfs:comment "别名: DS001"@zh ;
+    skos:altLabel "DS001"@zh .
+
+seer:pet_4798 a seer:Pet ;
+    rdfs:label "霸颚鲛"@zh ;
+    seer:baseAtk 149 ;
+    seer:baseDef 111 ;
+    seer:baseHp 167 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_2 ;
+    seer:seerapiId "4798" .
+
+seer:pet_4799 a seer:Pet ;
+    rdfs:label "提玛拉"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 113 ;
+    seer:baseHp 155 ;
+    seer:baseSpAtk 135 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_24 ;
+    seer:seerapiId "4799" .
+
+seer:pet_4807 a seer:Pet ;
+    rdfs:label "黑石女妖"@zh ;
+    seer:hasTypeCombination seer:tc_105 ;
+    seer:seerapiId "4807" .
+
+seer:pet_4810 a seer:Pet ;
+    rdfs:label "瓦伦汀"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_10 ;
+    seer:seerapiId "4810" .
+
+seer:pet_4811 a seer:Pet ;
+    rdfs:label "拉米兹"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 111 ;
+    seer:baseHp 163 ;
+    seer:baseSpAtk 144 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_33 ;
+    seer:seerapiId "4811" .
+
+seer:pet_4812 a seer:Pet ;
+    rdfs:label "埃罗曼"@zh ;
+    seer:baseAtk 136 ;
+    seer:baseDef 106 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 106 ;
+    seer:baseSpd 127 ;
+    seer:hasTypeCombination seer:tc_37 ;
+    seer:seerapiId "4812" .
+
+seer:pet_4813 a seer:Pet ;
+    rdfs:label "夏莉莉"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 106 ;
+    seer:baseHp 157 ;
+    seer:baseSpAtk 145 ;
+    seer:baseSpDef 106 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_54 ;
+    seer:seerapiId "4813" .
+
+seer:pet_4814 a seer:Pet ;
+    rdfs:label "娜诺"@zh ;
+    seer:baseAtk 137 ;
+    seer:baseDef 113 ;
+    seer:baseHp 174 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_11 ;
+    seer:seerapiId "4814" .
+
+seer:pet_4816 a seer:Pet ;
+    rdfs:label "伊芙"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 114 ;
+    seer:baseHp 176 ;
+    seer:baseSpAtk 143 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_38 ;
+    seer:seerapiId "4816" .
+
+seer:pet_4818 a seer:Pet ;
+    rdfs:label "福尔摩苏斯"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 116 ;
+    seer:baseHp 161 ;
+    seer:baseSpAtk 137 ;
+    seer:baseSpDef 116 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_49 ;
+    seer:seerapiId "4818" .
+
+seer:pet_4820 a seer:Pet ;
+    rdfs:label "贝尔恩克"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 114 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 127 ;
+    seer:hasTypeCombination seer:tc_101 ;
+    seer:seerapiId "4820" .
+
+seer:pet_4822 a seer:Pet ;
+    rdfs:label "星光·里奥斯"@zh ;
+    seer:hasTypeCombination seer:tc_3 ;
+    seer:seerapiId "4822" .
+
+seer:pet_4834 a seer:Pet ;
+    rdfs:label "重装·派鲁基达"@zh ;
+    seer:baseAtk 149 ;
+    seer:baseDef 106 ;
+    seer:baseHp 174 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 106 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "4834" .
+
+seer:pet_4838 a seer:Pet ;
+    rdfs:label "笛科特"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 171 ;
+    seer:baseSpAtk 138 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_38 ;
+    seer:seerapiId "4838" .
+
+seer:pet_4839 a seer:Pet ;
+    rdfs:label "麦迪亚"@zh ;
+    seer:baseAtk 138 ;
+    seer:baseDef 113 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_7 ;
+    seer:seerapiId "4839" .
+
+seer:pet_4841 a seer:Pet ;
+    rdfs:label "凯莫兽"@zh ;
+    seer:baseAtk 135 ;
+    seer:baseDef 112 ;
+    seer:baseHp 145 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 126 ;
+    seer:hasTypeCombination seer:tc_81 ;
+    seer:seerapiId "4841" .
+
+seer:pet_4842 a seer:Pet ;
+    rdfs:label "雷漠克怪"@zh ;
+    seer:baseAtk 135 ;
+    seer:baseDef 112 ;
+    seer:baseHp 145 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 126 ;
+    seer:hasTypeCombination seer:tc_42 ;
+    seer:seerapiId "4842" .
+
+seer:pet_4844 a seer:Pet ;
+    rdfs:label "沙弑·吉拉"@zh ;
+    seer:baseAtk 144 ;
+    seer:baseDef 110 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_50 ;
+    seer:seerapiId "4844" .
+
+seer:pet_4845 a seer:Pet ;
+    rdfs:label "白图泰"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 113 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 135 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_102 ;
+    seer:seerapiId "4845" .
+
+seer:pet_4848 a seer:Pet ;
+    rdfs:label "谜之英雄"@zh ;
+    seer:baseAtk 142 ;
+    seer:baseDef 112 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_49 ;
+    seer:seerapiId "4848" .
+
+seer:pet_4850 a seer:Pet ;
+    rdfs:label "图特摩斯"@zh ;
+    seer:baseAtk 142 ;
+    seer:baseDef 111 ;
+    seer:baseHp 169 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 137 ;
+    seer:hasTypeCombination seer:tc_41 ;
+    seer:seerapiId "4850" .
+
+seer:pet_4853 a seer:Pet ;
+    rdfs:label "梅赫维特"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 130 ;
+    seer:baseHp 185 ;
+    seer:baseSpAtk 155 ;
+    seer:baseSpDef 130 ;
+    seer:baseSpd 140 ;
+    seer:hasTypeCombination seer:tc_130 ;
+    seer:seerapiId "4853" .
+
+seer:pet_4854 a seer:Pet ;
+    rdfs:label "西忒蕾妃"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 113 ;
+    seer:baseHp 174 ;
+    seer:baseSpAtk 133 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_1 ;
+    seer:seerapiId "4854" .
+
+seer:pet_4857 a seer:Pet ;
+    rdfs:label "戟决先锋"@zh ;
+    seer:baseAtk 136 ;
+    seer:baseDef 115 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 127 ;
+    seer:hasTypeCombination seer:tc_45 ;
+    seer:seerapiId "4857" .
+
+seer:pet_4859 a seer:Pet ;
+    rdfs:label "闪光灯蛾"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 105 ;
+    seer:baseHp 160 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_44 ;
+    seer:seerapiId "4859" .
+
+seer:pet_4860 a seer:Pet ;
+    rdfs:label "希尔瑟拉"@zh ;
+    seer:baseAtk 139 ;
+    seer:baseDef 112 ;
+    seer:baseHp 167 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_90 ;
+    seer:seerapiId "4860" .
+
+seer:pet_4863 a seer:Pet ;
+    rdfs:label "艾莉安娜"@zh ;
+    seer:hasTypeCombination seer:tc_225 ;
+    seer:seerapiId "4863" .
+
+seer:pet_4866 a seer:Pet ;
+    rdfs:label "埃斯宾诺"@zh ;
+    seer:hasTypeCombination seer:tc_225 ;
+    seer:seerapiId "4866" .
+
+seer:pet_4870 a seer:Pet ;
+    rdfs:label "康迪亚克"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 167 ;
+    seer:baseSpAtk 145 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_7 ;
+    seer:seerapiId "4870" .
+
+seer:pet_4874 a seer:Pet ;
+    rdfs:label "瓏首"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 110 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 137 ;
+    seer:hasTypeCombination seer:tc_18 ;
+    seer:seerapiId "4874" .
+
+seer:pet_4875 a seer:Pet ;
+    rdfs:label "永烬劫炎·上古炎兽"@zh ;
+    seer:baseAtk 151 ;
+    seer:baseDef 120 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 120 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_3 ;
+    seer:seerapiId "4875" .
+
+seer:pet_4876 a seer:Pet ;
+    rdfs:label "方术·悠悠"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 138 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_12 ;
+    seer:seerapiId "4876" .
+
+seer:pet_4879 a seer:Pet ;
+    rdfs:label "阿塔塔"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 110 ;
+    seer:baseHp 173 ;
+    seer:baseSpAtk 140 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_12 ;
+    seer:seerapiId "4879" .
+
+seer:pet_4881 a seer:Pet ;
+    rdfs:label "阿拿拿"@zh ;
+    seer:baseAtk 135 ;
+    seer:baseDef 105 ;
+    seer:baseHp 160 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_7 ;
+    seer:seerapiId "4881" .
+
+seer:pet_4882 a seer:Pet ;
+    rdfs:label "阿波波"@zh ;
+    seer:baseAtk 145 ;
+    seer:baseDef 110 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_11 ;
+    seer:seerapiId "4882" .
+
+seer:pet_4885 a seer:Pet ;
+    rdfs:label "灰蛾"@zh ;
+    seer:baseAtk 147 ;
+    seer:baseDef 108 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 137 ;
+    seer:hasTypeCombination seer:tc_225 ;
+    seer:seerapiId "4885" .
+
+seer:pet_4886 a seer:Pet ;
+    rdfs:label "阿华华"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 111 ;
+    seer:baseHp 174 ;
+    seer:baseSpAtk 136 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_1 ;
+    seer:seerapiId "4886" .
+
+seer:pet_4887 a seer:Pet ;
+    rdfs:label "托勒斯"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 110 ;
+    seer:baseHp 171 ;
+    seer:baseSpAtk 142 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 137 ;
+    seer:hasTypeCombination seer:tc_20 ;
+    seer:seerapiId "4887" .
+
+seer:pet_4889 a seer:Pet ;
+    rdfs:label "初诞之薇"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 107 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 130 ;
+    seer:baseSpDef 107 ;
+    seer:baseSpd 121 ;
+    seer:hasTypeCombination seer:tc_20 ;
+    seer:seerapiId "4889" .
+
+seer:pet_4890 a seer:Pet ;
+    rdfs:label "B-12"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 117 ;
+    seer:baseHp 175 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 117 ;
+    seer:baseSpd 126 ;
+    seer:hasTypeCombination seer:tc_37 ;
+    seer:seerapiId "4890" .
+
+seer:pet_4892 a seer:Pet ;
+    rdfs:label "迪利吉"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 107 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 137 ;
+    seer:baseSpDef 107 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_49 ;
+    seer:seerapiId "4892" .
+
+seer:pet_4893 a seer:Pet ;
+    rdfs:label "摩耶"@zh ;
+    seer:baseAtk 134 ;
+    seer:baseDef 105 ;
+    seer:baseHp 162 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 124 ;
+    seer:hasTypeCombination seer:tc_8 ;
+    seer:seerapiId "4893" .
+
+seer:pet_4894 a seer:Pet ;
+    rdfs:label "安瑟伦"@zh ;
+    seer:baseAtk 147 ;
+    seer:baseDef 109 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 109 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_13 ;
+    seer:seerapiId "4894" .
+
+seer:pet_4896 a seer:Pet ;
+    rdfs:label "朝圣者"@zh ;
+    seer:baseAtk 135 ;
+    seer:baseDef 105 ;
+    seer:baseHp 160 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 105 ;
+    seer:baseSpd 125 ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "4896" .
+
+seer:pet_4897 a seer:Pet ;
+    rdfs:label "西蒙妮"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 110 ;
+    seer:baseHp 170 ;
+    seer:baseSpAtk 139 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_33 ;
+    seer:seerapiId "4897" .
+
+seer:pet_4898 a seer:Pet ;
+    rdfs:label "教皇"@zh ;
+    seer:baseAtk 135 ;
+    seer:baseDef 120 ;
+    seer:baseHp 175 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 120 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_37 ;
+    seer:seerapiId "4898" .
+
+seer:pet_4901 a seer:Pet ;
+    rdfs:label "特维耶"@zh ;
+    seer:baseAtk 149 ;
+    seer:baseDef 111 ;
+    seer:baseHp 160 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_11 ;
+    seer:seerapiId "4901" .
+
+seer:pet_4902 a seer:Pet ;
+    rdfs:label "莱布缇"@zh ;
+    seer:baseAtk 141 ;
+    seer:baseDef 112 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_12 ;
+    seer:seerapiId "4902" .
+
+seer:pet_4903 a seer:Pet ;
+    rdfs:label "帝录天锋"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 143 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_57 ;
+    seer:seerapiId "4903" .
+
+seer:pet_4904 a seer:Pet ;
+    rdfs:label "小珍妮"@zh ;
+    seer:baseAtk 143 ;
+    seer:baseDef 113 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 113 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "4904" .
+
+seer:pet_4905 a seer:Pet ;
+    rdfs:label "西西弗"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 104 ;
+    seer:baseHp 176 ;
+    seer:baseSpAtk 148 ;
+    seer:baseSpDef 104 ;
+    seer:baseSpd 138 ;
+    seer:hasTypeCombination seer:tc_9 ;
+    seer:seerapiId "4905" .
+
+seer:pet_4908 a seer:Pet ;
+    rdfs:label "蕊沃尔"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 114 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 144 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_3 ;
+    seer:seerapiId "4908" .
+
+seer:pet_4915 a seer:Pet ;
+    rdfs:label "西曼德妮"@zh ;
+    seer:hasTypeCombination seer:tc_16 ;
+    seer:seerapiId "4915" .
+
+seer:pet_4916 a seer:Pet ;
+    rdfs:label "若兰"@zh ;
+    seer:baseAtk 144 ;
+    seer:baseDef 109 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 109 ;
+    seer:baseSpd 137 ;
+    seer:hasTypeCombination seer:tc_87 ;
+    seer:seerapiId "4916" .
+
+seer:pet_4917 a seer:Pet ;
+    rdfs:label "影行者"@zh ;
+    seer:baseAtk 153 ;
+    seer:baseDef 108 ;
+    seer:baseHp 160 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 108 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_48 ;
+    seer:seerapiId "4917" .
+
+seer:pet_4919 a seer:Pet ;
+    rdfs:label "卡鲁维德"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 114 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_226 ;
+    seer:seerapiId "4919" .
+
+seer:pet_4920 a seer:Pet ;
+    rdfs:label "弗勒克斯"@zh ;
+    seer:hasTypeCombination seer:tc_86 ;
+    seer:seerapiId "4920" .
+
+seer:pet_4922 a seer:Pet ;
+    rdfs:label "墟婆"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 115 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 135 ;
+    seer:baseSpDef 115 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_112 ;
+    seer:seerapiId "4922" .
+
+seer:pet_4925 a seer:Pet ;
+    rdfs:label "米罗博士"@zh ;
+    seer:baseAtk 146 ;
+    seer:baseDef 117 ;
+    seer:baseHp 162 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 117 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_21 ;
+    seer:seerapiId "4925" .
+
+seer:pet_4927 a seer:Pet ;
+    rdfs:label "超级噗纽"@zh ;
+    seer:baseAtk 133 ;
+    seer:baseDef 114 ;
+    seer:baseHp 173 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_126 ;
+    seer:seerapiId "4927" .
+
+seer:pet_4929 a seer:Pet ;
+    rdfs:label "鬼地行者"@zh ;
+    seer:baseAtk 133 ;
+    seer:baseDef 120 ;
+    seer:baseHp 172 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 120 ;
+    seer:baseSpd 120 ;
+    seer:hasTypeCombination seer:tc_96 ;
+    seer:seerapiId "4929" .
+
+seer:pet_4932 a seer:Pet ;
+    rdfs:label "工程型TOH"@zh ;
+    seer:baseAtk 138 ;
+    seer:baseDef 114 ;
+    seer:baseHp 164 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 135 ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "4932" .
+
+seer:pet_4935 a seer:Pet ;
+    rdfs:label "苔岩·磐岳"@zh ;
+    seer:baseAtk 120 ;
+    seer:baseDef 130 ;
+    seer:baseHp 165 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 130 ;
+    seer:baseSpd 120 ;
+    seer:hasTypeCombination seer:tc_7 ;
+    seer:seerapiId "4935" .
+
+seer:pet_4937 a seer:Pet ;
+    rdfs:label "星光·雷纳多"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 114 ;
+    seer:baseHp 171 ;
+    seer:baseSpAtk 141 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 130 ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "4937" .
+
+seer:pet_4938 a seer:Pet ;
+    rdfs:label "塞壬斯"@zh ;
+    seer:baseAtk 129 ;
+    seer:baseDef 111 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 111 ;
+    seer:baseSpd 133 ;
+    seer:hasTypeCombination seer:tc_36 ;
+    seer:seerapiId "4938" .
+
+seer:pet_4940 a seer:Pet ;
+    rdfs:label "王座守卫·古亚尼斯"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 114 ;
+    seer:baseHp 176 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 126 ;
+    seer:hasTypeCombination seer:tc_80 ;
+    seer:seerapiId "4940" .
+
+seer:pet_4943 a seer:Pet ;
+    rdfs:label "瑞特拉尼"@zh ;
+    seer:baseAtk 130 ;
+    seer:baseDef 118 ;
+    seer:baseHp 175 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 118 ;
+    seer:baseSpd 124 ;
+    seer:hasTypeCombination seer:tc_7 ;
+    seer:seerapiId "4943" .
+
+seer:pet_4948 a seer:Pet ;
+    rdfs:label "亚巴兰托"@zh ;
+    seer:baseAtk 133 ;
+    seer:baseDef 120 ;
+    seer:baseHp 167 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 114 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_47 ;
+    seer:seerapiId "4948" .
+
+seer:pet_4951 a seer:Pet ;
+    rdfs:label "维德弗尼尔"@zh ;
+    seer:baseAtk 144 ;
+    seer:baseDef 130 ;
+    seer:baseHp 130 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 130 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_53 ;
+    seer:seerapiId "4951" .
+
+seer:pet_4955 a seer:Pet ;
+    rdfs:label "霍努努"@zh ;
+    seer:baseAtk 144 ;
+    seer:baseDef 110 ;
+    seer:baseHp 167 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_66 ;
+    seer:seerapiId "4955" .
+
+seer:pet_4957 a seer:Pet ;
+    rdfs:label "凯亚"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 114 ;
+    seer:baseHp 166 ;
+    seer:baseSpAtk 147 ;
+    seer:baseSpDef 106 ;
+    seer:baseSpd 132 ;
+    seer:hasTypeCombination seer:tc_102 ;
+    seer:seerapiId "4957" .
+
+seer:pet_4960 a seer:Pet ;
+    rdfs:label "塔尼瓦"@zh ;
+    seer:baseAtk 146 ;
+    seer:baseDef 110 ;
+    seer:baseHp 168 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 131 ;
+    seer:hasTypeCombination seer:tc_73 ;
+    seer:seerapiId "4960" .
+
+seer:pet_4964 a seer:Pet ;
+    rdfs:label "伊娜"@zh ;
+    seer:baseAtk 70 ;
+    seer:baseDef 112 ;
+    seer:baseHp 163 ;
+    seer:baseSpAtk 144 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 134 ;
+    seer:hasTypeCombination seer:tc_54 ;
+    seer:seerapiId "4964" .
+
+seer:pet_4965 a seer:Pet ;
+    rdfs:label "沙罗摩奥"@zh ;
+    seer:baseAtk 140 ;
+    seer:baseDef 108 ;
+    seer:baseHp 160 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 112 ;
+    seer:baseSpd 145 ;
+    seer:hasTypeCombination seer:tc_101 ;
+    seer:seerapiId "4965" .
+
+seer:pet_4968 a seer:Pet ;
+    rdfs:label "瓦坎"@zh ;
+    seer:baseAtk 147 ;
+    seer:baseDef 110 ;
+    seer:baseHp 162 ;
+    seer:baseSpAtk 70 ;
+    seer:baseSpDef 110 ;
+    seer:baseSpd 136 ;
+    seer:hasTypeCombination seer:tc_60 ;
+    seer:seerapiId "4968" .
+
+seer:pet_50 a seer:Pet ;
+    rdfs:label "阿克希亚"@zh ;
+    seer:hasTypeCombination seer:tc_9 ;
+    seer:seerapiId "50" ;
+    rdfs:comment "别名: 阿克西亚"@zh ;
+    skos:altLabel "阿克西亚"@zh .
+
+seer:pet_5000 a seer:Pet ;
+    rdfs:label "圣灵谱尼"@zh ;
+    seer:hasTypeCombination seer:tc_223 ;
+    seer:seerapiId "5000" ;
+    rdfs:comment "神灵谱尼即圣灵谱尼；同已知 5000 | 别名: 圣灵谱尼/神灵谱尼"@zh ;
+    skos:altLabel "神灵谱尼"@zh .
+
+seer:pet_518 a seer:Pet ;
+    rdfs:label "奈加恩"@zh ;
+    seer:hasTypeCombination seer:tc_15 ;
+    seer:seerapiId "518" ;
+    rdfs:comment "别名: 奈加恩"@zh .
+
+seer:pet_761 a seer:Pet ;
+    rdfs:label "库比"@zh ;
+    seer:hasTypeCombination seer:tc_2 ;
+    seer:seerapiId "761" .
+
+seer:pet_782 a seer:Pet ;
+    rdfs:label "阿克诺亚"@zh ;
+    seer:hasTypeCombination seer:tc_9 ;
+    seer:seerapiId "782" ;
+    rdfs:comment "别名: 阿克诺亚"@zh .
+
+seer:pet_82 a seer:Pet ;
+    rdfs:label "帕尔西丝"@zh ;
+    seer:baseAtk 100 ;
+    seer:baseDef 82 ;
+    seer:baseHp 84 ;
+    seer:baseSpAtk 106 ;
+    seer:baseSpDef 80 ;
+    seer:baseSpd 91 ;
+    seer:hasTypeCombination seer:tc_6 ;
+    seer:seerapiId "82" .
+
+seer:pet_93 a seer:Pet ;
+    rdfs:label "希拉"@zh ;
+    seer:baseAtk 90 ;
+    seer:baseDef 80 ;
+    seer:baseHp 79 ;
+    seer:baseSpAtk 103 ;
+    seer:baseSpDef 90 ;
+    seer:baseSpd 102 ;
+    seer:hasTypeCombination seer:tc_5 ;
+    seer:seerapiId "93" .
+
+# --- 嘲风 魂印 2058：整条 PVE 无效（2026-11-25，单独处理）---------------
+# 依据：原文按 | 分三段，三段自身都没有标记，末尾单独一段是「（boss无效）」。
+# 位置规则：标记单独成段且位于末尾 → 作用于整条，不是只作用于最后一段。
+# 结论：嘲风在 PVE 里不能用这个魂印（风龙结/反转强化/焚烬全失效）；
+#       它在这类关里的价值来自技能「天叩·千钧一发」的额外 1000 固伤。
+seer:soulmark_2058
+    seer:pveEffective false ;
+    rdfs:comment "PVE 整条无效。原文末尾单独一段「（boss无效）」作用于整条（标记单独成段且位于末尾＝整条级），不是分段标记；风龙结计数/反转强化/焚烬在 PVE 全部不生效。嘲风在 PVE 靠技能「天叩·千钧一发」的额外 1000 固伤，不靠魂印。"@zh .
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pve: <http://example.org/seer/pve#> .
+
+# --- 站场技：精灵靠哪个技能站住（2026-11-25，用户：希可洛靠奇镰解放站场）----
+# 现状问题：本体能说「希可洛会哪些技能」，但说不出「站场按哪个」。
+# 技能够多不代表 AI 知道该按哪一个；所以给精灵加一个明确的站场技 + 用法说明。
+seer:sustainSkill a owl:ObjectProperty ;
+    rdfs:label "站场技（这一关/这套打法靠它站住）"@zh ;
+    rdfs:domain seer:Pet ;
+    rdfs:range seer:Skill .
+
+seer:sustainNote a owl:DatatypeProperty ;
+    rdfs:label "站场用法说明"@zh ;
+    rdfs:domain seer:Pet ;
+    rdfs:range xsd:string .
+
+seer:pet_4487 pve:hasRole pve:磨血站场 ;
+    seer:sustainSkill seer:skill_36481 ;
+    seer:sustainNote "就一个动作：一直按奇镰解放(36481，PP3，200威力，必中)。输出与续航是同一个技能——消除对手回合类效果+消除对手能力提升+解除自身能力下降+回满自身体力+回满全部PP，五条全 boss有效；PP 只有 3 但每次命中就回满，所以站着一直按即可。唯一例外是关卡带「免疫威力高于100」时它的红伤被免，那种关才另配输出。"@zh .
+
+# --- 同样会奇镰解放的：卡莎 / 小镰（2026-11-25，用户：同样拥有奇镰解放的也是）----
+# 奇镰解放把输出与续航合在一个技能里（回满体力+回满全部PP），所以凡是会它的精灵，
+# PVE 里的站场方式就是「一直按它磨」，不需要另编技能循环。
+seer:pet_4484 seer:sustainSkill seer:skill_36481 ;
+    seer:sustainNote "一样靠奇镰解放一直磨：回满体力+回满全部PP+消回合+消强+解自身下降，输出与续航同一技能；卡莎的特防体配置就是把这份回满撑得更久。"@zh .
+seer:pet_4488 seer:sustainSkill seer:skill_36481 ;
+    seer:sustainNote "一样靠奇镰解放一直磨：200威力必中，打完回满体力并回满全部PP，所以能一直站；不需要别的技能循环。"@zh .

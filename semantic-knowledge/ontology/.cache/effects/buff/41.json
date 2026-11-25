@@ -1,0 +1,1 @@
+{"desc": "{0}回合内，受到物理攻击时有{1}%概率使对方中毒", "desc_tag": null, "hash": "10b3d34f", "icon": [14], "id": 41, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

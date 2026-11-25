@@ -1,0 +1,1 @@
+{"desc": "{roundnext[0]}自身攻击技能先制+{1}，自身攻击技能附加对手最大体力1/{2}的固定伤害", "desc_tag": "roundnext", "hash": "4d1b5773", "icon": [6], "id": 2573, "tag": "先制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

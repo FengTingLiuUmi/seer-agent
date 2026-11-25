@@ -1,0 +1,1 @@
+{"bonus": null, "hash": "a2feeaf9", "id": 100040, "item": {"id": 100040, "url": "https://api.seerapi.com/v1/item/100040"}, "name": "喷雾器", "occasion": null, "part_type": {"id": 0, "url": "https://api.seerapi.com/v1/equip_type/0"}, "pk_attribute": {"pk_atk": 2, "pk_fire_range": 200, "pk_hp": 20}, "speed": 0, "suit": null, "x_position": -18, "y_position": 63}

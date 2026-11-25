@@ -1,0 +1,144 @@
+{
+ "doc_id": "圣谕之风·岚#地狱",
+ "factor": "圣谕之风·岚",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4113,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "自然",
+   "boss_hp": 10000,
+   "traits": "先制+3; 220固伤; 受击>2000回满; 消强",
+   "mech": [
+    "heal",
+    "clearBuff",
+    "firstStrike",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "鬼神吕布先3强攻（漆黑套）"
+   ],
+   "pets": [
+    "鬼神吕布"
+   ],
+   "why": "Boss 核心是受击超2000回满与消强，爆发超过阈值反而自摸、堆强化又被清，故需压单段伤害速磨；鬼神吕布用先制+3技能应对 Boss 的先制+3抢先出手，把每段伤害控制在2000以内避免触发回满，逐段磨掉10000血，不靠会被消掉的强化。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4371,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "混沌龙",
+   "boss_hp": 12000,
+   "traits": "先制+3; 220固伤; 必暴; 裸伤上限1000; 消强",
+   "mech": [
+    "rawCap",
+    "clearBuff",
+    "bossCrit",
+    "firstStrike",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "星光·丽莎布布先3+150站场（耀世套）"
+   ],
+   "pets": [
+    "星光·丽莎布布"
+   ],
+   "why": "Boss 每回合必暴+消强又带裸伤上限1000，既顶不住暴击也堆不起强化、爆发还被1000上限卡住，只能站场磨；星光·丽莎布布配耀世套减伤扛住『刀刀暴击』，用先3/150技能卡1000裸伤稳步消血，绕开消强对强化流的打击。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4187,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "远古神秘",
+   "boss_hp": 14000,
+   "traits": "必先; 封属; 只吃先制; 40%害怕控; 消强",
+   "mech": [
+    "onlyFirstStrike",
+    "clearBuff",
+    "control",
+    "firstStrike",
+    "sealAttr"
+   ],
+   "strategies": [
+    "圣灵谱尼150第五站场（耀世套）"
+   ],
+   "pets": [
+    "圣灵谱尼"
+   ],
+   "why": "封属让属性技能失效只能纯攻击，只吃先制意味着只有先制攻击技能才打得动，必先则决定谱尼被动挨打；圣灵谱尼切150/第五攻击技出手，靠耀世套减伤扛住必先节奏与40%害怕控，消强由不叠强化的站场思路规避。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4194,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "圣灵超能",
+   "boss_hp": 16000,
+   "traits": "必先; 封属; 必定闪避; 全属性+1; 50%免疫红伤粉伤",
+   "mech": [
+    "dodge",
+    "selfBuff",
+    "firstStrike",
+    "sealAttr"
+   ],
+   "strategies": [
+    "帝皇之御/克罗/草王自爆 + 月华/眠降·玛缇娜强攻（银翼套）"
+   ],
+   "pets": [
+    "帝皇之御",
+    "克罗",
+    "草王",
+    "月华",
+    "眠降·玛缇娜"
+   ],
+   "why": "必先+封属+必定闪避+全属性+1，还50%免疫红粉伤，只有一波秒才稳：帝皇之御等自爆『守御八方』是攻击技能不受封属，提供后续必先+必暴——必暴即伪必中，足以覆盖必定闪避；月华/眠降·玛缇娜借银翼增伤强攻，趁未免疫回合收割满血。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4376,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "圣灵自然",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 受击疲惫控; 清PP; 40%复活; 吸血200",
+   "mech": [
+    "clearPP",
+    "twoLife",
+    "heal",
+    "firstStrike",
+    "sealAttr"
+   ],
+   "strategies": [
+    "潘克多斯+蒂朵+斯克鲁恩+西塔伦削强增伤，月照星魂+魔钰强攻（银翼套）"
+   ],
+   "pets": [
+    "潘克多斯",
+    "蒂朵",
+    "斯克鲁恩",
+    "西塔伦",
+    "月照星魂",
+    "魔钰"
+   ],
+   "why": "必先+封属+受击疲惫控+清PP+吸血都指向一波速杀，属性被封就用攻击向增伤链（潘克多斯、蒂朵、斯克鲁恩、西塔伦削强增伤），月照星魂+魔钰接银翼强攻带走；40%复活由两名强攻手补刀、多段输出兜底。"
+  }
+ ],
+ "tids": [
+  433,
+  2121
+ ],
+ "note": "仅截图"
+}

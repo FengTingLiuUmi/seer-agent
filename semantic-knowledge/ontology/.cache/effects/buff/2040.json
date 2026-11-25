@@ -1,0 +1,1 @@
+{"desc": "自身攻击技能命中后，有{0}的概率给对手施加衰弱", "desc_tag": null, "hash": "d7ca8c05", "icon": [14], "id": 2040, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

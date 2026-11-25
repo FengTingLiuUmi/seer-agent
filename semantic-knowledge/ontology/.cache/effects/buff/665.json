@@ -1,0 +1,1 @@
+{"desc": "{0}回合内若对手使用属性技能则命中前令对手所有技能随机降低1-3点PP值", "desc_tag": null, "hash": "2da1c43e", "icon": [30], "id": 665, "tag": "减PP", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

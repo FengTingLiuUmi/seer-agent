@@ -1,0 +1,1 @@
+{"desc": "回合开始时若对手处于沉默状态则当回合自身免疫对手造成的致命一击伤害", "desc_tag": null, "hash": "6e714429", "icon": [25], "id": 4097, "tag": "免伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

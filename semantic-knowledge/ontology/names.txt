@@ -1,0 +1,11 @@
+3809  name=龙神哈莫  total=750
+3022  name=王之哈莫  total=700
+3046  name=战龙哈莫  total=700
+216  name=哈莫雷特  total=626
+3060  name=盖世张飞  total=662
+2530  name=万人敌张飞  total=625
+4048  name=幻境界神  total=735
+3460  name=幻境界皇  total=680
+3026  name=幻境界王  total=658
+2933  name=泰坦  total=700
+3516  name=混沌地王莱茵哈特  total=715

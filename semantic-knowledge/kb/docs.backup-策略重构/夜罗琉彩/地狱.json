@@ -1,0 +1,151 @@
+{
+ "doc_id": "夜罗琉彩#地狱",
+ "factor": "夜罗琉彩",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4291,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "次元",
+   "boss_hp": 8000,
+   "traits": "必先; 减伤16.7%; 220固伤; 50%高级麻痹控; 我方暴击则死亡",
+   "mech": [
+    "control",
+    "firstStrike",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "免控强攻拼脸不暴击 / 圣萨单挑 / 小草王+圣王萨格罗斯先3"
+   ],
+   "pets": [
+    "幻影蝶",
+    "混沌魔使",
+    "圣萨",
+    "圣王萨格罗斯"
+   ],
+   "why": "Boss必先+50%高级麻痹控会先手把队伍控死，必须用免控(免疫异常)的强攻/单挑手顶住；又因「我方暴击则死亡」，这条不能走表姐必暴强攻，只能拼不暴击的普攻伤害，再由圣萨等单挑手慢慢磨220固伤。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4417,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "飞行神秘",
+   "boss_hp": 10000,
+   "traits": "必先; 减伤16.7%; 220固伤; 50%高级害怕控; 我方暴击则死亡",
+   "mech": [
+    "control",
+    "firstStrike",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "索伦森+星皇单挑 / 四九圣尊站场 / 压体必先强攻"
+   ],
+   "pets": [
+    "索伦森",
+    "四九圣尊",
+    "鬼神吕布",
+    "魔钰"
+   ],
+   "why": "同为必先+控场(50%高级害怕)加「我方暴击则死亡」，因此同样要免控且刻意不触发暴击；索伦森+星皇单挑、四九圣尊站场都靠自身免控与回复顶过220固伤，压体必先强攻则是抢伤害而非靠必暴。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4438,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "飞行电",
+   "boss_hp": 12000,
+   "traits": "减伤16.7%; 220固伤; 技能命中前交换属性; 吸强; 断回合",
+   "mech": [
+    "stealBuff",
+    "breakTurn",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "四九圣尊/加尔鲁特站场 / 幻境界皇+次元石"
+   ],
+   "pets": [
+    "四九圣尊",
+    "加尔鲁特",
+    "幻境界皇"
+   ],
+   "why": "Boss命中前会交换属性，还吸强、断回合，叠强化会白给，220固伤又持续压血，所以用四九圣尊/加尔鲁特靠吸血+减伤站场磨最稳；幻境界皇方案则是换属性后带次元石打稳定克制红伤，避开被吸强。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4454,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "虚空邪灵",
+   "boss_hp": 15000,
+   "traits": "减伤33.3%; 真伤吸血1000; 断回合; 消强",
+   "mech": [
+    "heal",
+    "clearBuff",
+    "breakTurn",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "斯克鲁恩+必先大队带次元石强攻 / 帝皇之御自爆+强攻"
+   ],
+   "pets": [
+    "斯克鲁恩",
+    "月照星魂",
+    "典韦",
+    "帝皇之御"
+   ],
+   "why": "真伤吸血1000意味着拖得越久血被吸得越多，消强+断回合又让强化站不住，核心是速杀不是磨；帝皇之御自爆给全队必先+必暴，接带次元石的强攻手一波秒，斯克鲁恩那路同样是先把伤害堆起来再必先强攻。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4472,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "混沌次元",
+   "boss_hp": 18000,
+   "traits": "减伤33.3%; 真伤吸血300; 两命; 复活后全属性+1; 每回合我方使用技能后全属性-1",
+   "mech": [
+    "twoLife",
+    "heal",
+    "selfBuff",
+    "debuff",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "帝皇之御自爆+重生之翼+爆攻强攻手 / 圣灵谱尼单挑"
+   ],
+   "pets": [
+    "帝皇之御",
+    "重生之翼",
+    "圣华",
+    "乌拉",
+    "喵佐",
+    "帕尔妮兹",
+    "圣灵谱尼"
+   ],
+   "why": "两命+复活后全属性+1+每回合用技能后我方全属性-1，决定了叠强化会被越磨越亏，只能分阶段爆发；帝皇之御自爆给必先必暴、先打掉第一命，重生之翼保命/补刀，再上爆攻手收第二命；圣灵谱尼单挑则是靠自身解弱与回复硬磨。"
+  }
+ ],
+ "tids": [
+  2142
+ ],
+ "note": "无正文数据"
+}

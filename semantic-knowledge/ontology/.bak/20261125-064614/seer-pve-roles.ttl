@@ -1,0 +1,160 @@
+@prefix pve: <http://example.org/seer/pve#> .
+@prefix seer: <http://example.org/seer#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# ---- 站场的细分机制（子类；一个精灵可挂多个）----
+# 「站场」回答阵营层面的"能不能扛"，子类回答"靠什么扛"，这样机制差异不会退化成一个笼统标签。
+pve:免伤站场 a owl:Class ; rdfs:subClassOf pve:tank ;
+    rdfs:label "站场·免伤循环"@zh ;
+    rdfs:comment "靠每回合可用技能给出「免疫下1次攻击」把 Boss 的一回合输出吃掉，形成 1 换 1 的免伤循环。"@zh .
+pve:护盾站场 a owl:Class ; rdfs:subClassOf pve:tank ;
+    rdfs:label "站场·护盾循环"@zh ;
+    rdfs:comment "靠每回合/登场刷新护盾（固定数值或按体力）吸收伤害。"@zh .
+pve:高防站场 a owl:Class ; rdfs:subClassOf pve:tank ;
+    rdfs:label "站场·高防吸血"@zh ;
+    rdfs:comment "靠高双防与阶段吸血/回血硬扛，不吃免伤与护盾。"@zh .
+pve:磨血站场 a owl:Class ; rdfs:subClassOf pve:tank ;
+    rdfs:label "站场·百分比磨血"@zh ;
+    rdfs:comment "输出靠百分比/固定伤害，伤害与自身攻击面板无关，因此不怕吸强、封属、全属性-1。"@zh .
+
+seer:pet_3522 pve:hasRole pve:免伤站场,
+        pve:磨血站场 ;
+    rdfs:comment "次元。PVE 真实定位是「免伤站场」而非「百分比输出」：靠 闪光次元击/暴政统治者 每回合给出「免疫下1次攻击」，吃掉 Boss 的出手来站场；魂印 831 的 1/3 体力回血与等量百分比，在高数值 Boss（地狱常 1.2万~1.8万血）面前只占 2%~3%，输出仍需靠攻击技。结论依据：用户实战口径 2026-11-25。"@zh ;
+    skos:altLabel "史莱姆" .
+
+seer:pet_12 pve:hasRole pve:firstStrike,
+        pve:reflect .
+
+seer:pet_2499 pve:hasRole pve:support .
+
+seer:pet_2735 pve:hasRole pve:support .
+
+seer:pet_2807 pve:hasRole pve:attacker .
+
+seer:pet_2933 pve:hasRole pve:attacker .
+
+seer:pet_3031 pve:hasRole pve:attacker .
+
+seer:pet_3118 pve:hasRole pve:support .
+
+seer:pet_3141 pve:hasRole pve:finisher .
+
+seer:pet_3194 pve:hasRole pve:firstStrike,
+        pve:support .
+
+seer:pet_3221 pve:hasRole pve:support,
+        pve:tank .
+
+seer:pet_3239 pve:hasRole pve:attacker .
+
+seer:pet_3291 pve:hasRole pve:support .
+
+seer:pet_3322 pve:hasRole pve:support .
+
+seer:pet_3329 pve:hasRole pve:reflect .
+
+seer:pet_3390 pve:hasRole pve:attacker .
+
+seer:pet_3406 pve:hasRole pve:attacker,
+        pve:firstStrike,
+        pve:support .
+
+seer:pet_3414 pve:hasRole pve:support .
+
+seer:pet_3437 pve:hasRole pve:attacker .
+
+seer:pet_3438 pve:hasRole pve:attacker .
+
+seer:pet_3512 pve:hasRole pve:support .
+
+seer:pet_3517 pve:hasRole pve:attacker,
+        pve:firstStrike .
+
+seer:pet_3540 pve:hasRole pve:support .
+
+seer:pet_3561 pve:hasRole pve:attacker,
+        pve:firstStrike .
+
+seer:pet_3567 pve:hasRole pve:attacker .
+
+seer:pet_3594 pve:hasRole pve:attacker .
+
+seer:pet_3613 pve:hasRole pve:support .
+
+seer:pet_3711 pve:hasRole pve:attacker .
+
+seer:pet_3844 pve:hasRole pve:attacker .
+
+seer:pet_3866 pve:hasRole pve:attacker .
+
+seer:pet_3894 pve:hasRole pve:support,
+        pve:tank .
+
+seer:pet_3926 pve:hasRole pve:attacker .
+
+seer:pet_3938 pve:hasRole pve:attacker .
+
+seer:pet_3986 pve:hasRole pve:support .
+
+seer:pet_4146 pve:hasRole pve:attacker,
+        pve:support .
+
+seer:pet_4223 pve:hasRole pve:attacker .
+
+seer:pet_4310 pve:hasRole pve:attacker .
+
+seer:pet_4321 pve:hasRole pve:attacker .
+
+seer:pet_4344 pve:hasRole pve:support .
+
+seer:pet_4462 pve:hasRole pve:attacker,
+        pve:support,
+        pve:tank .
+
+seer:pet_4463 pve:hasRole pve:support .
+
+seer:pet_4484 pve:hasRole pve:tank .
+
+seer:pet_4487 pve:hasRole pve:support .
+
+seer:pet_4628 pve:hasRole pve:attacker,
+        pve:support .
+
+seer:pet_4636 pve:hasRole pve:firstStrike,
+        pve:support .
+
+seer:pet_4721 pve:hasRole pve:support .
+
+seer:pet_4732 pve:hasRole pve:support,
+        pve:tank .
+
+seer:pet_4797 pve:hasRole pve:attacker .
+
+seer:pet_4871 pve:hasRole pve:attacker .
+
+seer:pet_4912 pve:hasRole pve:attacker,
+        pve:support .
+
+
+# ---- 从 seer-factor:playsRole 迁移（2026-11-25）----
+seer:pet_2965 pve:hasRole pve:firstStrike, pve:support .
+seer:pet_3022 pve:hasRole pve:attacker .
+seer:pet_306 pve:hasRole pve:reflect, pve:tank .
+seer:pet_309 pve:hasRole pve:attacker, pve:firstStrike .
+seer:pet_3329 pve:hasRole pve:attacker .
+seer:pet_3396 pve:hasRole pve:firstStrike, pve:support .
+seer:pet_3463 pve:hasRole pve:attacker .
+seer:pet_3512 pve:hasRole pve:reflect .
+seer:pet_4377 pve:hasRole pve:support .
+seer:pet_5000 pve:hasRole pve:attacker .
+
+# --- 补刀（finisher）：收尾型角色（2026-11-25，用户指出哈迪斯定位有问题）--------
+# 与 attacker 的区别：它不负责前面把血打下去，只负责最后一刀；
+# 依据通常是魂印的「首次致命留1血 + 下回合先制」或技能里的「已损体力百分比」。
+pve:finisher a owl:Class ;
+    rdfs:subClassOf pve:Role ;
+    rdfs:label "补刀（收尾/免死）"@zh ;
+    skos:altLabel "补刀"@zh, "收尾"@zh ;
+    rdfs:comment "只负责最后一刀的定位：靠残留1血/免死、已损体力百分比、先制收尾，不是主力输出。"@zh .

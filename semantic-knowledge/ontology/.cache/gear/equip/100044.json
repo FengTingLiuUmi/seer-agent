@@ -1,0 +1,1 @@
+{"bonus": null, "hash": "8b87351e", "id": 100044, "item": {"id": 100044, "url": "https://api.seerapi.com/v1/item/100044"}, "name": "火焰喷射器", "occasion": null, "part_type": {"id": 0, "url": "https://api.seerapi.com/v1/equip_type/0"}, "pk_attribute": {"pk_atk": 2, "pk_fire_range": 200, "pk_hp": 20}, "speed": 0, "suit": null, "x_position": 6, "y_position": 61}

@@ -1,0 +1,1 @@
+{"desc": "{roundnext[0]}自身攻击有{1}%的概率使对手随机进入害怕、麻痹、疲惫中的一种异常状态", "desc_tag": "roundnext", "hash": "f35410b5", "icon": [14], "id": 2653, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

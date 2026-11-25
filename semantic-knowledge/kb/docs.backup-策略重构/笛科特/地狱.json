@@ -1,0 +1,161 @@
+{
+ "doc_id": "笛科特#地狱",
+ "factor": "笛科特",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 3963,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "机械超能",
+   "traits": "必先; 封属; 300固伤; 消强; 全属性-1; 减伤16.7%",
+   "mech": [
+    "debuff",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "自爆+强攻手 / 漆黑套魔钰、潜隐灵蛇强攻 / 卡裸伤闪光皮神单挑"
+   ],
+   "pets": [
+    "帝皇之御",
+    "空灵之刃",
+    "邪灵主宰·摩哥斯",
+    "魔钰",
+    "潜隐灵蛇",
+    "闪光皮神"
+   ],
+   "why": "Boss 必先+封属，属性技能全被锁，且每回合 300 固伤、消强、全属性-1 持续磨血并拆我的强化/能力。核心反制是帝皇之御自爆「守御八方」：它是攻击技能、不受封属影响，给接下来两回合「必先+必暴」，让强攻手反超 Boss 必先、顶着减伤 16.7% 用增伤(漆黑套)一刀斩杀，避免拖入被固伤和弱化消耗的长局。魔钰、潜隐灵蛇走增伤强攻；闪光皮神卡裸伤单挑则是不靠强化、规避消强与全属性弱化的备选。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4306,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "机械超能",
+   "traits": "必先; 封属; 300固伤; 消强; 免疫并反弹暴击伤害; 30%暴击; 回血; 减伤16.7%",
+   "mech": [
+    "reflection",
+    "heal",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "斯克鲁恩粉伤公式 / 银翼套圣王萨格罗斯140强攻 / 银翼套魔钰+月照+时空强攻补刀"
+   ],
+   "pets": [
+    "斯克鲁恩",
+    "圣王萨格罗斯",
+    "魔钰",
+    "月照星魂",
+    "时空界皇",
+    "深渊狱神·哈迪斯"
+   ],
+   "why": "本关致命点在「免疫并反弹暴击伤害」：必暴红伤会被反射，所以放弃暴击一刀流——斯克鲁恩粉伤公式用固伤绕过暴击反弹；银翼套圣王萨格罗斯用 140 威力非暴击红伤硬打；魔钰+月照+时空多段补刀保证斩杀。30% 暴击、回血、消强都是拖局机制，须靠银翼套增伤突破减伤 16.7% 并速杀，避免被回血反超。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4012,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "机械超能",
+   "traits": "必先; 封属; 500固伤; 消强; 睡眠控; 减伤33.3%; 月亮",
+   "mech": [
+    "heal",
+    "clearBuff",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "漆黑套魔钰强攻 / 漆黑套格罗姆特带星皇强攻 / 卡裸伤冰冷王之哈莫单挑"
+   ],
+   "pets": [
+    "魔钰",
+    "格罗姆特",
+    "瀚宇星皇",
+    "王之哈莫",
+    "潜隐灵蛇"
+   ],
+   "why": "难点是睡眠控+月亮回血+500 固伤三重消耗：睡眠控要免控/抗性或用先手抢先；月亮会大量回血，必须控血或速杀；500 固伤+消强让站场掉血且强化白叠。魔钰、格罗姆特(带瀚宇星皇提供免控/续航)走漆黑套强攻速杀压制回血；冰冷王之哈莫卡裸伤单挑则靠冻伤等固伤磨、不依赖强化，扛住消强并磨过月亮。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4146,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "机械超能",
+   "traits": "必先; 封属; 500固伤; 吸强; 闪避; 清PP; 减伤33.3%; 回血",
+   "mech": [
+    "dodge",
+    "clearPP",
+    "heal",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "自爆+强攻手 / 卡裸伤冰冷王之哈莫单挑 / 卡裸伤卡莎单挑"
+   ],
+   "pets": [
+    "帝皇之御",
+    "王之哈莫",
+    "卡莎",
+    "闪光皮神",
+    "月华"
+   ],
+   "why": "Boss 高闪避，按规则用必暴(伪必中)即可覆盖、不必死磕必中——表姐自爆给必先+必暴让强攻手稳中并反超 Boss 必先；吸强会偷我强化，所以不叠强化、直接斩杀，避免被 500 固伤+清PP+回血拖垮。卡裸伤冰冷王之哈莫/卡莎单挑是不靠强化、靠固伤冻伤磨血以规避吸强，同时要处理清 PP 与回血。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4838,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "机械超能",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 500固伤; 吸强; 闪避; 免疫物攻; 减伤33.3%",
+   "mech": [
+    "immunePhysical",
+    "dodge",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "火潘+冰潘+表姐自爆+神圣龙鹰强攻 / 克罗送死+月华单挑 / 索比斯送死+千裳单挑"
+   ],
+   "pets": [
+    "潘克多斯",
+    "斯克鲁恩",
+    "帝皇之御",
+    "神圣龙鹰",
+    "月华",
+    "千裳"
+   ],
+   "why": "致命机制是免疫物攻(物攻红伤=0)，必须换特攻强攻手；高闪避同样用必暴(伪必中)覆盖，不必强求必中。火潘(潘克多斯)+冰潘(斯克鲁恩)打增伤铺垫，帝皇之御自爆给必先+必暴反超 Boss 必先并稳中，神圣龙鹰(特攻)完成 18000 血量的一刀斩杀，规避 500 固伤与吸强。克罗/索比斯送死后由月华、千裳(均特攻)站场单挑：特攻输出+必暴覆盖闪避、不叠强化防吸强，磨死 Boss。"
+  }
+ ]
+}

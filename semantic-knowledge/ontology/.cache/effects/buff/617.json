@@ -1,0 +1,1 @@
+{"desc": "{0}回合内每回合{1}%闪避对手攻击，若被对手攻击技能命中则随机附加{abst[2]}、{abst[3]}中的1种异常状态", "desc_tag": "abst", "hash": "9a0defa0", "icon": [16], "id": 617, "tag": "闪避|施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,1602 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>伊塔回溯型地狱（无表多表方案） - 因子脚本分享 -  雷小伊 - 赛尔号论坛 -  Powered by Discuz!</title>
+<link href="https://bbs.tiepi.top/thread-3313-1-1.html" rel="canonical" />
+<meta name="keywords" content="伊塔回溯型地狱（无表多表方案）" />
+<meta name="description" content="精灵ban：王哈，典韦、斯克鲁恩Boss特性：第一只boss10000血，机械战斗系5%概率造成5倍伤害，我方出手后被消强，，每回合300固伤，每回合随机弱化我方三项-1 第二只boss100 ... 伊塔回溯型地狱（无表多表方案） ,雷小伊 - 赛尔号论坛" />
+<meta name="generator" content="Discuz! X3.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2020 Tencent Cloud." />
+<meta name="MSSmartTagsPreventParsing" content="True" />
+<meta http-equiv="MSThemeCompatible" content="Yes" />
+<base href="https://bbs.tiepi.top/" /><link rel="stylesheet" type="text/css" href="data/cache/style_4_common.css?MVB" /><link rel="stylesheet" type="text/css" href="data/cache/style_4_forum_viewthread.css?MVB" /><!--[if IE]><link rel="stylesheet" type="text/css" href="data/cache/style_4_iefix.css?MVB" /><![endif]--><script src="./template/dbc_community_01/assets/js/lib/jquery/jquery.min.js?MVB" type="text/javascript"></script>
+<script src="./template/dbc_community_01/assets/js/lib/share/js/social-share.min.js?MVB" type="text/javascript"></script>
+<link rel="stylesheet" href="./template/dbc_community_01/assets/js/lib/share/css/share.min.css?MVB">
+<script src="./template/dbc_community_01/assets/js/lib/nprogress/nprogress.js?MVB" type="text/javascript"></script>
+<script type="text/javascript">var STYLEID = '4', STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'MVB', charset = 'utf-8', discuz_uid = '0', cookiepre = 'enVH_2132_', cookiedomain = '', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread', creditnotice = '1|雷小钻|,2|雷小币|,3|贡献点数|', defaultstyle = '', REPORTURL = 'aHR0cHM6Ly9iYnMudGllcGkudG9wL3RocmVhZC0zMzEzLTEtMS5odG1s', SITEURL = 'https://bbs.tiepi.top/', JSPATH = 'data/cache/', CSSPATH = 'data/cache/style_', DYNAMICURL = '';</script>
+<script src="data/cache/common.js?MVB" type="text/javascript"></script>
+<script src="./template/dbc_community_01/assets/js/lib/superslide/jquery.SuperSlide.2.1.3.js?MVB" type="text/javascript" charset="utf-8"></script>
+<script src="./template/dbc_community_01/assets/js/lib/lazyload/lazyload.min.js?MVB" type="text/javascript"></script>
+<script src="./template/dbc_community_01/assets/js/lib/sidebar/sidebar.min.js?MVB" type="text/javascript"></script>
+<script src="./template/dbc_community_01/assets/js/dchuang_common.js?MVB" type="text/javascript"></script>
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href='./template/dbc_community_01/assets/css/ie8_css.css?MVB'/>
+    <![endif]-->
+<meta name="application-name" content="雷小伊 - 赛尔号论坛" />
+<meta name="msapplication-tooltip" content="雷小伊 - 赛尔号论坛" />
+<meta name="msapplication-task" content="name=门户;action-uri=https://bbs.tiepi.top/portal.php;icon-uri=https://bbs.tiepi.top/static/image/common/portal.ico" /><meta name="msapplication-task" content="name=论坛;action-uri=https://bbs.tiepi.top/forum.php;icon-uri=https://bbs.tiepi.top/static/image/common/bbs.ico" />
+<link rel="archives" title="雷小伊 - 赛尔号论坛" href="https://bbs.tiepi.top/archiver/" />
+<script src="data/cache/forum.js?MVB" type="text/javascript"></script>
+</head>
+
+<body id="nv_forum" class="pg_viewthread" onkeydown="if(event.keyCode==27) return false;">
+<div id="append_parent"></div><div id="ajaxwaitid"></div>
+<div id="toptb" class="cl">
+<div class="wp">
+<div class="z"><a href="javascript:;"  onclick="setHomepage('https://bbs.tiepi.top/');">设为首页</a><a href="https://bbs.tiepi.top/"  onclick="addFavorite(this.href, '雷小伊 - 赛尔号论坛');return false;">收藏本站</a></div>
+<div class="y">
+</div>
+</div>
+</div>
+<div id="qmenu_menu" class="p_pop blk" style="display: none;">
+<div class="ptm pbw hm">
+请 <a href="javascript:;" class="xi2" onclick="lsSubmit()"><strong>登录</strong></a> 后使用快捷导航<br />没有账号？<a href="member.php?mod=register" class="xi2 xw1">立即注册</a>
+</div>
+<div id="fjump_menu" class="btda"></div></div><div class="wp a_h"><style>
+.vtl_view .avatar { height: 120px;width: 120px;overflow: hidden;border-radius: 5px;border: 1px solid #ccc;padding: 5px; }
+.vtl_view .avatar img { width: 100%;height: 100%;object-fit: cover;background: none;border: none;box-shadow: none;padding: 0px; }
+.vtl_view  .m.z div {  height: 120px;width: 120px;overflow: hidden;border-radius: 5px; }
+.lxyxx #nv  { width: 130px;height: 30px;line-height: 30px;text-align: center;margin: 5px 0 5px 15px;border-radius: 5px; }
+.lxyxx #nv a { color: #fff; }
+.lxyxx #nv a:hover { color: #000; }
+.lxyxx .tns  { border: 1px solid #ccc;padding: 5px 0;margin: 0 0 0 15px;width: 128px;border-radius: 5px; }
+.lxyxx .pil { margin: 5px 0 5px 15px; }
+.lxyxx .lxyxx_1 { border-radius: 5px;border: 1px solid #ccc; padding: 10px 0 10px 10px;width: 118px;height: 75px;}
+.lxyxx dt { width:55px; }
+.lxyxx dd { width:60px; }
+
+#mn_N2225 a {  color: #ffd992 !important; }
+</style></div><div id="hd" class="dbc_h">
+<div class="wp">
+<div class="dbc_ht cl"><h2 class="dbc_logo mtn">
+<a href="./" title="雷小伊 - 赛尔号论坛">
+<img src="template/dbc_community_01/assets/images/logo.png" alt="雷小伊 - 赛尔号论坛" class="boardlogo" id="boardlogo" border="0" /></a>
+</h2><script src="data/cache/logging.js?MVB" type="text/javascript"></script>	
+<div class="dbc_login cl y">
+<span id="return_ls" style="display:none"></span>
+<div class="y">
+<div class="z dbc_regist"><a href="member.php?mod=register">立即注册</a></div>
+<div class="login_link" onclick="showWindow('login', 'member.php?mod=logging&action=login')">登录</div>		
+</div>
+</div>
+
+</div>
+</div>
+<div id="nv">
+<div class="wp cl">
+<div class="dbc_nav cl">
+<div class="dbc_search"><div id="scbar" class="cl">
+<form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="search.php?searchsubmit=yes" target="_blank">
+<input type="hidden" name="mod" id="scbar_mod" value="search" />
+<input type="hidden" name="formhash" value="8519c8e7" />
+<input type="hidden" name="srchtype" value="title" />
+<input type="hidden" name="srhfid" value="15" />
+<input type="hidden" name="srhlocality" value="forum::viewthread" />
+<div class="search_item">
+<input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索内容" autocomplete="off" x-webkit-speech speech/>
+<a href="javascript:;" id="scbar_type" onclick="showMenu(this.id)" hidefocus="true">搜索</a>
+<button type="submit" name="searchsubmit" id="scbar_btn" sc="1" value="true"></button>
+</div>
+</form>
+</div>
+</div>
+<a href="javascript:;" id="qmenu" onmouseover="delayShow(this, function () {showMenu({'ctrlid':'qmenu','pos':'34!','ctrlclass':'a','duration':2});showForummenu(15);})"></a>
+<ul><li class="a" id="mn_forum" ><a href="forum.php" hidefocus="true" title="BBS"  >论坛<span>BBS</span></a></li><li id="mn_Nec7d" ><a href="forum-2-1.html" hidefocus="true"  >脱机·登录器下载</a></li><li id="mn_N3e47" ><a href="thread-5-1-1.html" hidefocus="true"   style="color: yellow">论坛规则·新手引导·积分获取</a></li><li id="mn_N2225" ><a href="plugin.php?id=zqlj_sign" hidefocus="true"  >每日签到</a></li><li id="mn_F23" ><a href="forum-23-1.html" hidefocus="true"  >精灵王专区</a></li></ul>
+<ul><li><a href="plugin.php?id=zqlj_sign" target="_balnk">天天打卡</a></ul></li></div>
+</div>
+</div>
+<ul id="scbar_type_menu" style="display: none;"><li><a href="javascript:;" rel="curforum" fid="15" >本版</a></li><li><a href="javascript:;" rel="forum" class="curtype">帖子</a></li><li><a href="javascript:;" rel="user">用户</a></li></ul>
+<script type="text/javascript">
+initSearchmenu('scbar', '');
+</script>
+<div class="sub_nav">
+</div>
+<div id="mu" class="cl">
+</div></div>
+
+
+<div id="wp" class="dbc_mn wp cl"><script type="text/javascript">var fid = parseInt('15'), tid = parseInt('3313');</script>
+
+<script src="data/cache/forum_viewthread.js?MVB" type="text/javascript"></script>
+<script type="text/javascript">zoomstatus = parseInt(1);var imagemaxwidth = '960';var aimgcount = new Array();</script>
+
+<style id="diy_style" type="text/css"></style>
+<!--[diy=diynavtop]--><div id="diynavtop" class="area"></div><!--[/diy]-->
+<div id="pt" class="bm cl">
+<div class="cl">
+<div class="z">
+<a href="./" class="nvhm" title="首页">雷小伊 - 赛尔号论坛</a><em>&raquo;</em><a href="forum.php">论坛</a> <em>&rsaquo;</em> <a href="forum.php?gid=3">功能相关专区</a> <em>&rsaquo;</em> <a href="forum-15-1.html">因子脚本分享</a> <em>&rsaquo;</em> <a href="thread-3313-1-1.html">伊塔回溯型地狱（无表多表方案）</a>
+</div>
+</div>
+</div>
+
+
+<style>		
+.sign_side {
+	background:#FCF6E6;
+	border:2px dashed #C2D5E3;
+	padding:2px; 
+	margin-left:5px; 
+	margin-right:5px;
+	margin-bottom:10px;
+}
+.sign_side li{
+	padding:4px 0.3em;
+	list-style:none;
+}	
+</style><style id="diy_style" type="text/css"></style>
+<div class="wp">
+<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+</div>
+
+<div id="ct">
+<div class="content_box">
+<div class="bm">
+<div id="pgt" class="pgs cl" style="padding: 10px">
+<div class="pgt cl">
+<div class="pg"><strong>1</strong><a href="thread-3313-2-1.html">2</a><a href="thread-3313-3-1.html">3</a><a href="thread-3313-4-1.html">4</a><a href="thread-3313-5-1.html">5</a><a href="thread-3313-6-1.html">6</a><a href="thread-3313-7-1.html">7</a><a href="thread-3313-8-1.html">8</a><a href="thread-3313-9-1.html">9</a><a href="thread-3313-10-1.html">10</a><a href="thread-3313-41-1.html" class="last">... 41</a><label><input type="text" name="custompage" class="px" size="2" title="输入页码，按回车快速跳转" value="1" onkeydown="if(event.keyCode==13) {window.location='forum.php?mod=viewthread&tid=3313&amp;extra=page%3D1&amp;page='+this.value;; doane(event);}" /><span title="共 41 页"> / 41 页</span></label><a href="thread-3313-2-1.html" class="nxt">下一页</a></div><span class="y pgb"><a href="forum-15-1.html">返回列表</a></span>
+<a class="post_btn"  onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=15')" href="javascript:;" title="发新帖">发新帖</a></div>
+</div>
+</div>
+
+
+
+<div id="postlist" class="pl" style="background: #fff;">
+
+<div class="pl_title">
+<h1>
+<a href="forum.php?mod=forumdisplay&amp;fid=15&amp;filter=typeid&amp;typeid=11">[地狱]</a>
+<span id="thread_subject">伊塔回溯型地狱（无表多表方案）</span>
+</h1>
+<span class="xg1">
+&nbsp;<span class="tbox theatlevel" title="热度: 398">火...</span>
+<a href="thread-3313-1-1.html" onclick="return copyThreadUrl(this, '雷小伊 - 赛尔号论坛')" >[复制链接]</a>
+</span>
+<div class="y quick xs1">
+<a href="forum.php?mod=viewthread&amp;tid=3313&amp;from=album" class="ml5">只看大图</a>
+<a href="forum.php?mod=viewthread&amp;tid=3313&amp;extra=page%3D1&amp;ordertype=1"  class="show ml5">倒序浏览</a>
+<a href="javascript:;" onclick="readmode($('thread_subject').innerHTML, 640290);" class="show ml5">阅读模式</a>
+</div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="ad">
+<tr>
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</table>
+<div id="post_640270">
+<table id="pid640270" class="plhin" summary="pid640270" cellspacing="0" cellpadding="0">
+<tr>
+<a name="newpost"></a> <td class="pls vtl_view" rowspan="2">
+<div id="favatar640270" class="pls favatar">
+<div class="pi">
+<div class="authi"><a href="space-uid-21353.html" target="_blank" class="xw1">小QIANG</a>
+</div>
+</div>
+<div class="p_pop blk bui" id="userinfo640270" style="display: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo640270_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="space-uid-21353.html" target="_blank" class="xi2">小QIANG</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>UID</dt><dd><a href="?21353" target="_blank" class="xi2">21353</a></dd>
+<dt>积分</dt><dd><a href="home.php?mod=space&uid=21353&do=profile" target="_blank" class="xi2">151</a></dd>
+<dt>雷小钻</dt><dd>0 </dd>
+<dt>雷小币</dt><dd>2351 </dd>
+<dt>贡献点数</dt><dd>47 </dd>
+<dt>注册时间</dt><dd>2024-6-12</dd>
+<dt>在线时间</dt><dd>66 小时</dd>
+<dt></dt><dd></dd>
+<dt>最后登录</dt><dd>2026-5-3</dd>
+</dl><div class="imicn">
+<a href="home.php?mod=space&amp;uid=21353&amp;do=profile" target="_blank" title="查看详细资料"><img src="static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar" onmouseover="showauthor(this, 'userinfo640270')">
+<a href="space-uid-21353.html" class="avtm" target="_blank"><img src="https://bbs.tiepi.top/uc_server/avatar.php?uid=21353&size=middle" class="user_avatar"></a>
+</div>
+</div>
+<div class="lxyxx">
+<p id="nv"><em><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=11" target="_blank">热血英杰</a></em></p>
+<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="home.php?mod=space&uid=21353&do=thread&type=thread&view=me&from=space" class="xi2">35</a></p>主题</th><th><p><a href="home.php?mod=space&uid=21353&do=thread&type=reply&view=me&from=space" class="xi2">167</a></p>回帖</th><td><p><a href="home.php?mod=space&uid=21353&do=profile" class="xi2">151</a></p>积分</td></table></div>
+<div class="pil cl">
+	<dl class="lxyxx_1">
+	<dt>UID</dt><dd><a href="?21353" target="_blank" class="xi2">21353</a></dd>
+	<dt>雷小钻</dt><dd>0 </dd>
+	<dt>雷小币</dt><dd>2351 </dd>
+	<dt>贡献点数</dt><dd>47 </dd>
+	</dl>
+</div>
+
+<div class="pil cl"><dl class="lxyxx_2"></dl></div>
+
+</div><ul class="xl xl2 o cl">
+<li class="pm2"><a href="home.php?mod=spacecp&amp;ac=pm&amp;op=showmsg&amp;handlekey=showmsg_21353&amp;touid=21353&amp;pmid=0&amp;daterange=2&amp;pid=640270&amp;tid=3313" onclick="showWindow('sendpm', this.href);" title="发消息" class="xi2">发消息</a></li>
+</ul>
+</div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a class="floor" href="forum.php?mod=viewthread&tid=3313"   id="postnum640270" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
+楼主</a>
+</strong>
+<div id="fj" class="y">
+<label class="z">电梯直达</label>
+<input type="text" class="px p_fre z" size="2" onkeyup="$('fj_btn').href='forum.php?mod=redirect&ptid=3313&authorid=0&postno='+this.value" onkeydown="if(event.keyCode==13) {window.location=$('fj_btn').href;return false;}" title="跳转到指定楼层" />
+<a href="javascript:;" id="fj_btn" class="z" title="跳转到指定楼层"><img src="static/image/common/fj_btn.png" alt="跳转到指定楼层" class="vm" /></a>
+</div>
+<div class="pti">
+<div class="pdbt">
+</div>
+
+<div class="authi"><img class="authicn vm" id="authicon640270" src="static/image/common/online_member.gif" />
+<em id="authorposton640270">发表于 2025-1-17 16:50:02</em>
+<span class="pipe">|</span>
+<a href="forum.php?mod=viewthread&amp;tid=3313&amp;page=1&amp;authorid=21353" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><style type="text/css">.pcb{margin-right:0}</style><div class="pcb">
+
+ 
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_640270">
+<script type="text/javascript">replyreload += ',' + 640270;</script><strong><strong><font style="color:rgb(229,76,94)"><font face="宋体"><font style="font-size:22.0000pt"><font face="宋体">精灵</font><font face="Calibri">ban</font><font face="宋体">：</font></font></font></font></strong><strong><font face="宋体"><font style="font-size:22.0000pt">王哈，典韦、斯克鲁恩</font></font></strong></strong><strong><strong><font style="color:rgb(229,76,94)"><font face="宋体"><font style="font-size:22.0000pt"><font face="Calibri">Boss</font><font face="宋体">特性：</font></font></font></font></strong><strong><font style="color:rgb(229,76,94)"></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">第一只</font><font face="Calibri">boss10000</font><font face="宋体">血，机械战斗系</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="Calibri">5%</font><font face="宋体">概率造成</font><font face="Calibri">5</font><font face="宋体">倍伤害，我方出手后被消强，，每回合</font><font face="Calibri">300</font><font face="宋体">固伤，每回合随机弱化我方三项</font><font face="Calibri">-1</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"> </font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">第二只</font><font face="Calibri">boss10000</font><font face="宋体">血，机械超能系</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">免疫裸伤高于</font><font face="Calibri">2000</font><font face="宋体">的攻击伤害并转换为体力，我方出手后被消强，每回合</font><font face="Calibri">300</font><font face="宋体">固伤，强化技能回血有效，月亮有效，血量低于我方触发</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"> </font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">第三只</font><font face="Calibri">boss12000</font><font face="宋体">血，机械火系</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">攻击技能出手前偷强，每回合全属性</font><font face="Calibri">+1</font><font face="宋体">，我方出手后被消强，每回合</font><font face="Calibri">500</font><font face="宋体">固伤，攻击技能有双防弱化效果</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"> </font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">第四只</font><font face="Calibri">boss15000</font><font face="宋体">血，机械神秘系，免疫面板超过</font><font face="Calibri">100</font><font face="宋体">的攻击技能</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">攻击技能出手前偷强，开局获得</font><font face="Calibri">5000</font><font face="宋体">点护盾和护罩，每回合</font><font face="Calibri">500</font><font face="宋体">固伤</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"> </font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">第五只</font><font face="Calibri">boss18000</font><font face="宋体">血，机械系</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">攻击技能出手前偷强，每回合全属性</font><font face="Calibri">+1</font><font face="宋体">，每回合</font><font face="Calibri">500</font><font face="宋体">固伤，高概率主动靠前害怕控</font></font></font></strong></strong><strong><br />
+</strong><strong><strong><font style="color:rgb(229,76,94)"><font face="宋体"><font style="font-size:22.0000pt">精灵配置：</font></font></font></strong><strong><font style="color:rgb(229,76,94)"></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:22.0000pt">第一关：</font></font></strong></strong><strong><strong><font face="黑体"><font style="font-size:16.0000pt"><font face="黑体">方案</font><font face="Arial">1.</font><font face="黑体">魔钰强攻</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">套装配置：漆黑</font><font face="Calibri">+</font><font face="宋体">假面</font><font face="Calibri">+</font><font face="宋体">洛林卡之星（根据自身情况修改）</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt">精灵配置：爆攻压血魔钰</font></font></strong></strong><br />
+<strong><strong><font face="黑体"><font style="font-size:16.0000pt"><font face="黑体">方案</font><font face="Arial">2.</font><font face="黑体">丽莎强攻</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">套装称号：耀世</font><font face="Calibri">+</font><font face="宋体">假面</font><font face="Calibri">+</font><font face="宋体">神话（根据自身情况修改）</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt">精灵配置：特防体丽莎</font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:22.0000pt"> </font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:22.0000pt">第二关：</font></font></strong></strong><strong><strong><font face="黑体"><font style="font-size:16.0000pt"><font face="黑体">方案</font><font face="Arial">1.</font><font face="黑体">卡裸伤村长站场</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">套装称号：银翼套</font><font face="Calibri">+</font><font face="宋体">假面</font><font face="Calibri">+</font><font face="宋体">洛林卡之星（根据自身情况修改）</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">精灵配置：村长防御定格</font><font face="Calibri">336</font><font face="宋体">，体力在</font><font face="Calibri">799-935</font><font face="宋体">之间即可</font></font></font></strong></strong><strong><br />
+</strong><strong><strong><font face="黑体"><font style="font-size:16.0000pt"><font face="黑体">方案</font><font face="Arial">2.</font><font face="黑体">草潘站场</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt">套装称号：</font></font></strong><strong><font face="宋体"><font style="font-size:16.0000pt">耀世</font></font></strong><strong><font face="Calibri"><font style="font-size:16.0000pt">+</font></font></strong><strong><font face="宋体"><font style="font-size:16.0000pt">假面</font></font></strong><strong><font face="Calibri"><font style="font-size:16.0000pt">+</font></font></strong><strong><font face="宋体"><font style="font-size:16.0000pt">神话（根据自身情况修改）</font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt">精灵配置：防体草潘</font></font></strong></strong><br />
+<strong><strong><font face="宋体"><font style="font-size:22.0000pt">第三关：</font></font></strong></strong><strong><strong><font face="黑体"><font style="font-size:16.0000pt"><font face="黑体">方案</font><font face="Arial">1.</font><font face="黑体">卡莎站场（可换村长）</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">套装配置：耀世</font><font face="Calibri">+</font><font face="宋体">假面</font><font face="Calibri">+</font><font face="宋体">神话（根据自身情况修改）</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt">精灵配置：特防体卡莎</font></font></strong></strong><br />
+<strong><strong><font face="黑体"><font style="font-size:16.0000pt"><font face="黑体">方案</font><font face="Arial">2.</font><font face="黑体">地王强攻</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">套装称号：漆黑</font><font face="Calibri">+</font><font face="宋体">假面</font><font face="Calibri">+</font><font face="宋体">洛林卡之星（根据自身情况修改）</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt">精灵配置：爆攻地王</font></font></strong></strong><br />
+<strong><strong><font face="宋体"><font style="font-size:22.0000pt">第四关：</font></font></strong></strong><strong><strong><font face="黑体"><font style="font-size:16.0000pt"><font face="黑体">方案</font><font face="Arial">1.</font><font face="黑体">鲁斯王弹伤</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">套装配置：银翼套</font><font face="Calibri">+</font><font face="宋体">假面</font><font face="Calibri">+</font><font face="宋体">洛林卡之星（根据自身情况修改）</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">精灵配置：三只波克尔</font><font face="Calibri">+</font><font face="宋体">魔焰</font><font face="Calibri">+</font><font face="宋体">鲁斯王</font></font></font></strong></strong><strong><strong><font face="黑体"><font style="font-size:16.0000pt"> </font></font></strong></strong><strong><strong><font face="黑体"><font style="font-size:16.0000pt"><font face="黑体">方案</font><font face="Arial">2.</font><font face="黑体">眠酱站场</font></font></font></strong></strong><strong><font face="黑体">套装配置：勇者</font><font face="Arial">+</font><font face="黑体">假面</font><font face="Arial">+</font><font face="黑体">神话（根据自身情况修改）</font></strong><strong><font face="黑体"><font style="font-size:16pt">精灵配置：攻体眠酱</font></font></strong><br />
+<strong><strong><font face="宋体"><font style="font-size:22.0000pt">第五关：</font></font></strong></strong><strong><strong><font face="黑体"><font style="font-size:16.0000pt"><font face="黑体">方案</font><font face="Arial">1.</font><font face="黑体">张飞强攻</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">套装配置：银翼套</font><font face="Calibri">+</font><font face="宋体">假面</font><font face="Calibri">+</font><font face="宋体">洛林卡之星（根据自身情况修改）</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">精灵配置：火潘</font><font face="Calibri">+</font><font face="宋体">蒂朵</font><font face="Calibri">+</font><font face="宋体">表姐</font><font face="Calibri">+</font><font face="宋体">张飞</font><font face="Calibri">+</font><font face="宋体">泰坦</font></font></font></strong></strong><br />
+<strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体"><br />
+</font></font></font></strong><br />
+<strong><strong><font face="黑体"><font style="font-size:16.0000pt"><font face="黑体">方案</font><font face="Arial">2.</font><font face="黑体">必先大队强攻</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">套装配置：银翼套</font><font face="Calibri">+</font><font face="宋体">假面</font><font face="Calibri">+</font><font face="宋体">洛林卡之星（根据自身情况修改）</font></font></font></strong></strong><strong><strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体">精灵配置：火潘</font><font face="Calibri">+</font><font face="宋体">蒂朵</font><font face="Calibri">+</font><font face="宋体">西塔伦</font><font face="Calibri">+</font><font face="宋体">必先大队</font></font></font></strong></strong><br />
+<strong><font face="宋体"><font style="font-size:16.0000pt"><font face="宋体"><br />
+</font></font></font></strong><br />
+<div align="left"><font size="5">交流群：<font color="#8b707b"><font style="background-color:rgb(255, 248, 248)"><font face="&amp;quot;">193867747</font></font></font></font></div><div align="left"><font size="5">欢迎加群交流，需要啥脚本可以提。</font></div><br />
+<div align="left">
+<ignore_js_op>
+
+<img id="aimg_9022" aid="9022" src="static/image/common/none.gif" zoomfile="data/attachment/forum/202501/17/164944qslkcfrb7nnulnr5.jpg" file="data/attachment/forum/202501/17/164944qslkcfrb7nnulnr5.jpg" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="960" id="aimg_9022" inpost="1" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})" />
+
+<div class="tip tip_4 aimg_tip" id="aimg_9022_menu" style="position: absolute; display: none" disautofocus="true">
+<div class="xs0">
+<p><strong>qrcode_1733231827633.jpg</strong> <em class="xg1">(109.78 KB, 下载次数: 47)</em></p>
+<p>
+<a href="forum.php?mod=attachment&amp;aid=OTAyMnxlOTQyMWIwZHwxNzk1MzI4OTYzfDB8MzMxMw%3D%3D&amp;nothumb=yes" target="_blank">下载附件</a>
+
+</p>
+
+<p class="xg1 y">2025-1-17 16:49 上传</p>
+
+</div>
+<div class="tip_horn"></div>
+</div>
+
+</ignore_js_op>
+</div><div align="left"><div class="locked">游客，如果您要查看本帖隐藏内容请<a href="forum.php?mod=post&amp;action=reply&amp;fid=15&amp;tid=3313" onclick="showWindow('reply', this.href)">回复</a></div></div><br />
+</td></tr></table>
+
+
+</div>
+
+<div id="comment_640270" class="cm">
+</div>
+
+<div id="post_rate_div_640270"></div>
+</div></div>
+
+</td>
+</tr>
+
+<tr>
+<td class="post_bottom plm" style="padding: 0 20px;">
+<div id="p_btn" class="hm cl">
+<a href="home.php?mod=spacecp&amp;ac=favorite&amp;type=thread&amp;id=3313&amp;formhash=8519c8e7" id="k_favorite" onclick="showWindow(this.id, this.href, 'get', 0);" onmouseover="this.title = $('favoritenumber').innerHTML + ' 人收藏'" title="收藏本帖"><i><em class="fico-star fc-l" title="收藏"></em>收藏<span id="favoritenumber" style="display:none">0</span></i></a>
+
+</div>
+</td>
+</tr>
+
+<tr id="_postposition640270"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="dbc_tb hin" style="border-top: 1px dashed #ededed;">
+<div class="oprow cl">
+<em class="z">
+<a class="fastre" href="forum.php?mod=post&amp;action=reply&amp;fid=15&amp;tid=3313&amp;reppost=640270&amp;extra=page%3D1&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+</em>
+<p class="y">	
+<a href="javascript:;" onclick="showWindow('miscreport640270', 'misc.php?mod=report&rtype=post&rid=640270&tid=3313&fid=15', 'get', -1);return false;">举报</a>
+<a href="javascript:;" id="mgc_post_640270" onmouseover="showMenu(this.id)" class="showmenu ml5">使用道具</a>
+<!-- 分享 -->
+<a id="a_share" class="sharebtn ml5" href="javascript:void(0);" onmouseover="showMenu({'ctrlid': 'a_share', 'pos' : '43'});">分享</a>
+</p>
+<div id="a_share_menu" style="display: none;"></div>
+<script type="text/javascript">
+dChuang().initshare('#a_share_menu');
+</script>
+<ul id="mgc_post_640270_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_640270')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls"></td>
+<td class="plc">
+</td>
+</tr>
+</table>
+<script type="text/javascript" reload="1">
+aimgcount[640270] = ['9022'];
+attachimggroup(640270);
+attachimgshow(640270);
+var aimgfid = 0;
+</script>
+</div>
+<div id="post_640271">
+<table id="pid640271" class="plhin" summary="pid640271" cellspacing="0" cellpadding="0">
+<tr>
+ <td class="pls vtl_view" rowspan="2">
+<div id="favatar640271" class="pls favatar">
+<div class="pi">
+<div class="authi"><a href="space-uid-2620.html" target="_blank" class="xw1">4399赛尔号</a>
+</div>
+</div>
+<div class="p_pop blk bui" id="userinfo640271" style="display: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo640271_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="space-uid-2620.html" target="_blank" class="xi2">4399赛尔号</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>UID</dt><dd><a href="?2620" target="_blank" class="xi2">2620</a></dd>
+<dt>积分</dt><dd><a href="home.php?mod=space&uid=2620&do=profile" target="_blank" class="xi2">71</a></dd>
+<dt>雷小钻</dt><dd>0 </dd>
+<dt>雷小币</dt><dd>4537 </dd>
+<dt>贡献点数</dt><dd>12 </dd>
+<dt>注册时间</dt><dd>2024-1-5</dd>
+<dt>在线时间</dt><dd>140 小时</dd>
+<dt></dt><dd></dd>
+<dt>最后登录</dt><dd>2026-11-15</dd>
+</dl><div class="imicn">
+<a href="home.php?mod=space&amp;uid=2620&amp;do=profile" target="_blank" title="查看详细资料"><img src="static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar" onmouseover="showauthor(this, 'userinfo640271')">
+<a href="space-uid-2620.html" class="avtm" target="_blank"><img src="https://bbs.tiepi.top/uc_server/avatar.php?uid=2620&size=middle" class="user_avatar"></a>
+</div>
+</div>
+<div class="lxyxx">
+<p id="nv"><em><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=10" target="_blank">初入学徒</a></em></p>
+<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="home.php?mod=space&uid=2620&do=thread&type=thread&view=me&from=space" class="xi2">0</a></p>主题</th><th><p><a href="home.php?mod=space&uid=2620&do=thread&type=reply&view=me&from=space" class="xi2">307</a></p>回帖</th><td><p><a href="home.php?mod=space&uid=2620&do=profile" class="xi2">71</a></p>积分</td></table></div>
+<div class="pil cl">
+	<dl class="lxyxx_1">
+	<dt>UID</dt><dd><a href="?2620" target="_blank" class="xi2">2620</a></dd>
+	<dt>雷小钻</dt><dd>0 </dd>
+	<dt>雷小币</dt><dd>4537 </dd>
+	<dt>贡献点数</dt><dd>12 </dd>
+	</dl>
+</div>
+
+<div class="pil cl"><dl class="lxyxx_2"></dl></div>
+
+</div><ul class="xl xl2 o cl">
+<li class="pm2"><a href="home.php?mod=spacecp&amp;ac=pm&amp;op=showmsg&amp;handlekey=showmsg_2620&amp;touid=2620&amp;pmid=0&amp;daterange=2&amp;pid=640271&amp;tid=3313" onclick="showWindow('sendpm', this.href);" title="发消息" class="xi2">发消息</a></li>
+</ul>
+</div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="forum.php?mod=redirect&goto=findpost&ptid=3313&pid=640271"   id="postnum640271" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
+
+沙发</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+
+<div class="authi"><img class="authicn vm" id="authicon640271" src="static/image/common/online_member.gif" />
+<em id="authorposton640271">发表于 2025-1-17 16:51:58</em>
+<span class="pipe">|</span>
+<a href="forum.php?mod=viewthread&amp;tid=3313&amp;page=1&amp;authorid=2620" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_640271">
+66666666666666666</td></tr></table>
+
+
+</div>
+
+<div id="comment_640271" class="cm">
+</div>
+
+<div id="post_rate_div_640271"></div>
+</div></div>
+
+</td>
+</tr>
+
+<tr>
+<td class="post_bottom plm" style="padding: 0 20px;">
+</td>
+</tr>
+
+<tr id="_postposition640271"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="dbc_tb hin" style="border-top: 1px dashed #ededed;">
+<div class="oprow cl">
+<em class="z">
+<a class="fastre" href="forum.php?mod=post&amp;action=reply&amp;fid=15&amp;tid=3313&amp;repquote=640271&amp;extra=page%3D1&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+</em>
+<p class="y">	
+<a href="javascript:;" onclick="showWindow('miscreport640271', 'misc.php?mod=report&rtype=post&rid=640271&tid=3313&fid=15', 'get', -1);return false;">举报</a>
+<a href="javascript:;" id="mgc_post_640271" onmouseover="showMenu(this.id)" class="showmenu ml5">使用道具</a>
+</p>
+<ul id="mgc_post_640271_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_640271')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls"></td>
+<td class="plc">
+</td>
+</tr>
+</table>
+</div>
+<div id="post_640272">
+<table id="pid640272" class="plhin" summary="pid640272" cellspacing="0" cellpadding="0">
+<tr>
+ <td class="pls vtl_view" rowspan="2">
+<div id="favatar640272" class="pls favatar">
+<div class="pi">
+<div class="authi"><a href="space-uid-37024.html" target="_blank" class="xw1">tang0525</a>
+</div>
+</div>
+<div class="p_pop blk bui" id="userinfo640272" style="display: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo640272_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="space-uid-37024.html" target="_blank" class="xi2">tang0525</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>UID</dt><dd><a href="?37024" target="_blank" class="xi2">37024</a></dd>
+<dt>积分</dt><dd><a href="home.php?mod=space&uid=37024&do=profile" target="_blank" class="xi2">45</a></dd>
+<dt>雷小钻</dt><dd>0 </dd>
+<dt>雷小币</dt><dd>2731 </dd>
+<dt>贡献点数</dt><dd>12 </dd>
+<dt>注册时间</dt><dd>2024-10-10</dd>
+<dt>在线时间</dt><dd>63 小时</dd>
+<dt></dt><dd></dd>
+<dt>最后登录</dt><dd>2025-11-13</dd>
+</dl><div class="imicn">
+<a href="home.php?mod=space&amp;uid=37024&amp;do=profile" target="_blank" title="查看详细资料"><img src="static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar" onmouseover="showauthor(this, 'userinfo640272')">
+<a href="space-uid-37024.html" class="avtm" target="_blank"><img src="https://bbs.tiepi.top/uc_server/avatar.php?uid=37024&size=middle" class="user_avatar"></a>
+</div>
+</div>
+<div class="lxyxx">
+<p id="nv"><em><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=10" target="_blank">初入学徒</a></em></p>
+<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="home.php?mod=space&uid=37024&do=thread&type=thread&view=me&from=space" class="xi2">0</a></p>主题</th><th><p><a href="home.php?mod=space&uid=37024&do=thread&type=reply&view=me&from=space" class="xi2">221</a></p>回帖</th><td><p><a href="home.php?mod=space&uid=37024&do=profile" class="xi2">45</a></p>积分</td></table></div>
+<div class="pil cl">
+	<dl class="lxyxx_1">
+	<dt>UID</dt><dd><a href="?37024" target="_blank" class="xi2">37024</a></dd>
+	<dt>雷小钻</dt><dd>0 </dd>
+	<dt>雷小币</dt><dd>2731 </dd>
+	<dt>贡献点数</dt><dd>12 </dd>
+	</dl>
+</div>
+
+<div class="pil cl"><dl class="lxyxx_2"></dl></div>
+
+</div><ul class="xl xl2 o cl">
+<li class="pm2"><a href="home.php?mod=spacecp&amp;ac=pm&amp;op=showmsg&amp;handlekey=showmsg_37024&amp;touid=37024&amp;pmid=0&amp;daterange=2&amp;pid=640272&amp;tid=3313" onclick="showWindow('sendpm', this.href);" title="发消息" class="xi2">发消息</a></li>
+</ul>
+</div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="forum.php?mod=redirect&goto=findpost&ptid=3313&pid=640272"   id="postnum640272" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
+
+板凳</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+
+<div class="authi"><img class="authicn vm" id="authicon640272" src="static/image/common/online_member.gif" />
+<em id="authorposton640272">发表于 2025-1-17 16:52:06</em>
+<span class="pipe">|</span>
+<a href="forum.php?mod=viewthread&amp;tid=3313&amp;page=1&amp;authorid=37024" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_640272">
+6666666666666666</td></tr></table>
+
+
+</div>
+
+<div id="comment_640272" class="cm">
+</div>
+
+<div id="post_rate_div_640272"></div>
+</div></div>
+
+</td>
+</tr>
+
+<tr>
+<td class="post_bottom plm" style="padding: 0 20px;">
+</td>
+</tr>
+
+<tr id="_postposition640272"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="dbc_tb hin" style="border-top: 1px dashed #ededed;">
+<div class="oprow cl">
+<em class="z">
+<a class="fastre" href="forum.php?mod=post&amp;action=reply&amp;fid=15&amp;tid=3313&amp;repquote=640272&amp;extra=page%3D1&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+</em>
+<p class="y">	
+<a href="javascript:;" onclick="showWindow('miscreport640272', 'misc.php?mod=report&rtype=post&rid=640272&tid=3313&fid=15', 'get', -1);return false;">举报</a>
+<a href="javascript:;" id="mgc_post_640272" onmouseover="showMenu(this.id)" class="showmenu ml5">使用道具</a>
+</p>
+<ul id="mgc_post_640272_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_640272')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls"></td>
+<td class="plc">
+</td>
+</tr>
+</table>
+</div>
+<div id="post_640273">
+<table id="pid640273" class="plhin" summary="pid640273" cellspacing="0" cellpadding="0">
+<tr>
+ <td class="pls vtl_view" rowspan="2">
+<div id="favatar640273" class="pls favatar">
+<div class="pi">
+<div class="authi"><a href="space-uid-5802.html" target="_blank" class="xw1">fhr007</a>
+</div>
+</div>
+<div class="p_pop blk bui" id="userinfo640273" style="display: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo640273_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="space-uid-5802.html" target="_blank" class="xi2">fhr007</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>UID</dt><dd><a href="?5802" target="_blank" class="xi2">5802</a></dd>
+<dt>积分</dt><dd><a href="home.php?mod=space&uid=5802&do=profile" target="_blank" class="xi2">40</a></dd>
+<dt>雷小钻</dt><dd>0 </dd>
+<dt>雷小币</dt><dd>2656 </dd>
+<dt>贡献点数</dt><dd>12 </dd>
+<dt>注册时间</dt><dd>2024-2-9</dd>
+<dt>在线时间</dt><dd>47 小时</dd>
+<dt></dt><dd></dd>
+<dt>最后登录</dt><dd>2025-8-15</dd>
+</dl><div class="imicn">
+<a href="home.php?mod=space&amp;uid=5802&amp;do=profile" target="_blank" title="查看详细资料"><img src="static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar" onmouseover="showauthor(this, 'userinfo640273')">
+<a href="space-uid-5802.html" class="avtm" target="_blank"><img src="https://bbs.tiepi.top/uc_server/avatar.php?uid=5802&size=middle" class="user_avatar"></a>
+</div>
+</div>
+<div class="lxyxx">
+<p id="nv"><em><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=10" target="_blank">初入学徒</a></em></p>
+<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="home.php?mod=space&uid=5802&do=thread&type=thread&view=me&from=space" class="xi2">0</a></p>主题</th><th><p><a href="home.php?mod=space&uid=5802&do=thread&type=reply&view=me&from=space" class="xi2">274</a></p>回帖</th><td><p><a href="home.php?mod=space&uid=5802&do=profile" class="xi2">40</a></p>积分</td></table></div>
+<div class="pil cl">
+	<dl class="lxyxx_1">
+	<dt>UID</dt><dd><a href="?5802" target="_blank" class="xi2">5802</a></dd>
+	<dt>雷小钻</dt><dd>0 </dd>
+	<dt>雷小币</dt><dd>2656 </dd>
+	<dt>贡献点数</dt><dd>12 </dd>
+	</dl>
+</div>
+
+<div class="pil cl"><dl class="lxyxx_2"></dl></div>
+
+</div><ul class="xl xl2 o cl">
+<li class="pm2"><a href="home.php?mod=spacecp&amp;ac=pm&amp;op=showmsg&amp;handlekey=showmsg_5802&amp;touid=5802&amp;pmid=0&amp;daterange=2&amp;pid=640273&amp;tid=3313" onclick="showWindow('sendpm', this.href);" title="发消息" class="xi2">发消息</a></li>
+</ul>
+</div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="forum.php?mod=redirect&goto=findpost&ptid=3313&pid=640273"   id="postnum640273" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
+
+地板</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+
+<div class="authi"><img class="authicn vm" id="authicon640273" src="static/image/common/online_member.gif" />
+<em id="authorposton640273">发表于 2025-1-17 16:52:14</em>
+<span class="pipe">|</span>
+<a href="forum.php?mod=viewthread&amp;tid=3313&amp;page=1&amp;authorid=5802" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_640273">
+66666666666666666</td></tr></table>
+
+
+</div>
+
+<div id="comment_640273" class="cm">
+</div>
+
+<div id="post_rate_div_640273"></div>
+</div></div>
+
+</td>
+</tr>
+
+<tr>
+<td class="post_bottom plm" style="padding: 0 20px;">
+</td>
+</tr>
+
+<tr id="_postposition640273"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="dbc_tb hin" style="border-top: 1px dashed #ededed;">
+<div class="oprow cl">
+<em class="z">
+<a class="fastre" href="forum.php?mod=post&amp;action=reply&amp;fid=15&amp;tid=3313&amp;repquote=640273&amp;extra=page%3D1&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+</em>
+<p class="y">	
+<a href="javascript:;" onclick="showWindow('miscreport640273', 'misc.php?mod=report&rtype=post&rid=640273&tid=3313&fid=15', 'get', -1);return false;">举报</a>
+<a href="javascript:;" id="mgc_post_640273" onmouseover="showMenu(this.id)" class="showmenu ml5">使用道具</a>
+</p>
+<ul id="mgc_post_640273_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_640273')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls"></td>
+<td class="plc">
+</td>
+</tr>
+</table>
+</div>
+<div id="post_640275">
+<table id="pid640275" class="plhin" summary="pid640275" cellspacing="0" cellpadding="0">
+<tr>
+ <td class="pls vtl_view" rowspan="2">
+<div id="favatar640275" class="pls favatar">
+<div class="pi">
+<div class="authi"><a href="space-uid-4749.html" target="_blank" class="xw1">Hognino</a>
+</div>
+</div>
+<div class="p_pop blk bui" id="userinfo640275" style="display: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo640275_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="space-uid-4749.html" target="_blank" class="xi2">Hognino</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>UID</dt><dd><a href="?4749" target="_blank" class="xi2">4749</a></dd>
+<dt>积分</dt><dd><a href="home.php?mod=space&uid=4749&do=profile" target="_blank" class="xi2">138</a></dd>
+<dt>雷小钻</dt><dd>0 </dd>
+<dt>雷小币</dt><dd>9242 </dd>
+<dt>贡献点数</dt><dd>12 </dd>
+<dt>注册时间</dt><dd>2024-1-26</dd>
+<dt>在线时间</dt><dd>344 小时</dd>
+<dt></dt><dd></dd>
+<dt>最后登录</dt><dd>2026-11-21</dd>
+</dl><div class="imicn">
+<a href="home.php?mod=space&amp;uid=4749&amp;do=profile" target="_blank" title="查看详细资料"><img src="static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar" onmouseover="showauthor(this, 'userinfo640275')">
+<a href="space-uid-4749.html" class="avtm" target="_blank"><img src="https://bbs.tiepi.top/uc_server/avatar.php?uid=4749&size=middle" class="user_avatar"></a>
+</div>
+</div>
+<div class="lxyxx">
+<p id="nv"><em><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=11" target="_blank">热血英杰</a></em></p>
+<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="home.php?mod=space&uid=4749&do=thread&type=thread&view=me&from=space" class="xi2">0</a></p>主题</th><th><p><a href="home.php?mod=space&uid=4749&do=thread&type=reply&view=me&from=space" class="xi2">387</a></p>回帖</th><td><p><a href="home.php?mod=space&uid=4749&do=profile" class="xi2">138</a></p>积分</td></table></div>
+<div class="pil cl">
+	<dl class="lxyxx_1">
+	<dt>UID</dt><dd><a href="?4749" target="_blank" class="xi2">4749</a></dd>
+	<dt>雷小钻</dt><dd>0 </dd>
+	<dt>雷小币</dt><dd>9242 </dd>
+	<dt>贡献点数</dt><dd>12 </dd>
+	</dl>
+</div>
+
+<div class="pil cl"><dl class="lxyxx_2"></dl></div>
+
+</div><ul class="xl xl2 o cl">
+<li class="pm2"><a href="home.php?mod=spacecp&amp;ac=pm&amp;op=showmsg&amp;handlekey=showmsg_4749&amp;touid=4749&amp;pmid=0&amp;daterange=2&amp;pid=640275&amp;tid=3313" onclick="showWindow('sendpm', this.href);" title="发消息" class="xi2">发消息</a></li>
+</ul>
+</div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="forum.php?mod=redirect&goto=findpost&ptid=3313&pid=640275"   id="postnum640275" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
+
+<em>5</em>#
+</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+
+<div class="authi"><img class="authicn vm" id="authicon640275" src="static/image/common/online_member.gif" />
+<em id="authorposton640275">发表于 2025-1-17 16:52:56</em>
+<span class="pipe">|</span>
+<a href="forum.php?mod=viewthread&amp;tid=3313&amp;page=1&amp;authorid=4749" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_640275">
+666666666666666666</td></tr></table>
+
+
+</div>
+
+<div id="comment_640275" class="cm">
+</div>
+
+<div id="post_rate_div_640275"></div>
+</div></div>
+
+</td>
+</tr>
+
+<tr>
+<td class="post_bottom plm" style="padding: 0 20px;">
+</td>
+</tr>
+
+<tr id="_postposition640275"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="dbc_tb hin" style="border-top: 1px dashed #ededed;">
+<div class="oprow cl">
+<em class="z">
+<a class="fastre" href="forum.php?mod=post&amp;action=reply&amp;fid=15&amp;tid=3313&amp;repquote=640275&amp;extra=page%3D1&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+</em>
+<p class="y">	
+<a href="javascript:;" onclick="showWindow('miscreport640275', 'misc.php?mod=report&rtype=post&rid=640275&tid=3313&fid=15', 'get', -1);return false;">举报</a>
+<a href="javascript:;" id="mgc_post_640275" onmouseover="showMenu(this.id)" class="showmenu ml5">使用道具</a>
+</p>
+<ul id="mgc_post_640275_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_640275')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls"></td>
+<td class="plc">
+</td>
+</tr>
+</table>
+</div>
+<div id="post_640277">
+<table id="pid640277" class="plhin" summary="pid640277" cellspacing="0" cellpadding="0">
+<tr>
+ <td class="pls vtl_view" rowspan="2">
+<div id="favatar640277" class="pls favatar">
+<div class="pi">
+<div class="authi"><a href="space-uid-15247.html" target="_blank" class="xw1">沧陌颜</a>
+</div>
+</div>
+<div class="p_pop blk bui" id="userinfo640277" style="display: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo640277_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="space-uid-15247.html" target="_blank" class="xi2">沧陌颜</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>UID</dt><dd><a href="?15247" target="_blank" class="xi2">15247</a></dd>
+<dt>积分</dt><dd><a href="home.php?mod=space&uid=15247&do=profile" target="_blank" class="xi2">77</a></dd>
+<dt>雷小钻</dt><dd>0 </dd>
+<dt>雷小币</dt><dd>5567 </dd>
+<dt>贡献点数</dt><dd>12 </dd>
+<dt>注册时间</dt><dd>2024-4-30</dd>
+<dt>在线时间</dt><dd>161 小时</dd>
+<dt></dt><dd></dd>
+<dt>最后登录</dt><dd>2026-11-20</dd>
+</dl><div class="imicn">
+<a href="home.php?mod=space&amp;uid=15247&amp;do=profile" target="_blank" title="查看详细资料"><img src="static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar" onmouseover="showauthor(this, 'userinfo640277')">
+<a href="space-uid-15247.html" class="avtm" target="_blank"><img src="https://bbs.tiepi.top/uc_server/avatar.php?uid=15247&size=middle" class="user_avatar"></a>
+</div>
+</div>
+<div class="lxyxx">
+<p id="nv"><em><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=10" target="_blank">初入学徒</a></em></p>
+<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="home.php?mod=space&uid=15247&do=thread&type=thread&view=me&from=space" class="xi2">0</a></p>主题</th><th><p><a href="home.php?mod=space&uid=15247&do=thread&type=reply&view=me&from=space" class="xi2">333</a></p>回帖</th><td><p><a href="home.php?mod=space&uid=15247&do=profile" class="xi2">77</a></p>积分</td></table></div>
+<div class="pil cl">
+	<dl class="lxyxx_1">
+	<dt>UID</dt><dd><a href="?15247" target="_blank" class="xi2">15247</a></dd>
+	<dt>雷小钻</dt><dd>0 </dd>
+	<dt>雷小币</dt><dd>5567 </dd>
+	<dt>贡献点数</dt><dd>12 </dd>
+	</dl>
+</div>
+
+<div class="pil cl"><dl class="lxyxx_2"></dl></div>
+
+</div><ul class="xl xl2 o cl">
+<li class="pm2"><a href="home.php?mod=spacecp&amp;ac=pm&amp;op=showmsg&amp;handlekey=showmsg_15247&amp;touid=15247&amp;pmid=0&amp;daterange=2&amp;pid=640277&amp;tid=3313" onclick="showWindow('sendpm', this.href);" title="发消息" class="xi2">发消息</a></li>
+</ul>
+</div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="forum.php?mod=redirect&goto=findpost&ptid=3313&pid=640277"   id="postnum640277" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
+
+<em>6</em>#
+</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+
+<div class="authi"><img class="authicn vm" id="authicon640277" src="static/image/common/online_member.gif" />
+<em id="authorposton640277">发表于 2025-1-17 16:53:34</em>
+<span class="pipe">|</span>
+<a href="forum.php?mod=viewthread&amp;tid=3313&amp;page=1&amp;authorid=15247" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_640277">
+感谢大佬</td></tr></table>
+
+
+</div>
+
+<div id="comment_640277" class="cm">
+</div>
+
+<div id="post_rate_div_640277"></div>
+</div></div>
+
+</td>
+</tr>
+
+<tr>
+<td class="post_bottom plm" style="padding: 0 20px;">
+</td>
+</tr>
+
+<tr id="_postposition640277"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="dbc_tb hin" style="border-top: 1px dashed #ededed;">
+<div class="oprow cl">
+<em class="z">
+<a class="fastre" href="forum.php?mod=post&amp;action=reply&amp;fid=15&amp;tid=3313&amp;repquote=640277&amp;extra=page%3D1&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+</em>
+<p class="y">	
+<a href="javascript:;" onclick="showWindow('miscreport640277', 'misc.php?mod=report&rtype=post&rid=640277&tid=3313&fid=15', 'get', -1);return false;">举报</a>
+<a href="javascript:;" id="mgc_post_640277" onmouseover="showMenu(this.id)" class="showmenu ml5">使用道具</a>
+</p>
+<ul id="mgc_post_640277_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_640277')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls"></td>
+<td class="plc">
+</td>
+</tr>
+</table>
+</div>
+<div id="post_640283">
+<table id="pid640283" class="plhin" summary="pid640283" cellspacing="0" cellpadding="0">
+<tr>
+ <td class="pls vtl_view" rowspan="2">
+<div id="favatar640283" class="pls favatar">
+<div class="pi">
+<div class="authi"><a href="space-uid-11984.html" target="_blank" class="xw1">Lessar</a>
+</div>
+</div>
+<div class="p_pop blk bui" id="userinfo640283" style="display: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo640283_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="space-uid-11984.html" target="_blank" class="xi2">Lessar</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>UID</dt><dd><a href="?11984" target="_blank" class="xi2">11984</a></dd>
+<dt>积分</dt><dd><a href="home.php?mod=space&uid=11984&do=profile" target="_blank" class="xi2">56</a></dd>
+<dt>雷小钻</dt><dd>0 </dd>
+<dt>雷小币</dt><dd>1651 </dd>
+<dt>贡献点数</dt><dd>17 </dd>
+<dt>注册时间</dt><dd>2024-4-14</dd>
+<dt>在线时间</dt><dd>51 小时</dd>
+<dt></dt><dd></dd>
+<dt>最后登录</dt><dd>2025-12-18</dd>
+</dl><div class="imicn">
+<a href="home.php?mod=space&amp;uid=11984&amp;do=profile" target="_blank" title="查看详细资料"><img src="static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar" onmouseover="showauthor(this, 'userinfo640283')">
+<a href="space-uid-11984.html" class="avtm" target="_blank"><img src="https://bbs.tiepi.top/uc_server/avatar.php?uid=11984&size=middle" class="user_avatar"></a>
+</div>
+</div>
+<div class="lxyxx">
+<p id="nv"><em><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=10" target="_blank">初入学徒</a></em></p>
+<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="home.php?mod=space&uid=11984&do=thread&type=thread&view=me&from=space" class="xi2">5</a></p>主题</th><th><p><a href="home.php?mod=space&uid=11984&do=thread&type=reply&view=me&from=space" class="xi2">155</a></p>回帖</th><td><p><a href="home.php?mod=space&uid=11984&do=profile" class="xi2">56</a></p>积分</td></table></div>
+<div class="pil cl">
+	<dl class="lxyxx_1">
+	<dt>UID</dt><dd><a href="?11984" target="_blank" class="xi2">11984</a></dd>
+	<dt>雷小钻</dt><dd>0 </dd>
+	<dt>雷小币</dt><dd>1651 </dd>
+	<dt>贡献点数</dt><dd>17 </dd>
+	</dl>
+</div>
+
+<div class="pil cl"><dl class="lxyxx_2"></dl></div>
+
+</div><ul class="xl xl2 o cl">
+<li class="pm2"><a href="home.php?mod=spacecp&amp;ac=pm&amp;op=showmsg&amp;handlekey=showmsg_11984&amp;touid=11984&amp;pmid=0&amp;daterange=2&amp;pid=640283&amp;tid=3313" onclick="showWindow('sendpm', this.href);" title="发消息" class="xi2">发消息</a></li>
+</ul>
+</div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="forum.php?mod=redirect&goto=findpost&ptid=3313&pid=640283"   id="postnum640283" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
+
+<em>7</em>#
+</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+
+<div class="authi"><img class="authicn vm" id="authicon640283" src="static/image/common/online_member.gif" />
+<em id="authorposton640283">发表于 2025-1-17 16:56:09</em>
+<span class="pipe">|</span>
+<a href="forum.php?mod=viewthread&amp;tid=3313&amp;page=1&amp;authorid=11984" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_640283">
+66666666666666666</td></tr></table>
+
+
+</div>
+
+<div id="comment_640283" class="cm">
+</div>
+
+<div id="post_rate_div_640283"></div>
+</div></div>
+
+</td>
+</tr>
+
+<tr>
+<td class="post_bottom plm" style="padding: 0 20px;">
+</td>
+</tr>
+
+<tr id="_postposition640283"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="dbc_tb hin" style="border-top: 1px dashed #ededed;">
+<div class="oprow cl">
+<em class="z">
+<a class="fastre" href="forum.php?mod=post&amp;action=reply&amp;fid=15&amp;tid=3313&amp;repquote=640283&amp;extra=page%3D1&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+</em>
+<p class="y">	
+<a href="javascript:;" onclick="showWindow('miscreport640283', 'misc.php?mod=report&rtype=post&rid=640283&tid=3313&fid=15', 'get', -1);return false;">举报</a>
+<a href="javascript:;" id="mgc_post_640283" onmouseover="showMenu(this.id)" class="showmenu ml5">使用道具</a>
+</p>
+<ul id="mgc_post_640283_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_640283')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls"></td>
+<td class="plc">
+</td>
+</tr>
+</table>
+</div>
+<div id="post_640284">
+<table id="pid640284" class="plhin" summary="pid640284" cellspacing="0" cellpadding="0">
+<tr>
+ <td class="pls vtl_view" rowspan="2">
+<div id="favatar640284" class="pls favatar">
+<div class="pi">
+<div class="authi"><a href="space-uid-8689.html" target="_blank" class="xw1">raven12345</a>
+</div>
+</div>
+<div class="p_pop blk bui" id="userinfo640284" style="display: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo640284_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="space-uid-8689.html" target="_blank" class="xi2">raven12345</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>UID</dt><dd><a href="?8689" target="_blank" class="xi2">8689</a></dd>
+<dt>积分</dt><dd><a href="home.php?mod=space&uid=8689&do=profile" target="_blank" class="xi2">38</a></dd>
+<dt>雷小钻</dt><dd>0 </dd>
+<dt>雷小币</dt><dd>2443 </dd>
+<dt>贡献点数</dt><dd>12 </dd>
+<dt>注册时间</dt><dd>2024-3-17</dd>
+<dt>在线时间</dt><dd>43 小时</dd>
+<dt></dt><dd></dd>
+<dt>最后登录</dt><dd>2026-11-19</dd>
+</dl><div class="imicn">
+<a href="home.php?mod=space&amp;uid=8689&amp;do=profile" target="_blank" title="查看详细资料"><img src="static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar" onmouseover="showauthor(this, 'userinfo640284')">
+<a href="space-uid-8689.html" class="avtm" target="_blank"><img src="https://bbs.tiepi.top/uc_server/avatar.php?uid=8689&size=middle" class="user_avatar"></a>
+</div>
+</div>
+<div class="lxyxx">
+<p id="nv"><em><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=10" target="_blank">初入学徒</a></em></p>
+<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="home.php?mod=space&uid=8689&do=thread&type=thread&view=me&from=space" class="xi2">0</a></p>主题</th><th><p><a href="home.php?mod=space&uid=8689&do=thread&type=reply&view=me&from=space" class="xi2">142</a></p>回帖</th><td><p><a href="home.php?mod=space&uid=8689&do=profile" class="xi2">38</a></p>积分</td></table></div>
+<div class="pil cl">
+	<dl class="lxyxx_1">
+	<dt>UID</dt><dd><a href="?8689" target="_blank" class="xi2">8689</a></dd>
+	<dt>雷小钻</dt><dd>0 </dd>
+	<dt>雷小币</dt><dd>2443 </dd>
+	<dt>贡献点数</dt><dd>12 </dd>
+	</dl>
+</div>
+
+<div class="pil cl"><dl class="lxyxx_2"></dl></div>
+
+</div><ul class="xl xl2 o cl">
+<li class="pm2"><a href="home.php?mod=spacecp&amp;ac=pm&amp;op=showmsg&amp;handlekey=showmsg_8689&amp;touid=8689&amp;pmid=0&amp;daterange=2&amp;pid=640284&amp;tid=3313" onclick="showWindow('sendpm', this.href);" title="发消息" class="xi2">发消息</a></li>
+</ul>
+</div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="forum.php?mod=redirect&goto=findpost&ptid=3313&pid=640284"   id="postnum640284" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
+
+<em>8</em>#
+</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+
+<div class="authi"><img class="authicn vm" id="authicon640284" src="static/image/common/online_member.gif" />
+<em id="authorposton640284">发表于 2025-1-17 16:56:27</em>
+<span class="pipe">|</span>
+<a href="forum.php?mod=viewthread&amp;tid=3313&amp;page=1&amp;authorid=8689" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_640284">
+66666666666666666</td></tr></table>
+
+
+</div>
+
+<div id="comment_640284" class="cm">
+</div>
+
+<div id="post_rate_div_640284"></div>
+</div></div>
+
+</td>
+</tr>
+
+<tr>
+<td class="post_bottom plm" style="padding: 0 20px;">
+</td>
+</tr>
+
+<tr id="_postposition640284"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="dbc_tb hin" style="border-top: 1px dashed #ededed;">
+<div class="oprow cl">
+<em class="z">
+<a class="fastre" href="forum.php?mod=post&amp;action=reply&amp;fid=15&amp;tid=3313&amp;repquote=640284&amp;extra=page%3D1&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+</em>
+<p class="y">	
+<a href="javascript:;" onclick="showWindow('miscreport640284', 'misc.php?mod=report&rtype=post&rid=640284&tid=3313&fid=15', 'get', -1);return false;">举报</a>
+<a href="javascript:;" id="mgc_post_640284" onmouseover="showMenu(this.id)" class="showmenu ml5">使用道具</a>
+</p>
+<ul id="mgc_post_640284_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_640284')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls"></td>
+<td class="plc">
+</td>
+</tr>
+</table>
+</div>
+<div id="post_640288">
+<table id="pid640288" class="plhin" summary="pid640288" cellspacing="0" cellpadding="0">
+<tr>
+ <td class="pls vtl_view" rowspan="2">
+<div id="favatar640288" class="pls favatar">
+<div class="pi">
+<div class="authi"><a href="space-uid-3586.html" target="_blank" class="xw1">小猫咪</a>
+</div>
+</div>
+<div class="p_pop blk bui" id="userinfo640288" style="display: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo640288_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="space-uid-3586.html" target="_blank" class="xi2">小猫咪</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>UID</dt><dd><a href="?3586" target="_blank" class="xi2">3586</a></dd>
+<dt>积分</dt><dd><a href="home.php?mod=space&uid=3586&do=profile" target="_blank" class="xi2">62</a></dd>
+<dt>雷小钻</dt><dd>0 </dd>
+<dt>雷小币</dt><dd>2919 </dd>
+<dt>贡献点数</dt><dd>14 </dd>
+<dt>注册时间</dt><dd>2024-1-13</dd>
+<dt>在线时间</dt><dd>97 小时</dd>
+<dt></dt><dd></dd>
+<dt>最后登录</dt><dd>2026-8-13</dd>
+</dl><div class="imicn">
+<a href="home.php?mod=space&amp;uid=3586&amp;do=profile" target="_blank" title="查看详细资料"><img src="static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar" onmouseover="showauthor(this, 'userinfo640288')">
+<a href="space-uid-3586.html" class="avtm" target="_blank"><img src="https://bbs.tiepi.top/uc_server/avatar.php?uid=3586&size=middle" class="user_avatar"></a>
+</div>
+</div>
+<div class="lxyxx">
+<p id="nv"><em><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=10" target="_blank">初入学徒</a></em></p>
+<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="home.php?mod=space&uid=3586&do=thread&type=thread&view=me&from=space" class="xi2">2</a></p>主题</th><th><p><a href="home.php?mod=space&uid=3586&do=thread&type=reply&view=me&from=space" class="xi2">271</a></p>回帖</th><td><p><a href="home.php?mod=space&uid=3586&do=profile" class="xi2">62</a></p>积分</td></table></div>
+<div class="pil cl">
+	<dl class="lxyxx_1">
+	<dt>UID</dt><dd><a href="?3586" target="_blank" class="xi2">3586</a></dd>
+	<dt>雷小钻</dt><dd>0 </dd>
+	<dt>雷小币</dt><dd>2919 </dd>
+	<dt>贡献点数</dt><dd>14 </dd>
+	</dl>
+</div>
+
+<div class="pil cl"><dl class="lxyxx_2"></dl></div>
+
+</div><ul class="xl xl2 o cl">
+<li class="pm2"><a href="home.php?mod=spacecp&amp;ac=pm&amp;op=showmsg&amp;handlekey=showmsg_3586&amp;touid=3586&amp;pmid=0&amp;daterange=2&amp;pid=640288&amp;tid=3313" onclick="showWindow('sendpm', this.href);" title="发消息" class="xi2">发消息</a></li>
+</ul>
+</div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="forum.php?mod=redirect&goto=findpost&ptid=3313&pid=640288"   id="postnum640288" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
+
+<em>9</em>#
+</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+
+<div class="authi"><img class="authicn vm" id="authicon640288" src="static/image/common/online_member.gif" />
+<em id="authorposton640288">发表于 2025-1-17 16:59:30</em>
+<span class="pipe">|</span>
+<a href="forum.php?mod=viewthread&amp;tid=3313&amp;page=1&amp;authorid=3586" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_640288">
+666666666666666666666</td></tr></table>
+
+
+</div>
+
+<div id="comment_640288" class="cm">
+</div>
+
+<div id="post_rate_div_640288"></div>
+</div></div>
+
+</td>
+</tr>
+
+<tr>
+<td class="post_bottom plm" style="padding: 0 20px;">
+<div class="sign mtw" style="max-height:100px;maxHeightIE:100px;"><font color="Red">CIA</font></div>
+</td>
+</tr>
+
+<tr id="_postposition640288"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="dbc_tb hin" style="border-top: 1px dashed #ededed;">
+<div class="oprow cl">
+<em class="z">
+<a class="fastre" href="forum.php?mod=post&amp;action=reply&amp;fid=15&amp;tid=3313&amp;repquote=640288&amp;extra=page%3D1&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+</em>
+<p class="y">	
+<a href="javascript:;" onclick="showWindow('miscreport640288', 'misc.php?mod=report&rtype=post&rid=640288&tid=3313&fid=15', 'get', -1);return false;">举报</a>
+<a href="javascript:;" id="mgc_post_640288" onmouseover="showMenu(this.id)" class="showmenu ml5">使用道具</a>
+</p>
+<ul id="mgc_post_640288_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_640288')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls"></td>
+<td class="plc">
+</td>
+</tr>
+</table>
+</div>
+<div id="post_640290">
+<table id="pid640290" class="plhin" summary="pid640290" cellspacing="0" cellpadding="0">
+<tr>
+ <td class="pls vtl_view" rowspan="2">
+<div id="favatar640290" class="pls favatar">
+<div class="pi">
+<div class="authi"><a href="space-uid-2993.html" target="_blank" class="xw1">77..77</a>
+</div>
+</div>
+<div class="p_pop blk bui" id="userinfo640290" style="display: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo640290_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="space-uid-2993.html" target="_blank" class="xi2">77..77</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>UID</dt><dd><a href="?2993" target="_blank" class="xi2">2993</a></dd>
+<dt>积分</dt><dd><a href="home.php?mod=space&uid=2993&do=profile" target="_blank" class="xi2">33</a></dd>
+<dt>雷小钻</dt><dd>0 </dd>
+<dt>雷小币</dt><dd>1682 </dd>
+<dt>贡献点数</dt><dd>12 </dd>
+<dt>注册时间</dt><dd>2024-1-8</dd>
+<dt>在线时间</dt><dd>27 小时</dd>
+<dt></dt><dd></dd>
+<dt>最后登录</dt><dd>2026-10-10</dd>
+</dl><div class="imicn">
+<a href="home.php?mod=space&amp;uid=2993&amp;do=profile" target="_blank" title="查看详细资料"><img src="static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar" onmouseover="showauthor(this, 'userinfo640290')">
+<a href="space-uid-2993.html" class="avtm" target="_blank"><img src="https://bbs.tiepi.top/uc_server/avatar.php?uid=2993&size=middle" class="user_avatar"></a>
+</div>
+</div>
+<div class="lxyxx">
+<p id="nv"><em><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=10" target="_blank">初入学徒</a></em></p>
+<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="home.php?mod=space&uid=2993&do=thread&type=thread&view=me&from=space" class="xi2">0</a></p>主题</th><th><p><a href="home.php?mod=space&uid=2993&do=thread&type=reply&view=me&from=space" class="xi2">83</a></p>回帖</th><td><p><a href="home.php?mod=space&uid=2993&do=profile" class="xi2">33</a></p>积分</td></table></div>
+<div class="pil cl">
+	<dl class="lxyxx_1">
+	<dt>UID</dt><dd><a href="?2993" target="_blank" class="xi2">2993</a></dd>
+	<dt>雷小钻</dt><dd>0 </dd>
+	<dt>雷小币</dt><dd>1682 </dd>
+	<dt>贡献点数</dt><dd>12 </dd>
+	</dl>
+</div>
+
+<div class="pil cl"><dl class="lxyxx_2"></dl></div>
+
+</div><ul class="xl xl2 o cl">
+<li class="pm2"><a href="home.php?mod=spacecp&amp;ac=pm&amp;op=showmsg&amp;handlekey=showmsg_2993&amp;touid=2993&amp;pmid=0&amp;daterange=2&amp;pid=640290&amp;tid=3313" onclick="showWindow('sendpm', this.href);" title="发消息" class="xi2">发消息</a></li>
+</ul>
+</div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="forum.php?mod=redirect&goto=findpost&ptid=3313&pid=640290"   id="postnum640290" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
+
+<em>10</em>#
+</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+
+<div class="authi"><img class="authicn vm" id="authicon640290" src="static/image/common/online_member.gif" />
+<em id="authorposton640290">发表于 2025-1-17 16:59:56</em>
+<span class="pipe">|</span>
+<a href="forum.php?mod=viewthread&amp;tid=3313&amp;page=1&amp;authorid=2993" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_640290">
+6666666666666</td></tr></table>
+
+
+</div>
+
+<div id="comment_640290" class="cm">
+</div>
+
+<div id="post_rate_div_640290"></div>
+</div></div>
+
+</td>
+</tr>
+
+<tr>
+<td class="post_bottom plm" style="padding: 0 20px;">
+</td>
+</tr>
+
+<tr id="_postposition640290"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="dbc_tb hin" style="border-top: 1px dashed #ededed;">
+<div class="oprow cl">
+<em class="z">
+<a class="fastre" href="forum.php?mod=post&amp;action=reply&amp;fid=15&amp;tid=3313&amp;repquote=640290&amp;extra=page%3D1&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+</em>
+<p class="y">	
+<a href="javascript:;" onclick="showWindow('miscreport640290', 'misc.php?mod=report&rtype=post&rid=640290&tid=3313&fid=15', 'get', -1);return false;">举报</a>
+<a href="javascript:;" id="mgc_post_640290" onmouseover="showMenu(this.id)" class="showmenu ml5">使用道具</a>
+</p>
+<ul id="mgc_post_640290_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_640290')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls"></td>
+<td class="plc">
+</td>
+</tr>
+</table>
+</div>
+<div id="postlistreply" class="pl"><div id="post_new" class="viewthread_table" style="display: none"></div></div>
+</div>
+
+
+<form method="post" autocomplete="off" name="modactions" id="modactions">
+<input type="hidden" name="formhash" value="8519c8e7" />
+<input type="hidden" name="optgroup" />
+<input type="hidden" name="operation" />
+<input type="hidden" name="listextra" value="page%3D1" />
+<input type="hidden" name="page" value="1" />
+</form>
+
+
+<div class="pgbtn"><a href="thread-3313-2-1.html" hidefocus="true" class="bm_h">下一页 &raquo;</a></div>
+
+<div class="pgs cl" style="border: none;">
+<div class="pg"><strong>1</strong><a href="thread-3313-2-1.html">2</a><a href="thread-3313-3-1.html">3</a><a href="thread-3313-4-1.html">4</a><a href="thread-3313-5-1.html">5</a><a href="thread-3313-6-1.html">6</a><a href="thread-3313-7-1.html">7</a><a href="thread-3313-8-1.html">8</a><a href="thread-3313-9-1.html">9</a><a href="thread-3313-10-1.html">10</a><a href="thread-3313-41-1.html" class="last">... 41</a><label><input type="text" name="custompage" class="px" size="2" title="输入页码，按回车快速跳转" value="1" onkeydown="if(event.keyCode==13) {window.location='forum.php?mod=viewthread&tid=3313&amp;extra=page%3D1&amp;page='+this.value;; doane(event);}" /><span title="共 41 页"> / 41 页</span></label><a href="thread-3313-2-1.html" class="nxt">下一页</a></div><span class="y pgb"><a href="forum-15-1.html">返回列表</a></span>
+<a class="post_btn"  onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=15')" href="javascript:;" title="发新帖">发新帖</a></div>
+</div>
+
+<!--[diy=diyfastposttop]--><div id="diyfastposttop" class="area"></div><!--[/diy]-->
+<script type="text/javascript">
+var postminchars = parseInt('10');
+var postmaxchars = parseInt('10000');
+var disablepostctrl = parseInt('0');
+</script>
+
+<div id="f_pst" class="vt_pst pl bm bmw">
+<form method="post" autocomplete="off" id="fastpostform" action="forum.php?mod=post&amp;action=reply&amp;fid=15&amp;tid=3313&amp;extra=page%3D1&amp;replysubmit=yes&amp;infloat=yes&amp;handlekey=fastpost" onSubmit="return fastpostvalidate(this)">
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="plc">
+
+<span id="fastpostreturn"></span>
+
+
+<div class="cl">
+<div id="fastsmiliesdiv" class="y"><div id="fastsmiliesdiv_data"><div id="fastsmilies"></div></div></div><div class="hasfsl" id="fastposteditor">
+<div class="tedt mtn">
+<div class="bar">
+<span class="y">
+<a href="forum.php?mod=post&amp;action=reply&amp;fid=15&amp;tid=3313" onclick="return switchAdvanceMode(this.href)">高级模式</a>
+</span><script src="data/cache/seditor.js?MVB" type="text/javascript"></script>
+<div class="fpd">
+<a href="javascript:;" title="文字加粗" class="fbld">B</a>
+<a href="javascript:;" title="设置文字颜色" class="fclr" id="fastpostforecolor">Color</a>
+<a id="fastpostimg" href="javascript:;" title="图片" class="fmg">Image</a>
+<a id="fastposturl" href="javascript:;" title="添加链接" class="flnk">Link</a>
+<a id="fastpostquote" href="javascript:;" title="引用" class="fqt">Quote</a>
+<a id="fastpostcode" href="javascript:;" title="代码" class="fcd">Code</a>
+<a href="javascript:;" class="fsml" id="fastpostsml">Smilies</a>
+</div></div>
+<div class="area">
+<div class="pt tips hm" style="overflow: hidden;">
+您需要登录后才可以回帖 <a href="member.php?mod=logging&amp;action=login" onclick="showWindow('login', this.href)" class="xi2">登录</a> | <a href="member.php?mod=register" class="xi2">立即注册</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<input type="hidden" name="formhash" value="8519c8e7" />
+<input type="hidden" name="usesig" value="" />
+<input type="hidden" name="subject" value="  " />
+</td>
+</tr>
+</table>
+</form>
+</div>
+
+<script type="text/javascript">document.onkeyup = function(e){keyPageScroll(e, 0, 1, 'forum.php?mod=viewthread&tid=3313', 1);}</script>
+
+</div>
+
+<script type="text/javascript">
+dChuang().toggleDelFav();
+</script>
+
+<div class="wp mtn">
+<!--[diy=diy3]--><div id="diy3" class="area"></div><!--[/diy]-->
+</div>
+
+<script type="text/javascript">
+function succeedhandle_followmod(url, msg, values) {
+var fObj = $('followmod_'+values['fuid']);
+if(values['type'] == 'add') {
+fObj.innerHTML = '不收听';
+fObj.href = 'home.php?mod=spacecp&ac=follow&op=del&fuid='+values['fuid'];
+} else if(values['type'] == 'del') {
+fObj.innerHTML = '收听TA';
+fObj.href = 'home.php?mod=spacecp&ac=follow&op=add&hash=8519c8e7&fuid='+values['fuid'];
+}
+}
+fixed_avatar([640270,640271,640272,640273,640275,640277,640283,640284,640288,640290], 0);
+</script>	</div>
+<div id="ft" class="cl" style="background:#FFF">
+<div class="wp">
+<div class="dbc_footer">
+<p><a href="archiver/" >Archiver</a><span class="pipe">|</span><a href="forum.php?showmobile=yes" >手机版</a><span class="pipe">|</span><a href="forum.php?mod=misc&action=showdarkroom" >小黑屋</a><span class="pipe">|</span><strong><a href="https://bbs.tiepi.top/" target="_blank">雷小伊</a></strong>
+</p>
+<p style="font-size: 12px">Copyright &copy; 2001-2020, Tencent Cloud.　Powered by <strong><a href="https://www.discuz.vip" target="_blank">Discuz!</a></strong> <em>X3.5</em></p>
+</div>
+</div></div>
+<script src="home.php?mod=misc&ac=sendmail&rand=1795328963" type="text/javascript"></script>
+
+<div id="scrolltop">
+<span><a href="forum.php?mod=post&amp;action=reply&amp;fid=15&amp;tid=3313&amp;extra=page%3D1&amp;page=1" onclick="showWindow('reply', this.href)" class="replyfast" title="快速回复"><b>快速回复</b></a></span>
+<span hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" class="scrolltopa" style="border-top: 1px solid #dfdfdf;"><b>返回顶部</b></a></span>
+<span>
+<a href="forum-15-1.html" hidefocus="true" class="returnlist" title="返回列表"><b>返回列表</b></a>
+</span>
+</div>
+<script type="text/javascript">_attachEvent(window, 'scroll', function () { showTopLink(); });checkBlind();</script>
+<!--[if IE 8]>
+<script src="./template/dbc_community_01/assets/js/dChuang_ie8.js" type="text/javascript"></script>
+<![endif]--><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"aac01f42a243429fa606116f8ddc0481","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

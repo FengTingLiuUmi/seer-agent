@@ -1,0 +1,1 @@
+{"desc": "自身当回合受到攻击则回合结束时附加对手最大体力1/4的固定伤害", "desc_tag": null, "hash": "bc6d274", "icon": [34], "id": 2231, "tag": "附加伤害", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

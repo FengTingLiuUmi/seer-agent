@@ -1,0 +1,1 @@
+{"desc": "若{roundnext[2]}受到攻击，则对手随机{0}项能力值-{1}", "desc_tag": "roundnext", "hash": "50c16ef7", "icon": [18], "id": 178, "tag": "弱化", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

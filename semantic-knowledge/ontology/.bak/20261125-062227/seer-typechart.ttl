@@ -1,0 +1,4567 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix seer: <http://example.org/seer#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+seer:tc_1 a seer:TypeCombination ;
+    rdfs:label "草"@zh ;
+    seer:combinationOf seer:el_1 ;
+    seer:seerapiId "1" .
+
+seer:tc_10 a seer:TypeCombination ;
+    rdfs:label "超能"@zh ;
+    seer:combinationOf seer:el_10 ;
+    seer:seerapiId "10" .
+
+seer:tc_100 a seer:TypeCombination ;
+    rdfs:label "圣灵 地面"@zh ;
+    seer:combinationOf seer:el_16,
+        seer:el_7 ;
+    seer:seerapiId "100" .
+
+seer:tc_101 a seer:TypeCombination ;
+    rdfs:label "火 暗影"@zh ;
+    seer:combinationOf seer:el_13,
+        seer:el_3 ;
+    seer:seerapiId "101" .
+
+seer:tc_102 a seer:TypeCombination ;
+    rdfs:label "光 超能"@zh ;
+    seer:combinationOf seer:el_10,
+        seer:el_12 ;
+    seer:seerapiId "102" .
+
+seer:tc_103 a seer:TypeCombination ;
+    rdfs:label "机械 战斗"@zh ;
+    seer:combinationOf seer:el_11,
+        seer:el_6 ;
+    seer:seerapiId "103" .
+
+seer:tc_104 a seer:TypeCombination ;
+    rdfs:label "飞行 电"@zh ;
+    seer:combinationOf seer:el_4,
+        seer:el_5 ;
+    seer:seerapiId "104" .
+
+seer:tc_105 a seer:TypeCombination ;
+    rdfs:label "混沌 飞行"@zh ;
+    seer:combinationOf seer:el_222,
+        seer:el_4 ;
+    seer:seerapiId "105" .
+
+seer:tc_106 a seer:TypeCombination ;
+    rdfs:label "混沌 龙"@zh ;
+    seer:combinationOf seer:el_15,
+        seer:el_222 ;
+    seer:seerapiId "106" .
+
+seer:tc_107 a seer:TypeCombination ;
+    rdfs:label "混沌 火"@zh ;
+    seer:combinationOf seer:el_222,
+        seer:el_3 ;
+    seer:seerapiId "107" .
+
+seer:tc_108 a seer:TypeCombination ;
+    rdfs:label "圣灵 火"@zh ;
+    seer:combinationOf seer:el_16,
+        seer:el_3 ;
+    seer:seerapiId "108" .
+
+seer:tc_109 a seer:TypeCombination ;
+    rdfs:label "地面 神秘"@zh ;
+    seer:combinationOf seer:el_14,
+        seer:el_7 ;
+    seer:seerapiId "109" .
+
+seer:tc_11 a seer:TypeCombination ;
+    rdfs:label "战斗"@zh ;
+    seer:combinationOf seer:el_11 ;
+    seer:seerapiId "11" .
+
+seer:tc_110 a seer:TypeCombination ;
+    rdfs:label "混沌 次元"@zh ;
+    seer:combinationOf seer:el_17,
+        seer:el_222 ;
+    seer:seerapiId "110" .
+
+seer:tc_111 a seer:TypeCombination ;
+    rdfs:label "混沌 冰"@zh ;
+    seer:combinationOf seer:el_222,
+        seer:el_9 ;
+    seer:seerapiId "111" .
+
+seer:tc_112 a seer:TypeCombination ;
+    rdfs:label "自然 神秘"@zh ;
+    seer:combinationOf seer:el_14,
+        seer:el_20 ;
+    seer:seerapiId "112" .
+
+seer:tc_113 a seer:TypeCombination ;
+    rdfs:label "虚空 邪灵"@zh ;
+    seer:combinationOf seer:el_19,
+        seer:el_226 ;
+    seer:seerapiId "113" .
+
+seer:tc_114 a seer:TypeCombination ;
+    rdfs:label "虚空 混沌"@zh ;
+    seer:combinationOf seer:el_222,
+        seer:el_226 ;
+    seer:seerapiId "114" .
+
+seer:tc_115 a seer:TypeCombination ;
+    rdfs:label "圣灵 轮回"@zh ;
+    seer:combinationOf seer:el_16,
+        seer:el_224 ;
+    seer:seerapiId "115" .
+
+seer:tc_116 a seer:TypeCombination ;
+    rdfs:label "水 次元"@zh ;
+    seer:combinationOf seer:el_17,
+        seer:el_2 ;
+    seer:seerapiId "116" .
+
+seer:tc_117 a seer:TypeCombination ;
+    rdfs:label "圣灵 神秘"@zh ;
+    seer:combinationOf seer:el_14,
+        seer:el_16 ;
+    seer:seerapiId "117" .
+
+seer:tc_118 a seer:TypeCombination ;
+    rdfs:label "机械 神秘"@zh ;
+    seer:combinationOf seer:el_14,
+        seer:el_6 ;
+    seer:seerapiId "118" .
+
+seer:tc_119 a seer:TypeCombination ;
+    rdfs:label "水 神秘"@zh ;
+    seer:combinationOf seer:el_14,
+        seer:el_2 ;
+    seer:seerapiId "119" .
+
+seer:tc_12 a seer:TypeCombination ;
+    rdfs:label "光"@zh ;
+    seer:combinationOf seer:el_12 ;
+    seer:seerapiId "12" .
+
+seer:tc_120 a seer:TypeCombination ;
+    rdfs:label "次元 龙"@zh ;
+    seer:combinationOf seer:el_15,
+        seer:el_17 ;
+    seer:seerapiId "120" .
+
+seer:tc_121 a seer:TypeCombination ;
+    rdfs:label "自然 超能"@zh ;
+    seer:combinationOf seer:el_10,
+        seer:el_20 ;
+    seer:seerapiId "121" .
+
+seer:tc_122 a seer:TypeCombination ;
+    rdfs:label "电 机械"@zh ;
+    seer:combinationOf seer:el_5,
+        seer:el_6 ;
+    seer:seerapiId "122" .
+
+seer:tc_123 a seer:TypeCombination ;
+    rdfs:label "神秘 轮回"@zh ;
+    seer:combinationOf seer:el_14,
+        seer:el_224 ;
+    seer:seerapiId "123" .
+
+seer:tc_124 a seer:TypeCombination ;
+    rdfs:label "水 机械"@zh ;
+    seer:combinationOf seer:el_2,
+        seer:el_6 ;
+    seer:seerapiId "124" .
+
+seer:tc_125 a seer:TypeCombination ;
+    rdfs:label "火 机械"@zh ;
+    seer:combinationOf seer:el_3,
+        seer:el_6 ;
+    seer:seerapiId "125" .
+
+seer:tc_126 a seer:TypeCombination ;
+    rdfs:label "草 机械"@zh ;
+    seer:combinationOf seer:el_1,
+        seer:el_6 ;
+    seer:seerapiId "126" .
+
+seer:tc_127 a seer:TypeCombination ;
+    rdfs:label "远古 电"@zh ;
+    seer:combinationOf seer:el_18,
+        seer:el_5 ;
+    seer:seerapiId "127" .
+
+seer:tc_128 a seer:TypeCombination ;
+    rdfs:label "圣灵 飞行"@zh ;
+    seer:combinationOf seer:el_16,
+        seer:el_4 ;
+    seer:seerapiId "128" .
+
+seer:tc_129 a seer:TypeCombination ;
+    rdfs:label "远古 机械"@zh ;
+    seer:combinationOf seer:el_18,
+        seer:el_6 ;
+    seer:seerapiId "129" .
+
+seer:tc_13 a seer:TypeCombination ;
+    rdfs:label "暗影"@zh ;
+    seer:combinationOf seer:el_13 ;
+    seer:seerapiId "13" .
+
+seer:tc_130 a seer:TypeCombination ;
+    rdfs:label "远古 光"@zh ;
+    seer:combinationOf seer:el_12,
+        seer:el_18 ;
+    seer:seerapiId "130" .
+
+seer:tc_131 a seer:TypeCombination ;
+    rdfs:label "混沌 光"@zh ;
+    seer:combinationOf seer:el_12,
+        seer:el_222 ;
+    seer:seerapiId "131" .
+
+seer:tc_132 a seer:TypeCombination ;
+    rdfs:label "火 虫"@zh ;
+    seer:combinationOf seer:el_225,
+        seer:el_3 ;
+    seer:seerapiId "132" .
+
+seer:tc_133 a seer:TypeCombination ;
+    rdfs:label "远古 水"@zh ;
+    seer:combinationOf seer:el_18,
+        seer:el_2 ;
+    seer:seerapiId "133" .
+
+seer:tc_14 a seer:TypeCombination ;
+    rdfs:label "神秘"@zh ;
+    seer:combinationOf seer:el_14 ;
+    seer:seerapiId "14" .
+
+seer:tc_15 a seer:TypeCombination ;
+    rdfs:label "龙"@zh ;
+    seer:combinationOf seer:el_15 ;
+    seer:seerapiId "15" .
+
+seer:tc_16 a seer:TypeCombination ;
+    rdfs:label "圣灵"@zh ;
+    seer:combinationOf seer:el_16 ;
+    seer:seerapiId "16" .
+
+seer:tc_17 a seer:TypeCombination ;
+    rdfs:label "次元"@zh ;
+    seer:combinationOf seer:el_17 ;
+    seer:seerapiId "17" .
+
+seer:tc_18 a seer:TypeCombination ;
+    rdfs:label "远古"@zh ;
+    seer:combinationOf seer:el_18 ;
+    seer:seerapiId "18" .
+
+seer:tc_19 a seer:TypeCombination ;
+    rdfs:label "邪灵"@zh ;
+    seer:combinationOf seer:el_19 ;
+    seer:seerapiId "19" .
+
+seer:tc_2 a seer:TypeCombination ;
+    rdfs:label "水"@zh ;
+    seer:combinationOf seer:el_2 ;
+    seer:seerapiId "2" .
+
+seer:tc_20 a seer:TypeCombination ;
+    rdfs:label "自然"@zh ;
+    seer:combinationOf seer:el_20 ;
+    seer:seerapiId "20" .
+
+seer:tc_21 a seer:TypeCombination ;
+    rdfs:label "草 超能"@zh ;
+    seer:combinationOf seer:el_1,
+        seer:el_10 ;
+    seer:seerapiId "21" .
+
+seer:tc_22 a seer:TypeCombination ;
+    rdfs:label "草 战斗"@zh ;
+    seer:combinationOf seer:el_1,
+        seer:el_11 ;
+    seer:seerapiId "22" .
+
+seer:tc_221 a seer:TypeCombination ;
+    rdfs:label "王"@zh ;
+    seer:combinationOf seer:el_221 ;
+    seer:seerapiId "221" .
+
+seer:tc_222 a seer:TypeCombination ;
+    rdfs:label "混沌"@zh ;
+    seer:combinationOf seer:el_222 ;
+    seer:seerapiId "222" .
+
+seer:tc_223 a seer:TypeCombination ;
+    rdfs:label "神灵"@zh ;
+    seer:combinationOf seer:el_223 ;
+    seer:seerapiId "223" .
+
+seer:tc_224 a seer:TypeCombination ;
+    rdfs:label "轮回"@zh ;
+    seer:combinationOf seer:el_224 ;
+    seer:seerapiId "224" .
+
+seer:tc_225 a seer:TypeCombination ;
+    rdfs:label "虫"@zh ;
+    seer:combinationOf seer:el_225 ;
+    seer:seerapiId "225" .
+
+seer:tc_226 a seer:TypeCombination ;
+    rdfs:label "虚空"@zh ;
+    seer:combinationOf seer:el_226 ;
+    seer:seerapiId "226" .
+
+seer:tc_23 a seer:TypeCombination ;
+    rdfs:label "草 暗影"@zh ;
+    seer:combinationOf seer:el_1,
+        seer:el_13 ;
+    seer:seerapiId "23" .
+
+seer:tc_24 a seer:TypeCombination ;
+    rdfs:label "水 超能"@zh ;
+    seer:combinationOf seer:el_10,
+        seer:el_2 ;
+    seer:seerapiId "24" .
+
+seer:tc_25 a seer:TypeCombination ;
+    rdfs:label "水 暗影"@zh ;
+    seer:combinationOf seer:el_13,
+        seer:el_2 ;
+    seer:seerapiId "25" .
+
+seer:tc_26 a seer:TypeCombination ;
+    rdfs:label "水 龙"@zh ;
+    seer:combinationOf seer:el_15,
+        seer:el_2 ;
+    seer:seerapiId "26" .
+
+seer:tc_27 a seer:TypeCombination ;
+    rdfs:label "火 飞行"@zh ;
+    seer:combinationOf seer:el_3,
+        seer:el_4 ;
+    seer:seerapiId "27" .
+
+seer:tc_28 a seer:TypeCombination ;
+    rdfs:label "火 龙"@zh ;
+    seer:combinationOf seer:el_15,
+        seer:el_3 ;
+    seer:seerapiId "28" .
+
+seer:tc_29 a seer:TypeCombination ;
+    rdfs:label "火 超能"@zh ;
+    seer:combinationOf seer:el_10,
+        seer:el_3 ;
+    seer:seerapiId "29" .
+
+seer:tc_3 a seer:TypeCombination ;
+    rdfs:label "火"@zh ;
+    seer:combinationOf seer:el_3 ;
+    seer:seerapiId "3" .
+
+seer:tc_30 a seer:TypeCombination ;
+    rdfs:label "飞行 超能"@zh ;
+    seer:combinationOf seer:el_10,
+        seer:el_4 ;
+    seer:seerapiId "30" .
+
+seer:tc_31 a seer:TypeCombination ;
+    rdfs:label "光 飞行"@zh ;
+    seer:combinationOf seer:el_12,
+        seer:el_4 ;
+    seer:seerapiId "31" .
+
+seer:tc_32 a seer:TypeCombination ;
+    rdfs:label "飞行 龙"@zh ;
+    seer:combinationOf seer:el_15,
+        seer:el_4 ;
+    seer:seerapiId "32" .
+
+seer:tc_33 a seer:TypeCombination ;
+    rdfs:label "电 火"@zh ;
+    seer:combinationOf seer:el_3,
+        seer:el_5 ;
+    seer:seerapiId "33" .
+
+seer:tc_34 a seer:TypeCombination ;
+    rdfs:label "电 冰"@zh ;
+    seer:combinationOf seer:el_5,
+        seer:el_9 ;
+    seer:seerapiId "34" .
+
+seer:tc_35 a seer:TypeCombination ;
+    rdfs:label "电 战斗"@zh ;
+    seer:combinationOf seer:el_11,
+        seer:el_5 ;
+    seer:seerapiId "35" .
+
+seer:tc_36 a seer:TypeCombination ;
+    rdfs:label "暗影 电"@zh ;
+    seer:combinationOf seer:el_13,
+        seer:el_5 ;
+    seer:seerapiId "36" .
+
+seer:tc_37 a seer:TypeCombination ;
+    rdfs:label "机械 地面"@zh ;
+    seer:combinationOf seer:el_6,
+        seer:el_7 ;
+    seer:seerapiId "37" .
+
+seer:tc_38 a seer:TypeCombination ;
+    rdfs:label "机械 超能"@zh ;
+    seer:combinationOf seer:el_10,
+        seer:el_6 ;
+    seer:seerapiId "38" .
+
+seer:tc_39 a seer:TypeCombination ;
+    rdfs:label "机械 龙"@zh ;
+    seer:combinationOf seer:el_15,
+        seer:el_6 ;
+    seer:seerapiId "39" .
+
+seer:tc_4 a seer:TypeCombination ;
+    rdfs:label "飞行"@zh ;
+    seer:combinationOf seer:el_4 ;
+    seer:seerapiId "4" .
+
+seer:tc_40 a seer:TypeCombination ;
+    rdfs:label "地面 龙"@zh ;
+    seer:combinationOf seer:el_15,
+        seer:el_7 ;
+    seer:seerapiId "40" .
+
+seer:tc_41 a seer:TypeCombination ;
+    rdfs:label "战斗 地面"@zh ;
+    seer:combinationOf seer:el_11,
+        seer:el_7 ;
+    seer:seerapiId "41" .
+
+seer:tc_42 a seer:TypeCombination ;
+    rdfs:label "地面 暗影"@zh ;
+    seer:combinationOf seer:el_13,
+        seer:el_7 ;
+    seer:seerapiId "42" .
+
+seer:tc_43 a seer:TypeCombination ;
+    rdfs:label "冰 龙"@zh ;
+    seer:combinationOf seer:el_15,
+        seer:el_9 ;
+    seer:seerapiId "43" .
+
+seer:tc_44 a seer:TypeCombination ;
+    rdfs:label "冰 光"@zh ;
+    seer:combinationOf seer:el_12,
+        seer:el_9 ;
+    seer:seerapiId "44" .
+
+seer:tc_45 a seer:TypeCombination ;
+    rdfs:label "冰 暗影"@zh ;
+    seer:combinationOf seer:el_13,
+        seer:el_9 ;
+    seer:seerapiId "45" .
+
+seer:tc_46 a seer:TypeCombination ;
+    rdfs:label "超能 冰"@zh ;
+    seer:combinationOf seer:el_10,
+        seer:el_9 ;
+    seer:seerapiId "46" .
+
+seer:tc_47 a seer:TypeCombination ;
+    rdfs:label "战斗 火"@zh ;
+    seer:combinationOf seer:el_11,
+        seer:el_3 ;
+    seer:seerapiId "47" .
+
+seer:tc_48 a seer:TypeCombination ;
+    rdfs:label "战斗 暗影"@zh ;
+    seer:combinationOf seer:el_11,
+        seer:el_13 ;
+    seer:seerapiId "48" .
+
+seer:tc_49 a seer:TypeCombination ;
+    rdfs:label "光 神秘"@zh ;
+    seer:combinationOf seer:el_12,
+        seer:el_14 ;
+    seer:seerapiId "49" .
+
+seer:tc_5 a seer:TypeCombination ;
+    rdfs:label "电"@zh ;
+    seer:combinationOf seer:el_5 ;
+    seer:seerapiId "5" .
+
+seer:tc_50 a seer:TypeCombination ;
+    rdfs:label "暗影 神秘"@zh ;
+    seer:combinationOf seer:el_13,
+        seer:el_14 ;
+    seer:seerapiId "50" .
+
+seer:tc_51 a seer:TypeCombination ;
+    rdfs:label "神秘 超能"@zh ;
+    seer:combinationOf seer:el_10,
+        seer:el_14 ;
+    seer:seerapiId "51" .
+
+seer:tc_52 a seer:TypeCombination ;
+    rdfs:label "圣灵 光"@zh ;
+    seer:combinationOf seer:el_12,
+        seer:el_16 ;
+    seer:seerapiId "52" .
+
+seer:tc_53 a seer:TypeCombination ;
+    rdfs:label "飞行 神秘"@zh ;
+    seer:combinationOf seer:el_14,
+        seer:el_4 ;
+    seer:seerapiId "53" .
+
+seer:tc_54 a seer:TypeCombination ;
+    rdfs:label "地面 超能"@zh ;
+    seer:combinationOf seer:el_10,
+        seer:el_7 ;
+    seer:seerapiId "54" .
+
+seer:tc_55 a seer:TypeCombination ;
+    rdfs:label "暗影 龙"@zh ;
+    seer:combinationOf seer:el_13,
+        seer:el_15 ;
+    seer:seerapiId "55" .
+
+seer:tc_56 a seer:TypeCombination ;
+    rdfs:label "圣灵 暗影"@zh ;
+    seer:combinationOf seer:el_13,
+        seer:el_16 ;
+    seer:seerapiId "56" .
+
+seer:tc_57 a seer:TypeCombination ;
+    rdfs:label "远古 战斗"@zh ;
+    seer:combinationOf seer:el_11,
+        seer:el_18 ;
+    seer:seerapiId "57" .
+
+seer:tc_58 a seer:TypeCombination ;
+    rdfs:label "火 神秘"@zh ;
+    seer:combinationOf seer:el_14,
+        seer:el_3 ;
+    seer:seerapiId "58" .
+
+seer:tc_59 a seer:TypeCombination ;
+    rdfs:label "光 战斗"@zh ;
+    seer:combinationOf seer:el_11,
+        seer:el_12 ;
+    seer:seerapiId "59" .
+
+seer:tc_6 a seer:TypeCombination ;
+    rdfs:label "机械"@zh ;
+    seer:combinationOf seer:el_6 ;
+    seer:seerapiId "6" .
+
+seer:tc_60 a seer:TypeCombination ;
+    rdfs:label "神秘 战斗"@zh ;
+    seer:combinationOf seer:el_11,
+        seer:el_14 ;
+    seer:seerapiId "60" .
+
+seer:tc_61 a seer:TypeCombination ;
+    rdfs:label "次元 战斗"@zh ;
+    seer:combinationOf seer:el_11,
+        seer:el_17 ;
+    seer:seerapiId "61" .
+
+seer:tc_62 a seer:TypeCombination ;
+    rdfs:label "邪灵 神秘"@zh ;
+    seer:combinationOf seer:el_14,
+        seer:el_19 ;
+    seer:seerapiId "62" .
+
+seer:tc_63 a seer:TypeCombination ;
+    rdfs:label "远古 龙"@zh ;
+    seer:combinationOf seer:el_15,
+        seer:el_18 ;
+    seer:seerapiId "63" .
+
+seer:tc_64 a seer:TypeCombination ;
+    rdfs:label "光 次元"@zh ;
+    seer:combinationOf seer:el_12,
+        seer:el_17 ;
+    seer:seerapiId "64" .
+
+seer:tc_65 a seer:TypeCombination ;
+    rdfs:label "远古 圣灵"@zh ;
+    seer:combinationOf seer:el_16,
+        seer:el_18 ;
+    seer:seerapiId "65" .
+
+seer:tc_66 a seer:TypeCombination ;
+    rdfs:label "水 战斗"@zh ;
+    seer:combinationOf seer:el_11,
+        seer:el_2 ;
+    seer:seerapiId "66" .
+
+seer:tc_67 a seer:TypeCombination ;
+    rdfs:label "电 龙"@zh ;
+    seer:combinationOf seer:el_15,
+        seer:el_5 ;
+    seer:seerapiId "67" .
+
+seer:tc_68 a seer:TypeCombination ;
+    rdfs:label "光 火"@zh ;
+    seer:combinationOf seer:el_12,
+        seer:el_3 ;
+    seer:seerapiId "68" .
+
+seer:tc_69 a seer:TypeCombination ;
+    rdfs:label "光 暗影"@zh ;
+    seer:combinationOf seer:el_12,
+        seer:el_13 ;
+    seer:seerapiId "69" .
+
+seer:tc_7 a seer:TypeCombination ;
+    rdfs:label "地面"@zh ;
+    seer:combinationOf seer:el_7 ;
+    seer:seerapiId "7" .
+
+seer:tc_70 a seer:TypeCombination ;
+    rdfs:label "邪灵 龙"@zh ;
+    seer:combinationOf seer:el_15,
+        seer:el_19 ;
+    seer:seerapiId "70" .
+
+seer:tc_71 a seer:TypeCombination ;
+    rdfs:label "远古 神秘"@zh ;
+    seer:combinationOf seer:el_14,
+        seer:el_18 ;
+    seer:seerapiId "71" .
+
+seer:tc_72 a seer:TypeCombination ;
+    rdfs:label "机械 次元"@zh ;
+    seer:combinationOf seer:el_17,
+        seer:el_6 ;
+    seer:seerapiId "72" .
+
+seer:tc_73 a seer:TypeCombination ;
+    rdfs:label "战斗 龙"@zh ;
+    seer:combinationOf seer:el_11,
+        seer:el_15 ;
+    seer:seerapiId "73" .
+
+seer:tc_74 a seer:TypeCombination ;
+    rdfs:label "战斗 自然"@zh ;
+    seer:combinationOf seer:el_11,
+        seer:el_20 ;
+    seer:seerapiId "74" .
+
+seer:tc_75 a seer:TypeCombination ;
+    rdfs:label "邪灵 机械"@zh ;
+    seer:combinationOf seer:el_19,
+        seer:el_6 ;
+    seer:seerapiId "75" .
+
+seer:tc_76 a seer:TypeCombination ;
+    rdfs:label "电 次元"@zh ;
+    seer:combinationOf seer:el_17,
+        seer:el_5 ;
+    seer:seerapiId "76" .
+
+seer:tc_77 a seer:TypeCombination ;
+    rdfs:label "远古 火"@zh ;
+    seer:combinationOf seer:el_18,
+        seer:el_3 ;
+    seer:seerapiId "77" .
+
+seer:tc_78 a seer:TypeCombination ;
+    rdfs:label "圣灵 战斗"@zh ;
+    seer:combinationOf seer:el_11,
+        seer:el_16 ;
+    seer:seerapiId "78" .
+
+seer:tc_79 a seer:TypeCombination ;
+    rdfs:label "圣灵 次元"@zh ;
+    seer:combinationOf seer:el_16,
+        seer:el_17 ;
+    seer:seerapiId "79" .
+
+seer:tc_8 a seer:TypeCombination ;
+    rdfs:label "普通"@zh ;
+    seer:combinationOf seer:el_8 ;
+    seer:seerapiId "8" .
+
+seer:tc_80 a seer:TypeCombination ;
+    rdfs:label "圣灵 电"@zh ;
+    seer:combinationOf seer:el_16,
+        seer:el_5 ;
+    seer:seerapiId "80" .
+
+seer:tc_81 a seer:TypeCombination ;
+    rdfs:label "远古 地面"@zh ;
+    seer:combinationOf seer:el_18,
+        seer:el_7 ;
+    seer:seerapiId "81" .
+
+seer:tc_82 a seer:TypeCombination ;
+    rdfs:label "远古 草"@zh ;
+    seer:combinationOf seer:el_1,
+        seer:el_18 ;
+    seer:seerapiId "82" .
+
+seer:tc_83 a seer:TypeCombination ;
+    rdfs:label "自然 龙"@zh ;
+    seer:combinationOf seer:el_15,
+        seer:el_20 ;
+    seer:seerapiId "83" .
+
+seer:tc_84 a seer:TypeCombination ;
+    rdfs:label "冰 神秘"@zh ;
+    seer:combinationOf seer:el_14,
+        seer:el_9 ;
+    seer:seerapiId "84" .
+
+seer:tc_85 a seer:TypeCombination ;
+    rdfs:label "飞行 暗影"@zh ;
+    seer:combinationOf seer:el_13,
+        seer:el_4 ;
+    seer:seerapiId "85" .
+
+seer:tc_86 a seer:TypeCombination ;
+    rdfs:label "冰 火"@zh ;
+    seer:combinationOf seer:el_3,
+        seer:el_9 ;
+    seer:seerapiId "86" .
+
+seer:tc_87 a seer:TypeCombination ;
+    rdfs:label "冰 飞行"@zh ;
+    seer:combinationOf seer:el_4,
+        seer:el_9 ;
+    seer:seerapiId "87" .
+
+seer:tc_88 a seer:TypeCombination ;
+    rdfs:label "自然 圣灵"@zh ;
+    seer:combinationOf seer:el_16,
+        seer:el_20 ;
+    seer:seerapiId "88" .
+
+seer:tc_89 a seer:TypeCombination ;
+    rdfs:label "混沌 圣灵"@zh ;
+    seer:combinationOf seer:el_16,
+        seer:el_222 ;
+    seer:seerapiId "89" .
+
+seer:tc_9 a seer:TypeCombination ;
+    rdfs:label "冰"@zh ;
+    seer:combinationOf seer:el_9 ;
+    seer:seerapiId "9" .
+
+seer:tc_90 a seer:TypeCombination ;
+    rdfs:label "远古 邪灵"@zh ;
+    seer:combinationOf seer:el_18,
+        seer:el_19 ;
+    seer:seerapiId "90" .
+
+seer:tc_91 a seer:TypeCombination ;
+    rdfs:label "自然 冰"@zh ;
+    seer:combinationOf seer:el_20,
+        seer:el_9 ;
+    seer:seerapiId "91" .
+
+seer:tc_92 a seer:TypeCombination ;
+    rdfs:label "混沌 暗影"@zh ;
+    seer:combinationOf seer:el_13,
+        seer:el_222 ;
+    seer:seerapiId "92" .
+
+seer:tc_93 a seer:TypeCombination ;
+    rdfs:label "混沌 战斗"@zh ;
+    seer:combinationOf seer:el_11,
+        seer:el_222 ;
+    seer:seerapiId "93" .
+
+seer:tc_94 a seer:TypeCombination ;
+    rdfs:label "混沌 超能"@zh ;
+    seer:combinationOf seer:el_10,
+        seer:el_222 ;
+    seer:seerapiId "94" .
+
+seer:tc_95 a seer:TypeCombination ;
+    rdfs:label "圣灵 超能"@zh ;
+    seer:combinationOf seer:el_10,
+        seer:el_16 ;
+    seer:seerapiId "95" .
+
+seer:tc_96 a seer:TypeCombination ;
+    rdfs:label "混沌 地面"@zh ;
+    seer:combinationOf seer:el_222,
+        seer:el_7 ;
+    seer:seerapiId "96" .
+
+seer:tc_97 a seer:TypeCombination ;
+    rdfs:label "暗影 邪灵"@zh ;
+    seer:combinationOf seer:el_13,
+        seer:el_19 ;
+    seer:seerapiId "97" .
+
+seer:tc_98 a seer:TypeCombination ;
+    rdfs:label "混沌 远古"@zh ;
+    seer:combinationOf seer:el_18,
+        seer:el_222 ;
+    seer:seerapiId "98" .
+
+seer:tc_99 a seer:TypeCombination ;
+    rdfs:label "混沌 邪灵"@zh ;
+    seer:combinationOf seer:el_19,
+        seer:el_222 ;
+    seer:seerapiId "99" .
+
+seer:trel_10_1 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_10_10 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_10 .
+
+seer:trel_10_11 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_11 .
+
+seer:trel_10_12 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 0.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_10_13 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_10_14 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_10_15 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_10_16 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_16 .
+
+seer:trel_10_17 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_10_18 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_10_19 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_19 .
+
+seer:trel_10_2 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_2 .
+
+seer:trel_10_20 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_20 .
+
+seer:trel_10_221 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_10_222 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_222 .
+
+seer:trel_10_223 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_223 .
+
+seer:trel_10_224 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_224 .
+
+seer:trel_10_225 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_225 .
+
+seer:trel_10_226 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_10_3 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_3 .
+
+seer:trel_10_4 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_10_5 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_10_6 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_6 .
+
+seer:trel_10_7 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_10_8 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_10_9 a seer:TypeRelation ;
+    seer:attacker seer:el_10 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_9 .
+
+seer:trel_11_1 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_11_10 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_10 .
+
+seer:trel_11_11 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_11 .
+
+seer:trel_11_12 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_11_13 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_13 .
+
+seer:trel_11_14 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_11_15 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_11_16 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_16 .
+
+seer:trel_11_17 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_11_18 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_11_19 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_19 .
+
+seer:trel_11_2 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_2 .
+
+seer:trel_11_20 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_20 .
+
+seer:trel_11_221 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_221 .
+
+seer:trel_11_222 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_222 .
+
+seer:trel_11_223 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_223 .
+
+seer:trel_11_224 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_224 .
+
+seer:trel_11_225 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_11_226 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_11_3 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_3 .
+
+seer:trel_11_4 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_11_5 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_11_6 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_6 .
+
+seer:trel_11_7 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_11_8 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_11_9 a seer:TypeRelation ;
+    seer:attacker seer:el_11 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_9 .
+
+seer:trel_12_1 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 0.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_12_10 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_10 .
+
+seer:trel_12_11 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_11 .
+
+seer:trel_12_12 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_12 .
+
+seer:trel_12_13 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_12_14 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_12_15 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_12_16 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_16 .
+
+seer:trel_12_17 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_12_18 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_12_19 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_19 .
+
+seer:trel_12_2 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_2 .
+
+seer:trel_12_20 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_20 .
+
+seer:trel_12_221 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_12_222 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_222 .
+
+seer:trel_12_223 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_223 .
+
+seer:trel_12_224 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_224 .
+
+seer:trel_12_225 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_12_226 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_226 .
+
+seer:trel_12_3 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_3 .
+
+seer:trel_12_4 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_12_5 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_12_6 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_6 .
+
+seer:trel_12_7 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_12_8 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_12_9 a seer:TypeRelation ;
+    seer:attacker seer:el_12 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_9 .
+
+seer:trel_13_1 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_13_10 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_10 .
+
+seer:trel_13_11 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_11 .
+
+seer:trel_13_12 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_12 .
+
+seer:trel_13_13 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_13_14 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_13_15 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_13_16 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_16 .
+
+seer:trel_13_17 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_13_18 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_13_19 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_19 .
+
+seer:trel_13_2 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_2 .
+
+seer:trel_13_20 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_20 .
+
+seer:trel_13_221 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_13_222 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_222 .
+
+seer:trel_13_223 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_223 .
+
+seer:trel_13_224 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_224 .
+
+seer:trel_13_225 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_13_226 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_13_3 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_3 .
+
+seer:trel_13_4 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_13_5 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_13_6 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_6 .
+
+seer:trel_13_7 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_13_8 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_13_9 a seer:TypeRelation ;
+    seer:attacker seer:el_13 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_9 .
+
+seer:trel_14_1 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_14_10 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_10 .
+
+seer:trel_14_11 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_11 .
+
+seer:trel_14_12 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_14_13 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_14_14 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_14_15 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_14_16 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_16 .
+
+seer:trel_14_17 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_14_18 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_14_19 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_19 .
+
+seer:trel_14_2 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_2 .
+
+seer:trel_14_20 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_20 .
+
+seer:trel_14_221 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_14_222 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_222 .
+
+seer:trel_14_223 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_223 .
+
+seer:trel_14_224 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_224 .
+
+seer:trel_14_225 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_225 .
+
+seer:trel_14_226 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_14_3 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_3 .
+
+seer:trel_14_4 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_14_5 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_14_6 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_6 .
+
+seer:trel_14_7 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_7 .
+
+seer:trel_14_8 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_14_9 a seer:TypeRelation ;
+    seer:attacker seer:el_14 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_9 .
+
+seer:trel_15_1 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_1 .
+
+seer:trel_15_10 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_10 .
+
+seer:trel_15_11 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_11 .
+
+seer:trel_15_12 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_15_13 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_15_14 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_15_15 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_15_16 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_16 .
+
+seer:trel_15_17 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_15_18 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_18 .
+
+seer:trel_15_19 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_19 .
+
+seer:trel_15_2 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_2 .
+
+seer:trel_15_20 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_20 .
+
+seer:trel_15_221 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_15_222 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_222 .
+
+seer:trel_15_223 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_223 .
+
+seer:trel_15_224 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_224 .
+
+seer:trel_15_225 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_225 .
+
+seer:trel_15_226 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_15_3 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_3 .
+
+seer:trel_15_4 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_15_5 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_5 .
+
+seer:trel_15_6 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_6 .
+
+seer:trel_15_7 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_15_8 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_15_9 a seer:TypeRelation ;
+    seer:attacker seer:el_15 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_9 .
+
+seer:trel_16_1 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_16_10 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_10 .
+
+seer:trel_16_11 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_11 .
+
+seer:trel_16_12 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_16_13 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_16_14 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_14 .
+
+seer:trel_16_15 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_15 .
+
+seer:trel_16_16 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_16 .
+
+seer:trel_16_17 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_16_18 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_16_19 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_19 .
+
+seer:trel_16_2 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_2 .
+
+seer:trel_16_20 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_20 .
+
+seer:trel_16_221 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_16_222 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_222 .
+
+seer:trel_16_223 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_223 .
+
+seer:trel_16_224 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_224 .
+
+seer:trel_16_225 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_16_226 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_16_3 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_3 .
+
+seer:trel_16_4 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_16_5 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_16_6 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_6 .
+
+seer:trel_16_7 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_16_8 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_16_9 a seer:TypeRelation ;
+    seer:attacker seer:el_16 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_9 .
+
+seer:trel_17_1 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_17_10 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_10 .
+
+seer:trel_17_11 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_11 .
+
+seer:trel_17_12 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_17_13 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 0.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_17_14 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_17_15 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_17_16 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_16 .
+
+seer:trel_17_17 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_17_18 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_17_19 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_19 .
+
+seer:trel_17_2 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_2 .
+
+seer:trel_17_20 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_20 .
+
+seer:trel_17_221 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_221 .
+
+seer:trel_17_222 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_222 .
+
+seer:trel_17_223 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_223 .
+
+seer:trel_17_224 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_224 .
+
+seer:trel_17_225 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_17_226 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_17_3 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_3 .
+
+seer:trel_17_4 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_17_5 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_17_6 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_6 .
+
+seer:trel_17_7 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_17_8 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_17_9 a seer:TypeRelation ;
+    seer:attacker seer:el_17 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_9 .
+
+seer:trel_18_1 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_18_10 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_10 .
+
+seer:trel_18_11 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_11 .
+
+seer:trel_18_12 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_18_13 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_18_14 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_18_15 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_18_16 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_16 .
+
+seer:trel_18_17 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_18_18 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_18_19 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_19 .
+
+seer:trel_18_2 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_2 .
+
+seer:trel_18_20 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_20 .
+
+seer:trel_18_221 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_221 .
+
+seer:trel_18_222 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_222 .
+
+seer:trel_18_223 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_223 .
+
+seer:trel_18_224 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_224 .
+
+seer:trel_18_225 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_18_226 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_18_3 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_3 .
+
+seer:trel_18_4 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_18_5 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_18_6 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_6 .
+
+seer:trel_18_7 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_18_8 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_18_9 a seer:TypeRelation ;
+    seer:attacker seer:el_18 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_9 .
+
+seer:trel_19_1 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_19_10 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_10 .
+
+seer:trel_19_11 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_11 .
+
+seer:trel_19_12 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_19_13 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_19_14 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_19_15 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_19_16 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_16 .
+
+seer:trel_19_17 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_19_18 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_19_19 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_19 .
+
+seer:trel_19_2 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_2 .
+
+seer:trel_19_20 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_20 .
+
+seer:trel_19_221 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_221 .
+
+seer:trel_19_222 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_222 .
+
+seer:trel_19_223 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 0.0 ;
+    seer:target seer:el_223 .
+
+seer:trel_19_224 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_224 .
+
+seer:trel_19_225 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_19_226 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_19_3 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_3 .
+
+seer:trel_19_4 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_19_5 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_19_6 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_6 .
+
+seer:trel_19_7 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_19_8 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_19_9 a seer:TypeRelation ;
+    seer:attacker seer:el_19 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_9 .
+
+seer:trel_1_1 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_1 .
+
+seer:trel_1_10 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_10 .
+
+seer:trel_1_11 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_11 .
+
+seer:trel_1_12 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_1_13 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_1_14 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_1_15 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_1_16 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_16 .
+
+seer:trel_1_17 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_1_18 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_18 .
+
+seer:trel_1_19 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_19 .
+
+seer:trel_1_2 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_2 .
+
+seer:trel_1_20 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_20 .
+
+seer:trel_1_221 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_1_222 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_222 .
+
+seer:trel_1_223 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_223 .
+
+seer:trel_1_224 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_224 .
+
+seer:trel_1_225 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_1_226 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_1_3 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_3 .
+
+seer:trel_1_4 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_4 .
+
+seer:trel_1_5 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_1_6 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_6 .
+
+seer:trel_1_7 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_1_8 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_1_9 a seer:TypeRelation ;
+    seer:attacker seer:el_1 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_9 .
+
+seer:trel_20_1 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_20_10 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_10 .
+
+seer:trel_20_11 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_11 .
+
+seer:trel_20_12 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_20_13 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_13 .
+
+seer:trel_20_14 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_14 .
+
+seer:trel_20_15 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_20_16 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_16 .
+
+seer:trel_20_17 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_17 .
+
+seer:trel_20_18 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_20_19 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_19 .
+
+seer:trel_20_2 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_2 .
+
+seer:trel_20_20 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_20 .
+
+seer:trel_20_221 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_20_222 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_222 .
+
+seer:trel_20_223 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_223 .
+
+seer:trel_20_224 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_224 .
+
+seer:trel_20_225 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_20_226 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_226 .
+
+seer:trel_20_3 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_3 .
+
+seer:trel_20_4 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_20_5 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_20_6 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_6 .
+
+seer:trel_20_7 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_20_8 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_20_9 a seer:TypeRelation ;
+    seer:attacker seer:el_20 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_9 .
+
+seer:trel_221_1 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_221_10 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_10 .
+
+seer:trel_221_11 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_11 .
+
+seer:trel_221_12 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_221_13 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_221_14 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_221_15 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_221_16 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_16 .
+
+seer:trel_221_17 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_221_18 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_221_19 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_19 .
+
+seer:trel_221_2 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_2 .
+
+seer:trel_221_20 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_20 .
+
+seer:trel_221_221 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_221_222 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_222 .
+
+seer:trel_221_223 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_223 .
+
+seer:trel_221_224 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_224 .
+
+seer:trel_221_225 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_225 .
+
+seer:trel_221_226 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_221_3 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_3 .
+
+seer:trel_221_4 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_221_5 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_221_6 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_6 .
+
+seer:trel_221_7 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_221_8 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_221_9 a seer:TypeRelation ;
+    seer:attacker seer:el_221 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_9 .
+
+seer:trel_222_1 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_222_10 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_10 .
+
+seer:trel_222_11 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_11 .
+
+seer:trel_222_12 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_222_13 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_222_14 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_222_15 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_222_16 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_16 .
+
+seer:trel_222_17 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_222_18 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_222_19 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_19 .
+
+seer:trel_222_2 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_2 .
+
+seer:trel_222_20 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_20 .
+
+seer:trel_222_221 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_222_222 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_222 .
+
+seer:trel_222_223 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_223 .
+
+seer:trel_222_224 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_224 .
+
+seer:trel_222_225 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_222_226 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 0.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_222_3 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_3 .
+
+seer:trel_222_4 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_222_5 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_5 .
+
+seer:trel_222_6 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_6 .
+
+seer:trel_222_7 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_222_8 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_222_9 a seer:TypeRelation ;
+    seer:attacker seer:el_222 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_9 .
+
+seer:trel_223_1 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_223_10 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_10 .
+
+seer:trel_223_11 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_11 .
+
+seer:trel_223_12 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_223_13 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_223_14 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_223_15 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_15 .
+
+seer:trel_223_16 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_16 .
+
+seer:trel_223_17 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_223_18 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_223_19 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_19 .
+
+seer:trel_223_2 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_2 .
+
+seer:trel_223_20 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_20 .
+
+seer:trel_223_221 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_223_222 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_222 .
+
+seer:trel_223_223 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_223 .
+
+seer:trel_223_224 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_224 .
+
+seer:trel_223_225 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_223_226 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_223_3 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_3 .
+
+seer:trel_223_4 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_223_5 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_223_6 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_6 .
+
+seer:trel_223_7 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_223_8 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_223_9 a seer:TypeRelation ;
+    seer:attacker seer:el_223 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_9 .
+
+seer:trel_224_1 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_224_10 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_10 .
+
+seer:trel_224_11 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_11 .
+
+seer:trel_224_12 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_224_13 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_224_14 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_224_15 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_224_16 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_16 .
+
+seer:trel_224_17 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_224_18 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_224_19 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_19 .
+
+seer:trel_224_2 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_2 .
+
+seer:trel_224_20 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_20 .
+
+seer:trel_224_221 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_224_222 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_222 .
+
+seer:trel_224_223 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_223 .
+
+seer:trel_224_224 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_224 .
+
+seer:trel_224_225 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_224_226 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_226 .
+
+seer:trel_224_3 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_3 .
+
+seer:trel_224_4 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_224_5 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_224_6 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_6 .
+
+seer:trel_224_7 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_224_8 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_224_9 a seer:TypeRelation ;
+    seer:attacker seer:el_224 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_9 .
+
+seer:trel_225_1 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_225_10 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_10 .
+
+seer:trel_225_11 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_11 .
+
+seer:trel_225_12 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_12 .
+
+seer:trel_225_13 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_225_14 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_225_15 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_225_16 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_16 .
+
+seer:trel_225_17 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_225_18 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_225_19 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_19 .
+
+seer:trel_225_2 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_2 .
+
+seer:trel_225_20 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_20 .
+
+seer:trel_225_221 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_225_222 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_222 .
+
+seer:trel_225_223 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_223 .
+
+seer:trel_225_224 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_224 .
+
+seer:trel_225_225 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_225_226 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_225_3 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_3 .
+
+seer:trel_225_4 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_225_5 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_225_6 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_6 .
+
+seer:trel_225_7 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_225_8 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_225_9 a seer:TypeRelation ;
+    seer:attacker seer:el_225 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_9 .
+
+seer:trel_226_1 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_226_10 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_10 .
+
+seer:trel_226_11 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_11 .
+
+seer:trel_226_12 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_226_13 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_13 .
+
+seer:trel_226_14 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_226_15 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_226_16 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_16 .
+
+seer:trel_226_17 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_17 .
+
+seer:trel_226_18 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_226_19 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_19 .
+
+seer:trel_226_2 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_2 .
+
+seer:trel_226_20 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_20 .
+
+seer:trel_226_221 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_226_222 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_222 .
+
+seer:trel_226_223 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_223 .
+
+seer:trel_226_224 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_224 .
+
+seer:trel_226_225 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_226_226 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_226_3 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_3 .
+
+seer:trel_226_4 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_4 .
+
+seer:trel_226_5 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_226_6 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_6 .
+
+seer:trel_226_7 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_226_8 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_226_9 a seer:TypeRelation ;
+    seer:attacker seer:el_226 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_9 .
+
+seer:trel_2_1 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_1 .
+
+seer:trel_2_10 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_10 .
+
+seer:trel_2_11 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_11 .
+
+seer:trel_2_12 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_2_13 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_2_14 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_2_15 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_2_16 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_16 .
+
+seer:trel_2_17 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_2_18 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_2_19 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_19 .
+
+seer:trel_2_2 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_2 .
+
+seer:trel_2_20 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_20 .
+
+seer:trel_2_221 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_2_222 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_222 .
+
+seer:trel_2_223 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_223 .
+
+seer:trel_2_224 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_224 .
+
+seer:trel_2_225 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_2_226 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_2_3 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_3 .
+
+seer:trel_2_4 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_2_5 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_2_6 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_6 .
+
+seer:trel_2_7 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_2_8 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_2_9 a seer:TypeRelation ;
+    seer:attacker seer:el_2 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_9 .
+
+seer:trel_3_1 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_3_10 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_10 .
+
+seer:trel_3_11 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_11 .
+
+seer:trel_3_12 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_3_13 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_3_14 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_3_15 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_3_16 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_16 .
+
+seer:trel_3_17 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_3_18 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_3_19 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_19 .
+
+seer:trel_3_2 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_2 .
+
+seer:trel_3_20 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_20 .
+
+seer:trel_3_221 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_3_222 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_222 .
+
+seer:trel_3_223 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_223 .
+
+seer:trel_3_224 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_224 .
+
+seer:trel_3_225 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_3_226 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_3_3 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_3 .
+
+seer:trel_3_4 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_3_5 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_3_6 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_6 .
+
+seer:trel_3_7 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_3_8 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_3_9 a seer:TypeRelation ;
+    seer:attacker seer:el_3 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_9 .
+
+seer:trel_4_1 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_4_10 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_10 .
+
+seer:trel_4_11 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_11 .
+
+seer:trel_4_12 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_4_13 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_4_14 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_4_15 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_4_16 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_16 .
+
+seer:trel_4_17 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_17 .
+
+seer:trel_4_18 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_4_19 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_19 .
+
+seer:trel_4_2 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_2 .
+
+seer:trel_4_20 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_20 .
+
+seer:trel_4_221 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_4_222 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_222 .
+
+seer:trel_4_223 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_223 .
+
+seer:trel_4_224 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_224 .
+
+seer:trel_4_225 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_4_226 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_4_3 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_3 .
+
+seer:trel_4_4 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_4_5 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_5 .
+
+seer:trel_4_6 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_6 .
+
+seer:trel_4_7 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_4_8 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_4_9 a seer:TypeRelation ;
+    seer:attacker seer:el_4 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_9 .
+
+seer:trel_5_1 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_1 .
+
+seer:trel_5_10 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_10 .
+
+seer:trel_5_11 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_11 .
+
+seer:trel_5_12 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_5_13 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_5_14 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_14 .
+
+seer:trel_5_15 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_5_16 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_16 .
+
+seer:trel_5_17 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_5_18 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_5_19 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_19 .
+
+seer:trel_5_2 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_2 .
+
+seer:trel_5_20 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_20 .
+
+seer:trel_5_221 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_5_222 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_222 .
+
+seer:trel_5_223 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_223 .
+
+seer:trel_5_224 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_224 .
+
+seer:trel_5_225 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_5_226 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_5_3 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_3 .
+
+seer:trel_5_4 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_5_5 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_5 .
+
+seer:trel_5_6 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_6 .
+
+seer:trel_5_7 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 0.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_5_8 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_5_9 a seer:TypeRelation ;
+    seer:attacker seer:el_5 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_9 .
+
+seer:trel_6_1 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_6_10 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_10 .
+
+seer:trel_6_11 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_11 .
+
+seer:trel_6_12 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_6_13 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_6_14 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_6_15 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_6_16 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_16 .
+
+seer:trel_6_17 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_17 .
+
+seer:trel_6_18 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_6_19 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_19 .
+
+seer:trel_6_2 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_2 .
+
+seer:trel_6_20 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_20 .
+
+seer:trel_6_221 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_6_222 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_222 .
+
+seer:trel_6_223 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_223 .
+
+seer:trel_6_224 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_224 .
+
+seer:trel_6_225 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_6_226 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_6_3 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_3 .
+
+seer:trel_6_4 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_6_5 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_5 .
+
+seer:trel_6_6 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_6 .
+
+seer:trel_6_7 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_6_8 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_6_9 a seer:TypeRelation ;
+    seer:attacker seer:el_6 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_9 .
+
+seer:trel_7_1 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_1 .
+
+seer:trel_7_10 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_10 .
+
+seer:trel_7_11 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_11 .
+
+seer:trel_7_12 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_7_13 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_13 .
+
+seer:trel_7_14 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_7_15 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_15 .
+
+seer:trel_7_16 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_16 .
+
+seer:trel_7_17 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_7_18 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_7_19 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_19 .
+
+seer:trel_7_2 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_2 .
+
+seer:trel_7_20 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_20 .
+
+seer:trel_7_221 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_7_222 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_222 .
+
+seer:trel_7_223 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_223 .
+
+seer:trel_7_224 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_224 .
+
+seer:trel_7_225 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_225 .
+
+seer:trel_7_226 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_7_3 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_3 .
+
+seer:trel_7_4 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 0.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_7_5 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_7_6 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_6 .
+
+seer:trel_7_7 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_7_8 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_7_9 a seer:TypeRelation ;
+    seer:attacker seer:el_7 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_9 .
+
+seer:trel_8_1 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_8_10 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_10 .
+
+seer:trel_8_11 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_11 .
+
+seer:trel_8_12 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_8_13 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_8_14 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_8_15 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_8_16 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_16 .
+
+seer:trel_8_17 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_8_18 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_8_19 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_19 .
+
+seer:trel_8_2 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_2 .
+
+seer:trel_8_20 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_20 .
+
+seer:trel_8_221 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_8_222 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_222 .
+
+seer:trel_8_223 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_223 .
+
+seer:trel_8_224 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_224 .
+
+seer:trel_8_225 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_8_226 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_8_3 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_3 .
+
+seer:trel_8_4 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_8_5 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_8_6 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_6 .
+
+seer:trel_8_7 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_8_8 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_8_9 a seer:TypeRelation ;
+    seer:attacker seer:el_8 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_9 .
+
+seer:trel_9_1 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_1 .
+
+seer:trel_9_10 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_10 .
+
+seer:trel_9_11 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_11 .
+
+seer:trel_9_12 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_12 .
+
+seer:trel_9_13 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_13 .
+
+seer:trel_9_14 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_14 .
+
+seer:trel_9_15 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_15 .
+
+seer:trel_9_16 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_16 .
+
+seer:trel_9_17 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_17 .
+
+seer:trel_9_18 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_18 .
+
+seer:trel_9_19 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_19 .
+
+seer:trel_9_2 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_2 .
+
+seer:trel_9_20 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_20 .
+
+seer:trel_9_221 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_221 .
+
+seer:trel_9_222 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_222 .
+
+seer:trel_9_223 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_223 .
+
+seer:trel_9_224 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_224 .
+
+seer:trel_9_225 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_225 .
+
+seer:trel_9_226 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_226 .
+
+seer:trel_9_3 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_3 .
+
+seer:trel_9_4 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_4 .
+
+seer:trel_9_5 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_5 .
+
+seer:trel_9_6 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_6 .
+
+seer:trel_9_7 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 2.0 ;
+    seer:target seer:el_7 .
+
+seer:trel_9_8 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 1.0 ;
+    seer:target seer:el_8 .
+
+seer:trel_9_9 a seer:TypeRelation ;
+    seer:attacker seer:el_9 ;
+    seer:multiple 0.5 ;
+    seer:target seer:el_9 .
+
+seer:el_8 a seer:ElementType ;
+    rdfs:label "普通"@zh ;
+    seer:seerapiId "8" .
+
+seer:el_221 a seer:ElementType ;
+    rdfs:label "王"@zh ;
+    seer:counters seer:el_11,
+        seer:el_13,
+        seer:el_17,
+        seer:el_19 ;
+    seer:resisted seer:el_10,
+        seer:el_20,
+        seer:el_225 ;
+    seer:seerapiId "221" .
+
+seer:el_226 a seer:ElementType ;
+    rdfs:label "虚空"@zh ;
+    seer:counters seer:el_10,
+        seer:el_11,
+        seer:el_12,
+        seer:el_14,
+        seer:el_20,
+        seer:el_224 ;
+    seer:resisted seer:el_13,
+        seer:el_16,
+        seer:el_17,
+        seer:el_4 ;
+    seer:seerapiId "226" .
+
+seer:el_225 a seer:ElementType ;
+    rdfs:label "虫"@zh ;
+    seer:counters seer:el_1,
+        seer:el_11,
+        seer:el_222,
+        seer:el_225,
+        seer:el_7 ;
+    seer:resisted seer:el_12,
+        seer:el_2,
+        seer:el_3,
+        seer:el_9 ;
+    seer:seerapiId "225" .
+
+seer:el_223 a seer:ElementType ;
+    rdfs:label "神灵"@zh ;
+    seer:counters seer:el_1,
+        seer:el_18,
+        seer:el_19,
+        seer:el_2,
+        seer:el_222,
+        seer:el_3,
+        seer:el_5,
+        seer:el_9 ;
+    seer:resisted seer:el_11,
+        seer:el_15,
+        seer:el_6 ;
+    seer:seerapiId "223" .
+
+seer:el_224 a seer:ElementType ;
+    rdfs:label "轮回"@zh ;
+    seer:counters seer:el_12,
+        seer:el_13,
+        seer:el_16,
+        seer:el_17,
+        seer:el_19,
+        seer:el_222 ;
+    seer:resisted seer:el_10,
+        seer:el_20,
+        seer:el_226,
+        seer:el_9 ;
+    seer:seerapiId "224" .
+
+seer:el_7 a seer:ElementType ;
+    rdfs:label "地面"@zh ;
+    seer:counters seer:el_221,
+        seer:el_224,
+        seer:el_3,
+        seer:el_5,
+        seer:el_6 ;
+    seer:immune seer:el_4 ;
+    seer:resisted seer:el_1,
+        seer:el_10,
+        seer:el_13,
+        seer:el_15,
+        seer:el_16,
+        seer:el_20,
+        seer:el_223,
+        seer:el_225 ;
+    seer:seerapiId "7" .
+
+seer:el_1 a seer:ElementType ;
+    rdfs:label "草"@zh ;
+    seer:counters seer:el_12,
+        seer:el_2,
+        seer:el_7 ;
+    seer:resisted seer:el_1,
+        seer:el_16,
+        seer:el_18,
+        seer:el_222,
+        seer:el_223,
+        seer:el_3,
+        seer:el_4,
+        seer:el_6 ;
+    seer:seerapiId "1" .
+
+seer:el_17 a seer:ElementType ;
+    rdfs:label "次元"@zh ;
+    seer:counters seer:el_10,
+        seer:el_19,
+        seer:el_20,
+        seer:el_225,
+        seer:el_226,
+        seer:el_4,
+        seer:el_6 ;
+    seer:immune seer:el_13 ;
+    seer:resisted seer:el_221,
+        seer:el_222,
+        seer:el_223,
+        seer:el_224,
+        seer:el_9 ;
+    seer:seerapiId "17" .
+
+seer:el_18 a seer:ElementType ;
+    rdfs:label "远古"@zh ;
+    seer:counters seer:el_1,
+        seer:el_14,
+        seer:el_15,
+        seer:el_226,
+        seer:el_4 ;
+    seer:resisted seer:el_221,
+        seer:el_224,
+        seer:el_6,
+        seer:el_9 ;
+    seer:seerapiId "18" .
+
+seer:el_2 a seer:ElementType ;
+    rdfs:label "水"@zh ;
+    seer:counters seer:el_3,
+        seer:el_7 ;
+    seer:resisted seer:el_1,
+        seer:el_16,
+        seer:el_2,
+        seer:el_20,
+        seer:el_222,
+        seer:el_223 ;
+    seer:seerapiId "2" .
+
+seer:el_4 a seer:ElementType ;
+    rdfs:label "飞行"@zh ;
+    seer:counters seer:el_1,
+        seer:el_11,
+        seer:el_225 ;
+    seer:resisted seer:el_17,
+        seer:el_19,
+        seer:el_20,
+        seer:el_222,
+        seer:el_5,
+        seer:el_6 ;
+    seer:seerapiId "4" .
+
+seer:el_12 a seer:ElementType ;
+    rdfs:label "光"@zh ;
+    seer:counters seer:el_10,
+        seer:el_13,
+        seer:el_225 ;
+    seer:immune seer:el_1 ;
+    seer:resisted seer:el_12,
+        seer:el_16,
+        seer:el_19,
+        seer:el_20,
+        seer:el_223,
+        seer:el_224,
+        seer:el_226,
+        seer:el_6,
+        seer:el_9 ;
+    seer:seerapiId "12" .
+
+seer:el_15 a seer:ElementType ;
+    rdfs:label "龙"@zh ;
+    seer:counters seer:el_15,
+        seer:el_16,
+        seer:el_19,
+        seer:el_9 ;
+    seer:resisted seer:el_1,
+        seer:el_18,
+        seer:el_2,
+        seer:el_225,
+        seer:el_3,
+        seer:el_5 ;
+    seer:seerapiId "15" .
+
+seer:el_19 a seer:ElementType ;
+    rdfs:label "邪灵"@zh ;
+    seer:counters seer:el_12,
+        seer:el_13,
+        seer:el_14,
+        seer:el_17,
+        seer:el_20 ;
+    seer:immune seer:el_223 ;
+    seer:resisted seer:el_10,
+        seer:el_16,
+        seer:el_221,
+        seer:el_222,
+        seer:el_224,
+        seer:el_6,
+        seer:el_9 ;
+    seer:seerapiId "19" .
+
+seer:el_20 a seer:ElementType ;
+    rdfs:label "自然"@zh ;
+    seer:counters seer:el_1,
+        seer:el_12,
+        seer:el_2,
+        seer:el_221,
+        seer:el_224,
+        seer:el_3,
+        seer:el_4,
+        seer:el_5,
+        seer:el_7 ;
+    seer:resisted seer:el_10,
+        seer:el_11,
+        seer:el_13,
+        seer:el_14,
+        seer:el_17,
+        seer:el_19,
+        seer:el_222,
+        seer:el_226,
+        seer:el_6 ;
+    seer:seerapiId "20" .
+
+seer:el_5 a seer:ElementType ;
+    rdfs:label "电"@zh ;
+    seer:counters seer:el_13,
+        seer:el_17,
+        seer:el_2,
+        seer:el_222,
+        seer:el_226,
+        seer:el_4 ;
+    seer:immune seer:el_7 ;
+    seer:resisted seer:el_1,
+        seer:el_14,
+        seer:el_16,
+        seer:el_20,
+        seer:el_223,
+        seer:el_5 ;
+    seer:seerapiId "5" .
+
+seer:el_10 a seer:ElementType ;
+    rdfs:label "超能"@zh ;
+    seer:counters seer:el_11,
+        seer:el_14,
+        seer:el_20 ;
+    seer:immune seer:el_12 ;
+    seer:resisted seer:el_10,
+        seer:el_225,
+        seer:el_6 ;
+    seer:seerapiId "10" .
+
+seer:el_14 a seer:ElementType ;
+    rdfs:label "神秘"@zh ;
+    seer:counters seer:el_14,
+        seer:el_16,
+        seer:el_20,
+        seer:el_221,
+        seer:el_223,
+        seer:el_224,
+        seer:el_5 ;
+    seer:resisted seer:el_11,
+        seer:el_19,
+        seer:el_222,
+        seer:el_225,
+        seer:el_7 ;
+    seer:seerapiId "14" .
+
+seer:el_13 a seer:ElementType ;
+    rdfs:label "暗影"@zh ;
+    seer:counters seer:el_10,
+        seer:el_13,
+        seer:el_17 ;
+    seer:resisted seer:el_12,
+        seer:el_16,
+        seer:el_19,
+        seer:el_223,
+        seer:el_6,
+        seer:el_9 ;
+    seer:seerapiId "13" .
+
+seer:el_3 a seer:ElementType ;
+    rdfs:label "火"@zh ;
+    seer:counters seer:el_1,
+        seer:el_6,
+        seer:el_9 ;
+    seer:resisted seer:el_16,
+        seer:el_2,
+        seer:el_20,
+        seer:el_222,
+        seer:el_223,
+        seer:el_3 ;
+    seer:seerapiId "3" .
+
+seer:el_9 a seer:ElementType ;
+    rdfs:label "冰"@zh ;
+    seer:counters seer:el_1,
+        seer:el_17,
+        seer:el_18,
+        seer:el_224,
+        seer:el_225,
+        seer:el_4,
+        seer:el_7 ;
+    seer:resisted seer:el_16,
+        seer:el_2,
+        seer:el_222,
+        seer:el_223,
+        seer:el_3,
+        seer:el_6,
+        seer:el_9 ;
+    seer:seerapiId "9" .
+
+seer:el_11 a seer:ElementType ;
+    rdfs:label "战斗"@zh ;
+    seer:counters seer:el_15,
+        seer:el_16,
+        seer:el_6,
+        seer:el_9 ;
+    seer:resisted seer:el_10,
+        seer:el_11,
+        seer:el_13,
+        seer:el_19,
+        seer:el_221 ;
+    seer:seerapiId "11" .
+
+seer:el_222 a seer:ElementType ;
+    rdfs:label "混沌"@zh ;
+    seer:counters seer:el_14,
+        seer:el_17,
+        seer:el_19,
+        seer:el_20,
+        seer:el_223,
+        seer:el_4,
+        seer:el_9 ;
+    seer:immune seer:el_226 ;
+    seer:resisted seer:el_11,
+        seer:el_224,
+        seer:el_5,
+        seer:el_6 ;
+    seer:seerapiId "222" .
+
+seer:el_16 a seer:ElementType ;
+    rdfs:label "圣灵"@zh ;
+    seer:counters seer:el_1,
+        seer:el_18,
+        seer:el_2,
+        seer:el_226,
+        seer:el_3,
+        seer:el_5,
+        seer:el_9 ;
+    seer:resisted seer:el_11,
+        seer:el_14,
+        seer:el_15,
+        seer:el_224 ;
+    seer:seerapiId "16" .
+
+seer:el_6 a seer:ElementType ;
+    rdfs:label "机械"@zh ;
+    seer:counters seer:el_11,
+        seer:el_18,
+        seer:el_19,
+        seer:el_223,
+        seer:el_9 ;
+    seer:resisted seer:el_17,
+        seer:el_2,
+        seer:el_3,
+        seer:el_5,
+        seer:el_6 ;
+    seer:seerapiId "6" .
+

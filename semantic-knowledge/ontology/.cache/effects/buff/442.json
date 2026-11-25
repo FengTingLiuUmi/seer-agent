@@ -1,0 +1,1 @@
+{"desc": "下{0}次自身技能{1}%使对手{abst[2]}", "desc_tag": "abst", "hash": "e10ba29f", "icon": [14], "id": 442, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

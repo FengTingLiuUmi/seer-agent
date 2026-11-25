@@ -1,0 +1,1 @@
+{"desc": "减免受到伤害的{0}%，如遭到{elem[1]}系技能攻击，则当回合和下回合受到正常伤害", "desc_tag": "elem", "hash": "3c3cb3ea", "icon": [29], "id": 2080, "tag": "减伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

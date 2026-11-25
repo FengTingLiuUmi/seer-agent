@@ -1,0 +1,1 @@
+{"desc": "回合开始时若自身存在护盾则自身使用攻击技能先制+1", "desc_tag": null, "hash": "4febacd9", "icon": [6], "id": 2990, "tag": "先制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若自身体力高于对手则当回合使对手先制-1", "desc_tag": null, "hash": "68baf2cf", "icon": [42], "id": 4232, "tag": "先制降低", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

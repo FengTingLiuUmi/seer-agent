@@ -1,0 +1,1 @@
+{"desc": "{0}回合内自身能力提升状态被消除或吸取时附加对手最大体力1/{1}的百分比伤害", "desc_tag": null, "hash": "dc38a42d", "icon": [34], "id": 212, "tag": "附加伤害", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,1 @@
+{"desc": "{0}回合内，每回合被攻击所受到的伤害不超过{1}", "desc_tag": null, "hash": "9588810f", "icon": [15], "id": 35, "tag": "伤害限制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

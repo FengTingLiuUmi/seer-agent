@@ -1,0 +1,1 @@
+{"desc": "{0}回合内受到的伤害低于{1}时{2}%令对手{abst[3]}，未触发则附加{4}点固定伤害", "desc_tag": "abst", "hash": "5446b6b7", "icon": [14], "id": 525, "tag": "施加异常|附加伤害", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

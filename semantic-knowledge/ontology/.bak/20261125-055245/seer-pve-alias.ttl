@@ -1,0 +1,399 @@
+@prefix seer: <http://example.org/seer#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# =====================================================================
+# PVE 昵称 → 规范实体（消歧表，手工维护）
+# 目的：让后续任何 agent 查本体时，不再把「潘」「鲁斯王」「猩猩」等简称
+#       映射到错误实体。skos:altLabel 记简称，rdfs:comment 记为什么。
+# 注意：本文件与 ingest.py 生成的 seer-game-abox.ttl 分属两层；
+#       这里是“社区简称/形态纠错”，那里是“游戏原始数据”。
+# 潘家族已全部定案：火潘=潘克多斯(4344) / 草潘=加尔鲁特(4606) / 冰潘=斯克鲁恩(4463)。
+# =====================================================================
+
+# ---- 潘家族（火/草/冰 三元素：给自己上元素 debuff、给后续强攻铺垫）--------
+# 社区叫「X潘」，但真名都不含「潘」！火潘=潘克多斯、草潘=加尔鲁特、冰潘=斯克鲁恩。
+# PVE 中的「潘」「火潘」 = 潘克多斯（不是潘多拉/灾厄潘多拉！）
+seer:pet_4344 a seer:Pet ;
+    seer:seerapiId "4344" ;
+    rdfs:label "潘克多斯（PVE 简称：潘 / 火潘）"@zh ;
+    skos:altLabel "潘"@zh, "火潘"@zh, "潘克多斯"@zh ;
+    rdfs:comment "PVE 打法里的「潘」「火潘」指潘克多斯(4344)，机制=阵亡后给敌方鬼火缠绕易伤(魂印1569)；绝非潘多拉(2518)/灾厄潘多拉(2965,3396)。"@zh .
+
+seer:pet_4606 a seer:Pet ;
+    seer:seerapiId "4606" ;
+    rdfs:label "加尔鲁特（PVE 简称：草潘）"@zh ;
+    skos:altLabel "草潘"@zh, "加尔鲁特"@zh ;
+    rdfs:comment "PVE「草潘」= 加尔鲁特(4606)，草系。魂印1811：受攻击给对手叠「碧叶猛毒」，自身每损25%最大体力额外+2层；每层使对手攻击伤害-6%且用技能后受100固伤，最高12层，持续3回合(boss有效)。"@zh .
+
+# ---- 星光三主宠（PVE 简称用星光形态，不是旧基础形态）------------------
+seer:pet_4647 a seer:Pet ;
+    seer:seerapiId "4647" ;
+    rdfs:label "星光·丽莎布布（PVE 简称：丽莎）"@zh ;
+    skos:altLabel "丽莎"@zh, "星光丽莎"@zh ;
+    rdfs:comment "PVE 里的「丽莎」默认指星光·丽莎布布(4647)，非旧形态。"@zh .
+
+seer:pet_4648 a seer:Pet ;
+    seer:seerapiId "4648" ;
+    rdfs:label "星光·鲁斯王（PVE 简称：鲁斯王）"@zh ;
+    skos:altLabel "鲁斯王"@zh, "星光鲁斯王"@zh ;
+    rdfs:comment "PVE 里的「鲁斯王」默认指星光·鲁斯王(4648)，非旧鲁斯王(306)。"@zh .
+
+seer:pet_4649 a seer:Pet ;
+    seer:seerapiId "4649" ;
+    rdfs:label "星光·魔焰猩猩（PVE 简称：猩猩 / 魔焰）"@zh ;
+    skos:altLabel "猩猩"@zh, "魔焰猩猩"@zh, "星光魔焰"@zh ;
+    rdfs:comment "PVE 里的「猩猩」「魔焰」默认指星光·魔焰猩猩(4649)，非旧魔焰猩猩(309)。"@zh .
+
+# PVE「艾欧」是老形态，专门做 PVE 强攻的，不是星光形态！
+seer:pet_3437 a seer:Pet ;
+    seer:seerapiId "3437" ;
+    rdfs:label "艾欧丽娅（PVE 简称：艾欧，老形态 / PVE 专用）"@zh ;
+    skos:altLabel "艾欧"@zh, "老艾欧"@zh ;
+    rdfs:comment "PVE 里的「艾欧」= 老形态艾欧丽娅(3437)，PVE 专用强攻(低血增伤+吸血)；星光·艾欧丽娅(4911) 是另一形态，不是 PVE 默认简称所指。"@zh .
+
+seer:pet_4911 a seer:Pet ;
+    seer:seerapiId "4911" ;
+    rdfs:label "星光·艾欧丽娅"@zh ;
+    skos:altLabel "星光艾欧"@zh ;
+    rdfs:comment "星光形态艾欧丽娅(4911)；与 PVE 简称「艾欧」(老形态 3437) 不是同一只。"@zh .
+
+# ---- 其他核心 PVE 辅助（已核 id，补简称）------------------------------
+seer:pet_3512 a seer:Pet ; seer:seerapiId "3512" ;
+    skos:altLabel "表姐"@zh ;
+    rdfs:comment "帝皇之御(3512)，PVE 里叫「表姐」：免异+锁血+死后减伤(魂印821)；守御八方(31505)自爆——攻击技不吃封属，整队后2次技能必先必暴(跨换宠，谁用谁扣)。"@zh .
+
+seer:pet_3329 a seer:Pet ; seer:seerapiId "3329" ;
+    skos:altLabel "六界"@zh, "六界帝神"@zh ;
+    rdfs:comment "六界帝神(3329)=弹伤本体：先放「剑挥四方」，使下次受到的攻击伤害于对手出手流程结束100%反馈（出手后反馈，不是先手反馈）；魂印653在阶段结束体力低于对手时→全属性+1、下回合全技能先制+2。弹伤与自身面板/等级无关，配队用 1 级/压血，保证体力远低于Boss稳触发魂印先制；别当满级站场手用。"@zh .
+
+seer:pet_3463 a seer:Pet ; seer:seerapiId "3463" ;
+    skos:altLabel "时空"@zh, "时空界皇"@zh .
+
+seer:pet_4377 a seer:Pet ; seer:seerapiId "4377" ;
+    skos:altLabel "蒂朵"@zh .
+
+# ---- 潘家族备注 -------------------------------------------------------
+# 火潘=潘克多斯(4344)/草潘=加尔鲁特(4606)/冰潘=斯克鲁恩(4463)，均已定案。
+# 三者不是同机制：火潘=阵亡鬼火缠绕增伤、冰潘=阵亡霜寒封印、草潘=受击/损血叠碧叶猛毒。
+
+# ---- 更多常用 PVE 精灵（已核 id）-------------------------------------
+seer:pet_5000 a seer:Pet ; seer:seerapiId "5000" ;
+    rdfs:label "圣灵谱尼（PVE 简称：圣谱 / 圣普）"@zh ;
+    skos:altLabel "圣谱"@zh, "圣普"@zh, "谱尼"@zh ;
+    rdfs:comment "PVE「圣谱/圣普」= 圣灵谱尼(5000)；谱尼(300)是其前置。"@zh .
+
+seer:pet_3022 a seer:Pet ; seer:seerapiId "3022" ;
+    rdfs:label "王之哈莫（PVE 简称：王哈）"@zh ;
+    skos:altLabel "王哈"@zh, "王之哈莫"@zh ;
+    rdfs:comment "PVE「王哈」通常=王之哈莫(3022)。哈莫链：哈莫215→哈莫雷特216→王之哈莫3022→战龙哈莫3046→龙神哈莫3809(超进化)。"@zh .
+
+seer:pet_12 a seer:Pet ; seer:seerapiId "12" ;
+    rdfs:label "波克尔（PVE：先制杂兵 / 弹伤线前件）"@zh ;
+    skos:altLabel "波克尔"@zh .
+
+seer:pet_3060 a seer:Pet ; seer:seerapiId "3060" ;
+    rdfs:label "盖世张飞（PVE 简称：张飞）"@zh ;
+    skos:altLabel "张飞"@zh ;
+    rdfs:comment "PVE「张飞」通常=盖世张飞(3060)（高于万人敌张飞2530）。"@zh .
+
+seer:pet_2933 a seer:Pet ; seer:seerapiId "2933" ;
+    rdfs:label "泰坦（PVE 强攻）"@zh ; skos:altLabel "泰坦"@zh .
+
+seer:pet_3567 a seer:Pet ; seer:seerapiId "3567" ;
+    rdfs:label "魔钰（PVE 爆攻压血强攻）"@zh ; skos:altLabel "魔钰"@zh .
+
+seer:pet_4484 a seer:Pet ; seer:seerapiId "4484" ;
+    rdfs:label "卡莎（PVE 特防体站场）"@zh ; skos:altLabel "卡莎"@zh .
+
+seer:pet_4636 a seer:Pet ; seer:seerapiId "4636" ;
+    rdfs:label "西塔伦（PVE 必先/辅助）"@zh ; skos:altLabel "西塔伦"@zh .
+
+seer:pet_3594 a seer:Pet ; seer:seerapiId "3594" ;
+    rdfs:label "典韦（常被 Ban 的强攻手）"@zh ; skos:altLabel "典韦"@zh .
+
+seer:pet_4463 a seer:Pet ; seer:seerapiId "4463" ;
+    rdfs:label "斯克鲁恩（PVE 简称：冰潘 / 常被 Ban）"@zh ;
+    skos:altLabel "冰潘"@zh, "斯克鲁恩"@zh ;
+    rdfs:comment "PVE「冰潘」= 斯克鲁恩(4463)，冰系。魂印1675：被击败给对手「霜寒封印」——3回合内防御/特防强化失效、无法用技能回血、每次用技能后受最大体力10%百分比伤害(封顶自身攻击200%，boss有效)。"@zh .
+
+seer:pet_3390 a seer:Pet ; seer:seerapiId "3390" ;
+    rdfs:label "毁灭机甲（特定关强攻）"@zh ; skos:altLabel "毁灭机甲"@zh .
+
+seer:pet_3516 a seer:Pet ; seer:seerapiId "3516" ;
+    rdfs:label "混沌地王莱茵哈特（PVE 简称：地王）"@zh ; skos:altLabel "地王"@zh .
+
+# ---- 幻境 / 草王 / 村长 / 眠酱（2026-11-22 用户给定案）------------------
+seer:pet_3460 a seer:Pet ; seer:seerapiId "3460" ;
+    rdfs:label "幻境界皇（PVE 简称：幻境 / 界皇）"@zh ;
+    skos:altLabel "幻境"@zh, "界皇"@zh, "幻境界皇"@zh ;
+    rdfs:comment "PVE「幻境/界皇」= 幻境界皇(3460)。幻境链：幻境界王(3026)→幻境界皇(3460)→幻境界神(4048)。"@zh .
+
+# 「草王」线：小草王 = 茉蕊儿（基础），草王/大草王 = 芳馨·茉蕊儿（进化）。
+# 两者核心都是套盾（主要靠魂印送头盾），但「切精灵」结算方式相反。
+seer:pet_3322 a seer:Pet ; seer:seerapiId "3322" ;
+    rdfs:label "茉蕊儿（小草王，PVE 套盾·魂印送头盾·可叠）"@zh ;
+    skos:altLabel "小草王"@zh, "草王"@zh, "茉蕊儿"@zh ;
+    rdfs:comment "PVE「小草王」= 茉蕊儿(3322)。盾主要靠魂印647：自身死亡给下只精灵500点护盾+免1次异常；关键是「切精灵后该盾仍保留」，可循环「小草王送死→切精灵→切小草王送死→切精灵」叠盾。"@zh .
+
+seer:pet_3613 a seer:Pet ; seer:seerapiId "3613" ;
+    rdfs:label "芳馨·茉蕊儿（草王/大草王，PVE 套盾·魂印送头盾·切人清空）"@zh ;
+    skos:altLabel "草王"@zh, "大草王"@zh, "芳馨茉蕊儿"@zh, "芳馨·茉蕊儿"@zh, "草王进化"@zh ;
+    rdfs:comment "PVE「草王/大草王」= 芳馨·茉蕊儿(3613)。盾靠魂印909/1825：被击败给下只精灵500点护盾+护罩+免1次异常，数值更高；但「切精灵会清空」，不能像小草王(茉蕊儿3322)那样叠盾。"@zh .
+
+seer:pet_4487 a seer:Pet ; seer:seerapiId "4487" ;
+    rdfs:label "希可洛（PVE 简称：村长）"@zh ;
+    skos:altLabel "村长"@zh, "希可洛"@zh ;
+    rdfs:comment "PVE「村长」= 希可洛(4487)。关键技能「奇镰解放」(36481)：消除对手回合类效果(boss有效)+消强+解除自身能力下降+回满自身体力+回满PP。"@zh .
+
+seer:pet_4442 a seer:Pet ; seer:seerapiId "4442" ;
+    rdfs:label "眠降·玛缇娜（PVE 简称：眠酱 / 眠降）"@zh ;
+    skos:altLabel "眠酱"@zh, "眠降"@zh, "眠降玛缇娜"@zh, "眠降·玛缇娜"@zh ;
+    rdfs:comment "PVE「眠酱/眠降」= 眠降·玛缇娜(4442)。"@zh .
+
+# ---- 年费 / 神魔（2026-11-22 用户确认 PVE）------------------------------
+seer:pet_3414 a seer:Pet ; seer:seerapiId "3414" ;
+    rdfs:label "混沌魔君索伦森（PVE 简称：索伦森）"@zh ;
+    skos:altLabel "索伦森"@zh, "混沌魔君索伦森"@zh, "魔君索伦森"@zh ;
+    rdfs:comment "PVE「索伦森」= 混沌魔君索伦森(3414)，混沌系。索伦森链：索伦森(2000)→魔君索伦森(3312)→混沌魔君索伦森(3414)。魂印728：登场消强封强、免/减伤、阶段结束回血1/3并附加等量百分比固伤(boss有效)。"@zh .
+
+seer:pet_3986 a seer:Pet ; seer:seerapiId "3986" ;
+    rdfs:label "启灵元神（PVE 辅助·后台铺盾）"@zh ;
+    skos:altLabel "启灵元神"@zh ;
+    rdfs:comment "PVE 辅助。魂印1246：神谕(己方不在场精灵<半血则体力不降)、神照(己方首发首次登场获自身30%最大体力护盾)、神启(半血以上免异+免能力下降/半血以下获30%最大体力护盾)，均boss有效。"@zh .
+
+seer:pet_3291 a seer:Pet ; seer:seerapiId "3291" ;
+    rdfs:label "瀚宇星皇（PVE 简称：星皇，后台增益）"@zh ;
+    skos:altLabel "星皇"@zh, "瀚宇星皇"@zh ;
+    rdfs:comment "PVE「星皇」= 瀚宇星皇(3291)，自然·圣灵。魂印622：免疫能力下降(boss有效)；其余免疫固伤/百分比为boss无效；后台「星皇之赐/星皇之佑」增益(boss有效)。"@zh .
+
+# ---- 论坛正文二次挖掘候选（2026-11-22 scraper 反查入库）----------------
+seer:pet_3866 a seer:Pet ; seer:seerapiId "3866" ;
+    rdfs:label "月照星魂（PVE 简称：月照，强攻）"@zh ;
+    skos:altLabel "月照星魂"@zh, "月照"@zh ;
+    rdfs:comment "光·飞行。魂印1138/1437：登场首2回合免异+必暴、低伤补必暴、必暴令对手失明(部分boss无效)。"@zh .
+
+seer:pet_3711 a seer:Pet ; seer:seerapiId "3711" ;
+    rdfs:label "圣光莫妮卡（PVE 简称：圣莫，强攻）"@zh ;
+    skos:altLabel "圣光莫妮卡"@zh, "圣莫"@zh ;
+    rdfs:comment "自然·圣灵。魂印987/2072：自然祝福层数机制、宁界之律回PP/保队友(boss有效)。"@zh .
+
+seer:pet_4732 a seer:Pet ; seer:seerapiId "4732" ;
+    rdfs:label "闪光皮神（PVE 简称：闪皮，站场）"@zh ;
+    skos:altLabel "闪光皮神"@zh, "闪皮"@zh ;
+    rdfs:comment "圣灵·飞行。魂印1930：拥有神话、按存活队友减伤增伤、神羽抬血(boss有效)；皮神(4731)为姐妹形态。"@zh .
+
+seer:pet_3517 a seer:Pet ; seer:seerapiId "3517" ;
+    rdfs:label "霍夫曼（PVE 强攻）"@zh ;
+    skos:altLabel "霍夫曼"@zh ;
+    rdfs:comment "光。魂印830：首登让对手下1次攻击伤害-50%且先制-2(核心效果boss无效)。"@zh .
+
+seer:pet_3561 a seer:Pet ; seer:seerapiId "3561" ;
+    rdfs:label "邪灵主宰·摩哥斯（PVE 简称：摩哥斯，强攻）"@zh ;
+    skos:altLabel "邪灵主宰摩哥斯"@zh, "邪灵主宰·摩哥斯"@zh, "摩哥斯"@zh ;
+    rdfs:comment "邪灵。魂印862：伤害>300令对手害怕、<300自身下次先制+3、阶段结束附加固伤。"@zh .
+
+seer:pet_4628 a seer:Pet ; seer:seerapiId "4628" ;
+    rdfs:label "圣血猎者·赫布洛（PVE 强攻）"@zh ;
+    skos:altLabel "圣血猎者赫布洛"@zh, "圣血猎者·赫布洛"@zh, "赫布洛"@zh ;
+    rdfs:comment "混沌·圣灵。魂印1835：自身流血→免疫异常+每回合300护盾，流血对手被攻击吸血100%。"@zh .
+
+seer:pet_4462 a seer:Pet ; seer:seerapiId "4462" ;
+    rdfs:label "月华（PVE 站场/强攻）"@zh ;
+    skos:altLabel "月华"@zh ;
+    rdfs:comment "光·神秘。魂印1674：攻伤+50%(对天敌翻倍)、登场300护盾、下场给下只300护罩(boss有效)。"@zh .
+
+seer:pet_3894 a seer:Pet ; seer:seerapiId "3894" ;
+    rdfs:label "千裳（PVE 站场/套盾）"@zh ;
+    skos:altLabel "千裳"@zh ;
+    rdfs:comment "自然。魂印1163：每回合300护盾+300护罩、盾破下回合必暴(boss有效)。"@zh .
+
+seer:pet_3141 a seer:Pet ; seer:seerapiId "3141" ;
+    rdfs:label "深渊狱神·哈迪斯（PVE 简称：哈迪斯，强攻）"@zh ;
+    skos:altLabel "深渊狱神哈迪斯"@zh, "深渊狱神·哈迪斯"@zh, "哈迪斯"@zh ;
+    rdfs:comment "暗影·电。魂印480/611：低血先制+2、首回合致命残留1血+下回合先制+3并附加1/3固伤。"@zh .
+
+seer:pet_4871 a seer:Pet ; seer:seerapiId "4871" ;
+    rdfs:label "嘲风（PVE 强攻）"@zh ;
+    skos:altLabel "嘲风"@zh ;
+    rdfs:comment "火·飞行。魂印2058：风龙结机制、低血吸500体力(核心boss无效)。"@zh .
+
+seer:pet_3926 a seer:Pet ; seer:seerapiId "3926" ;
+    rdfs:label "极寒魔兽（PVE 强攻）"@zh ;
+    skos:altLabel "极寒魔兽"@zh ;
+    rdfs:comment "混沌·冰。魂印1191/1268：满血免异、不满血回1/3+等量固伤、攻击吸血50-70%(boss无效)。"@zh .
+
+seer:pet_3118 a seer:Pet ; seer:seerapiId "3118" ;
+    rdfs:label "索比斯（PVE 辅助·送头清强减伤）"@zh ;
+    skos:altLabel "索比斯"@zh ;
+    rdfs:comment "暗影。魂印468：被击败清除对手强化且2回合内对手攻击伤害减半(boss有效)。"@zh .
+
+seer:pet_2735 a seer:Pet ; seer:seerapiId "2735" ;
+    rdfs:label "天河神将（PVE 辅助·消强）"@zh ;
+    skos:altLabel "天河神将"@zh ;
+    rdfs:comment "战斗。魂印135：受到攻击消除对手能力提升状态。"@zh .
+
+seer:pet_3540 a seer:Pet ; seer:seerapiId "3540" ;
+    rdfs:label "鲁肃（PVE 辅助·送头）"@zh ;
+    skos:altLabel "鲁肃"@zh ;
+    rdfs:comment "水·战斗。魂印844/1519：死亡消强+把自身强化给下只+下只2回合减伤50%(boss有效)。"@zh .
+
+seer:pet_3031 a seer:Pet ; seer:seerapiId "3031" ;
+    rdfs:label "鬼神吕布（PVE 简称：吕布，强攻）"@zh ;
+    skos:altLabel "鬼神吕布"@zh, "吕布"@zh ;
+    rdfs:comment "次元。魂印400：满体力免异+攻伤+50%+造成伤害50%回血(boss有效)。"@zh .
+
+seer:pet_4721 a seer:Pet ; seer:seerapiId "4721" ;
+    rdfs:label "黯魂·索比拉特（PVE 辅助·送头）"@zh ;
+    skos:altLabel "黯魂索比拉特"@zh, "黯魂·索比拉特"@zh, "索比拉特"@zh ;
+    rdfs:comment "暗影。魂印1924：攻击吸血50%、被击败消强+己方2回合三伤减半(boss有效)。"@zh .
+
+seer:pet_2499 a seer:Pet ; seer:seerapiId "2499" ;
+    rdfs:label "格莱奥丹（PVE 辅助·消强）"@zh ;
+    skos:altLabel "格莱奥丹"@zh ;
+    rdfs:comment "地面·暗影。魂印30：登场3回合内受攻击则对手能力增强效果消失。"@zh .
+
+seer:pet_3438 a seer:Pet ; seer:seerapiId "3438" ;
+    rdfs:label "空灵之刃（PVE 强攻）"@zh ;
+    skos:altLabel "空灵之刃"@zh ;
+    rdfs:comment "神秘。魂印755：攻击伤害随机+50%~100%、低伤补固伤、高伤回血(部分boss无效)。"@zh .
+
+seer:pet_4912 a seer:Pet ; seer:seerapiId "4912" ;
+    rdfs:label "生之焰·灰蛾（PVE 简称：灰蛾，强攻）"@zh ;
+    skos:altLabel "生之焰灰蛾"@zh, "生之焰·灰蛾"@zh, "灰蛾"@zh ;
+    rdfs:comment "火·虫。魂印2099：渐烬层数吸血+减伤+致死触发重生(boss无效)；灰蛾(4885)为前置。"@zh .
+
+seer:pet_4146 a seer:Pet ; seer:seerapiId "4146" ;
+    rdfs:label "潜隐灵蛇（PVE 简称：灵蛇，强攻）"@zh ;
+    skos:altLabel "潜隐灵蛇"@zh, "灵蛇"@zh ;
+    rdfs:comment "神秘·超能。魂印1375：四种灵蛇之力循环(固伤/回血/护盾)(部分boss无效)。"@zh .
+
+seer:pet_3844 a seer:Pet ; seer:seerapiId "3844" ;
+    rdfs:label "伊芙莉莎（PVE 强攻）"@zh ;
+    skos:altLabel "伊芙莉莎"@zh ;
+    rdfs:comment "自然。魂印1117：反转弱化+缩伤+回血回PP(boss有效)。"@zh .
+
+seer:pet_4816 a seer:Pet ; seer:seerapiId "4816" ;
+    skos:altLabel "伊芙"@zh .
+
+seer:pet_4797 a seer:Pet ; seer:seerapiId "4797" ;
+    rdfs:label "极渊DS-001（PVE 强攻）"@zh ;
+    skos:altLabel "极渊DS-001"@zh, "极渊DS"@zh ;
+    rdfs:comment "邪灵·机械。魂印1987：算力乱流/共振机制(核心boss无效)。"@zh .
+
+seer:pet_3406 a seer:Pet ; seer:seerapiId "3406" ;
+    rdfs:label "圣霆雷伊（PVE 简称：圣雷，强攻）"@zh ;
+    skos:altLabel "圣雷"@zh, "圣霆雷伊"@zh ;
+    rdfs:comment "圣灵·电。魂印718：按对手强化附加固伤/先制、低血触发回满+消强+护盾(核心boss无效)。"@zh .
+
+seer:pet_4223 a seer:Pet ; seer:seerapiId "4223" ;
+    rdfs:label "堕落炮魂（PVE 强攻）"@zh ;
+    skos:altLabel "堕落炮魂"@zh ;
+    rdfs:comment "光·暗影。魂印1442：对手异常则必暴、失明/害怕联动。"@zh .
+
+seer:pet_3938 a seer:Pet ; seer:seerapiId "3938" ;
+    rdfs:label "圣骑·赫里斯（PVE 强攻）"@zh ;
+    skos:altLabel "圣骑赫里斯"@zh, "圣骑·赫里斯"@zh, "赫里斯"@zh ;
+    rdfs:comment "光。魂印1201：攻击附加1/3固伤+回血，低血翻倍(boss有效)；赫里斯(3445)为前置。"@zh .
+
+seer:pet_3194 a seer:Pet ; seer:seerapiId "3194" ;
+    rdfs:label "魔王·咤克斯（PVE 简称：咤克斯，辅助·送必暴）"@zh ;
+    skos:altLabel "咤克斯"@zh, "魔王咤克斯"@zh, "魔王·咤克斯"@zh ;
+    rdfs:comment "邪灵·神秘。150技能「魔王天全震」使己方之后精灵获得必暴；魂印519满体受击令对手全属性-1+自身先制+1。"@zh .
+
+# ---- 用户定案补充（四九/克罗/龙鹰/圣华）-------------------------------
+seer:pet_3221 a seer:Pet ; seer:seerapiId "3221" ;
+    rdfs:label "四九圣尊（PVE 简称：四九，站场）"@zh ;
+    skos:altLabel "四九圣尊"@zh, "四九"@zh ;
+    rdfs:comment "远古。魂印543：体力高于对方增伤49%、低于对方减伤49%，阶段结束吸取90~270体力(boss有效)。"@zh .
+
+# 克罗线：小克罗=神寂·克罗诺斯(2977)，大克罗=万神寂灭·克罗诺斯(3443)；未指明时二者皆可（都靠「下场保下一只」）。
+seer:pet_2977 a seer:Pet ; seer:seerapiId "2977" ;
+    rdfs:label "神寂·克罗诺斯（PVE 简称：小克罗）"@zh ;
+    skos:altLabel "小克罗"@zh, "克罗"@zh, "神寂克罗诺斯"@zh, "神寂·克罗诺斯"@zh ;
+    rdfs:comment "暗影·神秘。魂印360：下场使下一只免首回合异常且首伤害≤250；特攻必中。"@zh .
+
+seer:pet_3443 a seer:Pet ; seer:seerapiId "3443" ;
+    rdfs:label "万神寂灭·克罗诺斯（PVE 简称：大克罗）"@zh ;
+    skos:altLabel "大克罗"@zh, "克罗"@zh, "万神寂灭克罗诺斯"@zh, "万神寂灭·克罗诺斯"@zh ;
+    rdfs:comment "暗影·神秘。魂印758：下场使下一只免首回合异常且首伤害≤250；特攻必中。未指定「大/小克罗」时二者皆可。"@zh .
+
+seer:pet_2807 a seer:Pet ; seer:seerapiId "2807" ;
+    rdfs:label "黄金龙鹰（PVE 简称：龙鹰，强攻）"@zh ;
+    skos:altLabel "黄金龙鹰"@zh, "龙鹰"@zh ;
+    rdfs:comment "光·次元。魂印165：所有攻击无视对手双防提升(boss有效)。技能「光芒耀世/琉璃碎心咒」低体翻倍；比神圣龙鹰多无视双防，效果更优。"@zh .
+
+seer:pet_3239 a seer:Pet ; seer:seerapiId "3239" ;
+    rdfs:label "神圣龙鹰（PVE 简称：龙鹰，强攻）"@zh ;
+    skos:altLabel "神圣龙鹰"@zh, "龙鹰"@zh ;
+    rdfs:comment "光·次元。魂印565：攻击无视双防提升+低体技能威力+50%。技能「光芒耀世/琉璃碎心咒」低体翻倍；黄金龙鹰(2807)效果更好。"@zh .
+
+seer:pet_4321 a seer:Pet ; seer:seerapiId "4321" ;
+    rdfs:label "至序圣华（PVE 简称：圣华，强攻）"@zh ;
+    skos:altLabel "圣华"@zh, "至序圣华"@zh ;
+    rdfs:comment "圣灵·轮回。魂印1547：处决印记/圣剑/加冕/秩序机制(boss无效)。技能「荡尽芜杂」低体翻倍。"@zh .
+
+# =====================================================================
+# 文档简称补充（alias_map.json 审定，2026-11-25）
+# 来源：P标点归一化命中 / api=SeerAPI唯一命中 / ctx=按上下文判定；未列入者视为仍有歧义，禁止硬猜。
+# =====================================================================
+
+seer:pet_2648 a seer:Pet ; seer:seerapiId "2648" ;
+    skos:altLabel "魔咤"@zh .
+seer:pet_2735 a seer:Pet ; seer:seerapiId "2735" ;
+    skos:altLabel "天河"@zh .
+seer:pet_3056 a seer:Pet ; seer:seerapiId "3056" ;
+    skos:altLabel "圣甲盖亚"@zh .
+seer:pet_3240 a seer:Pet ; seer:seerapiId "3240" ;
+    skos:altLabel "邪灵王摩哥斯"@zh .
+seer:pet_3256 a seer:Pet ; seer:seerapiId "3256" ;
+    skos:altLabel "龙帝"@zh .
+seer:pet_3328 a seer:Pet ; seer:seerapiId "3328" ;
+    skos:altLabel "萨格罗斯"@zh .
+seer:pet_3916 a seer:Pet ; seer:seerapiId "3916" ;
+    skos:altLabel "大喵佐"@zh .
+seer:pet_3986 a seer:Pet ; seer:seerapiId "3986" ;
+    skos:altLabel "元神"@zh, "启灵"@zh .
+seer:pet_3994 a seer:Pet ; seer:seerapiId "3994" ;
+    skos:altLabel "暴乱格劳瑞"@zh .
+seer:pet_4001 a seer:Pet ; seer:seerapiId "4001" ;
+    skos:altLabel "无上万魔天尊"@zh .
+seer:pet_4068 a seer:Pet ; seer:seerapiId "4068" ;
+    skos:altLabel "苍穹之望艾希丝"@zh .
+seer:pet_4093 a seer:Pet ; seer:seerapiId "4093" ;
+    skos:altLabel "赛娅"@zh .
+seer:pet_4290 a seer:Pet ; seer:seerapiId "4290" ;
+    skos:altLabel "灵魂收割者黛"@zh .
+seer:pet_4448 a seer:Pet ; seer:seerapiId "4448" ;
+    skos:altLabel "流荧雪"@zh .
+seer:pet_4628 a seer:Pet ; seer:seerapiId "4628" ;
+    skos:altLabel "圣血"@zh, "圣血猎者"@zh .
+seer:pet_4633 a seer:Pet ; seer:seerapiId "4633" ;
+    skos:altLabel "腐坏"@zh, "腐坏幽魔克劳里菲"@zh .
+seer:pet_4797 a seer:Pet ; seer:seerapiId "4797" ;
+    skos:altLabel "DS-001"@zh .
+seer:pet_4911 a seer:Pet ; seer:seerapiId "4911" ;
+    skos:altLabel "星光艾欧丽娅"@zh .
+
+# --- PVE 口径补充（2026-11-25，用户确认）---------------------------------
+# 说明：这三个名字本体原先只挂在基础形态上（或完全没有别名），PVE 一律指强化形态。
+# 咤克斯/吕布/赫里斯/谱尼 本来就有 altLabel 指向强化形态，这里不再重复。
+# 用户明确「库拉、克鲁斯 不确定」「特罗斯 就是特罗斯（特殊，不做映射）」，故跳过。
+seer:pet_4001 a seer:Pet ; seer:seerapiId "4001" ;
+    skos:altLabel "万魔天尊"@zh .
+seer:pet_3741 a seer:Pet ; seer:seerapiId "3741" ;
+    skos:altLabel "库贝萨"@zh .
+seer:pet_3107 a seer:Pet ; seer:seerapiId "3107" ;
+    skos:altLabel "格罗姆"@zh .
+
+# --- PVE 口径补充 2（2026-11-25，用户确认）-------------------------------
+# 伊塔 -> 伊塔·回溯型（用户：伊塔换）。
+# 克罗诺斯 -> 大克罗 + 小克罗 两只都给别名：功能一样，且有人只有小克罗，
+# 只挂大克罗会让这些人以为「我没有克罗」。nick 会同时返回两只，谁有就用谁。
+seer:pet_4713 a seer:Pet ; seer:seerapiId "4713" ;
+    skos:altLabel "伊塔"@zh .
+seer:pet_3443 a seer:Pet ; seer:seerapiId "3443" ;
+    skos:altLabel "克罗诺斯"@zh .
+seer:pet_2977 a seer:Pet ; seer:seerapiId "2977" ;
+    skos:altLabel "克罗诺斯"@zh .

@@ -1,0 +1,1 @@
+{"desc": "{roundnext[0]}攻击技能令对手随机3个技能PP归零", "desc_tag": "roundnext", "hash": "22b8da49", "icon": [30], "id": 3140, "tag": "减PP", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

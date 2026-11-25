@@ -1,0 +1,13 @@
+{
+ "known_limitations": [],
+ "no_source": [],
+ "no_why": [],
+ "unchanged": [],
+ "stats": {
+  "docs": 255,
+  "stages": 1267,
+  "strategies_before": 1572,
+  "strategies_after": 3288,
+  "merged_pairs": 1
+ }
+}

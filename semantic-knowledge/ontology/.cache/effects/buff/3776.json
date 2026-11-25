@@ -1,0 +1,1 @@
+{"desc": "每次双方任意一方使用攻击技能，则自身下回合起所有技能本次在场先制+1，最多+3", "desc_tag": null, "hash": "5c0c7d99", "icon": [6], "id": 3776, "tag": "先制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

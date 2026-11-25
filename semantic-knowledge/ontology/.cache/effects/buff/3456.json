@@ -1,0 +1,1 @@
+{"desc": "对手为雄性精灵时，当回合自身造成的伤害低于{0}时附加伤害值{1}%的固定伤害", "desc_tag": null, "hash": "785253a1", "icon": [34], "id": 3456, "tag": "附加伤害", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

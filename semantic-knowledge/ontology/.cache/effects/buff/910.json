@@ -1,0 +1,1 @@
+{"desc": "{0}回合内自身使用{skilltypeC[1]}技能时令对手全属性-{2}", "desc_tag": "skilltypeC", "hash": "e11d9078", "icon": [18], "id": 910, "tag": "弱化", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

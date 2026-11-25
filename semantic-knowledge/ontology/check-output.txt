@@ -1,0 +1,115 @@
+* Owlready2 * Running HermiT...
+    java -Xmx2000M -cp C:\Users\kmdbn\AppData\Roaming\Python\Python310\site-packages\owlready2\hermit;C:\Users\kmdbn\AppData\Roaming\Python\Python310\site-packages\owlready2\hermit\HermiT.jar org.semanticweb.HermiT.cli.CommandLine -c -O -D -I file:///C:/Users/kmdbn/AppData/Local/Temp/dsh-QSbJnA/tmp4dxqz37c
+* Owlready2 * HermiT took 0.5631775856018066 seconds
+* Owlready * (NB: only changes on entities loaded in Python are shown, other changes are done but not listed)
+加载游戏本体: C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer-factor-kb/ontology/seer-game.owl
+加载 PVE 打法层: C:/Users/kmdbn/Documents/deepseek-harness/default-workspace/seer-factor-kb/ontology/seer-pve.owl
+
+=== [seer-game] 类 (28) ===
+  o Pet | 精灵
+  o Item | 道具
+  o SoulmarkTag | 魂印标签
+  o Soulmark | 魂印
+  o Nature | 性格
+  o Suit | 套装
+  o SuitBonus | 套装加成
+  o Equip | 装备
+  o EnergyBead | 能量珠
+  o Skill | 技能
+  o PetEffect | 精灵特性效果
+  o Sailor | 赛尔（玩家角色）
+  o Title | 称号
+  o PetAdvance | 精灵进化/升阶
+  o FactorStage | 因子关卡
+  o Fire | 火焰（绿火/金火，全局增益）
+  o SkillEffectType | 技能效果类型（先制/固伤/回血/反弹/增伤…）
+  o Buff | 状态/增益
+  o BuffType | 状态类型
+  o Mintmark | 刻印
+  o BattleEffect | 战斗效果
+  o Factor | 精灵因子
+  o PetClass | 精灵分类
+  o EidEffect | 效果实例（对应 SeerAPI eid_effect）
+  o FieldEffect | 场地效果
+  o ElementType | 单属性
+  o TypeCombination | 属性组合
+  o Gem | 宝石
+=== [seer-game] 对象属性 (27) ===
+  - holdsItem
+  - hasSoulmark
+  - suitBonus
+  - suitEquips
+  - hasSkill
+  - hasNature
+  - hasPetEffect
+  - hasTitle
+  - hasAdvance
+  - hasFire
+  - skillEffectType
+  - wearsSuit
+  - buffType
+  - hasMintmark
+  - hasBattleEffect
+  - hasStage
+  - counters
+  - soulmarkTag
+  - hasPetClass
+  - hasEnergyBead
+  - equips
+  - hasFieldEffect
+  - hasTypeCombination
+  - combinationOf
+  - grantsEffect
+  - appearsInFactor
+  - hasGem
+=== [seer-game] 数据属性 (19) ===
+  - attributes
+  - useTimes
+  - seerapiId
+  - baseHp
+  - baseDef
+  - priority
+  - total
+  - baseSpDef
+  - baseAttrValue
+  - baseSpAtk
+  - maxAttrValue
+  - baseAtk
+  - pkAttribute
+  - baseSpd
+  - power
+  - partType
+  - attrBonus
+  - equipSpeed
+  - extraAttrValue
+=== [seer-game] 个体 (0) ===
+
+=== [seer-pve] 类 (4) ===
+  o BattlePlan | 打法方案（对战计划）
+  o Step | 出招步骤
+  o Role | PVE 定位
+  o Enemy | 敌方/Boss
+=== [seer-pve] 对象属性 (12) ===
+  - hasStep
+  - hasRole
+  - precedes
+  - recommendedStrategy
+  - substitutesFor
+  - usesSkill
+  - recommendedPet
+  - planFor
+  - usesLoadout
+  - usesGear
+  - usesPet
+  - bannedPet
+=== [seer-pve] 数据属性 (1) ===
+  - stepIndex
+=== [seer-pve] 个体 (5) ===
+  o attacker | 强攻（秒杀）
+  o reflect | 弹伤（反伤）
+  o firstStrike | 必先（先制）
+  o support | 辅助（判弱/场地/减伤）
+  o tank | 站场（坦克磨血）
+
+=== 一致性推理（HermiT，需要 java）===
+  HermiT 完成；不一致类: 无（本体一致）

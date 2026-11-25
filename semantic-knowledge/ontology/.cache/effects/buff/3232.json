@@ -1,0 +1,1 @@
+{"desc": "回合开始时，自身处于能力下降状态则攻击技能先制+{0}", "desc_tag": null, "hash": "1cddcb28", "icon": [6], "id": 3232, "tag": "先制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

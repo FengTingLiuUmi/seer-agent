@@ -1,0 +1,1 @@
+{"desc": "回合开始时，双方每有1个技能PP值≤3，则令自身所有技能额外先制+1", "desc_tag": null, "hash": "339fb514", "icon": [6], "id": 4236, "tag": "先制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,1 @@
+{"desc": "减少{0}点{roundnext[1]}所受的伤害", "desc_tag": "roundnext", "hash": "63d252bd", "icon": [29], "id": 96, "tag": "减伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

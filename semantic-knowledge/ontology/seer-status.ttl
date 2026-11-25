@@ -1,0 +1,962 @@
+@prefix seer: <http://example.org/seer#> .
+@prefix pve:  <http://example.org/seer/pve#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# =====================================================================
+# 赛尔号「异常状态」子本体（status 层）
+# 依赖：seer-game.ttl（owl:imports）。seer:StatusAilment 是 seer:BattleEffect 的子类，
+#       沿用 DESIGN.md 里「battle_effect → seer:BattleEffect」的映射，不另起一棵树。
+#
+# 权威来源（按可信度分级，详见 docs/异常状态本体.md）：
+#   [A] SeerAPI battle_effect / battle_effect_type / resistance_category
+#       —— 43 个状态的中文名、官方效果描述、官方类别、抗性分组；个体主键 = battle_effect.id
+#   [A] SeerAPI skill_effect_type.skill[] —— 可施加该状态的技能（appliedBySkill）
+#   [A] SeerAPI buff.desc —— 天生免疫条目、少数持续时间（immuneRule / duration）
+#   [B] kb/docs/*/*.json stages[].traits —— Boss 关卡施加关系（由 ingest_status.py 生成到
+#       seer-status-abox.ttl，本文件不写）
+#   [C] 社区俗称 —— 仅进 statusAlias 与文档，不进任何数值字段
+#
+# 本文件是「定义层」：手工维护。改定义请直接改这里（不要靠 ingest_status.py 覆盖）。
+# 派生关系（Boss 关卡/物种、命中关数）由 ingest_status.py 写入 seer-status-abox.ttl。
+# =====================================================================
+
+<http://example.org/seer/status> a owl:Ontology ;
+    owl:imports <http://example.org/seer> ;
+    rdfs:label "赛尔号异常状态子本体"@zh ;
+    rdfs:comment "赛尔号异常状态（睡眠/害怕/麻痹/烧伤/中毒/冰封…）的类层次、属性与 43 个官方个体。定义层来自 SeerAPI battle_effect；Boss 侧施加关系由 ingest_status.py 派生到 seer-status-abox.ttl。"@zh .
+
+# ---------------------------------------------------------------------
+# 类层次（6 类）
+# StatusAilment ⊂ BattleEffect（已存在的游戏本体类）
+# 官方 5 类：0 控制类 / 1 弱化类 / 2 附属类 / 3 限制类 / 4 衍化类
+# DamageOverTimeStatus 是横切类（每回合掉血），靠多重 rdf:type 表达，不破坏官方分类。
+# ---------------------------------------------------------------------
+seer:StatusAilment a owl:Class ;
+    rdfs:subClassOf seer:BattleEffect ;
+    rdfs:label "异常状态"@zh ;
+    rdfs:comment "赛尔号战斗中的异常状态（官方 battle_effect）。一等公民是「这个状态会对我做什么」：能否让我无法行动、是否持续掉血、是否削弱能力。主键对齐 SeerAPI seer:battle_effect.id（seer:seerapiId）。"@zh .
+
+seer:ControlStatus a owl:Class ;
+    rdfs:subClassOf seer:StatusAilment ;
+    rdfs:label "控场类异常状态"@zh ;
+    rdfs:comment "对应 SeerAPI battle_effect_type#0 控制类：精灵无法行动（睡眠/害怕/麻痹/石化/疲惫/冰封/焚烬/诅咒/感染/瘫痪/神游/空定/狂信）。回挂 pve:mech_control。"@zh .
+
+seer:WeakenStatus a owl:Class ;
+    rdfs:subClassOf seer:StatusAilment ;
+    rdfs:label "削弱类异常状态"@zh ;
+    rdfs:comment "对应 SeerAPI battle_effect_type#1 弱化类：不锁行动，但降命中/降威力/降能力或持续掉血（中毒/烧伤/冻伤/混乱/失明/束缚…）。可被「弱化类抗性」抵抗。"@zh .
+
+seer:AuxiliaryStatus a owl:Class ;
+    rdfs:subClassOf seer:StatusAilment ;
+    rdfs:label "附属类异常状态"@zh ;
+    rdfs:comment "对应 SeerAPI battle_effect_type#2 附属类：伴随主状态出现的附加标记（星赐/星哲/狂暴/雷解/诅咒三态…）。PVE 关联极弱，seer:pveRelevant 标 false。"@zh .
+
+seer:RestrictStatus a owl:Class ;
+    rdfs:subClassOf seer:StatusAilment ;
+    rdfs:label "限制类异常状态"@zh ;
+    rdfs:comment "对应 SeerAPI battle_effect_type#3 限制类：限制切换/行动（瘫痪、凝滞、魇昧，均为与其它类别的双属，无独占个体）。"@zh .
+
+seer:DamageOverTimeStatus a owl:Class ;
+    rdfs:subClassOf seer:StatusAilment ;
+    rdfs:label "持续伤害类异常状态"@zh ;
+    rdfs:comment "横切分类：每回合/每回合结束按体力比例或固定值掉血（中毒/烧伤/寄生/冻伤/流血/烈焰诅咒/沉默）。这些个体同时保有官方类别（弱化类或附属类）的 rdf:type，故一个状态可属多类。"@zh .
+
+# ---------------------------------------------------------------------
+# 数据属性（16）
+# ---------------------------------------------------------------------
+seer:statusName a owl:DatatypeProperty ;
+    rdfs:domain seer:StatusAilment ;
+    rdfs:range xsd:string ;
+    rdfs:label "状态名（官方中文名）"@zh ;
+    rdfs:comment "必填。取自 SeerAPI battle_effect.name，与 rdfs:label 一致。"@zh .
+
+seer:statusAlias a owl:DatatypeProperty ;
+    rdfs:domain seer:StatusAilment ;
+    rdfs:range xsd:string ;
+    rdfs:label "俗称/同义写法"@zh ;
+    rdfs:comment "可选，可多值。来自 kb/docs 的写法变体（如「睡眠控」「受击害怕」）、技能名用字（昏睡/沉睡）与社区俗称（冰冻→冰封、毒→中毒）。属 C 级来源，只做检索用，不作为数值依据。"@zh .
+
+seer:statusCategory a owl:DatatypeProperty ;
+    rdfs:domain seer:StatusAilment ;
+    rdfs:range xsd:string ;
+    rdfs:label "类目（枚举）"@zh ;
+    rdfs:comment "必填，可多值。枚举：控制 / 持续伤害 / 削弱 / 附属 / 限制。与 rdf:type 断言的类别类一一对应（控制→ControlStatus、持续伤害→DamageOverTimeStatus、削弱→WeakenStatus、附属→AuxiliaryStatus、限制→RestrictStatus）。"@zh .
+
+seer:isControl a owl:DatatypeProperty ;
+    rdfs:domain seer:StatusAilment ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "是否控场"@zh ;
+    rdfs:comment "必填。true 当且仅当 SeerAPI battle_effect.type 含 0（控制类）。用于把细粒度状态回挂到 pve:mech_control，不采用社区「X控」的宽泛说法。"@zh .
+
+seer:duration a owl:DatatypeProperty ;
+    rdfs:domain seer:StatusAilment ;
+    rdfs:range xsd:string ;
+    rdfs:label "持续回合"@zh ;
+    rdfs:comment "可选。只在有出处时写（官方描述/技能参数/社区实测）；无出处一律留空，不推算。睡眠即因官方只给「被攻击命中即解除」而无回合数，故意留空。"@zh .
+
+seer:effect a owl:DatatypeProperty ;
+    rdfs:domain seer:StatusAilment ;
+    rdfs:range xsd:string ;
+    rdfs:label "生效效果"@zh ;
+    rdfs:comment "必填。SeerAPI battle_effect.desc 原文，不改写、不折算。"@zh .
+
+seer:applyCondition a owl:DatatypeProperty ;
+    rdfs:domain seer:StatusAilment ;
+    rdfs:range xsd:string ;
+    rdfs:label "施加条件/概率"@zh ;
+    rdfs:comment "可选。取自 skill_effect_type.info 模板（含 {0} 占位符与固定概率），或 kb/docs 的 Boss 写法（受击/主动/先手/低级/高级）。"@zh .
+
+seer:cureMethod a owl:DatatypeProperty ;
+    rdfs:domain seer:StatusAilment ;
+    rdfs:range xsd:string ;
+    rdfs:label "解除方式"@zh ;
+    rdfs:comment "可选。只在官方描述写了移除/转化条款时填（如睡眠「对手使用攻击技能且未miss时解除」、冰封「结束后转化为冻伤」）。"@zh .
+
+seer:immuneRule a owl:DatatypeProperty ;
+    rdfs:domain seer:StatusAilment ;
+    rdfs:range xsd:string ;
+    rdfs:label "免疫/抵抗规则"@zh ;
+    rdfs:comment "可选。来源：SeerAPI buff.desc 的「天生免疫X状态」条目，或 resistance_category 抗性分组（控制类/弱化类/无）。"@zh .
+
+seer:stackable a owl:DatatypeProperty ;
+    rdfs:domain seer:StatusAilment ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "是否可叠加"@zh ;
+    rdfs:comment "可选。官方无此字段，只在描述明确隐含互斥时才断言（如 buff「若对手不处于冰封状态」）；其余留空，不做统一填 false 的伪精确。"@zh .
+
+seer:appliedBySkill a owl:DatatypeProperty ;
+    rdfs:domain seer:StatusAilment ;
+    rdfs:range xsd:string ;
+    rdfs:label "施加技能（示例集）"@zh ;
+    rdfs:comment "可选，可多值，格式「技能名(seerapiId)」。来源 SeerAPI skill_effect_type.skill[] 经 scrape/skills-index.json 反查技能名；每状态最多 6 条示例，全集数目写进 applyCondition，不谎称完整。"@zh .
+
+seer:counterAdvice a owl:DatatypeProperty ;
+    rdfs:domain seer:StatusAilment ;
+    rdfs:range xsd:string ;
+    rdfs:label "反制建议"@zh ;
+    rdfs:comment "可选，可多值。来源 scrape/counter_rules.md 的机制行与 kb/docs 的 why 文本。"@zh .
+
+seer:dataSource a owl:DatatypeProperty ;
+    rdfs:domain seer:StatusAilment ;
+    rdfs:range xsd:string ;
+    rdfs:label "数据出处"@zh ;
+    rdfs:comment "可选，可多值。逐条列出该个体每个字段的来源（SeerAPI 资源名+id / kb/docs / 社区），便于回溯。"@zh .
+
+seer:officialCategory a owl:DatatypeProperty ;
+    rdfs:domain seer:StatusAilment ;
+    rdfs:range xsd:string ;
+    rdfs:label "官方类别原文"@zh ;
+    rdfs:comment "可选。SeerAPI battle_effect_type 的中文名，保留双属（如「控制类,衍化类」）。是 statusCategory 的出处。"@zh .
+
+seer:bossStageCount a owl:DatatypeProperty ;
+    rdfs:domain seer:StatusAilment ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Boss 关卡命中数"@zh ;
+    rdfs:comment "派生字段，由 ingest_status.py 从 kb/docs 重算写入 seer-status-abox.ttl：trait 文本命中该状态名的关卡数。"@zh .
+
+seer:pveRelevant a owl:DatatypeProperty ;
+    rdfs:domain seer:StatusAilment ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "PVE 是否相关"@zh ;
+    rdfs:comment "派生字段。true = 在 kb/docs 的 Boss 关里有命中，或存在可施加它的技能；附属类一律 false（当前 PVE 关卡数据里不出现）。"@zh .
+
+# ---------------------------------------------------------------------
+# 对象属性（2）
+# ---------------------------------------------------------------------
+seer:inflictedByEnemy a owl:ObjectProperty ;
+    rdfs:domain seer:StatusAilment ;
+    rdfs:range pve:Enemy ;
+    rdfs:label "被该关卡 Boss 施加"@zh ;
+    rdfs:comment "派生关系，由 ingest_status.py 写入 seer-status-abox.ttl：kb/docs 里 trait 命中该状态名 → 对应 pve:Enemy。用于 boss 工具的 statusDetail 与 status 工具的关卡反查。"@zh .
+
+seer:inflictedByPet a owl:ObjectProperty ;
+    rdfs:domain seer:StatusAilment ;
+    rdfs:range seer:Pet ;
+    rdfs:label "施加者精灵（Boss 物种）"@zh ;
+    rdfs:comment "派生关系，由 ingest_status.py 写入 abox：经 pve:Enemy pve:bossSpecies 反查。技能侧的「技能→精灵」因 SeerAPI learned_by_pet 返回空而无法建立，是已知缺口。"@zh .
+
+#=====================================================================
+# 个体（43）—— 1:1 对齐 SeerAPI battle_effect；seerapiId = battle_effect.id
+# 官方名/desc/类别/抗性分组 = [A] SeerAPI；技能侧 = [A] skill_effect_type；
+# 俗称 = [C] 社区（仅检索用，不作数值依据）。
+#=====================================================================
+
+seer:status_paralysis a seer:StatusAilment, seer:ControlStatus ;
+    rdfs:label "麻痹"@zh ;
+    seer:statusName "麻痹" ;
+    seer:seerapiId "0" ;
+    seer:statusAlias "麻痹控", "麻" ;
+    seer:statusCategory "控制" ;
+    seer:isControl true ;
+    seer:officialCategory "控制类" ;
+    seer:effect "控制类异常状态，该状态下精灵无法行动" ;
+    seer:immuneRule "buff#4030「回合开始时若自身持有回能标记，则当回合自身免疫受到的麻痹、害怕、疲惫异常状态」。可被控制类抗性抵抗（resistance_category#0）。" ;
+    seer:applyCondition "skill_effect_type#75「命中时有30%概率令对手麻痹、睡眠或害怕」；skill_effect_type#10「命中后{0}%令对方麻痹」；skill_effect_type#163「{0}回合内若对手使用属性技能则随机附加烧伤、冻伤、中毒、麻痹、害怕、睡眠中的一种异常状态」（此类模板共覆盖 172 个技能，此处列 3 条）" ;
+    seer:appliedBySkill "七色光芒(11138)" ;
+    seer:appliedBySkill "混沌声波(12932)" ;
+    seer:appliedBySkill "战羊气刃(13060)" ;
+    seer:appliedBySkill "扰乱侵袭(15480)" ;
+    seer:appliedBySkill "放电(10010)" ;
+    seer:appliedBySkill "雷之牙(10041)" ;
+    seer:counterAdvice "免疫异常状态（skill_effect_type#48「{0}回合内免疫所有受到的异常状态」、#191「免疫并反弹所有受到的异常状态」、#802「免疫控制类异常状态」）；堆控制类抗性（resistance_category#0）；先手秒杀（scrape/counter_rules.md「控场」行）" ;
+    seer:dataSource "SeerAPI battle_effect#0（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#75,10,163（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#0（immuneRule）" ;
+    seer:dataSource "C 级：社区/文档俗称（仅 statusAlias，不作数值依据）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_poison a seer:StatusAilment, seer:WeakenStatus, seer:DamageOverTimeStatus ;
+    rdfs:label "中毒"@zh ;
+    seer:statusName "中毒" ;
+    seer:seerapiId "1" ;
+    seer:statusAlias "毒" ;
+    seer:statusCategory "削弱", "持续伤害" ;
+    seer:isControl false ;
+    seer:officialCategory "弱化类" ;
+    seer:effect "弱化类异常状态，该状态下每回合对手行动开始时都会扣除最大体力的1/8" ;
+    seer:immuneRule "buff#224「{0}回合内免疫控制类异常状态（烧伤、冻伤、中毒、流血、失明无法免疫）」→ 无法用「免疫控制类异常状态」挡住；可被弱化类抗性抵抗（resistance_category#1）。" ;
+    seer:applyCondition "skill_effect_type#74「命中时有30%概率令对手中毒、烧伤或冻伤」；skill_effect_type#1364「随机附加烧伤、冻伤、中毒、焚烬、冰封、感染中的2种异常状态，未触发控制类异常状态则2回合内令对手使用的属性技能无效」；skill_effect_type#2123「消除对手回合类效果，消除成功令对手感染且自身每有1点灵茉之芯额外附加中毒、睡眠、 寄生中的前1种异常状态，未触发则吸取对手最大体力的1/{0}」（此类模板共覆盖 128 个技能，此处列 3 条）" ;
+    seer:appliedBySkill "奇幻光芒(11140)" ;
+    seer:appliedBySkill "迷幻之翼(12169)" ;
+    seer:appliedBySkill "混沌魔光(12474)" ;
+    seer:appliedBySkill "神奇射线(12643)" ;
+    seer:appliedBySkill "幻之圣印(12905)" ;
+    seer:appliedBySkill "扰乱侵袭(15480)" ;
+    seer:counterAdvice "持续掉血：减伤珠/吸血/回复或速杀（scrape/counter_rules.md「每回合固伤N」行）；kb/docs 实战多用续航站场硬扛" ;
+    seer:dataSource "SeerAPI battle_effect#1（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#74,1364,2123（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#1（immuneRule）" ;
+    seer:dataSource "C 级：社区/文档俗称（仅 statusAlias，不作数值依据）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_burn a seer:StatusAilment, seer:WeakenStatus, seer:DamageOverTimeStatus ;
+    rdfs:label "烧伤"@zh ;
+    seer:statusName "烧伤" ;
+    seer:seerapiId "2" ;
+    seer:statusAlias "烧伤控", "烧" ;
+    seer:statusCategory "削弱", "持续伤害" ;
+    seer:isControl false ;
+    seer:officialCategory "弱化类" ;
+    seer:effect "弱化类异常状态，该状态下攻击技能的威力会减少50%且每回合对手行动开始时都会扣除最大体力的1/8" ;
+    seer:immuneRule "buff#224「{0}回合内免疫控制类异常状态（烧伤、冻伤、中毒、流血、失明无法免疫）」→ 无法用「免疫控制类异常状态」挡住；可被弱化类抗性抵抗（resistance_category#1）。" ;
+    seer:applyCondition "skill_effect_type#74「命中时有30%概率令对手中毒、烧伤或冻伤」；skill_effect_type#464「遇到天敌时{0}%令对手烧伤」；skill_effect_type#1364「随机附加烧伤、冻伤、中毒、焚烬、冰封、感染中的2种异常状态，未触发控制类异常状态则2回合内令对手使用的属性技能无效」（此类模板共覆盖 248 个技能，此处列 3 条）" ;
+    seer:appliedBySkill "奇幻光芒(11140)" ;
+    seer:appliedBySkill "迷幻之翼(12169)" ;
+    seer:appliedBySkill "混沌魔光(12474)" ;
+    seer:appliedBySkill "神奇射线(12643)" ;
+    seer:appliedBySkill "幻之圣印(12905)" ;
+    seer:appliedBySkill "扰乱侵袭(15480)" ;
+    seer:counterAdvice "持续掉血：减伤珠/吸血/回复或速杀（scrape/counter_rules.md「每回合固伤N」行）；kb/docs 实战多用续航站场硬扛" ;
+    seer:dataSource "SeerAPI battle_effect#2（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#74,464,1364（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#1（immuneRule）" ;
+    seer:dataSource "C 级：社区/文档俗称（仅 statusAlias，不作数值依据）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_parasite_foe a seer:StatusAilment, seer:WeakenStatus ;
+    rdfs:label "寄生对手"@zh ;
+    seer:statusName "寄生对手" ;
+    seer:seerapiId "3" ;
+    seer:statusCategory "削弱" ;
+    seer:isControl false ;
+    seer:officialCategory "（官方 type 为空）" ;
+    seer:effect "弱化类异常状态，该状态下精灵每回合对手行动开始时扣除最大体力的1/8，同时对手会恢复等量的体力" ;
+    seer:immuneRule "resistance_category#2（无抗性分组），既不吃控制类抗性也不吃弱化类抗性。" ;
+    seer:dataSource "SeerAPI battle_effect#3（name/desc/type/resistance）" ;
+    seer:dataSource "官方 type 为空 → statusCategory 取自 desc 首句「desc 首句「弱化类」」" ;
+    seer:dataSource "SeerAPI resistance_category#2（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant false .
+
+seer:status_parasite a seer:StatusAilment, seer:WeakenStatus, seer:DamageOverTimeStatus ;
+    rdfs:label "寄生"@zh ;
+    seer:statusName "寄生" ;
+    seer:seerapiId "4" ;
+    seer:statusCategory "削弱", "持续伤害" ;
+    seer:isControl false ;
+    seer:officialCategory "弱化类" ;
+    seer:effect "弱化类异常状态，该状态下每回合对手行动开始时都会扣除最大体力的1/8恢复至对手" ;
+    seer:immuneRule "buff#224「{0}回合内免疫控制类异常状态（烧伤、冻伤、中毒、流血、失明无法免疫）」→ 无法用「免疫控制类异常状态」挡住；可被弱化类抗性抵抗（resistance_category#1）。" ;
+    seer:applyCondition "skill_effect_type#2123「消除对手回合类效果，消除成功令对手感染且自身每有1点灵茉之芯额外附加中毒、睡眠、 寄生中的前1种异常状态，未触发则吸取对手最大体力的1/{0}」（此类模板共覆盖 0 个技能，此处列 3 条）" ;
+    seer:counterAdvice "持续掉血：减伤珠/吸血/回复或速杀（scrape/counter_rules.md「每回合固伤N」行）；kb/docs 实战多用续航站场硬扛" ;
+    seer:dataSource "SeerAPI battle_effect#4（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#2123（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#1（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_frostbite a seer:StatusAilment, seer:WeakenStatus, seer:DamageOverTimeStatus ;
+    rdfs:label "冻伤"@zh ;
+    seer:statusName "冻伤" ;
+    seer:seerapiId "5" ;
+    seer:statusCategory "削弱", "持续伤害" ;
+    seer:isControl false ;
+    seer:officialCategory "弱化类" ;
+    seer:effect "弱化类异常状态，该状态下每回合对手行动开始时都会扣除最大体力的1/8" ;
+    seer:immuneRule "buff#224「{0}回合内免疫控制类异常状态（烧伤、冻伤、中毒、流血、失明无法免疫）」→ 无法用「免疫控制类异常状态」挡住；可被弱化类抗性抵抗（resistance_category#1）。" ;
+    seer:applyCondition "skill_effect_type#74「命中时有30%概率令对手中毒、烧伤或冻伤」；skill_effect_type#109「{0}回合内给对手造成伤害时，有{1}%概率令对手冻伤」；skill_effect_type#1364「随机附加烧伤、冻伤、中毒、焚烬、冰封、感染中的2种异常状态，未触发控制类异常状态则2回合内令对手使用的属性技能无效」（此类模板共覆盖 230 个技能，此处列 3 条）" ;
+    seer:appliedBySkill "奇幻光芒(11140)" ;
+    seer:appliedBySkill "迷幻之翼(12169)" ;
+    seer:appliedBySkill "混沌魔光(12474)" ;
+    seer:appliedBySkill "神奇射线(12643)" ;
+    seer:appliedBySkill "幻之圣印(12905)" ;
+    seer:appliedBySkill "扰乱侵袭(15480)" ;
+    seer:counterAdvice "持续掉血：减伤珠/吸血/回复或速杀（scrape/counter_rules.md「每回合固伤N」行）；kb/docs 实战多用续航站场硬扛" ;
+    seer:dataSource "SeerAPI battle_effect#5（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#74,109,1364（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#1（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_fear a seer:StatusAilment, seer:ControlStatus ;
+    rdfs:label "害怕"@zh ;
+    seer:statusName "害怕" ;
+    seer:seerapiId "6" ;
+    seer:statusAlias "害怕控", "受击害怕", "主动害怕" ;
+    seer:statusCategory "控制" ;
+    seer:isControl true ;
+    seer:officialCategory "控制类" ;
+    seer:effect "控制类异常状态，该状态下精灵无法行动" ;
+    seer:duration "1-3回合（skill_effect_type#33/#117「对手害怕1到3回合」）" ;
+    seer:immuneRule "buff#3024「天生免疫害怕状态」；buff#3492「天生免疫害怕类异常状态」；buff#4210「免疫并以害怕的形式反弹受到的异常状态」；buff#4305「处于星哲时免疫害怕状态」。可被控制类抗性抵抗（resistance_category#0）。" ;
+    seer:applyCondition "skill_effect_type#75「命中时有30%概率令对手麻痹、睡眠或害怕」；skill_effect_type#460「{0}%概率令对手害怕，若对手处于能力提升状态则额外附加{1}%概率」；skill_effect_type#504「{0}%令对手害怕，若没有触发害怕效果，则对手{1}」（此类模板共覆盖 350 个技能，此处列 3 条）" ;
+    seer:appliedBySkill "七色光芒(11138)" ;
+    seer:appliedBySkill "混沌声波(12932)" ;
+    seer:appliedBySkill "战羊气刃(13060)" ;
+    seer:appliedBySkill "扰乱侵袭(15480)" ;
+    seer:appliedBySkill "旋风破(13924)" ;
+    seer:appliedBySkill "死亡夺取(18115)" ;
+    seer:counterAdvice "免疫异常状态（skill_effect_type#48「{0}回合内免疫所有受到的异常状态」、#191「免疫并反弹所有受到的异常状态」、#802「免疫控制类异常状态」）；堆控制类抗性（resistance_category#0）；先手秒杀（scrape/counter_rules.md「控场」行）" ;
+    seer:dataSource "SeerAPI battle_effect#6（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#75,460,504（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#0（immuneRule）" ;
+    seer:dataSource "C 级：社区/文档俗称（仅 statusAlias，不作数值依据）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_fatigue a seer:StatusAilment, seer:ControlStatus ;
+    rdfs:label "疲惫"@zh ;
+    seer:statusName "疲惫" ;
+    seer:seerapiId "7" ;
+    seer:statusAlias "疲惫控", "疲劳" ;
+    seer:statusCategory "控制" ;
+    seer:isControl true ;
+    seer:officialCategory "控制类" ;
+    seer:effect "控制类异常状态，该状态下精灵无法行动" ;
+    seer:duration "由技能参数指定（skill_effect_type#22「{0}%令对手疲惫{1}回合」；已见实例为1回合）" ;
+    seer:immuneRule "buff#4030「回合开始时若自身持有回能标记，则当回合自身免疫受到的麻痹、害怕、疲惫异常状态」。可被控制类抗性抵抗（resistance_category#0）。" ;
+    seer:applyCondition "skill_effect_type#22「{0}%令对手疲惫{1}回合」；skill_effect_type#465「{0}%令对手疲惫{1}回合，每次使用概率提升{2}%，最高{3}%」；skill_effect_type#1097「造成的攻击伤害若低于280则令对手疲惫；未击败对手则令对手下1回合使用的攻击技能无效;技能结束后对手体力值高于0，则50%进行一次额外行动以触发星皇之怒（星皇之怒：50%令对手失明，未触发则2回合内令对手使用的属性技能无效）」（此类模板共覆盖 169 个技能，此处列 3 条）" ;
+    seer:appliedBySkill "气绝冲(10245)" ;
+    seer:appliedBySkill "高能光波(10305)" ;
+    seer:appliedBySkill "气绝掌(10383)" ;
+    seer:appliedBySkill "重力拳(10551)" ;
+    seer:appliedBySkill "龙王灭碎阵(10618)" ;
+    seer:appliedBySkill "弹射叶刃(10674)" ;
+    seer:counterAdvice "免疫异常状态（skill_effect_type#48「{0}回合内免疫所有受到的异常状态」、#191「免疫并反弹所有受到的异常状态」、#802「免疫控制类异常状态」）；堆控制类抗性（resistance_category#0）；先手秒杀（scrape/counter_rules.md「控场」行）" ;
+    seer:dataSource "SeerAPI battle_effect#7（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#22,465,1097（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#0（immuneRule）" ;
+    seer:dataSource "C 级：社区/文档俗称（仅 statusAlias，不作数值依据）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_sleep a seer:StatusAilment, seer:ControlStatus ;
+    rdfs:label "睡眠"@zh ;
+    seer:statusName "睡眠" ;
+    seer:seerapiId "8" ;
+    seer:statusAlias "睡", "睡眠控", "昏睡", "沉睡" ;
+    seer:statusCategory "控制" ;
+    seer:isControl true ;
+    seer:officialCategory "控制类" ;
+    seer:effect "控制类异常状态，该状态下精灵无法行动，对手使用攻击技能且未miss时睡眠解除" ;
+    seer:cureMethod "对手使用攻击技能且未miss时睡眠解除（battle_effect#8 原文）" ;
+    seer:immuneRule "官方无「天生免疫睡眠」条目；可被控制类抗性抵抗（resistance_category#0）。kb/docs 记录 2 例「穿抗性」的高级睡眠控（「睡眠(80%概率)」「高级主动睡眠控(穿抗性)」）→ 抗性不是绝对。" ;
+    seer:applyCondition "skill_effect_type#16「命中后{0}%令对手睡眠」；skill_effect_type#75「命中时有30%概率令对手麻痹、睡眠或害怕」；skill_effect_type#1597「命中后50%令对手睡眠，若对手为咸咸粽则概率翻倍」（此类模板共覆盖 98 个技能，此处列 3 条）；另有 buff 类来源 buff#2912「下{0}次技能100%令对手进入睡眠状态」、buff#3880「下1次使用技能前100%令对手睡眠」" ;
+    seer:appliedBySkill "爱心(10285)" ;
+    seer:appliedBySkill "L射线(10580)" ;
+    seer:appliedBySkill "塞壬极乐(10721)" ;
+    seer:appliedBySkill "美妙之音(10769)" ;
+    seer:appliedBySkill "噩梦(10976)" ;
+    seer:appliedBySkill "超能风暴(11132)" ;
+    seer:counterAdvice "被控期间对手使用攻击技能且未miss即解除（battle_effect#8），Boss 每回合都动手时睡眠常自行解除，不必等它自然醒；免疫异常状态（skill_effect_type#48「{0}回合内免疫所有受到的异常状态」、#191「免疫并反弹所有受到的异常状态」、#802「免疫控制类异常状态」）；堆控制类抗性（resistance_category#0）；先手秒杀（scrape/counter_rules.md「控场」行）" ;
+    seer:dataSource "SeerAPI battle_effect#8（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#16,75,1597（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#0（immuneRule）" ;
+    seer:dataSource "C 级：社区/文档俗称（仅 statusAlias，不作数值依据）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_petrify a seer:StatusAilment, seer:ControlStatus ;
+    rdfs:label "石化"@zh ;
+    seer:statusName "石化" ;
+    seer:seerapiId "9" ;
+    seer:statusAlias "石化控" ;
+    seer:statusCategory "控制" ;
+    seer:isControl true ;
+    seer:officialCategory "控制类" ;
+    seer:effect "控制类异常状态，该状态下精灵无法行动" ;
+    seer:immuneRule "buff#4123「自身天生免疫石化状态」。可被控制类抗性抵抗（resistance_category#0）。" ;
+    seer:applyCondition "skill_effect_type#94「命中后{0}%令对手石化」；skill_effect_type#2370「恢复自身最大体力的1/{0}，技能无效时恢复自身最大体力的1/3并令对手石化」；skill_effect_type#2593「技能无效时，消除对手回合类效果并令对手石化」（此类模板共覆盖 6 个技能，此处列 3 条）" ;
+    seer:appliedBySkill "石化操控(11465)" ;
+    seer:appliedBySkill "源力气场(11471)" ;
+    seer:appliedBySkill "天地一波流(16057)" ;
+    seer:appliedBySkill "凝视击杀(16613)" ;
+    seer:appliedBySkill "闪星光线(19767)" ;
+    seer:appliedBySkill "石化之视(20731)" ;
+    seer:counterAdvice "免疫异常状态（skill_effect_type#48「{0}回合内免疫所有受到的异常状态」、#191「免疫并反弹所有受到的异常状态」、#802「免疫控制类异常状态」）；堆控制类抗性（resistance_category#0）；先手秒杀（scrape/counter_rules.md「控场」行）" ;
+    seer:dataSource "SeerAPI battle_effect#9（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#94,2370,2593（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#0（immuneRule）" ;
+    seer:dataSource "C 级：社区/文档俗称（仅 statusAlias，不作数值依据）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_confusion a seer:StatusAilment, seer:WeakenStatus ;
+    rdfs:label "混乱"@zh ;
+    seer:statusName "混乱" ;
+    seer:seerapiId "10" ;
+    seer:statusAlias "混乱控", "控场混乱" ;
+    seer:statusCategory "削弱" ;
+    seer:isControl false ;
+    seer:officialCategory "弱化类" ;
+    seer:effect "弱化类异常状态，该状态下精灵攻击技能的命中率减少80%且每回合对手行动开始时5%扣除50点体力" ;
+    seer:immuneRule "官方无天生免疫条目；可被弱化类抗性抵抗（resistance_category#1）。" ;
+    seer:applyCondition "skill_effect_type#99「命中时，{0}%概率令对手混乱」（此类模板共覆盖 4 个技能，此处列 3 条）" ;
+    seer:appliedBySkill "噩梦缠身(11701)" ;
+    seer:appliedBySkill "暗影波(15961)" ;
+    seer:appliedBySkill "智神之蚀(15973)" ;
+    seer:appliedBySkill "混乱魔光(20845)" ;
+    seer:counterAdvice "真·必中，或先解命中弱化（scrape/counter_rules.md「命中弱化」行）；失明下必中技能仍可能「命中效果失效」（battle_effect#20）" ;
+    seer:dataSource "SeerAPI battle_effect#10（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#99（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#1（immuneRule）" ;
+    seer:dataSource "C 级：社区/文档俗称（仅 statusAlias，不作数值依据）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_debility a seer:StatusAilment, seer:WeakenStatus ;
+    rdfs:label "衰弱"@zh ;
+    seer:statusName "衰弱" ;
+    seer:seerapiId "11" ;
+    seer:statusCategory "削弱" ;
+    seer:isControl false ;
+    seer:officialCategory "弱化类" ;
+    seer:effect "弱化类异常状态，该状态下精灵若衰弱的回合数为1/2/3/4/5及以上，则受到的攻击伤害额外提升25%/50%/100%/250%/500%" ;
+    seer:immuneRule "官方无天生免疫条目；可被弱化类抗性抵抗（resistance_category#1）。" ;
+    seer:applyCondition "skill_effect_type#103「{0}%概率令对手增加一层衰弱」；skill_effect_type#2399「双方任意一方处于属性技能无效效果时，令对手的衰弱回合数归1，自身每有1层旧日之晷效果+1，若对手不处于异常状态则附加1层宙变之殢」；skill_effect_type#2575「自身拥有武道时，消除对手的武道并令对手衰弱{0}回合，未触发则对手{1}回合内无法行动」（此类模板共覆盖 1 个技能，此处列 3 条）" ;
+    seer:appliedBySkill "龙魂冰慑(11751)" ;
+    seer:dataSource "SeerAPI battle_effect#11（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#103,2399,2575（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#1（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_mountain_guard a seer:StatusAilment, seer:AuxiliaryStatus ;
+    rdfs:label "山神守护"@zh ;
+    seer:statusName "山神守护" ;
+    seer:seerapiId "12" ;
+    seer:statusCategory "附属" ;
+    seer:isControl false ;
+    seer:officialCategory "（官方 type 为空）" ;
+    seer:effect "附属类异常状态，该状态下每回合对手受到的攻击伤害减少80%" ;
+    seer:immuneRule "resistance_category#2（无抗性分组），既不吃控制类抗性也不吃弱化类抗性。" ;
+    seer:dataSource "SeerAPI battle_effect#12（name/desc/type/resistance）" ;
+    seer:dataSource "官方 type 为空 → statusCategory 取自 desc 首句「desc 首句「附属类」」" ;
+    seer:dataSource "SeerAPI resistance_category#2（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant false .
+
+seer:status_flammable a seer:StatusAilment, seer:WeakenStatus ;
+    rdfs:label "易燃"@zh ;
+    seer:statusName "易燃" ;
+    seer:seerapiId "13" ;
+    seer:statusCategory "削弱" ;
+    seer:isControl false ;
+    seer:officialCategory "弱化类" ;
+    seer:effect "弱化类异常状态，该状态下精灵攻击技能命中率降低30%，被火系攻击技能命中时转化为烧伤" ;
+    seer:immuneRule "官方无天生免疫条目；可被弱化类抗性抵抗（resistance_category#1）。" ;
+    seer:applyCondition "skill_effect_type#114「命中后有{0}%概率令对方易燃」（此类模板共覆盖 1 个技能，此处列 3 条）" ;
+    seer:appliedBySkill "醉酒燃烧(21052)" ;
+    seer:counterAdvice "真·必中，或先解命中弱化（scrape/counter_rules.md「命中弱化」行）；失明下必中技能仍可能「命中效果失效」（battle_effect#20）" ;
+    seer:dataSource "SeerAPI battle_effect#13（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#114（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#1（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_rage a seer:StatusAilment, seer:AuxiliaryStatus ;
+    rdfs:label "狂暴"@zh ;
+    seer:statusName "狂暴" ;
+    seer:seerapiId "14" ;
+    seer:statusCategory "附属" ;
+    seer:isControl false ;
+    seer:officialCategory "附属类" ;
+    seer:effect "附属类异常状态，该状态下的精灵造成的攻击伤害翻倍" ;
+    seer:immuneRule "resistance_category#2（无抗性分组），既不吃控制类抗性也不吃弱化类抗性。" ;
+    seer:dataSource "SeerAPI battle_effect#14（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI resistance_category#2（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant false .
+
+seer:status_freeze a seer:StatusAilment, seer:ControlStatus ;
+    rdfs:label "冰封"@zh ;
+    seer:statusName "冰封" ;
+    seer:seerapiId "15" ;
+    seer:statusAlias "冰封控", "冰冻" ;
+    seer:statusCategory "控制" ;
+    seer:isControl true ;
+    seer:officialCategory "控制类,衍化类" ;
+    seer:effect "控制类异常状态，该状态下精灵无法行动，冰封结束后会转化为冻伤与速度等级-1" ;
+    seer:cureMethod "结束后转化为冻伤，并使速度等级-1（battle_effect#15）" ;
+    seer:immuneRule "官方无天生免疫条目；可被控制类抗性抵抗（resistance_category#0）。" ;
+    seer:applyCondition "skill_effect_type#1374「命中后100%秒杀对方，若MISS则自身死亡，消除对手回合类效果且100%令对手冰封，同时令我方下一只出场精灵3回合内获得冰之祝福效果」；skill_effect_type#1143「对手处于异常状态时附加{0}点固定伤害，不处于异常状态则下{1}回合使用技能随机附加烧伤、冻伤、冰封、焚烬中的{2}种异常状态」；skill_effect_type#1943「解放对手当前持有的失能Ⅰ，解放成功则随机附加冰封、焚烬、感染中的{0}种异常状态」（此类模板共覆盖 0 个技能，此处列 3 条）" ;
+    seer:counterAdvice "免疫异常状态（skill_effect_type#48「{0}回合内免疫所有受到的异常状态」、#191「免疫并反弹所有受到的异常状态」、#802「免疫控制类异常状态」）；堆控制类抗性（resistance_category#0）；先手秒杀（scrape/counter_rules.md「控场」行）" ;
+    seer:dataSource "SeerAPI battle_effect#15（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#1374,1143,1943（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#0（immuneRule）" ;
+    seer:dataSource "C 级：社区/文档俗称（仅 statusAlias，不作数值依据）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_bleed a seer:StatusAilment, seer:WeakenStatus, seer:DamageOverTimeStatus ;
+    rdfs:label "流血"@zh ;
+    seer:statusName "流血" ;
+    seer:seerapiId "16" ;
+    seer:statusCategory "削弱", "持续伤害" ;
+    seer:isControl false ;
+    seer:officialCategory "弱化类" ;
+    seer:effect "弱化类异常状态，该状态下每回合对手行动开始时都会扣除80点体力" ;
+    seer:immuneRule "buff#224「{0}回合内免疫控制类异常状态（烧伤、冻伤、中毒、流血、失明无法免疫）」→ 无法用「免疫控制类异常状态」挡住；可被弱化类抗性抵抗（resistance_category#1）。" ;
+    seer:applyCondition "skill_effect_type#641「{0}%令对手流血」（此类模板共覆盖 0 个技能，此处列 3 条）" ;
+    seer:counterAdvice "持续掉血：减伤珠/吸血/回复或速杀（scrape/counter_rules.md「每回合固伤N」行）；kb/docs 实战多用续航站场硬扛" ;
+    seer:dataSource "SeerAPI battle_effect#16（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#641（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#1（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_palsy a seer:StatusAilment, seer:ControlStatus, seer:RestrictStatus ;
+    rdfs:label "瘫痪"@zh ;
+    seer:statusName "瘫痪" ;
+    seer:seerapiId "19" ;
+    seer:statusCategory "控制", "限制" ;
+    seer:isControl true ;
+    seer:officialCategory "控制类,限制类" ;
+    seer:effect "控制类异常状态，限制类异常状态，该状态下精灵无法行动、主动切换" ;
+    seer:immuneRule "官方无天生免疫条目；可被控制类抗性抵抗（resistance_category#0）。" ;
+    seer:applyCondition "skill_effect_type#1277「若体力大于对手，则消耗自身体力至残留1点HP给对手造成350-550点伤害；若体力小于对手，则消耗自身全部体力给对手等同于消耗量的固定伤害并使对手瘫痪2回合，若对手受到致命伤害时残留1点体力」（此类模板共覆盖 0 个技能，此处列 3 条）" ;
+    seer:counterAdvice "免疫异常状态（skill_effect_type#48「{0}回合内免疫所有受到的异常状态」、#191「免疫并反弹所有受到的异常状态」、#802「免疫控制类异常状态」）；堆控制类抗性（resistance_category#0）；先手秒杀（scrape/counter_rules.md「控场」行）" ;
+    seer:dataSource "SeerAPI battle_effect#19（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#1277（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#0（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_blindness a seer:StatusAilment, seer:WeakenStatus ;
+    rdfs:label "失明"@zh ;
+    seer:statusName "失明" ;
+    seer:seerapiId "20" ;
+    seer:statusAlias "失明控", "命中弱化" ;
+    seer:statusCategory "削弱" ;
+    seer:isControl false ;
+    seer:officialCategory "弱化类" ;
+    seer:effect "弱化类异常状态，该状态下精灵使用攻击技能50%miss，若为必中技能则50%命中效果失效且无法造成攻击伤害" ;
+    seer:immuneRule "buff#224「{0}回合内免疫控制类异常状态（烧伤、冻伤、中毒、流血、失明无法免疫）」→ 无法用「免疫控制类异常状态」挡住；可被弱化类抗性抵抗（resistance_category#1）。" ;
+    seer:applyCondition "skill_effect_type#1097「造成的攻击伤害若低于280则令对手疲惫；未击败对手则令对手下1回合使用的攻击技能无效;技能结束后对手体力值高于0，则50%进行一次额外行动以触发星皇之怒（星皇之怒：50%令对手失明，未触发则2回合内令对手使用的属性技能无效）」；skill_effect_type#851「随机附加害怕、失明、烧伤、冻伤、中毒中的{0}种异常状态」；skill_effect_type#1498「随机附加烧伤，冻伤，失明，失神中的{0}种异常状态，未触发则自身下{1}回合造成的伤害提升{2}%」（此类模板共覆盖 2 个技能，此处列 3 条）" ;
+    seer:appliedBySkill "天诛地罚(18329)" ;
+    seer:appliedBySkill "天诛地罚(19005)" ;
+    seer:counterAdvice "真·必中，或先解命中弱化（scrape/counter_rules.md「命中弱化」行）；失明下必中技能仍可能「命中效果失效」（battle_effect#20）" ;
+    seer:dataSource "SeerAPI battle_effect#20（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#1097,851,1498（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#1（immuneRule）" ;
+    seer:dataSource "C 级：社区/文档俗称（仅 statusAlias，不作数值依据）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_abnormal_immune a seer:StatusAilment, seer:AuxiliaryStatus ;
+    rdfs:label "异常免疫"@zh ;
+    seer:statusName "异常免疫" ;
+    seer:seerapiId "21" ;
+    seer:statusCategory "附属" ;
+    seer:isControl false ;
+    seer:officialCategory "附属类" ;
+    seer:effect "附属类异常状态，无效果" ;
+    seer:immuneRule "resistance_category#2（无抗性分组），既不吃控制类抗性也不吃弱化类抗性。" ;
+    seer:dataSource "SeerAPI battle_effect#21（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI resistance_category#2（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant false .
+
+seer:status_ember a seer:StatusAilment, seer:ControlStatus ;
+    rdfs:label "焚烬"@zh ;
+    seer:statusName "焚烬" ;
+    seer:seerapiId "22" ;
+    seer:statusAlias "焚烬控" ;
+    seer:statusCategory "控制" ;
+    seer:isControl true ;
+    seer:officialCategory "控制类,衍化类" ;
+    seer:effect "控制类异常状态，该状态下精灵无法行动，焚烬结束后会转化为烧伤与命中等级-1" ;
+    seer:cureMethod "结束后转化为烧伤，并使命中等级-1（battle_effect#22）" ;
+    seer:immuneRule "官方无天生免疫条目；可被控制类抗性抵抗（resistance_category#0）。" ;
+    seer:applyCondition "skill_effect_type#1364「随机附加烧伤、冻伤、中毒、焚烬、冰封、感染中的2种异常状态，未触发控制类异常状态则2回合内令对手使用的属性技能无效」；skill_effect_type#2126「技能无效时，消除对手回合类效果、能力提升效果，令对手焚烬」；skill_effect_type#1143「对手处于异常状态时附加{0}点固定伤害，不处于异常状态则下{1}回合使用技能随机附加烧伤、冻伤、冰封、焚烬中的{2}种异常状态」（此类模板共覆盖 0 个技能，此处列 3 条）" ;
+    seer:counterAdvice "免疫异常状态（skill_effect_type#48「{0}回合内免疫所有受到的异常状态」、#191「免疫并反弹所有受到的异常状态」、#802「免疫控制类异常状态」）；堆控制类抗性（resistance_category#0）；先手秒杀（scrape/counter_rules.md「控场」行）" ;
+    seer:dataSource "SeerAPI battle_effect#22（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#1364,2126,1143（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#0（immuneRule）" ;
+    seer:dataSource "C 级：社区/文档俗称（仅 statusAlias，不作数值依据）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_curse a seer:StatusAilment, seer:ControlStatus ;
+    rdfs:label "诅咒"@zh ;
+    seer:statusName "诅咒" ;
+    seer:seerapiId "23" ;
+    seer:statusAlias "诅咒控" ;
+    seer:statusCategory "控制" ;
+    seer:isControl true ;
+    seer:officialCategory "控制类,衍化类" ;
+    seer:effect "控制类异常状态，该状态下精灵无法行动，诅咒结束后会随机转化为烈焰诅咒、致命诅咒、虚弱诅咒之一" ;
+    seer:cureMethod "结束后随机转化为烈焰诅咒/致命诅咒/虚弱诅咒之一（battle_effect#23）" ;
+    seer:immuneRule "官方无天生免疫条目；可被控制类抗性抵抗（resistance_category#0）。" ;
+    seer:applyCondition "skill_effect_type#1504「40%令对手诅咒，若对手身上存在黑暗之种则概率翻倍」；skill_effect_type#2086「空元之诗·渍：若技能无效，则消除对手回合类效果、能力提升效果，消除成功任意一项则令对手诅咒」（此类模板共覆盖 0 个技能，此处列 3 条）" ;
+    seer:counterAdvice "免疫异常状态（skill_effect_type#48「{0}回合内免疫所有受到的异常状态」、#191「免疫并反弹所有受到的异常状态」、#802「免疫控制类异常状态」）；堆控制类抗性（resistance_category#0）；先手秒杀（scrape/counter_rules.md「控场」行）" ;
+    seer:dataSource "SeerAPI battle_effect#23（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#1504,2086（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#0（immuneRule）" ;
+    seer:dataSource "C 级：社区/文档俗称（仅 statusAlias，不作数值依据）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_flame_curse a seer:StatusAilment, seer:AuxiliaryStatus, seer:DamageOverTimeStatus ;
+    rdfs:label "烈焰诅咒"@zh ;
+    seer:statusName "烈焰诅咒" ;
+    seer:seerapiId "24" ;
+    seer:statusCategory "附属", "持续伤害" ;
+    seer:isControl false ;
+    seer:officialCategory "附属类" ;
+    seer:effect "附属类异常状态，该状态下精灵每回合结束后受到最大体力1/8的百分比伤害" ;
+    seer:immuneRule "resistance_category#2（无抗性分组），既不吃控制类抗性也不吃弱化类抗性。" ;
+    seer:counterAdvice "持续掉血：减伤珠/吸血/回复或速杀（scrape/counter_rules.md「每回合固伤N」行）；kb/docs 实战多用续航站场硬扛" ;
+    seer:dataSource "SeerAPI battle_effect#24（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI resistance_category#2（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant false .
+
+seer:status_fatal_curse a seer:StatusAilment, seer:AuxiliaryStatus ;
+    rdfs:label "致命诅咒"@zh ;
+    seer:statusName "致命诅咒" ;
+    seer:seerapiId "25" ;
+    seer:statusCategory "附属" ;
+    seer:isControl false ;
+    seer:officialCategory "附属类" ;
+    seer:effect "附属类异常状态，该状态下精灵受到的攻击伤害额外提升50%" ;
+    seer:immuneRule "resistance_category#2（无抗性分组），既不吃控制类抗性也不吃弱化类抗性。" ;
+    seer:dataSource "SeerAPI battle_effect#25（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI resistance_category#2（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant false .
+
+seer:status_weak_curse a seer:StatusAilment, seer:AuxiliaryStatus ;
+    rdfs:label "虚弱诅咒"@zh ;
+    seer:statusName "虚弱诅咒" ;
+    seer:seerapiId "26" ;
+    seer:statusCategory "附属" ;
+    seer:isControl false ;
+    seer:officialCategory "附属类" ;
+    seer:effect "附属类异常状态，该状态下精灵造成的攻击伤害额外降低50%" ;
+    seer:immuneRule "resistance_category#2（无抗性分组），既不吃控制类抗性也不吃弱化类抗性。" ;
+    seer:dataSource "SeerAPI battle_effect#26（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI resistance_category#2（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant false .
+
+seer:status_infection a seer:StatusAilment, seer:ControlStatus ;
+    rdfs:label "感染"@zh ;
+    seer:statusName "感染" ;
+    seer:seerapiId "27" ;
+    seer:statusAlias "感染控" ;
+    seer:statusCategory "控制" ;
+    seer:isControl true ;
+    seer:officialCategory "控制类,衍化类" ;
+    seer:effect "控制类异常状态，该状态下精灵无法行动，感染结束后会转化为中毒与攻击、特攻等级-1" ;
+    seer:cureMethod "结束后转化为中毒，并使攻击/特攻等级-1（battle_effect#27）" ;
+    seer:immuneRule "官方无天生免疫条目；可被控制类抗性抵抗（resistance_category#0）。" ;
+    seer:applyCondition "skill_effect_type#2123「消除对手回合类效果，消除成功令对手感染且自身每有1点灵茉之芯额外附加中毒、睡眠、 寄生中的前1种异常状态，未触发则吸取对手最大体力的1/{0}」；skill_effect_type#1943「解放对手当前持有的失能Ⅰ，解放成功则随机附加冰封、焚烬、感染中的{0}种异常状态」（此类模板共覆盖 0 个技能，此处列 3 条）" ;
+    seer:counterAdvice "免疫异常状态（skill_effect_type#48「{0}回合内免疫所有受到的异常状态」、#191「免疫并反弹所有受到的异常状态」、#802「免疫控制类异常状态」）；堆控制类抗性（resistance_category#0）；先手秒杀（scrape/counter_rules.md「控场」行）" ;
+    seer:dataSource "SeerAPI battle_effect#27（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#2123,1943（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#0（immuneRule）" ;
+    seer:dataSource "C 级：社区/文档俗称（仅 statusAlias，不作数值依据）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_bind a seer:StatusAilment, seer:WeakenStatus ;
+    rdfs:label "束缚"@zh ;
+    seer:statusName "束缚" ;
+    seer:seerapiId "28" ;
+    seer:statusCategory "削弱" ;
+    seer:isControl false ;
+    seer:officialCategory "弱化类" ;
+    seer:effect "弱化类异常状态，该状态下精灵的先制效果失效，束缚结束时受到最大体力1/8的百分比伤害" ;
+    seer:immuneRule "官方无天生免疫条目；可被弱化类抗性抵抗（resistance_category#1）。" ;
+    seer:applyCondition "skill_effect_type#1667「开启时空漩涡，使用后必定令对手束缚且下2回合令对手无法主动切换精灵」；skill_effect_type#2481「下次击败对手时，自身每有1组九劫之痕、百炼之炎为对手下只精灵附加束缚、麻痹、焚烬中的前1种异常状态并吸取其最大体力的10%」（此类模板共覆盖 0 个技能，此处列 3 条）" ;
+    seer:dataSource "SeerAPI battle_effect#28（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#1667,2481（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#1（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_daze a seer:StatusAilment, seer:WeakenStatus ;
+    rdfs:label "失神"@zh ;
+    seer:statusName "失神" ;
+    seer:seerapiId "29" ;
+    seer:statusCategory "削弱" ;
+    seer:isControl false ;
+    seer:officialCategory "弱化类" ;
+    seer:effect "弱化类异常状态，该状态下精灵使用属性技能50%无效" ;
+    seer:immuneRule "官方无天生免疫条目；可被弱化类抗性抵抗（resistance_category#1）。" ;
+    seer:applyCondition "skill_effect_type#1498「随机附加烧伤，冻伤，失明，失神中的{0}种异常状态，未触发则自身下{1}回合造成的伤害提升{2}%」（此类模板共覆盖 0 个技能，此处列 3 条）" ;
+    seer:dataSource "SeerAPI battle_effect#29（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#1498（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#1（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_silence a seer:StatusAilment, seer:WeakenStatus, seer:DamageOverTimeStatus ;
+    rdfs:label "沉默"@zh ;
+    seer:statusName "沉默" ;
+    seer:seerapiId "30" ;
+    seer:statusCategory "削弱", "持续伤害" ;
+    seer:isControl false ;
+    seer:officialCategory "弱化类" ;
+    seer:effect "弱化类异常状态，该状态下精灵第五技能无效，且每回合结束后受到最大体力1/8的百分比伤害" ;
+    seer:immuneRule "官方无天生免疫条目；可被弱化类抗性抵抗（resistance_category#1）。" ;
+    seer:applyCondition "skill_effect_type#1861「技能无效时，消除对手回合类效果且100%令对手沉默3回合」（此类模板共覆盖 0 个技能，此处列 3 条）" ;
+    seer:counterAdvice "持续掉血：减伤珠/吸血/回复或速杀（scrape/counter_rules.md「每回合固伤N」行）；kb/docs 实战多用续航站场硬扛" ;
+    seer:dataSource "SeerAPI battle_effect#30（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#1861（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#1（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_submit a seer:StatusAilment, seer:WeakenStatus ;
+    rdfs:label "臣服"@zh ;
+    seer:statusName "臣服" ;
+    seer:seerapiId "31" ;
+    seer:statusCategory "削弱" ;
+    seer:isControl false ;
+    seer:officialCategory "弱化类" ;
+    seer:effect "弱化类异常状态，该状态下精灵无法对对手造成攻击伤害、固定伤害、百分比伤害" ;
+    seer:immuneRule "官方无天生免疫条目；可被弱化类抗性抵抗（resistance_category#1）。" ;
+    seer:dataSource "SeerAPI battle_effect#31（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI resistance_category#1（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_stasis a seer:StatusAilment, seer:WeakenStatus, seer:RestrictStatus ;
+    rdfs:label "凝滞"@zh ;
+    seer:statusName "凝滞" ;
+    seer:seerapiId "32" ;
+    seer:statusCategory "削弱", "限制" ;
+    seer:isControl false ;
+    seer:officialCategory "弱化类,限制类" ;
+    seer:effect "弱化类异常状态，限制类异常状态，该状态下精灵无法切换，同时免疫受到的控制类异常状态" ;
+    seer:immuneRule "官方无天生免疫条目；可被弱化类抗性抵抗（resistance_category#1）。" ;
+    seer:dataSource "SeerAPI battle_effect#32（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI resistance_category#1（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_stargift a seer:StatusAilment, seer:AuxiliaryStatus ;
+    rdfs:label "星赐"@zh ;
+    seer:statusName "星赐" ;
+    seer:seerapiId "33" ;
+    seer:statusCategory "附属" ;
+    seer:isControl false ;
+    seer:officialCategory "附属类" ;
+    seer:effect "附属类异常状态，该状态下的精灵造成的攻击伤害提升30%，每回合结束时恢复2点PP值" ;
+    seer:immuneRule "resistance_category#2（无抗性分组），既不吃控制类抗性也不吃弱化类抗性。" ;
+    seer:dataSource "SeerAPI battle_effect#33（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI resistance_category#2（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant false .
+
+seer:status_starphilo a seer:StatusAilment, seer:AuxiliaryStatus ;
+    rdfs:label "星哲"@zh ;
+    seer:statusName "星哲" ;
+    seer:seerapiId "34" ;
+    seer:statusCategory "附属" ;
+    seer:isControl false ;
+    seer:officialCategory "附属类" ;
+    seer:effect "附属类异常状态，该状态下的精灵造成的固定伤害、百分比伤害提升30%，每回合结束时恢复最大体力的1/4" ;
+    seer:immuneRule "resistance_category#2（无抗性分组），既不吃控制类抗性也不吃弱化类抗性。" ;
+    seer:applyCondition "skill_effect_type#2210「若自身处于星赐且不处于星哲则将此技能转化为物理攻击，若自身处于星哲且不处于星赐则将此技能转化为特殊攻击，转化后此技能系别与自身相同且自身天赋值越高技能威力越大」（此类模板共覆盖 0 个技能，此处列 3 条）" ;
+    seer:dataSource "SeerAPI battle_effect#34（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#2210（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#2（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant false .
+
+seer:status_overclock a seer:StatusAilment, seer:AuxiliaryStatus ;
+    rdfs:label "超频"@zh ;
+    seer:statusName "超频" ;
+    seer:seerapiId "35" ;
+    seer:statusCategory "附属" ;
+    seer:isControl false ;
+    seer:officialCategory "附属类" ;
+    seer:effect "附属类异常状态，该状态下精灵的技能先制+1且行动开始时恢复所选择技能的全部PP值，超频结束后会转化为1~2回合的瘫痪" ;
+    seer:duration "结束后转化为1~2回合瘫痪（battle_effect#35）" ;
+    seer:cureMethod "结束后转化为1~2回合瘫痪（battle_effect#35）" ;
+    seer:immuneRule "resistance_category#2（无抗性分组），既不吃控制类抗性也不吃弱化类抗性。" ;
+    seer:dataSource "SeerAPI battle_effect#35（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI resistance_category#2（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant false .
+
+seer:status_surge a seer:StatusAilment, seer:WeakenStatus ;
+    rdfs:label "沸涌"@zh ;
+    seer:statusName "沸涌" ;
+    seer:seerapiId "36" ;
+    seer:statusCategory "削弱" ;
+    seer:isControl false ;
+    seer:officialCategory "弱化类" ;
+    seer:effect "弱化类异常状态，处于该状态的精灵受到的攻击伤害至少为其最大体力的30%，对手打出致命一击时效果提升至50%" ;
+    seer:immuneRule "官方无天生免疫条目；可被弱化类抗性抵抗（resistance_category#1）。" ;
+    seer:dataSource "SeerAPI battle_effect#36（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI resistance_category#1（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+
+seer:status_temper a seer:StatusAilment, seer:AuxiliaryStatus ;
+    rdfs:label "砥砺"@zh ;
+    seer:statusName "砥砺" ;
+    seer:seerapiId "37" ;
+    seer:statusCategory "附属" ;
+    seer:isControl false ;
+    seer:officialCategory "附属类" ;
+    seer:effect "附属类异常状态，处于该状态的精灵受到真实伤害后若本回合未执行过附加异常状态的效果则增加此伤害值80%的体力" ;
+    seer:immuneRule "resistance_category#2（无抗性分组），既不吃控制类抗性也不吃弱化类抗性。" ;
+    seer:dataSource "SeerAPI battle_effect#37（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI resistance_category#2（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant false .
+
+seer:status_starredeem a seer:StatusAilment, seer:AuxiliaryStatus ;
+    rdfs:label "星赎"@zh ;
+    seer:statusName "星赎" ;
+    seer:seerapiId "38" ;
+    seer:statusCategory "附属" ;
+    seer:isControl false ;
+    seer:officialCategory "附属类" ;
+    seer:effect "附属类异常状态，该状态下的精灵体力恢复效果提升30%，每回合结束时所有非限制类异常状态的回合数+1" ;
+    seer:immuneRule "resistance_category#2（无抗性分组），既不吃控制类抗性也不吃弱化类抗性。" ;
+    seer:dataSource "SeerAPI battle_effect#38（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI resistance_category#2（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant false .
+
+seer:status_wander a seer:StatusAilment, seer:ControlStatus ;
+    rdfs:label "神游"@zh ;
+    seer:statusName "神游" ;
+    seer:seerapiId "39" ;
+    seer:statusCategory "控制" ;
+    seer:isControl true ;
+    seer:officialCategory "控制类,衍化类" ;
+    seer:effect "控制类异常状态，该状态下精灵无法行动，神游结束后会转化为失神" ;
+    seer:cureMethod "结束后转化为失神（battle_effect#39）" ;
+    seer:immuneRule "官方无天生免疫条目；可被控制类抗性抵抗（resistance_category#0）。" ;
+    seer:counterAdvice "免疫异常状态（skill_effect_type#48「{0}回合内免疫所有受到的异常状态」、#191「免疫并反弹所有受到的异常状态」、#802「免疫控制类异常状态」）；堆控制类抗性（resistance_category#0）；先手秒杀（scrape/counter_rules.md「控场」行）" ;
+    seer:dataSource "SeerAPI battle_effect#39（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI resistance_category#0（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant false .
+
+seer:status_voidlock a seer:StatusAilment, seer:ControlStatus ;
+    rdfs:label "空定"@zh ;
+    seer:statusName "空定" ;
+    seer:seerapiId "40" ;
+    seer:statusCategory "控制" ;
+    seer:isControl true ;
+    seer:officialCategory "控制类,衍化类" ;
+    seer:effect "控制类异常状态，该状态下精灵无法行动，空定结束后会转化为2回合沉默" ;
+    seer:cureMethod "结束后转化为2回合沉默（battle_effect#40）" ;
+    seer:immuneRule "官方无天生免疫条目；可被控制类抗性抵抗（resistance_category#0）。" ;
+    seer:counterAdvice "免疫异常状态（skill_effect_type#48「{0}回合内免疫所有受到的异常状态」、#191「免疫并反弹所有受到的异常状态」、#802「免疫控制类异常状态」）；堆控制类抗性（resistance_category#0）；先手秒杀（scrape/counter_rules.md「控场」行）" ;
+    seer:dataSource "SeerAPI battle_effect#40（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI resistance_category#0（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant false .
+
+seer:status_zealot a seer:StatusAilment, seer:ControlStatus ;
+    rdfs:label "狂信"@zh ;
+    seer:statusName "狂信" ;
+    seer:seerapiId "41" ;
+    seer:statusCategory "控制" ;
+    seer:isControl true ;
+    seer:officialCategory "控制类" ;
+    seer:effect "控制类异常状态，该状态下对手为信仰对象时自身无法行动；进入狂信状态时，若自身没有信仰对象，则本次狂信状态的来源成为自身信仰对象" ;
+    seer:immuneRule "官方无天生免疫条目；可被控制类抗性抵抗（resistance_category#0）。" ;
+    seer:counterAdvice "免疫异常状态（skill_effect_type#48「{0}回合内免疫所有受到的异常状态」、#191「免疫并反弹所有受到的异常状态」、#802「免疫控制类异常状态」）；堆控制类抗性（resistance_category#0）；先手秒杀（scrape/counter_rules.md「控场」行）" ;
+    seer:dataSource "SeerAPI battle_effect#41（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI resistance_category#0（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant false .
+
+seer:status_thunder a seer:StatusAilment, seer:AuxiliaryStatus ;
+    rdfs:label "雷解"@zh ;
+    seer:statusName "雷解" ;
+    seer:seerapiId "42" ;
+    seer:statusCategory "附属" ;
+    seer:isControl false ;
+    seer:officialCategory "附属类" ;
+    seer:effect "附属类异常状态，该状态下自身造成攻击伤害后，附加伤害值60%的真实伤害" ;
+    seer:immuneRule "resistance_category#2（无抗性分组），既不吃控制类抗性也不吃弱化类抗性。" ;
+    seer:applyCondition "skill_effect_type#2572「击败对手时令自身雷解且己方获得1点辰律」（此类模板共覆盖 0 个技能，此处列 3 条）" ;
+    seer:dataSource "SeerAPI battle_effect#42（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI skill_effect_type#2572（applyCondition/appliedBySkill）" ;
+    seer:dataSource "SeerAPI resistance_category#2（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant false .
+
+seer:status_deepfreeze a seer:StatusAilment, seer:AuxiliaryStatus ;
+    rdfs:label "渐冻"@zh ;
+    seer:statusName "渐冻" ;
+    seer:seerapiId "43" ;
+    seer:statusCategory "附属" ;
+    seer:isControl false ;
+    seer:officialCategory "附属类" ;
+    seer:effect "附属类异常状态，渐冻结束后会转化为3回合冰封" ;
+    seer:duration "结束后转化为3回合冰封（battle_effect#43）" ;
+    seer:cureMethod "结束后转化为3回合冰封（battle_effect#43）" ;
+    seer:immuneRule "resistance_category#2（无抗性分组），既不吃控制类抗性也不吃弱化类抗性。" ;
+    seer:dataSource "SeerAPI battle_effect#43（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI resistance_category#2（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant false .
+
+seer:status_nightmare a seer:StatusAilment, seer:WeakenStatus, seer:RestrictStatus ;
+    rdfs:label "魇昧"@zh ;
+    seer:statusName "魇昧" ;
+    seer:seerapiId "44" ;
+    seer:statusCategory "削弱", "限制" ;
+    seer:isControl false ;
+    seer:officialCategory "弱化类,限制类" ;
+    seer:effect "弱化类异常状态，限制类异常状态，场上的异常状态、能力等级状态对己方均展示为无回合的魇昧；最多5回合" ;
+    seer:duration "最多5回合（battle_effect#44）" ;
+    seer:immuneRule "官方无天生免疫条目；可被弱化类抗性抵抗（resistance_category#1）。" ;
+    seer:dataSource "SeerAPI battle_effect#44（name/desc/type/resistance）" ;
+    seer:dataSource "SeerAPI resistance_category#1（immuneRule）" ;
+    seer:dataSource "kb/docs 命中关数与关卡/物种关系见 seer-status-abox.ttl（seer:bossStageCount / seer:inflictedByEnemy）" ;
+    seer:pveRelevant true .
+# 个体级说明：只记录社区口径与官方口径的差异，不改变任何数据字段。
+seer:status_confusion rdfs:comment "官方 battle_effect#10 归「弱化类」：命中率-80%、每回合行动开始时5%扣50体力，不会让精灵无法行动。社区/攻略常把它与害怕/麻痹并称「混乱控」——本本体按官方数据分类，isControl=false；社区说法只保留在 statusAlias（混乱控/控场混乱）与 docs/异常状态本体.md。"@zh .
+seer:status_sleep rdfs:comment "官方 battle_effect#8 归「控制类」：无法行动，且「对手使用攻击技能且未miss时睡眠解除」。官方未给持续回合数，故 seer:duration 故意留空（不推算）。Boss 侧「睡眠控/高级睡眠控/穿抗性」等写法见 seer-status-abox.ttl。"@zh .
+seer:status_burn rdfs:comment "官方 battle_effect#2 同时具备削弱（攻击技能威力-50%）与持续伤害（每回合-1/8），故 rdf:type 同时含 WeakenStatus 与 DamageOverTimeStatus。"@zh .
+seer:status_parasite_foe rdfs:comment "官方 battle_effect#3 的 type 为空、resistance=2（无抗性分组），但 desc 首句自述「弱化类」；statusCategory 取 desc 口径，officialCategory 保留「官方 type 为空」。"@zh .
+seer:status_mountain_guard rdfs:comment "官方 battle_effect#12 的 type 为空，desc 首句自述「附属类」；statusCategory 取 desc 口径。PVE 无命中，pveRelevant=false。"@zh .

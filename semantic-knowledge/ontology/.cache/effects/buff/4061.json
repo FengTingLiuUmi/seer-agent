@@ -1,0 +1,1 @@
+{"desc": "回合开始时若对手不处于冰封状态，则当回合自身所有技能先制+1", "desc_tag": null, "hash": "b455b539", "icon": [6], "id": 4061, "tag": "先制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

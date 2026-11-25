@@ -1,0 +1,1 @@
+{"desc": "使用攻击技能时忽略对手防御值的{0}%，连续使用叠加{1}%，最高忽略{2}%", "desc_tag": null, "hash": "cb4c674a", "icon": [], "id": 2920, "tag": "增伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

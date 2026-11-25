@@ -1,0 +1,10972 @@
+{
+ "built_at": "2026-11-23T01:48:18",
+ "num_docs": 255,
+ "num_stages_with_mech": 1161,
+ "default_mechs": [
+  "clearBuff",
+  "damageReduction",
+  "firstStrike",
+  "fixedDamage",
+  "sealAttr"
+ ],
+ "df": {
+  "firstStrike": {
+   "n": 1044,
+   "df_pct": 89.9
+  },
+  "fixedDamage": {
+   "n": 958,
+   "df_pct": 82.5
+  },
+  "sealAttr": {
+   "n": 928,
+   "df_pct": 79.9
+  },
+  "damageReduction": {
+   "n": 761,
+   "df_pct": 65.5
+  },
+  "clearBuff": {
+   "n": 646,
+   "df_pct": 55.6
+  },
+  "heal": {
+   "n": 391,
+   "df_pct": 33.7
+  },
+  "stealBuff": {
+   "n": 271,
+   "df_pct": 23.3
+  },
+  "control": {
+   "n": 218,
+   "df_pct": 18.8
+  },
+  "debuff": {
+   "n": 209,
+   "df_pct": 18.0
+  },
+  "selfBuff": {
+   "n": 198,
+   "df_pct": 17.1
+  },
+  "dodge": {
+   "n": 137,
+   "df_pct": 11.8
+  },
+  "twoLife": {
+   "n": 128,
+   "df_pct": 11.0
+  },
+  "bossCrit": {
+   "n": 124,
+   "df_pct": 10.7
+  },
+  "clearPP": {
+   "n": 123,
+   "df_pct": 10.6
+  },
+  "breakTurn": {
+   "n": 98,
+   "df_pct": 8.4
+  },
+  "immunePhysical": {
+   "n": 63,
+   "df_pct": 5.4
+  },
+  "singlePet": {
+   "n": 62,
+   "df_pct": 5.3
+  },
+  "immuneSpecial": {
+   "n": 59,
+   "df_pct": 5.1
+  },
+  "onlyCrit": {
+   "n": 54,
+   "df_pct": 4.7
+  },
+  "shield": {
+   "n": 52,
+   "df_pct": 4.5
+  },
+  "immunePower": {
+   "n": 49,
+   "df_pct": 4.2
+  },
+  "onlyFirstStrike": {
+   "n": 45,
+   "df_pct": 3.9
+  },
+  "rawCap": {
+   "n": 42,
+   "df_pct": 3.6
+  },
+  "reflection": {
+   "n": 35,
+   "df_pct": 3.0
+  },
+  "undying": {
+   "n": 8,
+   "df_pct": 0.7
+  },
+  "hitDebuff": {
+   "n": 8,
+   "df_pct": 0.7
+  },
+  "panelImmune": {
+   "n": 2,
+   "df_pct": 0.2
+  }
+ },
+ "by_position": {
+  "1": {
+   "heal": {
+    "n": 76,
+    "total": 232,
+    "pct": 32.8
+   },
+   "debuff": {
+    "n": 42,
+    "total": 232,
+    "pct": 18.1
+   },
+   "dodge": {
+    "n": 29,
+    "total": 232,
+    "pct": 12.5
+   },
+   "immunePhysical": {
+    "n": 23,
+    "total": 232,
+    "pct": 9.9
+   },
+   "onlyCrit": {
+    "n": 23,
+    "total": 232,
+    "pct": 9.9
+   },
+   "bossCrit": {
+    "n": 22,
+    "total": 232,
+    "pct": 9.5
+   },
+   "rawCap": {
+    "n": 16,
+    "total": 232,
+    "pct": 6.9
+   },
+   "control": {
+    "n": 16,
+    "total": 232,
+    "pct": 6.9
+   },
+   "selfBuff": {
+    "n": 12,
+    "total": 232,
+    "pct": 5.2
+   },
+   "clearPP": {
+    "n": 11,
+    "total": 232,
+    "pct": 4.7
+   },
+   "immuneSpecial": {
+    "n": 9,
+    "total": 232,
+    "pct": 3.9
+   },
+   "onlyFirstStrike": {
+    "n": 9,
+    "total": 232,
+    "pct": 3.9
+   },
+   "immunePower": {
+    "n": 9,
+    "total": 232,
+    "pct": 3.9
+   },
+   "twoLife": {
+    "n": 8,
+    "total": 232,
+    "pct": 3.4
+   },
+   "stealBuff": {
+    "n": 7,
+    "total": 232,
+    "pct": 3.0
+   },
+   "breakTurn": {
+    "n": 7,
+    "total": 232,
+    "pct": 3.0
+   },
+   "hitDebuff": {
+    "n": 6,
+    "total": 232,
+    "pct": 2.6
+   },
+   "shield": {
+    "n": 5,
+    "total": 232,
+    "pct": 2.2
+   },
+   "undying": {
+    "n": 2,
+    "total": 232,
+    "pct": 0.9
+   },
+   "reflection": {
+    "n": 2,
+    "total": 232,
+    "pct": 0.9
+   }
+  },
+  "2": {
+   "heal": {
+    "n": 77,
+    "total": 230,
+    "pct": 33.5
+   },
+   "dodge": {
+    "n": 40,
+    "total": 230,
+    "pct": 17.4
+   },
+   "bossCrit": {
+    "n": 39,
+    "total": 230,
+    "pct": 17.0
+   },
+   "immuneSpecial": {
+    "n": 26,
+    "total": 230,
+    "pct": 11.3
+   },
+   "control": {
+    "n": 24,
+    "total": 230,
+    "pct": 10.4
+   },
+   "selfBuff": {
+    "n": 20,
+    "total": 230,
+    "pct": 8.7
+   },
+   "debuff": {
+    "n": 20,
+    "total": 230,
+    "pct": 8.7
+   },
+   "clearPP": {
+    "n": 18,
+    "total": 230,
+    "pct": 7.8
+   },
+   "breakTurn": {
+    "n": 17,
+    "total": 230,
+    "pct": 7.4
+   },
+   "rawCap": {
+    "n": 15,
+    "total": 230,
+    "pct": 6.5
+   },
+   "immunePhysical": {
+    "n": 15,
+    "total": 230,
+    "pct": 6.5
+   },
+   "onlyCrit": {
+    "n": 13,
+    "total": 230,
+    "pct": 5.7
+   },
+   "shield": {
+    "n": 7,
+    "total": 230,
+    "pct": 3.0
+   },
+   "reflection": {
+    "n": 5,
+    "total": 230,
+    "pct": 2.2
+   },
+   "stealBuff": {
+    "n": 5,
+    "total": 230,
+    "pct": 2.2
+   },
+   "onlyFirstStrike": {
+    "n": 5,
+    "total": 230,
+    "pct": 2.2
+   },
+   "immunePower": {
+    "n": 5,
+    "total": 230,
+    "pct": 2.2
+   },
+   "twoLife": {
+    "n": 3,
+    "total": 230,
+    "pct": 1.3
+   },
+   "hitDebuff": {
+    "n": 1,
+    "total": 230,
+    "pct": 0.4
+   },
+   "undying": {
+    "n": 1,
+    "total": 230,
+    "pct": 0.4
+   }
+  },
+  "3": {
+   "heal": {
+    "n": 94,
+    "total": 232,
+    "pct": 40.5
+   },
+   "singlePet": {
+    "n": 61,
+    "total": 232,
+    "pct": 26.3
+   },
+   "control": {
+    "n": 58,
+    "total": 232,
+    "pct": 25.0
+   },
+   "clearPP": {
+    "n": 37,
+    "total": 232,
+    "pct": 15.9
+   },
+   "breakTurn": {
+    "n": 34,
+    "total": 232,
+    "pct": 14.7
+   },
+   "bossCrit": {
+    "n": 26,
+    "total": 232,
+    "pct": 11.2
+   },
+   "dodge": {
+    "n": 20,
+    "total": 232,
+    "pct": 8.6
+   },
+   "debuff": {
+    "n": 17,
+    "total": 232,
+    "pct": 7.3
+   },
+   "shield": {
+    "n": 16,
+    "total": 232,
+    "pct": 6.9
+   },
+   "selfBuff": {
+    "n": 13,
+    "total": 232,
+    "pct": 5.6
+   },
+   "reflection": {
+    "n": 12,
+    "total": 232,
+    "pct": 5.2
+   },
+   "onlyFirstStrike": {
+    "n": 11,
+    "total": 232,
+    "pct": 4.7
+   },
+   "stealBuff": {
+    "n": 8,
+    "total": 232,
+    "pct": 3.4
+   },
+   "twoLife": {
+    "n": 8,
+    "total": 232,
+    "pct": 3.4
+   },
+   "immunePower": {
+    "n": 8,
+    "total": 232,
+    "pct": 3.4
+   },
+   "onlyCrit": {
+    "n": 7,
+    "total": 232,
+    "pct": 3.0
+   },
+   "rawCap": {
+    "n": 6,
+    "total": 232,
+    "pct": 2.6
+   },
+   "immunePhysical": {
+    "n": 5,
+    "total": 232,
+    "pct": 2.2
+   },
+   "immuneSpecial": {
+    "n": 2,
+    "total": 232,
+    "pct": 0.9
+   },
+   "undying": {
+    "n": 1,
+    "total": 232,
+    "pct": 0.4
+   }
+  },
+  "4": {
+   "stealBuff": {
+    "n": 134,
+    "total": 232,
+    "pct": 57.8
+   },
+   "heal": {
+    "n": 74,
+    "total": 232,
+    "pct": 31.9
+   },
+   "debuff": {
+    "n": 73,
+    "total": 232,
+    "pct": 31.5
+   },
+   "selfBuff": {
+    "n": 63,
+    "total": 232,
+    "pct": 27.2
+   },
+   "control": {
+    "n": 44,
+    "total": 232,
+    "pct": 19.0
+   },
+   "twoLife": {
+    "n": 31,
+    "total": 232,
+    "pct": 13.4
+   },
+   "dodge": {
+    "n": 28,
+    "total": 232,
+    "pct": 12.1
+   },
+   "clearPP": {
+    "n": 24,
+    "total": 232,
+    "pct": 10.3
+   },
+   "bossCrit": {
+    "n": 21,
+    "total": 232,
+    "pct": 9.1
+   },
+   "breakTurn": {
+    "n": 19,
+    "total": 232,
+    "pct": 8.2
+   },
+   "shield": {
+    "n": 14,
+    "total": 232,
+    "pct": 6.0
+   },
+   "immunePower": {
+    "n": 14,
+    "total": 232,
+    "pct": 6.0
+   },
+   "immuneSpecial": {
+    "n": 14,
+    "total": 232,
+    "pct": 6.0
+   },
+   "reflection": {
+    "n": 12,
+    "total": 232,
+    "pct": 5.2
+   },
+   "immunePhysical": {
+    "n": 11,
+    "total": 232,
+    "pct": 4.7
+   },
+   "onlyFirstStrike": {
+    "n": 9,
+    "total": 232,
+    "pct": 3.9
+   },
+   "onlyCrit": {
+    "n": 8,
+    "total": 232,
+    "pct": 3.4
+   },
+   "rawCap": {
+    "n": 3,
+    "total": 232,
+    "pct": 1.3
+   },
+   "panelImmune": {
+    "n": 2,
+    "total": 232,
+    "pct": 0.9
+   },
+   "undying": {
+    "n": 2,
+    "total": 232,
+    "pct": 0.9
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 232,
+    "pct": 0.4
+   }
+  },
+  "5": {
+   "stealBuff": {
+    "n": 117,
+    "total": 235,
+    "pct": 49.8
+   },
+   "selfBuff": {
+    "n": 90,
+    "total": 235,
+    "pct": 38.3
+   },
+   "twoLife": {
+    "n": 78,
+    "total": 235,
+    "pct": 33.2
+   },
+   "control": {
+    "n": 76,
+    "total": 235,
+    "pct": 32.3
+   },
+   "heal": {
+    "n": 70,
+    "total": 235,
+    "pct": 29.8
+   },
+   "debuff": {
+    "n": 57,
+    "total": 235,
+    "pct": 24.3
+   },
+   "clearPP": {
+    "n": 33,
+    "total": 235,
+    "pct": 14.0
+   },
+   "breakTurn": {
+    "n": 21,
+    "total": 235,
+    "pct": 8.9
+   },
+   "dodge": {
+    "n": 20,
+    "total": 235,
+    "pct": 8.5
+   },
+   "bossCrit": {
+    "n": 16,
+    "total": 235,
+    "pct": 6.8
+   },
+   "immunePower": {
+    "n": 13,
+    "total": 235,
+    "pct": 5.5
+   },
+   "onlyFirstStrike": {
+    "n": 11,
+    "total": 235,
+    "pct": 4.7
+   },
+   "shield": {
+    "n": 10,
+    "total": 235,
+    "pct": 4.3
+   },
+   "immunePhysical": {
+    "n": 9,
+    "total": 235,
+    "pct": 3.8
+   },
+   "immuneSpecial": {
+    "n": 8,
+    "total": 235,
+    "pct": 3.4
+   },
+   "reflection": {
+    "n": 4,
+    "total": 235,
+    "pct": 1.7
+   },
+   "onlyCrit": {
+    "n": 3,
+    "total": 235,
+    "pct": 1.3
+   },
+   "undying": {
+    "n": 2,
+    "total": 235,
+    "pct": 0.9
+   },
+   "rawCap": {
+    "n": 2,
+    "total": 235,
+    "pct": 0.9
+   },
+   "hitDebuff": {
+    "n": 1,
+    "total": 235,
+    "pct": 0.4
+   }
+  }
+ },
+ "by_position_difficulty": {
+  "(1, '地狱')": {
+   "heal": {
+    "n": 76,
+    "total": 232,
+    "pct": 32.8
+   },
+   "debuff": {
+    "n": 42,
+    "total": 232,
+    "pct": 18.1
+   },
+   "dodge": {
+    "n": 29,
+    "total": 232,
+    "pct": 12.5
+   },
+   "immunePhysical": {
+    "n": 23,
+    "total": 232,
+    "pct": 9.9
+   },
+   "onlyCrit": {
+    "n": 23,
+    "total": 232,
+    "pct": 9.9
+   },
+   "bossCrit": {
+    "n": 22,
+    "total": 232,
+    "pct": 9.5
+   },
+   "rawCap": {
+    "n": 16,
+    "total": 232,
+    "pct": 6.9
+   },
+   "control": {
+    "n": 16,
+    "total": 232,
+    "pct": 6.9
+   },
+   "selfBuff": {
+    "n": 12,
+    "total": 232,
+    "pct": 5.2
+   },
+   "clearPP": {
+    "n": 11,
+    "total": 232,
+    "pct": 4.7
+   },
+   "immuneSpecial": {
+    "n": 9,
+    "total": 232,
+    "pct": 3.9
+   },
+   "onlyFirstStrike": {
+    "n": 9,
+    "total": 232,
+    "pct": 3.9
+   },
+   "immunePower": {
+    "n": 9,
+    "total": 232,
+    "pct": 3.9
+   },
+   "twoLife": {
+    "n": 8,
+    "total": 232,
+    "pct": 3.4
+   },
+   "stealBuff": {
+    "n": 7,
+    "total": 232,
+    "pct": 3.0
+   },
+   "breakTurn": {
+    "n": 7,
+    "total": 232,
+    "pct": 3.0
+   },
+   "hitDebuff": {
+    "n": 6,
+    "total": 232,
+    "pct": 2.6
+   },
+   "shield": {
+    "n": 5,
+    "total": 232,
+    "pct": 2.2
+   },
+   "undying": {
+    "n": 2,
+    "total": 232,
+    "pct": 0.9
+   },
+   "reflection": {
+    "n": 2,
+    "total": 232,
+    "pct": 0.9
+   }
+  },
+  "(2, '地狱')": {
+   "heal": {
+    "n": 77,
+    "total": 230,
+    "pct": 33.5
+   },
+   "dodge": {
+    "n": 40,
+    "total": 230,
+    "pct": 17.4
+   },
+   "bossCrit": {
+    "n": 39,
+    "total": 230,
+    "pct": 17.0
+   },
+   "immuneSpecial": {
+    "n": 26,
+    "total": 230,
+    "pct": 11.3
+   },
+   "control": {
+    "n": 24,
+    "total": 230,
+    "pct": 10.4
+   },
+   "selfBuff": {
+    "n": 20,
+    "total": 230,
+    "pct": 8.7
+   },
+   "debuff": {
+    "n": 20,
+    "total": 230,
+    "pct": 8.7
+   },
+   "clearPP": {
+    "n": 18,
+    "total": 230,
+    "pct": 7.8
+   },
+   "breakTurn": {
+    "n": 17,
+    "total": 230,
+    "pct": 7.4
+   },
+   "rawCap": {
+    "n": 15,
+    "total": 230,
+    "pct": 6.5
+   },
+   "immunePhysical": {
+    "n": 15,
+    "total": 230,
+    "pct": 6.5
+   },
+   "onlyCrit": {
+    "n": 13,
+    "total": 230,
+    "pct": 5.7
+   },
+   "shield": {
+    "n": 7,
+    "total": 230,
+    "pct": 3.0
+   },
+   "reflection": {
+    "n": 5,
+    "total": 230,
+    "pct": 2.2
+   },
+   "stealBuff": {
+    "n": 5,
+    "total": 230,
+    "pct": 2.2
+   },
+   "onlyFirstStrike": {
+    "n": 5,
+    "total": 230,
+    "pct": 2.2
+   },
+   "immunePower": {
+    "n": 5,
+    "total": 230,
+    "pct": 2.2
+   },
+   "twoLife": {
+    "n": 3,
+    "total": 230,
+    "pct": 1.3
+   },
+   "hitDebuff": {
+    "n": 1,
+    "total": 230,
+    "pct": 0.4
+   },
+   "undying": {
+    "n": 1,
+    "total": 230,
+    "pct": 0.4
+   }
+  },
+  "(3, '困难')": {
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "(3, '地狱')": {
+   "heal": {
+    "n": 94,
+    "total": 231,
+    "pct": 40.7
+   },
+   "singlePet": {
+    "n": 61,
+    "total": 231,
+    "pct": 26.4
+   },
+   "control": {
+    "n": 58,
+    "total": 231,
+    "pct": 25.1
+   },
+   "clearPP": {
+    "n": 36,
+    "total": 231,
+    "pct": 15.6
+   },
+   "breakTurn": {
+    "n": 34,
+    "total": 231,
+    "pct": 14.7
+   },
+   "bossCrit": {
+    "n": 26,
+    "total": 231,
+    "pct": 11.3
+   },
+   "dodge": {
+    "n": 20,
+    "total": 231,
+    "pct": 8.7
+   },
+   "debuff": {
+    "n": 17,
+    "total": 231,
+    "pct": 7.4
+   },
+   "shield": {
+    "n": 16,
+    "total": 231,
+    "pct": 6.9
+   },
+   "selfBuff": {
+    "n": 13,
+    "total": 231,
+    "pct": 5.6
+   },
+   "reflection": {
+    "n": 12,
+    "total": 231,
+    "pct": 5.2
+   },
+   "onlyFirstStrike": {
+    "n": 11,
+    "total": 231,
+    "pct": 4.8
+   },
+   "stealBuff": {
+    "n": 8,
+    "total": 231,
+    "pct": 3.5
+   },
+   "twoLife": {
+    "n": 8,
+    "total": 231,
+    "pct": 3.5
+   },
+   "immunePower": {
+    "n": 8,
+    "total": 231,
+    "pct": 3.5
+   },
+   "onlyCrit": {
+    "n": 7,
+    "total": 231,
+    "pct": 3.0
+   },
+   "rawCap": {
+    "n": 6,
+    "total": 231,
+    "pct": 2.6
+   },
+   "immunePhysical": {
+    "n": 5,
+    "total": 231,
+    "pct": 2.2
+   },
+   "immuneSpecial": {
+    "n": 2,
+    "total": 231,
+    "pct": 0.9
+   },
+   "undying": {
+    "n": 1,
+    "total": 231,
+    "pct": 0.4
+   }
+  },
+  "(4, '困难')": {
+   "clearPP": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   }
+  },
+  "(4, '地狱')": {
+   "stealBuff": {
+    "n": 134,
+    "total": 230,
+    "pct": 58.3
+   },
+   "heal": {
+    "n": 74,
+    "total": 230,
+    "pct": 32.2
+   },
+   "debuff": {
+    "n": 73,
+    "total": 230,
+    "pct": 31.7
+   },
+   "selfBuff": {
+    "n": 63,
+    "total": 230,
+    "pct": 27.4
+   },
+   "control": {
+    "n": 44,
+    "total": 230,
+    "pct": 19.1
+   },
+   "twoLife": {
+    "n": 31,
+    "total": 230,
+    "pct": 13.5
+   },
+   "dodge": {
+    "n": 28,
+    "total": 230,
+    "pct": 12.2
+   },
+   "clearPP": {
+    "n": 22,
+    "total": 230,
+    "pct": 9.6
+   },
+   "bossCrit": {
+    "n": 21,
+    "total": 230,
+    "pct": 9.1
+   },
+   "breakTurn": {
+    "n": 19,
+    "total": 230,
+    "pct": 8.3
+   },
+   "shield": {
+    "n": 14,
+    "total": 230,
+    "pct": 6.1
+   },
+   "immunePower": {
+    "n": 14,
+    "total": 230,
+    "pct": 6.1
+   },
+   "immuneSpecial": {
+    "n": 14,
+    "total": 230,
+    "pct": 6.1
+   },
+   "reflection": {
+    "n": 12,
+    "total": 230,
+    "pct": 5.2
+   },
+   "immunePhysical": {
+    "n": 11,
+    "total": 230,
+    "pct": 4.8
+   },
+   "onlyFirstStrike": {
+    "n": 9,
+    "total": 230,
+    "pct": 3.9
+   },
+   "onlyCrit": {
+    "n": 8,
+    "total": 230,
+    "pct": 3.5
+   },
+   "rawCap": {
+    "n": 3,
+    "total": 230,
+    "pct": 1.3
+   },
+   "panelImmune": {
+    "n": 2,
+    "total": 230,
+    "pct": 0.9
+   },
+   "undying": {
+    "n": 2,
+    "total": 230,
+    "pct": 0.9
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 230,
+    "pct": 0.4
+   }
+  },
+  "(5, '困难')": {
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "(5, '地狱')": {
+   "stealBuff": {
+    "n": 117,
+    "total": 233,
+    "pct": 50.2
+   },
+   "selfBuff": {
+    "n": 90,
+    "total": 233,
+    "pct": 38.6
+   },
+   "twoLife": {
+    "n": 78,
+    "total": 233,
+    "pct": 33.5
+   },
+   "control": {
+    "n": 75,
+    "total": 233,
+    "pct": 32.2
+   },
+   "heal": {
+    "n": 70,
+    "total": 233,
+    "pct": 30.0
+   },
+   "debuff": {
+    "n": 57,
+    "total": 233,
+    "pct": 24.5
+   },
+   "clearPP": {
+    "n": 33,
+    "total": 233,
+    "pct": 14.2
+   },
+   "breakTurn": {
+    "n": 21,
+    "total": 233,
+    "pct": 9.0
+   },
+   "dodge": {
+    "n": 20,
+    "total": 233,
+    "pct": 8.6
+   },
+   "bossCrit": {
+    "n": 16,
+    "total": 233,
+    "pct": 6.9
+   },
+   "immunePower": {
+    "n": 13,
+    "total": 233,
+    "pct": 5.6
+   },
+   "onlyFirstStrike": {
+    "n": 11,
+    "total": 233,
+    "pct": 4.7
+   },
+   "shield": {
+    "n": 10,
+    "total": 233,
+    "pct": 4.3
+   },
+   "immunePhysical": {
+    "n": 9,
+    "total": 233,
+    "pct": 3.9
+   },
+   "immuneSpecial": {
+    "n": 8,
+    "total": 233,
+    "pct": 3.4
+   },
+   "reflection": {
+    "n": 4,
+    "total": 233,
+    "pct": 1.7
+   },
+   "onlyCrit": {
+    "n": 3,
+    "total": 233,
+    "pct": 1.3
+   },
+   "undying": {
+    "n": 2,
+    "total": 233,
+    "pct": 0.9
+   },
+   "rawCap": {
+    "n": 2,
+    "total": 233,
+    "pct": 0.9
+   },
+   "hitDebuff": {
+    "n": 1,
+    "total": 233,
+    "pct": 0.4
+   }
+  }
+ },
+ "by_type_position": {
+  "('?', 1)": {
+   "heal": {
+    "n": 8,
+    "total": 31,
+    "pct": 25.8
+   },
+   "rawCap": {
+    "n": 7,
+    "total": 31,
+    "pct": 22.6
+   },
+   "debuff": {
+    "n": 7,
+    "total": 31,
+    "pct": 22.6
+   },
+   "immunePhysical": {
+    "n": 5,
+    "total": 31,
+    "pct": 16.1
+   },
+   "onlyCrit": {
+    "n": 5,
+    "total": 31,
+    "pct": 16.1
+   },
+   "dodge": {
+    "n": 2,
+    "total": 31,
+    "pct": 6.5
+   },
+   "onlyFirstStrike": {
+    "n": 2,
+    "total": 31,
+    "pct": 6.5
+   },
+   "immuneSpecial": {
+    "n": 2,
+    "total": 31,
+    "pct": 6.5
+   },
+   "twoLife": {
+    "n": 2,
+    "total": 31,
+    "pct": 6.5
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 31,
+    "pct": 3.2
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 31,
+    "pct": 3.2
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 31,
+    "pct": 3.2
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 31,
+    "pct": 3.2
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 31,
+    "pct": 3.2
+   },
+   "control": {
+    "n": 1,
+    "total": 31,
+    "pct": 3.2
+   }
+  },
+  "('?', 2)": {
+   "clearPP": {
+    "n": 7,
+    "total": 30,
+    "pct": 23.3
+   },
+   "heal": {
+    "n": 6,
+    "total": 30,
+    "pct": 20.0
+   },
+   "immuneSpecial": {
+    "n": 4,
+    "total": 30,
+    "pct": 13.3
+   },
+   "debuff": {
+    "n": 4,
+    "total": 30,
+    "pct": 13.3
+   },
+   "bossCrit": {
+    "n": 4,
+    "total": 30,
+    "pct": 13.3
+   },
+   "dodge": {
+    "n": 3,
+    "total": 30,
+    "pct": 10.0
+   },
+   "control": {
+    "n": 2,
+    "total": 30,
+    "pct": 6.7
+   },
+   "rawCap": {
+    "n": 2,
+    "total": 30,
+    "pct": 6.7
+   },
+   "onlyFirstStrike": {
+    "n": 2,
+    "total": 30,
+    "pct": 6.7
+   },
+   "breakTurn": {
+    "n": 2,
+    "total": 30,
+    "pct": 6.7
+   },
+   "shield": {
+    "n": 2,
+    "total": 30,
+    "pct": 6.7
+   },
+   "selfBuff": {
+    "n": 2,
+    "total": 30,
+    "pct": 6.7
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 30,
+    "pct": 3.3
+   },
+   "reflection": {
+    "n": 1,
+    "total": 30,
+    "pct": 3.3
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 30,
+    "pct": 3.3
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 30,
+    "pct": 3.3
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 30,
+    "pct": 3.3
+   }
+  },
+  "('?', 3)": {
+   "singlePet": {
+    "n": 28,
+    "total": 54,
+    "pct": 51.9
+   },
+   "heal": {
+    "n": 17,
+    "total": 54,
+    "pct": 31.5
+   },
+   "clearPP": {
+    "n": 13,
+    "total": 54,
+    "pct": 24.1
+   },
+   "control": {
+    "n": 13,
+    "total": 54,
+    "pct": 24.1
+   },
+   "breakTurn": {
+    "n": 11,
+    "total": 54,
+    "pct": 20.4
+   },
+   "dodge": {
+    "n": 7,
+    "total": 54,
+    "pct": 13.0
+   },
+   "bossCrit": {
+    "n": 6,
+    "total": 54,
+    "pct": 11.1
+   },
+   "debuff": {
+    "n": 4,
+    "total": 54,
+    "pct": 7.4
+   },
+   "selfBuff": {
+    "n": 4,
+    "total": 54,
+    "pct": 7.4
+   },
+   "shield": {
+    "n": 3,
+    "total": 54,
+    "pct": 5.6
+   },
+   "reflection": {
+    "n": 3,
+    "total": 54,
+    "pct": 5.6
+   },
+   "immunePower": {
+    "n": 2,
+    "total": 54,
+    "pct": 3.7
+   },
+   "stealBuff": {
+    "n": 2,
+    "total": 54,
+    "pct": 3.7
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 54,
+    "pct": 1.9
+   },
+   "undying": {
+    "n": 1,
+    "total": 54,
+    "pct": 1.9
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 54,
+    "pct": 1.9
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 54,
+    "pct": 1.9
+   }
+  },
+  "('?', 4)": {
+   "stealBuff": {
+    "n": 18,
+    "total": 33,
+    "pct": 54.5
+   },
+   "heal": {
+    "n": 11,
+    "total": 33,
+    "pct": 33.3
+   },
+   "debuff": {
+    "n": 9,
+    "total": 33,
+    "pct": 27.3
+   },
+   "control": {
+    "n": 9,
+    "total": 33,
+    "pct": 27.3
+   },
+   "selfBuff": {
+    "n": 5,
+    "total": 33,
+    "pct": 15.2
+   },
+   "clearPP": {
+    "n": 5,
+    "total": 33,
+    "pct": 15.2
+   },
+   "onlyCrit": {
+    "n": 4,
+    "total": 33,
+    "pct": 12.1
+   },
+   "immunePhysical": {
+    "n": 3,
+    "total": 33,
+    "pct": 9.1
+   },
+   "immunePower": {
+    "n": 3,
+    "total": 33,
+    "pct": 9.1
+   },
+   "onlyFirstStrike": {
+    "n": 3,
+    "total": 33,
+    "pct": 9.1
+   },
+   "breakTurn": {
+    "n": 3,
+    "total": 33,
+    "pct": 9.1
+   },
+   "bossCrit": {
+    "n": 2,
+    "total": 33,
+    "pct": 6.1
+   },
+   "immuneSpecial": {
+    "n": 2,
+    "total": 33,
+    "pct": 6.1
+   },
+   "dodge": {
+    "n": 2,
+    "total": 33,
+    "pct": 6.1
+   },
+   "twoLife": {
+    "n": 2,
+    "total": 33,
+    "pct": 6.1
+   },
+   "shield": {
+    "n": 2,
+    "total": 33,
+    "pct": 6.1
+   }
+  },
+  "('?', 5)": {
+   "stealBuff": {
+    "n": 8,
+    "total": 13,
+    "pct": 61.5
+   },
+   "debuff": {
+    "n": 4,
+    "total": 13,
+    "pct": 30.8
+   },
+   "heal": {
+    "n": 4,
+    "total": 13,
+    "pct": 30.8
+   },
+   "control": {
+    "n": 2,
+    "total": 13,
+    "pct": 15.4
+   },
+   "breakTurn": {
+    "n": 2,
+    "total": 13,
+    "pct": 15.4
+   },
+   "immunePower": {
+    "n": 2,
+    "total": 13,
+    "pct": 15.4
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 13,
+    "pct": 7.7
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 13,
+    "pct": 7.7
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 13,
+    "pct": 7.7
+   },
+   "dodge": {
+    "n": 1,
+    "total": 13,
+    "pct": 7.7
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 13,
+    "pct": 7.7
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 13,
+    "pct": 7.7
+   }
+  },
+  "('光', 2)": {
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('光', 4)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('光', 5)": {
+   "stealBuff": {
+    "n": 3,
+    "total": 5,
+    "pct": 60.0
+   },
+   "debuff": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "control": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   }
+  },
+  "('光战斗', 1)": {
+   "onlyCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('光战斗', 2)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('光战斗', 3)": {
+   "shield": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('光战斗', 4)": {
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('光暗影', 1)": {
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('光暗影', 2)": {
+   "reflection": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('光暗影', 3)": {
+   "reflection": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('光暗影', 4)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('光暗影', 5)": {
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('光次元', 2)": {
+   "dodge": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "heal": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   }
+  },
+  "('光次元', 4)": {
+   "dodge": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('光次元', 5)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('光火', 1)": {
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('光火', 2)": {
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('光火', 3)": {
+   "clearPP": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "control": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('光火', 4)": {
+   "stealBuff": {
+    "n": 3,
+    "total": 5,
+    "pct": 60.0
+   },
+   "debuff": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "breakTurn": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "clearPP": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "control": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   }
+  },
+  "('光火', 5)": {
+   "breakTurn": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('光神秘', 1)": {
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('光神秘', 2)": {
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('光神秘', 3)": {
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('光神秘', 4)": {
+   "heal": {
+    "n": 3,
+    "total": 3,
+    "pct": 100.0
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('光神秘', 5)": {
+   "debuff": {
+    "n": 3,
+    "total": 4,
+    "pct": 75.0
+   },
+   "control": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "immunePower": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('光超能', 1)": {
+   "selfBuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "debuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('光超能', 2)": {
+   "immuneSpecial": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "control": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('光超能', 3)": {
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('光超能', 4)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "debuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('光超能', 5)": {
+   "clearPP": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "control": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('光飞行', 1)": {},
+  "('光飞行', 2)": {
+   "reflection": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('光飞行', 3)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('光飞行', 4)": {
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('光飞行', 5)": {
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('冰', 1)": {
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('冰', 2)": {
+   "immunePhysical": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('冰', 3)": {
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('冰', 5)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('冰光', 1)": {
+   "control": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('冰光', 2)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('冰光', 3)": {
+   "singlePet": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('冰暗影', 1)": {
+   "bossCrit": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "debuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('冰暗影', 2)": {
+   "selfBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   }
+  },
+  "('冰暗影', 3)": {
+   "bossCrit": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('冰暗影', 4)": {
+   "debuff": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('冰暗影', 5)": {
+   "control": {
+    "n": 3,
+    "total": 3,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "debuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('冰混沌', 4)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('冰火', 1)": {
+   "shield": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('冰火', 2)": {
+   "immunePhysical": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('冰火', 3)": {
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('冰火', 5)": {
+   "control": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "clearPP": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "selfBuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "shield": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('冰电', 3)": {
+   "rawCap": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('冰神秘', 1)": {
+   "onlyCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('冰神秘', 2)": {
+   "dodge": {
+    "n": 3,
+    "total": 5,
+    "pct": 60.0
+   },
+   "breakTurn": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "heal": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   }
+  },
+  "('冰神秘', 3)": {
+   "stealBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "dodge": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('冰神秘', 4)": {
+   "control": {
+    "n": 3,
+    "total": 4,
+    "pct": 75.0
+   },
+   "immunePower": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('冰神秘', 5)": {
+   "control": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "heal": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "dodge": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('冰超能', 1)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('冰超能', 2)": {
+   "immunePhysical": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('冰超能', 3)": {
+   "shield": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('冰超能', 4)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('冰飞行', 1)": {
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('冰飞行', 2)": {
+   "dodge": {
+    "n": 3,
+    "total": 4,
+    "pct": 75.0
+   },
+   "selfBuff": {
+    "n": 3,
+    "total": 4,
+    "pct": 75.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('冰飞行', 5)": {
+   "immuneSpecial": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('冰龙', 1)": {
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('冰龙', 2)": {
+   "onlyCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('冰龙', 3)": {
+   "heal": {
+    "n": 3,
+    "total": 4,
+    "pct": 75.0
+   },
+   "onlyFirstStrike": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('冰龙', 5)": {
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('圣灵', 1)": {
+   "immunePhysical": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('圣灵', 5)": {
+   "shield": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('圣灵光', 1)": {
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('圣灵光', 3)": {},
+  "('圣灵光', 4)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('圣灵光', 5)": {
+   "twoLife": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('圣灵地面', 1)": {
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('圣灵地面', 3)": {
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('圣灵地面', 4)": {
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "panelImmune": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('圣灵地面', 5)": {
+   "control": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   }
+  },
+  "('圣灵战斗', 2)": {
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('圣灵次元', 4)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('圣灵次元', 5)": {
+   "selfBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('圣灵混沌', 5)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('圣灵火', 3)": {
+   "reflection": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('圣灵火', 4)": {
+   "immunePower": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('圣灵火', 5)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('圣灵电', 2)": {
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('圣灵电', 3)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('圣灵电', 4)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "selfBuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "control": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "shield": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('圣灵电', 5)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('圣灵神秘', 4)": {
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('圣灵自然', 3)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('圣灵自然', 5)": {
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('圣灵超能', 1)": {
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('圣灵超能', 2)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('圣灵超能', 3)": {},
+  "('圣灵超能', 4)": {
+   "selfBuff": {
+    "n": 3,
+    "total": 3,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "dodge": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "debuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('圣灵超能', 5)": {
+   "control": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('圣灵轮回', 2)": {
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('圣灵轮回', 3)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('圣灵轮回', 4)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('圣灵轮回', 5)": {
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('圣灵远古', 1)": {
+   "onlyCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('地面', 1)": {
+   "debuff": {
+    "n": 4,
+    "total": 4,
+    "pct": 100.0
+   },
+   "bossCrit": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('地面', 3)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('地面', 5)": {
+   "stealBuff": {
+    "n": 4,
+    "total": 4,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "shield": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('地面战斗', 1)": {
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('地面战斗', 2)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('地面战斗', 3)": {
+   "control": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('地面暗影', 1)": {
+   "debuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "heal": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "control": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('地面暗影', 2)": {
+   "dodge": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('地面暗影', 3)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('地面暗影', 5)": {
+   "control": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "selfBuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "stealBuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('地面机械', 1)": {
+   "immunePhysical": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('地面机械', 2)": {
+   "shield": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('地面机械', 4)": {
+   "selfBuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "heal": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "dodge": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "debuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('地面机械', 5)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('地面神秘', 2)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('地面神秘', 3)": {
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('地面神秘', 4)": {
+   "debuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "heal": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('地面超能', 1)": {
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('地面超能', 2)": {
+   "rawCap": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('地面超能', 3)": {
+   "heal": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "control": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('地面超能', 4)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "dodge": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('地面超能', 5)": {
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('地面龙', 1)": {
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('地面龙', 2)": {
+   "heal": {
+    "n": 2,
+    "total": 6,
+    "pct": 33.3
+   },
+   "selfBuff": {
+    "n": 2,
+    "total": 6,
+    "pct": 33.3
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 6,
+    "pct": 16.7
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 6,
+    "pct": 16.7
+   },
+   "control": {
+    "n": 1,
+    "total": 6,
+    "pct": 16.7
+   }
+  },
+  "('地面龙', 3)": {
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('地面龙', 4)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('地面龙', 5)": {
+   "selfBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('战斗', 1)": {
+   "bossCrit": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "undying": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('战斗', 2)": {
+   "immunePhysical": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('战斗', 4)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('战斗', 5)": {
+   "stealBuff": {
+    "n": 4,
+    "total": 5,
+    "pct": 80.0
+   },
+   "bossCrit": {
+    "n": 3,
+    "total": 5,
+    "pct": 60.0
+   },
+   "debuff": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "control": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   }
+  },
+  "('战斗地面', 1)": {
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('战斗地面', 4)": {
+   "control": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('战斗地面', 5)": {
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('战斗暗影', 1)": {
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('战斗暗影', 3)": {
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('战斗暗影', 4)": {
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('战斗暗影', 5)": {
+   "bossCrit": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "dodge": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "control": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "debuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('战斗自然', 2)": {
+   "onlyCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('战斗龙', 1)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('战斗龙', 3)": {
+   "heal": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   }
+  },
+  "('战斗龙', 4)": {
+   "debuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "control": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('战斗龙', 5)": {
+   "debuff": {
+    "n": 3,
+    "total": 4,
+    "pct": 75.0
+   },
+   "selfBuff": {
+    "n": 3,
+    "total": 4,
+    "pct": 75.0
+   },
+   "twoLife": {
+    "n": 3,
+    "total": 4,
+    "pct": 75.0
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('普通', 1)": {
+   "debuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('普通', 2)": {
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('普通', 3)": {
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('普通', 4)": {
+   "stealBuff": {
+    "n": 6,
+    "total": 7,
+    "pct": 85.7
+   },
+   "selfBuff": {
+    "n": 3,
+    "total": 7,
+    "pct": 42.9
+   },
+   "twoLife": {
+    "n": 2,
+    "total": 7,
+    "pct": 28.6
+   },
+   "control": {
+    "n": 1,
+    "total": 7,
+    "pct": 14.3
+   },
+   "dodge": {
+    "n": 1,
+    "total": 7,
+    "pct": 14.3
+   },
+   "debuff": {
+    "n": 1,
+    "total": 7,
+    "pct": 14.3
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 7,
+    "pct": 14.3
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 7,
+    "pct": 14.3
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 7,
+    "pct": 14.3
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 7,
+    "pct": 14.3
+   },
+   "heal": {
+    "n": 1,
+    "total": 7,
+    "pct": 14.3
+   }
+  },
+  "('普通', 5)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('暗影', 1)": {
+   "immunePhysical": {
+    "n": 3,
+    "total": 6,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 3,
+    "total": 6,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 6,
+    "pct": 16.7
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 6,
+    "pct": 16.7
+   },
+   "control": {
+    "n": 1,
+    "total": 6,
+    "pct": 16.7
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 6,
+    "pct": 16.7
+   },
+   "shield": {
+    "n": 1,
+    "total": 6,
+    "pct": 16.7
+   }
+  },
+  "('暗影', 2)": {
+   "heal": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "debuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "dodge": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('暗影', 3)": {
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('暗影', 4)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('暗影', 5)": {
+   "stealBuff": {
+    "n": 3,
+    "total": 3,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "onlyFirstStrike": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('暗影火', 2)": {
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('暗影电', 2)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('暗影神秘', 1)": {
+   "heal": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "immunePhysical": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "debuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "control": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "hitDebuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('暗影神秘', 2)": {
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('暗影神秘', 4)": {
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('暗影神秘', 5)": {
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('暗影草', 1)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "hitDebuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('暗影邪灵', 1)": {
+   "onlyCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('暗影邪灵', 2)": {
+   "heal": {
+    "n": 3,
+    "total": 5,
+    "pct": 60.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   }
+  },
+  "('暗影邪灵', 3)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('暗影邪灵', 4)": {},
+  "('暗影邪灵', 5)": {
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('暗影龙', 4)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('暗影龙', 5)": {
+   "debuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('机械', 1)": {
+   "heal": {
+    "n": 4,
+    "total": 8,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 3,
+    "total": 8,
+    "pct": 37.5
+   },
+   "breakTurn": {
+    "n": 2,
+    "total": 8,
+    "pct": 25.0
+   },
+   "clearPP": {
+    "n": 2,
+    "total": 8,
+    "pct": 25.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 8,
+    "pct": 12.5
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 8,
+    "pct": 12.5
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 8,
+    "pct": 12.5
+   }
+  },
+  "('机械', 2)": {
+   "dodge": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "rawCap": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('机械', 3)": {
+   "clearPP": {
+    "n": 3,
+    "total": 4,
+    "pct": 75.0
+   },
+   "heal": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "breakTurn": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   }
+  },
+  "('机械', 5)": {
+   "stealBuff": {
+    "n": 6,
+    "total": 7,
+    "pct": 85.7
+   },
+   "debuff": {
+    "n": 3,
+    "total": 7,
+    "pct": 42.9
+   },
+   "control": {
+    "n": 2,
+    "total": 7,
+    "pct": 28.6
+   },
+   "selfBuff": {
+    "n": 2,
+    "total": 7,
+    "pct": 28.6
+   },
+   "dodge": {
+    "n": 2,
+    "total": 7,
+    "pct": 28.6
+   },
+   "heal": {
+    "n": 2,
+    "total": 7,
+    "pct": 28.6
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 7,
+    "pct": 14.3
+   }
+  },
+  "('机械地面', 1)": {
+   "dodge": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('机械地面', 2)": {
+   "dodge": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('机械地面', 3)": {
+   "singlePet": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "shield": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('机械地面', 4)": {
+   "clearPP": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('机械地面', 5)": {
+   "control": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('机械战斗', 1)": {
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('机械战斗', 2)": {
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('机械战斗', 3)": {
+   "heal": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "debuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('机械战斗', 4)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('机械战斗', 5)": {
+   "twoLife": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('机械次元', 1)": {
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('机械次元', 3)": {
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('机械次元', 4)": {
+   "debuff": {
+    "n": 5,
+    "total": 5,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 3,
+    "total": 5,
+    "pct": 60.0
+   },
+   "clearPP": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "reflection": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   }
+  },
+  "('机械次元', 5)": {
+   "selfBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('机械水', 5)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('机械火', 1)": {
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('机械火', 2)": {
+   "immuneSpecial": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('机械火', 3)": {
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('机械火', 4)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('机械火', 5)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('机械神秘', 4)": {
+   "shield": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "panelImmune": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('机械超能', 1)": {
+   "heal": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('机械超能', 2)": {
+   "heal": {
+    "n": 3,
+    "total": 3,
+    "pct": 100.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "dodge": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "reflection": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('机械超能', 3)": {
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('机械超能', 4)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('机械超能', 5)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "control": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   }
+  },
+  "('机械邪灵', 1)": {
+   "onlyCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('机械邪灵', 4)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('机械邪灵', 5)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('机械龙', 2)": {
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('机械龙', 3)": {
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('次元', 1)": {
+   "onlyFirstStrike": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "control": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   }
+  },
+  "('次元', 2)": {
+   "dodge": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('次元', 3)": {
+   "bossCrit": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('次元', 4)": {
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('次元', 5)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('次元圣灵', 5)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('次元战斗', 4)": {
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('次元战斗', 5)": {
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('水', 1)": {
+   "debuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "bossCrit": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "hitDebuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('水', 2)": {
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('水', 3)": {
+   "immunePower": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('水', 4)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('水', 5)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('水战斗', 1)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('水战斗', 2)": {
+   "onlyCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('水战斗', 3)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('水战斗', 4)": {
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('水战斗', 5)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('水暗影', 1)": {
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('水暗影', 2)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('水暗影', 3)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "control": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('水暗影', 4)": {
+   "dodge": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "stealBuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "shield": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "control": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('水暗影', 5)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "shield": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('水机械', 2)": {
+   "immuneSpecial": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('水机械', 4)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('水次元', 1)": {
+   "control": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "debuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('水次元', 3)": {
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('水次元', 5)": {
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('水神秘', 1)": {
+   "immuneSpecial": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('水神秘', 2)": {
+   "immunePhysical": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('水神秘', 3)": {
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('水神秘', 4)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('水神秘', 5)": {
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('水超能', 3)": {
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('水超能', 4)": {
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('水超能', 5)": {
+   "selfBuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "control": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('水龙', 2)": {
+   "immunePhysical": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('水龙', 5)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('混沌', 4)": {
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('混沌冰', 1)": {
+   "immunePower": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('混沌冰', 2)": {
+   "breakTurn": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "dodge": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('混沌冰', 4)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "dodge": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('混沌冰', 5)": {
+   "control": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('混沌圣灵', 2)": {
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('混沌圣灵', 4)": {
+   "stealBuff": {
+    "n": 3,
+    "total": 3,
+    "pct": 100.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "control": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('混沌地面', 3)": {
+   "heal": {
+    "n": 3,
+    "total": 3,
+    "pct": 100.0
+   },
+   "bossCrit": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "control": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "dodge": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('混沌地面', 4)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('混沌地面', 5)": {
+   "control": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "heal": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "dodge": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "debuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('混沌战斗', 1)": {
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "undying": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('混沌战斗', 2)": {
+   "bossCrit": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('混沌战斗', 4)": {
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('混沌战斗', 5)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('混沌暗影', 2)": {
+   "immuneSpecial": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('混沌暗影', 3)": {
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('混沌暗影', 5)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('混沌次元', 1)": {
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('混沌次元', 4)": {
+   "selfBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('混沌次元', 5)": {
+   "twoLife": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('混沌火', 2)": {
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('混沌火', 3)": {
+   "heal": {
+    "n": 5,
+    "total": 5,
+    "pct": 100.0
+   },
+   "control": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   }
+  },
+  "('混沌火', 4)": {
+   "stealBuff": {
+    "n": 4,
+    "total": 5,
+    "pct": 80.0
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   }
+  },
+  "('混沌火', 5)": {
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('混沌虚空', 5)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('混沌超能', 2)": {
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('混沌超能', 4)": {
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('混沌超能', 5)": {
+   "selfBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('混沌远古', 1)": {
+   "immunePhysical": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('混沌远古', 2)": {
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('混沌远古', 3)": {
+   "heal": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('混沌远古', 4)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('混沌远古', 5)": {
+   "twoLife": {
+    "n": 3,
+    "total": 3,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 3,
+    "total": 3,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "undying": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "debuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "control": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('混沌邪灵', 1)": {
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('混沌邪灵', 4)": {
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('混沌邪灵', 5)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('混沌飞行', 2)": {
+   "bossCrit": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "debuff": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "control": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   }
+  },
+  "('混沌飞行', 3)": {
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('混沌飞行', 4)": {
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('混沌飞行', 5)": {
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('混沌龙', 2)": {
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('混沌龙', 5)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('火', 1)": {
+   "heal": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('火', 2)": {
+   "immuneSpecial": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('火', 3)": {
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('火', 4)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('火', 5)": {
+   "control": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('火光', 2)": {
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('火光', 4)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('火战斗', 3)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('火战斗', 5)": {
+   "immuneSpecial": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('火暗影', 1)": {
+   "control": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "hitDebuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('火暗影', 2)": {
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('火暗影', 3)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('火暗影', 5)": {
+   "stealBuff": {
+    "n": 3,
+    "total": 3,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "reflection": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "dodge": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('火机械', 2)": {
+   "shield": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('火机械', 3)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('火机械', 4)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('火混沌', 4)": {
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('火电', 1)": {
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('火电', 2)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "control": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('火电', 3)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('火电', 4)": {
+   "stealBuff": {
+    "n": 3,
+    "total": 3,
+    "pct": 100.0
+   },
+   "bossCrit": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "control": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "dodge": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('火电', 5)": {
+   "control": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "heal": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "stealBuff": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "selfBuff": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   }
+  },
+  "('火神秘', 1)": {
+   "onlyFirstStrike": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   }
+  },
+  "('火神秘', 2)": {},
+  "('火神秘', 3)": {
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('火神秘', 4)": {
+   "immuneSpecial": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('火神秘', 5)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('火超能', 3)": {
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('火飞行', 1)": {
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('火飞行', 3)": {
+   "onlyCrit": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "heal": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "control": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('火飞行', 4)": {},
+  "('火飞行', 5)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('火龙', 2)": {},
+  "('火龙', 5)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "hitDebuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('王', 2)": {
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('电', 1)": {
+   "dodge": {
+    "n": 3,
+    "total": 4,
+    "pct": 75.0
+   },
+   "control": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('电', 2)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('电', 3)": {
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('电', 4)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('电', 5)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('电冰', 1)": {
+   "immunePower": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('电冰', 2)": {
+   "clearPP": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "control": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('电冰', 3)": {
+   "control": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   }
+  },
+  "('电冰', 5)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "selfBuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "twoLife": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('电战斗', 1)": {
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('电战斗', 4)": {
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('电战斗', 5)": {
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('电暗影', 3)": {
+   "onlyCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('电次元', 1)": {
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('电次元', 2)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('电次元', 3)": {
+   "singlePet": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "control": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('电次元', 4)": {
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('电次元', 5)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('电火', 3)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('电飞行', 1)": {},
+  "('电龙', 1)": {
+   "onlyCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('电龙', 2)": {
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('电龙', 4)": {
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('电龙', 5)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('神灵', 4)": {
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('神秘', 2)": {
+   "debuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('神秘冰', 1)": {},
+  "('神秘战斗', 1)": {
+   "onlyCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('神秘战斗', 2)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('神秘战斗', 3)": {
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('神秘战斗', 5)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('神秘暗影', 2)": {},
+  "('神秘超能', 2)": {
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('神秘超能', 3)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('自然', 1)": {
+   "heal": {
+    "n": 3,
+    "total": 4,
+    "pct": 75.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('自然', 2)": {
+   "bossCrit": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('自然', 3)": {
+   "singlePet": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('自然', 4)": {
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('自然', 5)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('自然冰', 2)": {
+   "immuneSpecial": {
+    "n": 3,
+    "total": 6,
+    "pct": 50.0
+   },
+   "onlyCrit": {
+    "n": 2,
+    "total": 6,
+    "pct": 33.3
+   },
+   "heal": {
+    "n": 2,
+    "total": 6,
+    "pct": 33.3
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 6,
+    "pct": 16.7
+   }
+  },
+  "('自然冰', 3)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('自然冰', 4)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "control": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('自然冰', 5)": {
+   "debuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('自然战斗', 5)": {
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('自然神秘', 3)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('自然神秘', 4)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('自然神秘', 5)": {
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('自然超能', 1)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('自然超能', 4)": {},
+  "('自然龙', 1)": {},
+  "('自然龙', 4)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('草', 1)": {
+   "heal": {
+    "n": 2,
+    "total": 6,
+    "pct": 33.3
+   },
+   "dodge": {
+    "n": 1,
+    "total": 6,
+    "pct": 16.7
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 6,
+    "pct": 16.7
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 6,
+    "pct": 16.7
+   }
+  },
+  "('草', 2)": {
+   "heal": {
+    "n": 3,
+    "total": 7,
+    "pct": 42.9
+   },
+   "immunePhysical": {
+    "n": 2,
+    "total": 7,
+    "pct": 28.6
+   },
+   "clearPP": {
+    "n": 2,
+    "total": 7,
+    "pct": 28.6
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 7,
+    "pct": 14.3
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 7,
+    "pct": 14.3
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 7,
+    "pct": 14.3
+   },
+   "dodge": {
+    "n": 1,
+    "total": 7,
+    "pct": 14.3
+   }
+  },
+  "('草', 3)": {
+   "clearPP": {
+    "n": 4,
+    "total": 6,
+    "pct": 66.7
+   },
+   "bossCrit": {
+    "n": 2,
+    "total": 6,
+    "pct": 33.3
+   },
+   "singlePet": {
+    "n": 2,
+    "total": 6,
+    "pct": 33.3
+   },
+   "breakTurn": {
+    "n": 2,
+    "total": 6,
+    "pct": 33.3
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 6,
+    "pct": 16.7
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 6,
+    "pct": 16.7
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 6,
+    "pct": 16.7
+   },
+   "shield": {
+    "n": 1,
+    "total": 6,
+    "pct": 16.7
+   },
+   "heal": {
+    "n": 1,
+    "total": 6,
+    "pct": 16.7
+   }
+  },
+  "('草', 4)": {
+   "stealBuff": {
+    "n": 4,
+    "total": 4,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "shield": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('草', 5)": {
+   "stealBuff": {
+    "n": 5,
+    "total": 5,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 3,
+    "total": 5,
+    "pct": 60.0
+   },
+   "control": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   }
+  },
+  "('草战斗', 1)": {
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('草战斗', 2)": {
+   "heal": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "hitDebuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('草战斗', 4)": {
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('草战斗', 5)": {
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('草暗影', 1)": {
+   "rawCap": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('草暗影', 2)": {
+   "heal": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "control": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('草暗影', 3)": {
+   "heal": {
+    "n": 3,
+    "total": 3,
+    "pct": 100.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "dodge": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('草暗影', 5)": {
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('草机械', 4)": {
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('草机械', 5)": {
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('草超能', 1)": {},
+  "('草超能', 4)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('草超能', 5)": {
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('虚空', 1)": {},
+  "('虚空', 2)": {
+   "immuneSpecial": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('虚空', 3)": {
+   "immuneSpecial": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('虚空', 4)": {
+   "control": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('虚空', 5)": {
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('虚空混沌', 1)": {},
+  "('虚空混沌', 2)": {
+   "onlyCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('虚空邪灵', 4)": {
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('虚空邪灵', 5)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('虫', 1)": {
+   "debuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "dodge": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('虫', 2)": {
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('虫', 3)": {
+   "heal": {
+    "n": 3,
+    "total": 4,
+    "pct": 75.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('虫', 4)": {
+   "stealBuff": {
+    "n": 3,
+    "total": 5,
+    "pct": 60.0
+   },
+   "heal": {
+    "n": 3,
+    "total": 5,
+    "pct": 60.0
+   },
+   "dodge": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   }
+  },
+  "('虫', 5)": {
+   "selfBuff": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "control": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('超能', 1)": {
+   "immuneSpecial": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "heal": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "immunePhysical": {
+    "n": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   }
+  },
+  "('超能', 2)": {
+   "immuneSpecial": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('超能', 3)": {
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('超能', 4)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "dodge": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('超能', 5)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('超能冰', 4)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('超能机械', 1)": {
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('轮回', 1)": {
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('轮回', 3)": {
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('轮回', 4)": {
+   "stealBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "debuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('轮回', 5)": {
+   "control": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "selfBuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "twoLife": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "debuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "dodge": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('远古', 1)": {
+   "dodge": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "selfBuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "twoLife": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "debuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "hitDebuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('远古', 2)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('远古', 3)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('远古', 5)": {
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('远古光', 3)": {
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('远古光', 4)": {
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('远古地面', 1)": {
+   "dodge": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('远古地面', 3)": {
+   "shield": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('远古地面', 4)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('远古地面', 5)": {
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('远古战斗', 2)": {
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('远古战斗', 4)": {
+   "debuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "stealBuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "shield": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('远古战斗', 5)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('远古火', 1)": {
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('远古火', 2)": {},
+  "('远古火', 3)": {
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('远古火', 5)": {
+   "immunePower": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('远古电', 4)": {
+   "immuneSpecial": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('远古神秘', 1)": {
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('远古神秘', 2)": {
+   "onlyCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('远古神秘', 3)": {
+   "heal": {
+    "n": 3,
+    "total": 4,
+    "pct": 75.0
+   },
+   "onlyFirstStrike": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('远古神秘', 4)": {
+   "debuff": {
+    "n": 4,
+    "total": 4,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 3,
+    "total": 4,
+    "pct": 75.0
+   },
+   "heal": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('远古神秘', 5)": {
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('远古草', 1)": {
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('远古草', 2)": {
+   "dodge": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "rawCap": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('远古草', 3)": {
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('远古草', 4)": {
+   "debuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('远古草', 5)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   }
+  },
+  "('远古邪灵', 1)": {},
+  "('远古邪灵', 5)": {
+   "immuneSpecial": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('远古龙', 1)": {
+   "immunePower": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('邪灵', 1)": {
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('邪灵', 2)": {
+   "onlyCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('邪灵', 5)": {
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('邪灵暗影', 1)": {
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "hitDebuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "immunePower": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('邪灵暗影', 2)": {
+   "bossCrit": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "heal": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   }
+  },
+  "('邪灵暗影', 3)": {
+   "control": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('邪灵暗影', 4)": {
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('邪灵暗影', 5)": {
+   "selfBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('邪灵神秘', 1)": {
+   "immunePower": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('邪灵神秘', 2)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('邪灵神秘', 3)": {
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('邪灵神秘', 4)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('邪灵神秘', 5)": {
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('邪灵龙', 1)": {
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('邪灵龙', 2)": {
+   "undying": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('邪灵龙', 4)": {
+   "debuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "undying": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "shield": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "reflection": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('邪灵龙', 5)": {
+   "twoLife": {
+    "n": 4,
+    "total": 4,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 3,
+    "total": 4,
+    "pct": 75.0
+   },
+   "undying": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "clearPP": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "control": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('飞行', 1)": {
+   "dodge": {
+    "n": 3,
+    "total": 4,
+    "pct": 75.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "immuneSpecial": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('飞行', 2)": {
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('飞行', 3)": {
+   "shield": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 2,
+    "total": 4,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 4,
+    "pct": 25.0
+   }
+  },
+  "('飞行', 4)": {
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('飞行', 5)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('飞行光', 3)": {
+   "control": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('飞行光', 4)": {
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "reflection": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('飞行光', 5)": {
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('飞行圣灵', 4)": {
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('飞行暗影', 1)": {
+   "immunePower": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('飞行暗影', 2)": {
+   "immunePhysical": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('飞行暗影', 3)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('飞行暗影', 4)": {
+   "debuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "stealBuff": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "immunePhysical": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "control": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('飞行暗影', 5)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('飞行火', 1)": {},
+  "('飞行电', 1)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "bossCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('飞行电', 2)": {
+   "dodge": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "control": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   },
+   "immunePhysical": {
+    "n": 1,
+    "total": 5,
+    "pct": 20.0
+   }
+  },
+  "('飞行电', 3)": {
+   "heal": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "control": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "singlePet": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('飞行电', 4)": {
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('飞行电', 5)": {
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('飞行神秘', 1)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('飞行神秘', 2)": {
+   "control": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('飞行神秘', 3)": {
+   "onlyCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('飞行神秘', 4)": {
+   "stealBuff": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "shield": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('飞行神秘', 5)": {
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "onlyFirstStrike": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "twoLife": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('飞行超能', 1)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "onlyCrit": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('飞行超能', 2)": {
+   "onlyCrit": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "debuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('飞行超能', 3)": {
+   "heal": {
+    "n": 2,
+    "total": 2,
+    "pct": 100.0
+   },
+   "control": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   },
+   "breakTurn": {
+    "n": 1,
+    "total": 2,
+    "pct": 50.0
+   }
+  },
+  "('飞行超能', 4)": {
+   "stealBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "dodge": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  },
+  "('飞行超能', 5)": {
+   "immunePower": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "stealBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('飞行龙', 2)": {
+   "bossCrit": {
+    "n": 3,
+    "total": 3,
+    "pct": 100.0
+   },
+   "rawCap": {
+    "n": 2,
+    "total": 3,
+    "pct": 66.7
+   },
+   "selfBuff": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   },
+   "heal": {
+    "n": 1,
+    "total": 3,
+    "pct": 33.3
+   }
+  },
+  "('龙', 5)": {
+   "debuff": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   },
+   "heal": {
+    "n": 1,
+    "total": 1,
+    "pct": 100.0
+   }
+  }
+ },
+ "cold_start_hints": {
+  "1": [
+   [
+    "heal",
+    32.8
+   ],
+   [
+    "debuff",
+    18.1
+   ],
+   [
+    "dodge",
+    12.5
+   ]
+  ],
+  "2": [
+   [
+    "heal",
+    33.5
+   ],
+   [
+    "dodge",
+    17.4
+   ],
+   [
+    "bossCrit",
+    17.0
+   ]
+  ],
+  "3": [
+   [
+    "heal",
+    40.5
+   ],
+   [
+    "singlePet",
+    26.3
+   ],
+   [
+    "control",
+    25.0
+   ]
+  ],
+  "4": [
+   [
+    "stealBuff",
+    57.8
+   ],
+   [
+    "heal",
+    31.9
+   ],
+   [
+    "debuff",
+    31.5
+   ]
+  ],
+  "5": [
+   [
+    "stealBuff",
+    49.8
+   ],
+   [
+    "selfBuff",
+    38.3
+   ],
+   [
+    "twoLife",
+    33.2
+   ]
+  ],
+  "6": []
+ }
+}

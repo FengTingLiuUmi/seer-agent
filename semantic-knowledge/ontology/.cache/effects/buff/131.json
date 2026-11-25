@@ -1,0 +1,1 @@
+{"desc": "{roundnext[0]}自身使用攻击技能则附加{1}点固定伤害", "desc_tag": "roundnext", "hash": "59f91da7", "icon": [34], "id": 131, "tag": "附加伤害", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

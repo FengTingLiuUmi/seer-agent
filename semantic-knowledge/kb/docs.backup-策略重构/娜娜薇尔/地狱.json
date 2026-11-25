@@ -1,0 +1,180 @@
+{
+ "doc_id": "娜娜薇尔#地狱",
+ "factor": "娜娜薇尔",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4408,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "光超能",
+   "boss_hp": 10000,
+   "traits": "必先; 失明控; 消强; 300固伤; 全属性+20%(减伤16.7%)",
+   "mech": [
+    "selfBuff",
+    "clearBuff",
+    "firstStrike",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐自爆+洛基+万魔特攻强攻 / 圣灵谱尼站场",
+    "潘克多斯+帝皇之御+万魔/神圣龙鹰/堕落炮魂+沉睡之眼/神圣龙鹰/堕落炮魂强攻 / 圣灵谱尼站场（特防体力·带落芳和复苏）"
+   ],
+   "pets": [
+    "帝皇之御",
+    "洛基",
+    "万魔",
+    "圣灵谱尼",
+    "潘克多斯",
+    "神圣龙鹰",
+    "堕落炮魂",
+    "沉睡之眼"
+   ],
+   "why": "必先+失明控+消强+300固伤叠加，拖延必被控或磨死。表姐(帝皇之御)自爆守御八方是攻击技能，给后续必先+必暴，抢到先手并免控秒掉；消强说明不靠自身强化，故洛基铺垫后万魔用克制特攻强攻速杀，圣灵谱尼站场则是解控/回血消耗的替代路。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4411,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "机械战斗",
+   "boss_hp": 12000,
+   "traits": "必先; 必暴; 消强; 300固伤; 全属性+20%(减伤16.7%)",
+   "mech": [
+    "selfBuff",
+    "clearBuff",
+    "bossCrit",
+    "firstStrike",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "漆黑套 典韦强攻",
+    "帝皇之御+西斯里/纳西斯/利亚苏斯+利亚苏斯强攻 / 典韦强攻（羁绊·三孔·吃全面药）"
+   ],
+   "pets": [
+    "典韦",
+    "帝皇之御",
+    "西斯里",
+    "纳西斯",
+    "利亚苏斯"
+   ],
+   "why": "Boss必暴(刀刀暴击)+必先+300固伤，站场会被反复暴击和固伤换血打空。漆黑套配典韦走速杀——抢在必暴结算前强攻秒掉，规避被固伤拖着消耗；消强则提示不需要叠强化即可打。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4405,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "水战斗",
+   "boss_hp": 15000,
+   "traits": "必先; 冰封控; 消强; 500固伤; 全属性+20%(减伤16.7%)",
+   "mech": [
+    "selfBuff",
+    "clearBuff",
+    "control",
+    "firstStrike",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "漆黑套 飞鱼骑士强攻",
+    "飞鱼骑士强攻（带元神·两孔翻车率较高）"
+   ],
+   "pets": [
+    "飞鱼骑士"
+   ],
+   "why": "必先+冰封控+500固伤连招下，被冰封或拖回合即崩。飞鱼骑士(漆黑套)强攻是速杀思路，抢先收掉不给控场和固伤生效机会；消强提示可用不依赖强化的强攻直接避开被清。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4414,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "圣灵次元",
+   "boss_hp": 15000,
+   "traits": "必先; 闪避(非必中miss); 吸强; 弱化(每回合全属性-1); 500固伤; 全属性+50%(减伤33.3%)",
+   "mech": [
+    "dodge",
+    "selfBuff",
+    "debuff",
+    "stealBuff",
+    "firstStrike",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐自爆+消强+沐怜+特罗斯强攻 / 希可洛站场",
+    "帝皇之御+斯克鲁恩+圣华/腐坏幽魔+灵巢强攻 / 索比斯/天河+希可洛站场（防御体力·自动吃双减伤·H5借金火）"
+   ],
+   "pets": [
+    "帝皇之御",
+    "沐怜",
+    "特罗斯",
+    "希可洛",
+    "斯克鲁恩",
+    "圣华",
+    "腐坏幽魔",
+    "灵巢",
+    "索比斯",
+    "天河"
+   ],
+   "why": "核心是闪避(非必中miss)+吸强+每回合全属性弱化。闪避用表姐自爆的必暴(伪必中)拉满命中覆盖即可，不必强求必中；吸强/弱化需先上消强手断回合并解掉全属性弱化(或金火)，再接沐怜铺垫+特罗斯强攻；希可洛站场是拖回合靠裸伤磨的替代，避开减伤33.3%与吸强。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4653,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "次元战斗",
+   "boss_hp": 20000,
+   "traits": "必先; 封属; 吸强(消强); 500固伤; 全属性+50%(减伤33.3%); 两命(复活后全属性+1); 随机清PP",
+   "mech": [
+    "clearPP",
+    "twoLife",
+    "selfBuff",
+    "clearBuff",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐自爆+送蒂朵+霍夫曼第五强攻 / 消强+卡莎奇镰解放站场",
+    "潘克多斯+蒂朵+帝皇之御+斯克鲁恩+瑞迪卡/腐坏幽魔+霍夫曼强攻 / 草王+西塔伦+卡莎站场（防御体力·自动吃双减伤）"
+   ],
+   "pets": [
+    "帝皇之御",
+    "蒂朵",
+    "霍夫曼",
+    "卡莎",
+    "潘克多斯",
+    "斯克鲁恩",
+    "瑞迪卡",
+    "腐坏幽魔",
+    "草王",
+    "西塔伦"
+   ],
+   "why": "封属+吸强(消强)+两命(复活后全属性+1)+随机清PP+500固伤层层叠加，站场几近无解只能速杀。表姐守御八方是攻击技能、不吃封属，给出必先+必暴；送蒂朵衔接后霍夫曼用第五强攻，断回合正好反制吸强/消强，两命靠补刀或增伤一次带走。卡莎奇镰解放站场则先消强断回合再站场固磨，属慢速替代。"
+  }
+ ],
+ "tids": [
+  1602,
+  1600,
+  1603
+ ],
+ "note": "全程绿火"
+}

@@ -1,0 +1,1059 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns="http://example.org/seer-factor#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/seer-factor#usesPet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Step"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdfs:label xml:lang="zh">出场精灵</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#stage_yita_2">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Stage"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">伊塔回溯型·第2关</rdfs:label>
+    <hasBoss rdf:resource="http://example.org/seer-factor#boss_yita_2"/>
+    <usesStrategy rdf:resource="http://example.org/seer-factor#strat_yita_2a"/>
+    <usesStrategy rdf:resource="http://example.org/seer-factor#strat_yita_2b"/>
+    <inDifficulty rdf:resource="http://example.org/seer-factor#地狱"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#pet_306">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">鲁斯王</rdfs:label>
+    <seerapiId>306</seerapiId>
+    <playsRole rdf:resource="http://example.org/seer-factor#弹伤"/>
+    <playsRole rdf:resource="http://example.org/seer-factor#站场"/>
+    <hasElement rdf:resource="http://example.org/seer-factor#水"/>
+    <hasSkill rdf:resource="http://example.org/seer-factor#sk_水流喷射"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#Skill">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">技能</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#cfg_cunzu">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Config"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">村长卡裸伤配置（防御336 体力799-935）</rdfs:label>
+    <configDef rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">336</configDef>
+    <configMinHp rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">799</configMinHp>
+    <configMaxHp rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">935</configMaxHp>
+    <hasEquipment rdf:resource="http://example.org/seer-factor#耀世"/>
+    <hasEquipment rdf:resource="http://example.org/seer-factor#假面"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#判弱先制">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">判弱+先制增伤</rdfs:label>
+    <countersBuff rdf:resource="http://example.org/seer-factor#buf偷强"/>
+    <countersBuff rdf:resource="http://example.org/seer-factor#buf消强"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#buf减伤">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">受到伤害降低</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#hp">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Boss"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="zh">血量</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#草">
+    <rdf:type rdf:resource="http://example.org/seer-factor#ElementType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">草</rdfs:label>
+    <counters rdf:resource="http://example.org/seer-factor#水"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#buf护盾">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">护盾</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#strat_yita_1a">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">第1关·爆攻压血魔钰强攻</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#buf必暴">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">必定暴击</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#recommendedPetForStage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Stage"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdfs:label xml:lang="zh">推荐关卡打手</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#pet_3512">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">帝皇之御（表姐）</rdfs:label>
+    <seerapiId>3512</seerapiId>
+    <playsRole rdf:resource="http://example.org/seer-factor#辅助"/>
+    <playsRole rdf:resource="http://example.org/seer-factor#弹伤"/>
+    <hasSoulmark rdf:resource="http://example.org/seer-factor#sm_821"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#boss_yita_4">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Boss"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hp rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15000</hp>
+    <hasElement rdf:resource="http://example.org/seer-factor#机械神秘"/>
+    <hasMechanism rdf:resource="http://example.org/seer-factor#面板免疫"/>
+    <hasMechanism rdf:resource="http://example.org/seer-factor#偷强"/>
+    <hasMechanism rdf:resource="http://example.org/seer-factor#护盾"/>
+    <hasMechanism rdf:resource="http://example.org/seer-factor#固伤"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#护盾">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Mechanism"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">开局护盾/护罩</rdfs:label>
+    <threshold rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000</threshold>
+    <recommendedStrategy rdf:resource="http://example.org/seer-factor#弹伤反伤"/>
+    <hasBuff rdf:resource="http://example.org/seer-factor#buf护盾"/>
+    <hasBuff rdf:resource="http://example.org/seer-factor#buf护罩"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#绿火">
+    <rdf:type rdf:resource="http://example.org/seer-factor#火"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">绿火(基础)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#recommendedConfig">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Boss"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Config"/>
+    <rdfs:label xml:lang="zh">推荐配置</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#sm_653">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Soulmark"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">六界帝神魂印（低血强化+先制+免异增伤）</rdfs:label>
+    <seerapiId>653</seerapiId>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf强化"/>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf先制"/>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf增伤"/>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf免疫异常"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#sm_776">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Soulmark"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">时空界皇魂印（半血阈值打手）</rdfs:label>
+    <seerapiId>776</seerapiId>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf先制"/>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf必暴"/>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf回血"/>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf固定伤害"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#substitutesFor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdfs:label xml:lang="zh">可替代</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#rewardPet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Reward"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdfs:label xml:lang="zh">产出精灵</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#称号">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/seer-factor#Equipment"/>
+    <rdfs:label xml:lang="zh">称号/眼镜</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#Step">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">出招步骤（换人/技能）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#usesConfig">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Config"/>
+    <rdfs:label xml:lang="zh">采用配置</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#playsRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Role"/>
+    <rdfs:label xml:lang="zh">扮演定位</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#strat_yita_4a">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">第4关·鲁斯王弹伤（波克尔→魔焰→鲁斯王）</rdfs:label>
+    <hasStep rdf:resource="http://example.org/seer-factor#s4a1"/>
+    <hasStep rdf:resource="http://example.org/seer-factor#s4a2"/>
+    <hasStep rdf:resource="http://example.org/seer-factor#s4a3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#boss_yita_3">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Boss"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hp rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000</hp>
+    <hasElement rdf:resource="http://example.org/seer-factor#机械火"/>
+    <hasMechanism rdf:resource="http://example.org/seer-factor#偷强"/>
+    <hasMechanism rdf:resource="http://example.org/seer-factor#消强"/>
+    <hasMechanism rdf:resource="http://example.org/seer-factor#固伤"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#珠子">
+    <rdf:type rdf:resource="http://example.org/seer-factor#道具"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">珠子</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#机械战斗">
+    <rdf:type rdf:resource="http://example.org/seer-factor#ElementType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">机械战斗</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#strat_yita_2a">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">第2关·村长卡裸伤站场</rdfs:label>
+    <usesConfig rdf:resource="http://example.org/seer-factor#cfg_cunzu"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#ElementType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">属性/属性组合</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#困难">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Difficulty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">困难</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#全面提升药水">
+    <rdf:type rdf:resource="http://example.org/seer-factor#道具"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">全面提升药水</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#cfg_弹伤套">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Config"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">弹伤配置(银翼套+假面+洛林卡之星)</rdfs:label>
+    <hasEquipment rdf:resource="http://example.org/seer-factor#银翼套"/>
+    <hasEquipment rdf:resource="http://example.org/seer-factor#假面"/>
+    <hasEquipment rdf:resource="http://example.org/seer-factor#洛林卡之星"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#strat_yita_2b">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">第2关·防体草潘站场</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#sm_709">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Soulmark"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">潘多拉魂印709（判弱+先制增伤）</rdfs:label>
+    <seerapiId>709</seerapiId>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf弱化"/>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf先制"/>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf增伤"/>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf回血"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#configMaxHp">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="zh">体力上限</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#hasBoss">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Stage"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Boss"/>
+    <rdfs:label xml:lang="zh">关卡对应Boss</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#sm_2170">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Soulmark"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">潘多拉魂印2170</rdfs:label>
+    <seerapiId>2170</seerapiId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#buf固定伤害">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">每回合固定伤害</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#裸伤上限">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Mechanism"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">免疫裸伤高于阈值并转体力</rdfs:label>
+    <threshold rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</threshold>
+    <recommendedStrategy rdf:resource="http://example.org/seer-factor#站场磨血"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#stepIndex">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Step"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="zh">步骤序号</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#典狱长">
+    <rdf:type rdf:resource="http://example.org/seer-factor#套装"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">典狱长(强攻)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#Buff">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">状态/效果原型(固伤/护盾/先制/回血…)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#辅助">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">辅助（判弱/场地/减伤）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#configDef">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="zh">防御定格</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#固伤">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Mechanism"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">每回合固定伤害</rdfs:label>
+    <recommendedStrategy rdf:resource="http://example.org/seer-factor#站场磨血"/>
+    <hasBuff rdf:resource="http://example.org/seer-factor#buf固定伤害"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#强攻秒杀">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">强攻秒杀</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#buf害怕">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">害怕(控场)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#boss_yita_2">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Boss"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hp rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</hp>
+    <hasElement rdf:resource="http://example.org/seer-factor#机械超能"/>
+    <hasMechanism rdf:resource="http://example.org/seer-factor#裸伤上限"/>
+    <hasMechanism rdf:resource="http://example.org/seer-factor#消强"/>
+    <hasMechanism rdf:resource="http://example.org/seer-factor#固伤"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#pet_whm">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">王·哈莫雷特（王哈）</rdfs:label>
+    <rdfs:comment xml:lang="zh">强攻锚点；SeerAPI id 待锁定（哈莫家族 3022/3809 之一）</rdfs:comment>
+    <playsRole rdf:resource="http://example.org/seer-factor#强攻"/>
+    <hasElement rdf:resource="http://example.org/seer-factor#龙"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#pet_3396">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">灾厄女神潘多拉（潘）</rdfs:label>
+    <seerapiId>3396</seerapiId>
+    <playsRole rdf:resource="http://example.org/seer-factor#辅助"/>
+    <playsRole rdf:resource="http://example.org/seer-factor#必先"/>
+    <hasSoulmark rdf:resource="http://example.org/seer-factor#sm_709"/>
+    <hasSoulmark rdf:resource="http://example.org/seer-factor#sm_2170"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#strat_yita_3a">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">第3关·特防体卡莎站场</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#counterStrategy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Mechanism"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdfs:label xml:lang="zh">反制打法</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#boss_yita_1">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Boss"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hp rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</hp>
+    <hasElement rdf:resource="http://example.org/seer-factor#机械战斗"/>
+    <hasMechanism rdf:resource="http://example.org/seer-factor#概率必杀"/>
+    <hasMechanism rdf:resource="http://example.org/seer-factor#消强"/>
+    <hasMechanism rdf:resource="http://example.org/seer-factor#固伤"/>
+    <hasMechanism rdf:resource="http://example.org/seer-factor#随机弱化"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#precedes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Step"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Step"/>
+    <rdfs:label xml:lang="zh">紧接在前</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#priority">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Skill"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="zh">先制值</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#strat_yita_4b">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">第4关·攻体眠酱站场</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#countersBuff">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdfs:label xml:lang="zh">克制效果</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#银翼套">
+    <rdf:type rdf:resource="http://example.org/seer-factor#套装"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">银翼套</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label xml:lang="zh">赛尔号因子PVE打法本体</rdfs:label>
+    <rdfs:comment xml:lang="zh">对因子脚本「为什么这样打」做结构与规则化沉淀：精灵/技能/魂印/Boss/机制/打法/配置及其关系。v0.1</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#buf偷强">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">偷取强化</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#Reward">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">关卡产出</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#buf免疫异常">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">免疫异常状态</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#stage_yita_4">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Stage"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">伊塔回溯型·第4关</rdfs:label>
+    <hasBoss rdf:resource="http://example.org/seer-factor#boss_yita_4"/>
+    <usesStrategy rdf:resource="http://example.org/seer-factor#strat_yita_4a"/>
+    <usesStrategy rdf:resource="http://example.org/seer-factor#strat_yita_4b"/>
+    <inDifficulty rdf:resource="http://example.org/seer-factor#地狱"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#s4a3">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Step"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <stepIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</stepIndex>
+    <usesPet rdf:resource="http://example.org/seer-factor#pet_306"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#buf吸血">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">吸血</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#recommendedPet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Boss"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdfs:label xml:lang="zh">推荐打手</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#boss_yita_5">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Boss"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hp rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18000</hp>
+    <hasElement rdf:resource="http://example.org/seer-factor#机械"/>
+    <hasMechanism rdf:resource="http://example.org/seer-factor#偷强"/>
+    <hasMechanism rdf:resource="http://example.org/seer-factor#固伤"/>
+    <hasMechanism rdf:resource="http://example.org/seer-factor#控场"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#pet_4377">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">蒂朵</rdfs:label>
+    <seerapiId>4377</seerapiId>
+    <playsRole rdf:resource="http://example.org/seer-factor#辅助"/>
+    <hasSoulmark rdf:resource="http://example.org/seer-factor#sm_1601"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#hasEquipment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Config"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Equipment"/>
+    <rdfs:label xml:lang="zh">采用装备</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#stage_yita_5">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Stage"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">伊塔回溯型·第5关</rdfs:label>
+    <hasBoss rdf:resource="http://example.org/seer-factor#boss_yita_5"/>
+    <usesStrategy rdf:resource="http://example.org/seer-factor#strat_yita_5a"/>
+    <usesStrategy rdf:resource="http://example.org/seer-factor#strat_yita_5b"/>
+    <inDifficulty rdf:resource="http://example.org/seer-factor#地狱"/>
+    <rewards rdf:resource="http://example.org/seer-factor#reward_yita"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#cfg_站场套">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Config"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">站场配置(耀世+假面+神话)</rdfs:label>
+    <hasEquipment rdf:resource="http://example.org/seer-factor#耀世"/>
+    <hasEquipment rdf:resource="http://example.org/seer-factor#假面"/>
+    <hasEquipment rdf:resource="http://example.org/seer-factor#神话"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#消强">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Mechanism"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">我方出手后被消强</rdfs:label>
+    <recommendedStrategy rdf:resource="http://example.org/seer-factor#判弱先制"/>
+    <hasBuff rdf:resource="http://example.org/seer-factor#buf消强"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#必先">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">必先（先制）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#未来">
+    <rdf:type rdf:resource="http://example.org/seer-factor#套装"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">未来(强攻)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#机械超能">
+    <rdf:type rdf:resource="http://example.org/seer-factor#ElementType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">机械超能</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#sm_1601">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Soulmark"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">蒂朵魂印（奇偶回合场地）</rdfs:label>
+    <seerapiId>1601</seerapiId>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf必中"/>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf回血"/>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf增伤"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#sk_水流喷射">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Skill"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">水流喷射(鲁斯王)</rdfs:label>
+    <priority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</priority>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#弹伤反伤">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">弹伤/反伤</rdfs:label>
+    <countersBuff rdf:resource="http://example.org/seer-factor#buf护盾"/>
+    <countersBuff rdf:resource="http://example.org/seer-factor#buf护罩"/>
+    <countersBuff rdf:resource="http://example.org/seer-factor#buf锁血"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#地狱">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Difficulty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">地狱</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#grantsBuff">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdfs:label xml:lang="zh">赋予效果（魂印/技能）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#bannedPet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Stage"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdfs:label xml:lang="zh">禁用精灵</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#pet_3463">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">时空界皇（时空）</rdfs:label>
+    <seerapiId>3463</seerapiId>
+    <playsRole rdf:resource="http://example.org/seer-factor#强攻"/>
+    <hasSoulmark rdf:resource="http://example.org/seer-factor#sm_776"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#pet_309">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">魔焰猩猩（魔焰/猩猩）</rdfs:label>
+    <seerapiId>309</seerapiId>
+    <playsRole rdf:resource="http://example.org/seer-factor#必先"/>
+    <playsRole rdf:resource="http://example.org/seer-factor#强攻"/>
+    <hasElement rdf:resource="http://example.org/seer-factor#火"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#pet_3437">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">艾欧丽娅（艾欧）</rdfs:label>
+    <seerapiId>3437</seerapiId>
+    <playsRole rdf:resource="http://example.org/seer-factor#强攻"/>
+    <hasSoulmark rdf:resource="http://example.org/seer-factor#sm_752"/>
+    <hasSoulmark rdf:resource="http://example.org/seer-factor#sm_1209"/>
+    <substitutesFor rdf:resource="http://example.org/seer-factor#pet_whm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#pet_sp">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">圣灵谱尼（圣普/圣谱）</rdfs:label>
+    <rdfs:comment xml:lang="zh">免费顶级强攻；SeerAPI id 待锁定</rdfs:comment>
+    <playsRole rdf:resource="http://example.org/seer-factor#强攻"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#buf回血">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">回血</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#stage_yita_3">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Stage"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">伊塔回溯型·第3关</rdfs:label>
+    <hasBoss rdf:resource="http://example.org/seer-factor#boss_yita_3"/>
+    <usesStrategy rdf:resource="http://example.org/seer-factor#strat_yita_3a"/>
+    <usesStrategy rdf:resource="http://example.org/seer-factor#strat_yita_3b"/>
+    <inDifficulty rdf:resource="http://example.org/seer-factor#地狱"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#stage_yita_1">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Stage"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">伊塔回溯型·第1关</rdfs:label>
+    <hasBoss rdf:resource="http://example.org/seer-factor#boss_yita_1"/>
+    <bannedPet rdf:resource="http://example.org/seer-factor#pet_whm"/>
+    <bannedPet rdf:resource="http://example.org/seer-factor#pet_dianwei"/>
+    <bannedPet rdf:resource="http://example.org/seer-factor#pet_sike"/>
+    <usesStrategy rdf:resource="http://example.org/seer-factor#strat_yita_1a"/>
+    <usesStrategy rdf:resource="http://example.org/seer-factor#strat_yita_1b"/>
+    <inDifficulty rdf:resource="http://example.org/seer-factor#地狱"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#buf弱化">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">能力下降</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#pet_poker">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">波克尔</rdfs:label>
+    <rdfs:comment xml:lang="zh">先制杂兵，弹伤线前置；SeerAPI id 待锁定</rdfs:comment>
+    <playsRole rdf:resource="http://example.org/seer-factor#必先"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#rewards">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Stage"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Reward"/>
+    <rdfs:label xml:lang="zh">产出</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#sm_821">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Soulmark"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">帝皇之御魂印（免异+锁血+反弹+死后减伤）</rdfs:label>
+    <seerapiId>821</seerapiId>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf免疫异常"/>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf锁血"/>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf反弹"/>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf先制"/>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf减伤"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#power">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Skill"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="zh">威力</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#洛林卡之星">
+    <rdf:type rdf:resource="http://example.org/seer-factor#称号"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">洛林卡之星(称号/强攻)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#必先大队">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">必先大队</rdfs:label>
+    <countersBuff rdf:resource="http://example.org/seer-factor#buf害怕"/>
+    <countersBuff rdf:resource="http://example.org/seer-factor#buf偷强"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#弹伤">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">弹伤（反伤）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#hasBuff">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Mechanism"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdfs:label xml:lang="zh">施加效果</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#hasSoulmark">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Soulmark"/>
+    <rdfs:label xml:lang="zh">拥有魂印</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#场地增伤">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">场地增伤（蒂朵）</rdfs:label>
+    <countersBuff rdf:resource="http://example.org/seer-factor#buf免疫异常"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#s4a1">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Step"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <stepIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stepIndex>
+    <usesPet rdf:resource="http://example.org/seer-factor#pet_poker"/>
+    <precedes rdf:resource="http://example.org/seer-factor#s4a2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#水">
+    <rdf:type rdf:resource="http://example.org/seer-factor#ElementType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">水</rdfs:label>
+    <counters rdf:resource="http://example.org/seer-factor#火"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#configAtk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="zh">攻击配置（爆攻/压血…）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#inDifficulty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Stage"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Difficulty"/>
+    <rdfs:label xml:lang="zh">属于难度</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#地面">
+    <rdf:type rdf:resource="http://example.org/seer-factor#ElementType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">地面</rdfs:label>
+    <counters rdf:resource="http://example.org/seer-factor#火"/>
+    <counters rdf:resource="http://example.org/seer-factor#机械"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#s4a2">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Step"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <stepIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</stepIndex>
+    <usesPet rdf:resource="http://example.org/seer-factor#pet_309"/>
+    <precedes rdf:resource="http://example.org/seer-factor#s4a3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#buf强化">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">能力提升</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#hasMechanism">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Boss"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Mechanism"/>
+    <rdfs:label xml:lang="zh">具有机制</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#神话">
+    <rdf:type rdf:resource="http://example.org/seer-factor#称号"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">神话(称号/续航)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#buf护罩">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">护罩</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#buf必中">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">必中</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#Soulmark">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">魂印</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#强攻">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">强攻（秒杀）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#hasSkill">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Skill"/>
+    <rdfs:label xml:lang="zh">拥有技能</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#reward_yita">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Reward"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">伊塔回溯型因子产出</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#Stage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">因子关卡</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#Equipment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">装备/培养件</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#sm_752">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Soulmark"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">艾欧丽娅魂印752（强攻+吸血）</rdfs:label>
+    <seerapiId>752</seerapiId>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf增伤"/>
+    <grantsBuff rdf:resource="http://example.org/seer-factor#buf吸血"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#站场磨血">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">站场磨血（卡裸伤）</rdfs:label>
+    <countersBuff rdf:resource="http://example.org/seer-factor#buf固定伤害"/>
+    <countersBuff rdf:resource="http://example.org/seer-factor#buf偷强"/>
+    <countersBuff rdf:resource="http://example.org/seer-factor#buf弱化"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#cfg_强攻套">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Config"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">强攻配置(漆黑+假面+洛林卡之星)</rdfs:label>
+    <hasEquipment rdf:resource="http://example.org/seer-factor#漆黑"/>
+    <hasEquipment rdf:resource="http://example.org/seer-factor#假面"/>
+    <hasEquipment rdf:resource="http://example.org/seer-factor#洛林卡之星"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#pet_dianwei">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">典韦</rdfs:label>
+    <rdfs:comment xml:lang="zh">常被Ban强攻手</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#机械神秘">
+    <rdf:type rdf:resource="http://example.org/seer-factor#ElementType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">机械神秘</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#控场">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Mechanism"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">高概率主动控场（害怕）</rdfs:label>
+    <recommendedStrategy rdf:resource="http://example.org/seer-factor#必先大队"/>
+    <hasBuff rdf:resource="http://example.org/seer-factor#buf害怕"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#counters">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#ElementType"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#ElementType"/>
+    <rdfs:label xml:lang="zh">克制</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#火">
+    <rdf:type rdf:resource="http://example.org/seer-factor#ElementType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">火</rdfs:label>
+    <rdfs:label xml:lang="zh">火焰(绿火/金火)</rdfs:label>
+    <counters rdf:resource="http://example.org/seer-factor#机械"/>
+    <counters rdf:resource="http://example.org/seer-factor#草"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/seer-factor#Equipment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#机械">
+    <rdf:type rdf:resource="http://example.org/seer-factor#ElementType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">机械</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#seerapiId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="zh">SeerAPI id</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#usesStrategy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Stage"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdfs:label xml:lang="zh">采用打法</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#hasElement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#ElementType"/>
+    <rdfs:label xml:lang="zh">所属属性</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#概率必杀">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Mechanism"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">小概率高倍伤害秒人</rdfs:label>
+    <recommendedStrategy rdf:resource="http://example.org/seer-factor#强攻秒杀"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#pet_3329">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">六界帝神（六界）</rdfs:label>
+    <seerapiId>3329</seerapiId>
+    <playsRole rdf:resource="http://example.org/seer-factor#强攻"/>
+    <hasSoulmark rdf:resource="http://example.org/seer-factor#sm_653"/>
+    <substitutesFor rdf:resource="http://example.org/seer-factor#pet_whm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#threshold">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Mechanism"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="zh">阈值</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#strat_yita_5a">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">第5关·火潘+蒂朵+表姐+张飞+泰坦强攻线</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#龙">
+    <rdf:type rdf:resource="http://example.org/seer-factor#ElementType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">龙</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#Boss">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">Boss（敌精灵）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#假面">
+    <rdf:type rdf:resource="http://example.org/seer-factor#称号"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">假面(称号)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#pet_sike">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">斯克鲁恩</rdfs:label>
+    <rdfs:comment xml:lang="zh">常被Ban</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#strat_yita_3b">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">第3关·爆攻地王强攻</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#耀世">
+    <rdf:type rdf:resource="http://example.org/seer-factor#套装"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">耀世(续航)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#偷强">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Mechanism"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">攻击出手前偷强</rdfs:label>
+    <recommendedStrategy rdf:resource="http://example.org/seer-factor#判弱先制"/>
+    <hasBuff rdf:resource="http://example.org/seer-factor#buf偷强"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#随机弱化">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Mechanism"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">每回合随机弱化我方</rdfs:label>
+    <hasBuff rdf:resource="http://example.org/seer-factor#buf弱化"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#机械火">
+    <rdf:type rdf:resource="http://example.org/seer-factor#ElementType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">机械火</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#strat_yita_5b">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">第5关·火潘+蒂朵+西塔伦+必先大队</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#buf锁血">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">保留1点体力</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#sm_1209">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Soulmark"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">艾欧丽娅魂印1209</rdfs:label>
+    <seerapiId>1209</seerapiId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#recommendedStrategy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdfs:label xml:lang="zh">推荐打法（机制→打法 与 Boss→打法 复用）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#金火">
+    <rdf:type rdf:resource="http://example.org/seer-factor#火"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">金火(增伤)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#Mechanism">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">Boss机制（固伤/免疫/护盾/控场/偷强…）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#buf增伤">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">伤害/威力提升</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#站场">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">站场（坦克磨血）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#buf消强">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">消除强化</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#Role">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">定位（强攻/辅助/站场/弹伤/必先）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#buf先制">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">先制</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#面板免疫">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Mechanism"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">免疫面板超过阈值的攻击技能</rdfs:label>
+    <threshold rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</threshold>
+    <recommendedStrategy rdf:resource="http://example.org/seer-factor#弹伤反伤"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#hasStep">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Step"/>
+    <rdfs:label xml:lang="zh">含步骤</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#buf反弹">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Buff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">反弹伤害</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#recommendedStrategyForPet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdfs:range rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdfs:label xml:lang="zh">精灵适合的打法</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#漆黑">
+    <rdf:type rdf:resource="http://example.org/seer-factor#套装"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">漆黑(输出套装)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#pet_2965">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Pet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">灾厄王妃潘多拉</rdfs:label>
+    <seerapiId>2965</seerapiId>
+    <playsRole rdf:resource="http://example.org/seer-factor#辅助"/>
+    <playsRole rdf:resource="http://example.org/seer-factor#必先"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#勇者">
+    <rdf:type rdf:resource="http://example.org/seer-factor#套装"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">勇者(攻体)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#Strategy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">打法/套路</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#Difficulty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">难度分级</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#道具">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/seer-factor#Equipment"/>
+    <rdfs:label xml:lang="zh">道具(珠子/药水)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#Config">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">配置（套装/称号/压血压防数值）</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#configMinHp">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="zh">体力下限</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#Pet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">精灵</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#strat_yita_1b">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Strategy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">第1关·特防体丽莎站场</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#简单">
+    <rdf:type rdf:resource="http://example.org/seer-factor#Difficulty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="zh">简单</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/seer-factor#套装">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/seer-factor#Equipment"/>
+    <rdfs:label xml:lang="zh">套装</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

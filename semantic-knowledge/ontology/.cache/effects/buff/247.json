@@ -1,0 +1,1 @@
+{"desc": "令对手{roundnext[1]}所有技能先制-{0}", "desc_tag": "roundnext", "hash": "9d5cc915", "icon": [42], "id": 247, "tag": "先制降低", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

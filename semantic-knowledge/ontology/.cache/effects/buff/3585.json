@@ -1,0 +1,1 @@
+{"desc": "{0}回合内每回合结束时恢复最大体力的20%，若为“环”小队成员则改为25%", "desc_tag": null, "hash": "90fdd181", "icon": [31], "id": 3585, "tag": "恢复", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

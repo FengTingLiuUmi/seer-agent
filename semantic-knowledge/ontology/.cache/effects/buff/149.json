@@ -1,0 +1,1 @@
+{"desc": "{0}回合内，{1}%的概率使对手{skilltypeB[2]}Miss", "desc_tag": "skilltypeB", "hash": "3a746518", "icon": [16], "id": 149, "tag": "闪避", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

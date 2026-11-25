@@ -1,0 +1,1 @@
+{"desc": "{roundType[0]}免疫所有受到的异常状态", "desc_tag": "roundType", "hash": "42f4f4ba", "icon": [22], "id": 6, "tag": "免疫异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

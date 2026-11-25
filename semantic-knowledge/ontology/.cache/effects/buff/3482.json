@@ -1,0 +1,1 @@
+{"desc": "神启：回合开始时，若自身体力高于最大体力的1/2则免疫所有异常状态和能力下降状态", "desc_tag": null, "hash": "72c87a3b", "icon": [23], "id": 3482, "tag": "免疫弱化", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

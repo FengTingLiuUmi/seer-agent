@@ -1,0 +1,1 @@
+{"desc": "自身被攻击命中后若受到的攻击伤害低于300，则附加300点固定伤害", "desc_tag": null, "hash": "2ab9de4e", "icon": [34], "id": 2319, "tag": "附加伤害 - 皇御神临", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

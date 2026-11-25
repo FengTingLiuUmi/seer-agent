@@ -1,0 +1,1 @@
+{"desc": "受到的伤害大于{0}时，下回合攻击必定先手，必定致命一击", "desc_tag": null, "hash": "7d6d2deb", "icon": [6], "id": 2112, "tag": "必定先手|致命一击", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

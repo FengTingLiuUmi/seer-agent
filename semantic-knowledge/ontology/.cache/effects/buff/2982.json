@@ -1,0 +1,1 @@
+{"desc": "首次受到的攻击伤害减少20%，之后每次受到的攻击伤害减少量增加5%，最高减少50%", "desc_tag": null, "hash": "3e2b838e", "icon": [29], "id": 2982, "tag": "减伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

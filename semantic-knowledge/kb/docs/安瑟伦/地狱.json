@@ -1,0 +1,280 @@
+{
+ "doc_id": "安瑟伦#地狱",
+ "factor": "安瑟伦",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4842,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "地面暗影",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 300固伤; 消强; 裸伤上限2000; 随机弱化2项-1; 回血; 减伤16.7%",
+   "mech": [
+    "rawCap",
+    "heal",
+    "debuff",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    {
+     "text": "希可洛单挑",
+     "source": "bili",
+     "plan": "希可洛单挑",
+     "pets": [
+      "希可洛"
+     ],
+     "why": "致命机制是裸伤上限2000，面板伤害一超过就被免疫，所以攻略全走希可洛/星光·丽莎布布卡裸伤站场磨血而非面板强攻"
+    },
+    {
+     "text": "星光·丽莎布布单挑",
+     "source": "bili",
+     "plan": "星光·丽莎布布单挑",
+     "pets": [
+      "星光·丽莎布布"
+     ],
+     "why": "致命机制是裸伤上限2000，面板伤害一超过就被免疫，所以攻略全走希可洛/星光·丽莎布布卡裸伤站场磨血而非面板强攻"
+    },
+    {
+     "text": "皮神单挑",
+     "source": "bili",
+     "plan": "皮神单挑",
+     "pets": [
+      "皮神"
+     ],
+     "why": ""
+    },
+    {
+     "text": "鲁斯王克制+神谕莫妮卡补刀",
+     "source": "bili",
+     "plan": "鲁斯王克制+神谕莫妮卡补刀",
+     "pets": [
+      "神谕莫妮卡"
+     ],
+     "why": ""
+    }
+   ],
+   "pets": [
+    "希可洛",
+    "星光·丽莎布布",
+    "皮神",
+    "星光·鲁斯王",
+    "神谕莫妮卡"
+   ],
+   "why": "致命机制是裸伤上限2000，面板伤害一超过就被免疫，所以攻略全走希可洛/星光·丽莎布布卡裸伤站场磨血而非面板强攻；消强与随机弱化也说明不能靠强化硬打，回血靠磨血节奏压制。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4763,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "暗影",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 300固伤; 消强; 随机弱化2项-1; 70%闪避; 必暴; 吸血; 减伤16.7%",
+   "mech": [
+    "dodge",
+    "heal",
+    "debuff",
+    "clearBuff",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    {
+     "text": "帝皇之御自爆+双强攻 / 重塑之子·利塞特第五秒",
+     "source": "bili",
+     "plan": "帝皇之御自爆+双强攻 / 重塑之子·利塞特第五秒",
+     "pets": [
+      "帝皇之御",
+      "重塑之子·利塞特"
+     ],
+     "why": "70%闪避由帝皇之御守御八方给的必暴（伪必中）覆盖，不必强求必中"
+    },
+    {
+     "text": "皮神单挑 / 幽冥狼魂第五",
+     "source": "bili",
+     "plan": "皮神单挑 / 幽冥狼魂第五",
+     "pets": [
+      "皮神",
+      "幽冥狼魂"
+     ],
+     "why": "利塞特/幽冥狼魂第五是另一条高爆先手秒路线"
+    }
+   ],
+   "pets": [
+    "帝皇之御",
+    "重塑之子·利塞特",
+    "皮神",
+    "幽冥狼魂"
+   ],
+   "why": "70%闪避由帝皇之御守御八方给的必暴（伪必中）覆盖，不必强求必中；守御八方是攻击技能、不受封属影响，且送必先，先手秒掉即可避开Boss必暴与吸血。利塞特/幽冥狼魂第五是另一条高爆先手秒路线。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4870,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 500固伤; 消强; 必暴; 护盾5000; 护罩5000; 减伤33.3%; 单精灵",
+   "mech": [
+    "singlePet",
+    "shield",
+    "clearBuff",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    {
+     "text": "闪光皮神单挑 / 流萤·雪150秒 / 艾欧丽娅两发有女",
+     "source": "bili",
+     "plan": "闪光皮神单挑 / 流萤·雪150秒 / 艾欧丽娅两发有女",
+     "pets": [
+      "闪光皮神",
+      "流萤·雪",
+      "艾欧丽娅"
+     ],
+     "why": "开局5000护盾+5000护罩要先破盾再打伤：艾欧丽娅两发有女靠多段输出快速破盾；皮神/流萤·雪则借必暴与减伤站场磨"
+    }
+   ],
+   "pets": [
+    "闪光皮神",
+    "流萤·雪",
+    "艾欧丽娅"
+   ],
+   "why": "开局5000护盾+5000护罩要先破盾再打伤：艾欧丽娅两发有女靠多段输出快速破盾；皮神/流萤·雪则借必暴与减伤站场磨。单精灵限制要求单只自足，封属下都走攻击技能。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4885,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "虫",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 500固伤; 吸强; 100%闪避; 侵染; 减伤33.3%",
+   "mech": [
+    "dodge",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    {
+     "text": "帝皇之御+索比斯+糖果皮皮160×2",
+     "source": "bili",
+     "plan": "帝皇之御+索比斯+糖果皮皮160×2",
+     "pets": [
+      "帝皇之御",
+      "索比斯",
+      "糖果皮皮"
+     ],
+     "why": "侵染属感染类控场，靠表姐必先秒或免疫异常化解，吸强则用弹伤（鲁斯王克制/索比斯）与糖果皮皮160固伤绕开"
+    },
+    {
+     "text": "送克罗+星光·魔焰猩猩挂buff+蒂朵+星光·鲁斯王克制",
+     "source": "bili",
+     "plan": "送克罗+星光·魔焰猩猩挂buff+蒂朵+星光·鲁斯王克制",
+     "pets": [
+      "星光·魔焰猩猩",
+      "蒂朵",
+      "星光·鲁斯王"
+     ],
+     "why": ""
+    }
+   ],
+   "pets": [
+    "帝皇之御",
+    "索比斯",
+    "糖果皮皮",
+    "万神寂灭·克罗诺斯",
+    "星光·魔焰猩猩",
+    "蒂朵",
+    "星光·鲁斯王"
+   ],
+   "why": "100%闪避由表姐守御八方给的必暴（伪必中）覆盖即可，不必强求必中；侵染属感染类控场，靠表姐必先秒或免疫异常化解，吸强则用弹伤（鲁斯王克制/索比斯）与糖果皮皮160固伤绕开。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4894,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "暗影",
+   "boss_hp": 20000,
+   "traits": "必先; 封属; 500固伤; 吸强; 免疫暴击伤害; 两命; 复活全属性+1; 回血; 减伤33.3%",
+   "mech": [
+    "twoLife",
+    "heal",
+    "selfBuff",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    {
+     "text": "克罗+蒂朵+霍夫曼打一命再强攻",
+     "source": "bili",
+     "plan": "克罗+蒂朵+霍夫曼打一命再强攻",
+     "pets": [
+      "蒂朵",
+      "霍夫曼"
+     ],
+     "why": ""
+    },
+    {
+     "text": "加尔鲁特(草潘)单挑",
+     "source": "bili",
+     "plan": "加尔鲁特(草潘)单挑",
+     "pets": [
+      "加尔鲁特"
+     ],
+     "why": "加尔鲁特(草潘)/眠降·玛缇娜站场磨不依赖强化、绕开吸强，两命+复活全属性+1靠补刀压血，回血用禁疗/控血应对"
+    },
+    {
+     "text": "眠降·玛缇娜单挑",
+     "source": "bili",
+     "plan": "眠降·玛缇娜单挑",
+     "pets": [
+      "眠降·玛缇娜"
+     ],
+     "why": "加尔鲁特(草潘)/眠降·玛缇娜站场磨不依赖强化、绕开吸强，两命+复活全属性+1靠补刀压血，回血用禁疗/控血应对"
+    }
+   ],
+   "pets": [
+    "万神寂灭·克罗诺斯",
+    "蒂朵",
+    "霍夫曼",
+    "加尔鲁特",
+    "眠降·玛缇娜"
+   ],
+   "why": "免疫暴击伤害直接废掉表姐必暴强攻，需非暴击路线；加尔鲁特(草潘)/眠降·玛缇娜站场磨不依赖强化、绕开吸强，两命+复活全属性+1靠补刀压血，回血用禁疗/控血应对。"
+  }
+ ],
+ "source_urls": [
+  "https://www.233leyuan.com/post-detail/2049876345544835072",
+  "https://www.bilibili.com/video/BV141dVBsEq8/"
+ ]
+}

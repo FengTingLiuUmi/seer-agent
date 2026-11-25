@@ -1,0 +1,1 @@
+{"desc": "{0}回合内若对手攻击技能未命中则{1}%令对手{abst[2]}", "desc_tag": "abst", "hash": "7611ea22", "icon": [14], "id": 488, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

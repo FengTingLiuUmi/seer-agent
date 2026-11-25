@@ -1,0 +1,1 @@
+{"desc": "将自身下{0}次受到的固定伤害、百分比伤害转化为等量护罩，最多获得{1}点", "desc_tag": null, "hash": "ccedc356", "icon": [32], "id": 616, "tag": "护罩", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

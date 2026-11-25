@@ -1,0 +1,1 @@
+{"desc": "{0}回合内若对手造成的伤害低于{1}则免疫该伤害", "desc_tag": null, "hash": "94941fa8", "icon": [25], "id": 250, "tag": "免伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

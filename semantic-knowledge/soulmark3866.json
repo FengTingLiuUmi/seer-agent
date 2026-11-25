@@ -1,0 +1,106 @@
+﻿[
+    {
+        "id":  1138,
+        "desc":  "�ǳ��׻غϿ�ʼʱ����������غ��������쳣״̬�������½�״̬����Ч��Ϊ�غ���Ч�����ҹ���100%�������һ����ÿ��ս��������2�Σ���|��������������к�����ɵ��˺�����300����1�غϹ���100%�������һ����|��������������һ����100%�����ʧ����δ�����򸽼������������1/3�İٷֱ��˺���boss��Ч��",
+        "desc_formatting_adjustment":  "\u003cindent=0\u003e\u003csprite=0\u003e\u003cindent=16\u003e�޶�Ч����ÿ��ս����2�Σ���\r\n\u003cindent=16\u003e\u003csprite=3\u003e\u003cindent=32\u003e�ǳ��׻غϿ�ʼʱ��\r\n\u003cindent=32\u003e\u003csprite=4\u003e\u003cindent=48\u003e�Իغ���Ч����ʽ������1�غ���\u003ccolor=#64F9FA\u003e����\u003c/color\u003e\u003cb\u003e�쳣״̬\u003c/b\u003e��\u003cb\u003e�����½�״̬\u003c/b\u003e\r\n\u003cindent=32\u003e\u003csprite=4\u003e\u003cindent=48\u003e��������غϹ���\u003ccolor=#64F9FA\u003e100%�������һ��\u003c/color\u003e\r\n\r\n\u003cindent=0\u003e\u003csprite=0\u003e\u003cindent=16\u003e�������ܶ���Ч����\r\n\u003cindent=16\u003e\u003csprite=3\u003e\u003cindent=32\u003e��������������к�����ɵ��˺�����300����1�غϹ���\u003ccolor=#64F9FA\u003e100%�������һ��\u003c/color\u003e\r\n\u003cindent=16\u003e\u003csprite=3\u003e\u003cindent=32\u003e��������������һ����100%\u003ccolor=#64F9FA\u003e�����ʧ��\u003c/color\u003e\r\n\u003cindent=32\u003e\u003csprite=4\u003e\u003cindent=48\u003eδ������\u003ccolor=#64F9FA\u003e����\u003c/color\u003e�����������1/3��\u003cb\u003e�ٷֱ��˺�\u003c/b\u003e",
+        "analyze_desc":  "",
+        "pve_effective":  false,
+        "intensified":  false,
+        "is_adv":  false,
+        "pet":  [
+                    {
+                        "id":  3866,
+                        "url":  "https://api.seerapi.com/v1/pet/3866"
+                    }
+                ],
+        "effect":  {
+                       "effect_args":  [
+                                           100,
+                                           2,
+                                           300,
+                                           1,
+                                           100,
+                                           100,
+                                           3,
+                                           1
+                                       ],
+                       "effect":  {
+                                      "id":  1455,
+                                      "url":  "https://api.seerapi.com/v1/eid_effect/1455"
+                                  }
+                   },
+        "effect_alias":  "alias_1455_100_2_300_1_100_100_3_1",
+        "tag":  [
+                    {
+                        "id":  2,
+                        "url":  "https://api.seerapi.com/v1/soulmark_tag/2"
+                    },
+                    {
+                        "id":  8,
+                        "url":  "https://api.seerapi.com/v1/soulmark_tag/8"
+                    },
+                    {
+                        "id":  15,
+                        "url":  "https://api.seerapi.com/v1/soulmark_tag/15"
+                    }
+                ],
+        "intensified_to":  {
+                               "id":  1437,
+                               "url":  "https://api.seerapi.com/v1/soulmark/1437"
+                           },
+        "from_":  null,
+        "advance":  null
+    },
+    {
+        "id":  1437,
+        "desc":  "�ǳ�ǰ2�غϿ�ʼʱ����������غ��ڻغ���Ч���޷���������ͬʱ�����쳣״̬�������½�״̬�ҹ���100%�������һ����ÿ��ս������3�Σ���|��������������к�����ɵ��˺�����300����1�غϹ���100%�������һ����|��������������һ����100%�����ʧ����δ�����򸽼������������1/3�İٷֱ��˺���boss��Ч��",
+        "desc_formatting_adjustment":  "\u003cindent=0\u003e\u003csprite=0\u003e\u003cindent=16\u003e�޶�Ч����ÿ��ս����3�Σ���\r\n\u003cindent=16\u003e\u003csprite=3\u003e\u003cindent=32\u003e�ǳ�ǰ2�غϵĻغϿ�ʼʱ����������غϣ�\r\n\u003cindent=32\u003e\u003csprite=4\u003e\u003cindent=48\u003e\u003ccolor=#64F9FA\u003e�غ���Ч���޷�������\u003c/color\u003e\r\n\u003cindent=32\u003e\u003csprite=4\u003e\u003cindent=48\u003e\u003ccolor=#64F9FA\u003e����\u003c/color\u003e\u003cb\u003e�쳣״̬\u003c/b\u003e��\u003cb\u003e�����½�״̬\u003c/b\u003e\r\n\u003cindent=32\u003e\u003csprite=4\u003e\u003cindent=48\u003e����\u003ccolor=#64F9FA\u003e100%�������һ��\u003c/color\u003e\r\n\r\n\u003cindent=0\u003e\u003csprite=0\u003e\u003cindent=16\u003e�������ܶ���Ч����\r\n\u003cindent=16\u003e\u003csprite=3\u003e\u003cindent=32\u003e��������������к�����ɵ��˺�����300����1�غϹ���\u003ccolor=#64F9FA\u003e100%�������һ��\u003c/color\u003e\r\n\u003cindent=16\u003e\u003csprite=3\u003e\u003cindent=32\u003e��������������һ����100%\u003ccolor=#64F9FA\u003e�����ʧ��\u003c/color\u003e\r\n\u003cindent=32\u003e\u003csprite=4\u003e\u003cindent=48\u003eδ������\u003ccolor=#64F9FA\u003e����\u003c/color\u003e�����������1/3��\u003cb\u003e�ٷֱ��˺�\u003c/b\u003e",
+        "analyze_desc":  "",
+        "pve_effective":  false,
+        "intensified":  false,
+        "is_adv":  false,
+        "pet":  [
+                    {
+                        "id":  3866,
+                        "url":  "https://api.seerapi.com/v1/pet/3866"
+                    }
+                ],
+        "effect":  {
+                       "effect_args":  [
+                                           100,
+                                           3,
+                                           300,
+                                           1,
+                                           100,
+                                           100,
+                                           3,
+                                           1
+                                       ],
+                       "effect":  {
+                                      "id":  1806,
+                                      "url":  "https://api.seerapi.com/v1/eid_effect/1806"
+                                  }
+                   },
+        "effect_alias":  "alias_1806_100_3_300_1_100_100_3_1",
+        "tag":  [
+                    {
+                        "id":  2,
+                        "url":  "https://api.seerapi.com/v1/soulmark_tag/2"
+                    },
+                    {
+                        "id":  8,
+                        "url":  "https://api.seerapi.com/v1/soulmark_tag/8"
+                    },
+                    {
+                        "id":  15,
+                        "url":  "https://api.seerapi.com/v1/soulmark_tag/15"
+                    }
+                ],
+        "intensified_to":  null,
+        "from_":  {
+                      "id":  1138,
+                      "url":  "https://api.seerapi.com/v1/soulmark/1138"
+                  },
+        "advance":  null
+    }
+]

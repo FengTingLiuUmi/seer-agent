@@ -1,0 +1,1 @@
+{"desc": "{roundnext[0]}攻击命中时消耗自身最大体力的1/{1}并造成等量百分比伤害", "desc_tag": "roundnext", "hash": "3b60a564", "icon": [34], "id": 748, "tag": "附加伤害", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

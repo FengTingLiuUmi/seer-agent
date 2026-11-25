@@ -1,0 +1,1 @@
+{"desc": "{roundnext[0]}，每回合都使对手的先制-{1}", "desc_tag": "roundnext", "hash": "6f4773b8", "icon": [42], "id": 310, "tag": "先制降低", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

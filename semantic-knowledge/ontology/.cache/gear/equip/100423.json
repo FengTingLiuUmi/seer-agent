@@ -1,0 +1,1 @@
+{"bonus": null, "hash": "47acf992", "id": 100423, "item": {"id": 100423, "url": "https://api.seerapi.com/v1/item/100423"}, "name": "涡轮喷射座", "occasion": null, "part_type": {"id": 4, "url": "https://api.seerapi.com/v1/equip_type/4"}, "pk_attribute": {"pk_atk": 20, "pk_fire_range": 0, "pk_hp": 65}, "speed": 7.5, "suit": null, "x_position": 25, "y_position": -58}

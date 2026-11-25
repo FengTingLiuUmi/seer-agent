@@ -1,0 +1,1 @@
+{"desc": "若回合开始时自身满体力则当回合自身受到攻击时使对手害怕", "desc_tag": null, "hash": "ed54b5e5", "icon": [14], "id": 2641, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

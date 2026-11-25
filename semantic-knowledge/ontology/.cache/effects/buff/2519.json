@@ -1,0 +1,1 @@
+{"desc": "每回合开始时若自身体力小于1/2则受到的伤害不超过250", "desc_tag": null, "hash": "ecb089a1", "icon": [15], "id": 2519, "tag": "伤害限制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

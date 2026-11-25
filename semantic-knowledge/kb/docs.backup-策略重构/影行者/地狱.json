@@ -1,0 +1,172 @@
+{
+ "doc_id": "影行者#地狱",
+ "factor": "影行者",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4687,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "冰神秘",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 300固伤; 消强; 回血(受>2000伤害回满); 减伤16.7%",
+   "mech": [
+    "heal",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐(帝皇之御)自爆+高倍克制强攻秒杀 / 仿生兽库比·圣血猎者赫布洛·金瑞福龙强攻 / 星光布布单挑"
+   ],
+   "pets": [
+    "帝皇之御",
+    "仿生兽库比",
+    "圣血猎者赫布洛",
+    "金瑞福龙",
+    "星光布布"
+   ],
+   "why": "封属锁死属性技能，但表姐守御八方是攻击技能可用，自爆给全队必先+必暴；Boss单段受>2000伤害会回满血，所以用高倍克制一段打穿10000血秒杀、不给回血机会，或星光布布站场磨把单段伤害压在2000以下绕开回血；消强则靠不叠强化的一发秒规避。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4675,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "地面暗影",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 300固伤; 消强; 闪避(100%); 睡眠(80%概率); 减伤16.7%",
+   "mech": [
+    "dodge",
+    "clearBuff",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐+强攻手×2 / 星光艾欧丽娅第五·普通艾欧150 / 重塑之子利塞特第五 / 卡莎单挑 / 月华单挑"
+   ],
+   "pets": [
+    "帝皇之御",
+    "星光艾欧丽娅",
+    "艾欧丽娅",
+    "重塑之子利塞特",
+    "卡莎",
+    "月华"
+   ],
+   "why": "封属锁属性技能，100%闪避又让普攻难中，表姐自爆的必暴即伪必中、把命中拉满盖过高闪避，并给必先抢在80%睡眠之前秒掉；艾欧/利塞特等第五是攻击技能，吃到必暴必先后一段强攻打穿10000血。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4713,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "机械",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 500固伤; 消强; 清PP; 断回合; 月亮(百分比回血/伤害); 减伤16.7%",
+   "mech": [
+    "clearPP",
+    "heal",
+    "clearBuff",
+    "breakTurn",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "典韦150强攻 / 金吉娜·夏厄普第五 / 卡裸伤闪光皮神(带波克尔磨) / 西斯里·张飞第五"
+   ],
+   "pets": [
+    "典韦",
+    "金吉娜",
+    "夏厄普",
+    "闪光皮神",
+    "西斯里",
+    "张飞"
+   ],
+   "why": "封属下只能靠攻击技能出手，故典韦150、金吉娜/夏厄普第五、西斯里/张飞第五被选上；月亮百分比回血/伤害会让拉锯白打，所以要么攻击技能一段高伤速杀、要么卡裸伤闪光皮神(带波克尔)站场磨并把血控在下限内，清PP/消强靠速杀与救场规避。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 3308,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "机械地面",
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 500固伤; 吸强; 清PP; 断回合; 减伤33.3%; 减伤50%(遇天敌翻倍)",
+   "mech": [
+    "clearPP",
+    "stealBuff",
+    "breakTurn",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "火潘+蒂朵+表姐+霍夫曼+极寒魔兽 / 鲁斯王弹伤 / 冰潘+重生+泰坦 / 消强+卡裸伤希可洛单挑"
+   ],
+   "pets": [
+    "潘克多斯",
+    "蒂朵",
+    "帝皇之御",
+    "霍夫曼",
+    "极寒魔兽",
+    "星光·鲁斯王",
+    "斯克鲁恩",
+    "希可洛"
+   ],
+   "why": "吸强+断回合会偷走我方强化并压制站场，减伤又高(33.3%且遇天敌翻倍)，直接打克制红伤不划算；所以用鲁斯王弹伤反弹、或消强后卡裸伤希可洛(村长)站场磨，两者都不依赖强化；火潘+蒂朵+表姐+霍夫曼+极寒魔兽则靠场外增伤链+攻击技能爆发，避开设强被偷。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4917,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "战斗暗影",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 500固伤; 吸强; 必暴; 闪避(100%); 减伤33.3%",
+   "mech": [
+    "dodge",
+    "stealBuff",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐自爆+蒂朵+特攻圣萨140四倍克制强攻 / 火潘+蒂朵+表姐+喵佐萌喵电刃 / 炮灰+冰潘+表姐+六界弹伤+奥斯卡补刀"
+   ],
+   "pets": [
+    "帝皇之御",
+    "蒂朵",
+    "特攻圣萨",
+    "纳西斯",
+    "洛琦",
+    "潘克多斯",
+    "斯克鲁恩",
+    "喵佐",
+    "六界",
+    "奥斯卡"
+   ],
+   "why": "封属+100%闪避是核心：表姐守御八方是攻击技能不吃封属，自爆给必暴即伪必中、直接盖过100%闪避，再叠蒂朵/火潘增伤让特攻圣萨140四倍克制一段打穿18000血；Boss自身必暴意味着拖久必挨刀，故强调抢速杀，六界弹伤+奥斯卡补刀则是绕开克制与闪避的兜底路。"
+  }
+ ]
+}

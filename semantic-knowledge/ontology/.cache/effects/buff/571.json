@@ -1,0 +1,1 @@
+{"desc": "对手{roundType[0]}属性技能先制-{1}", "desc_tag": "roundType", "hash": "c578e653", "icon": [42], "id": 571, "tag": "先制降低", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

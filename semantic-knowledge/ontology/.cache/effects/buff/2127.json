@@ -1,0 +1,1 @@
+{"desc": "受到带有地面和圣灵系伤害时，若生命值小于1，则恢复全部生命值", "desc_tag": null, "hash": "1a60d6ae", "icon": [31], "id": 2127, "tag": "恢复", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

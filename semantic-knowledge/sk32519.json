@@ -1,0 +1,74 @@
+﻿{
+    "id":  32519,
+    "name":  "�����ټ��һ�Դ",
+    "power":  160,
+    "max_pp":  5,
+    "accuracy":  95,
+    "crit_rate":  6.25,
+    "priority":  0,
+    "must_hit":  true,
+    "atk_num":  1,
+    "info":  null,
+    "category":  {
+                     "id":  2,
+                     "url":  "https://api.seerapi.com/v1/skill_category/2"
+                 },
+    "type":  {
+                 "id":  88,
+                 "url":  "https://api.seerapi.com/v1/element_type_combination/88"
+             },
+    "learned_by_pet":  [
+
+                       ],
+    "skill_effect":  [
+                         {
+                             "info":  "����ʱ��ɵ��˺��������΢�������ƹ�ϵΪ΢��ʱ�������ͨ��",
+                             "analyze_info":  "[sprite name=iconInherent]����ʱ��ɵ��˺��������΢�������ƹ�ϵΪ΢��ʱ�������ͨ����boss��Ч��",
+                             "args":  [
+
+                                      ],
+                             "effect":  {
+                                            "id":  760,
+                                            "url":  "https://api.seerapi.com/v1/skill_effect_type/760"
+                                        }
+                         },
+                         {
+                             "info":  "�����������������״̬����ɵĹ����˺���������50%",
+                             "analyze_info":  "[sprite name=iconHit]�����������������״̬����ɵĹ���[color=#52a5f2]�˺���������[/color]50%��boss��Ч��",
+                             "args":  [
+                                          50
+                                      ],
+                             "effect":  {
+                                            "id":  842,
+                                            "url":  "https://api.seerapi.com/v1/skill_effect_type/842"
+                                        }
+                         },
+                         {
+                             "info":  "�����������������״̬����ɵ��˺�����75%",
+                             "analyze_info":  "[sprite name=iconHit]�����������������״̬����ɵ��˺�����75%��boss��Ч��",
+                             "args":  [
+                                          75
+                                      ],
+                             "effect":  {
+                                            "id":  1152,
+                                            "url":  "https://api.seerapi.com/v1/skill_effect_type/1152"
+                                        }
+                         },
+                         {
+                             "info":  "���غϻ��ܶ�����غϽ���ʱ��ʧ1����Ȼף��",
+                             "analyze_info":  "[sprite name=iconHit][color=#52a5f2]���غ�[/color][color=#57c975]����[/color]������[color=#57c975]�غϽ���ʱ[/color]��ʧ1��[color=#f35555]��Ȼף��[/color]��boss��Ч��",
+                             "args":  [
+                                          1
+                                      ],
+                             "effect":  {
+                                            "id":  1386,
+                                            "url":  "https://api.seerapi.com/v1/skill_effect_type/1386"
+                                        }
+                         }
+                     ],
+    "friend_skill_effect":  [
+
+                            ],
+    "hide_effect":  null,
+    "advance":  null
+}

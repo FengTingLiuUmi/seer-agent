@@ -1,0 +1,154 @@
+{
+ "doc_id": "墟婆#地狱",
+ "factor": "墟婆",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 2892,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "自然",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 300固伤; 减伤16.7%; 消强(使用技能后被驱散); 清PP(攻击命中随机清空我方2个技能PP)",
+   "mech": [
+    "clearPP",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "异维·拉伯克150强攻 / 腐坏幽魔·克劳里菲160强攻 / 魔钰150 / 潜影灵蛇150"
+   ],
+   "pets": [
+    "异维·拉伯克",
+    "腐坏幽魔·克劳里菲",
+    "魔钰",
+    "潜影灵蛇",
+    "八岐大蛇"
+   ],
+   "why": "封属禁用属性技能、消强清掉强化、清PP又断续航，只能走纯攻击强攻；Boss必先且带300固伤逼速杀，好在减伤仅16.7%、血量10000，用150/160高威力攻击技能一回合带走即可。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 3653,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "神秘",
+   "boss_hp": 10000,
+   "traits": "封属; 300固伤; 减伤16.7%; 随机弱化(每回合我方随机2项能力-1); 受击伤害>2000则下2回合必暴必先; 月亮; 3%瞬杀; 消强(使用技能后被驱散)",
+   "mech": [
+    "heal",
+    "debuff",
+    "clearBuff",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "腐坏幽魔·克劳里菲160强攻 / 魔钰150 / 潜影灵蛇150 / 八岐大蛇强攻"
+   ],
+   "pets": [
+    "腐坏幽魔·克劳里菲",
+    "魔钰",
+    "潜影灵蛇",
+    "八岐大蛇"
+   ],
+   "why": "封属禁属性、消强断强化，只能纯攻击强攻；Boss受击伤害>2000会反手进入必暴必先并配月亮回血，拖久还有3%瞬杀和随机弱化，故用160/150技能尽量一回合秒杀，不给回血和反杀机会。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4034,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "自然神秘",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 500固伤; 减伤33.3%; 受击害怕控; 月亮; 消强(使用技能后被驱散)",
+   "mech": [
+    "heal",
+    "clearBuff",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "20血魔钰150强攻 / 潜影灵蛇150 / 邪灵王(摩哥斯)150强攻"
+   ],
+   "pets": [
+    "魔钰",
+    "潜影灵蛇"
+   ],
+   "why": "受击即害怕控场又带月亮回血，站场会被反复控住并回满，故用攻击技能速杀；500固伤与33.3%减伤下走魔钰(压至20血)/潜影灵蛇/邪灵王摩哥斯的150一回合强攻，绕开封属与消强，避免触发控场与回血。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4037,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "光飞行",
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 500固伤; 减伤33.3%; 必暴(100%暴击); 吸强(出手前偷强); 免疫威力<100的技能伤害",
+   "mech": [
+    "immunePower",
+    "stealBuff",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "送潘克多斯+西塔伦+万神寂灭·克罗诺斯+蒂朵自爆+星光·艾欧丽娅第五强攻 / 送潘克多斯+西塔伦+蒂朵+压血月照150"
+   ],
+   "pets": [
+    "潘克多斯",
+    "西塔伦",
+    "万神寂灭·克罗诺斯",
+    "蒂朵",
+    "星光·艾欧丽娅",
+    "月照星魂"
+   ],
+   "why": "免疫威力<100封死小威力磨血，封属+吸强+必暴又不允许站场站强化，因此先由潘克多斯、西塔伦、万神寂灭·克罗诺斯与蒂朵自爆铺增伤链，再让星光·艾欧丽娅第五或压血月照150这类≥100威力技能一回合爆发；两方案都是增伤铺垫后高威力秒杀，区别只在最终出手精灵。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4922,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 500固伤; 减伤33.3%; 必暴(100%暴击); 吸强(出手前偷强); 免疫威力>100的技能伤害",
+   "mech": [
+    "immunePower",
+    "stealBuff",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "送炮灰+星光·鲁斯王克制(弹伤)"
+   ],
+   "pets": [
+    "星光·鲁斯王"
+   ],
+   "why": "免疫威力>100封死正面对轰，吸强+必暴让存buff硬抗也不成立，故改走弹伤：送炮灰后星光·鲁斯王开\"克制\"反弹，把Boss必暴的高额输出回喂给Boss，绕开威力上限与吸强。"
+  }
+ ]
+}

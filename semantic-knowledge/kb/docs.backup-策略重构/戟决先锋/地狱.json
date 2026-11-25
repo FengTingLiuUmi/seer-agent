@@ -1,0 +1,158 @@
+{
+ "doc_id": "戟决先锋#地狱",
+ "factor": "戟决先锋",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 3618,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "神秘战斗",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 300固伤; 只吃暴击; 消强(驱散); 减伤16.7%",
+   "mech": [
+    "onlyCrit",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐自爆+强攻手 / 魔钰150强攻"
+   ],
+   "pets": [
+    "帝皇之御",
+    "魔钰",
+    "沉睡之眼",
+    "希瓦"
+   ],
+   "why": "致命在封属+只吃暴击：属性技被禁、非暴击几乎无伤。表姐(帝皇之御)自爆守御八方是攻击技能、不吃封属，给后续2只必先+必暴，一举破封属并满足只吃暴击，再接魔钰/沉睡之眼/希瓦强攻速杀。魔钰150是无需多手铺垫的单体高威力补刀；消强与300固伤靠不依赖强化的速杀规避。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 3595,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "草战斗",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 300固伤; 闪避(100%闪避); 消强(驱散); 减伤16.7%; 月亮有效",
+   "mech": [
+    "dodge",
+    "heal",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐自爆+强攻手 / 虫老·辛辛子第五强攻 / 赤虹仙凤150强攻"
+   ],
+   "pets": [
+    "帝皇之御",
+    "赤虹仙凤",
+    "艾欧丽娅",
+    "虫老",
+    "辛辛子",
+    "弗莱特"
+   ],
+   "why": "核心是封属+100%闪避：属性技被封、普攻又全miss。表姐自爆守御八方为攻击技能(不吃封属)，附带的必暴=伪必中能覆盖百闪，故后续强攻手必中必暴；虫老·辛辛子第五与赤虹仙凤150是不同强攻手路线，靠速杀规避300固伤。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 3599,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "火战斗",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 500固伤; 烧伤控(攻击技能100%烧伤); 消强(驱散); 减伤16.7%",
+   "mech": [
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "鲁斯王第五持续强攻 / 魔钰·月照强攻"
+   ],
+   "pets": [
+    "星光·鲁斯王",
+    "魔钰",
+    "月照星魂"
+   ],
+   "why": "致命在封属+烧伤控+500固伤：属性技被禁、攻击附带100%烧伤持续掉血。星光·鲁斯王以水系克制火战斗，用第五站场持续打出红伤；魔钰/月照星魂走高威力强攻，都靠速杀规避固伤与烧伤。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 3978,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "虫",
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 500固伤; 免疫特攻; 吸强(偷强); 清PP(攻击命中随机清1PP并断回合); 减伤33.3%",
+   "mech": [
+    "immuneSpecial",
+    "clearPP",
+    "stealBuff",
+    "breakTurn",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "送替死+表姐自爆+霍夫曼第五强攻(补刀/冥王断空破)"
+   ],
+   "pets": [
+    "帝皇之御",
+    "霍夫曼",
+    "冥王断空破",
+    "糖果皮皮"
+   ],
+   "why": "免疫特攻+封属+吸强+清PP叠加：特攻被免疫须用物攻手，封属限攻击技能，吸强/清PP又封死站场磨与强化。送替死吃清PP与吸强后，表姐自爆(攻击技能不吃封属)给必先+必暴，接霍夫曼第五物攻强攻；冥王断空破作补刀保底，速杀回避500固伤。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4857,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "冰暗影",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 500固伤; 免疫物攻; 吸强(偷强); 冰封控(攻击技能50%冰封); 减伤33.3%",
+   "mech": [
+    "immunePhysical",
+    "stealBuff",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐自爆+送蒂朵+金吉娜·塞娅第五 / 送火潘蒂朵西塔伦+月照150强攻"
+   ],
+   "pets": [
+    "帝皇之御",
+    "蒂朵",
+    "金吉娜",
+    "塞娅",
+    "月照星魂",
+    "潘克多斯"
+   ],
+   "why": "免疫物攻+封属+冰封控是核心：物攻被免疫须特攻手，封属限攻击技能，普攻50%冰封要抢在Boss出手前秒。表姐自爆+送蒂朵增伤后金吉娜·塞娅第五特攻强攻；另一套火潘(潘克多斯)+蒂朵+西塔伦叠增伤链再月照150特攻强攻，差异在单点第五与多手增伤链。"
+  }
+ ]
+}

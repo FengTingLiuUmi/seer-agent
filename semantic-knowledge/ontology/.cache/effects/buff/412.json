@@ -1,0 +1,1 @@
+{"desc": "{0}回合内有{1}%概率免疫对手攻击伤害，未触发则对手{btlvAll[2]}", "desc_tag": "btlvAll", "hash": "6f7439fb", "icon": [25], "id": 412, "tag": "免伤|弱化", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

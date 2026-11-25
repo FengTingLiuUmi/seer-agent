@@ -1,0 +1,237 @@
+{
+ "doc_id": "娜诺#地狱",
+ "factor": "娜诺",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4511,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "冰暗影",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 300固伤; 消强; 必暴; 随机弱化; 减伤16.7%",
+   "mech": [
+    "debuff",
+    "clearBuff",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    {
+     "text": "表姐+强攻手",
+     "source": "bili",
+     "plan": "表姐+强攻手",
+     "pets": [
+      "帝皇之御"
+     ],
+     "why": ""
+    },
+    {
+     "text": "典韦强攻",
+     "source": "bili",
+     "plan": "典韦强攻",
+     "pets": [
+      "典韦"
+     ],
+     "why": "典韦/圣灵谱尼/皮神单挑是自行站场或补刀的第二路线"
+    },
+    {
+     "text": "皮神单挑",
+     "source": "bili",
+     "plan": "皮神单挑",
+     "pets": [],
+     "why": ""
+    },
+    {
+     "text": "圣谱单挑",
+     "source": "bili",
+     "plan": "圣谱单挑",
+     "pets": [],
+     "why": ""
+    }
+   ],
+   "pets": [
+    "帝皇之御",
+    "圣灵谱尼",
+    "典韦"
+   ],
+   "why": "Boss 必先+封属+必暴，威胁在每回合300固伤与随机弱化拖久；表姐守御八方是攻击技能、不受封属影响，给强攻手必先+必暴抢先秒掉，规避 Boss 必暴与固伤消耗，消强/减伤16.7%在秒杀线内来不及生效。典韦/圣灵谱尼/皮神单挑是自行站场或补刀的第二路线。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4364,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "光神秘",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 300固伤; 消强; 睡眠(50%); 随机弱化",
+   "mech": [
+    "debuff",
+    "clearBuff",
+    "control",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage"
+   ],
+   "strategies": [
+    {
+     "text": "表姐+强攻手",
+     "source": "bili",
+     "plan": "表姐+强攻手",
+     "pets": [
+      "帝皇之御"
+     ],
+     "why": ""
+    },
+    {
+     "text": "星光·丽莎布布单挑(刷睡眠抗)",
+     "source": "bili",
+     "plan": "星光·丽莎布布单挑(刷睡眠抗)",
+     "pets": [
+      "星光·丽莎布布"
+     ],
+     "why": "星光·丽莎布布刷睡眠抗单挑则是靠抗性免疫睡眠后站场强攻/磨血的路线"
+    }
+   ],
+   "pets": [
+    "帝皇之御",
+    "星光·丽莎布布"
+   ],
+   "why": "这关致命点在50%概率睡眠控场叠加必先+封属；表姐守御八方(攻击技、不吃封属)给强攻手必先+必暴，被控前一击秒掉。星光·丽莎布布刷睡眠抗单挑则是靠抗性免疫睡眠后站场强攻/磨血的路线。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4641,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "虫",
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 500固伤; 消强; 护盾; 盾罩; 复活(20%); 减伤33.3%",
+   "mech": [
+    "shield",
+    "twoLife",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    {
+     "text": "月照150 / 卡莎盾体磨",
+     "source": "bili",
+     "plan": "月照150 / 卡莎盾体磨",
+     "pets": [
+      "卡莎"
+     ],
+     "why": "月照星魂150负责高伤害破盾并对复活命补刀，卡莎盾体磨走减伤/护盾站场，靠磨掉盾与两段生命来扛500固伤"
+    }
+   ],
+   "pets": [
+    "月照星魂",
+    "卡莎"
+   ],
+   "why": "Boss 开场护盾+盾罩并带减伤33.3%、复活20%，需要先破盾再输出；月照星魂150负责高伤害破盾并对复活命补刀，卡莎盾体磨走减伤/护盾站场，靠磨掉盾与两段生命来扛500固伤。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4643,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "圣灵神秘",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 500固伤; 两命; 复活后全属性+1; 免疫暴击; 吸强(偷强); 月亮; 闪避",
+   "mech": [
+    "dodge",
+    "twoLife",
+    "heal",
+    "selfBuff",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage"
+   ],
+   "strategies": [
+    {
+     "text": "月华单挑",
+     "source": "bili",
+     "plan": "月华单挑",
+     "pets": [
+      "月华"
+     ],
+     "why": "叠加两命、复活后全属性+1、吸强偷强、月亮回血与闪避，正对应该不堆强化、靠裸伤站场磨的思路——月华/圣灵谱尼用复苏回血扛500固伤与月亮，控裸伤持续磨掉两命，'卡裸伤'即此"
+    },
+    {
+     "text": "圣谱复苏磨(卡裸伤)",
+     "source": "bili",
+     "plan": "圣谱复苏磨(卡裸伤)",
+     "pets": [],
+     "why": ""
+    }
+   ],
+   "pets": [
+    "月华",
+    "圣灵谱尼"
+   ],
+   "why": "本关免疫暴击，依赖必暴的表姐流直接失效；叠加两命、复活后全属性+1、吸强偷强、月亮回血与闪避，正对应该不堆强化、靠裸伤站场磨的思路——月华/圣灵谱尼用复苏回血扛500固伤与月亮，控裸伤持续磨掉两命，'卡裸伤'即此。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4814,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "战斗",
+   "boss_hp": 20000,
+   "traits": "必先; 封属; 500固伤; 吸强(偷强); 闪避(100%); 疲惫",
+   "mech": [
+    "dodge",
+    "stealBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage"
+   ],
+   "strategies": [
+    {
+     "text": "表姐+蒂朵+强攻",
+     "source": "bili",
+     "plan": "表姐+蒂朵+强攻",
+     "pets": [
+      "蒂朵",
+      "帝皇之御"
+     ],
+     "why": "引爆或守御八方给必暴即可把命中拉满(伪必中，覆盖闪避，不必强求必中)，再叠蒂朵增伤链堆红伤，抢在疲惫生效与偷强反哺前秒掉2万血"
+    },
+    {
+     "text": "引爆+强攻手",
+     "source": "bili",
+     "plan": "引爆+强攻手",
+     "pets": [],
+     "why": ""
+    }
+   ],
+   "pets": [
+    "帝皇之御",
+    "蒂朵"
+   ],
+   "why": "核心是100%闪避+疲惫控场+吸强偷强；引爆或守御八方给必暴即可把命中拉满(伪必中，覆盖闪避，不必强求必中)，再叠蒂朵增伤链堆红伤，抢在疲惫生效与偷强反哺前秒掉2万血。"
+  }
+ ],
+ "source_urls": [
+  "https://www.bilibili.com/video/BV1qwWgzNEpV/",
+  "https://www.bilibili.com/video/BV1gyWVzPEfh/"
+ ]
+}

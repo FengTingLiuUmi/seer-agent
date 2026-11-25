@@ -1,0 +1,1 @@
+{"desc": "{0}回合内对手使用威力不高于{1}的攻击技能时令对手{abst[2]}", "desc_tag": "abst", "hash": "5ad72397", "icon": [14], "id": 741, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,1 @@
+{"desc": "{0}回合内每回合{1}%对手属性技能无效，未触发则下{2}次受到的攻击伤害减少{3}%", "desc_tag": null, "hash": "6d10128e", "icon": [10], "id": 530, "tag": "技能无效|减伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

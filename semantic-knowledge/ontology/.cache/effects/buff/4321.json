@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若自身不为满体力，则自身有等同于当前体力百分比的概率使自身当回合免疫受到的异常状态", "desc_tag": null, "hash": "a316e02", "icon": [22], "id": 4321, "tag": "免疫异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

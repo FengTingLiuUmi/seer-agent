@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若前3个回合中对手使用的攻击技能均被无效，则当回合自身攻击技能100%秒杀对手且重置该效果的记录", "desc_tag": null, "hash": "270b2837", "icon": [21], "id": 3387, "tag": "秒杀", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,1 @@
+{"desc": "{0}回合内若使用攻击技能则{wSidesA[1]}的{btlvAll[2]}", "desc_tag": "wSidesA, btlvAll", "hash": "2fc2a632", "icon": [20], "id": 734, "tag": "强化", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

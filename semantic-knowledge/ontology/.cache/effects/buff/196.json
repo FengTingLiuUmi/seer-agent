@@ -1,0 +1,1 @@
+{"desc": "{0}回合内若对手恢复体力则自身也恢复等量体力的{1}/5倍", "desc_tag": null, "hash": "eb50d4b2", "icon": [31], "id": 196, "tag": "恢复", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

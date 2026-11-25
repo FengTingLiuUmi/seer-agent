@@ -1,0 +1,1 @@
+{"desc": "{0}回合内，每回合额外附加{1}%概率令对手{abst[2]}", "desc_tag": "abst", "hash": "dfc8d151", "icon": [14], "id": 52, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

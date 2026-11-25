@@ -1,0 +1,1 @@
+{"desc": "回合开始时若自身体力低于对手则所有技能额外先制+1", "desc_tag": null, "hash": "2b172cd4", "icon": [6], "id": 3828, "tag": "先制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

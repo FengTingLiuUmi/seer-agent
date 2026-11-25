@@ -1,0 +1,662 @@
+# -*- coding: utf-8 -*-
+"""seer_kb_mcp.py —— 赛尔号 PVE 本体查询的本地 MCP stdio 服务（无第三方依赖，仅 rdflib）。
+对外暴露 5 个工具：nick / boss / role / mult / ban。
+协议：MCP stdio（换行分隔的 JSON-RPC 2.0）。stdout 只发协议消息，日志走 stderr。
+"""
+import os, sys, json
+from decimal import Decimal
+
+HERE = os.path.dirname(os.path.abspath(__file__)).replace("\\", "/")
+sys.path.insert(0, HERE)  # 便于 import type_multiplier
+sys.path.insert(0, os.path.join(HERE, "..", "kb").replace("\\", "/"))  # 便于 import plan/mechanisms
+
+from rdflib import Graph, RDF, RDFS, Namespace, SKOS, Literal, URIRef
+import glob, re  # 异常状态模块（status 工具）用
+
+SEER = Namespace("http://example.org/seer#")
+PVE = Namespace("http://example.org/seer/pve#")
+
+_G = None
+_G_MTIME = None
+
+
+def graph():
+    """按 mtime 自动重载：本体重建后无需重启 MCP 进程。"""
+    global _G, _G_MTIME
+    path = os.path.join(HERE, "seer-all.owl")
+    try:
+        mt = os.path.getmtime(path)
+    except OSError:
+        mt = None
+    if _G is None or mt != _G_MTIME:
+        g = Graph()
+        g.parse(path, format="xml")
+        _G, _G_MTIME = g, mt
+    return _G
+
+
+def ln(u):
+    return str(u).rsplit("#", 1)[-1]
+
+
+def label(node):
+    for o in graph().objects(node, RDFS.label):
+        return str(o)
+    return ln(node)
+
+
+def pyval(o):
+    if isinstance(o, Literal):
+        v = o.toPython()
+    else:
+        v = str(o)
+    if isinstance(v, Decimal):
+        return float(v)
+    return v
+
+
+def id_of(node):
+    v = graph().value(node, SEER.seerapiId)
+    return str(v) if v is not None else None
+
+
+def type_name(tc):
+    els = [label(e) for e in graph().objects(tc, SEER.combinationOf)]
+    return "/".join(els) if els else label(tc)
+
+
+def pet_brief(pet):
+    rows = [label(r) for r in graph().objects(pet, PVE.hasRole)]
+    tcs = [type_name(t) for t in graph().objects(pet, SEER.hasTypeCombination)]
+    note = graph().value(pet, RDFS.comment)
+    return {
+        "id": id_of(pet),
+        "label": label(pet),
+        "type": tcs,
+        "roles": rows,
+        "note": str(note) if note else "",
+    }
+
+
+# =============== 异常状态（seer-status.ttl 模块） ===============
+# 只读辅助：不改变任何既有工具的返回结构。ontology 里没有 seer:StatusAilment 个
+# 体时（即尚未合并 seer-status.ttl），所有函数退化为空结果，既有 7 个工具行为不变。
+
+CATEGORY_IRI = {
+    "控制": SEER.ControlStatus, "控场": SEER.ControlStatus, "control": SEER.ControlStatus,
+    "持续伤害": SEER.DamageOverTimeStatus, "持续": SEER.DamageOverTimeStatus,
+    "dot": SEER.DamageOverTimeStatus,
+    "削弱": SEER.WeakenStatus, "weak": SEER.WeakenStatus, "weaken": SEER.WeakenStatus,
+    "附属": SEER.AuxiliaryStatus, "aux": SEER.AuxiliaryStatus,
+    "限制": SEER.RestrictStatus, "restrict": SEER.RestrictStatus,
+}
+
+STATUS_DOCS = os.path.join(HERE, "..", "kb", "docs").replace("\\", "/")
+
+
+def status_inds(cat_iri=None):
+    """所有异常状态个体（可按类别类过滤）。"""
+    g = graph()
+    out = []
+    for s in set(g.subjects(RDF.type, SEER.StatusAilment)):
+        if cat_iri is not None and (s, RDF.type, cat_iri) not in g:
+            continue
+        out.append(s)
+    out.sort(key=lambda x: (label(x), ln(x)))
+    return out
+
+
+def _b(g, s, pred):
+    """单个字面量 → python 值；无则 None。"""
+    v = g.value(s, pred)
+    return pyval(v) if v is not None else None
+
+
+def _strs(g, s, pred):
+    return [str(o) for o in g.objects(s, pred)]
+
+
+def status_brief(s):
+    g = graph()
+    cats = []
+    for o in g.objects(s, SEER.statusCategory):
+        c = str(o)
+        if c not in cats:
+            cats.append(c)
+    return {
+        "name": str(g.value(s, SEER.statusName) or label(s)),
+        "category": cats,
+        "isControl": _b(g, s, SEER.isControl),
+        "bossStageCount": _b(g, s, SEER.bossStageCount),
+        "pveRelevant": _b(g, s, SEER.pveRelevant),
+        "seerapiId": _b(g, s, SEER.seerapiId),
+        "iri": str(s),
+    }
+
+
+def _status_keys(s):
+    """状态名 + 全部俗称（用于文本/查询匹配）。"""
+    g = graph()
+    keys = [str(g.value(s, SEER.statusName) or label(s))]
+    for o in g.objects(s, SEER.statusAlias):
+        k = str(o)
+        if k and k not in keys:
+            keys.append(k)
+    return keys
+
+
+def _boss_stages(s):
+    """状态 → 会施加它的 Boss 关卡（因子/难度/关号/敌人）。"""
+    g = graph()
+    rows = []
+    for en in g.objects(s, SEER.inflictedByEnemy):
+        st = next(iter(g.subjects(PVE.hasEnemy, en)), None)
+        fac = next(iter(g.subjects(SEER.hasStage, st)), None) if st is not None else None
+        d = g.value(st, PVE.difficulty) if st is not None else None
+        n = pyval(g.value(st, PVE.stageNumber)) if st is not None else None
+        rows.append({"factor": label(fac) if fac is not None else label(en),
+                     "difficulty": label(d) if d is not None else "",
+                     "stage": n,
+                     "enemy": label(en)})
+    rows.sort(key=lambda r: (r["factor"], r["difficulty"], r["stage"] or 0))
+    return rows
+
+
+def status_detail(s):
+    """一个状态的完整字段（缺失的字段直接不出现；stackable 单独给 None 表示 unknown）。"""
+    g = graph()
+    d = status_brief(s)
+    for key, pred in [("alias", SEER.statusAlias), ("effect", SEER.effect),
+                      ("duration", SEER.duration), ("applyCondition", SEER.applyCondition),
+                      ("cureMethod", SEER.cureMethod), ("immuneRule", SEER.immuneRule),
+                      ("officialCategory", SEER.officialCategory),
+                      ("counterAdvice", SEER.counterAdvice),
+                      ("appliedBySkill", SEER.appliedBySkill),
+                      ("sources", SEER.dataSource)]:
+        vals = _strs(g, s, pred)
+        if vals:
+            d[key] = vals if len(vals) > 1 else vals[0]
+    st = g.value(s, SEER.stackable)
+    d["stackable"] = bool(st.toPython()) if st is not None else None
+    if d["stackable"] is None:
+        d["stackableNote"] = "unknown：SeerAPI 无此字段，本体不做推断"
+    pets = [{"id": id_of(p), "label": label(p)} for p in g.objects(s, SEER.inflictedByPet)]
+    if pets:
+        pets.sort(key=lambda x: (x["label"], str(x["id"])))
+        d["appliedByPet"] = pets
+    bs = _boss_stages(s)
+    if bs:
+        d["bossStages"] = bs
+    return d
+
+
+def status_detail_from_text(text):
+    """Boss 机制文本 → 命中的异常状态明细（用于 boss 工具的 statusDetail）。"""
+    if not text:
+        return []
+    out = []
+    prob = re.compile(r"(\d{1,3}\s*%|100%|高概率|大概率|概率)")
+    lvl = re.compile(r"(高级|低级)")
+    for s in status_inds():
+        keys = [k for k in _status_keys(s) if len(k) >= 1]
+        hit = [k for k in keys if k in text]
+        if not hit:
+            continue
+        segs = []
+        for seg in re.split(r"[;；]", text):
+            seg = seg.strip()
+            if seg and any(k in seg for k in keys):
+                segs.append(seg)
+        joined = "；".join(segs) if segs else text
+        b = status_brief(s)
+        item = {"status": b["name"], "category": b["category"], "isControl": b["isControl"],
+                "effect": str(graph().value(s, SEER.effect) or "")}
+        cm = graph().value(s, SEER.cureMethod)
+        if cm:
+            item["cureMethod"] = str(cm)
+        ir = graph().value(s, SEER.immuneRule)
+        if ir:
+            item["immuneRule"] = str(ir)
+        item["matched"] = segs[:3]
+        m = prob.search(joined)
+        if m:
+            item["chance"] = m.group(1).replace(" ", "")
+        m2 = lvl.search(joined)
+        if m2:
+            item["level"] = m2.group(1)
+        item["iri"] = b["iri"]
+        out.append(item)
+    out.sort(key=lambda x: (not x["isControl"], x["status"]))
+    return out
+
+
+def _control_by_status():
+    """docs 现算 control 项的状态细分：{状态名: {n, n_control}} + 说明。不写 kb/stats.json。"""
+    g = graph()
+    names = []
+    for s in status_inds():
+        n = str(g.value(s, SEER.statusName) or label(s))
+        if n not in [x for x in names]:
+            names.append(n)
+    if not names:
+        return {}, None
+    n = {k: 0 for k in names}
+    nc = {k: 0 for k in names}
+    total = ctrl_total = unnamed = 0
+    for fp in glob.glob(os.path.join(STATUS_DOCS, "*", "*.json")):
+        if fp.endswith("catalog.json"):
+            continue
+        try:
+            d = json.load(open(fp, encoding="utf-8"))
+        except Exception:
+            continue
+        for st in d.get("stages", []):
+            tr = st.get("traits") or ""
+            if not tr:
+                continue
+            total += 1
+            isctrl = "control" in (st.get("mech") or [])
+            if isctrl:
+                ctrl_total += 1
+            hit = False
+            for k in names:
+                if k in tr:
+                    hit = True
+                    n[k] += 1
+                    if isctrl:
+                        nc[k] += 1
+            if isctrl and not hit:
+                unnamed += 1
+    out = {}
+    for k in sorted(names, key=lambda x: (-n[x], x)):
+        if n[k] > 0 or nc[k] > 0:
+            out[k] = {"n": n[k], "n_control": nc[k]}
+    if unnamed:
+        out["未具名控场"] = {"n": unnamed, "n_control": unnamed}
+    note = ("n=全库 %d 关中 traits 文本命中该状态名的关数；n_control=其中 mech 含 control 的关数"
+            "（全库 control 关 %d）；同一关可命中多个状态，故各值不可加总、也不等于 %d；"
+            "只列 n>0 的状态，其余状态未在 Boss 文本中出现。" % (total, ctrl_total, ctrl_total))
+    return out, note
+
+
+def tool_status(name=None, category=None):
+    g = graph()
+    if not status_inds():
+        return {"error": "本体未含异常状态模块（seer:StatusAilment 无个体）：需先把 seer-status.ttl / "
+                         "seer-status-abox.ttl 合并进 seer-all.owl"}
+    cat_iri = None
+    if category:
+        cat_iri = CATEGORY_IRI.get(str(category).strip())
+        if cat_iri is None:
+            return {"error": f"未知类目：{category}（用 控制/持续伤害/削弱/附属/限制，或 control/dot/weaken/aux/restrict）"}
+    cand = status_inds(cat_iri)
+    if not name:
+        return {"count": len(cand),
+                "statuses": [status_brief(s) for s in cand],
+                "hint": "传 name（状态名/俗称/技能名/精灵名）可拿完整字段；传 category 只按类目过滤。"}
+    nm = str(name).strip()
+
+    def match(kind, nodes):
+        return [{"kind": kind, "detail": status_detail(s)} for s in nodes]
+
+    exact = [s for s in cand if nm in _status_keys(s) or nm == ln(s)]
+    if exact:
+        return {"query": nm, "matches": match("status", exact)}
+    sub = [s for s in cand if any(nm in k for k in _status_keys(s))]
+    if sub:
+        return {"query": nm, "matches": match("status", sub)}
+    sk = [s for s in cand if any(nm in str(o) for o in g.objects(s, SEER.appliedBySkill))]
+    if sk:
+        return {"query": nm, "matches": match("skill", sk),
+                "note": "按施加技能名匹配（appliedBySkill）"}
+    pets = set()
+    for p in g.subjects(RDF.type, SEER.Pet):
+        if nm in label(p) or nm == id_of(p) or (p, SKOS.altLabel, Literal(nm)) in g:
+            pets.add(p)
+    if pets:
+        hit = [s for s in cand if set(g.objects(s, SEER.inflictedByPet)) & pets]
+        if hit:
+            return {"query": nm, "matches": match("pet", hit),
+                    "note": "按施加者精灵（Boss 物种）匹配"}
+    return {"query": nm, "matches": [],
+            "hint": "未命中状态名/俗称/技能名/精灵名。可先用 nick 消歧精灵名，或直接传 category 列出类目。"}
+
+
+# ---------------- 工具实现 ----------------
+
+def tool_nick(name):
+    g = graph()
+    seen, out = set(), []
+    for s, o in g.subject_objects(SKOS.altLabel):
+        if str(o) == name and s not in seen:
+            seen.add(s)
+            out.append(pet_brief(s))
+    if not out:  # 回退：label 精确匹配 / seerapi id（禁止子串，避免"伊芙"错配"伊芙莉莎"）
+        for s in g.subjects(RDF.type, SEER.Pet):
+            labels = [str(o) for o in g.objects(s, RDFS.label)]
+            if name == id_of(s) or name in labels:
+                if s not in seen:
+                    seen.add(s)
+                    out.append(pet_brief(s))
+    return {"query": name, "matches": out}
+
+
+DIFF_IRI = {
+    "简单": PVE.diff_easy, "easy": PVE.diff_easy, "1": PVE.diff_easy,
+    "困难": PVE.diff_normal, "normal": PVE.diff_normal, "2": PVE.diff_normal,
+    "地狱": PVE.diff_hard, "hard": PVE.diff_hard, "3": PVE.diff_hard,
+}
+
+
+def find_factor(name):
+    g = graph()
+    for f in g.subjects(RDF.type, SEER.Factor):
+        if name in label(f) or name == ln(f):
+            return f
+    return None
+
+
+ENEMY_FIELDS = ["bossHp", "bossTrait", "clearsBuff", "stealsBuff", "clearsPP",
+                "turnFixedDamage", "rawCap", "rawCapMode", "immunePanelOver", "shield",
+                "multiLife", "immuneSpecial", "immunePhysical", "onlyCrit", "alwaysCrit",
+                "selfBuffPerTurn", "debuffUsPerTurn", "control", "dodge",
+                "bossAtkScale", "bossDefScale", "bossIsSinglePet"]
+
+_RACE_FIELDS = [("hp", SEER.baseHp), ("atk", SEER.baseAtk), ("def", SEER.baseDef),
+                ("spAtk", SEER.baseSpAtk), ("spDef", SEER.baseSpDef), ("spd", SEER.baseSpd)]
+
+
+def enemy_brief(enemy):
+    g = graph()
+    d = {"label": label(enemy)}
+    tc = g.value(enemy, PVE.bossTypeCombination)
+    if tc:
+        d["type"] = type_name(tc)
+    for f in ENEMY_FIELDS:
+        v = g.value(enemy, PVE[f])
+        if v is not None:
+            d[f] = pyval(v)
+    bp = g.value(enemy, PVE.bossSpecies)
+    if bp:
+        race = {}
+        for k, pred in _RACE_FIELDS:
+            v = g.value(bp, pred)
+            if v is not None:
+                race[k] = pyval(v)
+        d["bossPet"] = {"id": id_of(bp), "label": label(bp), "race": race}
+    cb = [{"id": id_of(p), "label": label(p)} for p in g.objects(enemy, PVE.counteredBy)]
+    if cb:
+        d["counteredBy"] = cb
+    src = g.value(enemy, RDFS.comment)
+    if src:
+        d["source"] = str(src)
+    # 只增：机制文本命中具体异常状态名时追加 statusDetail；没命中就不加这个字段
+    sd = status_detail_from_text(str(g.value(enemy, PVE.bossTrait) or ""))
+    if sd:
+        d["statusDetail"] = sd
+    return d
+
+
+def tool_boss(factor, difficulty):
+    g = graph()
+    fac = find_factor(factor)
+    if fac is None:
+        return {"error": f"未找到因子：{factor}"}
+    diff = DIFF_IRI.get(difficulty)
+    if diff is None:
+        return {"error": f"未知难度：{difficulty}（用 简单/困难/地狱 或 easy/normal/hard）"}
+
+    stages = []
+    for st in g.objects(fac, SEER.hasStage):
+        if g.value(st, PVE.difficulty) != diff:
+            continue
+        n = pyval(g.value(st, PVE.stageNumber))
+        en = g.value(st, PVE.hasEnemy)
+        stages.append({"stage": n, "label": label(st),
+                       "boss": enemy_brief(en) if en else None})
+    stages.sort(key=lambda x: (x["stage"] if isinstance(x["stage"], int) else 0))
+
+    banned = []
+    for fd in g.subjects(RDF.type, PVE.FactorDifficulty):
+        if g.value(fd, PVE.forFactor) == fac and g.value(fd, PVE.difficulty) == diff:
+            banned = [{"id": id_of(p), "label": label(p)} for p in g.objects(fd, PVE.bannedPet)]
+
+    return {"factor": label(fac), "difficulty": difficulty,
+            "stages": stages, "bannedPet": banned}
+
+
+ROLE_IRI = {
+    "attacker": PVE.attacker, "强攻": PVE.attacker, "秒杀": PVE.attacker, "输出": PVE.attacker,
+    "support": PVE.support, "辅助": PVE.support,
+    "tank": PVE.tank, "站场": PVE.tank, "坦克": PVE.tank,
+    "reflect": PVE.reflect, "弹伤": PVE.reflect, "反伤": PVE.reflect,
+    "firstStrike": PVE.firstStrike, "必先": PVE.firstStrike, "先制": PVE.firstStrike,
+}
+
+
+def tool_role(role):
+    r = ROLE_IRI.get(role)
+    if r is None:
+        return {"error": f"未知定位：{role}（attacker/support/tank/reflect/firstStrike）"}
+    pets = [pet_brief(p) for p in graph().subjects(PVE.hasRole, r)]
+    return {"role": ln(r), "pets": pets}
+
+
+import type_multiplier as tm
+
+
+def split_type(s):
+    """把 '机械战斗'/'机械·战斗'/'机械/战斗'/['机械','战斗'] 拆成单属性名列表。"""
+    if isinstance(s, (list, tuple)):
+        names = [str(x) for x in s]
+    else:
+        s = str(s).strip()
+        for sep in ["/", "·", "＋", "+", "-", "、", "／"]:
+            if sep in s:
+                names = [x for x in [t.strip() for t in s.split(sep)] if x]
+                break
+        else:
+            names = [s]
+    # 若整串仍未拆开（“机械战斗”），用已知属性名贪心前缀切分
+    resolved = []
+    for t in names:
+        t2 = t.rstrip("系")
+        if t2 in tm.NAME2EID:
+            resolved.append(t2)
+            continue
+        # 贪心切分：优先匹配更长的已知属性名
+        parts, i = [], 0
+        known = sorted(tm.NAME2EID, key=len, reverse=True)
+        while i < len(t2):
+            hit = None
+            for k in known:
+                if t2.startswith(k, i):
+                    hit = k
+                    break
+            if not hit:
+                break
+            parts.append(hit)
+            i += len(hit)
+        if parts and i == len(t2):
+            resolved.extend(parts)
+        else:
+            resolved.append(t2)  # 未知，交给 by_names 报 None
+    return resolved
+
+
+def tool_mult(skill_type, boss_type):
+    a = split_type(skill_type)
+    d = split_type(boss_type)
+    m = tm.by_names(a, d)
+    if m is None:
+        return {"error": f"无法解析属性：攻={skill_type} 守={boss_type}",
+                "attackElements": a, "defendElements": d}
+    return {
+        "skillType": skill_type, "bossType": boss_type,
+        "attackElements": a, "defendElements": d,
+        "multiplier": m,
+        "stab": "本系判定=宠物属性组合与技能属性组合【集合完全相等】时 ×1.5；双属性精灵需双属性技能才吃本系。",
+    }
+
+
+DIFF_CN = {"easy": "简单", "normal": "困难", "hard": "地狱", "简单": "简单", "困难": "困难", "地狱": "地狱"}
+
+
+def tool_ban(factor, difficulty):
+    g = graph()
+    fac = find_factor(factor)
+    if fac is None:
+        # 因子不在本体的 33 个 abox 里时，回退到 plan 层读 SSOT 的 ban 文本
+        try:
+            import plan as _p
+            doc = _p.load_doc(factor, DIFF_CN.get(difficulty, difficulty))
+            if doc and doc.get("ban"):
+                return {"factor": factor, "difficulty": difficulty, "bannedPet": doc["ban"],
+                        "note": "SSOT 文本禁用表(非本体 seerapiId)"}
+            return {"factor": factor, "difficulty": difficulty, "bannedPet": []}
+        except Exception as e:
+            return {"error": f"未找到因子：{factor} ({e})"}
+    diff = DIFF_IRI.get(difficulty)
+    if diff is None:
+        return {"error": f"未知难度：{difficulty}"}
+    banned = []
+    for fd in g.subjects(RDF.type, PVE.FactorDifficulty):
+        if g.value(fd, PVE.forFactor) == fac and g.value(fd, PVE.difficulty) == diff:
+            banned = [{"id": id_of(p), "label": label(p)} for p in g.objects(fd, PVE.bannedPet)]
+    return {"factor": label(fac), "difficulty": difficulty, "bannedPet": banned}
+
+
+def tool_plan(factor, difficulty, stage):
+    try:
+        import plan as _p
+    except Exception as e:
+        return {"error": f"plan 模块不可用：{e}"}
+    r = _p.plan(factor, DIFF_CN.get(difficulty, difficulty), int(stage))
+    # 精简 R1 整块里的 mech 原始 slug 与冗余字段，保留可读性
+    r1 = r.get("r1_exact")
+    if isinstance(r1, dict):
+        r["r1_exact"] = {k: r1[k] for k in ("doc_id", "factor", "difficulty", "ban", "tids", "stages") if k in r1}
+    return r
+
+
+def tool_stats():
+    import json as _j
+    p = os.path.join(HERE, "..", "kb", "stats.json").replace("\\", "/")
+    try:
+        st = _j.load(open(p, encoding="utf-8"))
+    except Exception as e:
+        return {"error": f"stats 不可用：{e}"}
+    # 只增：control 项追加 by_status 细分（sleep n=? / 害怕 n=? …）。原 n / df_pct 不动，
+    # 其它键不动；本体没有异常状态模块时这一整段直接跳过，输出与旧版逐字节一致。
+    df = st.get("df")
+    if isinstance(df, dict) and isinstance(df.get("control"), dict):
+        try:
+            bs, note = _control_by_status()
+        except Exception:
+            bs, note = {}, None
+        if bs:
+            df["control"]["by_status"] = bs
+            df["control"]["by_status_note"] = note
+    return {"default_mechs": st.get("default_mechs"), "cold_start_hints": st.get("cold_start_hints"), "df": st.get("df")}
+
+
+TOOLS = [
+    {"name": "nick", "description": "昵称消歧：把「潘/火潘/草潘/冰潘/王哈/艾欧/鲁斯王/丽莎/村长/眠酱」等社区简称解析成规范精灵(id+属性+定位+机制备注)。",
+     "inputSchema": {"type": "object", "properties": {"name": {"type": "string", "description": "社区简称 / 精灵名 / seerapi ID"}}, "required": ["name"]}},
+    {"name": "boss", "description": "查某因子某难度的逐关 Boss 硬门(属性/血量/免疫特攻/只吃暴击/多命/固伤/裸伤上限/面板免疫/护盾/清PP/吸强/消强/控场/闪避等) + 每关反制精灵 counteredBy + 禁用表。",
+     "inputSchema": {"type": "object", "properties": {
+         "factor": {"type": "string", "description": "因子/精灵名，如 佩洛瑟斯、伊塔回溯型"},
+         "difficulty": {"type": "string", "description": "简单/困难/地狱 或 easy/normal/hard"}},
+         "required": ["factor", "difficulty"]}},
+    {"name": "role", "description": "按 PVE 定位列出精灵池：attacker=强攻 / support=辅助 / tank=站场 / reflect=弹伤 / firstStrike=必先。",
+     "inputSchema": {"type": "object", "properties": {"role": {"type": "string", "description": "attacker/support/tank/reflect/firstStrike 或中文"}}, "required": ["role"]}},
+    {"name": "mult", "description": "属性克制倍率：技能属性(攻方) vs Boss属性(守方)，支持单/双属性与组合写法，返回精确倍率 + 本系 STAB(×1.5) 规则。",
+     "inputSchema": {"type": "object", "properties": {
+         "skill_type": {"type": "string", "description": "攻击技能属性，如 机械 / 机械战斗 / 机械·战斗 / 圣灵自然"},
+         "boss_type": {"type": "string", "description": "Boss 属性组合，如 机械 / 机械战斗"}},
+         "required": ["skill_type", "boss_type"]}},
+    {"name": "ban", "description": "查因子×难度的禁用精灵表(bannedPet)。",
+     "inputSchema": {"type": "object", "properties": {
+         "factor": {"type": "string"}, "difficulty": {"type": "string", "description": "简单/困难/地狱 或 easy/normal/hard"}},
+         "required": ["factor", "difficulty"]}},
+    {"name": "plan", "description": "因子关打法检索：R1 精确(因子×难度整块) + R2/R3 相似关召回(机制/数值模板) + RRF 融合 + 硬门缺口标注；无攻略时给冷启动先验。",
+     "inputSchema": {"type": "object", "properties": {
+         "factor": {"type": "string", "description": "因子/精灵名"},
+         "difficulty": {"type": "string", "description": "简单/困难/地狱 或 easy/normal/hard"},
+         "stage": {"type": "integer", "description": "关号 1..5"}},
+         "required": ["factor", "difficulty", "stage"]}},
+    {"name": "status", "description": "查异常状态（睡眠/害怕/麻痹/烧伤/中毒/冰封/焚烬/石化/诅咒/疲惫…）的完整属性：官方效果、是否控场、持续回合、施加条件与概率、解除方式、免疫规则、会施加它的技能/精灵、会施加它的 Boss 关卡、反制建议。name 可传状态名或俗称（冰冻/毒）或技能名（昏睡之舞）或精灵名；category 可传 控制/持续伤害/削弱/附属/限制。",
+     "inputSchema": {"type": "object", "properties": {
+         "name": {"type": "string", "description": "状态名/俗称/技能名/精灵名，如 睡眠、冰冻、昏睡之舞、佩洛瑟斯"},
+         "category": {"type": "string", "description": "控制 / 持续伤害 / 削弱 / 附属 / 限制（或 control/dot/weaken/aux/restrict）"}},
+         "required": []}},
+    {"name": "stats", "description": "机制占比统计：默认机制(必先/封属/固伤等) + 每关 top 非默认机制(冷启动先验) + 各机制 df。",
+     "inputSchema": {"type": "object", "properties": {}, "required": []}},
+]
+
+HANDLERS = {"nick": tool_nick, "boss": tool_boss, "role": tool_role, "mult": tool_mult,
+            "ban": tool_ban, "plan": tool_plan, "stats": tool_stats, "status": tool_status}
+
+
+def call_tool(name, args):
+    fn = HANDLERS.get(name)
+    if fn is None:
+        raise ValueError(f"未知工具 {name}")
+    # 只喂声明的参数，忽略多余，避免意外
+    return fn(**args)
+
+
+# ---------------- MCP stdio 主循环 ----------------
+
+def handle(msg):
+    method = msg.get("method")
+    mid = msg.get("id")
+    params = msg.get("params") or {}
+    try:
+        if method == "initialize":
+            ver = params.get("protocolVersion", "2024-11-05")
+            return {"jsonrpc": "2.0", "id": mid, "result": {
+                "protocolVersion": ver,
+                "capabilities": {"tools": {}},
+                "serverInfo": {"name": "seer-kb", "version": "1.0.0"}}}
+        if method == "notifications/initialized":
+            return None
+        if method == "ping":
+            return {"jsonrpc": "2.0", "id": mid, "result": {}}
+        if method == "tools/list":
+            return {"jsonrpc": "2.0", "id": mid, "result": {"tools": TOOLS}}
+        if method == "tools/call":
+            name = params.get("name")
+            args = params.get("arguments") or {}
+            try:
+                result = call_tool(name, args)
+                text = json.dumps(result, ensure_ascii=False, indent=2)
+                return {"jsonrpc": "2.0", "id": mid, "result": {
+                    "content": [{"type": "text", "text": text}], "isError": False}}
+            except Exception as e:
+                return {"jsonrpc": "2.0", "id": mid, "result": {
+                    "content": [{"type": "text", "text": f"ERROR: {e}"}], "isError": True}}
+    except Exception as e:
+        return {"jsonrpc": "2.0", "id": mid, "error": {"code": -32603, "message": str(e)}}
+    return None  # 其它通知，不回应
+
+
+def main():
+    sys.stderr.write("[seer-kb] MCP stdio server starting\n")
+    sys.stderr.flush()
+    for line in sys.stdin:
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            msg = json.loads(line)
+        except Exception:
+            continue
+        resp = handle(msg)
+        if resp is not None:
+            sys.stdout.write(json.dumps(resp, ensure_ascii=False) + "\n")
+            sys.stdout.flush()
+
+
+if __name__ == "__main__":
+    main()

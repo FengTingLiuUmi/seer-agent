@@ -1,0 +1,1 @@
+{"desc": "下{0}次受到技能伤害时，若伤害高于{1}，则自身主动恢复全部体力", "desc_tag": null, "hash": "eb92a4a", "icon": [31], "id": 578, "tag": "恢复", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

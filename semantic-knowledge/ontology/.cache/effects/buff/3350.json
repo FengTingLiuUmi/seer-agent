@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若敌我双方中任意一方处于能力提升状态则自身所有技能先制+{0}", "desc_tag": null, "hash": "d5af053d", "icon": [6], "id": 3350, "tag": "先制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

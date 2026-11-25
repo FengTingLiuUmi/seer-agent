@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若自身体力低于对手则当回合50%闪避对手攻击", "desc_tag": null, "hash": "fe9b8178", "icon": [16], "id": 3557, "tag": "闪避", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

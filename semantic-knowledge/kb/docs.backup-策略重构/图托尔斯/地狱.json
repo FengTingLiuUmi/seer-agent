@@ -1,0 +1,135 @@
+{
+ "doc_id": "图托尔斯#地狱",
+ "factor": "图托尔斯",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4294,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "普通",
+   "boss_hp": 6000,
+   "traits": "先制+3; 220固伤; 消强; 免疫暴击",
+   "mech": [
+    "clearBuff",
+    "firstStrike",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "残血魔钰150大招必先强攻+潜能灵蛇补刀 / 四九圣尊磨"
+   ],
+   "pets": [
+    "魔钰",
+    "潜能灵蛇",
+    "四九圣尊"
+   ],
+   "why": "Boss免疫暴击，必暴/引爆无效，只能用纯强攻或站场磨；消强使打手不能依赖自身强化，故魔钰残血150大招直接压血、潜能灵蛇补刀，另备四九圣尊站场磨；220点固伤要求保证续航。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4296,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "火光",
+   "boss_hp": 8000,
+   "traits": "先制+3; 220固伤; 消强; 受暴击回满血",
+   "mech": [
+    "heal",
+    "clearBuff",
+    "bossCrit",
+    "firstStrike",
+    "fixedDamage"
+   ],
+   "strategies": [
+    "千裳单挑(先三消强+万物之眸回血+第五)"
+   ],
+   "pets": [
+    "千裳"
+   ],
+   "why": "火光Boss受暴击会回满血，所以绝不能打出暴击、反而不能靠必暴；220固伤需回血，故千裳用万物之眸回血、先三消强应对消强、第五持续输出单挑。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4302,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "飞行电",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 吸血300; 消强; 受高伤麻痹",
+   "mech": [
+    "heal",
+    "clearBuff",
+    "control",
+    "firstStrike",
+    "sealAttr"
+   ],
+   "strategies": [
+    "魔王咤克斯双引爆+茉蕊儿造盾+伊芙丽莎150秒杀"
+   ],
+   "pets": [
+    "魔王咤克斯",
+    "茉蕊儿",
+    "伊芙丽莎"
+   ],
+   "why": "封属封锁属性技能，只能靠攻击技或引爆衔接；魔王咤克斯双引爆给伊芙丽莎提供必暴，150直接秒杀以规避受高伤麻痹、并应对封属与消强；茉蕊儿造盾提供生存缓冲应付吸血300。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4311,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "冰暗影",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 全属性-1; 300护盾",
+   "mech": [
+    "shield",
+    "debuff",
+    "firstStrike",
+    "sealAttr"
+   ],
+   "strategies": [
+    "圣灵谱尼单挑(先三吸强化+第五+穿插150封属)"
+   ],
+   "pets": [
+    "圣灵谱尼"
+   ],
+   "why": "Boss必先+封属，只能用攻击技输出，圣灵谱尼先三稳定自身、第五持续输出；300护盾需先破盾后消耗；全属性-1的弱化需用解弱化/金火或谱尼先三维持能力。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4258,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "机械战斗",
+   "boss_hp": 14000,
+   "traits": "必先; 封属; 两命; 受击害怕; 全属性-1",
+   "mech": [
+    "twoLife",
+    "debuff",
+    "control",
+    "firstStrike",
+    "sealAttr"
+   ],
+   "strategies": [
+    "圣王萨格罗斯站场(先三回血+150随机强化+第五)+瀚宇星皇回血免控+启灵元神首发护盾"
+   ],
+   "pets": [
+    "圣王萨格罗斯",
+    "瀚宇星皇",
+    "启灵元神"
+   ],
+   "why": "两命意味着需多段输出/补刀才能击杀；受击害怕属控场，瀚宇星皇提供回血免控、启灵元神首发护盾抗压；封属下圣王萨格罗斯用攻击技站场，先三回血+150随机强化+第五循环应对弱化与多命。"
+  }
+ ]
+}

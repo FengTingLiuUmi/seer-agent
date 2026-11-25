@@ -1,0 +1,1 @@
+{"desc": "受到攻击时有50%概率miss，自身体力低于对手时概率变为100%", "desc_tag": null, "hash": "fed168f2", "icon": [16], "id": 2816, "tag": "闪避", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

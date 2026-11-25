@@ -1,0 +1,93 @@
+﻿[
+    {
+        "id":  987,
+        "desc":  "�״γ�ս�ǳ�ʱ���4����Ȼף����֮��ÿ�εǳ�ʱ���2����Ȼף��|ս���׶ν���ʱ������غ�����ʹ���˼���������1����Ȼף��������غ�����δʹ�ü�������1����Ȼף��|��boss��Ч��",
+        "desc_formatting_adjustment":  "\u003cindent=0\u003e\u003csprite=0\u003e\u003cindent=16\u003e�ǳ�Ч����\r\n\u003cindent=16\u003e\u003csprite=3\u003e\u003cindent=32\u003e�״εǳ�ʱ���4��\u003ccolor=#FFF779\u003e��Ȼף��\u003c/color\u003e\r\n\u003cindent=16\u003e\u003csprite=3\u003e\u003cindent=32\u003e���״εǳ�ʱ���2����Ȼף��\r\n\r\n\u003cindent=0\u003e\u003csprite=0\u003e\u003cindent=16\u003eս�׽���Ч����\r\n\u003cindent=16\u003e\u003csprite=3\u003e\u003cindent=32\u003eս���׶ν���ʱ��\r\n\u003cindent=32\u003e\u003csprite=4\u003e\u003cindent=48\u003e����غ�����ʹ���˼���������1����Ȼף��\r\n\u003cindent=32\u003e\u003csprite=4\u003e\u003cindent=48\u003e����غ�����δʹ�ü�������1����Ȼף��\r\n\r\n\u003cindent=0\u003e\u003csprite=5\u003e\u003cindent=16\u003e����Ч����\r\n\u003cindent=16\u003e\u003csprite=3\u003e\u003cindent=32\u003eÿ����1����Ȼף����Ī�ݿ���\r\n\u003cindent=32\u003e\u003csprite=4\u003e\u003cindent=48\u003e25%����\u003ccolor=#64F9FA\u003e����\u003c/color\u003e�ܵ���\u003cb\u003e�쳣״̬\u003c/b\u003e\r\n\u003cindent=32\u003e\u003csprite=4\u003e\u003cindent=48\u003e��������\u003cb\u003e����\u003c/b\u003e+1\r\n\u003cindent=32\u003e\u003csprite=4\u003e\u003cindent=48\u003e�ܵ���\u003cb\u003e�����˺�\u003c/b\u003e\u003ccolor=#64F9FA\u003e����\u003c/color\u003e8%\r\n\r\n\u003cindent=0\u003e\u003csprite=5\u003e\u003cindent=15\u003e��Ȼף��������4�㣩��\r\n\u003cindent=16\u003e\u003csprite=6\u003e\u003cindent=32\u003eĪ�ݿ����Դ�������Ч��������",
+        "analyze_desc":  "[sprite name=dot1][color=#52a5f2]�״�[/color][color=#52a5f2]��ս[/color][color=#57c975]�ǳ�ʱ[/color]���4��[color=#f35555]��Ȼף��[/color]��[color=#52a5f2]֮��[/color]ÿ��[color=#57c975]�ǳ�ʱ[/color]���2��[color=#f35555]��Ȼף��[/color]|[sprite name=dot1][color=#57c975]ս���׶ν���ʱ[/color]����[color=#52a5f2]���غ�[/color]����ʹ���˼���������1��[color=#f35555]��Ȼף��[/color]����[color=#52a5f2]���غ�[/color]����δʹ�ü�������1��[color=#f35555]��Ȼף��[/color]",
+        "pve_effective":  true,
+        "intensified":  false,
+        "is_adv":  false,
+        "pet":  [
+                    {
+                        "id":  3711,
+                        "url":  "https://api.seerapi.com/v1/pet/3711"
+                    }
+                ],
+        "effect":  {
+                       "effect_args":  [
+                                           4,
+                                           2,
+                                           1,
+                                           1
+                                       ],
+                       "effect":  {
+                                      "id":  1287,
+                                      "url":  "https://api.seerapi.com/v1/eid_effect/1287"
+                                  }
+                   },
+        "effect_alias":  "alias_1287_4_2_1_1",
+        "tag":  [
+                    {
+                        "id":  1,
+                        "url":  "https://api.seerapi.com/v1/soulmark_tag/1"
+                    },
+                    {
+                        "id":  7,
+                        "url":  "https://api.seerapi.com/v1/soulmark_tag/7"
+                    },
+                    {
+                        "id":  8,
+                        "url":  "https://api.seerapi.com/v1/soulmark_tag/8"
+                    }
+                ],
+        "intensified_to":  null,
+        "from_":  null,
+        "advance":  null
+    },
+    {
+        "id":  2072,
+        "desc":  "��սʱ��������4������֮�ɣ�Ȼ���������Ķ�Ӧλ�ü��ܵ�ȫ��PPֵ���ָ�������ֻ�ڳ�����PPֵΪ0�ļ���ȫ��PPֵ�������ɹ���Ϊ�丽��1�����֮��|����ӵ������֮��ʱ��ѡ��ʹ�ü��ܲ���PPֵ�����һغϽ���ʱ������ֵ��غ�δѡ����������1�㲢����ֳ�Ĭ2�غϣ�δ������2�غ�����������֡��Է���ֻ�ڳ����������ϵ����Ϊ����ϵ��������ϵ������������֮�ɲ����ﵽ5ʱǰ�����лغ���+1|��boss��Ч��",
+        "desc_formatting_adjustment":  null,
+        "analyze_desc":  "[sprite name=dot1][color=#57c975]��սʱ[/color]��������4��[color=#f35555]����֮��[/color]��[color=#52a5f2]Ȼ��[/color]�������Ķ�Ӧλ�ü��ܵ�ȫ��PPֵ���ָ�������ֻ�ڳ�����PPֵΪ0�ļ���ȫ��PPֵ�������ɹ���Ϊ�丽��1��[color=#f35555]���֮��[/color]|[sprite name=dot1]����ӵ��[color=#f35555]����֮��[/color]ʱ��ѡ��ʹ�ü���[color=#52a5f2]����PPֵ����[/color]��[color=#57c975]�غϽ���ʱ[/color]�������[color=#52a5f2]���غ�(411)[/color]δѡ����������1�㲢�����[color=#57c975]��Ĭ[/color]2�غϣ�[color=#52a5f2]δ����[/color]��2�غ�����������֡��Է���ֻ�ڳ������[color=#57c975]����ϵ��[/color]��Ϊ����ϵ��������ϵ��������[color=#f35555]����֮��[/color]�����ﵽ5ʱǰ�����лغ���+1",
+        "pve_effective":  true,
+        "intensified":  false,
+        "is_adv":  true,
+        "pet":  [
+                    {
+                        "id":  3711,
+                        "url":  "https://api.seerapi.com/v1/pet/3711"
+                    }
+                ],
+        "effect":  {
+                       "effect_args":  [
+                                           0,
+                                           0
+                                       ],
+                       "effect":  {
+                                      "id":  2492,
+                                      "url":  "https://api.seerapi.com/v1/eid_effect/2492"
+                                  }
+                   },
+        "effect_alias":  "alias_2492_0_0",
+        "tag":  [
+                    {
+                        "id":  2,
+                        "url":  "https://api.seerapi.com/v1/soulmark_tag/2"
+                    },
+                    {
+                        "id":  4,
+                        "url":  "https://api.seerapi.com/v1/soulmark_tag/4"
+                    },
+                    {
+                        "id":  8,
+                        "url":  "https://api.seerapi.com/v1/soulmark_tag/8"
+                    }
+                ],
+        "intensified_to":  null,
+        "from_":  null,
+        "advance":  {
+                        "id":  24,
+                        "url":  "https://api.seerapi.com/v1/pet_advance/24"
+                    }
+    }
+]

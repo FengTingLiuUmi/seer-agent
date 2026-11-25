@@ -1,0 +1,1 @@
+{"desc": "{0}回合内自身受到攻击则随机附加{1}种异常状态，未触发则消除对手回合类效果", "desc_tag": null, "hash": "8487ce59", "icon": [14], "id": 498, "tag": "施加异常|消除回合", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

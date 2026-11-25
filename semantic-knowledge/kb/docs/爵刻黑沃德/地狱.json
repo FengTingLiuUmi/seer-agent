@@ -1,0 +1,176 @@
+{
+ "doc_id": "爵刻黑沃德#地狱",
+ "factor": "爵刻黑沃德",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4436,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "火神秘",
+   "boss_hp": 8000,
+   "traits": "只吃先制技能伤害; 减伤16.7%; 220固伤; 15%概率造成10倍伤害",
+   "mech": [
+    "onlyFirstStrike",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    {
+     "text": "鲁斯王先3",
+     "source": "bili",
+     "plan": "鲁斯王先3",
+     "pets": [],
+     "why": ""
+    }
+   ],
+   "pets": [
+    "星光·鲁斯王"
+   ],
+   "why": "这关「只吃先制技能伤害」，普通红伤打不进去，必须用带先制等级的技能出手。星光·鲁斯王的先3（先制+3）技能满足该门槛，同时鲁斯王自身的高生存/吸血能稳住血量，扛住220固伤与15%概率10倍伤害的波动。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4448,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "自然冰",
+   "boss_hp": 10000,
+   "traits": "只吃暴击伤害; 减伤16.7%; 220固伤; 技能命中前断回合",
+   "mech": [
+    "onlyCrit",
+    "breakTurn",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    {
+     "text": "赫布洛混沌140",
+     "source": "bili",
+     "plan": "赫布洛混沌140",
+     "pets": [],
+     "why": ""
+    },
+    {
+     "text": "魔钰强攻",
+     "source": "bili",
+     "plan": "魔钰强攻",
+     "pets": [
+      "魔钰"
+     ],
+     "why": "圣血猎者·赫布洛用混沌140威力技能打暴击输出、魔钰走纯强攻爆发，两套都是必暴后强攻手，差别在赫布洛吃属性/本系克制、魔钰更吃面板爆发"
+    }
+   ],
+   "pets": [
+    "圣血猎者·赫布洛",
+    "魔钰"
+   ],
+   "why": "这关「只吃暴击伤害」+「命中前断回合」：非暴击几乎是没伤害，且Boss在技能命中前会断我方回合（顺带消掉我方强化），所以不能依赖强化，走「必暴→强攻」最稳——表姐守御八方（攻击技能，不受封属影响）给全队必先+必暴，再上强攻手。圣血猎者·赫布洛用混沌140威力技能打暴击输出、魔钰走纯强攻爆发，两套都是必暴后强攻手，差别在赫布洛吃属性/本系克制、魔钰更吃面板爆发。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4442,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "圣灵超能",
+   "boss_hp": 10000,
+   "traits": "减伤16.7%; 220固伤; 命中前交换属性; 消强(我方使用技能则消除我方强化)",
+   "mech": [
+    "clearBuff",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    {
+     "text": "月照必先",
+     "source": "bili",
+     "plan": "月照必先",
+     "pets": [],
+     "why": ""
+    }
+   ],
+   "pets": [
+    "月照星魂"
+   ],
+   "why": "这关有「消强（我方使用技能则消除我方强化）」+「命中前交换属性」，再叠220固伤：堆强化会被清、属性还会被换，所以放弃强化堆伤害。月照星魂用必先技能抢先手出手，压缩Boss反打回合，靠其必先身板磨掉血量，规避消强带来的风险。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4438,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "飞行电",
+   "boss_hp": 12000,
+   "traits": "减伤33.3%; 真伤吸血300; 两命(复活后全属性+1); 每回合使用技能后全属性+1",
+   "mech": [
+    "twoLife",
+    "heal",
+    "selfBuff",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    {
+     "text": "物防体草潘(吃全面不灭)",
+     "source": "bili",
+     "plan": "物防体草潘(吃全面不灭)",
+     "pets": [],
+     "why": ""
+    }
+   ],
+   "pets": [
+    "加尔鲁特"
+   ],
+   "why": "这关33.3%减伤+真伤吸血300+两命（复活后全属性+1）+每回合全属性+1，Boss越拖越强且自回快，不适合强攻。用物防体加点的草潘（加尔鲁特）站场：高物防+高体力堆生存，靠草潘不灭/回血续航扛住吸血与强化后的伤害，慢慢磨掉两命。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4454,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "虚空邪灵",
+   "boss_hp": 16000,
+   "traits": "减伤33.3%; 真伤吸血300; 两命(复活后全属性+1); 100%低级害怕控",
+   "mech": [
+    "twoLife",
+    "heal",
+    "selfBuff",
+    "control",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    {
+     "text": "圣谱先3+第五",
+     "source": "bili",
+     "plan": "圣谱先3+第五",
+     "pets": [],
+     "why": ""
+    }
+   ],
+   "pets": [
+    "圣灵谱尼"
+   ],
+   "why": "这关100%低级害怕控+真伤吸血300+33.3%减伤+两命：普通打手会被害怕控到无法出手，所以用免疫异常、不惧害怕控的圣灵谱尼（圣谱）站场；先3抢先手破减伤前摇、第五技能爆发，并靠圣谱的异常免疫与续航磨掉两命血量。"
+  }
+ ],
+ "tids": [
+  2140
+ ],
+ "note": "无正文数据",
+ "source_urls": [
+  "https://bbs.tiepi.top/thread-3299-1-1.html",
+  "https://a.4399.cn/gl/36794114_184050.html"
+ ]
+}

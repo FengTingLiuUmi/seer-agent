@@ -1,0 +1,1 @@
+{"desc": "{0}回合内，每次躲避攻击都有{1}%概率使自身{btlvInd[2]}提升1个等级", "desc_tag": "btlvInd", "hash": "21cc3cbc", "icon": [20], "id": 31, "tag": "强化", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,1 @@
+{"bonus": null, "hash": "6d3a24d6", "id": 100615, "item": {"id": 100615, "url": "https://api.seerapi.com/v1/item/100615"}, "name": "能量探测仪", "occasion": null, "part_type": {"id": 3, "url": "https://api.seerapi.com/v1/equip_type/3"}, "pk_attribute": {"pk_atk": 15, "pk_fire_range": 0, "pk_hp": 50}, "speed": 0, "suit": null, "x_position": 76, "y_position": 34}

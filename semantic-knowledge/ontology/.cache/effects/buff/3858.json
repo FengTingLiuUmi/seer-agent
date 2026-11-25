@@ -1,0 +1,1 @@
+{"desc": "回合开始时若自身体力高于最大体力的1/2，则当回合自身受到的攻击伤害不超过自身最大体力的1/2", "desc_tag": null, "hash": "8a217975", "icon": [15], "id": 3858, "tag": "伤害限制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

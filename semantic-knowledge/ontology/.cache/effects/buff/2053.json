@@ -1,0 +1,1 @@
+{"desc": "免疫除烧伤、冻伤、中毒外的所有异常状态；每回合结束时清除免疫的异常", "desc_tag": null, "hash": "8b0b3a4c", "icon": [22], "id": 2053, "tag": "免疫异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

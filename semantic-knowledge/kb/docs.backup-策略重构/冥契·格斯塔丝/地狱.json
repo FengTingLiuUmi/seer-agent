@@ -1,0 +1,163 @@
+{
+ "doc_id": "冥契·格斯塔丝#地狱",
+ "factor": "冥契·格斯塔丝",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4466,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "邪灵",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 220固伤; 每回合全属性+1; 两命; 复活后全属性+1; 减伤16.7%",
+   "mech": [
+    "twoLife",
+    "selfBuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "幻境界皇单挑 / 表姐自爆+消强+强攻 / 萨格罗斯单挑"
+   ],
+   "pets": [
+    "幻境界皇",
+    "帝皇之御",
+    "萨格罗斯"
+   ],
+   "why": "致命机制是必先+封属+每回合全属性+1+两命：封属封死属性技能，但表姐的守御八方是攻击技能、不受封属，自爆后给全队必先必暴；消强手清掉 Boss 持续叠加的全属性强化，再接强攻手补掉复活后的第二命。幻境界皇/萨格罗斯单挑则是靠站场回血扛 220 固伤、持续打红伤。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 3082,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "神秘",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 220固伤; 每回合我方使用技能后全属性-1; 两命; 复活后全属性+1; 减伤16.7%",
+   "mech": [
+    "twoLife",
+    "selfBuff",
+    "debuff",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐自爆+两强攻 / 鬼神吕布单挑 / 灾厄王妃·潘多拉单挑 / 混元天尊+必先组"
+   ],
+   "pets": [
+    "帝皇之御",
+    "鬼神吕布",
+    "灾厄王妃·潘多拉",
+    "混元天尊",
+    "弑序神罗"
+   ],
+   "why": "致命机制是「我方每回合使用技能后全属性-1」叠加必先+封属+两命：属性技能被封，且越打越弱，最稳是速杀而非拖。表姐守御八方在封属下仍起作用，自爆给全队必先必暴，让两个强攻手在弱化累积前爆发秒杀并补第二命；单挑位(吕布/潘多拉/神罗)则需自身解弱化或回血等续航手段站稳再输出。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4275,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "轮回",
+   "boss_hp": 12000,
+   "traits": "单精灵; 必先; 封属; 220固伤; 必暴; 闪避; 减伤16.7%",
+   "mech": [
+    "singlePet",
+    "dodge",
+    "bossCrit",
+    "firstStrike",
+    "sealAttr",
+    "fixedDamage",
+    "damageReduction"
+   ],
+   "strategies": [
+    "千裳第五单挑 / 月华单挑 / 萨特130 / 星礼无限第五"
+   ],
+   "pets": [
+    "千裳",
+    "月华",
+    "萨特",
+    "星礼"
+   ],
+   "why": "致命机制是必先+封属+220固伤+Boss必暴+高闪避，且限定单精灵：封属下只能用攻击技能/第五输出，Boss 刀刀暴击要靠护盾/减伤/回血站场；高闪避由必暴(伪必中)即可覆盖命中，不必强行必中。千裳/月华/萨特/星礼各是带续航的红伤单挑位，靠第五技能持续打输出。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4032,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "圣灵光",
+   "boss_hp": 15000,
+   "traits": "必先; 封属; 吸血1000; 断回合; 消强; 减伤33.3%",
+   "mech": [
+    "heal",
+    "clearBuff",
+    "breakTurn",
+    "firstStrike",
+    "sealAttr",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐+圣华+灵巢之主强攻 / 斯克鲁恩+自爆+强攻 / 炮灰+蒂朵+天尊+时空界神+月照"
+   ],
+   "pets": [
+    "帝皇之御",
+    "圣华",
+    "灵巢之主·索杰德尔",
+    "斯克鲁恩",
+    "蒂朵",
+    "混元天尊",
+    "时空界神",
+    "月照星魂"
+   ],
+   "why": "致命机制是必先+封属+吸血1000+断回合+消强+减伤33.3%：封属下属性技能无效，但表姐守御八方是攻击技能不受封属，自爆给全队必先必暴；圣华/灵巢之主等强攻手在断回合、消强、吸血拖垮前一轮爆发速杀。斯克鲁恩/蒂朵/天尊/时空界神铺垫增伤，月照补输出。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4467,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "混沌邪灵",
+   "boss_hp": 18000,
+   "traits": "必先; 封属; 吸血1000; 断回合; 消强; 减伤33.3%",
+   "mech": [
+    "heal",
+    "clearBuff",
+    "breakTurn",
+    "firstStrike",
+    "sealAttr",
+    "damageReduction"
+   ],
+   "strategies": [
+    "表姐+强攻 / 天尊+蒂朵+月照必先+魔钰必先"
+   ],
+   "pets": [
+    "帝皇之御",
+    "混元天尊",
+    "蒂朵",
+    "月照星魂",
+    "魔钰"
+   ],
+   "why": "机制与第四关相同(必先+封属+吸血1000+断回合+消强+减伤33.3%)：封属下只能靠攻击技能，表姐守御八方起效后自爆给必先必暴，月照、魔钰等必先手赶在被消强、吸血压制前速杀。天尊/蒂朵提供保命与增伤铺垫。"
+  }
+ ],
+ "tids": [
+  1984
+ ],
+ "note": "无正文数据（含前置形态）"
+}

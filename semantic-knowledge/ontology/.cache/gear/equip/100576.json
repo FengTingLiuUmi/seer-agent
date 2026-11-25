@@ -1,0 +1,1 @@
+{"bonus": null, "hash": "c317508f", "id": 100576, "item": {"id": 100576, "url": "https://api.seerapi.com/v1/item/100576"}, "name": "能量收集器", "occasion": null, "part_type": {"id": 3, "url": "https://api.seerapi.com/v1/equip_type/3"}, "pk_attribute": {"pk_atk": 15, "pk_fire_range": 310, "pk_hp": 55}, "speed": 0, "suit": null, "x_position": 79, "y_position": 24}

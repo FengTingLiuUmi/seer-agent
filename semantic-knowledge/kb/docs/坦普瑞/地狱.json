@@ -1,0 +1,205 @@
+{
+ "doc_id": "坦普瑞#地狱",
+ "factor": "坦普瑞",
+ "difficulty": "地狱",
+ "stages": [
+  {
+   "stage": 1,
+   "apex": false,
+   "boss_pet_id": 4299,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "地面机械",
+   "boss_hp": 6000,
+   "traits": "先制+3; 免疫物攻; 消强",
+   "mech": [
+    "immunePhysical",
+    "clearBuff",
+    "firstStrike"
+   ],
+   "strategies": [
+    {
+     "text": "流荧·雪 150特攻强攻秒杀",
+     "source": "bili",
+     "plan": "流荧·雪 150特攻强攻秒杀",
+     "pets": [
+      "流荧·雪"
+     ],
+     "why": "boss 6000血 「免疫物攻」先3 还「消强」，物攻红伤为0 站场只会被消强拖死；流荧·雪 走特攻 一波秒，避开物攻免疫 不跟boss拼先手，物攻手别用"
+    }
+   ],
+   "pets": [
+    "流荧·雪"
+   ],
+   "why": "Boss 免疫物攻且先制+3、消强，物攻红伤为 0，站场会被消强拖垮。流荧·雪用 150 特攻强攻，避开物攻免疫并一波秒杀，不跟 Boss 拼先手拖延。"
+  },
+  {
+   "stage": 2,
+   "apex": false,
+   "boss_pet_id": 4337,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.0,
+   "boss_def_scale": 1.2,
+   "boss_type": "光超能",
+   "boss_hp": 8000,
+   "traits": "先制+3; 免疫特攻; 互换战斗属性; 消强",
+   "mech": [
+    "immuneSpecial",
+    "clearBuff",
+    "firstStrike"
+   ],
+   "strategies": [
+    {
+     "text": "属性互换后用原被克制精灵反打(布布先手消强+150)",
+     "source": "bili",
+     "plan": "属性互换后用原被克制精灵反打(布布先手消强+150)",
+     "pets": [
+      "布布"
+     ],
+     "why": "boss 8000血 「免疫特攻」先3 消强 还会「互换战斗属性」，得先手吸强再反打；布布 草 打 超能/光 1.5倍 算天敌 魂印给星芳之缠 减伤50%，先3 星光·究极吸取 吸强 90 送300护盾，换属后交草系大招 收尾"
+    },
+    {
+     "text": "迹自爆接喵佐150强攻",
+     "source": "bili",
+     "plan": "迹自爆接喵佐150强攻",
+     "pets": [
+      "迹"
+     ],
+     "why": "迹 自爆 让喵佐直接接手，喵佐 暗影 打 超能/光 1.25倍 强攻速杀，绕开「免疫特攻」"
+    }
+   ],
+   "pets": [
+    "布布",
+    "迹",
+    "飒雷孤影·喵佐"
+   ],
+   "why": "Boss 免疫特攻、会与己方互换战斗属性并消强，只能用物攻手且换属后要反打。布布先手消强再交 150 物攻是换属后的反打路线；迹自爆给必先必暴后接喵佐 150 物攻强攻，是另一套速杀路线。"
+  },
+  {
+   "stage": 3,
+   "apex": false,
+   "boss_pet_id": 4023,
+   "boss_is_single_pet": true,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "暗影邪灵",
+   "boss_hp": 10000,
+   "traits": "必先; 封属; 50%害怕控; 断回合; 消强",
+   "mech": [
+    "clearBuff",
+    "breakTurn",
+    "control",
+    "firstStrike",
+    "sealAttr"
+   ],
+   "strategies": [
+    {
+     "text": "圣灵谱尼 落芳天华消强后神灵救世光循环",
+     "source": "bili",
+     "plan": "圣灵谱尼 落芳天华消强后神灵救世光循环",
+     "pets": [
+      "圣灵谱尼"
+     ],
+     "why": "boss 必先 「封属」 50%害怕控 断回合 消强，属性技全废 只能靠攻击技；圣灵谱尼 圣洁 免异常 顶掉害怕，落芳天华 先3 吸强 80 把强化抢过来，接 神灵救世光 160 必中 循环，神灵 打 暗影/邪灵 1.5倍"
+    },
+    {
+     "text": "魔钰150强攻",
+     "source": "bili",
+     "plan": "魔钰150强攻",
+     "pets": [
+      "魔钰"
+     ],
+     "why": "魔钰 走 160 哥特式幻想 速杀，对手不处于能力下降状态时必定暴击；超能 打 暗影/邪灵 只有1倍 没克制红利 全靠爆攻，boss 必先 抢不到速度 只能赶在断回合前收"
+    }
+   ],
+   "pets": [
+    "圣灵谱尼",
+    "魔钰"
+   ],
+   "why": "Boss 封属、每下 50% 害怕控还带断回合和消强，属性技被封只能靠攻击技能。圣灵谱尼免控，落芳天华清掉 Boss 强化后神灵救世光循环输出；魔钰 150 强攻是抢速度的速杀备选。"
+  },
+  {
+   "stage": 4,
+   "apex": false,
+   "boss_pet_id": 4078,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "混沌飞行",
+   "boss_hp": 12000,
+   "traits": "必先; 封属; 反弹克制伤害100%; 清PP; 消强",
+   "mech": [
+    "reflection",
+    "clearPP",
+    "clearBuff",
+    "firstStrike",
+    "sealAttr"
+   ],
+   "strategies": [
+    {
+     "text": "魔钰(压血)150强攻",
+     "source": "bili",
+     "plan": "魔钰(压血)150强攻",
+     "pets": [
+      "魔钰"
+     ],
+     "why": "boss 12000血 「反弹克制伤害100%」 清PP 消强，克制系打上去会被反死 不能硬莽；魔钰 超能 打 混沌/飞行 1倍 中性 不触发反弹，160 哥特式幻想 对手无下降必暴 一波带走"
+    },
+    {
+     "text": "雷伊160强攻",
+     "source": "bili",
+     "plan": "雷伊160强攻",
+     "pets": [
+      "雷伊"
+     ],
+     "why": "雷伊 160 圣灵雷霆斩 打 混沌/飞行 1.5倍 小克制 本系再乘1.5，靠高爆 赶在「反弹」清PP 前 收，克制反弹 是这条线的代价"
+    }
+   ],
+   "pets": [
+    "魔钰",
+    "雷伊"
+   ],
+   "why": "Boss 反弹克制伤害 100%、清 PP、消强，站场越久越容易翻车，须一波带走。魔钰压血+150 与雷伊 160 都以高爆发速杀，赶在反弹/清 PP/消强生效前收掉。"
+  },
+  {
+   "stage": 5,
+   "apex": true,
+   "boss_pet_id": 4387,
+   "boss_is_single_pet": false,
+   "boss_atk_scale": 6.5,
+   "boss_def_scale": 1.5,
+   "boss_type": "虫",
+   "boss_hp": 14000,
+   "traits": "必先; 封属; 反转强化; 免疫威力≤100技能; 免疫粉伤",
+   "mech": [
+    "immunePower",
+    "firstStrike",
+    "sealAttr"
+   ],
+   "strategies": [
+    {
+     "text": "月照星魂(压血) 月下华尔兹150强攻",
+     "source": "bili",
+     "plan": "月照星魂(压血) 月下华尔兹150强攻",
+     "pets": [
+      "月照星魂"
+     ],
+     "why": "boss 14000血 「免疫威力≤100技能」 还「免疫粉伤」，85的流光箭影 被免疫 打不出红伤，封属 反转强化 也封死磨场 低威力先3别用；月照星魂 压血后必须交 威力>100 的大招，光/飞行 双属性 打虫 4倍"
+    }
+   ],
+   "pets": [
+    "月照星魂"
+   ],
+   "why": "Boss 免疫威力≤100 技能且免疫粉伤，只能靠威力>100 的红伤技能强攻；反转强化和封属又封死磨场。月照星魂压血后用 150 月下华尔兹打高红伤，正好穿透威力免疫一次带走。"
+  }
+ ],
+ "tids": [
+  2122
+ ],
+ "note": "无正文数据",
+ "source_urls": [
+  "https://www.bilibili.com/video/BV1RZyGBTEhx/",
+  "https://bbs.tiepi.top/archiver/?tid-3289.html"
+ ]
+}

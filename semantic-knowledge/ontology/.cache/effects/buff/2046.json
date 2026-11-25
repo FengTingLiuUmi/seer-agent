@@ -1,0 +1,1 @@
+{"desc": "体力低于{0}%时，每次受到伤害都会使自身进入山神守护状态，{roundnext[1]}受到伤害减免90%", "desc_tag": null, "hash": "a1f4d872", "icon": [29], "id": 2046, "tag": "减伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

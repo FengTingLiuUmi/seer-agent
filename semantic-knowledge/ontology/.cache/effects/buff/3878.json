@@ -1,0 +1,1 @@
+{"desc": "回合开始时若自身防御值高于对手则50%令对手害怕，未触发则当回合自身所有技能先制+1", "desc_tag": null, "hash": "e42a9ff2", "icon": [6], "id": 3878, "tag": "先制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

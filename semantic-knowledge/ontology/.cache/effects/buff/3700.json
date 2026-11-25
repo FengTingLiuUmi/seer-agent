@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若自身体力高于对手则当回合50%闪避对手的攻击技能，若自身为满体力时闪避概率额外提升25%", "desc_tag": null, "hash": "f42e3f55", "icon": [16], "id": 3700, "tag": "闪避", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,1 @@
+{"desc": "{0}回合内造成的攻击伤害不超过{1}点", "desc_tag": null, "hash": "fec2268e", "icon": [15], "id": 727, "tag": "伤害限制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

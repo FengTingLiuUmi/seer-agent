@@ -1,0 +1,1 @@
+{"desc": "{roundType[0]}回合内，每回合恢复{1}点体力", "desc_tag": "roundType", "hash": "438057ee", "icon": [31], "id": 134, "tag": "恢复", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

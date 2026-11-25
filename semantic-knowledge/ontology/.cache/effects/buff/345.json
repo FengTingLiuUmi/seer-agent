@@ -1,0 +1,1 @@
+{"desc": "{0}回合内对手使用攻击技能后随机附加给对手{1}种异常状态", "desc_tag": null, "hash": "5e37a029", "icon": [14], "id": 345, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

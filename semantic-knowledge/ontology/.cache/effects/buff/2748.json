@@ -1,0 +1,1 @@
+{"desc": "回合开始时时若对手体力小于1/2则当回合自身攻击技能先制+1", "desc_tag": null, "hash": "2dbc4537", "icon": [6], "id": 2748, "tag": "先制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

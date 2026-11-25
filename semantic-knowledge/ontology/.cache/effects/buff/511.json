@@ -1,0 +1,1 @@
+{"desc": "{0}回合内，每回合结束时使对手随机{1}个技能PP归零", "desc_tag": null, "hash": "5f5a36af", "icon": [30], "id": 511, "tag": "减PP", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

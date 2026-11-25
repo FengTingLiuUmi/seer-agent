@@ -1,0 +1,1 @@
+{"desc": "登场后，受到的攻击伤害减少75%，自身每次使用攻击技能则百分比减少25%，最多减少到0", "desc_tag": null, "hash": "f7f06ec", "icon": [29], "id": 2907, "tag": "减伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

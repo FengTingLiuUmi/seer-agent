@@ -1,0 +1,1 @@
+{"desc": "下{0}次攻击命中时消耗所使用攻击技能的全部PP值，每消耗{1}点威力提升{2}%", "desc_tag": null, "hash": "f5ec04cc", "icon": [], "id": 662, "tag": "威力提升", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,1 @@
+{"desc": "回合开始时若自身体力低于最大体力的1/2则当回合免疫对手的先手攻击伤害", "desc_tag": null, "hash": "d34a98ef", "icon": [25], "id": 3907, "tag": "免伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

@@ -1,0 +1,1 @@
+{"desc": "{0}回合内{1}%闪避对手攻击，对手攻击技能命中时令对手{abst[2]}", "desc_tag": "abst", "hash": "cd0f6918", "icon": [16], "id": 907, "tag": "闪避", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

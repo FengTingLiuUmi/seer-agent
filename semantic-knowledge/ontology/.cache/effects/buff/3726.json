@@ -1,0 +1,1 @@
+{"desc": "回合开始时，自身能力提升等级总和≥12则当回合攻击技能先制+1", "desc_tag": null, "hash": "71d1c136", "icon": [6], "id": 3726, "tag": "先制", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

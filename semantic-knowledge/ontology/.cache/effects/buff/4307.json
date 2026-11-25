@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若自身体力低于上回合开始则当回合自身使用技能后吸取对手最大体力的1/3", "desc_tag": null, "hash": "21f1d6ed", "icon": [7], "id": 4307, "tag": "吸血", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

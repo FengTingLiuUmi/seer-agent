@@ -1,0 +1,1 @@
+{"desc": "回合开始时，若自身不为满体力则当回合受到的攻击伤害额外减少50%", "desc_tag": null, "hash": "eb517f74", "icon": [29], "id": 4310, "tag": "减伤", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

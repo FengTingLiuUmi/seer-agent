@@ -1,0 +1,150 @@
+@prefix pve:  <http://example.org/seer/pve#> .
+@prefix seer: <http://example.org/seer#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# =====================================================================
+# 赛尔号「打法层」—— 应用/派生本体（不是游戏概念本身）
+# 依赖：seer-game.ttl（owl:imports）。
+# 本层只在游戏实体之上描述「怎么打」：方案、步骤、定位、推荐、被Ban、替代、规则。
+# =====================================================================
+
+<http://example.org/seer/pve> a owl:Ontology ;
+    owl:imports <http://example.org/seer> ;
+    rdfs:label "赛尔号 PVE 打法层"@zh ;
+    rdfs:comment "在赛尔号游戏本体之上描述打法/方案/定位与推荐关系；规则见 seer-rules.swrl。"@zh .
+
+# ---------------------------------------------------------------------
+# 类
+# ---------------------------------------------------------------------
+pve:BattlePlan a owl:Class ; rdfs:label "打法方案（对战计划）"@zh .
+pve:Step       a owl:Class ; rdfs:label "出招步骤"@zh .
+pve:Role       a owl:Class ; rdfs:label "PVE 定位"@zh .
+pve:Enemy      a owl:Class ; rdfs:subClassOf seer:Pet ; rdfs:label "敌方/Boss"@zh .
+pve:Difficulty a owl:Class ; rdfs:label "难度（SeerAPI easy/normal/hard = 中 简单/困难/地狱）"@zh .
+pve:FactorDifficulty a owl:Class ; rdfs:label "因子难度档（因子×难度，承载 Ban 表）"@zh .
+
+# ---------------------------------------------------------------------
+# 对象属性
+# ---------------------------------------------------------------------
+# 定位（功能分类，不是游戏数据）
+pve:hasRole     a owl:ObjectProperty ; rdfs:domain seer:Pet ; rdfs:range pve:Role ; rdfs:label "定位"@zh .
+
+# 方案结构
+pve:planFor     a owl:ObjectProperty ; rdfs:domain pve:BattlePlan ; rdfs:range seer:FactorStage ; rdfs:label "针对关卡"@zh .
+pve:hasStep     a owl:ObjectProperty ; rdfs:domain pve:BattlePlan ; rdfs:range pve:Step ; rdfs:label "含步骤"@zh .
+pve:precedes    a owl:ObjectProperty ; rdfs:domain pve:Step ; rdfs:range pve:Step ; rdfs:label "紧接在前"@zh .
+pve:usesPet     a owl:ObjectProperty ; rdfs:domain pve:Step ; rdfs:range seer:Pet ; rdfs:label "出场精灵"@zh .
+pve:usesSkill   a owl:ObjectProperty ; rdfs:domain pve:Step ; rdfs:range seer:Skill ; rdfs:label "使用技能"@zh .
+pve:usesGear    a owl:ObjectProperty ; rdfs:domain pve:Step ; rdfs:range [ a owl:Class ; owl:unionOf ( seer:Equip seer:Item seer:Nature seer:Mintmark seer:Gem seer:EnergyBead ) ] ; rdfs:label "宠物配装（装备/道具/性格/刻印/宝石/能量珠）"@zh .
+pve:usesLoadout a owl:ObjectProperty ; rdfs:domain pve:BattlePlan ; rdfs:range seer:Sailor ; rdfs:label "玩家配装（赛尔+套装/称号/火）"@zh .
+
+# 推荐/约束（推理输出，可由 SWRL/规则生成）
+pve:recommendedStrategy a owl:ObjectProperty ; rdfs:range pve:BattlePlan ; rdfs:label "推荐打法"@zh .
+pve:recommendedPet      a owl:ObjectProperty ; rdfs:range seer:Pet ; rdfs:label "推荐打手"@zh .
+pve:bannedPet           a owl:ObjectProperty ; rdfs:domain pve:FactorDifficulty ; rdfs:range seer:Pet ; rdfs:label "禁用精灵（因子×难度维度）"@zh .
+pve:forFactor          a owl:ObjectProperty ; rdfs:domain pve:FactorDifficulty ; rdfs:range seer:Factor ; rdfs:label "所属因子"@zh .
+pve:substitutesFor      a owl:ObjectProperty ; rdfs:domain seer:Pet ; rdfs:range seer:Pet ; rdfs:label "可替代"@zh ;
+    a owl:TransitiveProperty .
+
+# ---------------------------------------------------------------------
+# 数据属性
+# ---------------------------------------------------------------------
+pve:stepIndex a owl:DatatypeProperty ; rdfs:domain pve:Step ; rdfs:range xsd:integer ; rdfs:label "步骤序号"@zh .
+
+# ---- Boss/关卡数据（2026-11-22：因子关 Boss 的隐藏特性 API 查不到，来源=论坛）----
+pve:stageNumber a owl:DatatypeProperty ; rdfs:domain seer:FactorStage ; rdfs:range xsd:integer ; rdfs:label "关卡号(1..5)"@zh .
+pve:difficulty a owl:ObjectProperty ; rdfs:domain [ a owl:Class ; owl:unionOf ( seer:FactorStage pve:FactorDifficulty ) ] ; rdfs:range pve:Difficulty ; rdfs:label "难度"@zh .
+pve:hasEnemy  a owl:ObjectProperty ; rdfs:domain seer:FactorStage ; rdfs:range pve:Enemy ; rdfs:label "关卡 Boss"@zh .
+pve:bossHp      a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:range xsd:integer ; rdfs:label "Boss 血量"@zh .
+pve:bossTrait   a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:label "Boss 特性/机制(文字，原始保留)"@zh .
+pve:counteredBy a owl:ObjectProperty  ; rdfs:domain pve:Enemy ; rdfs:range seer:Pet ; rdfs:label "被反制精灵（攻略用）"@zh .
+
+# ---- Boss 本体建模（每关 Boss 是哪只精灵 + 数值缩放）------------------------------
+# 因子关 Boss 面板约定：除体力外 = (种族值×2+29)（24个体/平衡性格/100级），
+# 实际攻/防再乘 bossAtkScale / bossDefScale；体力用 bossHp（每关固定，不按种族缩放）。
+# 双攻缩放只关系 Boss 打我（卡裸伤/站场），双防缩放只关系我打 Boss（强攻能否打穿）。
+pve:bossSpecies     a owl:ObjectProperty ; rdfs:domain pve:Enemy ; rdfs:range seer:Pet ; rdfs:label "Boss 物种（本体是哪只精灵）"@zh .
+pve:bossAtkScale    a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:range xsd:decimal ; rdfs:label "Boss 双攻缩放倍率(物攻/特攻)"@zh ; rdfs:comment "地狱前2关=6.0、后3关=6.5(少数7，如草帕诺)；困难/简单待补"@zh .
+pve:bossDefScale    a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:range xsd:decimal ; rdfs:label "Boss 双防缩放倍率(物防/特防)"@zh ; rdfs:comment "地狱前2关=1.2、后3关=1.5；困难/简单待补"@zh .
+pve:bossIsSinglePet a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:range xsd:boolean ; rdfs:label "是否单精灵关"@zh .
+
+# ---- Boss 结构化机制（可 SPARQL 检索式字段）----------------------------
+pve:clearsBuff      a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:range xsd:boolean ; rdfs:label "消强"@zh .
+pve:stealsBuff      a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:range xsd:boolean ; rdfs:label "偷强/吸强"@zh .
+pve:clearsPP        a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:range xsd:boolean ; rdfs:label "清技能PP"@zh .
+pve:turnFixedDamage a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:range xsd:integer ; rdfs:label "每回合固伤"@zh .
+pve:rawCap          a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:range xsd:integer ; rdfs:label "裸伤阈值(免疫/转体力判定值)"@zh .
+pve:rawCapMode      a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:label "裸伤阈值模式(转体力/免疫超/免疫低)"@zh .
+pve:immunePanelOver a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:range xsd:integer ; rdfs:label "免疫面板攻击超过"@zh .
+pve:shield          a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:range xsd:integer ; rdfs:label "护盾/护罩值"@zh .
+pve:multiLife       a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:range xsd:integer ; rdfs:label "命数(1单命/2两命)"@zh .
+pve:immuneSpecial   a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:range xsd:boolean ; rdfs:label "免疫特攻"@zh .
+pve:immunePhysical  a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:range xsd:boolean ; rdfs:label "免疫物攻"@zh .
+pve:onlyCrit        a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:range xsd:boolean ; rdfs:label "只吃暴击"@zh .
+pve:alwaysCrit      a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:range xsd:boolean ; rdfs:label "必暴"@zh .
+pve:selfBuffPerTurn   a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:range xsd:integer ; rdfs:label "每回合Boss自身全属性变化(正=自我强化，负=自我弱化)"@zh .
+pve:debuffUsPerTurn   a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:range xsd:integer ; rdfs:label "每回合Boss弱化我方全属性(正值=弱化幅度)"@zh .
+pve:control         a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:label "控场类型(害怕/麻痹/焚烬/睡眠/…)"@zh .
+pve:dodge           a owl:DatatypeProperty ; rdfs:domain pve:Enemy ; rdfs:label "闪避(如 50%)"@zh .
+
+# ---------------------------------------------------------------------
+# 定位个体（五类，对应帖子里强攻/辅助/站场/弹伤/必先）
+# ---------------------------------------------------------------------
+pve:attacker    a pve:Role ; rdfs:label "强攻（秒杀）"@zh .
+pve:support     a pve:Role ; rdfs:label "辅助（判弱/场地/减伤）"@zh .
+pve:tank        a pve:Role ; rdfs:label "站场（坦克磨血）"@zh .
+pve:reflect     a pve:Role ; rdfs:label "弹伤（反伤）"@zh .
+pve:firstStrike a pve:Role ; rdfs:label "必先（先制）"@zh .
+
+# ---------------------------------------------------------------------
+# 难度个体（SeerAPI 值 easy/normal/hard <> 中文 简单/困难/地狱）
+# ---------------------------------------------------------------------
+pve:diff_easy   a pve:Difficulty ; rdfs:label "简单"@zh, "easy"@en .
+pve:diff_normal a pve:Difficulty ; rdfs:label "困难"@zh, "normal"@en .
+pve:diff_hard   a pve:Difficulty ; rdfs:label "地狱"@zh, "hard"@en .
+
+# ---------------------------------------------------------------------
+# 机制词表（pve:Mechanic）—— 供 SSOT 文档打标签 / 相似召回 / 占比统计共用
+# 注释 rdfs:comment 写「表现 + 反制思路」，是本体的可读字典。
+# ---------------------------------------------------------------------
+pve:Mechanic a owl:Class ; rdfs:label "Boss 机制（关卡硬门/特性标签）"@zh .
+pve:hasMechanic a owl:ObjectProperty ; rdfs:domain pve:Enemy ; rdfs:range pve:Mechanic ; rdfs:label "含机制"@zh .
+pve:bossTypeCombination a owl:ObjectProperty ; rdfs:domain pve:Enemy ; rdfs:range seer:TypeCombination ; rdfs:label "Boss 属性组合"@zh .
+pve:isApex a owl:DatatypeProperty ; rdfs:domain seer:FactorStage ; rdfs:range xsd:boolean ; rdfs:label "本体关(通常第5关=精灵本体)"@zh .
+pve:standardCounter a owl:ObjectProperty ; rdfs:domain pve:Mechanic ; rdfs:range seer:Pet ; rdfs:label "标准反制精灵"@zh .
+
+pve:mech_firstStrike     a pve:Mechanic ; rdfs:label "必先"@zh, "必先手"@zh ; rdfs:comment "Boss 必先手；反制=我方也必先(守御八方31505 攻击技能不受封属/表姐自爆)"@zh .
+pve:mech_sealAttr        a pve:Mechanic ; rdfs:label "封属"@zh ; rdfs:comment "属性技能被封；反制=用攻击技能(守御八方不受封属)/必先攻击"@zh .
+pve:mech_fixedDamage     a pve:Mechanic ; rdfs:label "固伤"@zh ; rdfs:comment "每回合固定掉血；反制=减伤珠+吸血+回血/速杀"@zh .
+pve:mech_damageReduction a pve:Mechanic ; rdfs:label "减伤"@zh ; rdfs:comment "红伤按百分比减免；反制=叠增伤链/变威力技能"@zh .
+pve:mech_immunePhysical  a pve:Mechanic ; rdfs:label "免疫物攻"@zh ; rdfs:comment "物攻红伤=0；反制=特攻强攻手"@zh .
+pve:mech_immuneSpecial   a pve:Mechanic ; rdfs:label "免疫特攻"@zh ; rdfs:comment "特攻红伤=0；反制=物攻强攻手"@zh .
+pve:mech_onlyCrit        a pve:Mechanic ; rdfs:label "只吃暴击"@zh ; rdfs:comment "非暴击几乎无伤；反制=必暴(守御八方/引爆手)"@zh .
+pve:mech_rawCap          a pve:Mechanic ; rdfs:label "裸伤上限"@zh ; rdfs:comment "面板超阈值被免/转体力；反制=卡裸伤站场(希可洛4487/草潘4606)"@zh .
+pve:mech_panelImmune     a pve:Mechanic ; rdfs:label "面板免疫"@zh ; rdfs:comment "面板高即免疫；反制=弹伤/裸伤/站场磨"@zh .
+pve:mech_shield          a pve:Mechanic ; rdfs:label "护盾"@zh ; rdfs:comment "开局大盾/护罩；反制=先破盾+减伤站场"@zh .
+pve:mech_clearBuff       a pve:Mechanic ; rdfs:label "消强"@zh ; rdfs:comment "清除我方强化；反制=断回合/不靠强化/金火"@zh .
+pve:mech_stealBuff       a pve:Mechanic ; rdfs:label "吸强"@zh, "偷强"@zh ; rdfs:comment "偷走我方强化；反制=断回合/消强手/第五"@zh .
+pve:mech_clearPP         a pve:Mechanic ; rdfs:label "清PP"@zh ; rdfs:comment "技能PP被清；反制=免PP/高PP/回PP"@zh .
+pve:mech_control         a pve:Mechanic ; rdfs:label "控场"@zh ; rdfs:comment "害怕/麻痹/石化/冰封/睡眠/焚烬/感染；反制=免疫异常/抗性/先手秒"@zh .
+pve:mech_bossCrit        a pve:Mechanic ; rdfs:label "Boss必暴"@zh ; rdfs:comment "Boss刀刀暴击；反制=减伤+护盾/先手秒"@zh .
+pve:mech_heal            a pve:Mechanic ; rdfs:label "回血"@zh, "月亮"@zh ; rdfs:comment "Boss回血；反制=禁疗(冰潘4463霜寒封印)/控血/速杀"@zh .
+pve:mech_hitDebuff       a pve:Mechanic ; rdfs:label "命中弱化"@zh ; rdfs:comment "专门降我方命中，必暴不再必中；反制=真·必中/先解命中弱化"@zh .
+pve:mech_dodge           a pve:Mechanic ; rdfs:label "高闪避"@zh ; rdfs:comment "普通攻击易miss；反制=必暴(伪必中)即可覆盖"@zh .
+pve:mech_twoLife         a pve:Mechanic ; rdfs:label "两命"@zh, "多命"@zh ; rdfs:comment "Boss复活/多命；反制=免死克/补刀/多段"@zh .
+pve:mech_undying         a pve:Mechanic ; rdfs:label "免死"@zh ; rdfs:comment "N回合留1血；反制=断回合/多段/固伤磨"@zh .
+pve:mech_debuff          a pve:Mechanic ; rdfs:label "随机弱化"@zh ; rdfs:comment "我方能力被降；反制=解弱化/金火/必中"@zh .
+pve:mech_selfBuff        a pve:Mechanic ; rdfs:label "Boss强化"@zh ; rdfs:comment "Boss越打越强；反制=先手压血/速杀/断回合"@zh .
+pve:mech_breakTurn       a pve:Mechanic ; rdfs:label "断回合"@zh ; rdfs:comment "Boss断我方回合类效果；反制=减伤站场/换思路"@zh .
+pve:mech_immunePower     a pve:Mechanic ; rdfs:label "免疫威力"@zh ; rdfs:comment "免疫威力≤N或≥N 的红伤；反制=换区间外威力/低威力强攻"@zh .
+pve:mech_singlePet       a pve:Mechanic ; rdfs:label "单精灵"@zh ; rdfs:comment "只能带一只；废掉自爆/增伤铺垫链，反制=单挑站场"@zh .
+pve:mech_onlyFirstStrike a pve:Mechanic ; rdfs:label "只吃先制"@zh ; rdfs:comment "只有先制技能能打出伤害；反制=带先制的高威力攻击手"@zh .
+pve:mech_reflect         a pve:Mechanic ; rdfs:label "反伤"@zh ; rdfs:comment "反弹我方红伤；反制=单段高倍克制/低威力先手刀，避免多段自我放血"@zh .
+
+# 标准反制精灵（有权威 seerapiId 的才写，宁缺毋滥）
+pve:mech_rawCap  pve:standardCounter seer:pet_4487, seer:pet_4606 .
+pve:mech_heal    pve:standardCounter seer:pet_4463 .
+pve:mech_sealAttr pve:standardCounter seer:pet_3512 .

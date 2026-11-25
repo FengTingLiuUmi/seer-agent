@@ -1,0 +1,1 @@
+{"desc": "对手先出手时当回合自身受到攻击伤害后将自身所处的异常状态转化为流血", "desc_tag": null, "hash": "d5d38bce", "icon": [26], "id": 4211, "tag": "解除异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}

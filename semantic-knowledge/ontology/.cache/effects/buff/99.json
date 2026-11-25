@@ -1,0 +1,1 @@
+{"desc": "{0}回合内若被对手击败则对手疲惫{1}回合", "desc_tag": null, "hash": "590b7a3f", "icon": [14], "id": 99, "tag": "施加异常", "type": {"id": 0, "url": "https://api.seerapi.com/v1/buff_type/0"}}
